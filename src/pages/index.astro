@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { categories, stories } from '../data/site';
+const [lead, ...rest] = stories;
+---
+<BaseLayout title="BitcoinVersus.tech — Smart News Daily" description="Bitcoin mining, power efficiency, AI, data centers, semiconductors, energy, electrical engineering, and technical documentation.">
+  <section class="hero">
+    <article class="lead">
+      <div class="eyebrow">{lead.category}</div>
+      <h1><a href={`/article/${lead.slug}`}>{lead.title}</a></h1>
+      <p>{lead.dek}</p>
+    </article>
+    <aside class="panel" aria-label="Top stories">
+      <div class="eyebrow">Top Stories</div>
+      <div class="stack">
+        {rest.slice(0, 4).map((story) => (
+          <article class="mini-story">
+            <div class="meta">{story.category}</div>
+            <h3><a href={`/article/${story.slug}`}>{story.title}</a></h3>
+          </article>
+        ))}
+      </div>
+    </aside>
+  </section>
+
+  <div class="section-head">
+    <h2>Latest</h2>
+    <p>Research, field documentation, and consequential technology news.</p>
+  </div>
+  <section class="grid" aria-label="Latest stories">
+    {stories.map((story) => (
+      <article class="story-card">
+        <div class="eyebrow">{story.category}</div>
+        <h3><a href={`/article/${story.slug}`}>{story.title}</a></h3>
+        <p>{story.dek}</p>
+        <div class="meta"><time datetime={story.date}>{story.date}</time></div>
+      </article>
+    ))}
+  </section>
+
+  <div class="section-head">
+    <h2>Explore the publication</h2>
+    <p>Focused sections instead of an overloaded navigation wall.</p>
+  </div>
+  <section class="grid" aria-label="Publication categories">
+    {categories.map((category) => (
+      <a class="category-card" href={`/category/${category.slug}`}>
+        <div class="eyebrow">Section</div>
+        <h3>{category.name}</h3>
+        <p>{category.description}</p>
+      </a>
+    ))}
+  </section>
+</BaseLayout>
