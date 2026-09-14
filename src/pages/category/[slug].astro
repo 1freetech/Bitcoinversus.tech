@@ -1,17 +1,34 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import StoryCard from '../../components/StoryCard.astro';
+import { nav } from '../../data/site';
 import { getAllPosts, getCategories } from '../../lib/wordpress';
 
 const PAGE_SIZE = 24;
 
 export async function getStaticPaths() {
   const categories = await getCategories();
-  return categories.map((category) => ({ params: { slug: category.slug }, props: { category } }));
+  const bySlug = new Map(categories.map((category) => [category.slug, category]));
+
+  for (const [label, href] of nav) {
+    const match = href.match(/^\/category\/([^/]+)$/);
+    if (!match || bySlug.has(match[1])) continue;
+    bySlug.set(match[1], {
+      id: -1,
+      name: label,
+      slug: match[1],
+      description: `Latest ${label} reporting and technical research from BitcoinVersus.tech.`,
+      count: 0
+    });
+  }
+
+  return [...bySlug.values()].map((category) => ({ params: { slug: category.slug }, props: { category } }));
 }
 
 const { category } = Astro.props;
-const posts = (await getAllPosts()).filter((post) => post.categories.includes(category.id));
+const posts = category.id === -1
+  ? []
+  : (await getAllPosts()).filter((post) => post.categories.includes(category.id));
 const visiblePosts = posts.slice(0, PAGE_SIZE);
 const totalPages = Math.ceil(posts.length / PAGE_SIZE);
 ---
@@ -21,9 +38,13 @@ const totalPages = Math.ceil(posts.length / PAGE_SIZE);
     <h1>{category.name}</h1>
     <p>{category.description || `Browse ${category.name} reporting, research, and technical documentation.`}</p>
   </div>
-  <section class="grid">
-    {visiblePosts.map((post) => <StoryCard post={post} showCategory={false} />)}
-  </section>
+  {visiblePosts.length > 0 ? (
+    <section class="grid">
+      {visiblePosts.map((post) => <StoryCard post={post} showCategory={false} />)}
+    </section>
+  ) : (
+    <p class="placeholder">No launch-snapshot stories are filed in this section yet. New migrated coverage will appear here as the content snapshot is refreshed.</p>
+  )}
   {totalPages > 1 && (
     <nav class="pagination" aria-label="Category pagination">
       <span>Page 1 of {totalPages}</span>
