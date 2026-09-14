@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+import { nav } from '../data/site';
+const {
+  title = 'BitcoinVersus.tech',
+  description = 'Smart news and technical research for Bitcoiners, infrastructure operators, and engineers.',
+  canonical = Astro.url.pathname
+} = Astro.props;
+const canonicalUrl = new URL(canonical, Astro.site ?? 'https://bitcoinversus.tech').toString();
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-row">
+        <a class="brand" href="/" aria-label="BitcoinVersus.tech home">bitcoinversus<span>.tech</span></a>
+        <nav class="nav" aria-label="Primary navigation">
+          {nav.map(([label, href]) => <a href={href}>{label}</a>)}
+        </nav>
+      </div>
+    </header>
+    <main class="shell page"><slot /></main>
+    <footer>
+      <div class="shell footer-row">
+        <div><strong>bitcoinversus.tech</strong> · Smart News Daily</div>
+        <div>Verifiably True research · Informational only · Not financial advice.</div>
+      </div>
+    </footer>
+  </body>
+</html>
