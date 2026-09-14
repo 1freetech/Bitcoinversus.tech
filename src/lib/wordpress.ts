@@ -2,7 +2,7 @@ const SITE_ID = 217076149;
 const API_ROOT = `https://public-api.wordpress.com/wp/v2/sites/${SITE_ID}`;
 const USER_AGENT = 'BitcoinVersus.tech Astro rebuild';
 const PAGE_SIZE = 100;
-const DEFAULT_MAX_POST_PAGES = 3;
+const DEFAULT_MAX_POST_PAGES = 1;
 const MAX_RETRIES = 4;
 
 export type WPTerm = {
@@ -78,9 +78,9 @@ let categoriesPromise: Promise<WPCategory[]> | undefined;
 export function getAllPosts(): Promise<WPPost[]> {
   if (!postsPromise) {
     postsPromise = (async () => {
-      // Launch build intentionally snapshots a bounded slice of the public WordPress archive.
-      // Three 100-post pages provide substantial real content while keeping CI/Netlify builds
-      // deterministic and fast. WP_MAX_PAGES can be raised later without changing routes.
+      // Launch builds snapshot the latest 100 public articles by default. This keeps
+      // CI and Netlify deterministic while preserving enough real content for a
+      // production-usable publication. WP_MAX_PAGES can expand the snapshot later.
       const configuredMaxPages = Number(import.meta.env.WP_MAX_PAGES ?? DEFAULT_MAX_POST_PAGES);
       const maxPages = Number.isFinite(configuredMaxPages)
         ? Math.max(1, Math.floor(configuredMaxPages))
