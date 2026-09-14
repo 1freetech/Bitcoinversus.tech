@@ -3,17 +3,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import StoryCard from '../../components/StoryCard.astro';
 import { getAllPosts } from '../../lib/wordpress';
 
-const PAGE_SIZE = 12;
-
 export async function getStaticPaths() {
+  const pageSize = 12;
   const posts = await getAllPosts();
-  const totalPages = Math.ceil(posts.length / PAGE_SIZE);
+  const totalPages = Math.ceil(posts.length / pageSize);
   return Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => ({
     params: { page: String(index + 2) },
     props: { pageNumber: index + 2, totalPages }
   }));
 }
 
+const PAGE_SIZE = 12;
 const { pageNumber, totalPages } = Astro.props;
 const posts = await getAllPosts();
 const start = (pageNumber - 1) * PAGE_SIZE;
