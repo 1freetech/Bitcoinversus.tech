@@ -1,22 +1,36 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { categories, stories } from '../data/site';
-const [lead, ...rest] = stories;
+import { featuredCategorySlugs } from '../data/site';
+import {
+  excerptText,
+  getAllPosts,
+  getCategories,
+  getPrimaryCategory,
+  htmlToText,
+  legacyPath
+} from '../lib/wordpress';
+
+const [posts, allCategories] = await Promise.all([getAllPosts(), getCategories()]);
+const [lead, ...rest] = posts;
+const latest = posts.slice(0, 12);
+const featuredCategories = featuredCategorySlugs
+  .map((slug) => allCategories.find((category) => category.slug === slug))
+  .filter(Boolean);
 ---
 <BaseLayout title="BitcoinVersus.tech — Smart News Daily" description="Bitcoin mining, power efficiency, AI, data centers, semiconductors, energy, electrical engineering, and technical documentation.">
   <section class="hero">
     <article class="lead">
-      <div class="eyebrow">{lead.category}</div>
-      <h1><a href={`/article/${lead.slug}`}>{lead.title}</a></h1>
-      <p>{lead.dek}</p>
+      <div class="eyebrow">{getPrimaryCategory(lead)?.name ?? 'Latest'}</div>
+      <h1><a href={legacyPath(lead)}>{htmlToText(lead.title.rendered)}</a></h1>
+      <p>{excerptText(lead)}</p>
     </article>
     <aside class="panel" aria-label="Top stories">
       <div class="eyebrow">Top Stories</div>
       <div class="stack">
-        {rest.slice(0, 4).map((story) => (
+        {rest.slice(0, 5).map((post) => (
           <article class="mini-story">
-            <div class="meta">{story.category}</div>
-            <h3><a href={`/article/${story.slug}`}>{story.title}</a></h3>
+            <div class="meta">{getPrimaryCategory(post)?.name ?? 'Latest'}</div>
+            <h3><a href={legacyPath(post)}>{htmlToText(post.title.rendered)}</a></h3>
           </article>
         ))}
       </div>
@@ -28,26 +42,26 @@ const [lead, ...rest] = stories;
     <p>Research, field documentation, and consequential technology news.</p>
   </div>
   <section class="grid" aria-label="Latest stories">
-    {stories.map((story) => (
+    {latest.map((post) => (
       <article class="story-card">
-        <div class="eyebrow">{story.category}</div>
-        <h3><a href={`/article/${story.slug}`}>{story.title}</a></h3>
-        <p>{story.dek}</p>
-        <div class="meta"><time datetime={story.date}>{story.date}</time></div>
+        <div class="eyebrow">{getPrimaryCategory(post)?.name ?? 'Latest'}</div>
+        <h3><a href={legacyPath(post)}>{htmlToText(post.title.rendered)}</a></h3>
+        <p>{excerptText(post)}</p>
+        <div class="meta"><time datetime={post.date}>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time></div>
       </article>
     ))}
   </section>
 
   <div class="section-head">
     <h2>Explore the publication</h2>
-    <p>Focused sections instead of an overloaded navigation wall.</p>
+    <p>Focused sections backed by the full BitcoinVersus archive.</p>
   </div>
   <section class="grid" aria-label="Publication categories">
-    {categories.map((category) => (
+    {featuredCategories.map((category) => category && (
       <a class="category-card" href={`/category/${category.slug}`}>
-        <div class="eyebrow">Section</div>
+        <div class="eyebrow">{category.count} posts</div>
         <h3>{category.name}</h3>
-        <p>{category.description}</p>
+        <p>{category.description || `Browse the latest ${category.name} reporting and technical research.`}</p>
       </a>
     ))}
   </section>
