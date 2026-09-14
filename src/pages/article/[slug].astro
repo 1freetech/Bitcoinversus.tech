@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { stories } from '../../data/site';
+
+export function getStaticPaths() {
+  return stories.map((story) => ({ params: { slug: story.slug }, props: { story } }));
+}
+
+const { story } = Astro.props;
+---
+<BaseLayout title={`${story.title} — BitcoinVersus.tech`} description={story.dek}>
+  <article class="article-shell">
+    <div class="eyebrow">{story.category}</div>
+    <h1>{story.title}</h1>
+    <p class="dek">{story.dek}</p>
+    <div class="meta"><time datetime={story.date}>{story.date}</time></div>
+    <p>This route is part of the new open-source BitcoinVersus publication build. The article migration layer is being filled from the existing public site while preserving clean URLs, section relationships, and SEO metadata.</p>
+    <div class="placeholder">Content migration status: page template complete; full historical body import is the next migration task. No WordPress editing is required.</div>
+  </article>
+</BaseLayout>
