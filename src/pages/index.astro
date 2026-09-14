@@ -10,9 +10,11 @@ import {
   legacyPath
 } from '../lib/wordpress';
 
+const PAGE_SIZE = 12;
 const [posts, allCategories] = await Promise.all([getAllPosts(), getCategories()]);
 const [lead, ...rest] = posts;
-const latest = posts.slice(0, 12);
+const latest = posts.slice(0, PAGE_SIZE);
+const totalPages = Math.ceil(posts.length / PAGE_SIZE);
 const featuredCategories = featuredCategorySlugs
   .map((slug) => allCategories.find((category) => category.slug === slug))
   .filter(Boolean);
@@ -51,6 +53,12 @@ const featuredCategories = featuredCategorySlugs
       </article>
     ))}
   </section>
+  {totalPages > 1 && (
+    <nav class="pagination" aria-label="Publication pagination">
+      <span>Page 1 of {totalPages}</span>
+      <a href="/page/2">Older stories →</a>
+    </nav>
+  )}
 
   <div class="section-head">
     <h2>Explore the publication</h2>
