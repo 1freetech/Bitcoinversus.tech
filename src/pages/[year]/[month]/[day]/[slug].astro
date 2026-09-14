@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import {
+  excerptText,
+  getAllPosts,
+  getFeaturedImage,
+  getPrimaryCategory,
+  htmlToText,
+  legacyPath
+} from '../../../../lib/wordpress';
+
+export async function getStaticPaths() {
+  const posts = await getAllPosts();
+  return posts.map((post) => {
+    const [year, month, day] = post.date.slice(0, 10).split('-');
+    return {
+      params: { year, month, day, slug: post.slug },
+      props: { post }
+    };
+  });
+}
+
+const { post } = Astro.props;
+const title = htmlToText(post.title.rendered);
+const description = excerptText(post);
+const category = getPrimaryCategory(post);
+const featuredImage = getFeaturedImage(post);
+const canonical = legacyPath(post);
+---
+<BaseLayout title={`${title} — BitcoinVersus.tech`} description={description} canonical={canonical}>
+  <article class="article-shell">
+    <div class="eyebrow">{category?.name ?? 'BitcoinVersus.tech'}</div>
+    <h1>{title}</h1>
+    <p class="dek">{description}</p>
+    <div class="meta">
+      <time datetime={post.date}>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+      {category && <> · <a href={`/category/${category.slug}`}>{category.name}</a></>}
+    </div>
+    {featuredImage && (
+      <figure class="featured-image">
+        <img src={featuredImage.src} alt={featuredImage.alt} loading="eager" decoding="async" />
+      </figure>
+    )}
+    <div class="article-content" set:html={post.content.rendered} />
+  </article>
+</BaseLayout>
