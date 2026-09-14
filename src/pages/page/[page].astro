@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { excerptText, getAllPosts, getPrimaryCategory, htmlToText, legacyPath } from '../../lib/wordpress';
+
+const PAGE_SIZE = 12;
+
+export async function getStaticPaths() {
+  const posts = await getAllPosts();
+  const totalPages = Math.ceil(posts.length / PAGE_SIZE);
+  return Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => ({
+    params: { page: String(index + 2) },
+    props: { pageNumber: index + 2, totalPages }
+  }));
+}
+
+const { pageNumber, totalPages } = Astro.props;
+const posts = await getAllPosts();
+const start = (pageNumber - 1) * PAGE_SIZE;
+const visiblePosts = posts.slice(start, start + PAGE_SIZE);
+const previousHref = pageNumber === 2 ? '/' : `/page/${pageNumber - 1}`;
+const nextHref = pageNumber < totalPages ? `/page/${pageNumber + 1}` : undefined;
+---
+<BaseLayout title={`Latest — Page ${pageNumber} — BitcoinVersus.tech`} description={`Page ${pageNumber} of the BitcoinVersus.tech publication archive.`}>
+  <div class="eyebrow">Publication Archive</div>
+  <div class="section-head">
+    <h1>Latest</h1>
+    <p>Page {pageNumber} of {totalPages}</p>
+  </div>
+  <section class="grid" aria-label="Publication archive">
+    {visiblePosts.map((post) => (
+      <article class="story-card">
+        <div class="eyebrow">{getPrimaryCategory(post)?.name ?? 'Latest'}</div>
+        <h3><a href={legacyPath(post)}>{htmlToText(post.title.rendered)}</a></h3>
+        <p>{excerptText(post)}</p>
+        <div class="meta"><time datetime={post.date}>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time></div>
+      </article>
+    ))}
+  </section>
+  <nav class="pagination" aria-label="Publication pagination">
+    <a href={previousHref}>← Newer stories</a>
+    <span>Page {pageNumber} of {totalPages}</span>
+    {nextHref ? <a href={nextHref}>Older stories →</a> : <span>End of archive</span>}
+  </nav>
+</BaseLayout>
