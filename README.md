@@ -6,7 +6,7 @@
 
 BitcoinVersus.tech is an independent technical publication covering Bitcoin mining, power efficiency, artificial intelligence, energy, infrastructure, and practical engineering documentation.
 
-The website is being rebuilt as a fast, maintainable, open-source publication using Astro. Published WordPress articles are imported into a committed local snapshot so production builds remain reliable even when the WordPress API is unavailable.
+The website is being rebuilt as a fast, maintainable, open-source publication using Astro. Published WordPress articles are imported into a committed local snapshot so production builds remain reliable.
 
 ## Project status
 
