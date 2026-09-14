@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categories, stories } from '../../data/site';
+
+export function getStaticPaths() {
+  return categories.map((category) => ({ params: { slug: category.slug }, props: { category } }));
+}
+
+const { category } = Astro.props;
+const categoryStories = stories.filter((story) => story.categorySlug === category.slug);
+---
+<BaseLayout title={`${category.name} — BitcoinVersus.tech`} description={category.description}>
+  <div class="eyebrow">Section</div>
+  <div class="section-head">
+    <h1>{category.name}</h1>
+    <p>{category.description}</p>
+  </div>
+  {categoryStories.length ? (
+    <section class="grid">
+      {categoryStories.map((story) => (
+        <article class="story-card">
+          <div class="eyebrow">{story.category}</div>
+          <h3><a href={`/article/${story.slug}`}>{story.title}</a></h3>
+          <p>{story.dek}</p>
+          <div class="meta"><time datetime={story.date}>{story.date}</time></div>
+        </article>
+      ))}
+    </section>
+  ) : (
+    <div class="placeholder">This section is ready for migrated stories. The page is live in the new information architecture even when the current local catalog has no article assigned yet.</div>
+  )}
+</BaseLayout>
