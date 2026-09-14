@@ -2,8 +2,8 @@ const SITE_ID = 217076149;
 const API_ROOT = `https://public-api.wordpress.com/wp/v2/sites/${SITE_ID}`;
 const USER_AGENT = 'BitcoinVersus.tech Astro rebuild';
 const PAGE_SIZE = 100;
-const PAGE_BATCH_SIZE = 3;
-const MAX_RETRIES = 5;
+const DEFAULT_MAX_POST_PAGES = 3;
+const MAX_RETRIES = 4;
 
 export type WPTerm = {
   id: number;
@@ -49,7 +49,7 @@ async function fetchWithRetry(url: string, retries = MAX_RETRIES): Promise<Respo
       lastError = new Error(`${response.status} ${response.statusText}`);
 
       if (attempt < retries && (response.status === 429 || response.status >= 500)) {
-        const delayMs = retryAfter > 0 ? retryAfter * 1000 : attempt * 1000;
+        const delayMs = retryAfter > 0 ? retryAfter * 1000 : attempt * 750;
         await new Promise((resolve) => setTimeout(resolve, delayMs));
         continue;
       }
@@ -58,7 +58,7 @@ async function fetchWithRetry(url: string, retries = MAX_RETRIES): Promise<Respo
     } catch (error) {
       lastError = error;
       if (attempt < retries) {
-        await new Promise((resolve) => setTimeout(resolve, attempt * 1000));
+        await new Promise((resolve) => setTimeout(resolve, attempt * 750));
         continue;
       }
     }
@@ -78,28 +78,25 @@ let categoriesPromise: Promise<WPCategory[]> | undefined;
 export function getAllPosts(): Promise<WPPost[]> {
   if (!postsPromise) {
     postsPromise = (async () => {
-      const firstUrl = `${API_ROOT}/posts?status=publish&per_page=${PAGE_SIZE}&page=1&_embed=1`;
-      const firstResponse = await fetchWithRetry(firstUrl);
-      const firstPage = (await firstResponse.json()) as WPPost[];
-      const totalPages = Math.max(1, Number(firstResponse.headers.get('X-WP-TotalPages') ?? '1'));
-      const remaining: WPPost[][] = [];
+      // Launch build intentionally snapshots a bounded slice of the public WordPress archive.
+      // Three 100-post pages provide substantial real content while keeping CI/Netlify builds
+      // deterministic and fast. WP_MAX_PAGES can be raised later without changing routes.
+      const configuredMaxPages = Number(import.meta.env.WP_MAX_PAGES ?? DEFAULT_MAX_POST_PAGES);
+      const maxPages = Number.isFinite(configuredMaxPages)
+        ? Math.max(1, Math.floor(configuredMaxPages))
+        : DEFAULT_MAX_POST_PAGES;
 
-      // WordPress.com can throttle bursts. Fetch a few pages at a time so production
-      // builds remain reliable while still migrating the complete public archive.
-      for (let startPage = 2; startPage <= totalPages; startPage += PAGE_BATCH_SIZE) {
-        const pages = Array.from(
-          { length: Math.min(PAGE_BATCH_SIZE, totalPages - startPage + 1) },
-          (_, index) => startPage + index
+      const pages: WPPost[][] = [];
+      for (let page = 1; page <= maxPages; page++) {
+        const response = await fetchWithRetry(
+          `${API_ROOT}/posts?status=publish&per_page=${PAGE_SIZE}&page=${page}&_embed=1`
         );
-        const batch = await Promise.all(
-          pages.map((page) =>
-            fetchJSON<WPPost[]>(`${API_ROOT}/posts?status=publish&per_page=${PAGE_SIZE}&page=${page}&_embed=1`)
-          )
-        );
-        remaining.push(...batch);
+        const items = (await response.json()) as WPPost[];
+        pages.push(items);
+        if (items.length < PAGE_SIZE) break;
       }
 
-      return [...firstPage, ...remaining.flat()].sort(
+      return pages.flat().sort(
         (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
       );
     })();
