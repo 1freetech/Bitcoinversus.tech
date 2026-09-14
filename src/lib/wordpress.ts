@@ -122,5 +122,5 @@ export function htmlToText(html: string): string {
 }
 
 export function excerptText(post: WPPost): string {
-  return htmlToText(post.excerpt.rendered).replace(/\s*\[…]\s*$/u, '').slice(0, 320);
+  return htmlToText(post.excerpt.rendered).replace(/\s*\[…\]\s*$/u, '').slice(0, 320);
 }
