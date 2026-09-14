@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { excerptText, getAllPosts, getCategories, htmlToText, legacyPath } from '../../../../lib/wordpress';
+
+const PAGE_SIZE = 24;
+
+export async function getStaticPaths() {
+  const [categories, posts] = await Promise.all([getCategories(), getAllPosts()]);
+  return categories.flatMap((category) => {
+    const count = posts.filter((post) => post.categories.includes(category.id)).length;
+    const totalPages = Math.ceil(count / PAGE_SIZE);
+    return Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => ({
+      params: { slug: category.slug, page: String(index + 2) },
+      props: { category, pageNumber: index + 2, totalPages }
+    }));
+  });
+}
+
+const { category, pageNumber, totalPages } = Astro.props;
+const posts = (await getAllPosts()).filter((post) => post.categories.includes(category.id));
+const start = (pageNumber - 1) * PAGE_SIZE;
+const visiblePosts = posts.slice(start, start + PAGE_SIZE);
+const previousHref = pageNumber === 2 ? `/category/${category.slug}` : `/category/${category.slug}/page/${pageNumber - 1}`;
+const nextHref = pageNumber < totalPages ? `/category/${category.slug}/page/${pageNumber + 1}` : undefined;
+---
+<BaseLayout title={`${category.name} — Page ${pageNumber} — BitcoinVersus.tech`} description={`Page ${pageNumber} of the ${category.name} archive at BitcoinVersus.tech.`}>
+  <div class="eyebrow">Section · Page {pageNumber} of {totalPages}</div>
+  <div class="section-head">
+    <h1>{category.name}</h1>
+    <p>{category.description || `Browse ${category.name} reporting, research, and technical documentation.`}</p>
+  </div>
+  <section class="grid">
+    {visiblePosts.map((post) => (
+      <article class="story-card">
+        <h3><a href={legacyPath(post)}>{htmlToText(post.title.rendered)}</a></h3>
+        <p>{excerptText(post)}</p>
+        <div class="meta"><time datetime={post.date}>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time></div>
+      </article>
+    ))}
+  </section>
+  <nav class="pagination" aria-label="Category pagination">
+    <a href={previousHref}>← Newer stories</a>
+    <span>Page {pageNumber} of {totalPages}</span>
+    {nextHref ? <a href={nextHref}>Older stories →</a> : <span>End of archive</span>}
+  </nav>
+</BaseLayout>
