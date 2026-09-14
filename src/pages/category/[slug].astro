@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { excerptText, getAllPosts, getCategories, htmlToText, legacyPath } from '../../lib/wordpress';
+import StoryCard from '../../components/StoryCard.astro';
+import { getAllPosts, getCategories } from '../../lib/wordpress';
 
 const PAGE_SIZE = 24;
 
@@ -21,13 +22,7 @@ const totalPages = Math.ceil(posts.length / PAGE_SIZE);
     <p>{category.description || `Browse ${category.name} reporting, research, and technical documentation.`}</p>
   </div>
   <section class="grid">
-    {visiblePosts.map((post) => (
-      <article class="story-card">
-        <h3><a href={legacyPath(post)}>{htmlToText(post.title.rendered)}</a></h3>
-        <p>{excerptText(post)}</p>
-        <div class="meta"><time datetime={post.date}>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time></div>
-      </article>
-    ))}
+    {visiblePosts.map((post) => <StoryCard post={post} showCategory={false} />)}
   </section>
   {totalPages > 1 && (
     <nav class="pagination" aria-label="Category pagination">
