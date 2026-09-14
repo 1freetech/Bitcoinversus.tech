@@ -99,10 +99,7 @@ export function getFeaturedImage(post: WPPost): { src: string; alt: string } | u
 }
 
 export function legacyPath(post: WPPost): string {
-  const date = new Date(post.date);
-  const year = date.getUTCFullYear();
-  const month = String(date.getUTCMonth() + 1).padStart(2, '0');
-  const day = String(date.getUTCDate()).padStart(2, '0');
+  const [year, month, day] = post.date.slice(0, 10).split('-');
   return `/${year}/${month}/${day}/${post.slug}`;
 }
 
