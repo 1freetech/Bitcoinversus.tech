@@ -1,10 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import StoryCard from '../components/StoryCard.astro';
 import { featuredCategorySlugs } from '../data/site';
 import {
   excerptText,
   getAllPosts,
   getCategories,
+  getFeaturedImage,
   getPrimaryCategory,
   htmlToText,
   legacyPath
@@ -13,6 +15,7 @@ import {
 const PAGE_SIZE = 12;
 const [posts, allCategories] = await Promise.all([getAllPosts(), getCategories()]);
 const [lead, ...rest] = posts;
+const leadImage = getFeaturedImage(lead);
 const latest = posts.slice(0, PAGE_SIZE);
 const totalPages = Math.ceil(posts.length / PAGE_SIZE);
 const featuredCategories = featuredCategorySlugs
@@ -21,10 +24,13 @@ const featuredCategories = featuredCategorySlugs
 ---
 <BaseLayout title="BitcoinVersus.tech — Smart News Daily" description="Bitcoin mining, power efficiency, AI, data centers, semiconductors, energy, electrical engineering, and technical documentation.">
   <section class="hero">
-    <article class="lead">
-      <div class="eyebrow">{getPrimaryCategory(lead)?.name ?? 'Latest'}</div>
-      <h1><a href={legacyPath(lead)}>{htmlToText(lead.title.rendered)}</a></h1>
-      <p>{excerptText(lead)}</p>
+    <article class:list={['lead', { 'has-image': Boolean(leadImage) }]}>
+      {leadImage && <img class="lead-visual" src={leadImage.src} alt={leadImage.alt} loading="eager" decoding="async" />}
+      <div class="lead-copy">
+        <div class="eyebrow">{getPrimaryCategory(lead)?.name ?? 'Latest'}</div>
+        <h1><a href={legacyPath(lead)}>{htmlToText(lead.title.rendered)}</a></h1>
+        <p>{excerptText(lead)}</p>
+      </div>
     </article>
     <aside class="panel" aria-label="Top stories">
       <div class="eyebrow">Top Stories</div>
@@ -44,14 +50,7 @@ const featuredCategories = featuredCategorySlugs
     <p>Research, field documentation, and consequential technology news.</p>
   </div>
   <section class="grid" aria-label="Latest stories">
-    {latest.map((post) => (
-      <article class="story-card">
-        <div class="eyebrow">{getPrimaryCategory(post)?.name ?? 'Latest'}</div>
-        <h3><a href={legacyPath(post)}>{htmlToText(post.title.rendered)}</a></h3>
-        <p>{excerptText(post)}</p>
-        <div class="meta"><time datetime={post.date}>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time></div>
-      </article>
-    ))}
+    {latest.map((post) => <StoryCard post={post} />)}
   </section>
   {totalPages > 1 && (
     <nav class="pagination" aria-label="Publication pagination">
