@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "qa": "node scripts/qa-dist.mjs",
+    "build:verify": "npm run build && npm run qa",
     "refresh:content": "node scripts/fetch-wordpress.mjs",
     "preview": "astro preview"
   },
