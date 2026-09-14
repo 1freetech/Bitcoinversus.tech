@@ -1,9 +1,4 @@
-const SITE_ID = 217076149;
-const API_ROOT = `https://public-api.wordpress.com/wp/v2/sites/${SITE_ID}`;
-const USER_AGENT = 'BitcoinVersus.tech Astro rebuild';
-const PAGE_SIZE = 100;
-const DEFAULT_MAX_POST_PAGES = 1;
-const MAX_RETRIES = 4;
+import snapshot from '../data/wp-snapshot.json';
 
 export type WPTerm = {
   id: number;
@@ -37,80 +32,22 @@ export type WPCategory = {
   count: number;
 };
 
-async function fetchWithRetry(url: string, retries = MAX_RETRIES): Promise<Response> {
-  let lastError: unknown;
+type WPSnapshot = {
+  generatedAt: string;
+  posts: WPPost[];
+  categories: WPCategory[];
+};
 
-  for (let attempt = 1; attempt <= retries; attempt++) {
-    try {
-      const response = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
-      if (response.ok) return response;
-
-      const retryAfter = Number(response.headers.get('retry-after') ?? '0');
-      lastError = new Error(`${response.status} ${response.statusText}`);
-
-      if (attempt < retries && (response.status === 429 || response.status >= 500)) {
-        const delayMs = retryAfter > 0 ? retryAfter * 1000 : attempt * 750;
-        await new Promise((resolve) => setTimeout(resolve, delayMs));
-        continue;
-      }
-
-      throw lastError;
-    } catch (error) {
-      lastError = error;
-      if (attempt < retries) {
-        await new Promise((resolve) => setTimeout(resolve, attempt * 750));
-        continue;
-      }
-    }
-  }
-
-  throw new Error(`WordPress API request failed for ${url}: ${String(lastError)}`);
-}
-
-async function fetchJSON<T>(url: string): Promise<T> {
-  const response = await fetchWithRetry(url);
-  return (await response.json()) as T;
-}
-
-let postsPromise: Promise<WPPost[]> | undefined;
-let categoriesPromise: Promise<WPCategory[]> | undefined;
+const data = snapshot as WPSnapshot;
+const posts = data.posts;
+const categories = data.categories;
 
 export function getAllPosts(): Promise<WPPost[]> {
-  if (!postsPromise) {
-    postsPromise = (async () => {
-      // Launch builds snapshot the latest 100 public articles by default. This keeps
-      // CI and Netlify deterministic while preserving enough real content for a
-      // production-usable publication. WP_MAX_PAGES can expand the snapshot later.
-      const configuredMaxPages = Number(import.meta.env.WP_MAX_PAGES ?? DEFAULT_MAX_POST_PAGES);
-      const maxPages = Number.isFinite(configuredMaxPages)
-        ? Math.max(1, Math.floor(configuredMaxPages))
-        : DEFAULT_MAX_POST_PAGES;
-
-      const pages: WPPost[][] = [];
-      for (let page = 1; page <= maxPages; page++) {
-        const response = await fetchWithRetry(
-          `${API_ROOT}/posts?status=publish&per_page=${PAGE_SIZE}&page=${page}&_embed=1`
-        );
-        const items = (await response.json()) as WPPost[];
-        pages.push(items);
-        if (items.length < PAGE_SIZE) break;
-      }
-
-      return pages.flat().sort(
-        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-      );
-    })();
-  }
-  return postsPromise;
+  return Promise.resolve(posts);
 }
 
 export function getCategories(): Promise<WPCategory[]> {
-  if (!categoriesPromise) {
-    categoriesPromise = fetchJSON<WPCategory[]>(`${API_ROOT}/categories?per_page=100&hide_empty=true`).then((items) =>
-      items.sort((a, b) => b.count - a.count)
-    );
-  }
-  return categoriesPromise;
+  return Promise.resolve(categories);
 }
 
 export function getPostTerms(post: WPPost): WPTerm[] {
