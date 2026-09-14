@@ -1,5 +1,9 @@
 const SITE_ID = 217076149;
 const API_ROOT = `https://public-api.wordpress.com/wp/v2/sites/${SITE_ID}`;
+const USER_AGENT = 'BitcoinVersus.tech Astro rebuild';
+const PAGE_SIZE = 100;
+const PAGE_BATCH_SIZE = 3;
+const MAX_RETRIES = 5;
 
 export type WPTerm = {
   id: number;
@@ -33,21 +37,39 @@ export type WPCategory = {
   count: number;
 };
 
-async function fetchJSON<T>(url: string, retries = 3): Promise<T> {
+async function fetchWithRetry(url: string, retries = MAX_RETRIES): Promise<Response> {
   let lastError: unknown;
+
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
-      const response = await fetch(url, {
-        headers: { 'User-Agent': 'BitcoinVersus.tech Astro rebuild' }
-      });
-      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-      return (await response.json()) as T;
+      const response = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+      if (response.ok) return response;
+
+      const retryAfter = Number(response.headers.get('retry-after') ?? '0');
+      lastError = new Error(`${response.status} ${response.statusText}`);
+
+      if (attempt < retries && (response.status === 429 || response.status >= 500)) {
+        const delayMs = retryAfter > 0 ? retryAfter * 1000 : attempt * 1000;
+        await new Promise((resolve) => setTimeout(resolve, delayMs));
+        continue;
+      }
+
+      throw lastError;
     } catch (error) {
       lastError = error;
-      if (attempt < retries) await new Promise((resolve) => setTimeout(resolve, attempt * 500));
+      if (attempt < retries) {
+        await new Promise((resolve) => setTimeout(resolve, attempt * 1000));
+        continue;
+      }
     }
   }
+
   throw new Error(`WordPress API request failed for ${url}: ${String(lastError)}`);
+}
+
+async function fetchJSON<T>(url: string): Promise<T> {
+  const response = await fetchWithRetry(url);
+  return (await response.json()) as T;
 }
 
 let postsPromise: Promise<WPPost[]> | undefined;
@@ -56,16 +78,27 @@ let categoriesPromise: Promise<WPCategory[]> | undefined;
 export function getAllPosts(): Promise<WPPost[]> {
   if (!postsPromise) {
     postsPromise = (async () => {
-      const firstUrl = `${API_ROOT}/posts?status=publish&per_page=100&page=1&_embed=1`;
-      const firstResponse = await fetch(firstUrl, { headers: { 'User-Agent': 'BitcoinVersus.tech Astro rebuild' } });
-      if (!firstResponse.ok) throw new Error(`WordPress posts request failed: ${firstResponse.status} ${firstResponse.statusText}`);
+      const firstUrl = `${API_ROOT}/posts?status=publish&per_page=${PAGE_SIZE}&page=1&_embed=1`;
+      const firstResponse = await fetchWithRetry(firstUrl);
       const firstPage = (await firstResponse.json()) as WPPost[];
       const totalPages = Math.max(1, Number(firstResponse.headers.get('X-WP-TotalPages') ?? '1'));
-      const remaining = await Promise.all(
-        Array.from({ length: totalPages - 1 }, (_, index) =>
-          fetchJSON<WPPost[]>(`${API_ROOT}/posts?status=publish&per_page=100&page=${index + 2}&_embed=1`)
-        )
-      );
+      const remaining: WPPost[][] = [];
+
+      // WordPress.com can throttle bursts. Fetch a few pages at a time so production
+      // builds remain reliable while still migrating the complete public archive.
+      for (let startPage = 2; startPage <= totalPages; startPage += PAGE_BATCH_SIZE) {
+        const pages = Array.from(
+          { length: Math.min(PAGE_BATCH_SIZE, totalPages - startPage + 1) },
+          (_, index) => startPage + index
+        );
+        const batch = await Promise.all(
+          pages.map((page) =>
+            fetchJSON<WPPost[]>(`${API_ROOT}/posts?status=publish&per_page=${PAGE_SIZE}&page=${page}&_embed=1`)
+          )
+        );
+        remaining.push(...batch);
+      }
+
       return [...firstPage, ...remaining.flat()].sort(
         (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
       );
