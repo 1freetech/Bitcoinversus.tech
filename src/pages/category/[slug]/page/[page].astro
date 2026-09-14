@@ -3,13 +3,12 @@ import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import StoryCard from '../../../../components/StoryCard.astro';
 import { getAllPosts, getCategories } from '../../../../lib/wordpress';
 
-const PAGE_SIZE = 24;
-
 export async function getStaticPaths() {
+  const pageSize = 24;
   const [categories, posts] = await Promise.all([getCategories(), getAllPosts()]);
   return categories.flatMap((category) => {
     const count = posts.filter((post) => post.categories.includes(category.id)).length;
-    const totalPages = Math.ceil(count / PAGE_SIZE);
+    const totalPages = Math.ceil(count / pageSize);
     return Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => ({
       params: { slug: category.slug, page: String(index + 2) },
       props: { category, pageNumber: index + 2, totalPages }
@@ -17,6 +16,7 @@ export async function getStaticPaths() {
   });
 }
 
+const PAGE_SIZE = 24;
 const { category, pageNumber, totalPages } = Astro.props;
 const posts = (await getAllPosts()).filter((post) => post.categories.includes(category.id));
 const start = (pageNumber - 1) * PAGE_SIZE;
