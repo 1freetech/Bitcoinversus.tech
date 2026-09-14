@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/fetch-wordpress.mjs && astro build",
+    "build": "astro build",
+    "refresh:content": "node scripts/fetch-wordpress.mjs",
     "preview": "astro preview"
   },
   "dependencies": {
