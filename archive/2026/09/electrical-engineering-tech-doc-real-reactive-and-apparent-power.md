@@ -1,10 +1,12 @@
-# Electrical Engineering Tech Doc: Real, Reactive, and Apparent Power
+# OSET.001: Real, Reactive, and Apparent Power
 
 - Published: 2026-09-28
 - WordPress Post ID: 19293
-- Live URL: https://bitcoinversus.tech/2026/09/28/electrical-engineering-tech-doc-real-reactive-and-apparent-power/
+- Live URL: https://bitcoinversus.tech/2026/09/28/oset-001-real-reactive-and-apparent-power/
+- Credential: OSET — Open-Source Electrical Technician
+- Lesson: OSET.001
 - Subject: Electrical Engineering / AC Power / Power Factor
-- Type: General Electrical Engineering Tech Doc
+- Type: OSET Technician Curriculum
 
 AC electrical systems are often described with three related power values: **real power**, **reactive power**, and **apparent power**. Understanding the difference helps technicians interpret equipment ratings, power factor, electrical loading, and measurements.
 
