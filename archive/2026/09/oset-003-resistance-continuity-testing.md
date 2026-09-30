@@ -1,15 +1,15 @@
-# OSET.003: Resistance and Continuity Testing
+# OSETC.003: Resistance and Continuity Testing
 
 - Published: 2026-09-29
 - WordPress Post ID: 19459
-- Live URL: https://bitcoinversus.tech/2026/09/29/oset-003-resistance-continuity-testing/
-- Credential: OSET — Open-Source Electrical Technician
-- Lesson: OSET.003
+- Live URL: https://bitcoinversus.tech/2026/09/29/osetc-003-resistance-continuity-testing/
+- Credential: OSETC — Open-Source Electrical Technician Certification
+- Lesson: OSETC.003
 - Subject: Electrical / Test Equipment / Resistance and Continuity
 - Authoritative reference: https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333
 - Video reference: https://www.youtube.com/watch?v=b9LznMD3B3Q
 
-OSET.003 continues the technician meter sequence with resistance and continuity testing.
+OSETC.003 continues the technician meter sequence with resistance and continuity testing.
 
 ## Resistance
 Resistance describes opposition to electric current and is measured in ohms (Ω). Resistance measurements are performed with the circuit de-energized.
