@@ -45,12 +45,12 @@ https://www.youtube.com/watch?v=eJCYYqUDqM8
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The <a href="https://x.com/WatcherGuru/status/2103236626185134367">initial public alert on X</a> captured the first confirmed loss estimate shortly after Bitget disclosed the incident.</p>
+<p>The <a href="https://twitter.com/WatcherGuru/status/2103236626185134367">initial public alert on X</a> captured the first confirmed loss estimate shortly after Bitget disclosed the incident.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://x.com/WatcherGuru/status/2103236626185134367","type":"rich","providerNameSlug":"x","responsive":true} -->
+<!-- wp:embed {"url":"https://twitter.com/WatcherGuru/status/2103236626185134367","type":"rich","providerNameSlug":"x","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
-https://x.com/WatcherGuru/status/2103236626185134367
+https://twitter.com/WatcherGuru/status/2103236626185134367
 </div></figure>
 <!-- /wp:embed -->
 
@@ -62,9 +62,9 @@ https://x.com/WatcherGuru/status/2103236626185134367
 <p>A follow-up post summarized Bitget’s early position that affected funds came from hot-wallet infrastructure, cold wallets remained secure and user balances would be covered by the exchange’s protection fund.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://x.com/WatcherGuru/status/2103238434307424256","type":"rich","providerNameSlug":"x","responsive":true} -->
+<!-- wp:embed {"url":"https://twitter.com/WatcherGuru/status/2103238434307424256","type":"rich","providerNameSlug":"x","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
-https://x.com/WatcherGuru/status/2103238434307424256
+https://twitter.com/WatcherGuru/status/2103238434307424256
 </div></figure>
 <!-- /wp:embed -->
 
@@ -106,9 +106,9 @@ https://www.youtube.com/watch?v=8b4wT3hUzGQ
 <p><strong>Advertisement</strong></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://x.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} -->
+<!-- wp:embed {"url":"https://twitter.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
-https://x.com/1BitcoinVersus/status/1937006164555993338
+https://twitter.com/1BitcoinVersus/status/1937006164555993338
 </div></figure>
 <!-- /wp:embed -->
 
@@ -135,6 +135,7 @@ https://x.com/1BitcoinVersus/status/1937006164555993338
 - Story X embeds: 2
 - YouTube embeds: 2
 - Footer BitcoinVersus.Tech advertisement X embed: 1
+- X compatibility form: twitter.com status URLs with providerNameSlug "x" and wp-block-embed-x
 - Featured image: unique 1200 × 630 JPEG, media ID 19592
 - Featured image duplicated in body: no
 - Mandatory disclaimer preserved: yes
