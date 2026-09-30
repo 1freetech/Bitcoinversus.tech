@@ -27,8 +27,8 @@ slug: berkeley-humanoid-lite-under-5000-open-source-robot
 <p>That lower barrier is what made <a href="https://x.com/simplifyinAI/status/2105130625808347511">Simplifying AI’s September 30 post</a> resonate. The post highlighted the combination of printed gearboxes, hobby-accessible parts, CAD, firmware and a reinforcement-learning stack, effectively contrasting a research platform that can live on a workbench with far more expensive commercial humanoids.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://x.com/simplifyinAI/status/2105130625808347511","type":"rich","providerNameSlug":"x","responsive":true,"className":"is-provider-x wp-block-embed-x"} -->
-<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://x.com/simplifyinAI/status/2105130625808347511</div><figcaption class="wp-element-caption"><em>Simplifying AI’s September 30 post renewed attention around Berkeley Humanoid Lite’s sub-$5,000 open-source design.</em></figcaption></figure>
+<!-- wp:embed {"url":"https://twitter.com/simplifyinAI/status/2105130625808347511","type":"rich","providerNameSlug":"x","responsive":true,"className":"is-provider-x wp-block-embed-x"} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">[tweet https://twitter.com/simplifyinAI/status/2105130625808347511 width='550' align='center']</div><figcaption class="wp-element-caption"><em>Simplifying AI’s September 30 post renewed attention around Berkeley Humanoid Lite’s sub-$5,000 open-source design.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
@@ -36,7 +36,7 @@ slug: berkeley-humanoid-lite-under-5000-open-source-robot
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=dIdJGkMDFl4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=dIdJGkMDFl4</div><figcaption class="wp-element-caption"><em>Hybrid Robotics demonstrates Berkeley Humanoid Lite and its open-source 3D-printed humanoid platform.</em></figcaption></figure>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><span class="embed-youtube" style="text-align:center;display:block">[youtube https://www.youtube.com/watch?v=dIdJGkMDFl4?rel=0&amp;w=640&amp;h=360]</span></div><figcaption class="wp-element-caption"><em>Hybrid Robotics demonstrates Berkeley Humanoid Lite and its open-source 3D-printed humanoid platform.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:heading -->
@@ -52,7 +52,7 @@ slug: berkeley-humanoid-lite-under-5000-open-source-robot
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=5qgEJpEf3pQ","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=5qgEJpEf3pQ</div><figcaption class="wp-element-caption"><em>A detailed Berkeley Humanoid Lite presentation shows the platform’s design goals, mechanical architecture and research workflow.</em></figcaption></figure>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><span class="embed-youtube" style="text-align:center;display:block">[youtube https://www.youtube.com/watch?v=5qgEJpEf3pQ?rel=0&amp;w=640&amp;h=360]</span></div><figcaption class="wp-element-caption"><em>A detailed Berkeley Humanoid Lite presentation shows the platform’s design goals, mechanical architecture and research workflow.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
@@ -67,8 +67,8 @@ slug: berkeley-humanoid-lite-under-5000-open-source-robot
 <p>The most important part of Humanoid Lite may be reproducibility. Builders can inspect the mechanical design, study the control software, modify the robot and train their own policies without waiting for a commercial humanoid vendor to expose a closed development environment. The result is closer to a robotics development platform than a finished consumer product.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://x.com/simplifyinAI/status/2105130627859403040","type":"rich","providerNameSlug":"x","responsive":true,"className":"is-provider-x wp-block-embed-x"} -->
-<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://x.com/simplifyinAI/status/2105130627859403040</div><figcaption class="wp-element-caption"><em>The follow-up post points builders directly toward the Berkeley Humanoid Lite open-source resources.</em></figcaption></figure>
+<!-- wp:embed {"url":"https://twitter.com/simplifyinAI/status/2105130627859403040","type":"rich","providerNameSlug":"x","responsive":true,"className":"is-provider-x wp-block-embed-x"} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">[tweet https://twitter.com/simplifyinAI/status/2105130627859403040 width='550' align='center']</div><figcaption class="wp-element-caption"><em>The follow-up post points builders directly toward the Berkeley Humanoid Lite open-source resources.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
@@ -84,7 +84,7 @@ slug: berkeley-humanoid-lite-under-5000-open-source-robot
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://twitter.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true,"className":"is-provider-x wp-block-embed-x"} -->
-<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/1BitcoinVersus/status/1937006164555993338</div><figcaption class="wp-element-caption"><em>BitcoinVersus.Tech advertisement: follow our X feed for Bitcoin, AI, hardware, software and infrastructure coverage.</em></figcaption></figure>
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">[tweet https://twitter.com/1BitcoinVersus/status/1937006164555993338 width='550' align='center']</div><figcaption class="wp-element-caption"><em>BitcoinVersus.Tech advertisement: follow our X feed for Bitcoin, AI, hardware, software and infrastructure coverage.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
