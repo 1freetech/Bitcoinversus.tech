@@ -1,15 +1,15 @@
-# OSET.006: Electrical Power — Watts and Kilowatts
+# OSETC.006: Electrical Power — Watts and Kilowatts
 
 - Published: 2026-09-29
 - WordPress Post ID: 19462
-- Live URL: https://bitcoinversus.tech/2026/09/29/oset-006-electrical-power-watts-kilowatts/
-- Credential: OSET — Open-Source Electrical Technician
-- Lesson: OSET.006
+- Live URL: https://bitcoinversus.tech/2026/09/29/osetc-006-electrical-power-watts-kilowatts/
+- Credential: OSETC — Open-Source Electrical Technician Certification
+- Lesson: OSETC.006
 - Subject: Electrical / Power / Watts / Kilowatts
 - Reference: https://www.fluke.com/en-us/learn/blog/calibration/common-electrical-measurements-instruments-calculations
 - Video: https://www.youtube.com/watch?v=mc979OhitAg
 
-OSET.006 keeps electrical power simple.
+OSETC.006 keeps electrical power simple.
 
 ## The one formula
 For basic DC or resistive examples: P = V × I.
