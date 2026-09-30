@@ -1,15 +1,15 @@
-# OSET.005: Ohm’s Law and Field Calculations
+# OSETC.005: Ohm’s Law and Field Calculations
 
 - Published: 2026-09-29
 - WordPress Post ID: 19461
-- Live URL: https://bitcoinversus.tech/2026/09/29/oset-005-ohms-law-field-calculations/
-- Credential: OSET — Open-Source Electrical Technician
-- Lesson: OSET.005
+- Live URL: https://bitcoinversus.tech/2026/09/29/osetc-005-ohms-law-field-calculations/
+- Credential: OSETC — Open-Source Electrical Technician Certification
+- Lesson: OSETC.005
 - Subject: Electrical / Ohm’s Law / Field Calculations
 - Reference: https://www.fluke.com/en-us/learn/blog/electrical/what-is-ohms-law
 - Video: https://www.youtube.com/watch?v=8jB6hDUqN0Y
 
-OSET.005 connects voltage, current, and resistance through Ohm’s Law.
+OSETC.005 connects voltage, current, and resistance through Ohm’s Law.
 
 ## Core formulas
 - V = I × R
