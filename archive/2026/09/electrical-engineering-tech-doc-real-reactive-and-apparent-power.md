@@ -1,10 +1,10 @@
-# OSET.001: Real, Reactive, and Apparent Power
+# OSETC.001: Real, Reactive, and Apparent Power
 
 - Published: 2026-09-28
 - WordPress Post ID: 19293
-- Live URL: https://bitcoinversus.tech/2026/09/28/oset-001-real-reactive-and-apparent-power/
-- Credential: OSET — Open-Source Electrical Technician
-- Lesson: OSET.001
+- Live URL: https://bitcoinversus.tech/2026/09/28/osetc-001-real-reactive-and-apparent-power/
+- Credential: OSETC — Open-Source Electrical Technician Certification
+- Lesson: OSETC.001
 - Subject: Electrical Engineering / AC Power / Power Factor
 - Type: OSET Technician Curriculum
 
