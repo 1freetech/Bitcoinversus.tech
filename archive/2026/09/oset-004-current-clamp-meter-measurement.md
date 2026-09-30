@@ -1,15 +1,15 @@
-# OSET.004: Current and Clamp-Meter Measurement
+# OSETC.004: Current and Clamp-Meter Measurement
 
 - Published: 2026-09-29
 - WordPress Post ID: 19460
-- Live URL: https://bitcoinversus.tech/2026/09/29/oset-004-current-clamp-meter-measurement/
-- Credential: OSET — Open-Source Electrical Technician
-- Lesson: OSET.004
+- Live URL: https://bitcoinversus.tech/2026/09/29/osetc-004-current-clamp-meter-measurement/
+- Credential: OSETC — Open-Source Electrical Technician Certification
+- Lesson: OSETC.004
 - Subject: Electrical / Current / Clamp-Meter Measurement
 - References: https://www.fluke.com/en/learn/blog/electrical/what-is-current ; https://www.fluke.com/en-us/learn/blog/clamps/how-to-measure-current
 - Video: https://www.youtube.com/watch?v=tpTjEighSak
 
-OSET.004 introduces electrical current and clamp-meter measurement.
+OSETC.004 introduces electrical current and clamp-meter measurement.
 
 ## Current means flow
 Current is the flow of electric charge and is measured in amperes (A). Loads draw current while operating.
