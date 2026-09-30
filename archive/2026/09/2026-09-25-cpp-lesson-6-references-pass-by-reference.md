@@ -1,5 +1,5 @@
 ---
-title: "C++ Lesson 6: References and Pass by Reference"
+title: "C++ Lesson 006: References and Pass by Reference"
 date: "2026-09-25T23:06:10"
 status: "publish"
 wordpress_post_id: 18573
@@ -11,7 +11,7 @@ categories:
   - Technology
 ---
 
-# C++ Lesson 6: References and Pass by Reference
+# C++ Lesson 006: References and Pass by Reference
 
 C++ Lesson 6 continues directly from Lesson 5's functions and parameters by introducing references and pass-by-reference. References let a function work with an existing object instead of receiving a separate copy.
 
