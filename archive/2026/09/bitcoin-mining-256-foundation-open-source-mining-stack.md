@@ -1,0 +1,45 @@
+# Bitcoin Mining: 256 Foundation Pushes a Fully Open Mining Stack
+
+Published: 2026-09-29
+
+Live: https://bitcoinversus.tech/2026/09/29/bitcoin-mining-256-foundation-open-source-mining-stack/
+
+WordPress Post ID: 19517
+Featured Media ID: 19520
+
+<!-- wp:paragraph --><p><strong>The 256 Foundation is trying to turn Bitcoin mining's most proprietary layers into interchangeable open-source building blocks, and its first private in-person fundraiser in San Francisco put the complete stack in front of operators, engineers, donors and vendors.</strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><a href="https://www.256foundation.org/newsroom/presidio-bitcoin-fundraiser">The nonprofit's September 15 account</a> says attendees at Presidio Bitcoin worked directly with four projects: Ember One for the hashboard, Libre Board for the control board, Mujina for firmware and Hydrapool for pool infrastructure. The organization says early versions of all four have already operated together as a complete open-source mining development kit.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>The 256 Foundation's goal is not one new ASIC model. It is an inspectable stack that separates the hashboard, controller, firmware and pool into components miners can study, modify and replace.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Four projects target four layers of a miner</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Ember One is the open hashboard reference design. Libre Board is the open control-board layer. Mujina supplies open mining firmware, while Hydrapool provides self-hostable pool software. The projects can develop independently, but the foundation is designing them to work as one system.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>That structure is important because modern ASIC operation spans more than the hashing chips. A technician depends on the controller, firmware, networking and pool path as well as the hashboards themselves. BitcoinVersus.tech's <a href="https://bitcoinversus.tech/2026/09/29/axeos-fundamentals-open-source-bitaxe-firmware-guide/">AxeOS fundamentals guide</a> shows the same separation on smaller Bitaxe-class hardware: physical miner, embedded firmware and operator interface are related but distinct layers.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>Opening only one layer still leaves the operator dependent on black boxes elsewhere in the mining path.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The San Francisco workshops moved beyond slides</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The September 12 gathering divided attendees into project workshops led by the maintainers. Participants examined how a standalone hashboard connects to a controller, how firmware drives the machine and how pool software verifies and pays for submitted work.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>Tyler Stevens also recorded the fundraiser presentation. <a href="https://twitter.com/tylerkstevens/status/2099605393743774159">The presentation walkthrough</a> gives the social-media view of the argument the foundation made in San Francisco.</p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://twitter.com/tylerkstevens/status/2099605393743774159","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/tylerkstevens/status/2099605393743774159</div><figcaption class="wp-element-caption"><em>Tyler Stevens walks through the 256 Foundation presentation used at its first private in-person fundraiser in San Francisco.</em></figcaption></figure><!-- /wp:embed -->
+<!-- wp:paragraph --><p><em>The event paired a high-level decentralization argument with hands-on sessions for the actual hardware, firmware and pool projects.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The stack has already mined as one system</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The foundation says the projects reached an important integration point when early versions of the open hashboard, control board, firmware and pool ran together. That matters more than four repositories existing separately because integration exposes the electrical, protocol and software boundaries that have to work in a real miner.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>The surrounding ecosystem is also expanding. BitcoinVersus.tech recently covered <a href="https://bitcoinversus.tech/2026/09/29/nerdos-1-1-0-1-expands-the-open-source-bitcoin-mining-stack/">NerdOS 1.1.0.1 expanding open-source mining software</a>, another example of miners gaining alternatives to closed management stacks.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>A reference design becomes more useful when operators can trace the complete path from a board doing SHA-256 work to the pool accounting for that work.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Open firmware makes operational behavior inspectable</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Firmware is especially important because it sits between physical ASIC behavior and the network services around it. Open code lets engineers inspect power controls, startup behavior, pool communications and telemetry rather than relying entirely on a vendor's implementation.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>That visibility also helps with protocol research. BitcoinVersus.tech's recent <a href="https://bitcoinversus.tech/2026/09/29/bitcoin-mining-vardiff-strand-miners-hashrate-curtailment/">vardiff analysis</a> showed how a seemingly small pool-control decision can matter when a miner changes hashrate. Open firmware and open pool software make those interactions easier to reproduce and audit.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>For mining operators, open source is most useful when it turns unexplained machine or pool behavior into something that can be measured, reproduced and fixed.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The projects are active, not finished</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The foundation says Ember One and Libre Board still need their latest revisions to complete final validation, while Mujina and Hydrapool remain under continuous development. In other words, the September event demonstrated a functioning direction rather than a finished commercial replacement for every proprietary miner.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><a href="https://podcasts.apple.com/nz/podcast/126-why-open-source-bitcoin-mining-matters-more-than-ever/id1657814571?i=1000791037114">A September 22 POD256 episode</a> revisited the fundraiser and described the same four-part structure while discussing open mining, heat reuse, off-grid systems and specialized miner designs.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>The next challenge is adoption and validation: more operators running the software, more builders testing the hardware and more contributors finding the failure modes that only appear outside a development bench.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>The technical milestone is not that every layer is complete. It is that all four layers now exist in the open and have been demonstrated as parts of one mining stack.</em></p><!-- /wp:paragraph --><!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">BitcoinVersus.Tech</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong>Advertisement</strong></p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://twitter.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/1BitcoinVersus/status/1937006164555993338</div><figcaption class="wp-element-caption"><em>Follow BitcoinVersus.Tech for independent reporting on Bitcoin mining hardware, firmware, energy and data-center infrastructure.</em></figcaption></figure><!-- /wp:embed -->
+<!-- wp:paragraph {"fontSize":"small"} --><p class="has-small-font-size"><strong><em><sup>BitcoinVersus.Tech Editor's Note:</sup></em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"fontSize":"small"} --><p class="has-small-font-size"><strong><em><sup>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</sup></em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"fontSize":"small"} --><p class="has-small-font-size"><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->
