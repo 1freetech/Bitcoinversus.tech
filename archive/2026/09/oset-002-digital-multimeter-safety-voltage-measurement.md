@@ -1,15 +1,15 @@
-# OSET.002: Digital Multimeter Safety and Voltage Measurement
+# OSETC.002: Digital Multimeter Safety and Voltage Measurement
 
 - Published: 2026-09-29
 - WordPress Post ID: 19456
-- Live URL: https://bitcoinversus.tech/2026/09/29/oset-002-digital-multimeter-safety-voltage-measurement/
-- Credential: OSET — Open-Source Electrical Technician
-- Lesson: OSET.002
+- Live URL: https://bitcoinversus.tech/2026/09/29/osetc-002-digital-multimeter-safety-voltage-measurement/
+- Credential: OSETC — Open-Source Electrical Technician Certification
+- Lesson: OSETC.002
 - Subject: Electrical / Test Equipment / Voltage Measurement
 - Source: https://www.fluke.com/en-us/learn/blog/electrical/part-1-electrical-testing-safety-preparing-for-absence-of-voltage-testing
 - Video reference: https://www.youtube.com/watch?v=lNghr1RbOgc
 
-OSET.002 introduces safe digital multimeter use and voltage measurement. A meter is one of an electrical technician’s most useful tools, but selecting the wrong function, input jack, or equipment rating can create a serious hazard.
+OSETC.002 introduces safe digital multimeter use and voltage measurement. A meter is one of an electrical technician’s most useful tools, but selecting the wrong function, input jack, or equipment rating can create a serious hazard.
 
 ## Inspect before measuring
 Before using a digital multimeter, inspect the meter, display, selector, probes, and test-lead insulation. Damaged equipment should be removed from service. The meter and accessories must also be appropriately rated for the circuit being tested.
