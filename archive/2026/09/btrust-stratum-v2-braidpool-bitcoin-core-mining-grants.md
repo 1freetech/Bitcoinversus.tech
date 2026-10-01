@@ -12,16 +12,16 @@ Featured Media ID: 19627
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The organization’s <a href="https://x.com/btrustteam/status/2102691525884776753">September 23 grant announcement</a> names mining as one of the quarter’s core technical themes, with developers working on pool communication, decentralized coordination, template delivery and production reliability.</p>
+<p>The organization’s <a href="https://twitter.com/btrustteam/status/2102691525884776753">September 23 grant announcement</a> names mining as one of the quarter’s core technical themes, with developers working on pool communication, decentralized coordination, template delivery and production reliability.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p>In its <a href="https://blog.btrust.tech/expanding-btrusts-long-term-developer-grants-across-the-global-majority/">long-term grant announcement</a>, Btrust says Brazilian developer plebhash will continue working full time on the Stratum V2 Reference Implementation, focusing on the specification, interoperability and infrastructure intended to reduce centralizing pressure in Bitcoin mining.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://x.com/btrustteam/status/2102691525884776753","type":"rich","providerNameSlug":"x","responsive":true} -->
+<!-- wp:embed {"url":"https://twitter.com/btrustteam/status/2102691525884776753","type":"rich","providerNameSlug":"x","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
-https://x.com/btrustteam/status/2102691525884776753
+https://twitter.com/btrustteam/status/2102691525884776753
 </div><figcaption class="wp-element-caption"><em>Btrust’s Q3 2026 grant announcement places Stratum V2, Braidpool and Bitcoin Core mining interfaces inside the same open-source infrastructure push.</em></figcaption></figure>
 <!-- /wp:embed -->
 
@@ -63,9 +63,9 @@ https://www.youtube.com/watch?v=khkNCP_lzYo
 <p>The broader concentration problem is visible above the software layer. BitcoinVersus.tech recently reported that <a href="https://bitcoinversus.tech/2026/09/26/public-bitcoin-miners-now-control-roughly-45-of-network-hashrate/">public mining companies now represent a large share of network hashrate</a>. Pool and protocol decentralization do not reverse corporate concentration by themselves, but they can limit how much transaction-selection power has to sit with a small number of coordinating entities.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://x.com/btrustteam/status/2100228573319606444","type":"rich","providerNameSlug":"x","responsive":true} -->
+<!-- wp:embed {"url":"https://twitter.com/btrustteam/status/2100228573319606444","type":"rich","providerNameSlug":"x","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
-https://x.com/btrustteam/status/2100228573319606444
+https://twitter.com/btrustteam/status/2100228573319606444
 </div><figcaption class="wp-element-caption"><em>Btrust’s September 16 announcement introduced long-term support for plebhash on Stratum V2 and Ansh Sharma on Braidpool, extending grant funding into mining protocol infrastructure.</em></figcaption></figure>
 <!-- /wp:embed -->
 
@@ -119,9 +119,9 @@ https://www.youtube.com/watch?v=p0Y6HzX7SzI
 <p><strong>Advertisement</strong></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://x.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} -->
+<!-- wp:embed {"url":"https://twitter.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
-https://x.com/1BitcoinVersus/status/1937006164555993338
+https://twitter.com/1BitcoinVersus/status/1937006164555993338
 </div><figcaption class="wp-element-caption"><em>BitcoinVersus.Tech advertisement: use promo code bitcoinversus for the offer described in the embedded post.</em></figcaption></figure>
 <!-- /wp:embed -->
 
