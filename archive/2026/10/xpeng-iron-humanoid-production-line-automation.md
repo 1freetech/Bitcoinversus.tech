@@ -3,7 +3,7 @@ title: "XPENG IRON Walks Off a Production Line Built for Scale"
 date: 2026-10-01
 published_url: https://bitcoinversus.tech/2026/10/01/xpeng-iron-humanoid-production-line-automation/
 wordpress_post_id: 19737
-featured_media_id: 19736
+featured_media_id: 19755
 slug: xpeng-iron-humanoid-production-line-automation
 ---
 
