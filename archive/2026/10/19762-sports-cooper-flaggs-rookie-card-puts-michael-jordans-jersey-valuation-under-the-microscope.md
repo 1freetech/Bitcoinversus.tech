@@ -3,8 +3,8 @@ post_id: 19762
 title: "Sports: Cooper Flagg’s Rookie Card Puts Michael Jordan’s Jersey Valuation Under the Microscope"
 published_url: "https://bitcoinversus.tech/2026/10/01/sports-cooper-flaggs-rookie-card-puts-michael-jordans-jersey-valuation-under-the-microscope/"
 status: "publish"
-featured_media_id: 19774
-featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/jordan-23-vs-flagg-32-collectibles-valuation.png"
+featured_media_id: 19789
+featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/jordan-23-vs-flagg-32-exact-cover.jpg"
 archived_from: "WordPress Gutenberg source"
 archive_date: "2026-10-01"
 ---
