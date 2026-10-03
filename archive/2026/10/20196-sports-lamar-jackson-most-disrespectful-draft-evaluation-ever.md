@@ -33,19 +33,19 @@ https://twitter.com/MichaelVick/status/777237133379592194
 <!-- wp:paragraph --><p>There is an important complication: Michael Vick himself was the No. 1 overall pick in the 2001 NFL Draft. So simply resembling Vick cannot, by itself, explain Jackson falling to No. 32.</p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>That is why the stronger argument is not that “Vick made teams afraid of Lamar.” It is that by 2018 the league had accumulated years of assumptions around the mobile Black quarterback archetype—questions about whether explosive runners could survive, whether unconventional mechanics could become accurate enough, whether the offense had to be rebuilt around them, and whether their athleticism belonged at another position.</p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>Jackson looked enough like the most famous version of that archetype that evaluators may have unconsciously reached for the old category before recognizing that Jackson was his own quarterback.</p><!-- /wp:paragraph -->
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=k0HRlu0M_JU","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=8KIzXVEEF_M","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=k0HRlu0M_JU
-</div><figcaption class="wp-element-caption"><em>Lamar Jackson discusses his transition to the NFL and how Baltimore planned to use him after the 2018 draft.</em></figcaption></figure>
+https://www.youtube.com/watch?v=8KIzXVEEF_M
+</div><figcaption class="wp-element-caption"><em>Michael Vick breaks down seven similarities and differences between himself and Lamar Jackson for FOX Sports.</em></figcaption></figure>
 <!-- /wp:embed -->
 <!-- wp:heading --><h2 class="wp-block-heading">Thirty-one selections went by before Baltimore moved</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>The precise fact is even stranger than the shorthand that “31 teams passed.” Thirty-one selections came off the board before Jackson was chosen; not every franchise owned a pick before No. 32. Four quarterbacks went ahead of him: Baker Mayfield, Sam Darnold, Josh Allen and Josh Rosen.</p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>Baltimore was not perfectly clairvoyant, either. The Ravens used pick No. 25 on tight end Hayden Hurst before trading back into the first round to take Jackson with the final pick of the night.</p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>That detail actually strengthens the story. Even the organization that understood Jackson better than the rest of the league believed it could wait.</p><!-- /wp:paragraph -->
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=jB57s1w_MzQ","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=fix7iJdJCnk","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=jB57s1w_MzQ
-</div><figcaption class="wp-element-caption"><em>The Baltimore Ravens welcome Lamar Jackson after selecting him in the first round of the 2018 NFL Draft.</em></figcaption></figure>
+https://www.youtube.com/watch?v=fix7iJdJCnk
+</div><figcaption class="wp-element-caption"><em>NBC Sports’ Pro Football Talk compares Lamar Jackson and Michael Vick as Jackson rewrote the rushing record book.</em></figcaption></figure>
 <!-- /wp:embed -->
 <!-- wp:heading --><h2 class="wp-block-heading">The NFL career demolished the position-change premise</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>Jackson did not merely become a competent NFL quarterback. He won the 2019 Associated Press Most Valuable Player award unanimously. He won the award again for the 2023 season. In 2024 he produced 4,172 passing yards, 41 passing touchdowns, only four interceptions, a 66.7% completion rate and a 119.6 passer rating.</p><!-- /wp:paragraph -->
