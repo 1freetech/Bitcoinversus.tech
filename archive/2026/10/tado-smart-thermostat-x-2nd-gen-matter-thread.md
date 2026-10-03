@@ -1,0 +1,38 @@
+---
+title: "tado° Makes Its Smart Thermostat Thinner Without Giving Up Matter and Thread"
+date: 2026-10-03
+published_url: "https://bitcoinversus.tech/2026/10/03/tado-smart-thermostat-x-2nd-gen-matter-thread/"
+wordpress_post_id: 20275
+featured_media_id: 20274
+slug: tado-smart-thermostat-x-2nd-gen-matter-thread
+category: technology
+---
+
+<!-- wp:paragraph --><p>Smart-home company tado° has redesigned its Smart Thermostat X around a simple engineering target: make connected heating control thinner, easier to operate and easier to maintain without abandoning open smart-home standards. The second-generation unit is 17.8 mm thick, uses a rechargeable battery and retains Matter and Thread connectivity.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>In <a href="https://www.tado.com/en/press/tado-presents-new-smart-thermostat-x-2nd-gen-its-thinnest-and-most-intuitive-thermostat-yet">tado°'s September launch announcement</a>, the company calls it its thinnest thermostat yet and says the rechargeable battery can last more than a year per charge. <a href="https://www.t3.com/home-living/smart-home/smart-home-launches-september-2026">T3 independently included the device among September's notable smart-home launches</a>. tado° also <a href="https://twitter.com/tado/status/2095157299807719881">introduced the second-generation thermostat on X</a>.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">A thermostat becomes a network endpoint</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The most important technology may be behind the display. Matter gives smart-home products a common application-layer standard, while Thread provides a low-power mesh network designed for connected devices. That combination reduces dependence on a single proprietary ecosystem and lets heating controls participate in a broader home network.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>That mirrors a wider shift toward interoperable infrastructure. BitcoinVersus.Tech recently looked at how <a href="https://bitcoinversus.tech/2026/10/03/cisco-axis-physical-security-meraki-dashboard/">Cisco and Axis are converging physical-security devices with network management</a>. In the home, Matter and Thread are pushing a similar idea at smaller scale: devices should be manageable parts of a connected system rather than isolated appliances.</p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://twitter.com/tado/status/2095157299807719881","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/tado/status/2095157299807719881
+</div><figcaption class="wp-element-caption"><em>tado° introduces its second-generation Smart Thermostat X, emphasizing its thinner design, simplified controls and automated energy management.</em></figcaption></figure><!-- /wp:embed -->
+<!-- wp:heading --><h2 class="wp-block-heading">The hardware got simpler</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The new thermostat replaces the previous front-button arrangement with a circular touch interface and a configurable top button. Users can assign the button to common actions such as showing humidity or temporarily boosting heat. An LED display provides temperature and system information without requiring the phone app for every interaction.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>The USB-C rechargeable battery addresses another mundane but important design issue: maintenance. tado° says it can operate for more than a year on one charge, reducing disposable-battery changes while keeping the wall unit slim.</p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=UXAmWLmFCFA","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=UXAmWLmFCFA
+</div><figcaption class="wp-element-caption"><em>Tech Spurt demonstrates the Tado X heating ecosystem, including Thread networking, installation, radiator controls and automated heating features.</em></figcaption></figure><!-- /wp:embed -->
+<!-- wp:heading --><h2 class="wp-block-heading">Software is becoming part of the heating system</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>tado° is pairing the hardware refresh with AI Assist, Multi Home management and hydronic-balancing features. AI Assist can adjust heating behavior using weather, geofencing, open-window detection and learned characteristics of a building. Multi Home lets one account manage heating across multiple properties or offices.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>This is another example of software moving into systems traditionally treated as purely mechanical or electrical. The same pattern appears in <a href="https://bitcoinversus.tech/2026/09/25/electrification-can-reduce-emissions-and-improve-energy-efficiency/">electrification and energy-efficiency systems</a>, where sensors and control logic increasingly determine how effectively physical equipment uses power.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">The useful smart home is becoming less proprietary</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Smart-home technology has spent years accumulating separate hubs, applications and incompatible device families. Matter and Thread are an attempt to move in the opposite direction. tado°'s new thermostat matters less because it is thinner than its predecessor and more because the physical redesign arrives without retreating into another closed connectivity stack.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>That same principle matters across connected computing. As BitcoinVersus.Tech noted while examining <a href="https://bitcoinversus.tech/2026/10/02/armv8-m-architecture-explained/">Armv8-M systems and embedded-device security</a>, small connected devices still have to solve real problems around communications, security and dependable operation. A thermostat may be simple at the wall, but behind it is increasingly a complete networked computer.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading"><strong><em>BitcoinVersus.Tech</em></strong></h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong><em>Advertisement</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://twitter.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/1BitcoinVersus/status/1937006164555993338
+</div><figcaption class="wp-element-caption"><em>BitcoinVersus.Tech advertisement.</em></figcaption></figure><!-- /wp:embed -->
+<!-- wp:paragraph --><p><strong><em>Editor's Note:</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our research initiatives, please donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</p><!-- /wp:paragraph -->
