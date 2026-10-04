@@ -1,0 +1,61 @@
+<!-- wp:paragraph --><p><strong>Cisco is expanding its Secure AI Factory with NVIDIA into rack-scale infrastructure by adding Supermicro liquid- and air-cooled systems, giving enterprises, neoclouds and sovereign AI projects a more integrated path from networking to full GPU racks.</strong></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>In <a href="https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-secure-ai-factory-nvidia-rack-scale.html">the company’s August 25 announcement</a>, Cisco said the expanded platform will combine Supermicro compute with Cisco AI networking, NVIDIA AI infrastructure, security, observability and operations software. The new systems are scheduled to become orderable through Cisco’s authorized channel ecosystem in October.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>The shift matters because the AI infrastructure bottleneck is moving beyond GPU supply. Rack-scale deployment now depends on networking, cooling, power, validation and observability working as one system instead of a collection of individually fast components.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Cisco is turning the network into part of the AI factory</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The architecture divides networking responsibilities across two major fabrics. Cisco Silicon One-based switches handle front-end traffic, while Cisco switches using NVIDIA Spectrum-X Ethernet silicon handle the lossless back-end fabric that connects accelerated compute.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That back-end network is where AI clusters become especially demanding. Training and high-throughput inference can force enormous volumes of synchronized data between GPUs, NICs and switches, so congestion, packet loss or poor telemetry can leave expensive accelerators waiting on the network.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.tech recently covered the same bandwidth pressure in <a href="https://bitcoinversus.tech/2026/10/02/oif-448g-1600zr-ai-networking-optics/">OIF’s push toward 448G electrical lanes and 1.6T optics</a>. Cisco’s rack-scale design approaches the same problem from the system side: networking has to be designed with the compute instead of attached afterward.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Supermicro CEO Charles Liang summarized the partnership in <a href="https://twitter.com/charlesliang/status/2092383410774061385">a public Twitter post</a>, describing a full-stack rack-to-fabric liquid-cooled system built around Cisco, Supermicro and NVIDIA technologies.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://twitter.com/charlesliang/status/2092383410774061385","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/charlesliang/status/2092383410774061385</div><figcaption class="wp-element-caption"><em>Supermicro CEO Charles Liang described the Cisco partnership as a rack-to-fabric liquid-cooled platform for the next generation of AI data centers.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Rack-scale means cooling and networking move together</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Cisco’s expanded design supports NVIDIA GB300 NVL72, Vera Rubin NVL72, HGX and MGX systems through Supermicro’s dense compute portfolio. The company says liquid-cooled Cisco networking can sit alongside liquid-cooled Supermicro servers so the thermal design extends from compute through the fabric.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That is a major change from the traditional model where servers, network switches and cooling infrastructure are planned as separate layers. AI racks are becoming dense enough that facility design, network architecture and compute configuration increasingly have to be engineered together.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=utIDvt4SVoo","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=utIDvt4SVoo</div><figcaption class="wp-element-caption"><em>Cisco and NVIDIA engineering leaders explain how the rack-scale architecture combines compute, networking, liquid cooling and validated deployment into one AI infrastructure stack.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.tech has already tracked how <a href="https://bitcoinversus.tech/2026/09/27/giga-computing-700kw-gaifa-ai-factory-gb300-nvl72/">GB300 NVL72 racks can turn an AI factory into a hundreds-of-kilowatts-per-rack facility problem</a>. Cisco’s move makes the network and cooling layers part of that same rack-scale conversation.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Validated infrastructure is becoming a performance feature</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>One of the less visible parts of the announcement is Cisco Validated Infrastructure Services. Rather than treating deployment as finished when the hardware is physically installed, Cisco says the service checks whether the cluster matches the reference design and can correlate job health with compute, NIC, optics and network telemetry.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><a href="https://siliconangle.com/2026/08/25/ai-infrastructure-execution-era-cisco-nvidia-cisconvidiaaifactory/">Independent analysis from SiliconANGLE</a> argues that this operational layer is becoming critical because AI infrastructure economics depend on getting racks from delivery to useful production quickly. A cluster that is technically installed but poorly tuned still leaves GPU capacity idle.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That same system-level thinking appears in <a href="https://bitcoinversus.tech/2026/09/27/d-matrix-raptor-nvidia-nvlink-fusion-rack-scale-ai/">d-Matrix Raptor joining NVIDIA NVLink Fusion for rack-scale inference</a>. Whether the system uses Ethernet, NVLink, PCIe fabrics or some combination, the useful unit of AI infrastructure is increasingly the whole rack and network rather than one accelerator card.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=hQ634IZ04V0","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=hQ634IZ04V0</div><figcaption class="wp-element-caption"><em>theCUBE’s launch discussion with Cisco and NVIDIA focuses on the move from GPU procurement to validated, production-ready AI factories and the networking required to keep them utilized.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The front-end and back-end network are converging operationally</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Cisco Nexus One is intended to unify operations across the company’s Silicon One and NVIDIA Spectrum-X based networking. That gives customers one operating model even though the underlying switching silicon is optimized for different traffic domains.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This is significant for data-center technicians and engineers because AI clusters create more cross-domain troubleshooting. A slow training job can be caused by a GPU, a NIC, an optic, a switch queue, a cable, a cooling problem or an application-layer issue. The ability to correlate those layers becomes part of the infrastructure itself.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">AI factories are becoming integrated industrial systems</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The Cisco, NVIDIA and Supermicro partnership reflects a broader transition in data-center design. The industry is moving away from assembling servers, networking and cooling independently and toward prevalidated systems where the rack, fabric and facility are designed around a specific class of AI workload.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>For operators, that means rack-and-stack work is becoming more multidisciplinary. Networking, optics, liquid cooling, telemetry, power delivery and GPU health increasingly intersect at the same deployment boundary.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>The next generation of AI networking will not be judged only by switch throughput. It will be judged by how quickly an entire rack reaches stable production, how consistently GPUs stay utilized and how easily operators can identify the component that is slowing the factory down.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
+
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">BitcoinVersus.Tech</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong>Advertisement</strong></p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://twitter.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/1BitcoinVersus/status/1937006164555993338</div><figcaption class="wp-element-caption"><em>Follow BitcoinVersus.Tech for independent reporting on networking, data centers, semiconductors, AI infrastructure and Bitcoin mining.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:paragraph --><p><strong><em><sup>BitcoinVersus.Tech Editor's Note:</sup></em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em><sup>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</sup></em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->
