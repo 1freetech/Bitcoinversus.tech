@@ -4,13 +4,13 @@
 
 <!-- wp:heading --><h2 class="wp-block-heading">The entire lesson in one model</h2><!-- /wp:heading -->
 
-<!-- wp:paragraph --><p>atomic bonds<br>↓<br>allowed energy bands + forbidden band gap<br>↓<br>thermal energy creates electrons + holes<br>↓<br>doping changes carrier concentration and Fermi level<br>↓<br>P-type + N-type regions create a junction<br>↓<br>diffusion creates a depletion region + electric field<br>↓<br>bias changes the barrier<br>↓<br>current, capacitance, breakdown, speed, leakage, and device behavior</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>atomic bonds<br>↓<br>allowed energy bands + forbidden <a href="https://bitcoinversus.tech/2026/01/11/semiconductor-characterization-the-band-gap/">band gap</a><br>↓<br>thermal energy creates electrons + holes<br>↓<br><a href="https://bitcoinversus.tech/2026/01/09/semiconductor-crystals-intrinsic-semiconductor-vs-extrinsic-semiconductor/">doping</a> changes carrier concentration and <a href="https://bitcoinversus.tech/2025/12/27/semiconductor-physics-understanding-the-fermi-level/">Fermi level</a><br>↓<br><a href="https://bitcoinversus.tech/2026/01/08/semiconductor-fundamentals-p-type-semiconductor/">P-type</a> + <a href="https://bitcoinversus.tech/2026/01/06/n-type-semiconductor-overview/">N-type</a> regions create a <a href="https://bitcoinversus.tech/2026/01/13/semiconductor-characterization-p-n-junction-diode/">PN junction</a><br>↓<br>diffusion creates a depletion region + electric field<br>↓<br>bias changes the barrier<br>↓<br><a href="https://bitcoinversus.tech/2026/01/12/semiconductor-physics-diode-i-v-characteristics/">current</a>, <a href="https://bitcoinversus.tech/2026/01/17/semiconductor-components-diode-electrical-characterization/">capacitance, breakdown</a>, speed, leakage, and device behavior</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>An engineer is not only asking, “Does the diode conduct?” The engineer asks <strong>why</strong>, <strong>how much</strong>, <strong>under what bias</strong>, <strong>at what temperature</strong>, and <strong>how the fabrication process changes the answer</strong>.</p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">1. Why silicon is useful</h2><!-- /wp:heading -->
 
-<!-- wp:paragraph --><p>In a crystal, large numbers of atoms interact. Instead of treating every electron as occupying an isolated atomic energy level, solid-state physics describes groups of allowed energies called <strong>bands</strong>.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>In a <a href="https://bitcoinversus.tech/2026/03/18/semiconductor-physics-lattice-atom/">crystal lattice</a>, large numbers of atoms interact. Instead of treating every electron as occupying an isolated atomic energy level, solid-state physics describes groups of allowed energies called <strong>bands</strong>.</p><!-- /wp:paragraph -->
 
 <!-- wp:list --><ul class="wp-block-list"><li><strong>Valence band:</strong> the highest band that is normally filled or nearly filled with bonding electrons.</li><li><strong>Conduction band:</strong> a higher-energy band in which electrons can move through the crystal and contribute strongly to conduction.</li><li><strong>Band gap, E<sub>g</sub>:</strong> an energy range between those bands with no allowed bulk crystal states in the simplified model.</li></ul><!-- /wp:list -->
 
@@ -34,7 +34,7 @@ https://www.youtube.com/watch?v=56d9qcsHGwE
 
 <!-- wp:paragraph --><p>valence electron gains energy<br>↓<br>electron enters conduction band<br>↓<br>free electron + hole left behind<br>(−) and (+)</p><!-- /wp:paragraph -->
 
-<!-- wp:paragraph --><p>For an <strong>intrinsic</strong> semiconductor in equilibrium, electrons and holes are generated in pairs, so:</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>For an <a href="https://bitcoinversus.tech/2026/01/09/semiconductor-crystals-intrinsic-semiconductor-vs-extrinsic-semiconductor/"><strong>intrinsic semiconductor</strong></a> in equilibrium, electrons and holes are generated in pairs, so:</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p><strong>n = p = n<sub>i</sub></strong></p><!-- /wp:paragraph -->
 
@@ -90,7 +90,7 @@ https://www.youtube.com/watch?v=z3MlkNUuq9w
 
 <!-- wp:heading --><h2 class="wp-block-heading">7. The Fermi level: the occupancy reference engineers track</h2><!-- /wp:heading -->
 
-<!-- wp:paragraph --><p>The <strong>Fermi level</strong> is an energy reference connected to the probability that available states are occupied by electrons. In an equilibrium band diagram, it is one of the fastest ways to understand how doping changes carrier populations.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>The <a href="https://bitcoinversus.tech/2025/12/27/semiconductor-physics-understanding-the-fermi-level/"><strong>Fermi level</strong></a> is an energy reference connected to the probability that available states are occupied by electrons. In an equilibrium band diagram, it is one of the fastest ways to understand how <a href="https://bitcoinversus.tech/2025/12/28/semiconductor-physics-carrier-statistics/">carrier statistics</a> and doping change carrier populations.</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>N-type doping → Fermi level shifts toward conduction band<br>P-type doping → Fermi level shifts toward valence band</p><!-- /wp:paragraph -->
 
@@ -100,7 +100,7 @@ https://www.youtube.com/watch?v=z3MlkNUuq9w
 
 <!-- wp:heading --><h2 class="wp-block-heading">8. Put P-type and N-type regions together: a PN junction</h2><!-- /wp:heading -->
 
-<!-- wp:paragraph --><p>A PN junction is not normally manufactured by physically gluing separate chunks together. Engineers create neighboring regions with different doping profiles inside the semiconductor.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>A <a href="https://bitcoinversus.tech/2026/01/13/semiconductor-characterization-p-n-junction-diode/">PN junction</a> is not normally manufactured by physically gluing separate chunks together. Engineers create neighboring regions with different <a href="https://bitcoinversus.tech/2026/01/08/semiconductor-fundamentals-p-type-semiconductor/">P-type</a> and <a href="https://bitcoinversus.tech/2026/01/06/n-type-semiconductor-overview/">N-type</a> doping profiles inside the semiconductor.</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Immediately after the junction exists, carrier concentration gradients drive diffusion:</p><!-- /wp:paragraph -->
 
@@ -126,7 +126,7 @@ https://www.youtube.com/watch?v=BHA4teZmwT0
 
 <!-- wp:paragraph --><p>Example: using N<sub>A</sub> = N<sub>D</sub> = 10<sup>16</sup> cm<sup>-3</sup>, n<sub>i</sub> = 10<sup>10</sup> cm<sup>-3</sup>, and kT/q ≈ 0.0259 V at about 300 K gives a built-in voltage of roughly <strong>0.71 V</strong>.</p><!-- /wp:paragraph -->
 
-<!-- wp:paragraph --><p>That does <strong>not</strong> mean every silicon diode has a magical fixed 0.7 V threshold. The familiar “0.7 V” rule is only a rough circuit-level approximation. Real forward voltage depends on current density, geometry, temperature, recombination, series resistance, doping, and device construction.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>That does <strong>not</strong> mean every silicon diode has a magical fixed 0.7 V threshold. The familiar “0.7 V” rule is only a rough circuit-level approximation. Real <a href="https://bitcoinversus.tech/2026/01/12/semiconductor-physics-diode-i-v-characteristics/">diode I-V behavior</a> and forward voltage depend on current density, geometry, temperature, recombination, <a href="https://bitcoinversus.tech/2026/02/01/semiconductor-physics-diode-series-resistance/">series resistance</a>, doping, and device construction.</p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">10. Depletion width is an engineering variable</h2><!-- /wp:heading -->
 
@@ -140,7 +140,7 @@ https://www.youtube.com/watch?v=BHA4teZmwT0
 
 <!-- wp:heading --><h2 class="wp-block-heading">11. Forward bias and reverse bias</h2><!-- /wp:heading -->
 
-<!-- wp:paragraph --><p><strong>Forward bias:</strong><br>P side made more positive than N side<br>↓<br>barrier is reduced<br>↓<br>majority carriers cross the junction more easily<br>↓<br>large diffusion current can develop<br><br><strong>Reverse bias:</strong><br>P side made more negative than N side<br>↓<br>barrier increases<br>↓<br>depletion region widens<br>↓<br>small leakage current flows until breakdown mechanisms dominate</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><a href="https://bitcoinversus.tech/2026/02/04/semiconductor-physics-forward-bias/"><strong>Forward bias:</strong></a><br>P side made more positive than N side<br>↓<br>barrier is reduced<br>↓<br>majority carriers cross the junction more easily<br>↓<br>large diffusion current can develop<br><br><a href="https://bitcoinversus.tech/2026/01/12/semiconductor-physics-diode-i-v-characteristics/"><strong>Reverse bias:</strong></a><br>P side made more negative than N side<br>↓<br>barrier increases<br>↓<br>depletion region widens<br>↓<br>small leakage current flows until breakdown mechanisms dominate</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Toshiba's semiconductor e-learning material gives a concise reference for zero-bias, forward-bias, and reverse-bias PN-junction behavior: <a href="https://toshiba.semicon-storage.com/ap-en/semiconductor/knowledge/e-learning/discrete/chap1/chap1-6.html">Toshiba — PN Junction</a>.</p><!-- /wp:paragraph -->
 
@@ -148,17 +148,17 @@ https://www.youtube.com/watch?v=BHA4teZmwT0
 
 <!-- wp:paragraph --><p>A schematic that says “P” and “N” hides a large amount of process engineering. Real devices have spatially varying dopant concentration.</p><!-- /wp:paragraph -->
 
-<!-- wp:paragraph --><p><strong>Process choices:</strong><br>dopant species<br>implant dose<br>implant energy<br>diffusion temperature / time<br>activation anneal<br>masking geometry<br>prior thermal budget<br>↓<br>actual doping profile versus depth<br>↓<br>resistance + field + depletion width + junction depth<br>↓<br>capacitance + leakage + breakdown + switching behavior</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong>Process choices:</strong><br>dopant species<br>implant dose<br>implant energy<br>diffusion temperature / time<br><a href="https://bitcoinversus.tech/2026/02/15/semiconductor-physics-the-annealing-process/">activation anneal</a><br>masking geometry<br>prior thermal budget<br>↓<br>actual doping profile versus depth<br>↓<br>resistance + field + depletion width + junction depth<br>↓<br>capacitance + leakage + breakdown + switching behavior</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>This is the bridge between <strong>device physics</strong> and <strong>process integration</strong>. The engineer cannot optimize one parameter in isolation.</p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">13. Common engineering tradeoffs</h2><!-- /wp:heading -->
 
-<!-- wp:list --><ul class="wp-block-list"><li><strong>Higher doping can reduce bulk/contact resistance</strong>, but it can also increase junction capacitance and alter mobility, recombination, and breakdown behavior.</li><li><strong>Lower doping can widen depletion regions</strong> and support higher voltages in some structures, but it increases resistive loss.</li><li><strong>Abrupt versus graded junction profiles</strong> change electric-field shape and capacitance.</li><li><strong>Thermal processing</strong> activates dopants but can also cause diffusion that changes junction depth and lateral dimensions.</li><li><strong>Temperature</strong> changes intrinsic carrier concentration, mobility, leakage, and diode I-V behavior.</li><li><strong>Very heavy doping</strong> can push the device beyond simple nondegenerate textbook assumptions.</li></ul><!-- /wp:list -->
+<!-- wp:list --><ul class="wp-block-list"><li><strong>Higher doping can reduce <a href="https://bitcoinversus.tech/2026/01/21/semiconductor-physics-contact-resistance/">bulk/contact resistance</a></strong>, but it can also increase <a href="https://bitcoinversus.tech/2026/01/17/semiconductor-components-diode-electrical-characterization/">junction capacitance</a> and alter mobility, recombination, and breakdown behavior.</li><li><strong>Lower doping can widen depletion regions</strong> and support higher voltages in some structures, but it increases resistive loss.</li><li><strong>Abrupt versus graded junction profiles</strong> change electric-field shape and capacitance.</li><li><strong><a href="https://bitcoinversus.tech/2026/02/15/semiconductor-physics-the-annealing-process/">Thermal processing</a></strong> activates dopants but can also cause diffusion that changes junction depth and lateral dimensions.</li><li><strong>Temperature</strong> changes intrinsic carrier concentration, mobility, leakage, and <a href="https://bitcoinversus.tech/2026/01/12/semiconductor-physics-diode-i-v-characteristics/">diode I-V behavior</a>.</li><li><strong>Very heavy doping</strong> can push the device beyond simple nondegenerate textbook assumptions.</li></ul><!-- /wp:list -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">14. Engineer's troubleshooting question set</h2><!-- /wp:heading -->
 
-<!-- wp:paragraph --><p>Suppose a fabricated diode shows lower breakdown voltage and higher junction capacitance than expected. An engineering response is not “the diode is bad.” Start asking:</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>Suppose a fabricated diode shows lower <a href="https://bitcoinversus.tech/2026/01/17/semiconductor-components-diode-electrical-characterization/">breakdown voltage and higher junction capacitance</a> than expected. That is an electrical-characterization problem to explain, not simply “the diode is bad.” Start asking:</p><!-- /wp:paragraph -->
 
 <!-- wp:list {"ordered":true} --><ol class="wp-block-list"><li>Did the measured doping concentration match target?</li><li>Did the implant dose or energy shift?</li><li>Did a thermal step diffuse the junction deeper or change its gradient?</li><li>Is the depletion width smaller than expected?</li><li>Is the electric field peaking somewhere unexpected?</li><li>Did geometry or edge termination change?</li><li>Is leakage dominated by bulk generation, surface defects, contamination, or junction damage?</li><li>Do process-control measurements agree with electrical test data?</li></ol><!-- /wp:list -->
 
