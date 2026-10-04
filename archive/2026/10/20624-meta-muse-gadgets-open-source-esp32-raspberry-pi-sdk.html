@@ -1,0 +1,111 @@
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size"><strong>Meta is opening its Muse personal AI agent to physical hardware with Muse Gadgets, an open-source ESP32 firmware and Linux SDK that lets developers connect the agent to Raspberry Pi computers, displays, buttons, sensors, speakers and other electronics.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/">TechCrunch reports</a> that the new project is aimed directly at makers and developers who want to build their own Muse-powered devices instead of waiting for Meta to define every hardware form factor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link">The Verge independently detailed the release</a>, including Meta’s own Muse Home Link, a small USB-C-powered device designed to put Muse on a home network where community-built skills can interact with compatible devices.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Meta Superintelligence Labs product head Nat Friedman <a href="https://twitter.com/natfriedman/status/2106099383037309211">announced Muse Gadgets on X</a> as an open-source ESP32 firmware and Linux SDK for building hardware peripherals around Muse.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://twitter.com/natfriedman/status/2106099383037309211","type":"rich","providerNameSlug":"x","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/natfriedman/status/2106099383037309211
+</div><figcaption class="wp-element-caption"><em>Nat Friedman announces the open-source Muse Gadgets project for ESP32 and Linux hardware.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Muse is moving beyond the app</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The important part of Muse Gadgets is not a single device. It is the interface between an AI agent and ordinary physical hardware. An ESP32 can handle embedded sensors, buttons and displays, while a Raspberry Pi or Linux computer can support richer networking and software integrations. The SDK gives builders a path to connect those components to an agent that can reason about tasks and act across services.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That is a different strategy from shipping one sealed AI gadget. Developers can experiment with e-ink status displays, push-to-talk devices, smart-home controls, small touchscreens or specialized interfaces without Meta having to manufacture every variation itself.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The approach echoes the broader shift BitcoinVersus.Tech examined when <a href="https://bitcoinversus.tech/2026/09/29/openai-launches-dots-always-on-agents/">OpenAI introduced persistent Dots agents</a>. Once an agent can keep working over time, the next question is where that agent should live and which physical interfaces should expose it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Meta built its own reference gadget</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Meta’s Muse Home Link demonstrates what the platform can do without defining the entire category. Friedman says the USB-C-powered device connects Muse to a home network so it can communicate with devices such as TVs and speakers and other equipment that exposes compatible network interfaces.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The company manufactured 5,000 Home Link units for Muse subscribers while also making the device’s code open source. That combination turns the hardware into both a consumer experiment and a reference design that developers can inspect while building their own peripherals.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">ESP32 makes the physical layer cheap and flexible</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>ESP32 boards are widely used in embedded projects because they combine inexpensive microcontrollers with wireless connectivity and a large ecosystem of sensors, displays and actuators. Pairing that hardware with a Linux SDK widens the range further: tiny embedded devices can handle direct physical interaction while Raspberry Pi-class systems bridge into more complex local services.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That matters because agentic AI increasingly needs more than a chat window. BitcoinVersus.Tech recently covered <a href="https://bitcoinversus.tech/2026/09/26/microsoft-copilot-ai-os-for-work/">Microsoft’s effort to turn Copilot into an operating layer for work</a>. Muse Gadgets applies a similar idea to physical computing: the agent becomes a layer above many different pieces of hardware rather than being locked to one screen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Giving an agent hardware access raises the safety bar</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The flexibility also changes the risk model. A text assistant that makes a bad suggestion is different from an agent connected to lights, printers, displays, sensors or other devices. Hardware actions need clear permissions, predictable failure modes and boundaries that remain enforceable when the model misunderstands a request.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That is why physical agents increasingly need independent control layers. BitcoinVersus.Tech’s coverage of <a href="https://bitcoinversus.tech/2026/09/28/nvidia-adds-a-hardware-watchdog-for-autonomous-ai-agents/">NVIDIA’s hardware-watchdog approach to autonomous AI agents</a> examined the same architectural problem from another direction: important limits should not depend entirely on the model policing itself.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Open-source peripherals could become an agent hardware laboratory</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Muse Gadgets gives Meta a way to learn from thousands of small hardware experiments without deciding in advance which ones deserve a commercial product. Builders can discover which interfaces are actually useful, which sensors agents need, and where latency or reliability becomes a problem.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If the ecosystem grows, the most consequential outcome may not be any single Muse gadget. It may be a common pattern in which AI agents sit above interchangeable embedded hardware, with developers choosing the sensors and controls that fit each task. That would make the maker bench—not the smartphone—the testing ground for a new class of physical AI interfaces.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">BitcoinVersus.Tech</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong><em>Advertisement</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://twitter.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/1BitcoinVersus/status/1937006164555993338
+</div><figcaption class="wp-element-caption"><em>BitcoinVersus.Tech advertisement.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><strong><em>Editor's Note:</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our research initiatives, please donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</p>
+<!-- /wp:paragraph -->
