@@ -45,7 +45,7 @@ https://www.youtube.com/watch?v=pIlBlNW7sOo
 
 <!-- wp:heading --><h2 class="wp-block-heading">3. The second hazard: tiny glass shards</h2><!-- /wp:heading -->
 
-<!-- wp:paragraph --><p>Cleaving, stripping, or terminating glass fiber can create extremely small, sharp glass fragments. These scraps can penetrate skin, stick to clothing, migrate into carpets, or become difficult to see on a normal work surface.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>Cleaving, stripping, splicing, or terminating glass fiber can create extremely small, sharp glass fragments. These scraps can penetrate skin, stick to clothing, migrate into carpets, or become difficult to see on a normal work surface.</p><!-- /wp:paragraph -->
 
 <!-- wp:list --><ul class="wp-block-list"><li>Use a controlled work area.</li><li>Keep food and drinks away from fiber work.</li><li>Place glass scraps immediately into an approved closed disposal container.</li><li>Do not brush scraps away with your hand.</li><li>Use the site's approved cleanup method.</li><li>Wash hands after completing fiber preparation or splicing work.</li></ul><!-- /wp:list -->
 
