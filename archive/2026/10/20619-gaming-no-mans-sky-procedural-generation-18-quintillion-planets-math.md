@@ -1,6 +1,6 @@
 ---
 post_id: 20619
-title: "Gaming: How No Man’s Sky Generates 18 Quintillion Planets With Math"
+title: "Gaming: No Man’s Sky Is Basically the Biggest 3D Sandbox Ever — Here’s How"
 live_url: "https://bitcoinversus.tech/2026/10/04/gaming-no-mans-sky-procedural-generation-18-quintillion-planets-math/"
 featured_media_id: 20621
 featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/no-mans-sky-procedural-universe-cover-final-1200x630-1.png"
