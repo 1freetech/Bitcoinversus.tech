@@ -2,8 +2,8 @@
 post_id: 20619
 title: "Gaming: How No Man’s Sky Generates 18 Quintillion Planets With Math"
 live_url: "https://bitcoinversus.tech/2026/10/04/gaming-no-mans-sky-procedural-generation-18-quintillion-planets-math/"
-featured_media_id: 20618
-featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/no-mans-sky-procedural-universe-cover.png"
+featured_media_id: 20621
+featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/no-mans-sky-procedural-universe-cover-final-1200x630-1.png"
 status: publish
 ---
 
