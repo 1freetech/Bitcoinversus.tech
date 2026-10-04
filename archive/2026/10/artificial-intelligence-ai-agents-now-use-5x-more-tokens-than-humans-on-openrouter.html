@@ -1,0 +1,61 @@
+<!-- wp:paragraph --><p><strong>AI agents are now consuming roughly five times as many tokens as human-driven traffic on OpenRouter, turning autonomous software into a rapidly growing source of inference demand—and making memory, not just compute, a bigger infrastructure constraint.</strong></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>According to <a href="https://openrouter.ai/data">OpenRouter’s own aggregated usage data</a>, agentic workloads overtook human traffic earlier this year and have continued accelerating. A current analysis highlighted by Tom’s Hardware puts agent traffic at about 7.3 trillion tokens versus 1.4 trillion for human-driven use in the measured period.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>The headline is not simply that agents generate more text. The deeper infrastructure issue is that agents repeatedly reread long contexts, pushing cached-token volume and KV-cache memory requirements upward even when those tokens are cheaper to serve than uncached prompts.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Agents crossed humans and kept accelerating</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>OpenRouter classifies API keys as agentic, mixed, or human using a weighted set of behavioral signals that includes tool-call rates, turn counts, timing gaps, and other usage patterns. Its data therefore measures activity on one major AI routing platform—not every AI interaction on the internet—but it offers a large real-world view of how production workloads are changing.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Futurum Group CEO Daniel Newman summarized the trend in <a href="https://twitter.com/danielnewmanUV/status/2105385615009431868">a widely shared Twitter post</a>, arguing that AI systems are increasingly becoming consumers of AI themselves as agents call models, tools, and other agents in loops.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://twitter.com/danielnewmanUV/status/2105385615009431868","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/danielnewmanUV/status/2105385615009431868</div><figcaption class="wp-element-caption"><em>Daniel Newman highlighted OpenRouter data showing agent token volume running at roughly five times human-driven usage.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:paragraph --><p>The trend fits BitcoinVersus.tech’s recent coverage of <a href="https://bitcoinversus.tech/2026/09/29/openai-launches-dots-always-on-ai-agents-that-work-across-apps/">OpenAI’s always-on Dots agents</a>. Software that keeps working after the user stops typing naturally creates more model calls, more context replay, and more background inference than a conventional one-question chatbot.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">More than 85% of agent tokens are cached prompts</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The most important number may be the composition of that traffic. <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/futurum-ceo-says-agents-use-ai-5x-more-than-humans-number-will-eventually-hit-10x-but-agents-are-mostly-rereading-what-theyve-already-seen">Independent reporting on the OpenRouter figures</a> says more than 85% of agent tokens are coming from cached prompts.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That means agents are spending much of their token volume rereading context they have already seen: conversation history, instructions, tool outputs, code, documents, system state, and other persistent information required to continue a long-running task.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Cached tokens can dramatically reduce repeated computation, but they do not disappear from the hardware problem. During inference, transformer systems maintain key-value data for previous tokens so the model does not recompute the entire attention history every time it generates the next token. That retained state is the KV cache.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=cQM2RfT4VpY","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=cQM2RfT4VpY</div><figcaption class="wp-element-caption"><em>This LLM-inference deep dive explains KV cache, prefill versus decode, memory bandwidth, batching, and why modern inference frequently becomes a memory-management problem.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">KV cache turns context into a memory-capacity problem</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The longer an agent runs, the more state it may need to preserve or repeatedly reintroduce. Multiple concurrent agents multiply that pressure. A server can therefore have enough raw accelerator compute for more requests while still running into memory-capacity or memory-bandwidth limits.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That helps explain why AI infrastructure increasingly revolves around the whole serving stack rather than just GPU arithmetic. BitcoinVersus.tech recently covered <a href="https://bitcoinversus.tech/2026/10/04/cloudflare-clef-38-8ms-decision-models-ai-agents/">Cloudflare Clef’s push for 38.8-millisecond agent decisions</a>, another example of inference architecture being optimized around latency, routing, and repeated machine-to-machine calls.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>OpenRouter’s Head of Insights Peter Walker captured the crossover earlier in the year, noting that February 6 may have been the last day on the platform when human-driven traffic consumed more tokens than agents.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://twitter.com/PeterJ_Walker/status/2087256772776284437","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/PeterJ_Walker/status/2087256772776284437</div><figcaption class="wp-element-caption"><em>OpenRouter’s Peter Walker marked the point when agent traffic overtook human token consumption on the platform.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Token volume is not the same thing as spending</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The 5× comparison needs an important caveat: token volume is not the same as cost or revenue. Cached-token reads are generally cheaper than processing the same input from scratch, and OpenRouter’s figures describe its own platform rather than the entire AI market.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Still, lower token prices do not erase physical resource use. Context has to be stored, moved, scheduled, and served. As agent concurrency rises, the infrastructure challenge shifts toward fitting more active contexts into memory while keeping latency predictable.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That efficiency race is also visible in BitcoinVersus.tech’s coverage of <a href="https://bitcoinversus.tech/2026/10/04/openai-gpt-6-1-sol-near-astra-performance-one-fifth-price/">GPT-6.1 Sol’s push toward cheaper high-performance inference</a>. Lower per-request economics can stimulate even more usage, especially when software agents can generate requests continuously without waiting for a person.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The next AI user may be another AI</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Human adoption remains important, but autonomous software changes the scaling equation. A single person can supervise multiple agents, and each agent can produce a chain of model calls far larger than the user’s original prompt.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That means future AI capacity planning may need to forecast not only how many people use a service, but how many machine-generated calls each human request can trigger, how much context those agents preserve, and how long that state remains resident in accelerator memory.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>If OpenRouter’s trajectory holds, AI infrastructure is moving into a phase where software agents become major customers of the compute stack themselves—and the race for memory capacity may become just as consequential as the race for more FLOPS.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
+
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">BitcoinVersus.Tech</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong>Advertisement</strong></p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://twitter.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/1BitcoinVersus/status/1937006164555993338</div><figcaption class="wp-element-caption"><em>Follow BitcoinVersus.Tech for independent reporting on AI infrastructure, semiconductors, networking, data centers, and Bitcoin mining.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:paragraph --><p><strong><em><sup>BitcoinVersus.Tech Editor's Note:</sup></em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em><sup>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</sup></em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->
