@@ -67,7 +67,33 @@ https://www.youtube.com/watch?v=C9RyEiEzMiU
 </div><figcaption class="wp-element-caption"><em>Murray’s GDC talk breaks down the mathematics and production challenges behind building procedural planets that can look both realistic and alien.</em></figcaption></figure>
 <!-- /wp:embed -->
 
+<!-- wp:group -->
+<div class="wp-block-group">
 <!-- wp:heading -->
+<h2 class="wp-block-heading">The same procedural foundation keeps evolving</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No Man’s Sky is useful to study because Hello Games did not freeze its procedural systems at launch. The studio has repeatedly revised terrain, water, atmospherics, biomes and creatures while preserving the idea that a compact set of rules can generate enormous amounts of explorable variation. The engine has become a living laboratory for how procedural content can be refreshed without replacing the entire universe by hand.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=h-kifCYToAU","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=h-kifCYToAU
+</div><figcaption class="wp-element-caption"><em>Game Informer’s behind-the-scenes technology tour follows Sean Murray through the tools Hello Games used to turn procedural rules into an entire explorable galaxy.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p>That long-term evolution is visible in Murray’s <a href="https://twitter.com/NoMansSky/status/1813559280957542470">Worlds Part I announcement</a>, which highlighted a universe refresh alongside new creatures, varied skies, dynamic waves, new biomes and upgraded atmospheric systems. Those features show why procedural generation is more than a launch-day trick: when the underlying rules improve, the same enormous possibility space can produce noticeably richer worlds.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://twitter.com/NoMansSky/status/1813559280957542470","type":"rich","providerNameSlug":"x","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/NoMansSky/status/1813559280957542470
+</div><figcaption class="wp-element-caption"><em>Sean Murray’s Worlds Part I post shows Hello Games continuing to expand the same procedural universe with new creatures, biomes, skies, water and atmospheric systems.</em></figcaption></figure>
+<!-- /wp:embed -->
+</div>
+<!-- /wp:group --><!-- wp:heading -->
 <h2 class="wp-block-heading">No Man’s Sky is also a lesson in game-engine architecture</h2>
 <!-- /wp:heading -->
 
