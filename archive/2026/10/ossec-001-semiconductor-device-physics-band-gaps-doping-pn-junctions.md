@@ -1,39 +1,10 @@
----
-title: "OSSEC.001: Semiconductor Device Physics — Band Gaps, Doping, and PN Junctions"
-status: published
-wordpress_post_id: 20450
-published: "2026-10-04T00:53:24"
-live_url: "https://bitcoinversus.tech/2026/10/04/ossec-001-semiconductor-device-physics-band-gaps-doping-pn-junctions/"
-series: "Open Source Semiconductor Engineer Certification"
-pathway: semiconductor/engineer
-lesson_number: "001"
-featured_media_id: 20449
-youtube_1: "https://www.youtube.com/watch?v=56d9qcsHGwE"
-youtube_2: "https://www.youtube.com/watch?v=z3MlkNUuq9w"
-youtube_3: "https://www.youtube.com/watch?v=BHA4teZmwT0"
----
-
 <!-- wp:paragraph {"fontSize":"large"} --><p class="has-large-font-size"><strong>Semiconductor engineering starts with one idea: electrical behavior can be designed by controlling which energy states electrons can occupy and how many mobile charge carriers exist.</strong></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>This is <strong>OSSEC.001</strong>, the first lesson in the Open Source Semiconductor Engineer Certification track. It builds on the technician-level cleanroom and ESD foundation from <a href="https://bitcoinversus.tech/2026/10/04/osstc-001-semiconductor-fab-cleanroom-contamination-esd-basics/">OSSTC.001</a> and moves into the physics engineers use to reason about devices and process tradeoffs.</p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">The entire lesson in one model</h2><!-- /wp:heading -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>atomic bonds
-    ↓
-allowed energy bands + forbidden band gap
-    ↓
-thermal energy creates electrons + holes
-    ↓
-doping changes carrier concentration and Fermi level
-    ↓
-P-type + N-type regions create a junction
-    ↓
-diffusion creates a depletion region + electric field
-    ↓
-bias changes the barrier
-    ↓
-current, capacitance, breakdown, speed, leakage, and device behavior</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>atomic bonds<br>↓<br>allowed energy bands + forbidden band gap<br>↓<br>thermal energy creates electrons + holes<br>↓<br>doping changes carrier concentration and Fermi level<br>↓<br>P-type + N-type regions create a junction<br>↓<br>diffusion creates a depletion region + electric field<br>↓<br>bias changes the barrier<br>↓<br>current, capacitance, breakdown, speed, leakage, and device behavior</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>An engineer is not only asking, “Does the diode conduct?” The engineer asks <strong>why</strong>, <strong>how much</strong>, <strong>under what bias</strong>, <strong>at what temperature</strong>, and <strong>how the fabrication process changes the answer</strong>.</p><!-- /wp:paragraph -->
 
@@ -43,15 +14,7 @@ current, capacitance, breakdown, speed, leakage, and device behavior</code></pre
 
 <!-- wp:list --><ul class="wp-block-list"><li><strong>Valence band:</strong> the highest band that is normally filled or nearly filled with bonding electrons.</li><li><strong>Conduction band:</strong> a higher-energy band in which electrons can move through the crystal and contribute strongly to conduction.</li><li><strong>Band gap, E<sub>g</sub>:</strong> an energy range between those bands with no allowed bulk crystal states in the simplified model.</li></ul><!-- /wp:list -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>Energy ↑
-
-Conduction band
-================
-       ↑
-      Eg        ← band gap
-       ↓
-================
-Valence band</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>Energy ↑<br><br>Conduction band<br>↑<br>E<sub>g</sub> ← band gap<br>↓<br>Valence band</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Metals have available states that make conduction easy. Insulators have a comparatively large forbidden gap. Semiconductors occupy the useful middle ground: their conductivity can be changed dramatically by temperature, electric fields, light, and controlled impurity atoms.</p><!-- /wp:paragraph -->
 
@@ -69,16 +32,11 @@ https://www.youtube.com/watch?v=56d9qcsHGwE
 
 <!-- wp:list --><ul class="wp-block-list"><li><strong>Electron:</strong> a mobile negative charge in the conduction band.</li><li><strong>Hole:</strong> an empty valence-band state that behaves mathematically like a mobile positive charge.</li></ul><!-- /wp:list -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>valence electron gains energy
-           ↓
-electron enters conduction band
-           ↓
-free electron  +  hole left behind
-     (-)              (+)</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>valence electron gains energy<br>↓<br>electron enters conduction band<br>↓<br>free electron + hole left behind<br>(−) and (+)</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>For an <strong>intrinsic</strong> semiconductor in equilibrium, electrons and holes are generated in pairs, so:</p><!-- /wp:paragraph -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>n = p = ni</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>n = p = n<sub>i</sub></strong></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Here <strong>n</strong> is electron concentration, <strong>p</strong> is hole concentration, and <strong>n<sub>i</sub></strong> is the intrinsic carrier concentration. These values depend strongly on temperature and semiconductor material.</p><!-- /wp:paragraph -->
 
@@ -86,7 +44,7 @@ free electron  +  hole left behind
 
 <!-- wp:paragraph --><p>A useful semiconductor conductivity relationship is:</p><!-- /wp:paragraph -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>σ = q(n μn + p μp)</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>σ = q(n μ<sub>n</sub> + p μ<sub>p</sub>)</strong></p><!-- /wp:paragraph -->
 
 <!-- wp:list --><ul class="wp-block-list"><li><strong>σ</strong> = conductivity</li><li><strong>q</strong> = magnitude of electron charge</li><li><strong>n, p</strong> = electron and hole concentrations</li><li><strong>μn, μp</strong> = electron and hole mobilities</li></ul><!-- /wp:list -->
 
@@ -96,21 +54,7 @@ free electron  +  hole left behind
 
 <!-- wp:paragraph --><p><strong>Doping</strong> means intentionally introducing selected impurity atoms into a semiconductor so the equilibrium carrier population changes in a controlled way.</p><!-- /wp:paragraph -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>donor dopant
-    ↓
-adds an easily ionized electron state
-    ↓
-N-type material
-    ↓
-electrons become majority carriers
-
-acceptor dopant
-    ↓
-creates an easily ionized hole state
-    ↓
-P-type material
-    ↓
-holes become majority carriers</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>donor dopant<br>↓<br>adds an easily ionized electron state<br>↓<br>N-type material<br>↓<br>electrons become majority carriers<br><br>acceptor dopant<br>↓<br>creates an easily ionized hole state<br>↓<br>P-type material<br>↓<br>holes become majority carriers</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>In silicon, group-V elements such as phosphorus are commonly used as donors, while group-III elements such as boron are commonly used as acceptors. The exact choice depends on the material system and process integration.</p><!-- /wp:paragraph -->
 
@@ -126,13 +70,7 @@ https://www.youtube.com/watch?v=z3MlkNUuq9w
 
 <!-- wp:paragraph --><p>Doping does not remove the other carrier type.</p><!-- /wp:paragraph -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>N-type:
-majority carrier → electrons
-minority carrier → holes
-
-P-type:
-majority carrier → holes
-minority carrier → electrons</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>N-type:</strong><br>majority carrier → electrons<br>minority carrier → holes<br><br><strong>P-type:</strong><br>majority carrier → holes<br>minority carrier → electrons</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Minority carriers matter enormously in diodes, bipolar transistors, photodiodes, solar cells, recombination, leakage, and transient behavior.</p><!-- /wp:paragraph -->
 
@@ -140,15 +78,13 @@ minority carrier → electrons</code></pre><!-- /wp:code -->
 
 <!-- wp:paragraph --><p>For a nondegenerate semiconductor in thermal equilibrium, the electron and hole concentrations obey the mass-action relationship:</p><!-- /wp:paragraph -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>n · p = ni²</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>n · p = n<sub>i</sub><sup>2</sup></strong></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>If donor doping pushes the electron concentration far above the intrinsic value, the equilibrium hole concentration becomes much smaller. The reverse is true for acceptor-doped P-type material.</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>For a simple room-temperature example, if a silicon region has an electron concentration around 10<sup>16</sup> cm<sup>-3</sup> and a model uses n<sub>i</sub> ≈ 10<sup>10</sup> cm<sup>-3</sup>, then:</p><!-- /wp:paragraph -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>p = ni² / n
-  = (10¹⁰)² / 10¹⁶
-  = 10⁴ cm⁻³</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>p = n<sub>i</sub><sup>2</sup> / n</strong><br>= (10<sup>10</sup>)<sup>2</sup> / 10<sup>16</sup><br>= 10<sup>4</sup> cm<sup>−3</sup></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>The purpose of this example is the <strong>orders-of-magnitude effect</strong>. Real n<sub>i</sub> values depend on temperature and the material/model used.</p><!-- /wp:paragraph -->
 
@@ -156,8 +92,7 @@ minority carrier → electrons</code></pre><!-- /wp:code -->
 
 <!-- wp:paragraph --><p>The <strong>Fermi level</strong> is an energy reference connected to the probability that available states are occupied by electrons. In an equilibrium band diagram, it is one of the fastest ways to understand how doping changes carrier populations.</p><!-- /wp:paragraph -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>N-type doping → Fermi level shifts toward conduction band
-P-type doping → Fermi level shifts toward valence band</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>N-type doping → Fermi level shifts toward conduction band<br>P-type doping → Fermi level shifts toward valence band</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>This is why band diagrams are so useful: they let an engineer translate material composition and electrostatic potential into carrier behavior.</p><!-- /wp:paragraph -->
 
@@ -169,21 +104,7 @@ P-type doping → Fermi level shifts toward valence band</code></pre><!-- /wp:co
 
 <!-- wp:paragraph --><p>Immediately after the junction exists, carrier concentration gradients drive diffusion:</p><!-- /wp:paragraph -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>N side                       P side
-many electrons               many holes
-     e⁻  → → →       ← ← ←  h⁺
-
-carriers diffuse across boundary
-             ↓
-recombination occurs near boundary
-             ↓
-mobile carriers are depleted locally
-             ↓
-fixed ionized dopants remain
-             ↓
-space charge creates electric field
-             ↓
-depletion region + built-in potential form</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>N side:</strong> many electrons<br><strong>P side:</strong> many holes<br><br>electrons and holes diffuse across the boundary<br>↓<br>recombination occurs near the boundary<br>↓<br>mobile carriers are depleted locally<br>↓<br>fixed ionized dopants remain<br>↓<br>space charge creates an electric field<br>↓<br>depletion region + built-in potential form</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>The electric field produced by the exposed ionized dopants opposes further majority-carrier diffusion. At thermal equilibrium, diffusion and drift balance so there is no net DC current through the isolated junction.</p><!-- /wp:paragraph -->
 
@@ -199,7 +120,7 @@ https://www.youtube.com/watch?v=BHA4teZmwT0
 
 <!-- wp:paragraph --><p>Under the standard abrupt-junction, nondegenerate, equilibrium approximation, the built-in voltage can be written as:</p><!-- /wp:paragraph -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>Vbi = (kT / q) ln(NA ND / ni²)</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>V<sub>bi</sub> = (kT / q) ln(N<sub>A</sub>N<sub>D</sub> / n<sub>i</sub><sup>2</sup>)</strong></p><!-- /wp:paragraph -->
 
 <!-- wp:list --><ul class="wp-block-list"><li><strong>k</strong> = Boltzmann constant</li><li><strong>T</strong> = absolute temperature</li><li><strong>q</strong> = elementary charge magnitude</li><li><strong>N<sub>A</sub></strong> = acceptor concentration</li><li><strong>N<sub>D</sub></strong> = donor concentration</li><li><strong>n<sub>i</sub></strong> = intrinsic carrier concentration</li></ul><!-- /wp:list -->
 
@@ -211,7 +132,7 @@ https://www.youtube.com/watch?v=BHA4teZmwT0
 
 <!-- wp:paragraph --><p>In the depletion approximation for a one-dimensional abrupt junction, the total depletion width has the form:</p><!-- /wp:paragraph -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>W = √[(2 εs / q)(1/NA + 1/ND)(Vbi + VR)]</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>W = √[(2 ε<sub>s</sub> / q)(1/N<sub>A</sub> + 1/N<sub>D</sub>)(V<sub>bi</sub> + V<sub>R</sub>)]</strong></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>The equation immediately exposes several engineering trends:</p><!-- /wp:paragraph -->
 
@@ -219,23 +140,7 @@ https://www.youtube.com/watch?v=BHA4teZmwT0
 
 <!-- wp:heading --><h2 class="wp-block-heading">11. Forward bias and reverse bias</h2><!-- /wp:heading -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>Forward bias:
-P side made more positive than N side
-        ↓
-barrier is reduced
-        ↓
-majority carriers cross junction more easily
-        ↓
-large diffusion current can develop
-
-Reverse bias:
-P side made more negative than N side
-        ↓
-barrier increases
-        ↓
-depletion region widens
-        ↓
-small leakage current flows until breakdown mechanisms dominate</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>Forward bias:</strong><br>P side made more positive than N side<br>↓<br>barrier is reduced<br>↓<br>majority carriers cross the junction more easily<br>↓<br>large diffusion current can develop<br><br><strong>Reverse bias:</strong><br>P side made more negative than N side<br>↓<br>barrier increases<br>↓<br>depletion region widens<br>↓<br>small leakage current flows until breakdown mechanisms dominate</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Toshiba's semiconductor e-learning material gives a concise reference for zero-bias, forward-bias, and reverse-bias PN-junction behavior: <a href="https://toshiba.semicon-storage.com/ap-en/semiconductor/knowledge/e-learning/discrete/chap1/chap1-6.html">Toshiba — PN Junction</a>.</p><!-- /wp:paragraph -->
 
@@ -243,20 +148,7 @@ small leakage current flows until breakdown mechanisms dominate</code></pre><!--
 
 <!-- wp:paragraph --><p>A schematic that says “P” and “N” hides a large amount of process engineering. Real devices have spatially varying dopant concentration.</p><!-- /wp:paragraph -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>process choices
-├── dopant species
-├── implant dose
-├── implant energy
-├── diffusion temperature / time
-├── activation anneal
-├── masking geometry
-└── prior thermal budget
-        ↓
-actual doping profile versus depth
-        ↓
-resistance + field + depletion width + junction depth
-        ↓
-capacitance + leakage + breakdown + switching behavior</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>Process choices:</strong><br>dopant species<br>implant dose<br>implant energy<br>diffusion temperature / time<br>activation anneal<br>masking geometry<br>prior thermal budget<br>↓<br>actual doping profile versus depth<br>↓<br>resistance + field + depletion width + junction depth<br>↓<br>capacitance + leakage + breakdown + switching behavior</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>This is the bridge between <strong>device physics</strong> and <strong>process integration</strong>. The engineer cannot optimize one parameter in isolation.</p><!-- /wp:paragraph -->
 
@@ -296,17 +188,7 @@ capacitance + leakage + breakdown + switching behavior</code></pre><!-- /wp:code
 
 <!-- wp:paragraph --><p><strong>Semiconductor devices are engineered electrostatics.</strong> Band structure determines which states are available. Doping sets carrier populations and shifts the Fermi level. Diffusion between differently doped regions creates a space-charge field. Applied voltage changes that field. From those pieces come the current, capacitance, leakage, switching speed, and breakdown behavior that engineers eventually turn into diodes, transistors, sensors, solar cells, power devices, and integrated circuits.</p><!-- /wp:paragraph -->
 
-<!-- wp:code --><pre class="wp-block-code"><code>material physics
-      ↓
-doping profile
-      ↓
-electrostatics
-      ↓
-carrier transport
-      ↓
-device behavior
-      ↓
-process + circuit tradeoffs</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>material physics<br>↓<br>doping profile<br>↓<br>electrostatics<br>↓<br>carrier transport<br>↓<br>device behavior<br>↓<br>process + circuit tradeoffs</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p><em>Modeling note: the simple equations in this introductory lesson assume idealized conditions such as thermal equilibrium, nondegenerate statistics, and an abrupt one-dimensional junction where stated. Real semiconductor devices require more complete models when those assumptions fail.</em></p><!-- /wp:paragraph -->
 
