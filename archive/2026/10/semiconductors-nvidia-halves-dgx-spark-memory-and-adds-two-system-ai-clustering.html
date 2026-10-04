@@ -1,0 +1,57 @@
+<!-- wp:paragraph --><p><strong>NVIDIA is adding a 64GB DGX Spark configuration that keeps the same GB10 Grace Blackwell compute platform while cutting unified memory in half, betting that smaller local models and easier two-system clustering can cover more AI-agent workloads without requiring 128GB in every box.</strong></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>In <a href="https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/">the company’s October 2 announcement</a>, NVIDIA said the new configuration will arrive through Acer, ASUS, Dell, Gigabyte, HP and MSI on October 23. The 64GB systems retain the GB10 Grace Blackwell Superchip, DGX OS, the NVIDIA AI software stack and ConnectX-7 networking.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>The real change is architectural rather than cosmetic: NVIDIA is acknowledging that many local AI workloads no longer need the maximum memory footprint of the original Spark, while giving developers a cleaner path to combine two systems when one box is not enough.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">64GB changes the model-size ceiling, not the compute platform</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>NVIDIA says a single 64GB DGX Spark can support models up to 100 billion parameters, compared with the larger model envelope available on the 128GB configuration. The same GB10 chip still combines a 20-core Arm CPU, Blackwell GPU architecture and a coherent unified-memory design so CPU and GPU workloads operate from one memory pool.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That puts the new Spark in the same local-AI hardware race BitcoinVersus.tech recently covered with <a href="https://bitcoinversus.tech/2026/10/02/gigabyte-adds-a-64gb-ai-top-atom-for-local-blackwell-ai/">GIGABYTE’s 64GB AI TOP ATOM</a>. Both systems reflect a market moving away from the assumption that every serious local AI machine needs the largest possible memory configuration.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><a href="https://twitter.com/NVIDIARTXSpark/status/2106090492043898980">NVIDIA RTX Spark’s official account highlighted the 64GB option on Twitter</a>, emphasizing local agents and the new clustering workflow.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://twitter.com/NVIDIARTXSpark/status/2106090492043898980","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/NVIDIARTXSpark/status/2106090492043898980</div><figcaption class="wp-element-caption"><em>NVIDIA RTX Spark’s official account says DGX Spark is gaining a 64GB configuration built around local agents and multi-system scaling.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Two Sparks can pool memory into a larger local system</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The second part of NVIDIA’s update is Sync Cluster Assistant, software designed to connect two DGX Spark systems over the platform’s 200 GbE fabric and present the pair as a larger local environment.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Two 64GB systems can pool their memory to 128GB, which gives developers a way to begin with one system and add a second when model size, context length or concurrent agent workloads grow. NVIDIA says its Qwen 3.8 27B testing delivered up to 1.7× the performance with two clustered 64GB systems compared with one.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=AamP-LbGHXQ","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=AamP-LbGHXQ</div><figcaption class="wp-element-caption"><em>NVIDIA Developer’s DGX Spark setup guide shows the GB10-based desktop platform and software environment that the new 64GB systems inherit.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Smaller models changed the memory calculation</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>When DGX Spark first arrived, large unified-memory capacity was one of its strongest differentiators. Local models were getting bigger, quantization tradeoffs were harsher and developers often needed substantial headroom for fine-tuning or long-context inference.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That picture is changing. <a href="https://www.tomshardware.com/pc-components/gpus/nvidia-introduces-64gb-dgx-spark-to-throw-local-ai-fans-a-lifeline-amid-the-rampocalypse-new-gb10-config-starts-at-usd4999-for-those-who-can-work-with-less">Independent hardware reporting</a> notes that increasingly capable models can now fit within smaller memory footprints, reducing the need for 128GB in workloads centered on local inference rather than the largest possible models or fine-tuning jobs.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That same trend is visible in BitcoinVersus.tech’s coverage of <a href="https://bitcoinversus.tech/2026/10/04/semiconductors-nvidia-rtx-spark-october-local-ai-windows/">NVIDIA RTX Spark Windows PCs</a>, where Grace and Blackwell are being pushed into personal systems intended to keep more agent execution on-device instead of routing every task to the cloud.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=kZRMshaNrSA","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=kZRMshaNrSA</div><figcaption class="wp-element-caption"><em>NVIDIA’s original Grace Blackwell desktop-supercomputer introduction explains the architecture that evolved into DGX Spark.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Local agents make memory flexibility more valuable</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Agentic applications are especially sensitive to memory because they can keep long contexts active, call tools repeatedly and run multiple parallel tasks. The new 64GB option creates a more explicit ladder: use one compact system for smaller local agents, then connect a second unit when the workload needs more memory or concurrency.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The software layer matters just as much as the silicon. BitcoinVersus.tech recently examined how <a href="https://bitcoinversus.tech/2026/09/30/nvidia-built-tensorrt-model-connect-around-coding-agents/">NVIDIA built TensorRT Model Connect around coding agents</a>, part of the company’s wider push to make its inference stack easier for autonomous software to use across local and data-center hardware.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">DGX Spark is becoming modular instead of one-size-fits-all</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The 64GB DGX Spark does not replace the 128GB version. It creates a second memory tier around the same Grace Blackwell foundation and gives developers another way to balance model size, memory headroom and deployment scale.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The more important development is that NVIDIA is treating personal AI infrastructure as something that can scale horizontally. A developer can start with one local box, add another over high-speed networking and keep the same software environment instead of immediately moving the workload to a remote cluster.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>That makes the 64GB Spark more than a cut-down SKU: it is a signal that local AI hardware is beginning to look like miniature data-center infrastructure, with memory tiers, networking and cluster software becoming part of the desktop design.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
+
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">BitcoinVersus.Tech</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong>Advertisement</strong></p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://twitter.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/1BitcoinVersus/status/1937006164555993338</div><figcaption class="wp-element-caption"><em>Follow BitcoinVersus.Tech for independent reporting on semiconductors, AI infrastructure, data centers, networking and Bitcoin mining.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:paragraph --><p><strong><em><sup>BitcoinVersus.Tech Editor's Note:</sup></em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em><sup>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</sup></em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->
