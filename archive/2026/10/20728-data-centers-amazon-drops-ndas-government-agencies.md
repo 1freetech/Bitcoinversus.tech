@@ -12,7 +12,11 @@
 
 <!-- wp:paragraph --><p>Garman summarized the broader initiative in <a href="https://twitter.com/mattsgarman/status/2105946702981316816">a public X post announcing Amazon’s Data Center Commitment</a> and arguing that getting the facts right is essential as the United States expands AI infrastructure.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://twitter.com/mattsgarman/status/2105946702981316816","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/mattsgarman/status/2105946702981316816</div><figcaption class="wp-element-caption"><em>AWS CEO Matt Garman announces Amazon’s new data-center commitments as the company responds to growing public scrutiny around infrastructure expansion.</em></figcaption></figure><!-- /wp:embed -->
+<!-- wp:embed {"url":"https://twitter.com/mattsgarman/status/2105946702981316816","type":"rich","providerNameSlug":"x","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/mattsgarman/status/2105946702981316816
+</div><figcaption class="wp-element-caption"><em>AWS CEO Matt Garman announces Amazon’s new data-center commitments as the company responds to growing public scrutiny around infrastructure expansion.</em></figcaption></figure>
+<!-- /wp:embed -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Power agreements are part of the public-interest question</h2><!-- /wp:heading -->
 
@@ -36,7 +40,11 @@
 
 <!-- wp:heading {"level":3} --><h3 class="wp-block-heading">BitcoinVersus.Tech</h3><!-- /wp:heading -->
 <!-- wp:paragraph --><p><strong>Advertisement</strong></p><!-- /wp:paragraph -->
-<!-- wp:embed {"url":"https://twitter.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/1BitcoinVersus/status/1937006164555993338</div><figcaption class="wp-element-caption"><em>Follow BitcoinVersus.Tech for independent reporting on data centers, AI infrastructure, semiconductors, energy and Bitcoin mining.</em></figcaption></figure><!-- /wp:embed -->
+<!-- wp:embed {"url":"https://twitter.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/1BitcoinVersus/status/1937006164555993338
+</div><figcaption class="wp-element-caption"><em>Follow BitcoinVersus.Tech for independent reporting on data centers, AI infrastructure, semiconductors, energy and Bitcoin mining.</em></figcaption></figure>
+<!-- /wp:embed -->
 
 <!-- wp:paragraph --><p><strong><em><sup>BitcoinVersus.Tech Editor's Note:</sup></em></strong></p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p><strong><em><sup>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</sup></em></strong></p><!-- /wp:paragraph -->
