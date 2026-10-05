@@ -1,19 +1,3 @@
----
-title: "Windows Command #32 – net statistics (Windows OS)"
-status: published
-wordpress_post_id: 20924
-published: "2026-10-05T01:24:21"
-live_url: "https://bitcoinversus.tech/2026/10/05/windows-command-32-net-statistics/"
-series: "Windows Command Lessons"
-subject: windows
-lesson_number: "32"
-featured_media_id: 20923
-featured_image_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/windows-command-32-net-statistics-cover.png"
-youtube_1: "https://www.youtube.com/watch?v=aEe5PBuzsl8"
-youtube_2: "https://www.youtube.com/watch?v=88_2CdWNUK8"
-youtube_3: "https://www.youtube.com/watch?v=ikrGiR4Di_U"
----
-
 <!-- wp:paragraph {"fontSize":"large"} --><p class="has-large-font-size"><strong><code>net statistics</code> displays cumulative statistics for Windows Workstation and Server services, giving administrators a quick command-line view of service activity, sessions, traffic, failures, and the time from which the counters have been collected.</strong></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p><strong>Windows Command #32</strong> follows <a href="https://bitcoinversus.tech/2026/10/04/windows-command-31-net-config/"><strong>Windows Command #31 – net config</strong></a>. The previous lesson inspected Workstation and Server service configuration. This lesson moves from configuration to observed service activity: what the services have actually recorded since their statistics were initialized.</p><!-- /wp:paragraph -->
@@ -38,7 +22,7 @@ net statistics server</code></pre><!-- /wp:code -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Windows networking commands in context</h2><!-- /wp:heading -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=aEe5PBuzsl8","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=aEe5PBuzsl8","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=aEe5PBuzsl8
 </div><figcaption class="wp-element-caption"><em>OnlineComputerTips — Common Windows Networking Commands. Useful context for placing service statistics beside other Windows command-line network diagnostics.</em></figcaption></figure><!-- /wp:embed -->
 
@@ -64,7 +48,7 @@ https://www.youtube.com/watch?v=aEe5PBuzsl8
 
 <!-- wp:heading --><h2 class="wp-block-heading">Current Windows network troubleshooting workflow</h2><!-- /wp:heading -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=88_2CdWNUK8","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=88_2CdWNUK8","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=88_2CdWNUK8
 </div><figcaption class="wp-element-caption"><em>GuiNet — Top Windows Networking Commands: Troubleshooting Guide. Demonstrates command-line evidence gathering in a modern Windows support workflow.</em></figcaption></figure><!-- /wp:embed -->
 
@@ -77,6 +61,10 @@ https://www.youtube.com/watch?v=88_2CdWNUK8
 <!-- wp:paragraph --><p>The timestamp can sometimes provide a rough service-uptime clue, but it should not be treated as a universal system-uptime command. Service restart behavior, Windows version, fast startup, and other implementation details can make service statistics differ from actual system boot time.</p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Baseline before troubleshooting</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Create the capture directory first. The following commands run in Command Prompt. Access to Server-service statistics may require an elevated prompt; record access errors rather than assuming that unavailable counters are zero.</p><!-- /wp:paragraph -->
+
+<!-- wp:code --><pre class="wp-block-code"><code>if not exist C:\Temp mkdir C:\Temp</code></pre><!-- /wp:code -->
 
 <!-- wp:paragraph --><p>A single snapshot is less useful than a before-and-after comparison. Capture statistics before reproducing the fault:</p><!-- /wp:paragraph -->
 
@@ -108,13 +96,15 @@ net statistics server &gt; C:\Temp\server-after.txt</code></pre><!-- /wp:code --
 
 <!-- wp:heading --><h2 class="wp-block-heading">Broader command-line troubleshooting practice</h2><!-- /wp:heading -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=ikrGiR4Di_U","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=ikrGiR4Di_U","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=ikrGiR4Di_U
 </div><figcaption class="wp-element-caption"><em>Sarthak Education — Windows Networking Commands for Beginners. Covers a broad Windows CMD and PowerShell troubleshooting sequence and reinforces choosing the command that answers the specific diagnostic question.</em></figcaption></figure><!-- /wp:embed -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Common interpretation mistakes</h2><!-- /wp:heading -->
 
 <!-- wp:list --><ul class="wp-block-list"><li>Treating a cumulative error count as proof that the current incident caused every recorded error.</li><li>Ignoring the <strong>Statistics since</strong> timestamp.</li><li>Comparing two machines whose counters cover different time windows.</li><li>Confusing <code>net statistics</code> with <code>netstat</code>.</li><li>Assuming successful statistics output proves TCP port 445, DNS, share permissions, or remote-server health.</li><li>Restarting a service only to clear counters before evidence has been captured.</li><li>Using service statistics as a substitute for event logs or packet captures when deeper evidence is required.</li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p>For session-level evidence, review <a href="https://bitcoinversus.tech/2026/10/03/windows-command-29-net-session/">Windows Command #29 – net session</a>. Counter totals and the current session list answer different diagnostic questions.</p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Practical exercise</h2><!-- /wp:heading -->
 
@@ -124,31 +114,14 @@ https://www.youtube.com/watch?v=ikrGiR4Di_U
 
 <!-- wp:heading --><h2 class="wp-block-heading">Knowledge check</h2><!-- /wp:heading -->
 
-<!-- wp:paragraph --><p><strong>What does <code>net statistics workstation</code> inspect?</strong><br>Cumulative counters maintained by the Windows Workstation service.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>1. Which service does each net statistics variant inspect?<br>2. Why must the Statistics since timestamp be captured?<br>3. Does a nonzero failure counter establish the current incident’s cause?<br>4. How should cumulative counters be compared during troubleshooting?<br>5. How does net statistics differ from netstat?<br>6. Which additional evidence is useful for an SMB failure?</p><!-- /wp:paragraph -->
 
-<!-- wp:paragraph --><p><strong>What does <code>net statistics server</code> inspect?</strong><br>Cumulative counters maintained by the Windows Server service when those statistics are available.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">Concise answer key</h2><!-- /wp:heading -->
 
-<!-- wp:paragraph --><p><strong>Why does the statistics start time matter?</strong><br>It defines the period over which the cumulative counters were collected.</p><!-- /wp:paragraph -->
-
-<!-- wp:paragraph --><p><strong>Does a nonzero failure counter prove the current incident caused that failure?</strong><br>No. The counter may include earlier events from the same collection window.</p><!-- /wp:paragraph -->
-
-<!-- wp:paragraph --><p><strong>What is the strongest way to use cumulative counters during troubleshooting?</strong><br>Capture a baseline, reproduce the problem, capture again, and compare the delta.</p><!-- /wp:paragraph -->
-
-<!-- wp:paragraph --><p><strong>Is <code>net statistics</code> the same as <code>netstat</code>?</strong><br>No. <code>net statistics</code> reports Workstation/Server service statistics; <code>netstat</code> focuses on network connections, ports, and protocol/routing information.</p><!-- /wp:paragraph -->
-
-<!-- wp:paragraph --><p><strong>What additional evidence may be required for an SMB failure?</strong><br>IP configuration, DNS, TCP 445 testing, service state, shares, sessions, open files, event logs, SMB logs, firewall policy, authentication, permissions, and sometimes packet capture.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>1. workstation reports client-side Workstation-service counters; server reports Server-service counters where available.<br>2. The timestamp identifies the collection window and reveals a reset between snapshots.<br>3. No. Earlier events may contribute to the total.<br>4. Capture a baseline, reproduce the problem, capture again, and compare deltas only within an unchanged collection window.<br>5. net statistics reports service counters; netstat inspects connections, listening ports, and protocol statistics.<br>6. Check IP configuration, DNS, TCP 445, service state, shares, sessions, open files, logs, authentication, and permissions.</p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Key takeaway</h2><!-- /wp:heading -->
 
 <!-- wp:paragraph --><p><strong><code>net statistics</code> converts Workstation and Server service activity into counters that can be compared over time.</strong> Its greatest value is not a single total; it is the ability to establish a baseline, reproduce a problem, observe which counters changed, and use those changes to guide the next layer of Windows network or SMB troubleshooting.</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p><em>Technical note: Counter names and availability vary by Windows release, role, and service state. Production troubleshooting should follow the exact Windows/Windows Server version and current Microsoft documentation.</em></p><!-- /wp:paragraph -->
-
-<!-- wp:heading --><h2 class="wp-block-heading"><strong><em>BitcoinVersus.Tech</em></strong></h2><!-- /wp:heading -->
-<!-- wp:paragraph --><p><strong><em>Advertisement</em></strong></p><!-- /wp:paragraph -->
-<!-- wp:embed {"url":"https://twitter.com/1BitcoinVersus/status/1937006164555993338","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
-https://twitter.com/1BitcoinVersus/status/1937006164555993338
-</div><figcaption class="wp-element-caption"><em>BitcoinVersus.Tech advertisement.</em></figcaption></figure><!-- /wp:embed -->
-<!-- wp:paragraph --><p><strong><em>Editor's Note:</em></strong></p><!-- /wp:paragraph -->
-<!-- wp:paragraph --><p><strong><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our research initiatives, please donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</em></strong></p><!-- /wp:paragraph -->
-<!-- wp:paragraph --><p>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</p><!-- /wp:paragraph -->
