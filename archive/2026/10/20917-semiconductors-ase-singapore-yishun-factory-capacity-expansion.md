@@ -48,8 +48,8 @@ Live article: https://bitcoinversus.tech/2026/10/05/semiconductors-ase-singapore
 <p>The industry’s scaling problem extends beyond wafer fabrication. BitcoinVersus.Tech’s coverage of <a href="https://bitcoinversus.tech/2026/10/01/amkor-arizona-advanced-packaging-12-billion/">Amkor’s Arizona packaging and test expansion</a> illustrates how downstream factories are becoming strategic infrastructure alongside leading-edge fabs.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=1L95HGE0j9g","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=1L95HGE0j9g","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=1L95HGE0j9g
 </div><figcaption class="wp-element-caption"><em>Background: ASE’s Bill Chen discusses heterogeneous integration in this 2021 CASPA presentation on semiconductor packaging and testing. It is technical context, not footage of the proposed Yishun expansion.</em></figcaption></figure>
 <!-- /wp:embed -->
