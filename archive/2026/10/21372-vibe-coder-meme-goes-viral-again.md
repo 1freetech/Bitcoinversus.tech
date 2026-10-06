@@ -2,8 +2,8 @@
 post_id: 21372
 title: "Vibe Coder Meme Goes Viral Again"
 live_url: "https://bitcoinversus.tech/2026/10/06/vibe-coder-meme-goes-viral-again/"
-featured_media_id: 21371
-featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/vibe-coder-meme-goes-viral-again-1200x630-1.jpg"
+featured_media_id: 21377
+featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/vibe-coder-meme-goes-viral-again-cover-final.jpg"
 status: published
 ---
 
