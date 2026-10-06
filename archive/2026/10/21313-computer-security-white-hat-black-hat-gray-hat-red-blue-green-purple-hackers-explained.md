@@ -17,6 +17,12 @@ featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026
 <p>The simplest way to understand the vocabulary is this: <strong>white, gray, and black hats usually describe a hacker’s authorization and intent</strong>. By contrast, <strong>red, blue, purple, and white teams usually describe roles inside an authorized security exercise</strong>. NIST explicitly defines red teams as authorized adversary emulators and blue teams as defenders, while IBM groups hackers primarily into ethical, malicious, and gray-area categories.</p>
 <!-- /wp:paragraph -->
 
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=ULRhUITiwGM","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=ULRhUITiwGM
+</div><figcaption class="wp-element-caption"><em>Keeper Security explains the three core hacker categories: white hat, black hat, and gray hat.</em></figcaption></figure>
+<!-- /wp:embed -->
+
 <!-- wp:heading -->
 <h2 class="wp-block-heading" style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace">White Hat: The Authorized Ethical Hacker</h2>
 <!-- /wp:heading -->
@@ -76,6 +82,12 @@ featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026
 <!-- wp:paragraph -->
 <p>The red team asks, “Can we get in?” The blue team asks, “Can we detect, stop, contain, and recover from it?” Modern blue teams increasingly use automation and <a href="https://bitcoinversus.tech/2026/10/05/computer-security-palo-alto-console-500-million-ai-agents-cortex/"><strong>AI security agents</strong></a> to investigate alerts and coordinate defensive actions faster.</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=xHCCIc9n0xE","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=xHCCIc9n0xE
+</div><figcaption class="wp-element-caption"><em>IBM Technology explains how authorized red-team attackers and blue-team defenders work against each other in security exercises.</em></figcaption></figure>
+<!-- /wp:embed -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading" style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace">Purple Team: Red and Blue Working Together</h2>
@@ -160,6 +172,12 @@ featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026
 <!-- wp:paragraph -->
 <p>A completely ethical white-hat penetration tester can perform a black-box test. Likewise, the color of the testing method says nothing about whether the person is authorized.</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=vpHjvq5awxM","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=vpHjvq5awxM
+</div><figcaption class="wp-element-caption"><em>CISO Global explains black-box, gray-box, and white-box penetration testing and why these labels describe tester knowledge rather than hacker ethics.</em></figcaption></figure>
+<!-- /wp:embed -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading" style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace">The Easy Way to Remember It</h2>
