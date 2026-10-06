@@ -2,8 +2,8 @@
 post_id: 21173
 title: "Sports: The 5 Greatest Passing TD-to-INT Ratio Seasons in NFL History"
 live_url: "https://bitcoinversus.tech/2026/10/05/sports-greatest-passing-td-int-ratio-seasons-nfl-history/"
-featured_media_id: 21172
-featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/nfl-passing-td-to-int-ratio-leaders-cover.png"
+featured_media_id: 21178
+featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/nfl-td-int-top5-1200x630-1.jpg"
 status: publish
 ---
 
