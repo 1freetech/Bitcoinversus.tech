@@ -14,7 +14,7 @@ youtube_2: "https://www.youtube.com/watch?v=FXppSJLRceg"
 youtube_3: "https://www.youtube.com/watch?v=slMnfiX2Fwc"
 youtube_4: "https://www.youtube.com/watch?v=kVgFZsnpoQI"
 youtube_5: "https://www.youtube.com/watch?v=BC1E13CKf8g"
-youtube_6: "https://www.youtube.com/watch?v=9mzOVegORVc"
+youtube_6: "https://www.youtube.com/watch?v=j7pw3RgtZtc"
 youtube_7: "https://www.youtube.com/watch?v=2p7YpVTufRE"
 youtube_8: "https://www.youtube.com/watch?v=xhyg_3lyYyc"
 youtube_9: "https://www.youtube.com/watch?v=ETAsR1s-HKs"
@@ -64,9 +64,9 @@ https://www.youtube.com/watch?v=BC1E13CKf8g
 
 <!-- wp:paragraph --><p>Temperature enters the diode equation directly through <strong>V<sub>T</sub> = kT/q</strong> and indirectly through the much stronger temperature dependence of <strong>I<sub>S</sub></strong>. At a fixed forward current, a conventional silicon diode therefore tends to require less forward voltage as temperature rises. That behavior makes a diode useful as a temperature sensor but also creates thermal-design concerns in power electronics, where current crowding and self-heating can reinforce one another unless the circuit and package provide adequate stabilization and heat removal.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=9mzOVegORVc","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=9mzOVegORVc
-</div><figcaption class="wp-element-caption"><em>Prof. Tony Chan Carusone — The Diode Small Signal Model. Uses the diode operating point and thermal-voltage relationship to connect DC bias to incremental behavior.</em></figcaption></figure><!-- /wp:embed -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=j7pw3RgtZtc","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=j7pw3RgtZtc
+</div><figcaption class="wp-element-caption"><em>Inderjit Singh Dhanjal — Temperature Dependence on Diode I–V Characteristics. Demonstrates how temperature shifts silicon-diode current–voltage behavior and includes an LTspice comparison.</em></figcaption></figure><!-- /wp:embed -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Forward Bias Stores Minority-Carrier Charge</h2><!-- /wp:heading -->
 
