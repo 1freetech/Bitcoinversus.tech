@@ -7,7 +7,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">The 4.8 MW Texas stream is the model Bluebird wants to keep</h2>
+<h2 class="wp-block-heading">The 4.8 MW Texas Stream Is the Model Bluebird Wants to Keep</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -23,7 +23,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">The hashrate contracts tell the opposite story</h2>
+<h2 class="wp-block-heading">The Hashrate Contracts Tell the Opposite Story</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -39,7 +39,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Why the electricity-cost comparison matters</h2>
+<h2 class="wp-block-heading">Why the Electricity-Cost Comparison Matters</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -51,7 +51,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Mining economics are forcing more selective capital allocation</h2>
+<h2 class="wp-block-heading">Mining Economics Are Forcing More Selective Capital Allocation</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -63,7 +63,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Bluebird is turning “energy harvesting” into a broader compute strategy</h2>
+<h2 class="wp-block-heading">Bluebird Is Turning “Energy Harvesting” Into a Broader Compute Strategy</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
