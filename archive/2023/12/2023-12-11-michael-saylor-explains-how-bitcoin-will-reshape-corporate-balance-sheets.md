@@ -1,0 +1,26 @@
+---
+wp_id: 2411
+title: "MicroStrategy Chairman Michael Saylor Explains How Bitcoin Will Reshape Corporate Balance Sheets"
+date: 2023-12-11T08:00:00
+url: https://bitcoinversus.tech/2023/12/11/michael-saylor-explains-how-bitcoin-will-reshape-corporate-balance-sheets/
+slug: michael-saylor-explains-how-bitcoin-will-reshape-corporate-balance-sheets
+featured_media: 2417
+categories: [4269,27318186]
+tags: [156487,2197929,36507086,407108850,766669797,619414,39511,287302012,277387,13885555,2101372,5738490,492856,36425467,18220]
+---
+
+<p class="wp-block-paragraph" style="text-transform:none">In a recent discussion with CNBC, <a href="https://bitcoinversus.tech/2023/10/13/the-real-merge-the-moment-bitcoin-integrates-with-the-gaming-industry/">Bitcoin</a> advocate <a href="https://bitcoinversus.tech/2023/09/21/microstrategy-is-a-synthetic-bitcoin-miner-according-to-max-harvey/">Michael Saylor</a>, shared his stance on the future of corporate finance through Bitcoin. His insights come at a time when digital assets are increasingly seen as a viable option for corporate investment portfolios.</p>
+
+<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
+<div class="embed-twitter"><blockquote class="twitter-tweet" data-width="500" data-dnt="true"><p lang="en" dir="ltr">You can never have too much <a href="https://twitter.com/hashtag/Bitcoin?src=hash&amp;ref_src=twsrc%5Etfw">#Bitcoin</a>. My discussion of <a href="https://twitter.com/search?q=%24MSTR&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$MSTR</a>, <a href="https://twitter.com/search?q=%24MSFT&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$MSFT</a>, MicroStrategy AI, <a href="https://twitter.com/search?q=%24BTC&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$BTC</a> Spot ETPs, the Halving, FASB Accounting, the Magnificent 7 Dilemma, &amp; Corporate/Wall Street Adoption of Bitcoin with <a href="https://twitter.com/MorganLBrennan?ref_src=twsrc%5Etfw">@MorganLBrennan</a>, <a href="https://twitter.com/SaraEisen?ref_src=twsrc%5Etfw">@SaraEisen</a>, &amp; <a href="https://twitter.com/BobPisani?ref_src=twsrc%5Etfw">@BobPisani</a>. <a href="https://t.co/2VWbMooLy4">pic.twitter.com/2VWbMooLy4</a></p>&mdash; Michael Saylor⚡️ (@saylor) <a href="https://twitter.com/saylor/status/1720103459725234600?ref_src=twsrc%5Etfw">November 2, 2023</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+</div></figure>
+
+<p class="wp-block-paragraph" style="text-transform:none"><a href="https://bitcoinversus.tech/2023/09/20/michael-saylor-shares-insight-on-bitcoins-impact-at-btc23-conference-in-germany/">Michael Saylor</a> envisions a future where company balance sheets reflect Bitcoin holdings as assets rather than liabilities. This shift could redefine corporate financial strategies, potentially increasing long-term value for stakeholders. </p>
+
+<p class="wp-block-paragraph" style="text-transform:none">“Imagine when companies are able to use their balance sheets as assets instead of liabilities,&#8221; Saylor proposed, highlighting a transformative approach to how businesses may manage their financial reserves.</p>
+
+<p class="wp-block-paragraph" style="text-transform:none">Saylor also remarked on the unique advantages that <a href="https://bitcoinversus.tech/2023/11/07/alliance-bernstein-predicts-bitcoin-fund-management-is-a-650-billion-opportunity/">Bitcoin</a> offers to corporate entities: “If you&#8217;re not charging a fee and you&#8217;re generating a premium and you&#8217;re holding it over the long term, then you would think that it’ll be valued at a premium over the underlying asset.” His statement underscores the possibility of <a href="https://bitcoinversus.tech/2023/11/04/bitcoin-and-the-history-of-the-u-s-dollar/">Bitcoin</a> as a means to enhance the intrinsic value of a company&#8217;s holdings.</p>
+
+<p class="wp-block-paragraph" style="text-transform:none">The discussion also touched on various aspects, including the upcoming <a href="https://bitcoinversus.tech/2023/10/02/the-digital-ides-of-march-bitcoins-defining-moment/">Bitcoin halving</a>, FASB accounting implications, and the interest from Wall Street. Michael Saylor’s commentary aligns with the growing sentiment that <a href="https://bitcoinversus.tech/2023/10/30/binance-ceo-forecasts-bright-future-for-bitcoin-post-halving/">Bitcoin</a> could serve as a hedge against inflation and a cornerstone for future financial endeavors.</p>
+
+<p class="wp-block-paragraph" style="font-size:11px"><em>Bitcoin Versus is not a financial advisor. This media platform reports on financial subjects purely for educational and entertainment purposes only. The information provided on this platform is not intended as investment, tax, legal, or other professional advice. You should not rely on this information as a substitute for individual advice from a licensed professional. Do your own due diligence and contact a professional financial advisor for any advice on how to invest your money.</em></p>
