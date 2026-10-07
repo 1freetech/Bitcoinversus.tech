@@ -40,10 +40,10 @@ https://twitter.com/amitsha77280075/status/2107327490398327044
 <p>That makes the viral post directionally right: an enormous amount of knowledge that once lived inside elite research labs is now available to anyone with an internet connection. BitcoinVersus previously covered the <a href="https://bitcoinversus.tech/2026/05/24/stanford-releases-free-lecture-explaining-how-llms-like-chatgpt-and-claude-are-built/">Stanford lecture explaining how LLMs are built</a>; the important update is seeing that free material next to today’s actual Anthropic compensation bands.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=JuoVZkPBiKk","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=JuoVZkPBiKk","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=JuoVZkPBiKk
-</div><figcaption class="wp-element-caption"><em>Stanford Online’s Spring 2026 CS336 Lecture 1 begins with the end-to-end language-modeling roadmap and tokenization.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>Stanford Online’s Spring 2026 CS336 Lecture 1: Overview, Tokenization.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:heading -->
