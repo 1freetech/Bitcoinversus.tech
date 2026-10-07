@@ -1,0 +1,167 @@
+<!-- wp:paragraph -->
+<p><strong>When a <a href="https://bitcoinversus.tech/2026/10/06/crypto-hardware-10-dollar-open-source-wallet-self-custody-privacy/">Bitcoin wallet</a> says you own 0.01 BTC, the network does not store that number in an account next to your name.</strong> Instead, your balance is the total value of one or more pieces of bitcoin called <strong>UTXOs</strong>—Unspent Transaction Outputs—that your wallet can unlock and spend.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This is one of the most important ideas in Bitcoin because UTXOs explain how transactions work, why change comes back to your wallet, why some payments cost more in fees than others, and why good wallets care about coin selection and privacy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">UTXO Means Unspent Transaction Output</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The <a href="https://developer.bitcoin.org/devguide/transactions.html">Bitcoin Developer Guide</a> describes every Bitcoin transaction as having at least one input and one output. An input spends bitcoin from an earlier transaction. An output creates a new spendable piece of bitcoin. If that output has not yet been spent, it is an <strong>Unspent Transaction Output</strong>, or UTXO.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>So your wallet balance is really a total. If your wallet controls three UTXOs worth 20,000 satoshis, 30,000 satoshis and 50,000 satoshis, the wallet can display a balance of 100,000 satoshis. The network still sees three separate outputs until they are spent.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=vCUoP3raU1M","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=vCUoP3raU1M
+</div><figcaption class="wp-element-caption"><em>A 2026 explainer walks through Bitcoin’s UTXO architecture and why wallets do not behave like ordinary bank accounts.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Think Of UTXOs Like Individual Bills In A Wallet</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A simple analogy is physical cash. If you have one $20 bill and one $10 bill, your total is $30, but you still hold two separate pieces of money. Bitcoin works similarly at the transaction level. Your wallet can combine several UTXOs when you need to make a larger payment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The analogy is not perfect because bitcoin is digital and its ownership conditions are enforced with cryptography rather than possession of paper. But it captures the key point: a wallet balance can be made from many separate chunks rather than one continuously changing account number.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Spending A UTXO Usually Creates Change</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Suppose your wallet has one UTXO worth 100,000 satoshis and you want to send 60,000 satoshis. Bitcoin does not simply reduce the old UTXO from 100,000 to 40,000. The old UTXO is spent completely.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Your transaction instead creates new outputs: one for the recipient and usually another back to your own wallet as change. After the transaction confirms, the old 100,000-satoshi UTXO is gone and the new outputs take its place. The Bitcoin Developer Guide explains that change outputs are ordinary transaction outputs returned to the spender when the selected inputs are worth more than the payment plus the fee.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why UTXOs Affect Transaction Fees</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Bitcoin transaction fees are driven mainly by how much block space a transaction consumes, not simply by how many dollars are being sent. A transaction that needs many UTXOs as inputs can be larger than one that spends a single large UTXO.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The <a href="https://bitcoin.design/guide/how-it-works/coin-selection/">Bitcoin Design Guide</a> explains that wallets use <strong>coin selection</strong> to decide which UTXOs should fund a payment. Minimizing the number of inputs can reduce transaction size and therefore reduce the fee needed at a given fee rate.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That connects directly to the <a href="https://bitcoinversus.tech/2026/09/27/viabtc-and-mempool-expand-bitcoin-transaction-acceleration/">Bitcoin mempool and transaction-fee market</a>. When block space is busy, wallets compete by attaching higher fee rates so miners are more likely to include their transactions sooner.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A Large Balance Can Still Be Made Of Tiny Pieces</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Two wallets can each show the same 0.1 BTC balance while having very different UTXO structures. One wallet might control a single 0.1 BTC UTXO. Another might control 100 small UTXOs that add up to 0.1 BTC.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If both wallets send the same amount during a high-fee period, the wallet with many small inputs may need a larger transaction. That is why advanced users sometimes consolidate UTXOs when fees are low, combining many small outputs into fewer larger ones for future spending.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">But Consolidation Can Reduce Privacy</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>UTXO management is not only about fees. It also affects privacy. Combining several UTXOs in one transaction can reveal that the same wallet likely controls those pieces of bitcoin, linking previously separate transaction histories together.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That is one reason advanced wallets offer <strong>coin control</strong>, allowing users to choose exactly which UTXOs to spend. The Bitcoin Design Guide notes that coin selection involves tradeoffs among cost, speed and privacy. BitcoinVersus.Tech has also covered the boundary between <a href="https://bitcoinversus.tech/2026/10/06/crypto-hardware-10-dollar-open-source-wallet-self-custody-privacy/">self-custody and privacy</a> and proposals that try to improve <a href="https://bitcoinversus.tech/2026/10/03/shielded-bitcoin-zcash-style-privacy-no-consensus-change/">Bitcoin transaction privacy</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=ZCsakXHiwlw","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=ZCsakXHiwlw
+</div><figcaption class="wp-element-caption"><em>Andreas M. Antonopoulos explains UTXOs, dust, consolidation and the privacy tradeoffs involved in coin management.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Full Nodes Track Which Outputs Are Still Spendable</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A Bitcoin full node does not need to treat every historical output as spendable forever. Once an output has been spent, it cannot be spent again. The network maintains the current set of outputs that remain unspent, often called the <strong>UTXO set</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This is fundamental to preventing double-spends. A valid transaction must spend outputs that are still unspent and satisfy the spending conditions attached to them. The Bitcoin Developer Guide notes that each transaction output can be used as an input only once; trying to spend the same output again is a forbidden double-spend.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Miners Create New UTXOs Too</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The first transaction in every Bitcoin block is the <strong>coinbase transaction</strong>. It creates the block subsidy and collects transaction fees for the miner. Those newly created outputs become UTXOs as well, although coinbase outputs have a special maturity rule before they can be spent.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This connects UTXOs directly to <a href="https://bitcoinversus.tech/2026/10/06/bitcoin-mining-what-is-hashprice-revenue-per-phs/">Bitcoin mining revenue</a>. Miners earn new outputs from the subsidy and fees, while users consume and create UTXOs through normal transactions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Addresses And UTXOs Are Not The Same Thing</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A Bitcoin address is a way to describe where an output can be paid. A UTXO is the actual unspent output created by a transaction. One address can receive multiple payments over time, which means multiple UTXOs may be associated with spending conditions controlled by the same wallet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Modern wallets usually hide most of this complexity. They scan for spendable outputs they control, add their values together, choose inputs when you make a payment, create change when needed and sign the transaction with the appropriate keys.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Easy Way To Remember It</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Your Bitcoin balance is not one number stored inside the blockchain.</strong> It is the sum of the unspent outputs your wallet can spend.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Every time bitcoin moves, old UTXOs are consumed as transaction inputs and new UTXOs are created as transaction outputs. Once that clicks, change addresses, transaction fees, coin selection, wallet privacy and even the basic mechanics of double-spend prevention become much easier to understand.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">BitcoinVersus.Tech</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Advertisement</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong><a href="https://bitcoinversus.tech/">BitcoinVersus.Tech</a></strong> covers Bitcoin, mining hardware, wallets, software, energy and the infrastructure behind decentralized computing.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Editor’s Note</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong><em>We volunteer daily to help keep the information on this platform verifiably accurate. Support our independent research through the support options available on BitcoinVersus.Tech.</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p>
+<!-- /wp:paragraph -->
