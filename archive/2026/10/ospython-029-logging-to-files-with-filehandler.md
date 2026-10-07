@@ -2,33 +2,12 @@
 <!-- wp:paragraph --><p>Start with <a href="https://bitcoinversus.tech/2026/10/07/ospython-028-python-logging-basics/">OSPython.028: Python Logging Basics</a> if you need a refresher on DEBUG, INFO, WARNING, ERROR, and CRITICAL.</p><!-- /wp:paragraph -->
 <!-- wp:heading --><h2 class="wp-block-heading">Write Logs Directly To A File</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>The shortest path is <code>logging.basicConfig()</code> with a <code>filename</code>. Python then creates a file handler for you and writes messages that meet the configured severity threshold.</p><!-- /wp:paragraph -->
-<!-- wp:code --><pre class="wp-block-code"><code>import logging
-
-logging.basicConfig(
-    filename="app.log",
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s %(message)s"
-)
-
-logging.info("Application started")
-logging.warning("Disk space is getting low")</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><code>import logging</code><br><code>logging.basicConfig(filename="app.log", level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")</code><br><code>logging.info("Application started")</code><br><code>logging.warning("Disk space is getting low")</code></p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>By default, the file is opened in append mode, so new log records are added to the end instead of erasing earlier entries. You can explicitly set <code>filemode="w"</code> when you intentionally want each run to replace the previous file.</p><!-- /wp:paragraph -->
 <!-- wp:html --><div class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=-ARI4Cz-awo]</div><p><em>Corey Schafer demonstrates Python logging to files, severity levels, and log formatting.</em></p></div><!-- /wp:html -->
 <!-- wp:heading --><h2 class="wp-block-heading">Use FileHandler When You Need Explicit Control</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p><code>logging.FileHandler</code> is useful when you want to create the file destination yourself and attach it to a named logger. A handler decides where a log record goes; a formatter decides how that record looks.</p><!-- /wp:paragraph -->
-<!-- wp:code --><pre class="wp-block-code"><code>import logging
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-
-file_handler = logging.FileHandler("service.log")
-formatter = logging.Formatter(
-    "%(asctime)s %(levelname)s %(name)s %(message)s"
-)
-file_handler.setFormatter(formatter)
-logger.addHandler(file_handler)
-
-logger.info("Service started")</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><code>import logging</code><br><code>logger = logging.getLogger(__name__)</code><br><code>logger.setLevel(logging.INFO)</code><br><code>file_handler = logging.FileHandler("service.log")</code><br><code>formatter = logging.Formatter("%(asctime)s %(levelname)s %(name)s %(message)s")</code><br><code>file_handler.setFormatter(formatter)</code><br><code>logger.addHandler(file_handler)</code><br><code>logger.info("Service started")</code></p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>This pattern separates the logger from its destination. Later lessons can add console output or rotating files without changing every <code>logger.info()</code> and <code>logger.error()</code> call in the program.</p><!-- /wp:paragraph -->
 <!-- wp:html --><div class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=jxmzY9soFXg]</div><p><em>Corey Schafer explains named loggers, handlers, and formatters in Python.</em></p></div><!-- /wp:html -->
 <!-- wp:heading --><h2 class="wp-block-heading">Basic Troubleshooting</h2><!-- /wp:heading -->
