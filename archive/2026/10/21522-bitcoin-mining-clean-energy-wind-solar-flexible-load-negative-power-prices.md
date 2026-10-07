@@ -26,7 +26,11 @@ status: publish
 <p>A negative electricity price means the market is effectively signaling that supply is temporarily more abundant than demand or transmission capacity can efficiently absorb. That is the same basic condition behind renewable <a href="https://bitcoinversus.tech/2024/11/06/record-high-energy-curtailments-suggests-california-needs-bitcoin-mining/"><strong>curtailment</strong></a>: generators may have available wind or solar energy that cannot be economically delivered to ordinary loads.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=v1BMWczn7JM","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=v1BMWczn7JM
+</div><figcaption class="wp-element-caption"><em>Practical Engineering explains why electricity supply and demand must remain balanced on the grid—the condition behind both scarcity pricing and surplus-power curtailment.</em></figcaption></figure>
+<!-- /wp:embed --><!-- wp:heading -->
 <h2 class="wp-block-heading" style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace">At Normal Prices, the Renewable Advantage Nearly Disappears</h2>
 <!-- /wp:heading -->
 
@@ -50,7 +54,11 @@ status: publish
 <p>That operating model fits the idea behind <a href="https://bitcoinversus.tech/2026/10/06/bitcoin-mining-what-is-stranded-energy-why-miners-follow-power-to-source/"><strong>stranded-energy mining</strong></a>. ASICs can be placed close to generation and can change load far faster than many industrial processes. But the economics depend on how often cheap power actually appears and whether the mining operation can tolerate lower uptime.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
+<!-- wp:embed {"url":"https://twitter.com/UtilityDive/status/2043743690200322454","type":"rich","providerNameSlug":"x","responsive":true,"className":"is-provider-x wp-block-embed-x"} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/UtilityDive/status/2043743690200322454
+</div><figcaption class="wp-element-caption"><em>Utility Dive highlights rising solar generation and the growing grid role of renewable energy—the same conditions that make flexible loads more valuable when supply is abundant.</em></figcaption></figure>
+<!-- /wp:embed --><!-- wp:heading -->
 <h2 class="wp-block-heading" style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace">The Historical Break-Even Numbers Need Context</h2>
 <!-- /wp:heading -->
 
@@ -102,7 +110,11 @@ status: publish
 <h2 class="wp-block-heading" style="font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace">The Takeaway</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=TPBY-IgYQIA","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=TPBY-IgYQIA
+</div><figcaption class="wp-element-caption"><em>Soluna’s Project Dorothy walkthrough shows a real wind-powered Bitcoin-mining site built next to renewable generation and designed around flexible power use.</em></figcaption></figure>
+<!-- /wp:embed --><!-- wp:paragraph -->
 <p>The study does not show that every renewable-powered mine is automatically cheaper or cleaner. It shows something more specific: <strong>Bitcoin mining can extract unusual value from surplus renewable electricity because the load is interruptible.</strong></p>
 <!-- /wp:paragraph -->
 
