@@ -80,5 +80,9 @@ status: published
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
+<p>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
 <p>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</p>
 <!-- /wp:paragraph -->
