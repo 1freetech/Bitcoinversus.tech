@@ -31,8 +31,8 @@ status: published
 <p>This follows the same basic strategy behind Google’s <a href="https://bitcoinversus.tech/2026/10/04/energy-google-duane-arnold-nuclear-restart-federal-financing/"><strong>backing of the Duane Arnold nuclear restart in Iowa</strong></a>: use long-term demand from data centers to make large nuclear investments financeable.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=j1RqLzl4q6k","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=j1RqLzl4q6k</div><figcaption class="wp-element-caption"><em>Constellation CEO Joe Dominguez discusses the role of nuclear power in supplying large technology and data-center loads.</em></figcaption></figure>
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=nfAf-HDeXEU","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=nfAf-HDeXEU</div><figcaption class="wp-element-caption"><em>Villanova University panel on nuclear power and the future of data-center energy, featuring Constellation Energy leadership.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:heading -->
