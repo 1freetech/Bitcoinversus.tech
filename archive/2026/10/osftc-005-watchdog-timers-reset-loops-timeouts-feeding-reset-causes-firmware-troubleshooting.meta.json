@@ -1,0 +1,9 @@
+{
+  "post_id": 21757,
+  "title": "OSFTC.005: Watchdog Timers and Reset Loops",
+  "live_url": "https://bitcoinversus.tech/2026/10/07/osftc-005-watchdog-timers-reset-loops-timeouts-feeding-reset-causes-firmware-troubleshooting/",
+  "seo_description": "Learn watchdog timers for firmware technicians: timeout behavior, feeding, reset causes, reset loops, timing diagnosis, and embedded-system troubleshooting.",
+  "archive_path": "archive/2026/10/osftc-005-watchdog-timers-reset-loops-timeouts-feeding-reset-causes-firmware-troubleshooting.md",
+  "exact_gutenberg_verified": true,
+  "verified_date": "2026-10-07"
+}
