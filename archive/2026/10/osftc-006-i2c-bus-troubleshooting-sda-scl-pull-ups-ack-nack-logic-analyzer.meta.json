@@ -1,0 +1,9 @@
+{
+  "post_id": 21909,
+  "title": "OSFTC.006: I²C Bus Troubleshooting — SDA, SCL, Pull-Ups, ACK/NACK, and Logic Analyzer",
+  "live_url": "https://bitcoinversus.tech/2026/10/08/osftc-006-i2c-bus-troubleshooting-sda-scl-pull-ups-ack-nack-logic-analyzer/",
+  "seo_description": "Learn I2C bus troubleshooting for firmware technicians: SDA, SCL, pull-up resistors, addressing, ACK/NACK, logic analyzer captures, and fault isolation.",
+  "archive_path": "archive/2026/10/osftc-006-i2c-bus-troubleshooting-sda-scl-pull-ups-ack-nack-logic-analyzer.md",
+  "exact_gutenberg_verified": true,
+  "verified_date": "2026-10-08"
+}
