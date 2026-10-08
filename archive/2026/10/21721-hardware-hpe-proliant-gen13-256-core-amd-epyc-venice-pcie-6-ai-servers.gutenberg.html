@@ -1,0 +1,171 @@
+<!-- wp:paragraph -->
+<p><strong><a href="https://bitcoinversus.tech/2026/10/05/network-infrastructure-hpe-ai-data-center-networking-growth-2029/">HPE</a> just turned AMD’s newest server CPUs into four fresh ProLiant Gen13 systems aimed at AI inference, agentic workloads, virtualization, simulation, and high-performance computing.</strong> The launch combines <a href="https://bitcoinversus.tech/2026/10/06/semiconductors-amd-2027-cpu-gpu-supply-ramp-ai-demand/">6th Gen AMD EPYC</a> processors with PCIe Gen6, high-bandwidth DDR5-class memory, GPU expansion, denser OCP rack designs, and HPE’s newest iLO management platform.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.hpe.com/us/en/newsroom/press-release/2026/10/hpe-accelerates-enterprise-ai-innovation-with-next-generation-amd-cpu-powered-servers.html">HPE announced the first four ProLiant Gen13 systems on October 7</a>: the ProLiant DL585a Gen13, DL525 Gen13, XD245, and XD285. All four use AMD’s EPYC 9006 family, codenamed <strong>Venice</strong>, which is based on Zen 6 and built for cloud, enterprise, AI, and HPC workloads.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The DL525 Puts Up to 256 CPU Cores in 1U</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The most striking conventional server is the <strong>HPE ProLiant DL525 Gen13</strong>. It is a compact 1U, single-socket system that supports one 6th Gen AMD EPYC processor with <strong>up to 256 CPU cores</strong>. HPE pairs that with <strong>16-channel memory</strong>, support for DDR5 and MRDIMM memory, and <strong>PCIe Gen6</strong> connectivity.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That combination is built for workloads that need huge thread counts and fast data movement without requiring two CPU sockets. HPE specifically points to fraud detection, market-data processing, risk models, electronic design automation, simulation, and AI inference.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>For technicians, this is also a good example of how modern <a href="https://bitcoinversus.tech/2026/10/07/osdctc-005-server-hardware-troubleshooting-post-bmc-logs-dimms-drives-psus-fault-isolation/">server hardware troubleshooting</a> has changed. A failed system may involve hundreds of CPU cores, dozens of memory channels and modules, PCIe fabric, firmware, a BMC, accelerators, storage, network adapters, and power/cooling dependencies—all inside one chassis.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=a351dx5fUD8","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=a351dx5fUD8
+</div><figcaption class="wp-element-caption"><em>A hardware overview of AMD EPYC 9006 “Venice,” including the 256-core server-class CPUs now moving into new OEM systems.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">DL585a Is the GPU-Heavy AI Box</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The <strong>ProLiant DL585a Gen13</strong> moves in a different direction. HPE designed it as a dense accelerator host with <strong>two 6th Gen AMD EPYC processors</strong> and support for <strong>up to eight double-wide PCIe GPUs</strong>. PCIe Gen6 provides the CPU-to-device fabric needed to keep those accelerators fed with data.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That makes the system relevant to AI inference, retrieval-augmented generation, model fine-tuning, analytics, and virtualization. The important point is that the CPU is not merely a side component in a GPU server. It still coordinates storage, networking, memory traffic, virtualization, security, processes, and the software that keeps accelerators busy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The basic division of labor is the same one described in BitcoinVersus.Tech’s <a href="https://bitcoinversus.tech/2026/10/06/easy-tech-read-cpu-vs-gpu-vs-npu-whats-the-difference/">CPU, GPU, and NPU explainer</a>: accelerators excel at large parallel workloads, while the CPU remains the general-purpose control layer that organizes the machine around them.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">PCIe Gen6 Is Becoming the Server Backbone</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>PCIe Gen6 matters because high-end servers are increasingly limited by movement, not just calculation. GPUs, NICs, storage controllers, and other accelerators all need fast paths back to the CPU and memory subsystem. Doubling interface bandwidth helps prevent faster processors from waiting on slower links.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This becomes especially important in AI systems where multiple GPUs can be pulling model data, feeding tokens, exchanging results, and talking to high-speed networks at the same time. More lanes and more bandwidth do not automatically make an application faster, but they raise the ceiling before I/O becomes the bottleneck.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">AMD Venice Is the CPU Underneath the Launch</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.amd.com/en/products/processors/server/epyc/9006-series.html">AMD’s EPYC 9006 family</a> uses Zen 6 and Zen 6c CPU cores across different server profiles. AMD positions the lineup for agent execution, GPU host nodes, enterprise software, cloud infrastructure, and technical computing. The top SP7 products scale to hundreds of cores while supporting a very wide memory subsystem and PCIe Gen6 I/O.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>AMD began ramping Venice on advanced 2nm process technology earlier in 2026. That makes HPE’s Gen13 launch one of the first broad enterprise-server rollouts showing what the new CPU generation looks like when it leaves a processor roadmap and becomes a complete rack-deployable product.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The timing also fits AMD’s wider supply push. BitcoinVersus.Tech recently covered <a href="https://bitcoinversus.tech/2026/10/06/semiconductors-amd-2027-cpu-gpu-supply-ramp-ai-demand/">Lisa Su’s plan to substantially increase CPU and GPU supply in 2027</a> as AI-driven demand expands across servers and accelerators.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=tn_b4xjT6BQ","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=tn_b4xjT6BQ
+</div><figcaption class="wp-element-caption"><em>Supermicro demonstrates another server implementation of AMD EPYC 9006, showing how the same Venice CPU platform is spreading across major server OEMs.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">HPE Is Also Moving Into 21-Inch OCP Racks</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The launch is not limited to familiar 19-inch enterprise racks. The <strong>HPE ProLiant XD245</strong> and <strong>XD285</strong> are built around Open Compute Project rack standards for denser AI and HPC deployments.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The XD245 uses a <strong>1OU, four-node direct-liquid-cooled design</strong> and can contain up to eight EPYC processors across the chassis. The XD285 uses a <strong>2OU, two-node air-cooled design</strong>, giving operators a similar high-density compute approach without requiring a liquid loop in every deployment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That air-versus-liquid choice is increasingly important as rack power rises. BitcoinVersus.Tech’s <a href="https://bitcoinversus.tech/2026/10/05/osdcec-003-data-center-cooling-engineering-airflow-deltat-containment-psychrometrics-economization-liquid-cooling/">data-center cooling engineering guide</a> explains the underlying tradeoff: air is mechanically simpler, while liquid cooling can remove much higher heat loads from a smaller physical footprint.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">This Is a Rack-Density Story as Much as a CPU Story</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Putting 256 cores into one socket or eight GPUs into one server can reduce the number of boxes needed for a workload, but it also concentrates power and heat. That changes breaker sizing, PDU loading, rack layout, airflow, liquid loops, service clearances, cable density, and failure domains.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That is why the practical value of new server silicon is inseparable from <a href="https://bitcoinversus.tech/2026/09/25/the-art-of-rack-and-stack-servers-ai-systems-and-bitcoin-miners/">rack-and-stack engineering</a>. Faster parts are useful only when the rack can power, cool, network, and service them safely.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">iLO 8 Pushes Management and Security Deeper Into the Server</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>HPE is pairing the hardware with <strong>Integrated Lights-Out 8</strong>, its newest out-of-band server-management platform. HPE says Gen13 adds automatic protection, infrastructure-trust features, greater operational visibility, and post-quantum readiness.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>For operators, a BMC such as iLO is the control plane that still works when the main operating system is unhealthy. It can expose hardware inventory, temperatures, power state, logs, firmware information, and remote-console access—exactly the evidence technicians need when a production server fails before the OS can explain what happened.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">HPE’s AMD Strategy Is Getting Bigger</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The ProLiant Gen13 release also fits a larger HPE-AMD infrastructure strategy. In September, <a href="https://bitcoinversus.tech/2026/09/30/hpe-lands-1-2-billion-vultr-order-for-amd-helios-ai-racks/">HPE landed a $1.2 billion Vultr order for AMD Helios AI racks</a>. Days later, BitcoinVersus.Tech covered HPE’s plan to drive aggressive <a href="https://bitcoinversus.tech/2026/10/05/network-infrastructure-hpe-ai-data-center-networking-growth-2029/">data-center networking growth through 2029</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Gen13 fills in another layer of that stack. HPE can now sell AMD-based systems from dense CPU servers and conventional enterprise racks through OCP compute nodes and full AI rack solutions, while pairing them with networking, management, cooling, and support.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Bigger Hardware Trend: AI Is Making CPUs Important Again</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The AI boom is usually described as a GPU story, but HPE’s Gen13 launch shows why that is incomplete. AI systems also need CPUs to run agents, orchestrate software, feed accelerators, move data, host databases, manage storage, execute security services, and handle all of the enterprise work around the model.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>As AI moves from isolated training clusters into normal business infrastructure, those surrounding workloads become larger. That is exactly where a 256-core CPU, 16-channel memory, PCIe Gen6, liquid cooling, and dense rack formats start to matter.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>HPE ProLiant Gen13 is therefore less about one spectacular benchmark and more about balance:</strong> more CPU cores, more memory bandwidth, faster I/O, more accelerator capacity, denser racks, and stronger remote management in the same server generation. That is the hardware shape enterprise AI is beginning to take.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">BitcoinVersus.Tech</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Advertisement</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong><a href="https://bitcoinversus.tech/">BitcoinVersus.Tech</a></strong> covers processors, servers, semiconductors, networking, cooling, data centers, and the hardware behind modern AI infrastructure.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Editor’s Note</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong><em>We volunteer daily to help keep the information on this platform verifiably accurate. Support our independent research through the support options available on BitcoinVersus.Tech.</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p>
+<!-- /wp:paragraph -->
