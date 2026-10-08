@@ -6,6 +6,8 @@
   "featured_media_id": 21632,
   "seo_title": "OSPython.028: Python Logging Basics",
   "seo_description": "Learn Python logging basics, severity levels, timestamps, exceptions, and practical troubleshooting.",
-  "gutenberg_blob_sha": "a457bcc66c8ed53ab94da00278707b83bcf31b31",
-  "archive_path": "archive/2026/10/ospython-028-python-logging-basics.md"
+  "gutenberg_blob_sha": "35347f98a04cd9a99f9105100b193db3c00dd7b8",
+  "archive_path": "archive/2026/10/ospython-028-python-logging-basics.md",
+  "no_boxed_code_verified": true,
+  "gutenberg_exact_match_verified": true
 }
