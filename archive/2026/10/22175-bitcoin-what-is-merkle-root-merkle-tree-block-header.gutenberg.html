@@ -1,0 +1,121 @@
+<!-- wp:paragraph --><p><strong>A Bitcoin block can contain thousands of transactions, but the block header has room for only one 32-byte commitment to all of them: the Merkle root.</strong> Bitcoin builds that value by hashing transaction IDs together in pairs, then hashing those results together again and again until only one hash remains.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That single value connects Bitcoin’s transaction layer to <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-qbt-asic-ultra-boost-us-patent-sha256/"><strong>SHA-256 proof of work</strong></a>. Change one transaction and its TXID changes; that changes the hashes above it in the Merkle tree, which changes the Merkle root, which changes the 80-byte block header miners are hashing.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">A Merkle Tree Compresses a Transaction Set Into One Commitment</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Bitcoin’s developer documentation describes a block as a set of transactions whose hashes are paired, hashed, paired again, and hashed repeatedly until a single hash remains. That final hash is the <strong>Merkle root</strong>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The important word is <strong>commitment</strong>. The Merkle root does not contain the readable contents of every transaction. Instead, it cryptographically commits the block header to the exact ordered set of transaction IDs used to build the tree.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=qcuc3rgwZAE","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=qcuc3rgwZAE]</div><figcaption class="wp-element-caption"><em>Computerphile explains how Bitcoin combines hashing, Merkle trees, distributed validation, and proof of work.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Leaves Start With Transaction IDs</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>At the bottom of the tree are the block’s transaction IDs, or <strong>TXIDs</strong>. Bitcoin transactions are serialized and hashed to produce these identifiers. BitcoinVersus.Tech’s <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-what-is-utxo-unspent-transaction-output-wallet-balance/"><strong>UTXO explainer</strong></a> shows how those transactions consume earlier outputs and create new ones.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The first TXID is always the block’s <a href="https://bitcoinversus.tech/2026/10/08/bitcoin-what-is-coinbase-transaction-block-subsidy-fees-miners/"><strong>coinbase transaction</strong></a>. After that come the ordinary transactions selected for the block. The ordered list matters because changing the order changes the pairs, which changes the resulting Merkle root.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Pair, Hash, Repeat</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Imagine a block containing four transactions: A, B, C, and D. Bitcoin hashes A with B to create one intermediate hash and hashes C with D to create another. Those two intermediate hashes are then hashed together to create the Merkle root.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>With eight transactions, the same pattern simply adds another level. Eight leaves become four hashes, four become two, and two become one. This tree structure means a very large transaction set can still be committed by one fixed-size 32-byte root inside the block header.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">What Happens With an Odd Number of Transactions?</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>If one row contains an odd number of hashes, Bitcoin duplicates the final hash so it has a partner. For example, if a row contains A, B, C, D, and E, the final E is paired with a copy of E for that level.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The process continues until one root remains. This behavior is part of Bitcoin’s block-format rules, which is why software constructing or validating blocks must reproduce it exactly rather than inventing a different tree layout.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Merkle Root Lives Inside the 80-Byte Block Header</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Bitcoin’s proof-of-work header contains six major fields: version, previous-block hash, Merkle root, timestamp, difficulty target encoding, and nonce. The Merkle root is the field that commits the header to the block’s transactions.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This is why miners do not repeatedly hash every transaction in the block for every nonce attempt. They construct the transaction set, derive the Merkle root, place it into the header, and then repeatedly hash the much smaller header while searching for a result below the current <a href="https://bitcoinversus.tech/2026/10/04/bitcoin-mining-difficulty-barely-moves-smallest-retarget-2026/"><strong>difficulty target</strong></a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Change One Transaction and the Block Header Changes</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Suppose one satoshi in a transaction output changes. The serialized transaction changes, so its TXID changes. The first Merkle hash above that transaction changes, then every ancestor hash on that path changes, and finally the Merkle root changes.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Because the Merkle root sits inside the block header, the block header now has a different hash. Any proof of work performed on the old header no longer applies to the modified transaction set. This is one of the mechanisms that makes past transaction history tamper-evident.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Merkle Root Does Not Replace Full Validation</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A valid Merkle root proves that a particular set of transaction hashes was committed into a block header. It does <strong>not</strong> by itself prove that every transaction obeys Bitcoin’s consensus rules.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Full nodes still validate transaction scripts, inputs, outputs, <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-what-is-utxo-unspent-transaction-output-wallet-balance/"><strong>UTXO availability</strong></a>, block limits, subsidy rules, and the other consensus conditions. The Merkle root is an integrity commitment, not a shortcut around transaction validation.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Merkle Proofs Let You Verify One Transaction Without Downloading Them All</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The tree structure has another major advantage: a verifier does not need every transaction in the block to prove that one particular transaction was included. It only needs that transaction’s hash, the Merkle root from the block header, and the neighboring hashes required to reconstruct the path to the root.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That set of sibling hashes is commonly called a <strong>Merkle proof</strong> or Merkle branch. In a large block, the proof can be much smaller than downloading the entire transaction set.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=oq71stYXbtM","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=oq71stYXbtM]</div><figcaption class="wp-element-caption"><em>Merel Dumont explains Merkle trees, Merkle roots, and compact proofs with clear visual examples.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">This Is the Idea Behind Simplified Payment Verification</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Satoshi Nakamoto described <strong>Simplified Payment Verification</strong>, or SPV, in the Bitcoin whitepaper. An SPV-style client can keep block headers and request a Merkle branch proving that a transaction appears under a particular header without storing and validating the complete block like a full node.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The tradeoff is trust model and validation depth. A full node independently validates the complete consensus rules. A lightweight client can verify proof of inclusion against proof-of-work headers, but it does not independently reproduce the same complete validation process for every transaction.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Merkle Proofs Grow Slowly Even When Blocks Contain Many Transactions</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A binary tree becomes one level taller only when the number of leaves roughly doubles. That means proving inclusion of one transaction requires only the sibling hashes along its path rather than every transaction in the block.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This is why Merkle trees are useful far beyond Bitcoin. They allow large data sets to be summarized and individual elements to be proven against a compact root commitment without retransmitting the full data set.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Coinbase Transaction Gives Miners a Way to Change the Merkle Root</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The block-header nonce is only 32 bits, so modern ASIC miners can exhaust its roughly 4.29 billion possible values extremely quickly. Miners therefore need additional ways to create fresh header search space.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>One method is changing the <strong>extraNonce</strong> data in the <a href="https://bitcoinversus.tech/2026/10/08/bitcoin-what-is-coinbase-transaction-block-subsidy-fees-miners/"><strong>coinbase transaction</strong></a>. That changes the coinbase TXID, which changes part of the Merkle tree, which changes the Merkle root and therefore creates a new block header for ASICs to hash.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Why Mining Pools Send Merkle Information</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>In pooled mining, the server constructs or coordinates the candidate block while individual miners contribute hashing work. BitcoinVersus.Tech’s <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-it-what-is-stratum-asic-miners-pools/"><strong>Stratum explainer</strong></a> shows how mining jobs distribute the information needed for miners to build headers and search for valid hashes.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Stratum-style jobs can include Merkle-branch information so workers can combine the pool’s transaction set with their unique coinbase data, calculate the appropriate Merkle root, and build the block header they will hash. This is how one pool can coordinate enormous amounts of distributed <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-pool-shares-accepted-rejected-stale-vardiff/"><strong>share-based work</strong></a> without shipping a brand-new full block to every ASIC for every nonce range.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Merkle Root Is Not the Block Hash</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>This distinction is easy to miss. The <strong>Merkle root</strong> commits to the block’s transaction IDs. The <strong>block hash</strong> is produced by hashing the complete 80-byte block header, which includes the Merkle root plus the previous-block hash, time, target encoding, version, and nonce.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>So the Merkle root is one important input to proof of work, not the final proof-of-work hash itself.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">SegWit Added a Separate Witness Commitment</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Bitcoin’s traditional transaction Merkle tree is built from TXIDs. Segregated Witness moved witness data outside the legacy transaction-ID calculation, so modern SegWit blocks also carry a separate <strong>witness commitment</strong> inside an output of the coinbase transaction.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That means a modern Bitcoin block contains both the familiar Merkle root in the header and, when required, a witness commitment carried through the coinbase transaction. The two commitments serve related but different purposes.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">You Can Inspect the Merkle Root With Bitcoin Core RPC</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A node operator can inspect block-header data through <a href="https://bitcoinversus.tech/2026/10/08/bitcoin-it-what-is-bitcoin-core-rpc-bitcoin-cli-json-rpc/"><strong>Bitcoin Core RPC</strong></a>. The <strong>getblockheader</strong> RPC returns fields including the block hash, height, version, confirmations, and <strong>merkleroot</strong>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That makes the Merkle root visible as an ordinary diagnostic field even though it represents the entire transaction set below it. A technician can compare block data, decode transactions, inspect TXIDs, and trace how the block header commits to the contents of the block.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Why This Matters to Bitcoin IT</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The Merkle root sits at the intersection of Bitcoin software, networking, storage, and mining. Wallet software uses transaction IDs. Full nodes validate transactions and blocks. Mining pools build candidate transaction sets. <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-it-what-is-stratum-asic-miners-pools/"><strong>Stratum servers</strong></a> distribute work. ASICs hash the resulting block headers.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Understanding that chain makes many operational details easier to reason about: why changing the coinbase changes miner work, why a pool sends Merkle branches, why a block header can commit to megabytes of transaction data while remaining only 80 bytes, and why one transaction alteration invalidates the previous header hash.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Simple Way to Remember It</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>A Merkle tree turns many transaction hashes into one root. Bitcoin places that root inside the block header so proof of work commits the mined header to the exact transaction set.</strong></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Merkle proofs then let software prove that one transaction belongs to that committed set without transmitting every other transaction in the block.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">References</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><a href="https://developer.bitcoin.org/devguide/block_chain.html">Bitcoin Developer Guide — Block Chain and Merkle Trees</a></li><li><a href="https://developer.bitcoin.org/reference/block_chain.html">Bitcoin Developer Reference — Block Headers and Merkle Trees</a></li><li><a href="https://developer.bitcoin.org/reference/rpc/getblockheader.html">Bitcoin Core RPC Reference — getblockheader</a></li><li><a href="https://bitcoin.org/bitcoin.pdf">Bitcoin Whitepaper — Simplified Payment Verification</a></li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">BitcoinVersus.Tech</h2><!-- /wp:heading -->
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Advertisement</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong><a href="https://bitcoinversus.tech/">BitcoinVersus.Tech</a></strong> covers Bitcoin, mining pools, ASIC hardware, networking, Linux, data centers, energy, and the software infrastructure behind proof of work.</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Editor’s Note</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong><em>Bitcoin serialization and byte-order details are consensus-sensitive. Developers should use the exact Bitcoin Core implementation and current protocol documentation when building production block, transaction, or Merkle-proof software.</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em>We volunteer daily to help keep the information on this platform verifiably accurate. Support our independent research through the support options available on BitcoinVersus.Tech.</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p><!-- /wp:paragraph -->
