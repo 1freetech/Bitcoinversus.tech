@@ -1,0 +1,14 @@
+{
+  "title": "OSC++.023: Perfect Forwarding — Forwarding References, std::forward, Reference Collapsing, and Universal Constructors",
+  "status": "published",
+  "wordpress_post_id": 21501,
+  "published": "2026-10-06T23:24:09",
+  "modified": "2026-10-06T23:29:57",
+  "live_url": "https://bitcoinversus.tech/2026/10/06/oscpp-023-perfect-forwarding-forwarding-references-std-forward-reference-collapsing-universal-constructors/",
+  "featured_media_id": 21514,
+  "wordpress_excerpt": "Learn C++ perfect forwarding: forwarding references, std::forward, reference collapsing, value categories, variadic forwarding, constructor pitfalls, and practical debugging.",
+  "archive_path": "archive/2026/10/oscpp-023-perfect-forwarding-forwarding-references-std-forward-reference-collapsing-universal-constructors.md",
+  "gutenberg_blob_sha": "aa659183087a4870a083a1856543bf963ee305b8",
+  "source": "WordPress posts.list + GitHub fetch_file",
+  "seo_meta_presence_verified": true
+}
