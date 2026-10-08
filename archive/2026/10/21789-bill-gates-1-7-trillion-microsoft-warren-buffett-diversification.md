@@ -1,6 +1,6 @@
 ---
 post_id: 21789
-title: "Bill Gates Could Be Worth About $1.7 Trillion If He Never Sold Microsoft — But the Buffett Story Is Too Simple"
+title: "Bill Gates Could Be Worth $1.7 Trillion If He Never Sold Microsoft"
 live_url: "https://bitcoinversus.tech/2026/10/08/bill-gates-1-7-trillion-microsoft-warren-buffett-diversification/"
 featured_media_id: 21788
 featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bill-gates-warren-buffett-finance.jpg"
