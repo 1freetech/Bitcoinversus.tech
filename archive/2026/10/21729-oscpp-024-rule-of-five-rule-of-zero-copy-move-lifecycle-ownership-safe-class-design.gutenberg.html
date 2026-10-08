@@ -1,0 +1,130 @@
+<!-- wp:heading --><h2 class="wp-block-heading">Elementary Overview</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>C++ gives every class a small set of special lifecycle functions that control how objects are created, copied, moved, assigned, and destroyed. After <a href="https://bitcoinversus.tech/2026/10/06/oscpp-022-move-semantics-rvalue-references-std-move-move-constructors-move-assignment/"><strong>OSC++.022: Move Semantics</strong></a> and <a href="https://bitcoinversus.tech/2026/10/06/oscpp-023-perfect-forwarding-forwarding-references-std-forward-reference-collapsing-universal-constructors/"><strong>OSC++.023: Perfect Forwarding</strong></a>, the next design question is when a class should explicitly define those lifecycle operations. The <strong>Rule of Five</strong> says that a resource-owning class that needs to customize one copy, move, or destruction operation usually needs to deliberately consider all five. The <strong>Rule of Zero</strong> says that most classes should avoid managing raw resources directly and instead let standard-library types handle those operations automatically.</p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=9BM5LAvNtus","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=9BM5LAvNtus
+</div><figcaption class="wp-element-caption"><em>CppCon — Back to Basics: The Special Member Functions.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Five Operations</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The five operations are the <strong>destructor</strong>, <strong>copy constructor</strong>, <strong>copy-assignment operator</strong>, <strong>move constructor</strong>, and <strong>move-assignment operator</strong>. The destructor releases resources when an object dies. The copy operations create or replace one object from another while preserving the source. The move operations transfer resources from a temporary or otherwise movable object. These behaviors build directly on <a href="https://bitcoinversus.tech/2026/10/02/oscpp-016-constructors-destructors-basics/"><strong>constructors and destructors</strong></a> and on the ownership concepts introduced in <a href="https://bitcoinversus.tech/2026/10/05/oscpp-021-smart-pointers-unique-ptr-shared-ptr-weak-ptr-ownership/"><strong>smart pointers</strong></a>.</p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=2U1eHurVnXE","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=2U1eHurVnXE
+</div><figcaption class="wp-element-caption"><em>Mike Shah — Rule of Five and how move operations reduce unnecessary allocations.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:table --><figure class="wp-block-table"><table><thead><tr><th>Operation</th><th>Typical Form</th><th>Purpose</th></tr></thead><tbody><tr><td>Destructor</td><td><code>~Buffer()</code></td><td>Release owned resource</td></tr><tr><td>Copy constructor</td><td><code>Buffer(const Buffer&amp;)</code></td><td>Create a deep copy</td></tr><tr><td>Copy assignment</td><td><code>Buffer&amp; operator=(const Buffer&amp;)</code></td><td>Replace an existing object with a copy</td></tr><tr><td>Move constructor</td><td><code>Buffer(Buffer&amp;&amp;) noexcept</code></td><td>Transfer ownership into a new object</td></tr><tr><td>Move assignment</td><td><code>Buffer&amp; operator=(Buffer&amp;&amp;) noexcept</code></td><td>Transfer ownership into an existing object</td></tr></tbody></table></figure><!-- /wp:table -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Why Raw Ownership Creates the Problem</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>A class that directly owns a raw pointer, file descriptor, socket, operating-system handle, or another low-level resource cannot always rely on the compiler’s default memberwise copy. Copying a raw pointer copies only the address, not the underlying allocation. Two objects can then believe they own the same resource, which can lead to double deletion, dangling pointers, leaks, or invalid handles. That is the historical reason behind the Rule of Three and the modern Rule of Five: once a class owns something that requires custom cleanup, every ownership transition must be designed deliberately.</p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=2XaeLIu8_8I","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=2XaeLIu8_8I
+</div><figcaption class="wp-element-caption"><em>A focused walkthrough of the Rule of Three, Rule of Five, shallow-copy failures, and Rule of Zero.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">A Minimal Rule-of-Five Example</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The following class owns a dynamically allocated integer array. Copying must allocate independent storage, while moving can simply transfer the pointer and clear the source. The move operations are marked <code>noexcept</code> because standard-library containers such as <code>std::vector</code> can use that information when deciding whether moving an element is safe during reallocation.</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>#include &lt;algorithm&gt;
+#include &lt;cstddef&gt;
+#include &lt;utility&gt;
+
+class Buffer {
+    std::size_t size_{};
+    int* data_{};
+
+public:
+    explicit Buffer(std::size_t n)
+        : size_(n), data_(n ? new int[n]{} : nullptr) {}
+
+    ~Buffer() {
+        delete[] data_;
+    }
+
+    Buffer(const Buffer&amp; other)
+        : size_(other.size_),
+          data_(other.size_ ? new int[other.size_] : nullptr) {
+        std::copy(other.data_, other.data_ + size_, data_);
+    }
+
+    Buffer&amp; operator=(const Buffer&amp; other) {
+        if (this == &amp;other) return *this;
+
+        Buffer temp(other);
+        swap(temp);
+        return *this;
+    }
+
+    Buffer(Buffer&amp;&amp; other) noexcept
+        : size_(std::exchange(other.size_, 0)),
+          data_(std::exchange(other.data_, nullptr)) {}
+
+    Buffer&amp; operator=(Buffer&amp;&amp; other) noexcept {
+        if (this == &amp;other) return *this;
+
+        delete[] data_;
+        size_ = std::exchange(other.size_, 0);
+        data_ = std::exchange(other.data_, nullptr);
+        return *this;
+    }
+
+    void swap(Buffer&amp; other) noexcept {
+        std::swap(size_, other.size_);
+        std::swap(data_, other.data_);
+    }
+};</code></pre><!-- /wp:code -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=iLpt23V2vQE","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=iLpt23V2vQE
+</div><figcaption class="wp-element-caption"><em>CppCon — designing class roles around copy, move, destruction, and ownership semantics.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Rule of Zero: Prefer Types That Already Own Resources Safely</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The better design is often not to write those five functions at all. If the class stores <code>std::vector</code>, <code>std::string</code>, <code>std::unique_ptr</code>, or another RAII type, those members already know how to clean themselves up and how copying or moving should work. A business-logic class can then use the compiler-generated lifecycle functions. This is the Rule of Zero: resource-management code should live in dedicated ownership types, while most application classes compose those types and define no custom copy/move/destructor operations.</p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=7Qgd9B1KuMQ","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=7Qgd9B1KuMQ
+</div><figcaption class="wp-element-caption"><em>CppCon — RAII and the Rule of Zero, including why modern C++ pushes ownership into dedicated resource types.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:code --><pre class="wp-block-code"><code>#include &lt;string&gt;
+#include &lt;vector&gt;
+
+class Job {
+    std::string name_;
+    std::vector&lt;int&gt; samples_;
+
+public:
+    Job(std::string name, std::vector&lt;int&gt; samples)
+        : name_(std::move(name)), samples_(std::move(samples)) {}
+
+    // No destructor, copy constructor, copy assignment,
+    // move constructor, or move assignment needed.
+};</code></pre><!-- /wp:code -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">= default and = delete</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Modern C++ also lets a class state its lifecycle policy explicitly. <code>= default</code> requests the compiler-generated behavior, while <code>= delete</code> forbids an operation. This is useful for ownership types that should move but never copy, or for polymorphic bases whose copy semantics would be unsafe. The C++ Core Guidelines summarize the idea in C.20—avoid defining default operations when possible—and C.21—if you define or delete a copy, move, or destructor operation, consider defining or deleting the entire related set.</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>class UniqueDevice {
+public:
+    UniqueDevice() = default;
+    ~UniqueDevice() = default;
+
+    UniqueDevice(const UniqueDevice&amp;) = delete;
+    UniqueDevice&amp; operator=(const UniqueDevice&amp;) = delete;
+
+    UniqueDevice(UniqueDevice&amp;&amp;) noexcept = default;
+    UniqueDevice&amp; operator=(UniqueDevice&amp;&amp;) noexcept = default;
+};</code></pre><!-- /wp:code -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Design Checklist</h2><!-- /wp:heading -->
+<!-- wp:list {"ordered":true} --><ol class="wp-block-list"><li>Ask whether the class directly owns a resource.</li><li>If it does not, prefer the Rule of Zero.</li><li>If it does, define ownership semantics before writing copy or move code.</li><li>Use deep copy only when two independent owners are valid.</li><li>Delete copying when ownership must remain unique.</li><li>Use move operations to transfer ownership efficiently.</li><li>Mark move operations <code>noexcept</code> when they truly cannot throw.</li><li>Use RAII types such as <code>std::vector</code>, <code>std::string</code>, and smart pointers whenever practical.</li><li>Test self-assignment, empty resources, copy independence, and moved-from objects.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Exercises</h2><!-- /wp:heading -->
+<!-- wp:list {"ordered":true} --><ol class="wp-block-list"><li>Write a class that owns a raw <code>int*</code> and identify which special member functions it needs.</li><li>Convert that class to <code>std::vector&lt;int&gt;</code> and remove the custom lifecycle functions.</li><li>Create a move-only class by deleting the copy constructor and copy assignment operator.</li><li>Explain why a shallow copy of an owning raw pointer is dangerous.</li><li>Test whether <code>std::vector</code> prefers the move constructor when it is marked <code>noexcept</code>.</li><li>Compare a Rule-of-Five implementation with a Rule-of-Zero implementation and list which one has fewer failure paths.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Knowledge Check + Answers</h2><!-- /wp:heading -->
+<!-- wp:list {"ordered":true} --><ol class="wp-block-list"><li><strong>What are the five operations?</strong> Destructor, copy constructor, copy assignment, move constructor, and move assignment.</li><li><strong>Why can compiler-generated copying be dangerous for raw resource owners?</strong> It may copy only the handle or pointer, creating multiple objects that believe they own the same resource.</li><li><strong>What is the Rule of Zero?</strong> Prefer classes whose members already manage their own resources so the class needs no custom destructor, copy, or move operations.</li><li><strong>What does <code>= delete</code> do?</strong> It makes a selected operation unavailable at compile time.</li><li><strong>Why use <code>noexcept</code> on move operations?</strong> It communicates that moving cannot throw and can let standard containers safely prefer moves over copies.</li><li><strong>Which rule is usually preferred in modern application code?</strong> Rule of Zero.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Reference Resources</h2><!-- /wp:heading -->
+<!-- wp:list --><ul class="wp-block-list"><li><a href="https://en.cppreference.com/cpp/language/rule_of_three">cppreference — Rule of Three, Five, and Zero</a></li><li><a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-zero">C++ Core Guidelines — C.20: If you can avoid defining default operations, do</a></li><li><a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-five">C++ Core Guidelines — C.21: If you define or =delete copy, move, or destructor, define or =delete them all</a></li><li><a href="https://bitcoinversus.tech/2026/10/06/oscpp-023-perfect-forwarding-forwarding-references-std-forward-reference-collapsing-universal-constructors/">OSC++.023 — Perfect Forwarding</a></li><li><a href="https://bitcoinversus.tech/2026/10/06/oscpp-022-move-semantics-rvalue-references-std-move-move-constructors-move-assignment/">OSC++.022 — Move Semantics</a></li><li><a href="https://bitcoinversus.tech/2026/10/05/oscpp-021-smart-pointers-unique-ptr-shared-ptr-weak-ptr-ownership/">OSC++.021 — Smart Pointers and Ownership</a></li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Elementary Conclusion</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The Rule of Five is the warning sign for classes that directly own resources: destruction, copying, and moving must agree on who owns what. The Rule of Zero is the safer destination: build classes from RAII-aware standard-library types so the compiler can generate correct lifecycle behavior automatically. The practical rule is simple: <strong>if a class does not need to own a raw resource, do not make it responsible for manual cleanup.</strong></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading"><strong><em>BitcoinVersus.Tech</em></strong></h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong><em>Advertisement</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><a href="https://bitcoinversus.tech/">BitcoinVersus.Tech</a></strong> publishes open technical education across programming, operating systems, networking, electronics, semiconductors, robotics, and data centers.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em>Editor's Note:</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em>We volunteer daily to help keep the information on this platform verifiably accurate. Support our independent research through the support options available on BitcoinVersus.Tech.</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p><!-- /wp:paragraph -->
