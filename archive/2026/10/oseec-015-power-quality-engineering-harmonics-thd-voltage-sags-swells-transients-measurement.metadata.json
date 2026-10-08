@@ -1,0 +1,14 @@
+{
+  "title": "OSEEC.015: Power Quality Engineering — Harmonics, THD, Voltage Sags, Swells, Transients, and Measurement",
+  "status": "published",
+  "wordpress_post_id": 21704,
+  "published": "2026-10-07T21:02:30",
+  "modified": "2026-10-07T21:03:34",
+  "live_url": "https://bitcoinversus.tech/2026/10/07/oseec-015-power-quality-engineering-harmonics-thd-voltage-sags-swells-transients-measurement/",
+  "featured_media_id": 21700,
+  "wordpress_excerpt": "Learn power quality engineering: harmonics, THD, voltage sags and swells, transients, power-quality analyzers, harmonic spectra, and a practical troubleshooting workflow.",
+  "archive_path": "archive/2026/10/oseec-015-power-quality-engineering-harmonics-thd-voltage-sags-swells-transients-measurement.md",
+  "gutenberg_blob_sha": "fc8a9257220369b760dcb972e8cca02835c37d23",
+  "source": "WordPress posts.list + GitHub fetch_file",
+  "seo_meta_presence_verified": true
+}
