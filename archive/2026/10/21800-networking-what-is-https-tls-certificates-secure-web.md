@@ -53,7 +53,7 @@ https://www.youtube.com/watch?v=0TLDTodL7Lc
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This is where <strong>certificate authorities</strong> become important. A browser or operating system carries a trust store containing root certificates for recognized CAs. A website certificate can be trusted when the browser can build a valid chain from that certificate through intermediate certificates to a trusted root and when the certificate is valid for the hostname and time period involved.</p>
+<p>This is where <strong>certificate authorities</strong> become important. A browser or <a href="https://bitcoinversus.tech/2026/10/06/ositc-001-it-systems-fundamentals-hardware-operating-systems-networks-troubleshooting/"><strong>operating system</strong></a> carries a trust store containing root certificates for recognized CAs. A website certificate can be trusted when the browser can build a valid chain from that certificate through intermediate certificates to a trusted root and when the certificate is valid for the hostname and time period involved.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -65,7 +65,7 @@ https://www.youtube.com/watch?v=0TLDTodL7Lc
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Before a browser can establish TLS with a website, it generally needs an IP address for the hostname. That makes <a href="https://bitcoinversus.tech/2026/10/01/osntc-006-dns-basics/"><strong>DNS resolution</strong></a> one of the first steps in the chain.</p>
+<p>Before a browser can establish TLS with a website, it generally needs an <a href="https://bitcoinversus.tech/2026/09/27/open-source-networking-lesson-1-ip-address/"><strong>IP address</strong></a> for the hostname. That makes <a href="https://bitcoinversus.tech/2026/10/01/osntc-006-dns-basics/"><strong>DNS resolution</strong></a> one of the first steps in the chain.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -81,7 +81,7 @@ https://www.youtube.com/watch?v=0TLDTodL7Lc
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Routers, <a href="https://bitcoinversus.tech/2026/10/05/osntc-015-nat-pat-basics-private-addresses-port-translation-state-tables-troubleshooting/"><strong>NAT/PAT devices</strong></a>, firewalls, and switches still forward the encrypted packets normally. They may be able to observe metadata such as source and destination addresses, timing, and traffic volume, but properly encrypted application data is not readable simply because a device forwards the packets.</p>
+<p>Routers, <a href="https://bitcoinversus.tech/2026/10/05/osntc-015-nat-pat-basics-private-addresses-port-translation-state-tables-troubleshooting/"><strong>NAT/PAT devices</strong></a>, firewalls, and <a href="https://bitcoinversus.tech/2026/10/06/networking-what-is-top-of-rack-switch-data-center/"><strong>switches</strong></a> still forward the encrypted packets normally. They may be able to observe metadata such as source and destination addresses, timing, and traffic volume, but properly encrypted application data is not readable simply because a device forwards the packets.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -179,7 +179,7 @@ https://www.youtube.com/watch?v=86cQJ0MMses
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>TLS does not replace a <strong>firewall</strong>. A firewall controls which traffic is permitted between systems or networks; TLS protects the contents and identity of a connection. Those are different jobs.</p>
+<p>TLS does not replace a <a href="https://bitcoinversus.tech/2026/10/01/fortinet-asic-hardware-inside-the-security-processors-powering-fortigate-firewalls/"><strong>firewall</strong></a>. A firewall controls which traffic is permitted between systems or networks; TLS protects the contents and identity of a connection. Those are different jobs.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
