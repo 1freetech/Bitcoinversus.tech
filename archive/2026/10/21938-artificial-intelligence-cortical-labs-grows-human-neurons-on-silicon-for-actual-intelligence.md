@@ -6,8 +6,10 @@
 <p>Cortical Labs markets the idea as <strong>“Actual Intelligence”</strong> rather than artificial intelligence. That phrase is branding, not evidence that the system thinks like a person. The technical breakthrough is more specific: researchers can now deploy software into a closed loop with a living neural network and study how that network adapts.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=Fb2wOCEEz7c","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=Fb2wOCEEz7c</div><figcaption class="wp-element-caption"><em>Inside the Australian lab developing biological computers from living neurons and silicon hardware.</em></figcaption></figure>
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=Fb2wOCEEz7c","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=Fb2wOCEEz7c
+</div><figcaption class="wp-element-caption"><em>Inside the Australian lab developing biological computers from living neurons and silicon hardware.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:heading --><h2 class="wp-block-heading" style="font-family:monospace">What The CL1 Actually Is</h2><!-- /wp:heading -->
