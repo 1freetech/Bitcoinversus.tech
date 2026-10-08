@@ -1,0 +1,139 @@
+<!-- wp:paragraph -->
+<p><strong><a href="https://bitcoinversus.tech/2026/08/24/bitcoin-asic-architecture-bitmain-canaan-microbt-bitdeer/">Bitmain</a> and <a href="https://bitcoinversus.tech/2025/04/06/canaan-unveils-avalon-q-bitcoin-miner-for-home-use/">Canaan</a> now offer Bitcoin mining hardware across more than one thermal architecture, which means the old single-box argument no longer tells the whole story.</strong> The real fleet question is which manufacturer gives operators the strongest lineup across <a href="https://bitcoinversus.tech/2025/03/17/data-center-cooling-techniques-immersion-water-and-air-explained/">air, hydro, and immersion cooling</a> when hashrate, <a href="https://bitcoinversus.tech/2025/06/02/the-bitcoin-mining-singularity-the-future-of-bitcoin-mining-machine-hashrate-and-asic-chip-efficiency/">joules per terahash</a>, and deployable density all matter.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>For this comparison, “best” means the strongest currently documented model from each manufacturer in each cooling class using the manufacturers’ own published specifications where possible. It is a specification comparison, not a guarantee of immediate availability, and it does not include taxes, shipping, infrastructure, or facility overhead.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Cooling</th><th>Bitmain</th><th>Canaan</th><th>Spec Winner</th></tr></thead><tbody><tr><td>Air</td><td>Antminer S21 XP — 270 TH/s, 13.5 J/TH</td><td>Avalon A16XP — 300 TH/s, 12.8 J/TH</td><td>Canaan</td></tr><tr><td>Hydro</td><td>Antminer S23 XP Hyd. — 600 TH/s, 8.9 J/TH</td><td>Avalon A1566HA — 500 TH/s, 16.8 J/TH</td><td>Bitmain</td></tr><tr><td>Immersion</td><td>Antminer S21 XP Imm. — 300 TH/s, 13.5 J/TH</td><td>Avalon A1566I — 273 TH/s, 17.8 J/TH</td><td>Bitmain</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Round 1: Air Cooling Goes to Canaan</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>At the air-cooled high end, <a href="https://shop.bitmain.com/product/detail?pid=00020260330165744306Qb3RQT100632">Bitmain’s official shop lists the Antminer S21 XP</a> at <strong>270 TH/s, 3,645 W and 13.5 J/TH</strong>. That is still a strong machine by modern <a href="https://bitcoinversus.tech/2026/10/06/bitcoin-mining-what-is-hashprice-revenue-per-phs/">hashprice</a> standards, but it is no longer the most aggressive air-cooled spec in this matchup.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://shop.canaan.io/products/avalon-miner-a16xp-300t">Canaan’s official Avalon A16XP page</a> lists <strong>300 TH/s, 3,850 W, and 12.8 J/TH</strong>. That gives Canaan about <strong>11.1% more rated hashrate per machine</strong> and roughly <strong>5.2% better energy efficiency</strong> than the S21 XP on published specs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>On a theoretical miner-only basis, the Canaan air machine works out to about <strong>78.1 PH/s per MW</strong>, versus roughly <strong>74.1 PH/s per MW</strong> for the Bitmain S21 XP. For operators constrained by conventional rack space and standard air-cooling infrastructure, Canaan wins the air round clearly.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=9UKbuvNINiI","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=9UKbuvNINiI
+</div><figcaption class="wp-element-caption"><em>Bitmain’s Antminer platform shows how the company frames the integration of ASICs, power delivery, thermal design, and fleet-scale mining operations.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Round 2: Hydro Cooling Swings Hard to Bitmain</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Hydro is where Bitmain opens a major gap. <a href="https://shop.bitmain.com/product/detail?pid=00020260826005834776G6rGvY730671">Bitmain’s current S23 XP Hyd. listing</a> shows <strong>600 TH/s, 5,340 W, and 8.9 J/TH</strong>. That is one of the most aggressive publicly listed SHA-256 miner specs on the market.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Canaan’s strongest current hydro listing, the <a href="https://shop.canaan.io/products/avalon-miner-a1566ha-500t">Avalon A1566HA</a>, is published at <strong>500 TH/s and 16.8 J/TH</strong>. Against that benchmark, Bitmain delivers about <strong>20% more unit hashrate</strong> and roughly <strong>47.0% better energy efficiency</strong> based on the manufacturers’ rated J/TH figures.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The fleet-level implication is even larger. Bitmain’s 8.9 J/TH hydro spec implies roughly <strong>112.4 PH/s per MW</strong>, while Canaan’s 16.8 J/TH hydro spec implies about <strong>59.5 PH/s per MW</strong>. That is a dramatic difference in theoretical SHA-256 density before pumps, heat exchangers, and facility overhead are added.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Hydro systems do add complexity. Operators must engineer liquid loops, manifolds, pumps, filtration, and maintenance procedures. But if the site is already built for hydro, Bitmain’s current flagship is decisively stronger on paper.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Round 3: Bitmain Also Wins Immersion</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In immersion, Bitmain does not keep the same hydro-level gap, but it still wins the comparison. Bitmain’s product lineup and shop references currently include the <strong>Antminer S21 XP Imm.</strong> at about <strong>300 TH/s and 13.5 J/TH</strong>, a fanless immersion-oriented variant designed for dielectric fluid deployments.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Canaan’s current immersion counterpart, the <a href="https://shop.canaan.io/products/avalon-miner-a1566i-273t">Avalon A1566I</a>, is listed at <strong>273 TH/s and 17.8 J/TH</strong>. That gives Bitmain roughly <strong>9.9% more rated hashrate per machine</strong> and around <strong>24.2% better energy efficiency</strong> on the published ratings.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>At the megawatt level, the Bitmain immersion figure equates to about <strong>74.1 PH/s per MW</strong>, while Canaan’s comes out near <strong>56.2 PH/s per MW</strong>. For large immersion farms, that difference can materially change tank count, transformer loading, fluid-loop design, and the amount of building space required to reach a target exahash.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=WaDe7CM6RVA","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=WaDe7CM6RVA
+</div><figcaption class="wp-element-caption"><em>Canaan’s Avalon platform provides the counterpoint in this matchup: proprietary SHA-256 hardware, its own thermal approach, and a still-competitive high-end air platform.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A Note on Fairness and Sources</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>One challenge with cross-manufacturer comparisons is that different companies expose different amounts of detail in public listings. Bitmain currently has a deeper and more aggressive hydro roadmap, while Canaan’s public shop is clearer on some individual Avalon SKUs. For that reason, this article uses each company’s own published headline specifications wherever available and compares them at face value rather than trying to reverse-engineer every wall-power assumption.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That still means real-world field performance can differ. Ambient temperature, coolant inlet temperature, voltage quality, silicon variation, firmware tuning, and overall site design all influence how a miner actually behaves. Any serious procurement decision should also account for <a href="https://bitcoinversus.tech/2026/09/25/the-art-of-rack-and-stack-servers-ai-systems-and-bitcoin-miners/">rack-and-stack constraints</a>, serviceability, failure rates, spare parts, warranty support, and the electrical design of the facility.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Cooling Method Changes the Economics</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Air cooling remains the easiest architecture to deploy and maintain. It fits more existing mining containers and retrofits, but it also means fan power, dust handling, ambient limits, and higher acoustic stress. Hydro and immersion replace much of that with liquid-side complexity, but they can enable far denser thermal envelopes and, in some cases, much higher useful hashrate per megawatt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That is why modern miner comparisons should not stop at one machine. The real decision is whether a fleet operator wants the best air box, the best hydro box, or the best full portfolio of cooling-aware options. As BitcoinVersus.Tech has argued in its <a href="https://bitcoinversus.tech/2025/11/30/the-bitcoin-mining-air-coolant-energy-operation-equation/">air-coolant energy equation</a> and broader cooling coverage, the miner is only one part of the thermal-and-electrical system.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Canaan Wins Air, Bitmain Wins the Fleet</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The cleanest conclusion is this: <strong>Canaan currently wins the conventional air-cooled matchup</strong>, while <strong>Bitmain wins hydro, Bitmain wins immersion, and Bitmain wins the overall three-cooling fleet</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Canaan’s A16XP proves that Avalon is still highly relevant at the high end of conventional deployment. But Bitmain’s hydro lineup—especially the S23 XP Hyd.—is so much stronger on published spec that it changes the balance of the full portfolio. Once immersion is added, Bitmain stays in front.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In other words, if an operator is choosing only for an air-cooled building, Canaan has a serious claim. If the question is which company currently fields the stronger all-around Bitcoin mining fleet across air, hydro, and immersion, the answer is <strong>Bitmain</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">BitcoinVersus.Tech</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Advertisement</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong><a href="https://bitcoinversus.tech/">BitcoinVersus.Tech</a></strong> covers Bitcoin mining hardware, ASIC efficiency, semiconductors, cooling, energy, and data-center operations.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Editor’s Note</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong><em>We volunteer daily to help keep the information on this platform verifiably accurate. Support our independent research through the support options available on BitcoinVersus.Tech.</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p>
+<!-- /wp:paragraph -->
