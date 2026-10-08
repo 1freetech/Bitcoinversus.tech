@@ -1,0 +1,109 @@
+<!-- wp:paragraph --><p><strong>Bitcoin’s block subsidy is the newly created BTC that a miner is allowed to claim when it produces a valid block.</strong> It started at 50 BTC per block in 2009, falls by half every 210,000 blocks, and is currently 3.125 BTC after the 2024 halving.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The subsidy is only one part of the miner’s total block reward. The other part is <strong>transaction fees</strong>. BitcoinVersus.Tech’s <a href="https://bitcoinversus.tech/2026/10/08/bitcoin-what-is-coinbase-transaction-block-subsidy-fees-miners/"><strong>coinbase transaction explainer</strong></a> shows where both pieces are claimed on-chain: the miner builds the first transaction in the block and may claim no more than the permitted subsidy plus the fees from the transactions it included.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Subsidy Is Bitcoin’s Issuance Schedule</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>New BTC does not enter circulation because a company, foundation, or central administrator decides to issue it. Bitcoin’s consensus rules define how much new bitcoin may be created at each block height. Every fully validating node independently checks that a miner has not claimed more subsidy than the rules allow.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This is what makes the block subsidy a monetary-policy mechanism rather than just a mining payment. The schedule is tied to <strong>block height</strong>, not a calendar date. A halving happens when the chain reaches the next 210,000-block boundary.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=qoOfikLKbDY","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=qoOfikLKbDY]</div><figcaption class="wp-element-caption"><em>Bitcoin University explains why the block subsidy falls every 210,000 blocks and how the halving changes miner economics.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">50 → 25 → 12.5 → 6.25 → 3.125 BTC</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The subsidy began at <strong>50 BTC</strong> per block. It fell to 25 BTC at block 210,000 in 2012, 12.5 BTC at block 420,000 in 2016, 6.25 BTC at block 630,000 in 2020, and 3.125 BTC at block 840,000 in 2024.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The next scheduled reduction occurs at block <strong>1,050,000</strong>, when the subsidy falls to <strong>1.5625 BTC</strong>. Because Bitcoin targets an average block interval near ten minutes, that event is expected around 2028, but the exact calendar time depends on when the network actually reaches that block height.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.Tech covered the 2024 event before it arrived in <a href="https://bitcoinversus.tech/2024/02/23/the-bitcoin-halving-is-otw-heres-what-you-need-to-know/"><strong>The Bitcoin Halving Is OTW</strong></a>. The evergreen point is simpler: the protocol does not “schedule a date.” It schedules a block number.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Block Reward and Block Subsidy Are Not the Same Thing</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>These terms are often used interchangeably, but they are technically different. The <strong>block subsidy</strong> is newly created BTC. The <strong>block reward</strong> is the subsidy plus transaction fees.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That distinction becomes more important after every halving. The subsidy is deterministic. Transaction fees are not. Fees rise and fall with block-space demand, transaction size, fee bidding, and the contents of the <a href="https://bitcoinversus.tech/2026/09/27/viabtc-and-mempool-expand-bitcoin-transaction-acceleration/"><strong>mempool</strong></a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>A miner can therefore earn more than 3.125 BTC from a block today if that block contains meaningful fee revenue. The extra amount does not come from new issuance; it comes from users paying to have transactions included.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Coinbase Transaction Enforces the Claim</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The subsidy becomes spendable value through the block’s <a href="https://bitcoinversus.tech/2026/10/08/bitcoin-what-is-coinbase-transaction-block-subsidy-fees-miners/"><strong>coinbase transaction</strong></a>. The miner chooses the reward output, but every validating node checks the amount.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>If a miner attempts to claim 4 BTC of subsidy in an era that permits only 3.125 BTC, the block is invalid even if the miner performed legitimate <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-qbt-asic-ultra-boost-us-patent-sha256/"><strong>SHA-256 proof of work</strong></a>. Proof of work does not give miners permission to rewrite Bitcoin’s monetary rules.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Why 210,000 Blocks?</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>At an average of about ten minutes per block, 210,000 blocks works out to roughly four years. The interval is not exactly four calendar years because Bitcoin blocks are probabilistic and network hashrate changes over time.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Bitcoin’s <a href="https://bitcoinversus.tech/2026/10/04/bitcoin-mining-difficulty-barely-moves-smallest-retarget-2026/"><strong>difficulty adjustment</strong></a> helps pull average block production back toward the ten-minute target every 2,016 blocks. That mechanism stabilizes the approximate timing of the subsidy schedule even as global <a href="https://bitcoinversus.tech/2026/10/06/bitcoin-mining-global-hashrate-941-ehs-us-russia-q4-2026/"><strong>hashrate</strong></a> rises and falls.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Halving Cuts New Issuance, Not Transaction Fees</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A halving does <strong>not</strong> automatically cut transaction fees in half. It only reduces the protocol-created subsidy. User-paid fees continue to depend on demand for block space.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This means two blocks mined immediately before and after a halving could have similar fee revenue but very different total rewards. The first might contain a 6.25 BTC subsidy plus fees; the next-era block would contain a 3.125 BTC subsidy plus whatever fees users paid.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Halving Hits Miner Revenue Immediately</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>From the miner’s perspective, a halving is a sudden cut to one component of revenue while electricity, labor, hosting, networking, cooling, debt, and maintenance costs do not automatically fall with it.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That is why halvings put pressure on inefficient machines and expensive power. A fleet that was profitable at one subsidy may become marginal at the next. BitcoinVersus.Tech’s <a href="https://bitcoinversus.tech/2026/10/06/bitcoin-mining-what-is-hashprice-revenue-per-phs/"><strong>hashprice explainer</strong></a> shows the metric miners use to translate Bitcoin-denominated block revenue into revenue per unit of hashrate.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>When subsidy falls, miners try to defend margin through lower electricity prices, better uptime, newer ASICs, firmware tuning, curtailment, transaction-fee capture, and higher <a href="https://bitcoinversus.tech/2026/10/06/bitcoin-mining-hardware-nameplate-wall-facility-joules-per-terahash/"><strong>wall-level efficiency</strong></a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=p94ehqETgYg","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=p94ehqETgYg]</div><figcaption class="wp-element-caption"><em>Presidio Bitcoin discusses the long-term shift from block subsidy toward transaction-fee revenue and what that means for mining economics.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Halvings Accelerate the ASIC Efficiency Race</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>After a subsidy reduction, the same electrical megawatt produces roughly the same hashrate it did the day before, but the subsidy portion of expected BTC revenue per block has been cut in half. That makes machine efficiency more important.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>An older ASIC consuming around 30–35 J/TH can be squeezed out while a newer machine near the low-teens or single-digit J/TH range continues operating. BitcoinVersus.Tech has documented this transition through <a href="https://bitcoinversus.tech/2026/09/25/antminer-s21-is-the-new-s19/"><strong>S19-to-S21 fleet replacement</strong></a> and the broader <a href="https://bitcoinversus.tech/2025/06/02/the-bitcoin-mining-singularity-the-future-of-bitcoin-mining-machine-hashrate-and-asic-chip-efficiency/"><strong>Bitcoin Mining Singularity</strong></a> efficiency thesis.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Transaction Fees Become More Important Over Time</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>As the subsidy declines, miners increasingly depend on fees. That does not mean fees must replace the entire subsidy immediately after each halving. It means the long-run security budget gradually shifts from newly issued BTC toward payments from users competing for block space.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This transition is already visible in mining-pool accounting. <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-pool-shares-accepted-rejected-stale-vardiff/"><strong>Pool payout systems</strong></a> such as FPPS attempt to account for both subsidy and expected transaction fees when compensating miners for submitted shares.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Difficulty Does Not Protect Miner Profit Margins</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Bitcoin’s difficulty adjustment protects the block interval, not individual mining businesses. If inefficient miners shut down after a halving, difficulty may eventually fall and improve the odds for the miners that remain. But the protocol does not guarantee anyone a profitable electricity price or payback period.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That distinction explains why public miners, home miners, and industrial operators can experience the same network conditions very differently. Power cost, machine efficiency, uptime, pool fees, curtailment revenue, financing, and cooling design can matter as much as the headline subsidy.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Subsidy Also Defines Bitcoin’s Supply Curve</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Because every subsidy era issues less BTC per block than the era before it, total supply approaches Bitcoin’s 21 million limit asymptotically. New issuance becomes progressively smaller until the subsidy eventually rounds down to zero under the protocol’s integer arithmetic.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That is why Bitcoin’s supply curve is predictable years in advance. The exact timing of future blocks is uncertain, but the maximum subsidy permitted at each block height is not.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Final Subsidy Is Expected Around 2140</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The familiar estimate places the end of new BTC issuance around the year 2140. The exact date is only an estimate because future block production will never follow a perfect ten-minute clock.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>After the subsidy reaches zero, miners can still produce blocks and still create a coinbase transaction. The economic difference is that the claim will come entirely from transaction fees rather than newly issued BTC.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">A Halving Does Not Mechanically Double Bitcoin’s Price</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The protocol mechanically changes issuance. It does not contain a rule that raises Bitcoin’s market price. Price is determined outside the consensus code by buyers and sellers.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Halvings can influence market narratives because they reduce the flow of newly issued BTC and change miner economics, but no consensus rule guarantees a particular price response. Treating a 50% subsidy reduction as an automatic 100% price increase confuses monetary issuance with market valuation.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Simple Way to Remember It</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>The block subsidy is newly issued bitcoin. The block reward is the subsidy plus transaction fees. Every 210,000 blocks, only the subsidy is cut in half.</strong></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>For miners, that means recurring pressure to improve efficiency. For Bitcoin’s monetary system, it means a predictable reduction in new supply until issuance eventually ends.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">References</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><a href="https://bitcoin.org/en/halving">Bitcoin.org — Bitcoin Halving</a></li><li><a href="https://bitcoindevelopers.org/docs/developer-guides/block-chain/">Bitcoin Developers — Block Chain Developer Guide</a></li><li><a href="https://github.com/bitcoin/bitcoin/blob/master/src/validation.cpp">Bitcoin Core — Validation Logic</a></li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">BitcoinVersus.Tech</h2><!-- /wp:heading -->
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Advertisement</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong><a href="https://bitcoinversus.tech/">BitcoinVersus.Tech</a></strong> covers Bitcoin mining, ASIC hardware, energy, mining pools, networking, data centers, semiconductors, and proof-of-work economics.</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Editor’s Note</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong><em>This article describes Bitcoin’s current subsidy schedule and mining economics. Future protocol changes would require network consensus, and future halving dates remain estimates until the corresponding block heights are reached.</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em>We volunteer daily to help keep the information on this platform verifiably accurate. Support our independent research through the support options available on BitcoinVersus.Tech.</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p><!-- /wp:paragraph -->
