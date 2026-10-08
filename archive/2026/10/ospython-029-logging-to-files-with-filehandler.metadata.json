@@ -1,0 +1,14 @@
+{
+  "title": "OSPython.029: Logging to Files with FileHandler",
+  "status": "published",
+  "wordpress_post_id": 21642,
+  "published": "2026-10-07T18:07:48",
+  "modified": "2026-10-07T18:13:54",
+  "live_url": "https://bitcoinversus.tech/2026/10/07/ospython-029-logging-to-files-with-filehandler/",
+  "featured_media_id": 21638,
+  "wordpress_excerpt": "Learn how to save Python logs to disk with basicConfig(filename=&#8230;) and FileHandler, including append mode, formatting, and simple troubleshooting.",
+  "archive_path": "archive/2026/10/ospython-029-logging-to-files-with-filehandler.md",
+  "gutenberg_blob_sha": "273e4cb15969ab6b6c47e64c7444134357adb448",
+  "source": "WordPress posts.list + GitHub fetch_file",
+  "seo_meta_presence_verified": false
+}
