@@ -1,0 +1,119 @@
+<!-- wp:paragraph --><p><strong>Every valid Bitcoin block begins with one unusual transaction: the coinbase transaction.</strong> It is created by the miner building the block, it does not spend a normal previous <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-what-is-utxo-unspent-transaction-output-wallet-balance/"><strong>UTXO</strong></a>, and it is the mechanism that lets the miner claim the block subsidy plus the transaction fees from the rest of the block.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The name has nothing to do with the Coinbase exchange. In Bitcoin protocol terminology, the <strong>coinbase transaction</strong> is the first transaction in a block. Bitcoin’s developer documentation also calls it a <strong>generation transaction</strong> because it is the only transaction allowed to create newly issued bitcoin under the protocol’s subsidy rules.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Every Bitcoin Block Starts With One</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Bitcoin’s block-chain rules require every block to contain at least one transaction, and the first transaction must be the coinbase transaction. A block can theoretically contain no ordinary user transactions at all, but it still needs the coinbase transaction so the block has a valid first transaction and the miner can claim any subsidy available at that height.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The <a href="https://bitcoindevelopers.org/docs/developer-guides/block-chain/"><strong>Bitcoin developer guide</strong></a> describes the block reward as the combination of two things: the <strong>block subsidy</strong> and the <strong>transaction fees</strong> paid by transactions included in that block.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=taE3tZTdtQg","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=taE3tZTdtQg]</div><figcaption class="wp-element-caption"><em>Mastering Bitcoin walkthrough: how a miner assembles a candidate block, builds the coinbase transaction, and commits the transaction set into the block header.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Coinbase Transaction Does Not Spend a Normal Previous Output</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A normal Bitcoin transaction spends one or more previous transaction outputs. The input points backward to an earlier transaction ID and output index. BitcoinVersus.Tech’s <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-what-is-utxo-unspent-transaction-output-wallet-balance/"><strong>UTXO explainer</strong></a> covers that chain in detail.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The coinbase transaction is different because no earlier UTXO exists that contains the newly issued block subsidy. Instead, its input uses a special null previous-output reference. That marks the transaction as the block’s generation transaction rather than an ordinary spend.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Miner Chooses the Outputs</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The outputs of the coinbase transaction tell Bitcoin where the miner’s reward should go. A solo miner might direct the reward to one wallet script. A <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-it-what-is-stratum-asic-miners-pools/"><strong>mining pool</strong></a> typically directs the on-chain block reward to an address or script controlled by the pool and later distributes earnings to individual miners according to its payout system.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That is why a pool miner does not normally receive a tiny piece of the raw block coinbase transaction every time the pool finds a block. The pool tracks contributed work through <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-pool-shares-accepted-rejected-stale-vardiff/"><strong>shares</strong></a>, then performs separate payouts according to its PPS, FPPS, PPLNS, or other accounting method.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Block Reward = Subsidy + Transaction Fees</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The maximum value a miner may claim in the coinbase transaction is the current block subsidy plus the fees from the other transactions included in the block. In 2026 the subsidy is <strong>3.125 BTC per block</strong>, following the 2024 halving. That subsidy will halve again after another 210,000-block subsidy era completes.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Transaction fees are different. They are not newly created bitcoin. For an ordinary transaction, the fee is the difference between the value of its inputs and the value assigned to its outputs. The miner can claim the aggregate fees from the transactions it includes in the candidate block.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This is one reason <a href="https://bitcoinversus.tech/2026/10/06/bitcoin-mining-what-is-hashprice-revenue-per-phs/"><strong>hashprice</strong></a> can change even when Bitcoin’s subsidy is unchanged. A block with unusually high fees pays more than a block with almost no fees.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=-Z-wkRKxSfs","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=-Z-wkRKxSfs]</div><figcaption class="wp-element-caption"><em>GoMining explains how block subsidies, transaction fees, difficulty, and hashrate competition combine to determine Bitcoin mining revenue.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">A Miner Cannot Create Extra Bitcoin by Typing a Bigger Number</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The coinbase transaction is created by the miner, but the miner does not control Bitcoin’s monetary rules. Every validating node independently knows the maximum subsidy permitted at that block height and can calculate the fees paid by the other transactions in the block.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>If the coinbase transaction tries to claim more than the allowed subsidy plus fees, the block is invalid. Other nodes reject it regardless of how much proof of work the miner spent finding the block. That separation is fundamental: miners propose blocks, but full nodes enforce the consensus rules.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Subsidy Halves Every 210,000 Blocks</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Bitcoin started with a block subsidy of 50 BTC. The subsidy halves every 210,000 blocks, roughly once every four years. It fell to 25 BTC, then 12.5 BTC, 6.25 BTC, and 3.125 BTC after the 2024 halving.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The coinbase transaction is where that monetary schedule becomes visible on-chain. Each valid block may create no more than the subsidy allowed for its height. Over many halving eras, the subsidy approaches zero and miner revenue becomes increasingly dependent on transaction fees.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Coinbase Input Has a Special Data Field</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Because the coinbase input does not need to provide a signature unlocking a previous UTXO, its script field can carry special miner-generated data. Modern blocks must include the block height in the coinbase transaction under BIP34 rules, and miners or pools may also use the field for identifiers, extra nonce data, or other permitted information.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This extra data is useful during mining because the miner needs ways to modify the candidate block repeatedly while searching for valid proof of work. Changing coinbase data changes the coinbase transaction ID, which changes the <strong>Merkle root</strong>, which then changes the block header being hashed.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Why the ExtraNonce Matters</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The famous 32-bit nonce field in the Bitcoin block header provides only about 4.29 billion possible values. Modern ASIC hardware can exhaust that range extremely quickly. Miners therefore need a larger search space than the header nonce alone provides.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>One method is to change an <strong>extraNonce</strong> value inside the coinbase transaction. That changes the coinbase TXID and therefore the Merkle root in the block header, creating an entirely new set of header hashes for the <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-qbt-asic-ultra-boost-us-patent-sha256/"><strong>SHA-256 ASICs</strong></a> to search.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This is also part of the reason <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-it-what-is-stratum-asic-miners-pools/"><strong>Stratum mining jobs</strong></a> include coinbase-related data. Pools need to give many workers unique search space while still constructing blocks that ultimately pay the pool’s chosen reward outputs.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Coinbase Transaction Is Part of the Merkle Tree</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The coinbase transaction is not separate from the block’s transaction commitment. Its TXID is included with the TXIDs of all the other transactions when the Merkle tree is built. The resulting Merkle root is placed in the 80-byte block header.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Change any transaction—including the coinbase transaction—and the Merkle root changes. That means the block header changes and the miner’s previous proof-of-work search no longer applies to the altered transaction set.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">SegWit Added Another Coinbase Responsibility</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>After Segregated Witness, blocks containing witness data also use the coinbase transaction to carry a witness commitment. This commitment binds the block to the witness data associated with SegWit transactions.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>So the coinbase transaction is doing more than paying the miner. In modern Bitcoin it also helps commit additional block data required by consensus rules.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Coinbase Rewards Cannot Be Spent Immediately</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A normal confirmed UTXO can generally be spent according to its script conditions. Coinbase outputs have an additional rule: they must mature before they can be spent. Bitcoin’s consensus rules require a coinbase output to wait for at least <strong>100 blocks</strong> before it can be used as an input to another transaction.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The reason is chain reorganization risk. If a recently mined block becomes stale during a reorganization, its coinbase transaction disappears from the active chain. Delaying spendability prevents miners from immediately building downstream transactions on rewards that may vanish if their block loses its place in the best chain.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Why Pools Care About Coinbase Construction</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>For a large mining pool, the coinbase transaction is an operational control point. The pool constructs a block template, chooses transactions, creates reward outputs, inserts required commitments, assigns extraNonce space, and distributes work to connected miners.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The individual ASIC does not usually decide which user transactions enter the block. It hashes work based on the job information supplied by the pool. The pool’s block-template logic and the miner’s <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-pool-shares-accepted-rejected-stale-vardiff/"><strong>share submissions</strong></a> are connected through the mining protocol.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Bitcoin Core Can Expose the Underlying Block Data</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Operators running a Bitcoin full node can inspect blocks and transactions through <a href="https://bitcoinversus.tech/2026/10/08/bitcoin-it-what-is-bitcoin-core-rpc-bitcoin-cli-json-rpc/"><strong>Bitcoin Core RPC</strong></a>. Commands such as <strong>getblock</strong>, <strong>getrawtransaction</strong>, and related RPC methods can expose block contents, transaction IDs, outputs, and other data used to study coinbase transactions.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Mining software also relies on node interfaces such as <strong>getblocktemplate</strong> to obtain the information needed to construct candidate blocks. That is the bridge between Bitcoin’s full-node consensus logic and the specialized software that prepares work for mining hardware.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Coinbase Transactions Explain Where New Bitcoin Actually Comes From</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Wallet interfaces can make Bitcoin look as if coins simply move from one account balance to another. Underneath that interface, Bitcoin is a chain of transaction outputs. Almost every spend traces backward through earlier UTXOs until eventually some value traces to a coinbase transaction that introduced a block subsidy into circulation.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That makes coinbase transactions the starting point for newly issued bitcoin. They are where Bitcoin’s programmed monetary schedule intersects with real mining activity.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">What Happens After the Final Subsidy?</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Bitcoin’s subsidy keeps halving until newly issued amounts eventually round down to zero. When that happens, coinbase transactions will still exist. Miners will still need the first transaction in each block to claim transaction fees and satisfy the block’s required structure and commitments.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The economic difference is that the block reward will then come entirely from fees rather than a combination of new issuance and fees. That long-term transition is one reason transaction-fee markets matter to Bitcoin’s security model.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Simple Way to Remember It</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>A normal Bitcoin transaction spends old outputs. A coinbase transaction creates the miner’s claim on the new block reward.</strong></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>It is always first in the block, can claim no more than the allowed subsidy plus fees, participates in the block’s Merkle commitments, gives miners extra search space, and produces outputs that must mature before they can be spent.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">References</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><a href="https://bitcoindevelopers.org/docs/developer-guides/block-chain/">Bitcoin Developers — Block Chain Developer Guide</a></li><li><a href="https://developer.bitcoin.org/devguide/transactions.html">Bitcoin Developer Guide — Transactions</a></li><li><a href="https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc">Mastering Bitcoin — Coinbase Transactions</a></li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">BitcoinVersus.Tech</h2><!-- /wp:heading -->
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Advertisement</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong><a href="https://bitcoinversus.tech/">BitcoinVersus.Tech</a></strong> covers Bitcoin mining, ASIC hardware, mining pools, networking, energy, data centers, semiconductors, and the infrastructure behind proof of work.</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Editor’s Note</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong><em>Bitcoin consensus behavior can change through future protocol upgrades. This article describes the current coinbase-transaction model and should be cross-checked against the exact Bitcoin Core version and consensus rules used in production systems.</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em>We volunteer daily to help keep the information on this platform verifiably accurate. Support our independent research through the support options available on BitcoinVersus.Tech.</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p><!-- /wp:paragraph -->
