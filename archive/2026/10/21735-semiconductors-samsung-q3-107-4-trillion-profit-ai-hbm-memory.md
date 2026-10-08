@@ -1,17 +1,17 @@
 ---
 post_id: 21735
-title: "Semiconductors: Samsung Projects ₩107.4T Q3 Profit as AI Memory Boom Accelerates"
+title: "Semiconductors: Samsung Projects $80.2B Q3 Profit as AI Memory Boom Accelerates"
 live_url: "https://bitcoinversus.tech/2026/10/07/semiconductors-samsung-q3-107-4-trillion-profit-ai-hbm-memory/"
 featured_media_id: 21741
 featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-samsung-hbm-ai-memory-1200x630-1.png"
 status: publish
 ---
 <!-- wp:paragraph -->
-<p><a href="https://bitcoinversus.tech/2026/09/27/samsung-brings-mistral-ai-into-semiconductor-design-and-manufacturing/"><strong>Samsung Electronics</strong></a> just put a giant number on the AI memory boom: the company expects roughly <strong>₩107.4 trillion ($80.2 billion)</strong> in operating profit for the third quarter of 2026, up 782.5% from a year earlier.</p>
+<p><a href="https://bitcoinversus.tech/2026/09/27/samsung-brings-mistral-ai-into-semiconductor-design-and-manufacturing/"><strong>Samsung Electronics</strong></a> just put a giant number on the AI memory boom: the company expects roughly <strong>$80.2 billion</strong> in operating profit for the third quarter of 2026, up 782.5% from a year earlier.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Samsung’s <a href="https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026"><strong>official preliminary guidance</strong></a> puts quarterly sales at about ₩195 trillion and operating profit at ₩107.4 trillion. The company’s full third-quarter results are scheduled for October 29, so the preliminary release does not yet provide a complete divisional breakdown.</p>
+<p>Samsung’s <a href="https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026"><strong>official preliminary guidance</strong></a> puts quarterly sales at about <strong>$145.6 billion</strong> and operating profit at about <strong>$80.2 billion</strong>. The company’s full third-quarter results are scheduled for October 29, so the preliminary release does not yet provide a complete divisional breakdown.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -29,11 +29,11 @@ https://www.youtube.com/watch?v=t9I_Z6W1lI0
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Samsung says third-quarter sales should land near ₩195 trillion, compared with ₩86.06 trillion in the same quarter of 2025. Operating profit is expected at ₩107.4 trillion, compared with ₩12.17 trillion a year earlier. That works out to year-over-year increases of 126.59% in sales and 782.50% in operating profit.</p>
+<p>Samsung says third-quarter sales should land near <strong>$145.6 billion</strong>, compared with about <strong>$64.3 billion</strong> in the same quarter of 2025. Operating profit is expected at <strong>$80.2 billion</strong>, compared with about <strong>$9.1 billion</strong> a year earlier. That works out to year-over-year increases of 126.59% in sales and 782.50% in operating profit.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Sequentially, the company is also moving higher. Samsung reported ₩171.5 trillion in sales and ₩89.49 trillion in operating profit for the second quarter of 2026. The preliminary third-quarter figures therefore point to another step up in both revenue and profit.</p>
+<p>Sequentially, the company is also moving higher. Samsung reported about <strong>$128.1 billion</strong> in sales and <strong>$66.8 billion</strong> in operating profit for the second quarter of 2026. The preliminary third-quarter figures therefore point to another step up in both revenue and profit.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
