@@ -1,0 +1,159 @@
+<!-- wp:paragraph -->
+<p><strong>PXE boot lets a computer start from the network before its normal operating system loads.</strong> Instead of inserting a USB drive into every machine, an IT technician can power on a PC, point it at the network, and have the machine download the files it needs to begin setup, diagnostics, recovery, or automated deployment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>PXE stands for <strong>Preboot Execution Environment</strong>. It sits between a computer’s <a href="https://bitcoinversus.tech/2026/04/30/bios-versus-uefi-2/">BIOS or UEFI firmware</a> and the operating system that will eventually run. If you already understand what happens when <a href="https://bitcoinversus.tech/2026/10/06/easy-tech-read-what-happens-when-you-press-the-power-button-on-a-pc/">you press the power button on a PC</a>, PXE is simply another possible boot path: instead of loading from an SSD, the machine asks the network for instructions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why IT Teams Use PXE</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>PXE is useful anywhere many computers must be built, rebuilt, or recovered in a consistent way. A data center technician can rack a new server, connect power and <a href="https://bitcoinversus.tech/2026/10/02/osntc-008-ethernet-frame-basics/">Ethernet</a>, select network boot, and let the deployment system handle the early installation steps. Desktop support teams can do the same thing for labs, classrooms, call centers, and fleets of corporate PCs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The big advantage is scale. With USB-based installation, a technician may need physical media for every machine. With PXE, the network becomes the installation media. A central server can provide the same approved boot environment to dozens or hundreds of machines, which makes imaging and recovery easier to standardize.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=ILon8Quv924","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=ILon8Quv924
+</div><figcaption class="wp-element-caption"><em>A Windows Server deployment walkthrough showing PXE, DHCP, BIOS/UEFI booting, and Windows Deployment Services in a lab.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Simple PXE Boot Sequence</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The basic flow starts when the firmware’s network-boot option activates the computer’s network interface before the normal OS starts. The client broadcasts on the local network asking for addressing information and for a boot service. This connects PXE directly to <a href="https://bitcoinversus.tech/2025/04/23/dhcp-dynamic-host-configuration-protocol/">DHCP</a>, the same protocol that normally gives computers their IP address, subnet mask, gateway, and other network settings.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Microsoft’s <a href="https://learn.microsoft.com/en-us/windows/deployment/configure-a-pxe-server-to-load-windows-pe">PXE deployment documentation</a> describes a setup in which the client receives network information, learns where the boot server is, downloads a network boot program, and then loads Windows PE. In a classic PXE workflow, TFTP is commonly used to transfer the early boot files because the computer does not yet have a normal operating system or full application stack.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The boot environment can then launch installation tools, diagnostics, imaging software, or recovery utilities. In Windows environments, that temporary environment is often <strong>Windows PE</strong>, a small Windows runtime used for deployment and servicing. From there, the machine can partition storage, apply an image, configure boot files, and continue into a full OS installation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">PXE Depends on More Than One Server</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A working PXE environment is really a chain of services. The client needs an address from DHCP. It needs a PXE-capable server or deployment service to tell it which boot program to use. It needs access to the boot files. And after the small preboot environment loads, it may need a file server, deployment share, or management platform that contains the full operating-system image.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That is why a PXE failure does not automatically mean “the PXE server is broken.” The problem can be <a href="https://bitcoinversus.tech/2026/10/03/osntc-013-router-basics/">routing</a>, DHCP, a blocked UDP port, a missing boot file, the wrong UEFI architecture, a bad <a href="https://bitcoinversus.tech/2026/10/06/easy-tech-read-what-is-a-device-driver-how-hardware-talks-to-the-operating-system/">network driver</a>, or a switch/VLAN path that never forwards the client’s discovery traffic to the correct subnet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What Happens Across VLANs</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>PXE is easiest when the client, DHCP service, and PXE server are on the same local network. In larger environments, they often are not. Broadcast traffic normally stops at a router, so network teams commonly use an IP helper or relay configuration to forward the required discovery traffic between VLANs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This is a good example of why operating-system deployment becomes a networking problem as soon as the machine has to boot across a routed environment. A perfectly configured deployment server can still appear dead if the <a href="https://bitcoinversus.tech/2025/04/07/solving-wired-and-wireless-network-problems-in-business-and-home-networks/">network path</a> is wrong.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">BIOS and UEFI Matter</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Older BIOS-based systems and modern UEFI systems do not always request or execute the same network boot program. A deployment server therefore needs to give each client a boot file that matches its firmware architecture. Intel’s <a href="https://www.intel.com/content/www/us/en/support/articles/000054990/intel-nuc/intel-nuc-kits.html">PXE boot guidance</a> shows the firmware side of this process: network boot is enabled in firmware, and the onboard network interface becomes a valid boot device.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If a machine receives an IP address but stops immediately afterward, firmware architecture is one of the first things worth checking. An x64 UEFI system needs the correct UEFI network boot program; giving it a legacy BIOS boot file can prevent the sequence from moving forward.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=x5na8ObyYCs","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=x5na8ObyYCs
+</div><figcaption class="wp-element-caption"><em>A step-by-step Windows 11 deployment lab using PXE boot and Windows Deployment Services.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why TFTP Shows Up So Often</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>TFTP means <strong>Trivial File Transfer Protocol</strong>. It is intentionally simple and has traditionally been used to move the small boot files needed during the earliest stage of PXE startup. That simplicity is useful because the client has not yet loaded the normal OS, storage stack, browser, or software-management agent.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Once the initial environment is running, modern deployment systems can use richer protocols and management tooling to move larger images and configuration data. The important distinction is that PXE solves the earliest problem: <em>how does a bare machine find something bootable on the network?</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">PXE Troubleshooting From the Technician’s View</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Start at the physical layer. Confirm the NIC has link, the cable is connected, and the switch port belongs to the correct network. Then confirm the machine is actually configured for network boot in BIOS or UEFI. If the client never receives an IP address, investigate DHCP, VLAN configuration, relay settings, and the upstream network.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If the client receives an IP address but cannot obtain a boot program, move one step deeper: verify that the PXE service is responding, the correct architecture-specific boot file is assigned, the TFTP path exists, and the required ports are not blocked. If the boot program loads but Windows PE fails later, the problem has moved farther downstream into image files, drivers, storage, deployment shares, or task-sequence logic.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This upstream-to-downstream method is the same troubleshooting discipline used throughout <a href="https://bitcoinversus.tech/2026/10/06/ositc-001-it-systems-fundamentals-hardware-operating-systems-networks-troubleshooting/">IT systems troubleshooting</a>: identify the last stage that worked, then test the next dependency instead of changing everything at once.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">PXE Is Not the Same as Windows Deployment Services</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>PXE is the network-boot mechanism. <a href="https://bitcoinversus.tech/2026/09/10/windows-server-guide-for-it-technicians-and-administrators/">Windows Server</a> tools such as Windows Deployment Services are implementations that can use PXE to deliver Windows boot environments and images. Other deployment platforms can use PXE too, including Linux-based imaging systems, bare-metal provisioning platforms, and enterprise configuration-management tools.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Microsoft has also been moving Windows deployment toward newer management approaches, and its documentation notes that parts of WDS are being deprecated after Windows Server 2025. That does not make the PXE concept obsolete. Network boot remains a fundamental piece of bare-metal provisioning even when the software orchestrating the deployment changes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Easy Way to Remember PXE</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>PXE turns the network into a boot device.</strong> The firmware starts the NIC, DHCP gives the machine enough network information to communicate, the deployment infrastructure points it toward a boot program, and the client downloads a temporary environment that can install or repair the real operating system.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>For an IT technician, the value is simple: instead of walking from machine to machine with installation media, you can use the network, <a href="https://bitcoinversus.tech/2025/04/23/dhcp-dynamic-host-configuration-protocol/">DHCP</a>, firmware, and centralized deployment infrastructure to build systems at scale.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">BitcoinVersus.Tech</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Advertisement</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong><a href="https://bitcoinversus.tech/">BitcoinVersus.Tech</a></strong> covers operating systems, networking, servers, data centers, hardware, software, and the infrastructure behind modern computing.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Editor’s Note</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong><em>We volunteer daily to help keep the information on this platform verifiably accurate. Support our independent research through the support options available on BitcoinVersus.Tech.</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p>
+<!-- /wp:paragraph -->
