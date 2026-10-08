@@ -1,0 +1,101 @@
+<!-- wp:paragraph --><p><strong>LLDP is the quiet protocol that helps network devices tell their directly connected neighbors who they are.</strong> If a technician plugs a <a href="https://bitcoinversus.tech/2026/10/07/networking-what-is-nic-network-interface-card-servers-asic-miners/"><strong>server NIC</strong></a> into the wrong <a href="https://bitcoinversus.tech/2026/10/03/osntc-012-network-switch-basics/"><strong>switch</strong></a> port, connects a switch uplink to an unexpected rack, or inherits a data center with poor documentation, <strong>Link Layer Discovery Protocol</strong> can provide one of the fastest ways to identify what is actually connected.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>LLDP is standardized by IEEE 802.1AB. The current <a href="https://standards.ieee.org/ieee/802.1AB/11787/"><strong>IEEE 802.1AB-2026 standard</strong></a> defines a mechanism for discovering the physical topology of adjacent stations on IEEE 802 networks. In plain English: each LLDP-capable device periodically advertises basic information about itself to devices directly attached to the same link.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">LLDP Works at Layer 2</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>LLDP operates at the data-link layer, which means it does not need an IP route to discover the device on the other end of an Ethernet connection. A switch can learn about a neighboring switch, router, access point, IP phone, server, or other compatible endpoint simply because the two interfaces share a direct Layer 2 link.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That makes LLDP especially useful during physical troubleshooting. If the <a href="https://bitcoinversus.tech/2026/10/07/osntc-018-ethernet-link-negotiation-speed-duplex-auto-negotiation-link-leds-interface-errors/"><strong>Ethernet link</strong></a> is up but documentation says the cable should terminate somewhere else, LLDP may reveal the remote chassis and port without forcing the technician to trace the cable by hand through an entire rack or overhead pathway.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=S7b8a-s0FZU","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=S7b8a-s0FZU]</div><figcaption class="wp-element-caption"><em>InterNetworks explains LLDP, TLVs, neighbor discovery, LLDP-MED, and common configuration concepts.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">What Information Does LLDP Advertise?</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>LLDP exchanges information using <strong>TLVs</strong>—Type, Length, Value fields. Instead of sending one giant fixed record, a device advertises individual pieces of information that a neighbor can store in its local LLDP table.</p><!-- /wp:paragraph -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><strong>Chassis identity:</strong> which physical or logical device sent the advertisement.</li><li><strong>Port identity:</strong> which interface on that device is connected to the local port.</li><li><strong>System name and description:</strong> useful for matching the neighbor to inventory or configuration records.</li><li><strong>Management address:</strong> often an IP address that administrators can use to reach the device.</li><li><strong>System capabilities:</strong> whether the neighbor identifies itself as a switch, router, bridge, telephone, or another type of device.</li><li><strong>VLAN and link information:</strong> depending on platform and supported extensions.</li><li><strong>Power information:</strong> useful for Power over Ethernet and LLDP-MED environments.</li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p>Cisco’s current <a href="https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/application-services/b-application-services/m_ce-lldp-multivend.html"><strong>IOS XE LLDP documentation</strong></a> describes LLDP as a multivendor topology-discovery mechanism that can expose identifiers, port information, versions, and other details to management systems. That vendor-neutral aspect is one of LLDP’s biggest strengths.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">LLDP Is Not the Same as a MAC Address Table</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A <a href="https://bitcoinversus.tech/2026/10/02/osntc-007-mac-address-basics/"><strong>MAC address</strong></a> table tells a switch which source MAC addresses have been observed behind particular ports. LLDP tells the switch what a directly connected neighbor says about itself.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Those are different types of evidence. A MAC table might show hundreds of endpoint addresses behind an uplink. LLDP can tell you that the uplink itself connects to a specific neighboring switch and even identify the remote port. Used together, the two tables become much more useful for tracing a path through a network.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">LLDP Does Not Replace SNMP</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><a href="https://bitcoinversus.tech/2026/10/07/networking-what-is-snmp-bitcoin-mining-switch-pdu-monitoring/"><strong>SNMP</strong></a> is commonly used to monitor devices across an IP network. LLDP is more local: each device discovers its immediate neighbors and stores that information. Network-management software can then collect LLDP neighbor tables through SNMP, APIs, or vendor management systems to build a larger topology map.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This combination is powerful in a data center. A monitoring platform can learn that a server connects to a certain <a href="https://bitcoinversus.tech/2026/10/06/networking-what-is-top-of-rack-switch-data-center/"><strong>top-of-rack switch</strong></a>, that the top-of-rack switch uplinks to a leaf or aggregation switch, and that the physical path differs from the documented design.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">LLDP vs. Cisco Discovery Protocol</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Cisco Discovery Protocol, or <strong>CDP</strong>, solves a similar problem but originated as a Cisco proprietary protocol. LLDP is the open IEEE standard and is therefore better suited to mixed-vendor environments containing Cisco, Juniper, Arista, HPE, Dell, Linux servers, hypervisors, IP phones, and other devices.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Some Cisco systems can run both CDP and LLDP on the same interface. In a Cisco-only environment CDP may expose vendor-specific information, while LLDP provides a standard neighbor-discovery method that remains useful when other manufacturers are introduced.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">A Simple Data-Center Example</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Imagine a technician racks a new server and connects NIC 1 to switch port Ethernet1/17. The cabling documentation says the server should connect to Rack A’s top-of-rack switch, but the server cannot reach the expected <a href="https://bitcoinversus.tech/2026/06/01/vlans-explain-how-modern-networks-stay-organized-and-secure/"><strong>VLAN</strong></a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The technician checks the local switch’s LLDP neighbor table. Instead of seeing the expected server or downstream switch, the table identifies a device in the neighboring rack. That immediately changes the troubleshooting direction: the problem may be physical patching rather than <a href="https://bitcoinversus.tech/2026/10/01/osntc-005-dhcp-basics/"><strong>DHCP</strong></a>, routing, or an operating-system configuration issue.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This is why LLDP is so useful during <a href="https://bitcoinversus.tech/2026/10/05/osdctc-003-structured-cabling-patch-panels-copper-fiber-t568b-labeling-bend-radius-verification/"><strong>structured-cabling</strong></a> verification. It allows logical information from the network devices to confirm—or contradict—the physical labels on patch panels and cables.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Most Useful LLDP Commands Are Usually Read-Only</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>On Cisco IOS-style systems, administrators commonly use commands such as <strong>show lldp</strong>, <strong>show lldp neighbors</strong>, and <strong>show lldp neighbors detail</strong> to inspect the local LLDP state and the devices discovered on directly connected ports. Configuration syntax varies by vendor and operating system.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The safest first step during troubleshooting is usually to read the existing neighbor table before changing anything. If LLDP is already enabled, it can provide immediate evidence without interrupting production traffic.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=1izLCsV8j68","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=1izLCsV8j68]</div><figcaption class="wp-element-caption"><em>IEE demonstrates how to configure, verify, and interpret LLDP neighbor information in a Cisco CCNA-style lab.</em></figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">LLDP-MED Extends Discovery for Phones and Power</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>LLDP-MED</strong>, or Media Endpoint Discovery, adds information useful to voice and endpoint deployments. An IP phone can learn network policy information while switches can exchange power, inventory, and endpoint details.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That matters in enterprise networks where one Ethernet cable may provide both connectivity and Power over Ethernet to an IP phone, access point, camera, or other powered endpoint. LLDP-MED helps turn simple neighbor discovery into a basic endpoint-provisioning mechanism.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">LLDP Can Help Find Bad Documentation</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>One of LLDP’s best real-world uses is auditing a network after months or years of change. Rack diagrams may be outdated. Patch-panel labels may be wrong. A switch may have been replaced without updating documentation. An emergency cable move may have become permanent.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>By collecting LLDP neighbors from <a href="https://bitcoinversus.tech/2026/10/08/managed-vs-unmanaged-switches-network-control-vlans-snmp-stp/"><strong>managed switches</strong></a>, engineers can compare the discovered physical topology with the intended design. Unexpected neighbors are a clue that the real network has drifted away from the diagram.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">LLDP Is Useful During Port-Flapping Troubleshooting</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>If an interface repeatedly goes up and down, <a href="https://bitcoinversus.tech/2025/11/22/network-tech-training-port-flapping/"><strong>port flapping</strong></a> may be caused by a bad cable, optic, transceiver, NIC, switch port, power issue, or unstable endpoint. LLDP can help identify exactly which device and remote interface are involved before the link disappears again.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>LLDP should be combined with interface counters, link-event logs, speed/duplex information, optic diagnostics, and physical inspection. It identifies the neighbor; it does not automatically prove why the link is failing.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Security: Discovery Information Is Still Information</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>LLDP is designed for discovery, not strong authentication. Advertisements can expose system names, port descriptions, management addresses, device capabilities, VLAN information, and other details that may be useful to an attacker who already has access to the local network segment.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Organizations therefore do not have to advertise LLDP everywhere. Depending on the switch platform, administrators can often disable transmit, receive, or selected TLVs on interfaces where discovery information is unnecessary. The correct policy depends on the environment: an internal data-center interconnect may benefit heavily from LLDP, while an untrusted edge port may require tighter exposure.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Why LLDP Matters More as Networks Grow</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A four-port home switch can be understood by looking at it. A data center with hundreds of racks, thousands of ports, redundant fabrics, <a href="https://bitcoinversus.tech/2026/06/01/vlans-explain-how-modern-networks-stay-organized-and-secure/"><strong>VLANs</strong></a>, virtualization, storage networks, and multiple vendors cannot.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>LLDP gives every directly connected link a small amount of self-description. That information can be read by a human during troubleshooting or collected automatically to build topology maps, inventory systems, and compliance checks. It does not replace good labels or diagrams—but it provides a second source of truth when those records are wrong.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Simple Way to Remember LLDP</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>MAC tables answer “what addresses are behind this port?” LLDP answers “what device says it is directly connected to this port?”</strong> SNMP and management platforms can then collect that information across many devices to reconstruct the larger network.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>For technicians working with servers, ASIC miners, switches, routers, access points, or data-center racks, LLDP is one of those protocols that becomes much more valuable the moment the cabling stops matching the documentation.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">References</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><a href="https://standards.ieee.org/ieee/802.1AB/11787/">IEEE 802.1AB-2026 — Station and Media Access Control Connectivity Discovery</a></li><li><a href="https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/application-services/b-application-services/m_ce-lldp-multivend.html">Cisco IOS XE — Using LLDP in Multivendor Networks</a></li><li><a href="https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/cdp-lldp-mac-udld/cdp-lldp-mac-udld-configuration-guide/c-configure-lldp.html">Cisco Catalyst — Configure LLDP</a></li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">BitcoinVersus.Tech</h2><!-- /wp:heading -->
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Advertisement</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong><a href="https://bitcoinversus.tech/">BitcoinVersus.Tech</a></strong> covers networking, data centers, Bitcoin mining, servers, semiconductors, operating systems, and the infrastructure behind modern computing.</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Editor’s Note</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong><em>LLDP behavior, defaults, TLV support, and command syntax vary by vendor and software release. Use the documentation for the exact platform before making production configuration changes.</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em>We volunteer daily to help keep the information on this platform verifiably accurate. Support our independent research through the support options available on BitcoinVersus.Tech.</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p><!-- /wp:paragraph -->
