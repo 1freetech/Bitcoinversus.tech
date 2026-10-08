@@ -1,0 +1,14 @@
+{
+  "title": "OSNTC.018: Ethernet Link Negotiation — Speed, Duplex, Auto-Negotiation, Link LEDs, and Interface Errors",
+  "status": "published",
+  "wordpress_post_id": 21726,
+  "published": "2026-10-07T21:55:49",
+  "modified": "2026-10-07T21:55:49",
+  "live_url": "https://bitcoinversus.tech/2026/10/07/osntc-018-ethernet-link-negotiation-speed-duplex-auto-negotiation-link-leds-interface-errors/",
+  "featured_media_id": 21722,
+  "wordpress_excerpt": "Learn Ethernet link negotiation for network technicians: link LEDs, speed, duplex, auto-negotiation, duplex mismatch, CRC/FCS errors, interface counters, and practical verification commands.",
+  "archive_path": "archive/2026/10/osntc-018-ethernet-link-negotiation-speed-duplex-auto-negotiation-link-leds-interface-errors.md",
+  "gutenberg_blob_sha": "b4563ec376a1ac7d75d7a9578262db43c7c35096",
+  "source": "WordPress posts.list + GitHub fetch_file",
+  "seo_meta_presence_verified": null
+}
