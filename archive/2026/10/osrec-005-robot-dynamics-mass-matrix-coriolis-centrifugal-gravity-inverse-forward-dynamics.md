@@ -1,16 +1,5 @@
 ---
-post_id: 21571
-lesson_code: "OSREC.005"
-certification: "Open-Source Robotics Engineer"
-track: "Robotics Engineer"
-lesson_number: 5
-title: "OSREC.005: Robot Dynamics — Mass Matrix, Coriolis/Centrifugal Terms, Gravity, Inverse Dynamics, and Forward Dynamics"
-live_url: "https://bitcoinversus.tech/2026/10/07/osrec-005-robot-dynamics-mass-matrix-coriolis-centrifugal-gravity-inverse-forward-dynamics/"
-featured_media_id: 21570
-featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/osrec005-robot-dynamics-1200x630-1.jpg"
-status: publish
----
-<!-- wp:paragraph -->
+p<!-- wp:paragraph -->
 <p><strong>Open-Source Robotics Engineer — Lesson 005.</strong> Robot kinematics describes where a robot is and how its joints relate to end-effector motion. <a href="https://bitcoinversus.tech/2026/10/06/osrec-004-robot-trajectory-planning-joint-space-cartesian-paths-time-scaling-velocity-acceleration-jerk/"><strong>Trajectory planning</strong></a> adds desired position, velocity, and acceleration over time. <strong>Dynamics</strong> adds the missing physical question: what joint forces or torques are required to create that motion, and what motion results when forces or torques are applied?</p>
 <!-- /wp:paragraph -->
 
