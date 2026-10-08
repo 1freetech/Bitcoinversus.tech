@@ -1,0 +1,14 @@
+{
+  "title": "OSETC.029: RTDs and Thermocouples — Wiring, Cold-Junction Compensation, Signal Scaling, and Field Troubleshooting",
+  "status": "published",
+  "wordpress_post_id": 21482,
+  "published": "2026-10-06T23:09:02",
+  "modified": "2026-10-06T23:17:05",
+  "live_url": "https://bitcoinversus.tech/2026/10/06/osetc-029-rtds-thermocouples-wiring-cold-junction-compensation-signal-scaling-field-troubleshooting/",
+  "featured_media_id": 21495,
+  "wordpress_excerpt": "Learn RTDs and thermocouples: Pt100 resistance, 2/3/4-wire wiring, thermocouple types, cold-junction compensation, 4–20 mA scaling, and field troubleshooting.",
+  "archive_path": "archive/2026/10/osetc-029-rtds-thermocouples-wiring-cold-junction-compensation-signal-scaling-field-troubleshooting.md",
+  "gutenberg_blob_sha": "f7fd873ddc8e05e6f3e5ed8a51ec5ad4fbbd57ac",
+  "source": "WordPress posts.list + GitHub fetch_file",
+  "seo_meta_presence_verified": true
+}
