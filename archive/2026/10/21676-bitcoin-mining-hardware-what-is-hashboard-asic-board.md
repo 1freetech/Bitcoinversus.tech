@@ -14,10 +14,10 @@ status: publish
 <p>That distinction matters in the field. A miner can still power on, receive an IP address, show a web interface, spin its fans, and communicate with a pool while one of its hashboards produces little or no hashrate. The control electronics may be alive even when part of the hashing hardware is not.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=XkHDMuTutHI","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=XkHDMuTutHI
-</div><figcaption class="wp-element-caption"><em>BITMAIN’s official hashboard disassembly tutorial shows how the compute boards physically fit inside an ANTMINER chassis.</em></figcaption></figure>
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=yflqfohhXbQ","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=yflqfohhXbQ
+</div><figcaption class="wp-element-caption"><em>D-Central demonstrates diagnosis and component-level repair on a real Antminer S19 XP hashboard.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:heading -->
@@ -32,7 +32,9 @@ https://www.youtube.com/watch?v=XkHDMuTutHI
 <p>That is why a hashboard failure directly affects hashrate. If a complete board disappears from the miner, a large fraction of the machine’s compute capacity can disappear with it. If only part of the chain is unstable, the board may still report chips while producing hardware errors, low hashrate, or repeated restarts.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:image {"id":21686,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/antminer-board-level-maintenance-real-photo.jpg?w=1024" alt="Bitcoin mining hardware stripped down to board level for cleaning and maintenance, showing the real circuit-board hardware inside ASIC miners." class="wp-image-21686" /><figcaption class="wp-element-caption"><em>Real Bitcoin mining hardware stripped to board level for annual cleaning and maintenance. Photo: Steve Rainwater / Wikimedia Commons, CC BY-SA 2.0.</em></figcaption></figure>
+<!-- /wp:image --><!-- wp:paragraph -->
 <p>BITMAIN maintains an entire <a href="https://support.bitmain.com/hc/en-us/sections/360002469774-Hashboard"><strong>Hashboard support section</strong></a> covering zero hashrate, low hashrate, failed boards, and board-level troubleshooting. That separation reflects how central the hashboard is to ASIC maintenance.</p>
 <!-- /wp:paragraph -->
 
@@ -160,7 +162,11 @@ https://www.youtube.com/watch?v=XkHDMuTutHI
 <p>BitcoinVersus.Tech’s look inside <a href="https://bitcoinversus.tech/2026/09/30/gomining-chip-level-asic-repair-south-carolina-bitcoin-mine/"><strong>chip-level ASIC repair at a mining site</strong></a> shows the operational reason for that expertise: repairing one board can return an otherwise stranded miner to productive service without replacing the complete machine.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
+<!-- wp:embed {"url":"https://twitter.com/GoMining/status/2105274149774172211","type":"rich","providerNameSlug":"x","responsive":true,"className":"is-provider-x wp-block-embed-x"} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/GoMining/status/2105274149774172211
+</div><figcaption class="wp-element-caption"><em>GoMining shows a real failed ASIC being removed and replaced on a Bitcoin-mining hashboard at its South Carolina operation.</em></figcaption></figure>
+<!-- /wp:embed --><!-- wp:heading -->
 <h2 class="wp-block-heading">Test Jigs Let Technicians Work on One Board at a Time</h2>
 <!-- /wp:heading -->
 
