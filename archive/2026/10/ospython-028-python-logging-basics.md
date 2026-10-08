@@ -2,45 +2,23 @@
 <!-- wp:html --><div class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=-ARI4Cz-awo]</div><p><em>Corey Schafer demonstrates Python's standard logging module, levels, formatting, and log files.</em></p></div><!-- /wp:html -->
 <!-- wp:heading --><h2 class="wp-block-heading">Start With One Logger</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>Python includes logging in its standard library, so a basic script needs no extra package. Import the module, configure a level, and write messages that describe useful events.</p><!-- /wp:paragraph -->
-<!-- wp:code --><pre class="wp-block-code"><code>import logging
-
-logging.basicConfig(level=logging.INFO)
-
-logging.info("Application started")
-logging.warning("Temperature is approaching the limit")</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><code>import logging</code><br><code>&nbsp;</code><br><code>logging.basicConfig(level=logging.INFO)</code><br><code>&nbsp;</code><br><code>logging.info("Application started")</code><br><code>logging.warning("Temperature is approaching the limit")</code></p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>The key difference from <code>print()</code> is control. Logging gives each message a severity level and can later route messages to a console, file, or other handler without rewriting every call.</p><!-- /wp:paragraph -->
 <!-- wp:heading --><h2 class="wp-block-heading">Understand The Five Common Levels</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>The standard levels are <code>DEBUG</code>, <code>INFO</code>, <code>WARNING</code>, <code>ERROR</code>, and <code>CRITICAL</code>. DEBUG is detailed diagnostic information; INFO records normal events; WARNING marks a potential problem; ERROR reports a failed operation; CRITICAL marks a severe failure.</p><!-- /wp:paragraph -->
-<!-- wp:code --><pre class="wp-block-code"><code>logging.debug("Reading configuration")
-logging.info("Service connected")
-logging.warning("Retry count is high")
-logging.error("Request failed")
-logging.critical("Service cannot continue")</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><code>logging.debug("Reading configuration")</code><br><code>logging.info("Service connected")</code><br><code>logging.warning("Retry count is high")</code><br><code>logging.error("Request failed")</code><br><code>logging.critical("Service cannot continue")</code></p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>The configured logging level acts as a threshold. With <code>level=logging.INFO</code>, INFO and more severe messages appear, while DEBUG messages are filtered out.</p><!-- /wp:paragraph -->
 <!-- wp:heading --><h2 class="wp-block-heading">Add Useful Context</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>A useful log says what happened and gives enough context to investigate it. Python can automatically include timestamps, severity, and logger names.</p><!-- /wp:paragraph -->
-<!-- wp:code --><pre class="wp-block-code"><code>logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s %(message)s"
-)
-
-logging.info("Worker connected")</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><code>logging.basicConfig(</code><br><code>    level=logging.INFO,</code><br><code>    format="%(asctime)s %(levelname)s %(message)s"</code><br><code>)</code><br><code>&nbsp;</code><br><code>logging.info("Worker connected")</code></p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>This becomes especially useful after the program grows beyond one terminal session. Logs can show the sequence of events that happened before an error.</p><!-- /wp:paragraph -->
 <!-- wp:heading --><h2 class="wp-block-heading">Logging And Exceptions Work Together</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>Logging does not replace exception handling. The earlier <a href="https://bitcoinversus.tech/2026/09/27/open-source-python-lesson-6-errors-exceptions/">Python exceptions lesson</a> explains <code>try</code>, <code>except</code>, <code>else</code>, and <code>finally</code>. Logging can record the failure when an exception is handled.</p><!-- /wp:paragraph -->
-<!-- wp:code --><pre class="wp-block-code"><code>try:
-    value = int("not-a-number")
-except ValueError:
-    logging.exception("Could not convert input")</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><code>try:</code><br><code>    value = int("not-a-number")</code><br><code>except ValueError:</code><br><code>    logging.exception("Could not convert input")</code></p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p><code>logging.exception()</code> is useful inside an exception handler because it records an ERROR-level message with traceback information.</p><!-- /wp:paragraph -->
 <!-- wp:heading --><h2 class="wp-block-heading">Practical Example</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>Suppose a Python script polls an API. The <a href="https://bitcoinversus.tech/2026/10/06/ospython-027-http-requests-rest-apis-get-post-parameters-headers-json-status-codes-timeouts-errors/">previous REST API lesson</a> covered requests, status codes, timeouts, and errors. Logging can now record whether each polling cycle succeeded without changing the API logic itself.</p><!-- /wp:paragraph -->
-<!-- wp:code --><pre class="wp-block-code"><code>status_code = 200
-
-if status_code == 200:
-    logging.info("API poll succeeded")
-else:
-    logging.error("API poll failed: %s", status_code)</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><code>status_code = 200</code><br><code>&nbsp;</code><br><code>if status_code == 200:</code><br><code>    logging.info("API poll succeeded")</code><br><code>else:</code><br><code>    logging.error("API poll failed: %s", status_code)</code></p><!-- /wp:paragraph -->
 <!-- wp:heading --><h2 class="wp-block-heading">Basic Troubleshooting</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>If a message does not appear, first check the configured level. A DEBUG message will not appear when the threshold is INFO. Also confirm that configuration occurs before the messages you expect to capture.</p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>Avoid logging passwords, API keys, authentication tokens, or other secrets. Logs often survive longer than terminal output and may be read by other systems or people.</p><!-- /wp:paragraph -->
@@ -56,5 +34,5 @@ else:
 <!-- wp:paragraph --><p>Primary reference: <a href="https://docs.python.org/3/howto/logging.html">Python Logging HOWTO</a>. For structured data used by many logged applications, review <a href="https://bitcoinversus.tech/2026/10/06/ospython-026-json-serialization-deserialization-strings-files-apis-validation/">OSPython.026: JSON Serialization and Deserialization</a>.</p><!-- /wp:paragraph -->
 <!-- wp:heading --><h2 class="wp-block-heading">BitcoinVersus.Tech</h2><!-- /wp:heading -->
 <!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Editor’s Note</h3><!-- /wp:heading -->
-<!-- wp:paragraph --><p><strong><em>We volunteer daily to help keep the information on this platform verifiably accurate. If you would like to support our independent research, please donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em>We volunteer daily to help keep the information on this platform verifiably accurate. If you would like to support our independent research, please use the support options available on BitcoinVersus.Tech</em></strong></p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p><!-- /wp:paragraph -->
