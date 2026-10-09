@@ -2,9 +2,7 @@
 <p><strong>Elementary overview:</strong> people cannot reliably meet a standard that exists only in a leader’s head. <strong>Setting clear expectations</strong> means making the desired outcome, the quality standard, the important constraints, and the method of confirmation understandable <em>before</em> the work begins. This is Lesson 002 of the <strong>Open Source Leadership Technical Certification (OSLTC)</strong>, following <a href="https://bitcoinversus.tech/2026/10/08/osltc-001-how-to-lead-with-positive-reinforcement/">OSLTC.001 — How to Lead With Positive Reinforcement</a>.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=6_t6JPGkqZY","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=6_t6JPGkqZY</div><figcaption class="wp-element-caption"><em>Gallup explains why knowing what is expected at work is a foundational employee need and why managers must do more than simply issue instructions.</em></figcaption></figure>
-<!-- /wp:embed -->
+<!-- wp:html --><div class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=6_t6JPGkqZY]</div><p><em>Gallup explains why clear expectations matter at work.</em></p></div><!-- /wp:html -->
 
 <!-- wp:image {"id":22249,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/osltc002-clear-expectations-body-1200x700-1.jpg?w=1024" alt="Dark technical diagram showing four parts of a clear expectation: outcome, standard, constraints, and confirmation" class="wp-image-22249" /><figcaption class="wp-element-caption"><em>The OSLTC clear-expectation check: define the outcome, standard, constraints, and confirmation before work begins.</em></figcaption></figure>
