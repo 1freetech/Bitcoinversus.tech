@@ -76,7 +76,7 @@ https://www.reddit.com/r/STEW_ScTecEngWorld/comments/1x0nkci/feather_starinspire
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The researchers are not calling it finished. One obvious next step is a fully wireless version. The current work is more interesting as a proof of design: sometimes a smarter mechanical shape can simplify the controls before software ever gets involved. That same principle matters for everything from small aquatic machines to future <a href="https://bitcoinversus.tech/2026/10/08/osrec-006-robot-feedback-control-p-pid-feedforward-trajectory-tracking-gain-tuning/">robot control systems</a>.</p>
+<p>The researchers are not calling it finished. One obvious next step is a fully wireless version. The current work is more interesting as a proof of design: sometimes a smarter mechanical shape can simplify the controls before software ever gets involved. That same principle matters for everything from small aquatic machines to future <a href="https://bitcoinversus.tech/2026/10/08/osrec-006-robot-feedback-control-p-pi-pid-feedforward-trajectory-tracking-gain-tuning/">robot control systems</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
