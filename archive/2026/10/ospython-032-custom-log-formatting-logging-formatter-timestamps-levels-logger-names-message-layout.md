@@ -1,24 +1,3 @@
----
-title: "OSPython.032: Custom Log Formatting with logging.Formatter — Timestamps, Levels, Logger Names, and Message Layout"
-status: published
-wordpress_post_id: 22292
-wordpress_status: publish
-published: "2026-10-08T22:02:00"
-live_url: "https://bitcoinversus.tech/2026/10/08/ospython-032-custom-log-formatting-logging-formatter-timestamps-levels-logger-names-message-layout/"
-series: "Open Source Python"
-certification: OSPython
-pathway: python
-lesson_number: "032"
-lesson_topic: "Custom Log Formatting with logging.Formatter"
-featured_media_id: 22299
-featured_media: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/ospython032-cover-1200x630-2.jpg"
-featured_media_dimensions: "1200x630"
-body_media_id: 22300
-body_media_dimensions: "1200x700"
-seo_title: "OSPython.032: Custom Log Formatting with logging.Formatter"
-seo_description: "Learn Python logging.Formatter: format strings, timestamps, log levels, logger names, datefmt, style options, handler attachment, and troubleshooting."
----
-
 <!-- wp:paragraph -->
 <p><strong>Elementary overview:</strong> Python’s <code>logging.Formatter</code> controls the <strong>final layout of a log line</strong>. The logger creates the event, a handler sends it to a destination, and the formatter turns the record into readable text.</p>
 <!-- /wp:paragraph -->
@@ -51,29 +30,19 @@ seo_description: "Learn Python logging.Formatter: format strings, timestamps, lo
 <p><strong>Formatter means presentation.</strong> It does not decide the event’s severity, and it does not choose the destination.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=b4Ms4wxJuPg","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=b4Ms4wxJuPg</div><figcaption class="wp-element-caption"><em>Teclado’s Python logging tutorial explains the relationship between loggers, handlers, and formatters.</em></figcaption></figure>
-<!-- /wp:embed -->
+<!-- wp:html --><div class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=b4Ms4wxJuPg]</div><p><em>Python loggers, handlers, and formatters explained.</em></p></div><!-- /wp:html -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading"><strong>Build a Useful First Format</strong></h2>
 <!-- /wp:heading -->
 
-<!-- wp:code -->
-<pre class="wp-block-code"><code>import logging
-
-formatter = logging.Formatter(
-    "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
-)</code></pre>
-<!-- /wp:code -->
+<!-- wp:paragraph --><p><code>import logging</code><br><code></code><br><code>formatter = logging.Formatter(</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;"%(asctime)s | %(levelname)s | %(name)s | %(message)s"</code><br><code>)</code></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p>That format asks Python to include four pieces of context: the event time, severity level, logger name, and final message. A line might look like this:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:code -->
-<pre class="wp-block-code"><code>2026-10-08 19:22:41,104 | ERROR | app.database | Connection failed</code></pre>
-<!-- /wp:code -->
+<!-- wp:paragraph --><p>Example output: <code>2026-10-08 19:22:41,104 | ERROR | app.database | Connection failed</code>.</p><!-- /wp:paragraph -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading"><strong>The Fields Worth Learning First</strong></h2>
@@ -123,12 +92,7 @@ logger.warning("Response time is high")</code></pre>
 <p><code>datefmt</code> changes how <code>%(asctime)s</code> is displayed. Without a custom date format, Python’s default formatter uses a date-and-time representation with milliseconds. Python uses local time by default for formatter timestamps unless you deliberately change the formatter’s time converter.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:code -->
-<pre class="wp-block-code"><code>formatter = logging.Formatter(
-    "%(asctime)s | %(levelname)s | %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-)</code></pre>
-<!-- /wp:code -->
+<!-- wp:paragraph --><p><code>formatter = logging.Formatter(</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;"%(asctime)s | %(levelname)s | %(message)s",</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;datefmt="%Y-%m-%d %H:%M:%S",</code><br><code>)</code></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p>For operations work, consistency matters more than decoration. Pick a timestamp format that is easy to compare across terminal output, log files, services, and incident timelines.</p>
