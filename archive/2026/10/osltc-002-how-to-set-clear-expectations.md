@@ -1,29 +1,3 @@
----
-title: "OSLTC.002 — How to Set Clear Expectations"
-status: published
-wordpress_post_id: 22250
-wordpress_status: publish
-published: "2026-10-08T21:28:20"
-live_url: "https://bitcoinversus.tech/2026/10/08/osltc-002-how-to-set-clear-expectations/"
-series: "Open Source Leadership Technical Certification"
-certification: OSLTC
-pathway: leadership
-lesson_number: "002"
-lesson_topic: "How to Set Clear Expectations"
-featured_media_id: 22248
-featured_image_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/osltc002-cover-1200x630-1.jpg"
-featured_image_dimensions: "1200x630"
-body_image_id: 22249
-body_image_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/osltc002-clear-expectations-body-1200x700-1.jpg"
-youtube_1: "https://www.youtube.com/watch?v=6_t6JPGkqZY"
-youtube_2: "https://www.youtube.com/watch?v=AzN4c8jatiA"
-youtube_3: "https://www.youtube.com/watch?v=egLi-BQdjXA"
-social_embed: "https://www.linkedin.com/posts/gallup_leadership-effectiveness-is-measured-across-activity-7441876635789987840-r0p_"
-seo_title: "OSLTC.002 — How to Set Clear Expectations"
-seo_description: "Learn how technical leaders set clear expectations by defining outcomes, quality standards, constraints, deadlines, and confirmation before work begins."
----
-
-<!-- FINAL GUTENBERG SOURCE BELOW -->
 <!-- wp:paragraph -->
 <p><strong>Elementary overview:</strong> people cannot reliably meet a standard that exists only in a leader’s head. <strong>Setting clear expectations</strong> means making the desired outcome, the quality standard, the important constraints, and the method of confirmation understandable <em>before</em> the work begins. This is Lesson 002 of the <strong>Open Source Leadership Technical Certification (OSLTC)</strong>, following <a href="https://bitcoinversus.tech/2026/10/08/osltc-001-how-to-lead-with-positive-reinforcement/">OSLTC.001 — How to Lead With Positive Reinforcement</a>.</p>
 <!-- /wp:paragraph -->
