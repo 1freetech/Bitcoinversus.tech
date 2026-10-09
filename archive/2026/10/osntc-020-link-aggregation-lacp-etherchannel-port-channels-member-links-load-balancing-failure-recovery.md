@@ -73,8 +73,8 @@ seo_description: "Learn LACP and EtherChannel: port-channels, member links, acti
 <p><strong>Active</strong> mode sends LACP packets to begin negotiation. <strong>Passive</strong> mode responds when it receives LACP traffic but does not initiate the negotiation itself. For that reason, active/active and active/passive combinations can form, while passive/passive does not.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=APuwz0KUDtM","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=APuwz0KUDtM</div><figcaption class="wp-element-caption"><em>This CCNA lesson covers EtherChannel, PAgP, LACP, configuration, verification, troubleshooting, and load balancing.</em></figcaption></figure>
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=rSyP3u9v4-M","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=rSyP3u9v4-M</div><figcaption class="wp-element-caption"><em>Jeremy’s IT Lab covers EtherChannel load balancing, configuration, matching member settings, Layer 3 EtherChannel, and verification commands.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:heading -->
