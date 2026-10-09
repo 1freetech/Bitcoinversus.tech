@@ -18,8 +18,8 @@
 <p>The problem starts when a device-level number gets treated as a facility-level number. <a href="https://www.viabtc.com/en/blog/Mining-asic-miner-electricity-efficiency-comparison-reading-j-th-correctly-923?category=0">ViaBTC’s October 5 efficiency comparison</a> stresses that ASIC specifications normally describe the miner itself under stated conditions. External cooling equipment and site electrical losses remain outside that measurement boundary.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=TDJ-hOQ0-dA","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=TDJ-hOQ0-dA</div><figcaption class="wp-element-caption"><em>Hashpower Academy walks through mining efficiency from the J/TH and hashrate-per-kilowatt perspective.</em></figcaption></figure>
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=TDJ-hOQ0-dA","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=TDJ-hOQ0-dA</div><figcaption class="wp-element-caption"><em>Hashpower Academy walks through mining efficiency from the J/TH and hashrate-per-kilowatt perspective.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:heading -->
@@ -34,12 +34,12 @@
 <p>The miner’s onboard power supply is normally part of the machine’s wall-power figure, which is why <a href="https://bitcoinversus.tech/2025/04/30/power-supply-unit-overview-for-bitcoin-mining/">PSU efficiency</a> already influences the advertised number. But the transformer feeding the building, the pump moving coolant through a hydro loop, or the dry cooler rejecting heat outside the container generally does not.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=tMf67c_1ta0","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=tMf67c_1ta0</div><figcaption class="wp-element-caption"><em>Bitcoin 2026’s “Keeping Your Cool in a World of Hot Compute” panel focuses on the cooling systems that surround dense Bitcoin and AI compute.</em></figcaption></figure>
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=tMf67c_1ta0","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=tMf67c_1ta0</div><figcaption class="wp-element-caption"><em>Bitcoin Magazine’s Bitcoin 2026 cooling panel covers air, hydro, immersion, heat exchangers, heat reuse, and the infrastructure surrounding dense compute.</em></figcaption></figure>
 <!-- /wp:embed -->
 
-<!-- wp:embed {"url":"https://www.linkedin.com/posts/hashhouse_keeping-your-cool-in-a-world-of-hot-compute-activity-7460335570699853824-_vIF","type":"rich","providerNameSlug":"linkedin","responsive":true} -->
-<figure class="wp-block-embed is-type-rich is-provider-linkedin wp-block-embed-linkedin"><div class="wp-block-embed__wrapper">https://www.linkedin.com/posts/hashhouse_keeping-your-cool-in-a-world-of-hot-compute-activity-7460335570699853824-_vIF</div><figcaption class="wp-element-caption"><em>Hash House highlights the same infrastructure issue: as compute density rises, cooling becomes a major engineering input rather than a background detail.</em></figcaption></figure>
+<!-- wp:embed {"url":"https://twitter.com/charlesliang/status/1807935133166755991","type":"rich","providerNameSlug":"twitter","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">https://twitter.com/charlesliang/status/1807935133166755991</div><figcaption class="wp-element-caption"><em>Supermicro CEO Charles Liang highlights liquid cooling as a major efficiency technology for dense data-center infrastructure.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:heading -->
