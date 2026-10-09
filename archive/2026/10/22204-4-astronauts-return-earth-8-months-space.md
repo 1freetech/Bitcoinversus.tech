@@ -93,7 +93,7 @@ https://www.youtube.com/watch?v=bw7KDYTfdmM
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>The 1200×630 featured image is an official NASA portrait of the four Crew-12 astronauts. The separate body image shows the same crew aboard the International Space Station in their Dragon pressure suits shortly before the return home. Both NASA images are directly tied to the mission. The two YouTube videos are distinct NASA mission videos, and the Reddit embed is directly about Crew-12’s splashdown recovery.</p>
+<p>The 1200×630 featured image is NASA/Keegan Barber’s actual Oct. 8, 2026 photograph of Crew Dragon Freedom splashing down in the Pacific with Crew-12 aboard. The separate body image shows the crew aboard the International Space Station in their Dragon pressure suits shortly before the return home. Both images are directly tied to the mission. The two YouTube videos are distinct NASA mission videos, and the Reddit embed is directly about Crew-12’s splashdown recovery.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
