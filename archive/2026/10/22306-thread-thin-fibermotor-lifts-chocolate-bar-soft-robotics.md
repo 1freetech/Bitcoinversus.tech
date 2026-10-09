@@ -53,14 +53,14 @@ https://www.youtube.com/watch?v=lANIMRoOJeo
 <p>FiberMotor skips that conversion step. EPFL describes the device as silent, flexible, bidirectional and <strong>backdriveable</strong>. If an outside force pushes the system in the opposite direction, the fibers can slide instead of mechanically locking. That property is especially interesting for machines worn on the body, including the kind of <a href="https://bitcoinversus.tech/2026/10/02/wandercraft-acquires-ekso-bionics-to-build-a-global-exoskeleton-platform/">exoskeleton and mobility technology</a> engineers are trying to make less rigid and more natural to use.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.linkedin.com/posts/sylvain-schaller-phd-02674262_softrobotics-wearabletech-exosuits-activity-7512093778581712896-SqIh","type":"rich","responsive":true} -->
-<figure class="wp-block-embed is-type-rich"><div class="wp-block-embed__wrapper">
-https://www.linkedin.com/posts/sylvain-schaller-phd-02674262_softrobotics-wearabletech-exosuits-activity-7512093778581712896-SqIh
+<!-- wp:embed {"url":"https://bsky.app/profile/fascinatorfun.bsky.social/post/3mofcxberi22f","type":"rich","providerNameSlug":"bluesky","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-bluesky wp-block-embed-bluesky"><div class="wp-block-embed__wrapper">
+https://bsky.app/profile/fascinatorfun.bsky.social/post/3mofcxberi22f
 </div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
-<p><em>FiberMotor researcher Sylvain Schaller discusses the published work and its wearable-robotics applications.</em></p>
+<p><em>Wearable robotics is already moving toward softer, clothing-like assistive systems; FiberMotor targets that same design direction at the actuator level.</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
