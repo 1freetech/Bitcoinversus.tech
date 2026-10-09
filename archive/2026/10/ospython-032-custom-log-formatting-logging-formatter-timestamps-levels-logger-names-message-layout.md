@@ -249,6 +249,4 @@ file_handler.setFormatter(
 <p>The featured artwork is a unique 1200×630 realistic programming scene created specifically for OSPython.032 and is not reused inside the lesson body. The separate body diagram explains the LogRecord → Formatter → output flow. Neon green is limited to the small <code>bitcoinversus.tech</code> tag at bottom-left.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>BitcoinVersus.Tech content is provided for informational and educational purposes.</p>
-<!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p><!-- /wp:paragraph -->
