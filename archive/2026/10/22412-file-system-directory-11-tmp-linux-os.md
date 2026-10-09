@@ -5,8 +5,8 @@ slug: file-system-directory-11-tmp-linux-os
 status: publish
 published: 2026-10-08T23:17:52
 live_url: https://bitcoinversus.tech/2026/10/08/file-system-directory-11-tmp-linux-os/
-featured_media: 22410
-featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/linux_fs_directory_11_tmp_color_pencil_1200x630.jpg
+featured_media: 22419
+featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/linux_tmp_photorealistic_cover_1200x630.jpg
 seo_title: "File System Directory #11: /tmp (Linux OS)"
 seo_description: "Learn what the /tmp directory does in Linux, why it is temporary, how its sticky-bit permissions work, and how it differs from /var/tmp."
 ---
