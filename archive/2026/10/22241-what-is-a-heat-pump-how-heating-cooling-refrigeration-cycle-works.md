@@ -51,7 +51,11 @@ status: published
 
 <!-- wp:paragraph --><p>The harder part is the temperature lift. As outdoor temperature falls, the system generally has to work harder to move useful heat indoors. That is one reason compressor design, heat-exchanger size, variable-speed operation, refrigerant properties and defrost control matter so much in cold-climate heat pumps.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://bsky.app/profile/techconnectify.bsky.social/post/3mp563sszck2g","type":"rich","providerNameSlug":"bluesky","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-bluesky wp-block-embed-bluesky"><div class="wp-block-embed__wrapper">https://bsky.app/profile/techconnectify.bsky.social/post/3mp563sszck2g</div><figcaption class="wp-element-caption"><em>Technology Connections makes the core idea memorable: air conditioners are heat pumps, and reversible heat pumps are air conditioners that can also move heat indoors.</em></figcaption></figure><!-- /wp:embed -->
+<!-- wp:embed {"url":"https://bsky.app/profile/techconnectify.bsky.social/post/3mp563sszck2g","type":"rich","providerNameSlug":"bluesky-social"} -->
+<figure class="wp-block-embed is-type-rich is-provider-bluesky-social wp-block-embed-bluesky-social"><div class="wp-block-embed__wrapper">
+https://bsky.app/profile/techconnectify.bsky.social/post/3mp563sszck2g
+</div></figure>
+<!-- /wp:embed -->
 
 <!-- wp:heading --><h2 class="wp-block-heading"><strong>COP Explains Why “More Than 100% Efficient” Is Not Magic</strong></h2><!-- /wp:heading -->
 
