@@ -4,9 +4,10 @@
   "publication_date": "2026-10-08T21:28:20",
   "seo_description": "Learn how technical leaders set clear expectations by defining outcomes, quality standards, constraints, deadlines, and confirmation before work begins.",
   "archive_path": "archive/2026/10/osltc-002-how-to-set-clear-expectations.md",
-  "archive_exact_match": true,
+  "archive_exact_match": false,
   "rendered_youtube_iframes": 1,
   "unique_youtube_iframes": 1,
   "remaining_unrendered_youtube_links": 2,
-  "verified_at": "2026-10-09T02:28:22Z"
+  "verified_at": "2026-10-09T02:28:22Z",
+  "archive_issue": "WordPress disclaimer was updated after last archive commit; exact source re-sync blocked by connector safety checks."
 }
