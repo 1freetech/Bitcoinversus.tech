@@ -4,13 +4,15 @@ status: published
 wordpress_post_id: 23187
 live_url: "https://bitcoinversus.tech/2026/10/10/fcc-weighs-petition-to-allow-unsolicited-ai-political-robocalls-before-2026-midterms/"
 published: "2026-10-10T09:34:56"
-modified: "2026-10-10T09:34:56"
+modified: "2026-10-10T09:50:24"
 featured_media_id: 23184
 body_media_id: 23185
 youtube:
   - "https://www.youtube.com/watch?v=UwpTI-V48pU"
+  - "https://www.youtube.com/watch?v=hqgFCOc6-_U"
 social:
-  - "https://www.reddit.com/r/TCPA/comments/1x01gk7/"
+  - "https://www.reddit.com/r/politics/comments/1wzyi4h/fcc_considers_allowing_more_political_robocalls/"
+  - "https://www.reddit.com/r/technology/comments/1x0qr9q/fcc_considers_allowing_more_political_robocalls/"
 seo_title: "FCC Weighs Petition on AI Political Robocalls Before 2026 Midterms"
 seo_description: "The FCC is considering a petition to allow certain unsolicited political robocalls using artificial, prerecorded, and AI-generated voices before the 2026 midterms. No rule change has been approved."
 seo_schema_type: "article"
@@ -21,6 +23,8 @@ top_bullet_count: 3
 art_style: "realistic photo"
 political_reporting_pov: "neutral investigative"
 duplicate_check: "passed"
+investigation_minimum_videos: 2
+investigation_minimum_social_embeds: 2
 ---
 
 <!-- wp:heading --><h2 class="wp-block-heading">What We Know</h2><!-- /wp:heading -->
@@ -47,10 +51,10 @@ https://www.youtube.com/watch?v=UwpTI-V48pU
 
 <!-- wp:paragraph --><p>Club for Growth argues that current restrictions are outdated and can burden political speech. Reporting by Reuters and the Associated Press says the group has also argued that newer calling technology could help campaigns communicate in more languages, reach more voters, and improve polling or voter-contact efforts.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.reddit.com/r/TCPA/comments/1x01gk7/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<!-- wp:embed {"url":"https://www.reddit.com/r/politics/comments/1wzyi4h/fcc_considers_allowing_more_political_robocalls/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
-https://www.reddit.com/r/TCPA/comments/1x01gk7/
-</div><figcaption class="wp-element-caption"><em>A TCPA-focused Reddit discussion links directly to the FCC petition and public notice while debating the potential consumer and election effects of an exemption.</em></figcaption></figure>
+https://www.reddit.com/r/politics/comments/1wzyi4h/fcc_considers_allowing_more_political_robocalls/
+</div><figcaption class="wp-element-caption"><em>A Reddit discussion around Associated Press coverage captures public reaction to the pending FCC petition; the comments represent users’ views, not findings of fact.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">The FCC Is Building a Record, Not Announcing a Decision</h2><!-- /wp:heading -->
@@ -79,6 +83,12 @@ https://www.reddit.com/r/TCPA/comments/1x01gk7/
 
 <!-- wp:paragraph --><p>That episode is frequently cited by opponents of loosening the consent rule because it showed how low-cost synthetic audio could be used in an election context. It is also important not to overread the precedent: the current petition does not ask the FCC to legalize deceptive voter-suppression calls.</p><!-- /wp:paragraph -->
 
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=hqgFCOc6-_U","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=hqgFCOc6-_U
+</div><figcaption class="wp-element-caption"><em>WTVR CBS 6 reports on the FCC’s 2024 AI-voice robocall ruling and the New Hampshire election incident that now forms part of the policy backdrop for the pending waiver request.</em></figcaption></figure>
+<!-- /wp:embed -->
+
 <!-- wp:heading --><h2 class="wp-block-heading">The Argument for the Waiver</h2><!-- /wp:heading -->
 
 <!-- wp:paragraph --><p>Supporters of the petition frame the issue primarily around political speech and technological neutrality. The argument is that political organizations should not face stricter barriers to using modern automated voice tools than some other categories of callers using prerecorded technologies.</p><!-- /wp:paragraph -->
@@ -94,6 +104,12 @@ https://www.reddit.com/r/TCPA/comments/1x01gk7/
 <!-- wp:paragraph --><p>Consumer and democracy-focused groups cited by the Associated Press have also warned that AI-driven calling could create large volumes of unwanted calls while making political messages more difficult to evaluate. Interactive AI callers could potentially collect information from voters or generate answers dynamically during a conversation.</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Those concerns do not mean every AI political call would be deceptive. The policy question is whether removing the prior-consent requirement would make harmful uses easier or simply give political speakers access to the same communications tools already used elsewhere.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.reddit.com/r/technology/comments/1x0qr9q/fcc_considers_allowing_more_political_robocalls/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
+https://www.reddit.com/r/technology/comments/1x0qr9q/fcc_considers_allowing_more_political_robocalls/
+</div><figcaption class="wp-element-caption"><em>A separate technology-community discussion shows how readers are reacting to the same FCC proceeding; these comments are presented as public reaction, not as evidence about the petition’s legal merits.</em></figcaption></figure>
+<!-- /wp:embed -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">What Has Not Changed</h2><!-- /wp:heading -->
 
