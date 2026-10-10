@@ -50,9 +50,9 @@ https://www.youtube.com/watch?v=7Lrek5XCGaI
 
 <!-- wp:paragraph --><p>The same trend explains why modern AI infrastructure increasingly treats storage as part of the compute architecture rather than a separate back-room tier. BitcoinVersus.Tech recently traced that shift in <a href="https://bitcoinversus.tech/2026/09/30/punch-cards-to-ai-computer-storage-critical-infrastructure/"><strong>From Punch Cards to AI: How Computer Storage Became Critical Infrastructure</strong></a>.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.reddit.com/r/DataHoarder/comments/1wq0sip/behold_the_unobtainium_the-optane-that-got-away/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<!-- wp:embed {"url":"https://www.reddit.com/r/DataHoarder/comments/1wq0sip/behold_the_unobtainium_the_optane_that_got_away/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
-https://www.reddit.com/r/DataHoarder/comments/1wq0sip/behold-the-unobtainium-the-optane-that-got-away/
+https://www.reddit.com/r/DataHoarder/comments/1wq0sip/behold_the_unobtainium_the_optane_that_got_away/
 </div><figcaption class="wp-element-caption"><em>Recent r/DataHoarder discussion on E1.L highlights why the ruler form factor is interesting in practice: users point to very high drive counts per 1U/2U chassis and the unusual density these long server SSDs can deliver.</em></figcaption></figure>
 <!-- /wp:embed -->
 
