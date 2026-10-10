@@ -4,11 +4,13 @@ status: published
 wordpress_post_id: 23105
 live_url: "https://bitcoinversus.tech/2026/10/10/osc-002-c-variables-and-fundamental-types-declarations-initialization-integers-floating-point-char-const-and-sizeof/"
 published: "2026-10-10T08:23:11"
-modified: "2026-10-10T08:23:11"
+modified: "2026-10-10T08:28:29"
 featured_media_id: 23112
 body_media_id: 23101
 youtube:
   - "https://www.youtube.com/watch?v=fO4FwJOShdc"
+  - "https://www.youtube.com/watch?v=KJgsSFOSQv0"
+  - "https://www.youtube.com/watch?v=87SH2Cn0s9A"
 social:
   - "https://www.reddit.com/r/learnprogramming/comments/yd550e/c_why_again/"
 seo_title: "OSC.002: C Variables and Fundamental Types | Open-Source C Certification"
@@ -19,6 +21,8 @@ no_text_boxes: true
 top_section_heading: "What You Need to Know"
 top_bullet_count: 3
 art_style: "realistic photo"
+programming_video_minimum: 3
+programming_video_language: "English-speaking"
 ---
 
 <!-- wp:heading --><h2 class="wp-block-heading">What You Need to Know</h2><!-- /wp:heading -->
@@ -100,6 +104,12 @@ int main(void)
 
 <!-- wp:paragraph --><p>The result of <code>sizeof</code> has type <code>size_t</code>, which is why the portable <code>printf</code> conversion for these examples is <code>%zu</code>. The GNU C manual notes that <code>sizeof</code> reports the size of a type or expression in bytes; for ordinary fixed-size types this is normally determined at compile time.</p><!-- /wp:paragraph -->
 
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=KJgsSFOSQv0","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=KJgsSFOSQv0
+</div><figcaption class="wp-element-caption"><em>freeCodeCamp’s English-language C tutorial reinforces variables, primitive data types, declarations, initialization, and how those choices affect compiled programs.</em></figcaption></figure>
+<!-- /wp:embed -->
+
 <!-- wp:heading --><h2 class="wp-block-heading">char Is an Integer Type</h2><!-- /wp:heading -->
 
 <!-- wp:paragraph --><p><code>char</code> is often introduced as the type used for characters, but in C it is also an integer type. A character literal such as <code>'A'</code> corresponds to an integer character code in the execution character set.</p><!-- /wp:paragraph -->
@@ -123,6 +133,12 @@ double efficiency = 17.25;
 long double measurement = 0.000001L;</code></pre><!-- /wp:code -->
 
 <!-- wp:paragraph --><p>The suffix matters. An unsuffixed decimal floating constant such as <code>17.25</code> has type <code>double</code>; <code>17.25f</code> is <code>float</code>; <code>17.25L</code> is <code>long double</code>.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=87SH2Cn0s9A","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=87SH2Cn0s9A
+</div><figcaption class="wp-element-caption"><em>Bro Code’s English-language C course reinforces variables, integer and floating-point types, constants, format specifiers, and the practical syntax used throughout this lesson.</em></figcaption></figure>
+<!-- /wp:embed -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Use the Standard Limits Headers</h2><!-- /wp:heading -->
 
