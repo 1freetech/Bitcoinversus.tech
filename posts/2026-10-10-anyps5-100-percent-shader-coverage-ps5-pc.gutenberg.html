@@ -1,0 +1,87 @@
+<!-- wp:paragraph -->
+<p>The open-source project trying to run PlayStation 5 games natively on Windows and Linux just cleared a big graphics milestone.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>AnyPS5 now lists 100% coverage of the 1,166 GPU shader instructions it tracks.</strong> That is up from about 96% only a few days ago.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.tomshardware.com/video-games/playstation/anyps5-reaches-critical-gpu-milestone-with-100-percent-shader-instruction-coverage-ps5-games-running-natively-on-pc-still-far-off">Tom’s Hardware reported the milestone today</a>, while the project’s <a href="https://boykopovar.github.io/AnyPS5/">live progress page</a> tracks shader and system-library work as developers merge changes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=Go_h0Y7BUm0","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=Go_h0Y7BUm0
+</div><figcaption class="wp-element-caption"><em>Undocumented Behavior explains what AnyPS5 is actually doing and why the fast-moving progress numbers do not mean every PS5 game suddenly works on PC.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">AnyPS5 is not a normal emulator</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus first covered <a href="https://bitcoinversus.tech/2026/09/27/gaming-anyps5-ps5-games-native-pc/">AnyPS5 when the project appeared in September</a>. Instead of recreating an entire PlayStation 5 in software, it relinks PS5 executables into native Windows or Linux programs and replaces console system libraries with open-source implementations.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The shader side matters because the PS5 uses AMD graphics instructions that still need to be translated into something a PC graphics stack can execute. AnyPS5 recompiles those shaders toward SPIR-V for Vulkan.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":23213,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/anyps5-dead-cells-native-windows.jpg" alt="Dead Cells gameplay running on Windows through the AnyPS5 compatibility project, showing the PS5 version executing on a PC." class="wp-image-23213" /><figcaption class="wp-element-caption"><em>Dead Cells running through an AnyPS5-based native Windows build during community testing. Screenshot via Sector.sk.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">100% does not mean “PS5 solved”</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The important asterisk is huge. The 100% number means every shader instruction on the project’s <strong>current tracked list</strong> has an implementation. It does not mean every shader behaves perfectly in every game, and it definitely does not mean every PS5 title is playable.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>System-library coverage is still incomplete, graphics behavior still needs validation, and individual games can hit missing APIs, synchronization problems, memory issues, or rendering bugs. The project itself warns that its percentages measure implementation progress—not the percentage of PS5 games that work.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.reddit.com/r/pcmasterrace/comments/1x147f6/anyps5_has_hit_100_coverage_of_shader_instructions/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
+https://www.reddit.com/r/pcmasterrace/comments/1x147f6/anyps5_has_hit_100_coverage_of_shader_instructions/
+</div><figcaption class="wp-element-caption"><em>The PC community is following the shader milestone closely, but the discussion also shows why “100% shaders” and “100% game compatibility” are very different claims.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">The pace is still impressive</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The project’s shader tracker moved from 1,118 of 1,166 instructions—about 95.9%—to the full tracked set in only a few days. That kind of pace is one reason AnyPS5 has become one of the more interesting open-source gaming projects to watch this fall.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>It also fits a bigger trend BitcoinVersus has been following: modern consumer hardware is increasingly powerful enough to blur the line between consoles and PCs. Sony recently brought <a href="https://bitcoinversus.tech/2026/10/02/gaming-sony-brings-qssr-ai-upscaling-to-the-standard-ps5/">QSSR AI upscaling to the standard PS5</a>, while PC developers keep building compatibility layers, emulators, and translation tools around the same AMD-based hardware generation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">SmartNews takeaway</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>AnyPS5 has now implemented every GPU shader instruction on its current tracking list. That is a real engineering milestone.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>It is not the finish line. Think of it as getting every word into the dictionary; developers still have to make sure the whole language works when real games start talking.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>BitcoinVersus.Tech Editor’s Note:</em> AnyPS5 is an independent open-source project and is not affiliated with Sony or PlayStation. The 100% figure refers only to the project’s tracked GPU shader instruction set.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Support independent BitcoinVersus.Tech reporting with Bitcoin: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.Tech is not a financial advisor. This article is for informational and educational purposes.</p>
+<!-- /wp:paragraph -->
