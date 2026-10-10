@@ -1,0 +1,159 @@
+<!-- wp:paragraph -->
+<p>AnyPS5 is still far from becoming a complete open-source PlayStation 5 replacement. But its rapid progress raises a much more interesting question:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>If developers independently recreate enough of the PS5 to run its software on ordinary PCs, can Sony actually stop them?</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The short answer in the United States is surprisingly complicated: <strong>Sony could sue, but independently reimplementing a console is not automatically illegal.</strong> Sony has already fought a remarkably similar case—and lost a major part of it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This question follows today’s <a href="https://bitcoinversus.tech/2026/10/10/anyps5-100-percent-shader-coverage-ps5-pc/">AnyPS5 100% tracked-shader milestone</a> and our original look at <a href="https://bitcoinversus.tech/2026/09/27/gaming-anyps5-ps5-games-native-pc/">how AnyPS5 is trying to run PS5 executables natively on Windows and Linux</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=fcD420hP3YM","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=fcD420hP3YM
+</div><figcaption class="wp-element-caption"><em>Modern Vintage Gamer revisits Connectix Virtual Game Station, the commercial PlayStation emulator that became the center of Sony’s landmark reverse-engineering lawsuit.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Sony already sued a PlayStation emulator</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In 2000, the Ninth Circuit decided <a href="https://law.justia.com/cases/federal/appellate-courts/F3/203/596/474793/">Sony Computer Entertainment v. Connectix</a>. Connectix had built Virtual Game Station, software that let Macintosh computers run original PlayStation games.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>To figure out how the PlayStation worked, Connectix engineers examined and copied Sony’s BIOS during development. But the finished Virtual Game Station did <strong>not</strong> contain Sony’s copyrighted BIOS code.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The Ninth Circuit held that the intermediate copying used to reverse engineer the BIOS could qualify as <strong>fair use</strong> because it was necessary to discover the system’s unprotected functional elements. The court reversed the injunction against Connectix.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":23220,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/original-playstation-connectix-precedent.jpg" alt="An original Sony PlayStation SCPH-1000 console with controller and memory card, representing the platform at issue in Sony v. Connectix." class="wp-image-23220" /><figcaption class="wp-element-caption"><em>The original PlayStation platform at the center of Sony v. Connectix. Photo by Evan-Amos, public domain via Wikimedia Commons.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Sega lost a similar argument first</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Eight years earlier, <a href="https://law.justia.com/cases/federal/appellate-courts/ca9/92-15655/92-15655.html">Sega v. Accolade</a> established another important rule. Accolade disassembled Sega software to discover the functional requirements needed to make its own games compatible with the Genesis.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The court held that reverse engineering can be fair use when it is necessary to reach functional elements that copyright does not protect and there is a legitimate interoperability reason for doing it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That distinction matters enormously. Copyright protects Sony’s original code, artwork, music, firmware, and other expression. It does not automatically give Sony ownership of every functional idea required to make compatible software.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Open source is not a lawsuit shield</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This is where the answer gets less simple. A project does <strong>not</strong> become legal merely because its source code is public.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If an “open PS5” copied Sony source code, distributed Sony firmware, shipped cryptographic keys, used copyrighted game files, infringed patents, or created trademark confusion, Sony could still have powerful claims.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The strongest position is an independently written compatibility layer that implements behavior without redistributing Sony’s protected material. That is exactly why the <a href="https://github.com/boykopovar/AnyPS5">AnyPS5 project</a> says it is intended for interoperability, research, preservation, and compatibility and says it does not include or require copyrighted firmware, cryptographic keys, or proprietary Sony libraries.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.reddit.com/r/BestGitHubRepos/comments/1x0l8km/anyps5_tool_for_automatic_ps5_executables_porting/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
+https://www.reddit.com/r/BestGitHubRepos/comments/1x0l8km/anyps5_tool_for_automatic_ps5_executables_porting/
+</div><figcaption class="wp-element-caption"><em>AnyPS5’s open-source design and explicit interoperability focus are a major reason the project is being watched so closely.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">The modern danger is DRM</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The Connectix case came before today’s console-security environment matured. Modern consoles rely heavily on encryption, signing, secure boot, keys, and other access controls.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Section 1201 of the Digital Millennium Copyright Act generally restricts circumvention of technological access controls. But <a href="https://www.law.cornell.edu/uscode/text/17/1201">17 U.S.C. §1201(f)</a> also contains an interoperability provision allowing certain reverse engineering when someone lawfully has a program and needs to identify information required for an independently created program to interoperate.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That exception has conditions. It is not permission to distribute Sony keys or package a turnkey DRM bypass.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The warning example is Nintendo’s case against Yuzu. The Switch emulator was open source, yet its developers agreed in 2024 to pay <strong>$2.4 million</strong> and shut the project down after Nintendo alleged that Yuzu depended on unauthorized cryptographic keys and circumvented Nintendo’s protections. The case settled, so it did not overturn Sony v. Connectix—but it showed that DRM can change the legal battlefield completely. <a href="https://arstechnica.com/gaming/2024/03/switch-emulator-makers-agree-to-pay-2-4-million-to-settle-nintendo-lawsuit/">Ars Technica documented the settlement</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Could Sony just move to a new console?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Eventually, yes—but an open compatibility project would not force Sony to launch a new generation overnight.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sony could update firmware, change authentication, rotate cryptographic material, alter APIs, strengthen server-side checks, and make newer games depend on functions the open implementation does not yet support. That would create a constant technical race.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>But Sony cannot retroactively erase every old game binary already released. Once enough of a platform’s interfaces are understood, preservation and compatibility work can continue targeting that historical system long after the manufacturer moves on.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">The most interesting possibility</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>If AnyPS5 or a future project eventually gets broad compatibility without Sony firmware, keys, proprietary libraries, or copied code, the result could look less like a cloned console and more like <strong>Wine or Proton for PlayStation software</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>PS5 executable → open compatibility layer → Vulkan and PC operating system → normal AMD, NVIDIA, or Intel hardware.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That is where this gets genuinely disruptive. Sony could still sue. Litigation could still be expensive. Patent, trademark, contract, and DMCA issues could still matter.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>But “Sony owns the PlayStation, therefore nobody else may independently recreate compatible functionality” is <strong>not</strong> what U.S. copyright precedent says.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">SmartNews takeaway</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>An open-source PS5 implementation would not be legally untouchable. But if developers write their own code, avoid Sony firmware and keys, and stay focused on interoperability, Sony may face a much harder copyright argument than most people assume.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sony already learned that lesson once with the original PlayStation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>BitcoinVersus.Tech Editor’s Note:</em> This article discusses general U.S. legal precedent and technology policy. It is not legal advice. AnyPS5 is an independent open-source project and is not affiliated with Sony or PlayStation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Support independent BitcoinVersus.Tech reporting with Bitcoin: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.Tech is not a financial advisor. This article is for informational and educational purposes.</p>
+<!-- /wp:paragraph -->
