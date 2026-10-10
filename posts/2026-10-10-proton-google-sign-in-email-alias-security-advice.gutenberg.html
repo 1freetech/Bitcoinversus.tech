@@ -1,0 +1,177 @@
+<!-- wp:paragraph -->
+<p>Proton is telling users to rethink one of the web’s most convenient habits: clicking <strong>“Sign in with Google”</strong> everywhere.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In a new social-media security advisory, Proton argues that using one Google identity across dozens of websites creates two problems at once: it concentrates authentication risk in one account, and it creates a centralized record of which third-party services are connected to that identity.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Its recommended alternative is straightforward: create accounts with <strong>unique email aliases</strong>, use separate credentials or passkeys for each service, and regularly review the apps tied to your Google Account.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Proton’s First Point: One Login Can Become a Single Point of Failure</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The security logic is real, but it needs one important qualification. If an attacker gains control of a Google Account, that attacker may also be able to authenticate to third-party services that rely on that Google identity—especially services where Google is the only sign-in method and no additional verification is required.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That does <strong>not</strong> mean every account connected through Google is automatically compromised the instant the Google Account is breached. Individual services can have their own session controls, recovery rules, risk checks, passkeys or additional authentication. But the architecture still concentrates risk: compromise of one identity provider can create access opportunities across many relying services.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This is the same reason security engineers generally prefer compartmentalization. One credential should not unlock everything. BitcoinVersus.Tech recently explained how <a href="https://bitcoinversus.tech/2026/10/09/what-is-passkey-passwordless-login-public-key-cryptography/"><strong>passkeys</strong></a> reduce phishing risk by using cryptographic credentials tied to individual services rather than reusable passwords.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=OQapLLhE96I","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=OQapLLhE96I
+</div><figcaption class="wp-element-caption"><em>Google Help shows how to inspect and remove third-party account connections, including services using Sign in with Google.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Proton’s Second Point: Your Google Account Knows Which Services Are Connected</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Google maintains a connections page that shows third-party apps and services associated with a Google Account. That includes services using Sign in with Google as well as apps granted access to specific Google data.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Proton frames that centralized connection history as another privacy cost: the identity provider sits between a person and many of the services they use. Google, however, explicitly says that information and activity from <strong>Sign in with Google itself</strong> are not used for advertising or other Google products. Those two claims are not necessarily contradictory: Google can maintain the connection needed to operate the sign-in service while saying it does not use that sign-in activity for ads.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Google’s own documentation says users are shown what data will be shared with a third-party app, that Google does not share the Google Account password with that app, and that users can revoke the connection at any time through account settings. <a href="https://support.google.com/accounts/answer/12921417"><strong>Google’s Sign in with Google privacy explanation</strong></a> provides the company’s side of that tradeoff.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Better Security Model: Separate the Email Address From the Identity You Expose Everywhere</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Proton’s preferred model is to create a different email alias for each service. The alias forwards mail to a real inbox, but the website never receives the primary email address.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That creates useful compartmentalization. If a shopping site leaks its customer database, the attacker gets the alias used for that store rather than the primary address used everywhere else. If that alias starts receiving spam or phishing attempts, it can be disabled without changing the main mailbox.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Proton’s <a href="https://proton.me/support/pass-email-alias"><strong>Hide-my-email documentation</strong></a> says its aliases forward messages to the user’s mailbox while keeping the primary address hidden. Proton Pass can also generate a unique password for the account at the same time.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=--fVh73YWFA","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=--fVh73YWFA
+</div><figcaption class="wp-element-caption"><em>Proton demonstrates how hide-my-email aliases keep a primary address private while forwarding mail normally.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Aliases Help—but They Are Not Magic</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>An alias prevents one identifier from being reused everywhere, but it does not make a person anonymous. Websites can still correlate accounts through phone numbers, payment cards, device fingerprints, IP addresses, cookies, browser telemetry and other identifiers.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Aliases also do not replace strong authentication. If every alias account uses the same weak password, the user has simply replaced one repeated email address with many addresses while preserving the credential-reuse problem.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The stronger setup is <strong>unique alias + unique password or passkey + multifactor authentication</strong>. That reduces the blast radius when one service is breached and makes credential stuffing much harder.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.reddit.com/r/ProtonPass/comments/1i885j9/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
+https://www.reddit.com/r/ProtonPass/comments/1i885j9/
+</div><figcaption class="wp-element-caption"><em>Proton’s community announcement for advanced alias management shows how aliases are increasingly being treated as part of identity security rather than merely spam filtering.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How to See Every Service Connected to Your Google Account</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Proton’s cleanup advice is easy to verify using Google’s own account controls:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><li>Open <strong>myaccount.google.com/connections</strong>.</li><li>Or open your Google Account and go to <strong>Security → Your connections to third-party apps &amp; services → See all connections</strong>.</li><li>Filter for <strong>Sign in with Google</strong> if you only want to see sites that use Google as the identity provider.</li><li>Select a service you no longer want linked.</li><li>Choose <strong>Stop using Sign in with Google</strong> or the available remove/delete connection option.</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Revoking the Google connection does not necessarily delete the account at the third-party service, and it does not retroactively delete data that service already received. If you still want to use the account, make sure you have another login method before disconnecting Google.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Do Not Disconnect First and Ask Questions Later</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This is the biggest practical trap in Proton’s advice. Some people created an account entirely through Google SSO and never set a standalone password. If they revoke Google access before adding another sign-in method, they can make account recovery unnecessarily difficult.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A safer migration sequence is: sign into the third-party service, add a password or passkey if the site supports one, verify the recovery email and MFA settings, test the independent login, and <em>then</em> remove the Google connection.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Best Version of Proton’s Advice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The strongest takeaway is not “Google sign-in is insecure.” Google’s OAuth and Sign in with Google systems are designed specifically to avoid handing third-party sites a user’s Google password, and centralized identity can make phishing-resistant authentication easier to deploy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The better takeaway is: <strong>convenience creates concentration.</strong> The more services that depend on one identity provider, the more important that account becomes and the larger the consequences if it is lost, locked, phished or compromised.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>People who want maximum compartmentalization should avoid making any single Google, Apple, Microsoft, Facebook or other identity account the universal key to their digital life. Unique aliases and independent credentials trade some convenience for a smaller blast radius.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":23159,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/proton-mail-logo.png?w=960" alt="Proton Mail logo." class="wp-image-23159" /><figcaption class="wp-element-caption"><em>Proton is urging users to rethink how they use Google as a sign-in hub and to consider unique email aliases for individual services. Logo: Proton Mail via Wikimedia Commons.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A Practical Security Checklist</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><li>Review your Google third-party connections at least a few times per year.</li><li>Remove services you no longer use.</li><li>Before removing Google SSO, create and test another login method.</li><li>Use a unique email alias for services where compartmentalization matters.</li><li>Use unique passwords or passkeys rather than recycling credentials.</li><li>Turn on multifactor authentication for your primary email and identity-provider accounts.</li><li>Protect recovery email addresses and recovery phone numbers as carefully as the main account.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Bottom Line</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Proton’s warning is deliberately provocative, but the security principle underneath it is sound: <strong>do not let one account become an unnecessary master key for your entire online identity.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sign in with Google can be secure and convenient. Email aliases can provide stronger compartmentalization. For users who care most about minimizing the blast radius of a breach, the best architecture is usually a combination of aliases, independent credentials, passkeys, MFA and regular audits of every connected service.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Editor’s Note</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong><em>This story distinguishes Proton’s privacy and security recommendations from Google’s documented behavior for Sign in with Google. A connected Google account is not proof that every third-party account is compromised, and revoking a connection does not erase data already held by the third-party service.</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong><em>BitcoinVersus.Tech is independently maintained. Support options on the site help fund additional security research, verification and open technical publishing.</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p>
+<!-- /wp:paragraph -->
