@@ -73,11 +73,9 @@ https://www.youtube.com/watch?v=2q-tvzVWJW8
 <p>The software-security stakes are growing as AI tools become better at combining smaller weaknesses into larger attacks. The practical question for administrators is not whether a vulnerability scanner found something; it is whether a tested, trusted fix reached the <a href="https://bitcoinversus.tech/2026/09/21/linux-kernel-active-exploits-security-patching-2026/">systems that need patching</a>.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.linkedin.com/posts/danrusso_opensource-cybersecurity-redhat-activity-7501286132286939136-srZ7","type":"rich","providerNameSlug":"linkedin","responsive":true} -->
-<figure class="wp-block-embed is-type-rich is-provider-linkedin wp-block-embed-linkedin"><div class="wp-block-embed__wrapper">
-https://www.linkedin.com/posts/danrusso_opensource-cybersecurity-redhat-activity-7501286132286939136-srZ7
-</div><figcaption class="wp-element-caption"><em>A Red Hat-related explainer uses a Jenga analogy to show why fixing one vulnerable dependency can affect the rest of an application.</em></figcaption></figure>
-<!-- /wp:embed -->
+<!-- wp:paragraph -->
+<p><a href="https://www.linkedin.com/posts/danrusso_opensource-cybersecurity-redhat-activity-7501286132286939136-srZ7" rel="nofollow">View Daniel J. Russo’s Project Lightwell explainer on LinkedIn</a>. It uses a Jenga analogy to show why fixing one vulnerable dependency can affect the rest of an application.</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">What Comes Next</h2>
@@ -94,9 +92,11 @@ https://www.linkedin.com/posts/danrusso_opensource-cybersecurity-redhat-activity
 <!-- wp:paragraph -->
 <p><em>Editor's Note:</em> This article distinguishes company-reported results from independently verified outcomes. All security changes should be tested in an appropriate environment before production deployment.</p>
 <!-- /wp:paragraph -->
+
 <!-- wp:paragraph -->
 <p>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our research initiatives, please donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</p>
 <!-- /wp:paragraph -->
+
 <!-- wp:paragraph -->
 <p>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</p>
 <!-- /wp:paragraph -->
