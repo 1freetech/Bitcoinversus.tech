@@ -59,9 +59,9 @@ archive_date: "2026-10-09"
 <p>Flexdrive says it already manages roughly 15,000 vehicles across 24 North American locations. Nashville is the same fleet-management expertise applied to robotics. The company is effectively becoming an <strong>autonomous fleet operator</strong>.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=tiy3gN06sH0","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=tiy3gN06sH0</div><figcaption class="wp-element-caption"><em>Lyft CEO David Risher discusses the Waymo partnership and why Lyft sees fleet management and marketplace distribution as valuable layers around autonomous vehicles.</em></figcaption></figure>
-<!-- /wp:embed -->
+<!-- wp:html -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=YkohMKO0rGc&w=640&h=360]</div><figcaption class="wp-element-caption"><em>Bloomberg Television covers Uber’s plan to deploy at least 20,000 Lucid robotaxis using Nuro’s autonomy stack—an example of vehicle, autonomy, marketplace, and fleet-operation layers separating into different businesses.</em></figcaption></figure>
+<!-- /wp:html -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading"><strong>Moove Makes the Thesis Even Clearer</strong></h2>
