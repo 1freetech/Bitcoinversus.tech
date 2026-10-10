@@ -1,0 +1,167 @@
+<!-- wp:paragraph -->
+<p>Large language models learned from an internet full of text, images, code and video. Humanoid robots have a harder problem: <strong>the internet does not contain enough clean, machine-usable examples of how a hand should grip a slippery plate, how much force it takes to fold cardboard, or how a body should recover when a chair is six inches farther away than expected.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That gap is turning physical experience into one of AI’s most valuable new resources. Robotics companies are now building what the industry increasingly calls <strong>robot gyms</strong>: controlled facilities packed with robots, cameras, teleoperation systems and human trainers whose job is to generate the real-world data machines cannot simply scrape from the web.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The Financial Times reported on October 10 that robotics companies and physical-AI startups are spending heavily on this new training infrastructure, while companies such as Figure, Physical Intelligence, NEURA Robotics, Generalist and Skild pursue different ways to collect demonstrations at scale. The emerging race looks increasingly like the early data-center race for generative AI—except the scarce input is now <strong>physical experience</strong>, not just GPUs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why Robots Need a Different Kind of Training Data</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A language model can learn from millions of books, websites and software repositories without physically touching anything. A robot must connect perception to action. Vision has to become a grasp. A grasp has to become force. Force has to become motion. And that motion has to keep working when friction, lighting, object shape, floor geometry or human behavior changes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The Technical University of Munich explains the problem directly in its work with NEURA Robotics: internet video is too sparse for many manipulation tasks, and simulation still struggles to reproduce real effects such as friction precisely enough. Their answer is the <strong>TUM RoboGym</strong>, a 2,300-square-meter facility at Munich Airport where humans will teach robots skills and generate datasets from real physical interactions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=kydEYc0rk9Q","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=kydEYc0rk9Q
+</div><figcaption class="wp-element-caption"><em>NEURA Robotics and TUM show the RoboGym concept: fleets of robots learning physical skills from human demonstrations inside a dedicated training center.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">TUM and NEURA Are Treating Data Like Robotics Infrastructure</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>TUM and NEURA are jointly investing €17 million in the Munich RoboGym. TUM says the center will train hundreds of robotic systems, many of them humanoids, while NEURA is supplying most of the hardware investment and connecting the resulting skills into its broader Neuraverse ecosystem.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The important shift is conceptual: the gym is not merely a robotics lab. It is a <strong>data-production facility</strong>. Human demonstrations become sensor streams, trajectories, failures, corrections and labeled examples that can be used to train models. NEURA is also rolling out additional gyms, including one with RWTH Aachen, as it tries to turn physical training into a repeatable pipeline rather than a one-off research project.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That direction fits a broader physical-AI push we have been tracking at BitcoinVersus.Tech, from <a href="https://bitcoinversus.tech/2026/10/07/boston-dynamics-rohit-prasad-ceo-alexa-physical-ai-atlas/"><strong>Boston Dynamics’ physical-AI strategy</strong></a> to the rising importance of <a href="https://bitcoinversus.tech/2026/10/06/robotics-humanoid-actuators-40-60-percent-hardware-cost-supply-chain/"><strong>humanoid actuators and hardware supply chains</strong></a>. Better mechanics matter, but the machine still needs experience.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.reddit.com/r/u_intengineering/comments/1wbki9f/a_humanoid_robot_just_entered_gym_class_to/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
+https://www.reddit.com/r/u_intengineering/comments/1wbki9f/a_humanoid_robot_just_entered_gym_class_to/
+</div><figcaption class="wp-element-caption"><em>Schaeffler’s Humanoid Gym offers another example of the train–validate–deploy model now appearing around industrial humanoid programs.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Figure Is Taking the Opposite Approach: Bring the Data Collection Into Real Homes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Robot gyms solve one side of the problem by bringing robots into carefully instrumented environments. Figure is also attacking the problem from the other direction: collecting large amounts of human behavior and testing whether that experience transfers into places its robots have never seen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In September, Figure said its Helix 2.5 model entered <strong>30 Bay Area homes with no additional training in those homes</strong> and attempted tasks including tidying living rooms, folding towels and making beds. Figure reported that pretraining on its Index dataset of human behavior increased zero-shot task success from 9% to 56% while using less task-specific data.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.Tech covered the <a href="https://bitcoinversus.tech/2026/10/03/figure-helix-2-5-30-unseen-homes-zero-shot-generalization/"><strong>Helix 2.5 30-home test</strong></a> earlier this month. The significance for the robot-gym race is that Figure is trying to prove something larger than one household demo: that enough varied human data can create transferable physical skills rather than forcing engineers to retrain a robot for every room.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=lJpM_2a1zrE","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=lJpM_2a1zrE
+</div><figcaption class="wp-element-caption"><em>Figure demonstrates Helix 2.5 performing household tasks across unfamiliar homes after pretraining on its broader Index dataset.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The New Bottleneck Is Human Experience</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The industry’s problem is not simply collecting more video. A useful robotics dataset may need camera images, depth, joint position, force, hand pose, body motion, timing, task labels, failures and recovery attempts synchronized well enough that another model can learn from them.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That is why a new layer of robotics companies is forming around data collection itself. The FT reports that companies such as Scale AI and Encord are building physical-data operations, while startups including Mecka and XDOF are attracting capital to produce robot-training data. BitcoinVersus.Tech recently covered <a href="https://bitcoinversus.tech/2026/09/27/xdof-1-2-billion-robot-training-data/"><strong>XDOF’s rise on the robot-training-data boom</strong></a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This looks increasingly like a labor market as much as a software market. Humans wear sensors, teleoperate robot arms, repeat tasks, label mistakes and create demonstrations. The work may look mundane—folding shirts, loading trays, opening drawers—but at scale those repetitions become the equivalent of training tokens for physical AI.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.reddit.com/r/Futurology/comments/1wj7m6t/helix_25_zeroshot_30home_generalization/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
+https://www.reddit.com/r/Futurology/comments/1wj7m6t/helix_25_zeroshot_30home_generalization/
+</div><figcaption class="wp-element-caption"><em>Figure’s 30-home results triggered a broader discussion about whether large human-behavior datasets can finally give humanoids useful zero-shot generalization.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Simulation Still Matters—But Reality Keeps Winning the Last Mile</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>NVIDIA Isaac Sim, MuJoCo and other simulation systems remain critical because virtual environments can generate enormous numbers of trials cheaply and safely. But simulation has a persistent “reality gap.” A simulated cloth, cable, wet plate, soft package or uneven floor may not behave exactly like the physical object.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The likely winner is not simulation <em>or</em> real-world data. It is a loop: simulation generates breadth, robot gyms produce high-quality physical examples, deployed robots discover edge cases, and those failures feed back into the next training cycle. The companies that own that loop could develop the same kind of compounding advantage that large proprietary datasets gave early internet AI companies.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why This Could Become a Major New Infrastructure Industry</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>If humanoids and general-purpose robots scale, the training layer could become a large industry of its own. Facilities will need robotics technicians, motion-capture systems, low-latency networking, storage, cameras, safety systems, calibration, annotation, teleoperation and enormous compute pipelines for model training.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In other words, a robot gym sits at the intersection of a data center, a factory test floor and a film motion-capture studio. It needs reliable hardware operations and software infrastructure at the same time. That makes physical-AI training unusually interdisciplinary: robotics, networking, firmware, AI, mechanical systems and data engineering all meet on the same floor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Hard Part Is Generalization, Not the Demo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Robotics has produced impressive demos for decades. The challenge is making one learned skill survive a different table height, different lighting, different object geometry, a human walking through the scene or a tool being placed in the wrong orientation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That is why Figure’s 56% result is both encouraging and sobering. A large improvement from 9% shows that broad pretraining can help. A 56% success rate also leaves a massive reliability gap before people can depend on the robot for safety-critical or unsupervised work.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The physical-AI companies building gyms are effectively betting that the path across that gap resembles the scaling path of language models: <strong>more diverse experience, better models, more compute, then progressively stronger generalization.</strong> The difference is that every additional “token” of physical experience is much more expensive to produce.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":23115,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/tum-neura-humanoid-robogym.png?w=1024" alt="A NEURA humanoid robot working beside a robotic arm in a robotics laboratory." class="wp-image-23115" /><figcaption class="wp-element-caption"><em>TUM and NEURA Robotics are building a 2,300-square-meter RoboGym at Munich Airport where humans will train robots on physical tasks. Image: NEURA Robotics via Technical University of Munich.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Bottom Line</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The next major AI infrastructure race may not happen only inside server racks. It may happen inside warehouses and mock apartments where humans repeatedly show robots how the physical world works.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Robot gyms are an admission that physical intelligence cannot be downloaded from the internet. It has to be experienced. If humanoids eventually become reliable workers in factories, warehouses and homes, these training facilities—and the people creating the data inside them—may prove to be as important to robotics as massive web datasets were to the first generation of modern AI.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Editor’s Note</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong><em>This article distinguishes company-reported robotics results from independently verified deployment performance. Robot-training datasets, simulation environments and demonstration videos do not by themselves prove general-purpose reliability in uncontrolled real-world use.</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong><em>BitcoinVersus.Tech is independently maintained. Support options on the site help fund additional technical research, verification and open educational publishing.</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p>
+<!-- /wp:paragraph -->
