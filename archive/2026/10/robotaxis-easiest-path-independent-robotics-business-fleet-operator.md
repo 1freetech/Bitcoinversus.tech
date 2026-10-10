@@ -39,9 +39,9 @@ archive_date: "2026-10-09"
 <p>That means vehicle acquisition or financing, charging, cleaning, tire and brake service, sensor cleaning, depot management, staging, software-update coordination, roadside recovery, parts inventory, inspection, insurance administration, utilization management, and local regulatory operations.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":22847,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/robotaxi-fleet-operations-body.jpg?w=1024" alt="Photorealistic robotics service garage with diverse technicians maintaining a robotaxi and autonomous delivery robot" class="wp-image-22847" /><figcaption class="wp-element-caption"><em>The business opportunity may sit around the robot: charging, cleaning, maintenance, depot operations, dispatch, recovery, and local fleet management.</em></figcaption></figure>
-<!-- /wp:image -->
+<!-- wp:embed {"url":"https://www.linkedin.com/posts/lyft_flexdrive-by-lyft-has-officially-cut-the-activity-7511773201048207360-xrr-","type":"rich","providerNameSlug":"linkedin","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-linkedin wp-block-embed-linkedin"><div class="wp-block-embed__wrapper">https://www.linkedin.com/posts/lyft_flexdrive-by-lyft-has-officially-cut-the-activity-7511773201048207360-xrr-</div><figcaption class="wp-element-caption"><em>Lyft’s official post shows the Nashville Flexdrive depot opening as the service, charging, and maintenance layer for autonomous vehicles.</em></figcaption></figure>
+<!-- /wp:embed -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading"><strong>Lyft’s Nashville Depot Shows the Business Model Already Exists</strong></h2>
