@@ -1,0 +1,191 @@
+<!-- wp:paragraph -->
+<p>AI coding agents are doing exactly what their demos promise: they are producing more code. The problem is that software companies do not ship lines of code. They ship reviewed, tested, integrated and maintainable changes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A new Harvard study using engineering telemetry from <strong>718 firms and roughly 300 million work events</strong> finds that after companies adopt AI coding agents, lines of code rise about <strong>30%</strong>, commits rise <strong>20%</strong> and pull requests rise <strong>23%</strong>. Yet the researchers find little evidence that completed software output rises with them.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The missing productivity shows up downstream. Average pull-request review time rises about <strong>49%</strong>, the share of PRs sent back for changes nearly doubles, and reviewer comments increase roughly <strong>35%</strong>. The bottleneck has moved from <em>writing</em> code to <em>deciding whether the code should be trusted and merged</em>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">This Is One of the Largest Real-World Studies of AI Coding Yet</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Harvard researchers Fiona Chen and James Stratton analyzed a proprietary dataset from engineering analytics company Jellyfish covering GitHub activity, Jira work and other engineering events from 2021 through March 2026. Their August paper, <a href="https://fion.ac/"><strong>Artificial Intelligence in the Firm: Bottlenecks in Software Production</strong></a>, uses differences in when companies adopted coding assistants and more autonomous coding agents to estimate what changed afterward.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The result is a useful correction to one of the easiest mistakes in the AI-coding debate: <strong>code production is not the same thing as software production.</strong> A repository can gain more commits and more lines while the organization still closes roughly the same number of meaningful issues and epics.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That distinction also helps explain why GitHub is already rebuilding infrastructure around agent-scale development. BitcoinVersus.Tech recently covered how <a href="https://bitcoinversus.tech/2026/10/09/github-rebuilding-git-infrastructure-ai-agents-7-38-billion-commits/"><strong>GitHub says commits jumped roughly fivefold in a year</strong></a> as coding agents created a much denser stream of repository activity.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=1GVBRhDI5No","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=1GVBRhDI5No
+</div><figcaption class="wp-element-caption"><em>GitHub demonstrates how a coding agent can take an issue, produce changes and open a pull request—moving human attention toward review and approval.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Agent Can Finish Writing Before the Team Is Ready to Review</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Traditional software teams were partly rate-limited by implementation. A developer might spend hours or days understanding a task, changing code and preparing a pull request. Reviewers had time to absorb the queue because new changes arrived at approximately human speed.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Coding agents break that balance. One engineer can ask multiple agents to work in parallel, creating a sudden burst of pull requests. The organization may have automated tests and static analysis, but senior engineers still carry architecture knowledge, production context and accountability that cannot simply be multiplied on demand.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.reddit.com/r/golang/comments/1wxkbh0/struggling_to_review_and_maintain_an_ai_generated/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
+https://www.reddit.com/r/golang/comments/1wxkbh0/struggling_to_review_and_maintain_an_ai_generated/
+</div><figcaption class="wp-element-caption"><em>A recent Go developer discussion describes the same operational problem from the ground: AI can grow a codebase faster than a human can confidently audit it.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Numbers Show a Pipeline Bottleneck, Not a Failure to Generate Code</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The Harvard result is not “AI cannot code.” The measured coding stage clearly speeds up. After agent adoption, firms produce substantially more source code, commits and pull requests per worker.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The problem is pass-through. The researchers report no statistically significant increase in the resolution rate of Jira Issues and Epics, which they use as higher-level measures of completed software work. They also report no significant employment reduction attributable to the adoption of coding agents.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>At the same time, more employees get pulled into review. Ars Technica’s reporting on the study notes that the share of workers performing code reviews rises about <strong>14%</strong> after agent introduction. That is the hidden labor transfer: the machine saves implementation time but creates more verification work downstream.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">AI Review Is Growing Too—but Humans Still Carry Most of the Load</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The obvious response is to use AI to review AI. Companies are already doing that. By March 2026, the researchers found that roughly <strong>80% of measured firms</strong> used some form of AI code review.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>But automation had not eliminated the review wall. Agents produced about 23.3% of measured review comments and were associated with 10.8% of pull requests in the dataset, leaving humans responsible for most review activity. That is one reason GitHub is investing so heavily in better code-review agents and benchmarks.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.Tech recently examined <a href="https://bitcoinversus.tech/2026/10/06/coding-github-reviewbench-ai-code-review-benchmark/"><strong>GitHub ReviewBench</strong></a>, which measures whether AI reviewers can catch meaningful bugs without flooding pull requests with low-value comments. That problem becomes more important as generated-code volume grows.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=ikIosF_iiz4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=ikIosF_iiz4
+</div><figcaption class="wp-element-caption"><em>GitHub shows Copilot code review working alongside CodeQL and coding agents, illustrating how review itself is becoming an agentic workflow.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">More Comments Are Not Automatically Better Review</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Review quality is difficult to automate because a useful reviewer needs more than syntax knowledge. The reviewer may need to understand the architecture, customer expectations, operational history, security assumptions, undocumented dependencies and which strange-looking behavior is actually intentional.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>An AI reviewer can catch obvious bugs or inconsistencies and still miss the one architectural mistake that matters. It can also create the opposite problem: a wall of plausible but low-priority comments that makes the human reviewer slower.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>GitHub has publicly described this tuning problem. In July, GitHub engineers reported that giving Copilot code review better general-purpose tools initially made the system <em>worse</em>: review cost increased while fewer issues were found. Rewriting the agent’s instructions around the actual review workflow later cut average review cost by roughly 20% without degrading the quality signal. That is a reminder that agent productivity depends on workflow design, not simply model capability.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The Practical Answer May Be Smaller PRs, Better Tests and Stronger Boundaries</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>If agents can write faster than humans can validate, the answer is not necessarily to generate less code. It is to restructure the pipeline so each unit of generated work is easier to verify.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><li><strong>Keep agent tasks narrow.</strong> Smaller diffs are easier to understand, test and roll back.</li><li><strong>Make acceptance criteria machine-readable.</strong> Agents perform better when expected behavior is explicit before coding begins.</li><li><strong>Increase deterministic verification.</strong> Tests, type checking, static analysis, security scanning and reproducible builds should reject obvious failures before a human sees the PR.</li><li><strong>Protect architectural decisions.</strong> Agents should know which APIs, modules and boundaries they are allowed to change.</li><li><strong>Measure shipped outcomes.</strong> Lines of code and commit counts become increasingly misleading when software can be generated almost instantly.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>The lesson is similar to what happened when faster CPUs, faster networks and faster CI systems removed older constraints: the slowest remaining stage becomes more visible. In agentic software development, that slow stage increasingly looks like trusted human judgment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.reddit.com/r/AI_Agents/comments/1x1h82c/the_real_bottleneck_of_building_with_ai_isnt_code/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
+https://www.reddit.com/r/AI_Agents/comments/1x1h82c/the_real_bottleneck_of_building_with_ai_isnt_code/
+</div><figcaption class="wp-element-caption"><em>A developer using multiple coding agents describes review fatigue as the limiting factor once generation becomes cheap and nearly instantaneous.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">This Does Not Mean AI Coding Has Failed</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The study’s data end in March 2026, and coding agents have improved rapidly since then. The analysis is also observational rather than a randomized experiment. Companies choose when and how to adopt AI, teams differ in maturity, and Jira completion is only one way to measure software output.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>There are also important tasks where agent speed may create value even if headline feature output does not immediately rise: writing tests, migrating APIs, upgrading dependencies, generating documentation, investigating failures and reducing maintenance backlog. BitcoinVersus.Tech has already covered examples such as <a href="https://bitcoinversus.tech/2026/10/02/coding-github-copilot-typescript-runtime-rust-ai-agents/"><strong>GitHub using AI agents during a major TypeScript-to-Rust runtime rewrite</strong></a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The more defensible conclusion is narrower: <strong>AI has made code generation cheap enough that review, integration and organizational judgment are becoming the scarce resources.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":23124,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/agentic-code-review-example.jpg?w=1024" alt="A real code-review workflow showing pull requests grouped into merge, hold and request-changes decisions." class="wp-image-23124" /><figcaption class="wp-element-caption"><em>A real agentic pull-request review workflow illustrates the growing importance of review, validation and merge decisions as AI-generated code volume rises. Image: Addy Osmani.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What Engineering Teams Should Measure Now</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>If AI coding agents keep getting faster, organizations will need better productivity metrics than “how much code did we produce?” Useful measures are more likely to include issue cycle time, escaped defects, rollback frequency, reviewer hours, test coverage, deployment frequency, change-failure rate and the amount of production-qualified work delivered per engineer.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That is the deeper implication of the Harvard result. The AI coding race is shifting from generation to <strong>verification economics</strong>. The winning engineering organizations may not be the ones whose agents write the most code. They may be the ones that can establish trust in each change with the least human attention.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Bottom Line</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>AI coding agents appear to be delivering a genuine productivity gain at the act of writing code. But software delivery is a system, and speeding up one stage simply exposes the next constraint.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Across 718 firms, the new constraint looks increasingly obvious: <strong>agents can generate changes faster than humans can confidently review, integrate and own them.</strong> Until review and verification scale with generation, more code will not automatically mean more software.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ars Technica’s October 9 report provides additional analysis of the study’s review and output findings. <a href="https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"><strong>Read the reporting here</strong></a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Editor’s Note</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong><em>The Harvard paper is observational research using firm-level adoption timing and engineering telemetry, not a randomized controlled trial. Its data end in March 2026, so the findings should not be interpreted as a permanent ceiling on newer coding-agent systems.</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong><em>BitcoinVersus.Tech is independently maintained. Support options on the site help fund additional technical research, verification and open educational publishing.</em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p>
+<!-- /wp:paragraph -->
