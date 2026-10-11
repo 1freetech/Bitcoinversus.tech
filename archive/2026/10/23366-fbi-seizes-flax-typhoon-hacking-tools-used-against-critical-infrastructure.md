@@ -24,7 +24,7 @@ status: publish
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Targets identified in court filings included a South Carolina power company, Japanese and Polish airports, Taiwanese natural-gas and electric-power companies, a multinational nonprofit organization, and two Taiwanese universities. The allegation is not that every scanned target was successfully breached; scanning and confirmed intrusion are separate facts.</p>
+<p>Targets identified in court filings included a South Carolina power company, Japanese and Polish airports, Taiwanese natural-gas and electric-power companies, a multinational nonprofit organization, and two Taiwanese universities. The allegation is not that every scanned target was successfully breached; scanning and confirmed intrusion are separate facts. In an <a href="https://twitter.com/FBICyberDiv/status/2108256413084422599">October 8 post</a>, FBI Cyber Division said the seized infrastructure had been used to scan and, in some cases, infiltrate U.S. critical infrastructure.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://twitter.com/FBICyberDiv/status/2108256413084422599","type":"rich","providerNameSlug":"twitter","responsive":true} -->
