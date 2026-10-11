@@ -2,8 +2,8 @@
 post_id: 23415
 title: "Senate Probe Questions AI Data Center Costs and Jobs"
 live_url: "https://bitcoinversus.tech/2026/10/10/senate-probe-questions-ai-data-center-costs-and-jobs/"
-featured_media_id: 23413
-featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/ai-data-center-senate-report-cover-2026-10-10.jpg"
+featured_media_id: 23422
+featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/ai-data-center-direct-cover-2026-10-10.jpg"
 status: publish
 ---
 
