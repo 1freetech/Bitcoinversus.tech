@@ -16,7 +16,7 @@ status: publish
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://hwbusters.com/wp-content/uploads/2026/10/knod-gpu-packet-offload-hero.jpg" alt="KNOD GPU packet processing graphic showing XDP and IPsec throughput figures"/><figcaption class="wp-element-caption"><em>KNOD’s reported LPC 2026 results include up to 70 Mpps for a Katran-derived XDP workload and 80 Gbit/s for receive-side IPsec. Hardware Busters graphic based on developer-reported figures.</em></figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://hwbusters.com/wp-content/uploads/2026/10/knod-gpu-packet-offload-hero.jpg" alt="KNOD GPU packet processing graphic showing XDP and IPsec throughput figures" /><figcaption class="wp-element-caption"><em>KNOD’s reported LPC 2026 results include up to 70 Mpps for a Katran-derived XDP workload and 80 Gbit/s for receive-side IPsec. Hardware Busters graphic based on developer-reported figures.</em></figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
@@ -41,11 +41,7 @@ https://www.youtube.com/watch?v=9DmHIUe9XJ0
 </div><figcaption class="wp-element-caption"><em>The Linux Foundation’s Open Source Summit Korea recording features Taehee Yoo and Hoyeon Lee explaining KNOD’s in-kernel GPU packet-processing architecture.</em></figcaption></figure>
 <!-- /wp:embed -->
 
-<!-- wp:embed {"url":"https://www.linkedin.com/posts/taehee-yoo-613a0675_github-taeheeyooknod-in-kernel-network-activity-7484794634179903488-GMvL","type":"rich","providerNameSlug":"linkedin","responsive":true} -->
-<figure class="wp-block-embed is-type-rich is-provider-linkedin wp-block-embed-linkedin"><div class="wp-block-embed__wrapper">
-https://www.linkedin.com/posts/taehee-yoo-613a0675_github-taeheeyooknod-in-kernel-network-activity-7484794634179903488-GMvL
-</div><figcaption class="wp-element-caption"><em>KNOD developer Taehee Yoo shared the RFC, early RDNA2 results, and the project’s goal of moving packet processing off host CPUs.</em></figcaption></figure>
-<!-- /wp:embed -->
+
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading">The NIC can write straight into GPU memory</h2>
