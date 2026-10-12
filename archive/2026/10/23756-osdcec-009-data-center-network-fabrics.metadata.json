@@ -1,0 +1,20 @@
+{
+  "wordpress_post_id": 23756,
+  "lesson_code": "OSDCEC.009",
+  "lesson_number": 9,
+  "certification": "Open-Source Data Center Engineer",
+  "title": "OSDCEC.009: Data Center Network Fabrics",
+  "status": "published",
+  "published": "2026-10-11T21:07:04",
+  "live_url": "https://bitcoinversus.tech/2026/10/11/osdcec-009-data-center-network-fabrics/",
+  "slug": "osdcec-009-data-center-network-fabrics",
+  "featured_media_id": 23753,
+  "featured_image_url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/osdcec-009-data-center-network-fabric-cover-1200x630-1.jpg",
+  "featured_image_dimensions": "1200x630",
+  "youtube_1": "https://www.youtube.com/watch?v=x1F-RCW9fqo",
+  "youtube_2": "https://www.youtube.com/watch?v=cE4Q6MjNJnk",
+  "social_1": "https://twitter.com/OracleCloud/status/2033611760649801816",
+  "social_2": "https://twitter.com/FScom_inc/status/2021645533668839682",
+  "seo_title": "OSDCEC.009: Data Center Network Fabrics | BitcoinVersus.Tech",
+  "seo_description": "Learn data center network fabrics: Clos and leaf-spine topology, ECMP, BGP underlays, oversubscription, redundancy, EVPN-VXLAN overlays, failure domains, and validation."
+}
