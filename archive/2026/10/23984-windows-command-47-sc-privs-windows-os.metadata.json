@@ -1,0 +1,15 @@
+{
+  "wordpress_post_id": 23984,
+  "series": "Windows Command",
+  "lesson_number": 47,
+  "title": "Windows Command #47 – sc privs (Windows OS)",
+  "slug": "windows-command-47-sc-privs-windows-os",
+  "status": "published",
+  "published": "2026-10-12T09:44:02",
+  "modified": "2026-10-12T09:44:02",
+  "live_url": "https://bitcoinversus.tech/2026/10/12/windows-command-47-sc-privs-windows-os/",
+  "featured_media_id": 23979,
+  "featured_media_url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/windows-command-47-sc-privs-1200x630-1.jpg",
+  "seo_title": "Windows Command #47 – sc privs",
+  "seo_description": "Learn the Windows sc privs command: set required service privileges, verify with qprivs, understand restart behavior, shared-process privilege unions, and least-privilege service hardening."
+}
