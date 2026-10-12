@@ -11,17 +11,13 @@
 <!-- wp:heading --><h2 class="wp-block-heading">Standard ACLs</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>A standard IPv4 ACL primarily matches the <strong>source IPv4 address</strong>. Because it cannot normally distinguish destination address or TCP/UDP application port, it is a coarse filtering tool.</p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>Example: permit only hosts in <code>10.20.30.0/24</code>.</p><!-- /wp:paragraph -->
-<!-- wp:code --><pre class="wp-block-code"><code>access-list 10 permit 10.20.30.0 0.0.0.255</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>Command:</strong> <code>access-list 10 permit 10.20.30.0 0.0.0.255</code></p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>The numbered standard ACL ranges commonly used in Cisco IOS are <code>1–99</code> and <code>1300–1999</code>. A named equivalent is easier to recognize later:</p><!-- /wp:paragraph -->
-<!-- wp:code --><pre class="wp-block-code"><code>ip access-list standard USERS_ONLY
- permit 10.20.30.0 0.0.0.255</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>Named standard ACL:</strong> <code>ip access-list standard USERS_ONLY</code><br><strong>Permit rule:</strong> <code>permit 10.20.30.0 0.0.0.255</code></p><!-- /wp:paragraph -->
 <!-- wp:heading --><h2 class="wp-block-heading">Extended ACLs</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>An extended IPv4 ACL can match source address, destination address, protocol, and transport-layer ports. This makes it possible to express policies such as “allow this subnet to reach this server over HTTPS, but deny other traffic to that server.”</p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>Example:</p><!-- /wp:paragraph -->
-<!-- wp:code --><pre class="wp-block-code"><code>ip access-list extended WEB_POLICY
- permit tcp 10.20.30.0 0.0.0.255 host 192.0.2.50 eq 443
- deny ip 10.20.30.0 0.0.0.255 host 192.0.2.50
- permit ip any any</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>Extended ACL:</strong> <code>ip access-list extended WEB_POLICY</code><br><strong>Permit HTTPS:</strong> <code>permit tcp 10.20.30.0 0.0.0.255 host 192.0.2.50 eq 443</code><br><strong>Deny other traffic to the server:</strong> <code>deny ip 10.20.30.0 0.0.0.255 host 192.0.2.50</code><br><strong>Permit unrelated IP traffic:</strong> <code>permit ip any any</code></p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>The first line permits HTTPS from the user subnet to one server. The second denies other IP traffic from that subnet to the same server. The final line explicitly permits other IP traffic. Without that final permit, unmatched traffic would reach the implicit deny.</p><!-- /wp:paragraph -->
 <!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=K-YJ6h1cvRQ&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
 <!-- wp:paragraph --><p><em>Pedro Lino Cáceres — practical Cisco ACL walkthrough covering standard and extended lists, configuration, application, verification, and troubleshooting.</em></p><!-- /wp:paragraph -->
@@ -30,8 +26,7 @@
 <!-- wp:list --><ul class="wp-block-list"><li><code>/24</code> mask <code>255.255.255.0</code> → wildcard <code>0.0.0.255</code></li><li><code>/26</code> mask <code>255.255.255.192</code> → wildcard <code>0.0.0.63</code></li><li><code>/30</code> mask <code>255.255.255.252</code> → wildcard <code>0.0.0.3</code></li><li><code>host 192.0.2.10</code> is shorthand for <code>192.0.2.10 0.0.0.0</code>.</li><li><code>any</code> is shorthand for any IPv4 source or destination.</li></ul><!-- /wp:list -->
 <!-- wp:heading --><h2 class="wp-block-heading">Inbound Versus Outbound</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>An ACL applied <strong>inbound</strong> evaluates packets as they enter an interface before the router forwards them. An ACL applied <strong>outbound</strong> evaluates packets after the routing decision as they leave an interface.</p><!-- /wp:paragraph -->
-<!-- wp:code --><pre class="wp-block-code"><code>interface GigabitEthernet0/0
- ip access-group WEB_POLICY in</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><strong>Interface:</strong> <code>interface GigabitEthernet0/0</code><br><strong>Apply ACL inbound:</strong> <code>ip access-group WEB_POLICY in</code></p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>Do not describe “in” and “out” from the user's point of view. Always describe them relative to the interface on the router or switch.</p><!-- /wp:paragraph -->
 <!-- wp:heading --><h2 class="wp-block-heading">Where Should the ACL Go?</h2><!-- /wp:heading -->
 <!-- wp:paragraph --><p>A common design guideline is to place <strong>extended ACLs closer to the source</strong> when practical, because they can precisely reject unwanted traffic before it consumes more network resources. Standard ACLs are often placed closer to the destination because they match only source address and can unintentionally block that source from reaching multiple destinations.</p><!-- /wp:paragraph -->
