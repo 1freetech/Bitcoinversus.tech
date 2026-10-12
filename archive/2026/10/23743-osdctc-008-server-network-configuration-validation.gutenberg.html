@@ -1,0 +1,133 @@
+<!-- wp:heading --><h2 class="wp-block-heading">Elementary Overview</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>A server is not ready for production just because the operating system installed successfully. The network path must also be proven from the physical NIC through cabling and optics, the top-of-rack switch, VLAN or bond configuration, IP settings, routing, and the application-facing network.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>This lesson follows <a href="https://bitcoinversus.tech/2026/10/09/osdctc-007-server-provisioning-and-deployment-firmware-storage-pxe-os-install-validation-and-handoff/"><strong>OSDCTC.007: Server Provisioning and Deployment</strong></a>. Provisioning creates the host. Network configuration and validation proves that the host is attached to the correct production network with the expected redundancy, link speed, addressing, and reachability.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Start At The Physical Layer</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Before changing software, confirm the physical path. Verify the correct server port, cable or DAC, transceiver type, patch-panel position, top-of-rack switch port, and labeling. Compare the rack elevation and cable map with <a href="https://bitcoinversus.tech/2026/10/05/osdctc-003-structured-cabling-patch-panels-copper-fiber-t568b-labeling-bend-radius-verification/"><strong>OSDCTC.003: Structured Cabling and Patch Panels</strong></a>.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>For fiber, match the approved optic type, wavelength, fiber type, connector type, polarity, and reach. For DACs or active electrical cables, verify that the cable is supported by both endpoints and rated for the intended speed. Do not assume a link light proves the correct path. A server can establish link on the wrong switch port or wrong VLAN.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Identify Every NIC Before Troubleshooting</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>On Linux, begin by listing the interfaces and mapping them to physical hardware. Interface names such as <code>enp65s0f0np0</code> are predictable names derived from hardware topology, but they are not meaningful until you identify the actual adapter and port.</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>ip -br link
+nmcli device status
+lspci -nn | grep -i -E 'ethernet|network'
+ethtool -i enp65s0f0np0</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p><code>ethtool -i</code> can show the NIC driver, firmware version, and PCI bus information. Use that information with the server inventory and BMC data from <a href="https://bitcoinversus.tech/2026/10/08/osdctc-006-bmc-out-of-band-server-management-ipmi-idrac-ilo-redfish-remote-console-recovery/"><strong>OSDCTC.006</strong></a> to confirm you are working on the intended adapter.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Verify Link State, Speed, And Duplex</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Red Hat documents <code>ethtool</code> as a primary verification tool for Ethernet link settings. A healthy output should show the expected speed, full duplex where applicable, and <strong>Link detected: yes</strong>. Red Hat also notes that both sides of an Ethernet link should use compatible auto-negotiation settings for optimal operation.</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>ethtool enp65s0f0np0</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>Important fields include <strong>Speed</strong>, <strong>Duplex</strong>, <strong>Auto-negotiation</strong>, <strong>Port</strong>, and <strong>Link detected</strong>. A 100 Gb/s NIC that comes up at an unexpected lower rate is not a successful configuration and validation result even if basic ping works. Compare the negotiated rate with the server design, switch configuration, cable or optic capability, and switch-side port counters.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=z6hStQ3g4ck","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=z6hStQ3g4ck
+</div></figure>
+<!-- /wp:embed -->
+<!-- wp:paragraph --><p><em>Network Direction — LACP fundamentals and dynamic EtherChannel behavior, useful when validating bonded server uplinks.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Read NIC Counters Before Blaming The Network</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>A link can remain up while traffic is unhealthy. NIC and driver counters can expose CRC errors, dropped packets, missed packets, overruns, pause events, resets, and other conditions that a simple connectivity test can miss.</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>ip -s link show enp65s0f0np0
+ethtool -S enp65s0f0np0</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>Counter names are driver-specific, so do not diagnose from a single unfamiliar statistic. Establish a baseline, clear or record the current values according to site procedure, generate controlled traffic, then check which counters increase. A rapidly increasing receive-error counter points the investigation differently than a clean NIC with a switch-side VLAN mismatch.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Optics And Transceivers Need Their Own Checks</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>On supported hardware, <code>ethtool -m</code> can read transceiver EEPROM or diagnostic information. Depending on the module and driver, that may include vendor identification, wavelength, temperature, transmit power, and receive power.</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>ethtool -m enp65s0f0np0</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>Do not treat a single optical power value as universally good or bad. Compare it with the transceiver specification, switch-side telemetry, fiber length, connector condition, and site standard. A low receive level can come from contamination, damaged fiber, excess loss, wrong optic pairing, or an upstream transmitter problem.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Understand Access Ports, Trunks, And VLAN Tags</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>A server-facing switch port may be configured as an untagged access port or as a trunk carrying one or more tagged VLANs. The Linux host configuration must match the switch design. If the switch expects VLAN tags but the host sends untagged frames, the physical link can be healthy while IP connectivity fails.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>Red Hat documents VLAN creation through NetworkManager using <code>nmcli</code>. A representative example is:</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>nmcli connection add type vlan \
+  con-name vlan120 \
+  ifname bond0.120 \
+  dev bond0 \
+  id 120</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>This is an example, not a command to paste into an unknown production server. Confirm the approved VLAN ID, parent interface, addressing method, MTU, and change plan first. The switch and host must agree on tagging.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=8XprgSOBcN4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=8XprgSOBcN4
+</div></figure>
+<!-- /wp:embed -->
+<!-- wp:paragraph --><p><em>Network Direction — access-versus-trunk VLAN behavior and why the switch-side mode must match the host design.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Bonding Provides Redundancy Or Aggregation</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Many servers use multiple physical NIC ports combined into a Linux bond. Red Hat Enterprise Linux supports several bonding modes. Two common designs are <strong>active-backup</strong>, where one port carries traffic while another remains available for failover, and <strong>802.3ad</strong>, which uses Link Aggregation Control Protocol when the switch is configured for the same LACP relationship.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>A representative 802.3ad creation command is:</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>nmcli connection add type bond \
+  con-name bond0 \
+  ifname bond0 \
+  bond.options "mode=802.3ad,miimon=100"</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>The switch side must be intentionally configured to match. LACP is not simply “two cables plugged in.” Both server ports must belong to the intended aggregate, the switch ports must be in the corresponding port-channel or MLAG design, and hashing determines how flows are distributed.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>Inspect the running Linux bond with:</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>cat /proc/net/bonding/bond0</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>Verify the bond mode, active ports, MII status, aggregator information, partner state, and whether all expected members are actually participating. A bond can appear operational while one member is down or excluded.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">LLDP Helps Prove Which Switch Port You Reached</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Link Layer Discovery Protocol can advertise and learn neighbor information on a local Ethernet link. When LLDP is enabled and permitted by site policy, it can help validate that a server NIC is connected to the expected switch and port instead of relying only on cable labels.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>Linux environments commonly use an LLDP daemon such as <code>lldpd</code>. A representative read-only command is:</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>lldpcli show neighbors</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>Compare the discovered system name, port ID, VLAN information when advertised, and chassis information with the rack documentation. If LLDP is intentionally disabled for security or architecture reasons, use switch-side MAC tables, interface descriptions, and physical tracing instead.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Verify Addressing And Routing Separately From Link</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Layer 1 and Layer 2 can be correct while Layer 3 is wrong. Confirm the assigned addresses, prefix length, gateway, routes, and active NetworkManager profile.</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>ip -br address
+ip route
+nmcli connection show --active</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>Do not assume that receiving an address proves the server is on the intended network. DHCP can succeed on the wrong VLAN. Compare the address and gateway with the deployment record, IPAM source, or approved build data.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">MTU Mismatches Create Partial Failures</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>All devices in a path must support the frame size expected by the workload. A server configured for jumbo frames can communicate with small packets yet fail or perform poorly when larger frames cross a segment configured for a smaller MTU.</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>ip link show enp65s0f0np0
+ip link show bond0
+ip link show bond0.120</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>A controlled ping with the “do not fragment” behavior can help test an IP path, but interpret it carefully because firewalls and ICMP policy can affect results. The correct validation combines host MTU, switch configuration, expected path design, and application testing.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Test Connectivity In Layers</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Do not jump directly to “the network is down.” Test from nearest dependency to farthest dependency:</p><!-- /wp:paragraph -->
+<!-- wp:list {"ordered":true} --><ol class="wp-block-list"><li>NIC is present and using the expected driver and firmware.</li><li>Physical link is detected at the expected speed.</li><li>Optic or cable is supported and healthy.</li><li>Bond members are active if bonding is used.</li><li>VLAN configuration matches the switch design.</li><li>Correct IP address and prefix are present.</li><li>Local gateway is reachable.</li><li>Required routed destinations are reachable.</li><li>DNS works when the application depends on names.</li><li>Required service ports are reachable.</li><li>Production monitoring sees the host from the expected network.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Use Packet Counters To Separate Physical And Logical Faults</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>If the link is up but the host cannot reach its gateway, watch receive and transmit counters while generating traffic. If transmit counters increase but receive remains flat, investigate the return path, VLAN, switch port, or peer. If neither counter moves, inspect the host configuration and whether traffic is actually being sent through that interface.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>If packet capture is permitted by site policy, <code>tcpdump</code> can show ARP, neighbor discovery, DHCP, VLAN-tagged traffic, or ICMP directly. Capture only what is authorized and avoid collecting unnecessary production payload data.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">A Link Light Is Only One Piece Of Evidence</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>One of the most common technician errors is treating link LEDs as proof of network readiness. A link LED usually proves only that two physical-layer devices established some form of link. It does not prove the correct switch, VLAN, IP, LACP state, MTU, route, DNS, firewall policy, or application path.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>This is why server network configuration and validation should be documented as a chain of evidence rather than a single green light.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>As data-center fabrics move toward ever-higher-speed Ethernet and optical interconnects, the physical details matter even more. This industry post highlights the continued shift toward optical data-center interconnects; treat it as industry discussion rather than a standards source.</p><!-- /wp:paragraph -->
+<!-- wp:embed {"url":"https://twitter.com/BeuvingJordy/status/2041172825872966005","type":"rich","providerNameSlug":"twitter","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
+https://twitter.com/BeuvingJordy/status/2041172825872966005
+</div></figure>
+<!-- /wp:embed -->
+<!-- wp:paragraph --><p><em>Industry discussion — high-speed AI data-center links are increasingly optical, reinforcing the need for technicians to understand transceivers and fiber validation.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Practical Configuration And Validation Checklist</h2><!-- /wp:heading -->
+<!-- wp:list {"ordered":true} --><ol class="wp-block-list"><li>Confirm the server asset, rack, U position, NIC port, cable ID, and expected switch port.</li><li>Verify NIC hardware, driver, firmware, and interface naming.</li><li>Check link detected, negotiated speed, duplex, and auto-negotiation state.</li><li>Inspect optics, DACs, fiber cleanliness, polarity, and supported module types.</li><li>Record NIC and switch counters before and after test traffic.</li><li>Verify bond mode and every bond member when redundancy or aggregation is configured.</li><li>Confirm LACP partner state when 802.3ad is used.</li><li>Confirm VLAN tagging or untagged access behavior matches the network design.</li><li>Use LLDP or approved switch-side tools to verify the physical neighbor.</li><li>Confirm IP address, prefix, gateway, routes, DNS, and MTU.</li><li>Test local gateway, routed destinations, and required service ports.</li><li>Confirm production monitoring and inventory systems recognize the server.</li><li>Document the final switch port, MAC addresses, IPs, bond members, VLANs, MTU, link speeds, and validation results.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Technician Pattern Recognition</h2><!-- /wp:heading -->
+<!-- wp:list --><ul class="wp-block-list"><li><strong>No link on one port:</strong> inspect cable or optic seating, compatibility, switch admin state, NIC firmware/driver, and physical path.</li><li><strong>Link is up but no gateway:</strong> inspect VLAN, IP prefix, gateway, bond state, switch port mode, and ARP or neighbor discovery.</li><li><strong>Bond works on one member only:</strong> inspect LACP membership, switch-side aggregate, cable path, and MII status.</li><li><strong>Traffic works until large transfers begin:</strong> inspect MTU, errors, FEC or optic health, congestion, and packet drops.</li><li><strong>Intermittent packet loss:</strong> compare NIC and switch counters, optic power, cable condition, buffer drops, and error trends.</li><li><strong>Server sees the wrong network:</strong> verify switch port, VLAN assignment, LLDP neighbor, DHCP source, and deployment record.</li><li><strong>Link speed is lower than design:</strong> check cable/optic capability, negotiation settings, switch configuration, and supported NIC modes.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Exercises</h2><!-- /wp:heading -->
+<!-- wp:list {"ordered":true} --><ol class="wp-block-list"><li>Write a read-only Linux command sequence that identifies a NIC, verifies driver and firmware, checks link state, and records packet counters.</li><li>Explain why a working link LED does not prove that the server is on the correct VLAN.</li><li>A two-port 802.3ad bond shows one active member and one failed member. List the server-side and switch-side evidence you would collect.</li><li>Describe how an MTU mismatch can create a partial network failure.</li><li>Explain the difference between an untagged access-port design and a tagged VLAN trunk to a Linux host.</li><li>Create a validation record for a new server containing rack location, NIC MAC addresses, switch ports, VLANs, IP addresses, MTU, bond mode, and link speed.</li><li>A 100 Gb/s link is up but showing errors. Build a troubleshooting sequence that separates host, cable/optic, and switch causes.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Knowledge Check + Answers</h2><!-- /wp:heading -->
+<!-- wp:list {"ordered":true} --><ol class="wp-block-list"><li><strong>What does “Link detected: yes” prove?</strong> It proves the NIC reports physical link; it does not prove VLAN, IP, routing, or application correctness.</li><li><strong>What does <code>ethtool -i</code> help identify?</strong> The NIC driver, firmware, and bus information.</li><li><strong>What is 802.3ad used for?</strong> Link aggregation using LACP when the host and switch are configured for the same aggregate.</li><li><strong>Why inspect <code>/proc/net/bonding/bond0</code>?</strong> It shows bond mode, member status, link monitoring, and partner or aggregator information.</li><li><strong>What problem does a VLAN solve?</strong> It logically separates Layer-2 broadcast domains across shared Ethernet infrastructure.</li><li><strong>What is LLDP useful for during configuration and validation?</strong> It can help identify the directly connected switch and port when enabled.</li><li><strong>Why should NIC counters be recorded before and after traffic tests?</strong> The change in counters helps show whether packets, errors, or drops are occurring during the test.</li><li><strong>What must match for jumbo-frame operation?</strong> The required MTU must be supported consistently across the intended end-to-end path.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Prior Lessons And Primary References</h2><!-- /wp:heading -->
+<!-- wp:list --><ul class="wp-block-list"><li><a href="https://bitcoinversus.tech/2026/10/09/osdctc-007-server-provisioning-and-deployment-firmware-storage-pxe-os-install-validation-and-handoff/">OSDCTC.007 — Server Provisioning and Deployment</a></li><li><a href="https://bitcoinversus.tech/2026/10/08/osdctc-006-bmc-out-of-band-server-management-ipmi-idrac-ilo-redfish-remote-console-recovery/">OSDCTC.006 — BMC and Out-of-Band Server Management</a></li><li><a href="https://bitcoinversus.tech/2026/10/06/osdctc-004-server-rack-and-stack-rail-kits-u-positions-airflow-power-network-verification/">OSDCTC.004 — Server Rack-and-Stack</a></li><li><a href="https://bitcoinversus.tech/2026/10/05/osdctc-003-structured-cabling-patch-panels-copper-fiber-t568b-labeling-bend-radius-verification/">OSDCTC.003 — Structured Cabling and Patch Panels</a></li><li><a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_and_managing_networking/configuring-a-network-bond">Red Hat Enterprise Linux 10 — Configuring a Network Bond</a></li><li><a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_and_managing_networking/configuring-vlan-tagging_configuring-and-managing-networking">Red Hat Enterprise Linux 9 — Configuring VLAN Tagging</a></li><li><a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/configuring-802-3-link-settings_configuring-and-managing-networking">Red Hat Enterprise Linux — Configuring 802.3 Link Settings</a></li><li><a href="https://docs.redhat.com/en/documentation/red_hat_hardware_certification/2026/html/red_hat_hardware_certification_test_suite_user_guide/assembly-appendix_hw-test-suite-running-tests-submitting-logs-review">Red Hat Hardware Certification 2026 — Ethernet Validation</a></li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Elementary Conclusion</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Server network configuration and validation is a layered proof process. Start with the exact physical path, identify the NIC, verify link state and negotiated speed, inspect optics and counters, prove bond and LACP membership, confirm VLAN behavior, validate addressing and routes, and then test the application path. A strong data-center technician does not stop when the link light turns green. The technician proves that the correct server is connected to the correct network with the expected redundancy, performance, and documented handoff state.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">BitcoinVersus.Tech</h2><!-- /wp:heading -->
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Advertisement</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong><a href="https://bitcoinversus.tech/">BitcoinVersus.Tech</a></strong> publishes open technical education across data centers, networking, Linux, electrical systems, robotics, semiconductors, programming, and firmware.</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Editor’s Note</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p><strong><em>Switch configuration, VLAN IDs, bond modes, LACP settings, MTU values, optics, NIC firmware, IP addressing, and production network changes are site- and vendor-specific. Follow approved change control, network standards, access permissions, and OEM documentation. The configuration commands in this lesson are examples and should not be applied blindly to production hosts.</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em>We volunteer daily to help keep the information on this platform verifiably accurate. Support our independent research through the support options available on BitcoinVersus.Tech.</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>BitcoinVersus.tech is not a financial advisor. Content is provided for informational purposes.</p><!-- /wp:paragraph -->
