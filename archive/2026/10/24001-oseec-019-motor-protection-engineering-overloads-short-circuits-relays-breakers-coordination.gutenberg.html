@@ -1,0 +1,119 @@
+<!-- wp:paragraph --><p><strong>Motor protection is not one device doing one job.</strong> A reliable motor circuit separates several functions: isolation, short-circuit protection, switching, overload protection, and—when the application requires it—additional monitoring for phase loss, current imbalance, ground fault, winding temperature, jam, stall, or other abnormal conditions.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This lesson follows <a href="https://bitcoinversus.tech/2026/10/09/oseec-017-motor-starting-engineering-inrush-voltage-dip-dol-soft-starters-vfds-starter-selection/"><strong>OSEEC.017: Motor Starting Engineering</strong></a> and <a href="https://bitcoinversus.tech/2026/10/11/oseec-018-variable-frequency-drive-engineering-rectifier-dc-bus-pwm-vector-harmonics/"><strong>OSEEC.018: Variable Frequency Drive Engineering</strong></a>. Those lessons explained why motors draw high current while starting and how drives control motor voltage and frequency. OSEEC.019 focuses on what protects the motor circuit when current or operating conditions become abnormal.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=-ATdPtFBThk&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Genesis Engineering compares motor circuit breakers, thermal overload relays, and electronic motor-protection relays, including the different jobs performed by overload and short-circuit protection.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Learning Objectives</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li>Distinguish overload current from short-circuit current.</li><li>Explain why a contactor is not normally the motor’s protective device.</li><li>Explain how thermal and electronic overload relays protect motors.</li><li>Describe the purpose of a motor-protection circuit breaker.</li><li>Interpret overload trip classes at a practical engineering level.</li><li>Explain why device coordination matters.</li><li>Build a safe troubleshooting sequence for nuisance trips and motor overheating.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Start With the Motor-Circuit Functions</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A typical across-the-line motor starter may contain a disconnecting means, a short-circuit protective device, a contactor, an overload relay, and the motor. These devices may be separate or combined into fewer physical products, but the engineering functions still exist.</p><!-- /wp:paragraph -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><strong>Isolation or disconnection</strong> provides a means to separate equipment from its energy source for maintenance and safety procedures.</li><li><strong>Short-circuit protection</strong> responds to very high fault current that can damage conductors, starters, buswork, and equipment rapidly.</li><li><strong>Control</strong> starts and stops the motor, normally through a contactor, starter, soft starter, or drive.</li><li><strong>Overload protection</strong> responds to sustained current or thermal conditions that can overheat the motor.</li><li><strong>Additional motor protection</strong> may monitor phase loss, imbalance, ground fault, winding temperature, jam, stall, bearing conditions, or other application-specific risks.</li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p>Schneider Electric’s 2025 motor-protection coordination guide separates these same functions and shows tested combinations of circuit breakers or fuses, contactors, and overload relays. Rockwell Automation likewise separates motor overload protection from branch-circuit short-circuit and ground-fault protection. See the <a href="https://www.se.com/eg/en/download/document/LVED250601EN/"><strong>Schneider Easy TeSys Motor Protection Coordination Guide</strong></a> and Rockwell Automation’s <a href="https://literature.rockwellautomation.com/idc/groups/literature/documents/at/ic-at001_-en-p.pdf"><strong>Introduction to Motor Circuit Design</strong></a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Overload and Short Circuit Are Different Faults</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>An <strong>overload</strong> is usually a sustained overcurrent associated with excessive mechanical load, a stalled rotor, phase loss, abnormal starting duration, poor cooling, or another condition that causes damaging heating over time. A motor may tolerate a large starting current for a short period, so overload protection intentionally uses a time-current response rather than tripping instantly at every current above full-load current.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>A <strong>short circuit</strong> is a much higher fault-current event caused by a low-impedance fault path. The protective device for that event must operate much faster because thermal and mechanical energy can rise rapidly. Schneider’s motor-branch documentation explicitly requires the overload relay to be coordinated with a short-circuit protective device because the overload relay itself is not the general short-circuit clearing device.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">What the Contactor Does</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A contactor is primarily a switching device. Its coil allows a control circuit, PLC, pushbutton station, relay, or other controller to open and close the motor power circuit repeatedly. A contactor may be part of a coordinated starter assembly, but it should not be confused with the overload relay or branch short-circuit protective device.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>If an overload relay trips, its auxiliary contact commonly opens the contactor coil circuit. The contactor then drops out and disconnects the motor from the supply. The overload relay detects the abnormal condition; the contactor performs the switching action.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=O0WmTqiFmMI&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Neheyler Mechatronics demonstrates the internal operation and adjustment of a thermal overload relay and its relationship to the motor-control circuit.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Thermal Overload Relays</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A traditional thermal overload relay uses the heating effect of motor current to produce a delayed trip. Bimetal elements bend as they heat, or another thermal mechanism changes state, eventually operating the relay contacts when the overload persists long enough.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This time delay is essential. A motor can draw several times its normal running current during acceleration. A correctly selected overload relay should permit the expected starting event while still protecting against sustained overcurrent that would overheat the motor.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Thermal overload relays normally have an adjustable current range and a reset mechanism. The setting must be selected from the motor data, application requirements, applicable electrical rules, and the manufacturer’s instructions. Do not set an overload relay higher simply to stop nuisance trips without finding the cause.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Electronic Overload and Motor-Protection Relays</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Electronic overload relays measure current electronically and can implement a motor thermal model rather than relying only on a bimetal element. Depending on the device, they may add phase-loss protection, current-imbalance protection, ground-fault detection, jam or stall logic, thermal-sensor inputs, event history, communications, and remote diagnostics.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>For example, Schneider documents current-based protection functions in its LR9G electronic overload relay that include thermal overload, phase loss, phase imbalance, and ground fault. The exact features and thresholds depend on the product and its configuration, so engineers must use the manual for the actual relay rather than assuming every electronic relay behaves identically.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Motor-Protection Circuit Breakers</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A motor-protection circuit breaker, often abbreviated MPCB, combines motor-oriented overload protection with short-circuit protection in one device. Many designs have an adjustable thermal or electronic overload setting plus a high-current magnetic or electronic short-circuit trip function.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>An MPCB can reduce component count, but it does not eliminate the need to understand the rest of the circuit. A contactor may still be required for frequent remote switching. Isolation requirements, short-circuit current rating, conductor protection, coordination, control architecture, and local rules still have to be satisfied.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/ElectricalEngineering/comments/1qtwc32/thermal_overload_relay_or_motor_protection/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>A 2026 r/ElectricalEngineering discussion compares thermal overload relays with motor-protection circuit breakers and highlights how application, starter architecture, available space, and required functions affect the choice.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Trip Class Is About Starting Time and Thermal Protection</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>IEC-style overload relays commonly use trip classes such as 10A, 10, 20, or 30. The class describes a defined time-current performance range under specified test conditions. A lower class trips sooner at the specified multiple of current; a higher class allows a longer acceleration period before tripping.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Eaton’s current wiring manual lists IEC/EN 60947-4-1 trip classes 10A, 10, 20, and 30 and relates them to different starting duties. The engineering objective is not “pick the slowest relay.” The objective is to select a class that lets the motor complete its legitimate start while still protecting the motor against excessive heating if acceleration takes too long or the rotor stalls.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Coordination Is More Than Matching Ampere Ratings</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The breaker or fuse, contactor, and overload relay must behave as a system. During ordinary overload, the overload relay should operate before the motor is thermally damaged. During a high-current short circuit, the short-circuit protective device must clear the fault quickly enough to limit damage to the starter and conductors.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>IEC coordination tables are based on tested combinations. Schneider’s 2026 selectivity and coordination guide and its motor-protection tables show that Type 1 and Type 2 coordination are properties of specific tested device combinations—not just labels an engineer can assign by inspection. For Type 2 coordination, the starter must remain suitable for further service after the specified short-circuit test, with only limited contact welding allowed under the standard conditions.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/ElectricalEngineering/comments/1sahf9f/type_2_coordination_iec/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>A 2026 engineering discussion reinforces an important design rule: do not claim Type 2 coordination by mixing untested breakers, contactors, and overload relays. Use the manufacturer’s tested coordination tables.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Motor Protection With a VFD</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A VFD changes the protection architecture because the drive contains power electronics and often provides an electronic motor-overload model. Upstream protection protects the branch circuit and drive according to the drive manufacturer’s instructions, while motor thermal protection may be implemented in the drive, in the motor, or through additional devices depending on the application.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Do not automatically place a conventional motor breaker or contactor on the VFD output merely because that arrangement was familiar in an across-the-line starter. Output switching and protection must follow the VFD manufacturer’s approved topology. Review <a href="https://bitcoinversus.tech/2026/10/11/oseec-018-variable-frequency-drive-engineering-rectifier-dc-bus-pwm-vector-harmonics/"><strong>OSEEC.018</strong></a> for the drive power path and <a href="https://bitcoinversus.tech/2026/10/07/oseec-015-power-quality-engineering-harmonics-thd-voltage-sags-swells-transients-measurement/"><strong>OSEEC.015</strong></a> for power-quality effects.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Why Nuisance Trips Need Investigation</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>An overload trip is information. Repeatedly increasing the setting can hide a mechanical or electrical problem and remove the motor’s thermal margin.</p><!-- /wp:paragraph -->
+
+<!-- wp:list --><ul class="wp-block-list"><li>Mechanical load may be excessive.</li><li>A bearing may be failing or binding.</li><li>One phase may be missing or significantly imbalanced.</li><li>Supply voltage may be low or unbalanced.</li><li>The motor may be started too frequently.</li><li>Acceleration time may be longer than the selected trip class permits.</li><li>Cooling airflow may be blocked.</li><li>The overload setting may not match the motor and application.</li><li>The contactor or termination may have a high-resistance connection.</li><li>The driven machine may be jammed.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Safe Troubleshooting Order</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>Electrical safety comes first.</strong> Motor circuits can contain lethal voltage and high available fault current. Use the site’s lockout/tagout procedure, verify absence of voltage with an appropriately rated test instrument, wear required PPE, and follow applicable codes and employer procedures. Energized measurements should be performed only by qualified personnel using equipment and methods appropriate to the hazard.</p><!-- /wp:paragraph -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Record the motor nameplate data and the protection-device settings.</li><li>Confirm the motor starter and protective devices are approved for the motor voltage, current, application, and available fault current.</li><li>Inspect for loose, overheated, discolored, or damaged conductors and terminals while the circuit is de-energized.</li><li>Check whether the overload trip occurred during starting or during steady operation.</li><li>Compare measured phase currents under load rather than looking at only one phase.</li><li>Check phase-to-phase voltage and voltage imbalance when qualified to perform the measurement safely.</li><li>Inspect the driven mechanical load for binding, jam, bearing damage, or abnormal torque.</li><li>Check cooling paths, fan operation, ambient temperature, and motor duty cycle.</li><li>Review the overload trip class and manufacturer time-current data.</li><li>Verify coordination against the manufacturer’s tested tables before changing protective-device ratings.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Practical Engineering Exercise</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Use a manufacturer motor-starter catalog or coordination guide and choose a hypothetical three-phase motor. Record its rated voltage, full-load current, starting method, expected acceleration time, duty cycle, and available short-circuit current at the starter location.</p><!-- /wp:paragraph -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Identify the required disconnecting function.</li><li>Select a manufacturer-approved short-circuit protective device for the example.</li><li>Select the contactor or starter.</li><li>Select an overload relay whose adjustment range includes the motor’s required setting.</li><li>Choose the trip class based on the expected starting duty and manufacturer guidance.</li><li>Confirm whether the chosen device combination has a published Type 1 or Type 2 coordination rating.</li><li>List which faults the overload relay detects and which faults require another protective device.</li><li>Write a short troubleshooting plan for a motor that trips after 20 seconds of acceleration but runs normally if it reaches full speed.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Knowledge Check</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Why should overload protection not trip instantly at every current above motor full-load current?</li><li>What device normally interrupts very high short-circuit current in a motor branch circuit?</li><li>What is the primary job of a contactor?</li><li>What does a thermal overload relay respond to?</li><li>What additional functions can electronic motor-protection relays provide?</li><li>What does overload trip class describe?</li><li>Why must Type 2 coordination use a tested device combination?</li><li>Why is increasing an overload setting a poor first response to repeated trips?</li></ol><!-- /wp:list -->
+
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Answers</h3><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Motors normally draw high current during acceleration, so overload protection needs a time-current characteristic that permits legitimate starting while preventing damaging sustained heating.</li><li>A properly selected branch short-circuit protective device such as a circuit breaker or fuse, or an approved combined motor-protection device.</li><li>Repeated controlled switching of the motor power circuit.</li><li>Sustained overcurrent and the resulting thermal condition according to its time-current characteristic.</li><li>Depending on the product: phase loss, imbalance, ground fault, jam, stall, thermal-sensor inputs, communications, event logging, and other monitoring.</li><li>The relay’s defined time-current tripping behavior for motor starting and overload conditions.</li><li>Because coordination performance depends on the combined fault behavior of the protective device, contactor, and overload relay and must be established by the manufacturer’s standardized testing.</li><li>The trip may be revealing a real electrical, mechanical, cooling, starting, or selection problem; raising the setting can reduce protection without correcting the cause.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Key Takeaway</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>Good motor protection is coordinated protection.</strong> Overload relays protect against damaging heating, short-circuit devices clear high-current faults, contactors perform control switching, and advanced relays add diagnostic protection when the application needs it. The system must be selected from actual motor data, starting behavior, fault-current conditions, manufacturer tables, and applicable electrical requirements—not by ampere rating alone.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Primary references:</strong> <a href="https://www.se.com/eg/en/download/document/LVED250601EN/">Schneider Electric — Easy TeSys Motor Protection Coordination Guide</a>, <a href="https://www.se.com/us/en/download/document/LVPED318033EN/">Schneider Electric — Selectivity, Cascading and Coordination Guide 2026</a>, <a href="https://literature.rockwellautomation.com/idc/groups/literature/documents/at/ic-at001_-en-p.pdf">Rockwell Automation — Introduction to Motor Circuit Design</a>, and <a href="https://www.eaton.com/content/dam/eaton/markets/machinebuilding/speed-to-market/wiring-manual/eaton-wiring-manual-mn081007-en-us.pdf">Eaton Wiring Manual</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>BitcoinVersus.Tech Editor's Note:</strong> This lesson teaches engineering concepts, not permission to perform energized electrical work. Always follow the equipment manufacturer, local electrical rules, employer procedures, lockout/tagout requirements, and qualified-person boundaries for the installation being serviced.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Support independent technology education:</strong> Bitcoin donations help fund BitcoinVersus.Tech research and publishing.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>BitcoinVersus.Tech provides technical education and analysis for informational purposes only.</em></p><!-- /wp:paragraph -->
