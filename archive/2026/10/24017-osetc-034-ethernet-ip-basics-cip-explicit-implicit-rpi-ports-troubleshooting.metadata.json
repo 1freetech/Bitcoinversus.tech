@@ -1,0 +1,39 @@
+{
+  "wordpress_post_id": 24017,
+  "series": "Open-Source Electrical Technician Certification",
+  "lesson_number": 34,
+  "title": "OSETC.034: EtherNet/IP Basics — CIP, Explicit and Implicit Messaging, RPI, Ports, and Troubleshooting",
+  "slug": "osetc-034-ethernet-ip-basics-cip-explicit-implicit-rpi-ports-troubleshooting",
+  "status": "published",
+  "published": "2026-10-12T10:07:17",
+  "modified": "2026-10-12T10:08:28",
+  "live_url": "https://bitcoinversus.tech/2026/10/12/osetc-034-ethernet-ip-basics-cip-explicit-implicit-rpi-ports-troubleshooting/",
+  "featured_media_id": 24012,
+  "featured_image_size": "1200x630",
+  "featured_image_subject": "African American industrial automation technician troubleshooting EtherNet/IP equipment",
+  "seo_title": "OSETC.034: EtherNet/IP Basics",
+  "seo_description": "Learn EtherNet/IP basics: CIP, explicit and implicit messaging, RPI, ports, unicast, multicast, device profiles, and industrial network troubleshooting.",
+  "youtube_embeds": [
+    "https://www.youtube.com/watch?v=GJeRq5DD1cY",
+    "https://www.youtube.com/watch?v=RtnbRo0vPzY"
+  ],
+  "social_embeds": [
+    "https://www.reddit.com/r/PLC/comments/1squas4/ethernetip_adapter_dropping_connection_broadcast/",
+    "https://www.reddit.com/r/PLC/comments/1jek169/connection_becomes_instable_when_connecting/"
+  ],
+  "primary_sources": [
+    "https://www.odva.org/technology-standards/key-technologies/ethernet-ip/",
+    "https://www.odva.org/publication_download/ethernet-ip-technology-overview/",
+    "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/enet-um006_-en-p.pdf"
+  ],
+  "qa": {
+    "youtube_players_rendered": true,
+    "social_embeds_rendered": true,
+    "text_boxes": 0,
+    "code_blocks": 0,
+    "group_blocks": 0,
+    "card_blocks": 0,
+    "callouts": 0,
+    "separators": 0
+  }
+}
