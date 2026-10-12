@@ -1,0 +1,81 @@
+<!-- wp:paragraph --><p><strong>CAN bus troubleshooting begins by separating electrical faults from protocol and firmware faults.</strong> A controller may execute correctly yet fail to exchange frames because of missing termination, incorrect bit timing, absent acknowledgment, a failed transceiver, or bus-off recovery.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This is OSFTC.009 in the Open-Source Firmware Technician track, following <a href='https://bitcoinversus.tech/2026/10/11/osftc-008-spi-bus-troubleshooting/'>OSFTC.008: SPI Bus Troubleshooting</a>. The goal is to establish an evidence-based diagnostic procedure for industrial controllers, embedded boards, and networked equipment.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=1IjhkMYtGMg&w=900&h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Kvaser: interpreting CAN bus signals on an oscilloscope.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Learning objectives</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li>Explain CAN_H and CAN_L differential signaling and dominant/recessive bits.</li><li>Measure correct termination on a powered-off bus.</li><li>Recognize ACK errors, error-passive behavior, and bus-off.</li><li>Use an oscilloscope, CAN analyzer, and Linux SocketCAN to isolate faults.</li><li>Document safe corrective action and retest with known-good traffic.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">CAN is a shared broadcast bus</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Classical CAN uses message identifiers for arbitration, not destination addresses. A dominant zero overrides a recessive one, allowing multiple controllers to arbitrate without corrupting the highest-priority frame. A controller needs both a CAN peripheral and a suitable physical-layer transceiver; MCU TX/RX pins are not equivalent to the CAN_H/CAN_L cable pair.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Physical layer: differential voltage</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>On a typical high-speed CAN network, recessive CAN_H and CAN_L sit near the same common-mode voltage; during a dominant bit, CAN_H rises and CAN_L falls. Approximate nominal values often cited are 2.5 V/2.5 V recessive and 3.5 V/1.5 V dominant, but actual levels depend on transceiver, loading, and operating conditions. Measure both lines and their difference rather than declaring a fault from a single trace.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Termination and resistance</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A conventional linear high-speed CAN trunk has a 120 Ω termination at each physical end. With equipment powered down and no alternate parallel loading, measuring across CAN_H and CAN_L commonly gives approximately 60 Ω because the two resistors are in parallel. About 120 Ω suggests one termination is absent; around 40 Ω can suggest three parallel 120 Ω terminations. These are clues, not universal pass/fail values: inspect actual network topology, internal resistors, isolation, and measurement points.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Never perform resistance measurements on a powered circuit. Confirm the circuit is isolated and follow site safety procedures before attaching test equipment.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/embedded/comments/vm022i/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Embedded developers discuss why termination belongs at the two physical ends, rather than on every device.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Bit rate and sample point</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>All classical CAN participants on the same segment must agree on nominal bit timing closely enough to sample frames. Check the configured bitrate, oscillator accuracy, propagation segments, synchronization jump width, and sample point. A 500 kbit/s network has a nominal bit time of 2 µs; 250 kbit/s has 4 µs. CAN FD may use a separate faster data-phase rate, so capture both nominal and data-phase configuration before testing.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Acknowledgment is not application acceptance</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A transmitting CAN node expects another active receiver to assert the ACK slot after a valid frame. One isolated transmitter on a perfectly wired bus can repeatedly report ACK errors simply because no other node acknowledges it. An ACK proves at least one receiver accepted the frame at the CAN protocol level; it does not prove an application processed the payload.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Error counters and bus-off</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>CAN controllers track transmit and receive errors. Repeated errors can move a node from error-active to error-passive and eventually bus-off, at which point the controller stops participating in normal traffic until the configured recovery mechanism runs. A bus-off report is an outcome, not a root cause. Investigate the preceding physical, timing, ACK, or controller faults before forcing repeated restarts.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Use a scope and analyzer together</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li>First record supply rails, transceiver enable/standby state, ground reference, and wiring continuity.</li><li>With power off, measure termination and check for shorts between CAN_H, CAN_L, supply, and ground.</li><li>With power on, capture both CAN_H and CAN_L with suitable probes and instrument grounding.</li><li>Decode frames at the documented bitrate and record arbitration IDs, CRC/stuff/form errors, ACK state, and timestamps.</li><li>Compare the first failing frame with a known-good node and test a single approved change at a time.</li></ul><!-- /wp:list -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=fVy_EXkMKMg&w=900&h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Automotive Diagnosis: CAN_H/CAN_L waveform measurements and shorts-to-ground diagnostics.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Linux SocketCAN examples</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>On a Linux host with an approved CAN interface, <code>ip -details link show can0</code> reports interface and state. A controlled lab setup might configure <code>sudo ip link set can0 up type can bitrate 500000 restart-ms 0</code>; use the real approved bitrate and never alter a production bus without authorization. <code>candump -L can0</code> records timestamped traffic. <code>ip -statistics -details link show can0</code> helps inspect dropped frames and error counters. <code>cansend can0 123#11223344</code> transmits a frame and must be restricted to a disconnected test fixture or an expressly authorized network.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Fault isolation examples</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li>No frames and flat lines: verify power, transceiver standby, connector pinout, termination, and actual transmit attempts.</li><li>Frames visible but ACK errors: confirm a second healthy active node and matching bit timing.</li><li>Repeated stuff/form/CRC errors: inspect ringing, cable stubs, termination, noise, and sample-point mismatch.</li><li>One device triggers bus-off: compare its transceiver voltage, oscillator, firmware timing, and error counters against known-good equipment.</li><li>Scope shows common-mode noise: evaluate the differential signal and actual decoding before concluding communication is broken.</li></ul><!-- /wp:list -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/embedded/comments/1je83vv[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Real troubleshooting discussion: apparent noise on both conductors can be common-mode and may not destroy differential signaling.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Safety and production change control</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Never probe an energized vehicle safety network or industrial control bus without authorization, electrical safety controls, and the approved maintenance procedure. Do not attach a new termination, send test frames, or reset a controller on a live critical network simply to see what happens. Isolate a bench harness when possible and preserve configuration and logs before modification.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Technician practice exercise</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A four-node CAN segment shows 40 Ω across CAN_H/CAN_L while powered down, and the logger reports intermittent error frames. Two end nodes each contain 120 Ω termination; a middle breakout also has a soldered 120 Ω resistor. Explain why the reading is 40 Ω, which resistor should be disabled, how to verify the physical trunk ends, and what waveform and frame-level evidence would prove the repair.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Knowledge check and answers</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><strong>Why approximately 60 Ω?</strong> Two 120 Ω end terminators in parallel, with power removed and no other significant loading.</li><li><strong>Can a lone CAN transmitter produce ACK errors?</strong> Yes, if no other active receiver acknowledges its valid frame.</li><li><strong>What is bus-off?</strong> A CAN controller error-confinement state that prevents normal participation until recovery.</li><li><strong>Does a valid ACK prove the application accepted data?</strong> No, it only indicates protocol-level acknowledgment by at least one receiver.</li><li><strong>Why inspect CAN_H and CAN_L together?</strong> The receiver responds primarily to differential signaling; common-mode disturbances can appear on both conductors.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Primary references and related lessons</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Technical references: <a href='https://kvaser.com/lesson/introduction-can-bus/'>Kvaser CAN Protocol Tutorial</a>, <a href='https://kvaser.com/tools-troubleshooting-can-nmea-2000/'>Kvaser CAN troubleshooting</a>, and <a href='https://www.tek.com/en/solutions/industry/automotive-test-solutions/in-vehicle-networks/can-bus-troubleshooting-oscilloscope-can-bus-decoder'>Tektronix CAN decoding and troubleshooting</a>. Related lessons: <a href='https://bitcoinversus.tech/2026/10/11/osftc-008-spi-bus-troubleshooting/'>OSFTC.008</a>, <a href='https://bitcoinversus.tech/2026/10/10/osftc-007-spi-nor-flash-diagnostics-identification-backups-protection-verification/'>OSFTC.007</a>, and <a href='https://bitcoinversus.tech/2026/10/08/osftc-006-i2c-bus-troubleshooting-sda-scl-pull-ups-ack-nack-logic-analyzer/'>OSFTC.006</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>BitcoinVersus.Tech Editor's Note:</strong><br>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Bitcoin donation QR code for 5,000 sats." class="wp-image-24043" /></figure><!-- /wp:image -->
