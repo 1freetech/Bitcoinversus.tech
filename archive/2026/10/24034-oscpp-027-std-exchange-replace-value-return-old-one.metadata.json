@@ -1,0 +1,38 @@
+{
+  "wordpress_post_id": 24034,
+  "series": "Open-Source C++ Certification",
+  "lesson_number": 27,
+  "title": "OSC++.027: std::exchange — Replace a Value and Return the Old One",
+  "slug": "oscpp-027-std-exchange-replace-value-return-old-one",
+  "status": "published",
+  "published": "2026-10-12T10:16:18",
+  "modified": "2026-10-12T10:16:18",
+  "live_url": "https://bitcoinversus.tech/2026/10/12/oscpp-027-std-exchange-replace-value-return-old-one/",
+  "featured_media_id": 24032,
+  "featured_image_size": "1200x630",
+  "featured_image_subject": "African American C++ developer studying resource transfer and move semantics",
+  "seo_title": "OSC++.027: std::exchange",
+  "seo_description": "Learn C++ std::exchange: replace a value and return the old one, use it in move constructors, distinguish it from move and swap, and avoid ownership mistakes.",
+  "youtube_embeds": [
+    "https://www.youtube.com/watch?v=2gUqyt5JTtM",
+    "https://www.youtube.com/watch?v=VIWjZmPAvDg"
+  ],
+  "social_embeds": [
+    "https://www.reddit.com/r/cpp_questions/comments/ihlker/",
+    "https://www.reddit.com/r/cpp_questions/comments/vhzctp/"
+  ],
+  "primary_references": [
+    "https://open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3668.html",
+    "https://en.cppreference.com/cpp/utility/exchange",
+    "https://en.cppreference.com/cpp/utility/move"
+  ],
+  "qa": {
+    "youtube_players_rendered": 2,
+    "social_embeds_rendered": 2,
+    "text_boxes": 0,
+    "code_blocks": 0,
+    "group_blocks": 0,
+    "card_or_callout_blocks": 0,
+    "separator_blocks": 0
+  }
+}
