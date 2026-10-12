@@ -1,0 +1,1 @@
+Renamed from "OSDCTC.008: Server Network Bring-Up" to "OSDCTC.008: Server Network Configuration and Validation" on 2026-10-11. Canonical live URL: https://bitcoinversus.tech/2026/10/11/osdctc-008-server-network-configuration-validation/
