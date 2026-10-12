@@ -1,0 +1,42 @@
+{
+  "wordpress_post_id": 24048,
+  "series": "Open-Source Semiconductor Technician Certification",
+  "lesson_number": 8,
+  "title": "OSSTC.008: Semiconductor Metrology and Inspection Basics",
+  "slug": "osstc-008-semiconductor-metrology-inspection-basics",
+  "status": "published",
+  "published": "2026-10-12T10:40:08",
+  "modified": "2026-10-12T10:40:38",
+  "live_url": "https://bitcoinversus.tech/2026/10/12/osstc-008-semiconductor-metrology-inspection-basics/",
+  "featured_media_id": 24046,
+  "featured_image_size": "1200x630",
+  "featured_image_subject": "African American semiconductor technician inspecting a wafer at a precision metrology station",
+  "seo_title": "OSSTC.008: Semiconductor Metrology and Inspection Basics",
+  "seo_description": "Learn semiconductor metrology and inspection basics: wafer maps, optical inspection, film thickness, ellipsometry, CD-SEM, overlay, calibration, and troubleshooting.",
+  "youtube_embeds": [
+    "https://www.youtube.com/watch?v=SOGrW1OpcMw",
+    "https://www.youtube.com/watch?v=TmvpvtqdXpQ"
+  ],
+  "social_embeds": [
+    "https://www.reddit.com/r/Metrology/comments/1vwqfvl/anyone_here_working_in_wafer_metrology/",
+    "https://www.reddit.com/r/Semiconductors/comments/1weqxqc/semiconductor_metrology_startup/"
+  ],
+  "previous_related_lessons": [
+    "OSSTC.007",
+    "OSSTC.006",
+    "OSSTC.003",
+    "OSSTC.002",
+    "OSSTC.001"
+  ],
+  "donation_qr_media_id": 24043,
+  "qa": {
+    "youtube_players_rendered": 2,
+    "social_embeds_rendered": 2,
+    "donation_qr_rendered": true,
+    "text_boxes": 0,
+    "code_blocks": 0,
+    "group_blocks": 0,
+    "card_or_callout_blocks": 0,
+    "separator_blocks": 0
+  }
+}
