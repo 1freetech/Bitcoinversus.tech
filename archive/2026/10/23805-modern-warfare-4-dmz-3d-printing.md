@@ -4,7 +4,7 @@ title: "Modern Warfare 4 DMZ Adds 3D Printing"
 live_url: "https://bitcoinversus.tech/2026/10/11/modern-warfare-4-dmz-3d-printing/"
 slug: "modern-warfare-4-dmz-3d-printing"
 published_at: "2026-10-11T22:15:34"
-modified_at: "2026-10-11T22:15:34"
+modified_at: "2026-10-11T22:19:16"
 featured_media_id: 23804
 featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/mw4-dmz-fob-1200x630-1.jpg"
 status: published
@@ -19,12 +19,12 @@ primary_source: "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-war
 
 <!-- wp:paragraph --><p>The <a href="https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide"><strong>official DMZ guide</strong></a> says the FOB also includes Orders, Stash and Loadouts, Operators, a Boss Board and deployment controls. Player progression reaches <strong>Level 70</strong>, while DMZ Operator Prestige can unlock permanent Prestige Traits.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=qmkmQ1AWPVE","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=RmIlzHPS5kQ","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=qmkmQ1AWPVE
+https://www.youtube.com/watch?v=RmIlzHPS5kQ
 </div></figure>
 <!-- /wp:embed -->
-<!-- wp:paragraph --><p><em>Call of Duty — Infinity Ward’s official DMZ first look.</em></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>PlayStation — public Modern Warfare 4 DMZ first-look video for PS5.</em></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>DMZ remains an extraction mode built around looting, AI enemies, rival Operators and exfiltration. The new FOB makes more of that progression persistent outside each run.</p><!-- /wp:paragraph -->
 
