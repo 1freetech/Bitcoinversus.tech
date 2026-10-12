@@ -1,0 +1,23 @@
+{
+  "wordpress_post_id": 23778,
+  "title": "XMax Agrees to Buy Hexa Creation for 1200V GaN",
+  "status": "published",
+  "published": "2026-10-11T21:42:12",
+  "live_url": "https://bitcoinversus.tech/2026/10/11/xmax-hexa-creation-1200v-vertical-gan/",
+  "slug": "xmax-hexa-creation-1200v-vertical-gan",
+  "featured_media_id": 23777,
+  "featured_image_url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/xmax-hexa-vertical-gan-ai-data-center-cover-1200x630-1.jpg",
+  "featured_image_dimensions": "1200x630",
+  "primary_source": "https://www.sec.gov/Archives/edgar/data/1473334/000149315226046545/form8-k.htm",
+  "secondary_source": "https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/",
+  "youtube_1": "https://www.youtube.com/watch?v=hfRosNm58Kw",
+  "youtube_2": "https://www.youtube.com/watch?v=E96F7J9BDUQ",
+  "social_1": "https://twitter.com/dnystedt/status/1978270031466406171",
+  "internal_links": [
+    "https://bitcoinversus.tech/2026/09/25/ul-launches-800-vdc-ai-data-center-power-certification/",
+    "https://bitcoinversus.tech/2026/09/26/navitas-and-wise-integration-team-up-on-ai-data-center-power/",
+    "https://bitcoinversus.tech/2026/10/06/data-centers-what-is-busway-overhead-power-racks/"
+  ],
+  "seo_title": "XMax Agrees to Buy Hexa Creation for 1200V GaN | BitcoinVersus.Tech",
+  "seo_description": "XMax agreed to acquire Hexa Creation for about $4.12 million, adding a 1200V vertical-GaN semiconductor roadmap aimed partly at 800VDC AI data-center power."
+}
