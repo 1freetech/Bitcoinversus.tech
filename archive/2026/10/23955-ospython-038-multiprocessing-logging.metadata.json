@@ -1,0 +1,29 @@
+{
+  "wordpress_post_id": 23955,
+  "lesson_code": "OSPython.038",
+  "lesson_number": 38,
+  "series": "Open-Source Python",
+  "title": "OSPython.038: Multiprocessing Logging",
+  "status": "published",
+  "published": "2026-10-12T09:20:25",
+  "modified": "2026-10-12T09:21:15",
+  "live_url": "https://bitcoinversus.tech/2026/10/12/ospython-038-multiprocessing-logging/",
+  "slug": "ospython-038-multiprocessing-logging",
+  "featured_media_id": 23954,
+  "featured_media_url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/ospython-038-multiprocessing-logging-1200x630-1.jpg",
+  "youtube": [
+    "https://www.youtube.com/watch?v=fKl2JW_qrso",
+    "https://www.youtube.com/watch?v=pxuXaaT1u3k"
+  ],
+  "social": [
+    "https://www.reddit.com/r/learnpython/comments/11hhq1f/",
+    "https://www.reddit.com/r/learnpython/comments/osqry4/"
+  ],
+  "primary_external_sources": [
+    "https://docs.python.org/3.15/howto/logging-cookbook.html#logging-to-a-single-file-from-multiple-processes",
+    "https://docs.python.org/3.15/library/logging.handlers.html#queuehandler"
+  ],
+  "seo_title": "OSPython.038: Multiprocessing Logging",
+  "seo_description": "Learn safe Python multiprocessing logging with QueueHandler, multiprocessing.Queue, QueueListener, listener processes, spawn behavior, ProcessPoolExecutor, and centralized file output.",
+  "verification": "Live WordPress rendered-view verification confirmed two YouTube iframe players, two rendered Reddit embeds, featured media 23954 at 1200x630, no core/code blocks, and no group/card/callout/text-box containers."
+}
