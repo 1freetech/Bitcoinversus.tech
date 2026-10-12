@@ -1,0 +1,48 @@
+{
+  "wordpress_post_id": 24056,
+  "series": "Open-Source Robotics Technician Certification",
+  "lesson_number": 8,
+  "title": "OSRTC.008: Robot Vision Calibration and Troubleshooting",
+  "slug": "osrtc-008-robot-vision-calibration-troubleshooting",
+  "status": "published",
+  "published": "2026-10-12T16:17:24",
+  "modified": "2026-10-12T16:18:05",
+  "live_url": "https://bitcoinversus.tech/2026/10/12/osrtc-008-robot-vision-calibration-troubleshooting/",
+  "featured_media_id": 24055,
+  "featured_image_size": "1200x630",
+  "featured_image_subject": "African American robotics technician calibrating an industrial robot machine-vision camera using a checkerboard target",
+  "seo_title": "OSRTC.008: Robot Vision Calibration and Troubleshooting",
+  "seo_description": "Learn robot vision calibration and troubleshooting: camera intrinsics, hand-eye transforms, TCP and frame accuracy, reprojection error, trigger timing, and systematic fault isolation.",
+  "youtube_embeds": [
+    "https://www.youtube.com/watch?v=qt4BHDo0eTw",
+    "https://www.youtube.com/watch?v=4zDqMGn6RbM"
+  ],
+  "social_embeds": [
+    "https://www.reddit.com/r/AskRobotics/comments/1uz1kmo/visionbased_robotics_how_do_you_calibrate_your/",
+    "https://www.reddit.com/r/robotics/comments/1vjqys3/found_this_boston_dynamics_spot_robot_calibration/"
+  ],
+  "primary_references": [
+    "https://support.cognex.com/en/help-articles/in-sight-calibration-guidelines",
+    "https://support.cognex.com/en/help-articles/in-sight-3dl4000-hand-eye-calibration",
+    "https://docs.opencv.org/doc/doxygen/html/d4/d93/group__calib.html",
+    "https://techtransfer.fanucamerica.com/series/irvision-2d"
+  ],
+  "previous_related_lessons": [
+    "OSRTC.007",
+    "OSRTC.006",
+    "OSRTC.005",
+    "OSRTC.004",
+    "OSRTC.003"
+  ],
+  "donation_qr_media_id": 24043,
+  "qa": {
+    "youtube_players_rendered": 2,
+    "social_embeds_rendered": 2,
+    "donation_qr_rendered": true,
+    "text_boxes": 0,
+    "code_blocks": 0,
+    "group_blocks": 0,
+    "card_or_callout_blocks": 0,
+    "separator_blocks": 0
+  }
+}
