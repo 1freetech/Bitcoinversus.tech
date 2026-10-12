@@ -1,0 +1,19 @@
+{
+  "wordpress_post_id": 23808,
+  "lesson_code": "OSFTC.008",
+  "lesson_number": 8,
+  "certification": "Open-Source Firmware Technician",
+  "title": "OSFTC.008: SPI Bus Troubleshooting",
+  "status": "published",
+  "published": "2026-10-11T22:18:51",
+  "live_url": "https://bitcoinversus.tech/2026/10/11/osftc-008-spi-bus-troubleshooting/",
+  "slug": "osftc-008-spi-bus-troubleshooting",
+  "featured_media_id": 23806,
+  "featured_image_dimensions": "1200x630",
+  "youtube_1": "https://www.youtube.com/watch?v=Ak9R4yxQPhs",
+  "youtube_2": "https://www.youtube.com/watch?v=SKZaAKIt8gY",
+  "youtube_3": "https://www.youtube.com/watch?v=yIkEcJF13RY",
+  "social_1": "https://twitter.com/observie/status/2044830593930723735",
+  "seo_title": "OSFTC.008: SPI Bus Troubleshooting | BitcoinVersus.Tech",
+  "seo_description": "Learn SPI bus troubleshooting: SCLK, MOSI, MISO, chip select, CPOL/CPHA modes, logic levels, analyzer decoding, contention, timing faults, and safe validation."
+}
