@@ -10,15 +10,17 @@
   "internal_links": 3,
   "external_credibility_links": 2,
   "youtube_embeds": [
-    "https://www.youtube.com/watch?v=94BtOtGVqLw",
-    "https://www.youtube.com/watch?v=IP0jCjyrew8"
+    "https://www.youtube.com/watch?v=YCN2aTlocOw",
+    "https://www.youtube.com/watch?v=v2zIJWTk1jo"
   ],
+  "youtube_source_policy": "OpenLearn / The Open University; audio/video tracks are published under Creative Commons BY-NC-SA 4.0",
   "social_embeds": [
     "https://www.reddit.com/r/canada/comments/1e3765o/",
     "https://www.reddit.com/r/AskHistorians/comments/sipmjd/"
   ],
   "live_qa": {
     "youtube_players_rendered": true,
+    "youtube_open_license_verified": true,
     "social_embeds_rendered": true,
     "text_boxes": false,
     "featured_image_assigned": true
