@@ -1,0 +1,20 @@
+{
+  "wordpress_post_id": 23734,
+  "lesson_code": "OSREC.007",
+  "lesson_number": 7,
+  "certification": "Open-Source Robotics Engineer",
+  "title": "OSREC.007: Robot Force Control",
+  "status": "published",
+  "published": "2026-10-11T20:18:27",
+  "live_url": "https://bitcoinversus.tech/2026/10/11/osrec-007-robot-force-control/",
+  "slug": "osrec-007-robot-force-control",
+  "featured_media_id": 23733,
+  "featured_image_url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/osrec-007-robot-force-control-cover-1200x630-1.jpg",
+  "featured_image_dimensions": "1200x630",
+  "youtube_1": "https://www.youtube.com/watch?v=M1U629sREiY",
+  "youtube_2": "https://www.youtube.com/watch?v=UR0GpaaBVKk",
+  "social_1": "https://twitter.com/JasonJZLiu/status/1906808828382826521",
+  "social_2": "https://twitter.com/OWW/status/2041757671322198208",
+  "seo_title": "OSREC.007: Robot Force Control | BitcoinVersus.Tech",
+  "seo_description": "Learn robot force control: force/torque sensing, Jacobian-transpose force control, hybrid motion-force control, impedance, admittance, contact stability, and industrial applications."
+}
