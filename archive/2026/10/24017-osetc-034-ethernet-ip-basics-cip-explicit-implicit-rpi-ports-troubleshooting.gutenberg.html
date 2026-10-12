@@ -1,0 +1,117 @@
+<!-- wp:paragraph --><p><strong>EtherNet/IP is an industrial automation protocol that carries the Common Industrial Protocol, or CIP, over standard Ethernet, IP, TCP, and UDP.</strong> For a technician, the important distinction is that a working Ethernet link does not automatically mean the EtherNet/IP application is healthy. IP addressing, CIP connections, Requested Packet Interval settings, device roles, I/O assemblies, switch behavior, and network load can all affect communication.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This lesson follows <a href="https://bitcoinversus.tech/2026/10/09/osetc-032-modbus-rtu-rs485-wiring-addressing-function-codes-registers-crc-troubleshooting/"><strong>OSETC.032: Modbus RTU Over RS-485</strong></a> and <a href="https://bitcoinversus.tech/2026/10/11/osetc-033-modbus-tcp-ethernet-port-502-mbap-unit-id-registers-troubleshooting/"><strong>OSETC.033: Modbus TCP over Ethernet</strong></a>. Modbus TCP introduced industrial communication over standard Ethernet. EtherNet/IP adds CIP’s object model, connection management, cyclic I/O, device profiles, and producer-consumer communication.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=GJeRq5DD1cY&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>KEB America demonstrates EtherNet/IP implicit messaging in Logix 5000, including cyclic I/O exchange between a controller and a drive.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Learning Objectives</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li>Explain the relationship between Ethernet, IP, TCP/UDP, EtherNet/IP, and CIP.</li><li>Distinguish explicit messaging from implicit I/O messaging.</li><li>Identify the common EtherNet/IP ports used by many devices.</li><li>Explain Scanner and Adapter roles.</li><li>Explain Requested Packet Interval, or RPI.</li><li>Distinguish unicast and multicast I/O behavior.</li><li>Use a layered troubleshooting sequence for connection faults and timeouts.</li><li>Recognize why industrial Ethernet networks require segmentation, monitoring, and security controls.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">EtherNet/IP Uses Standard Ethernet and IP</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>ODVA defines EtherNet/IP as CIP implemented over standard Ethernet and the TCP/IP protocol suite. Standard switches, IP addressing, subnetting, routing, TCP, and UDP therefore remain relevant. EtherNet/IP does not replace Ethernet or IP; it uses them as the transport foundation for industrial automation data.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>ODVA’s <a href="https://www.odva.org/technology-standards/key-technologies/ethernet-ip/"><strong>EtherNet/IP technology overview</strong></a> explains that CIP provides the upper-layer industrial services while standard Ethernet, TCP/IP, and UDP carry those services across the network.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">CIP Is the Industrial Application Layer</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>CIP is object-oriented. Devices expose standardized and vendor-specific objects with attributes, services, and behaviors. That lets a controller or engineering tool interact with device identity, configuration, diagnostics, parameters, and real-time I/O through a common architecture.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This is one major difference from Modbus. Modbus is organized around coils and registers. CIP describes device functionality through objects and connections. A technician should therefore expect EtherNet/IP documentation to reference assemblies, instances, attributes, services, connection IDs, and device profiles rather than only register addresses.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Explicit Messaging</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>Explicit messaging</strong> is normally request-and-response communication used for configuration, diagnostics, parameter access, and other non-time-critical transactions. ODVA documents explicit messages as point-to-point CIP communications that use TCP/IP services.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>A technician may encounter explicit messaging when a PLC reads a drive parameter, an engineering workstation queries device identity, or a controller sends a one-time configuration command. The application asks for a specific service, object, instance, or attribute and waits for the response.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=RtnbRo0vPzY&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>KEB America demonstrates EtherNet/IP explicit messaging in Logix 5000 and shows how request-and-response parameter access differs from cyclic I/O transfer.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Implicit Messaging</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>Implicit messaging</strong> is the cyclic I/O path. ODVA describes implicit connections as application-specific I/O data transferred at regular intervals. Rockwell Automation’s current EtherNet/IP network documentation states that implicit messages use UDP and can operate as unicast or multicast.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The data layout is normally known ahead of time through an assembly or device profile. Because the devices already know what the bytes mean, cyclic I/O can move efficiently without repeating a full configuration-style request for every update.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Scanner and Adapter Roles</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>In common EtherNet/IP terminology, a <strong>Scanner</strong> originates real-time I/O connection requests and manages I/O relationships. A PLC controller often performs the Scanner role. An <strong>Adapter</strong> accepts I/O connection requests and exchanges real-time data after the connection is established. Remote I/O racks, drives, robots, valve manifolds, and instrumentation may act as Adapters.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Do not confuse Scanner and Adapter with Ethernet switch roles. They describe CIP communication behavior, not Layer 2 switching.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Common Ports</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><strong>TCP 44818</strong> — commonly used for EtherNet/IP encapsulation and explicit messaging.</li><li><strong>UDP 44818</strong> — also used by EtherNet/IP services on many products.</li><li><strong>UDP 2222</strong> — commonly used for EtherNet/IP I/O traffic.</li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p>Rockwell Automation’s current product documentation lists TCP/UDP 44818 for EtherNet/IP and UDP 2222 for EtherNet/IP I/O on applicable devices. These are useful troubleshooting references, but technicians must still verify the actual product manual and security policy because a device may implement additional services or restrict traffic differently.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Requested Packet Interval</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The <strong>Requested Packet Interval, or RPI</strong>, defines the requested cyclic update interval for an I/O connection. A smaller RPI requests more frequent updates and therefore increases packet rate. A larger RPI lowers update frequency and network load but also changes how quickly fresh I/O data arrives.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Rockwell Automation documents RPI as the rate at which data is exchanged between the controller and device. Valid ranges depend on the product. Do not copy an RPI from one module to another without checking that device’s supported range and the application’s real response-time requirement.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Setting every device to the fastest possible RPI is poor engineering. Hundreds of devices generating unnecessary high-rate traffic can overload controllers, adapters, links, switch queues, or diagnostic tools without improving the actual process.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Unicast Versus Multicast</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>Unicast</strong> sends a packet to one destination. <strong>Multicast</strong> allows one producer to send data that multiple consumers can receive. EtherNet/IP’s producer-consumer model can use multicast for efficient one-to-many I/O distribution.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Multicast still has to be engineered. On a poorly segmented network, excessive broadcast or multicast traffic can consume endpoint resources and switch bandwidth. Managed switches, proper VLAN design, IGMP-related features where applicable, and sensible I/O connection settings can keep industrial traffic predictable.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/PLC/comments/1squas4/ethernetip_adapter_dropping_connection_broadcast/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>A 2026 r/PLC troubleshooting discussion examines an EtherNet/IP Adapter that becomes unstable on a large flat plant network and raises the practical question of whether broadcast traffic and weak segmentation are overwhelming the endpoint.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Electronic Data Sheets and Device Profiles</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>An <strong>EDS file</strong> describes device identity and communication capabilities so configuration software can recognize and integrate the device. Some controller platforms also use Add-On Profiles or vendor-specific device packages that expose richer configuration information.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>If a controller reports electronic keying, product-code, revision, or module-definition errors, verify that the configured device actually matches the installed hardware and firmware. A physically reachable IP address does not prove that the controller’s expected device profile matches the real device.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Troubleshooting EtherNet/IP in Layers</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li><strong>Power:</strong> confirm the PLC, Adapter, switch, and field device are powered and healthy.</li><li><strong>Physical link:</strong> check connectors, cable damage, link LEDs, port errors, and negotiated speed/duplex.</li><li><strong>IP addressing:</strong> confirm IP address, subnet mask, gateway, and duplicate-address conditions.</li><li><strong>Basic reachability:</strong> use approved tools such as <code>ping</code>, ARP or neighbor-table inspection, and switch diagnostics.</li><li><strong>Ports:</strong> confirm required EtherNet/IP services are reachable where policy permits.</li><li><strong>Device identity:</strong> verify the correct Adapter, firmware revision, EDS/AOP, and electronic-keying expectations.</li><li><strong>CIP connection:</strong> inspect connection fault codes rather than assuming every failure is an Ethernet problem.</li><li><strong>RPI:</strong> confirm the requested interval is supported and sensible.</li><li><strong>Unicast or multicast:</strong> verify that the configured connection type is supported and that the network handles it correctly.</li><li><strong>Packet capture:</strong> when authorized, use Wireshark or switch port mirroring to inspect TCP sessions, UDP I/O, retransmissions, ARP, multicast, and connection timing.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Connection Timeouts Are Symptoms</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>An EtherNet/IP timeout does not identify one universal root cause. Possible causes include a physical link problem, duplicate IP address, excessive network traffic, incompatible connection settings, RPI outside the supported range, controller resource limits, endpoint overload, switch configuration, device firmware, or an application-side connection fault.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/PLC/comments/1jek169/connection_becomes_instable_when_connecting/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>A field discussion shows why adding more EtherNet/IP devices can expose controller-resource or connection-management limits even when cabling and raw Ethernet bandwidth appear adequate.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Security Matters</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Industrial controllers and I/O should not be placed on uncontrolled flat networks merely because EtherNet/IP uses standard Ethernet. ODVA recommends defense-in-depth approaches and publishes CIP Security for supported devices. Practical controls include network segmentation, managed access between zones, firewall policy, asset inventory, switch monitoring, firmware management, and restricting engineering access to authorized systems.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Do not expose industrial EtherNet/IP services directly to untrusted networks. Security design should follow the device vendor’s guidance and the organization’s industrial-control security architecture.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Practice Lab</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Use an authorized lab with one EtherNet/IP Scanner and one Adapter.</li><li>Record the MAC address, IP address, subnet mask, and firmware revision of each device.</li><li>Verify physical link and basic IP reachability.</li><li>Identify the EDS or device profile used by the controller software.</li><li>Create one cyclic I/O connection at a conservative supported RPI.</li><li>Identify whether the connection is unicast or multicast.</li><li>Record the Input, Output, and Configuration assembly information if the device exposes it.</li><li>Capture authorized traffic and identify TCP 44818 and UDP I/O traffic where applicable.</li><li>Increase the RPI and compare packet frequency.</li><li>Disconnect the Adapter and record the controller’s connection fault and recovery behavior.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Knowledge Check</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>What protocol does EtherNet/IP use at its industrial application layer?</li><li>What is the main difference between explicit and implicit messaging?</li><li>Which transport does implicit I/O commonly use?</li><li>What does RPI control?</li><li>What is the difference between a Scanner and an Adapter?</li><li>Which UDP port is commonly associated with EtherNet/IP I/O?</li><li>Why can a successful ping still coexist with a failed EtherNet/IP connection?</li><li>Why can an unnecessarily small RPI cause problems?</li></ol><!-- /wp:list -->
+
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Answers</h3><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>CIP, the Common Industrial Protocol.</li><li>Explicit messaging is normally request-response configuration or parameter access; implicit messaging carries cyclic real-time I/O data.</li><li>UDP.</li><li>The requested cyclic data-update interval for an I/O connection.</li><li>A Scanner originates and manages I/O connections; an Adapter accepts those connections and exchanges I/O data.</li><li>UDP 2222 on many EtherNet/IP products.</li><li>Ping proves only basic IP/ICMP reachability; CIP connection settings, device identity, ports, RPI, assemblies, or application configuration can still be wrong.</li><li>It increases packet rate and can waste controller, endpoint, and network resources without improving the process.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Key Takeaway</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>Troubleshoot EtherNet/IP from the bottom up.</strong> Prove power and Ethernet first, then IP addressing and reachability, then EtherNet/IP services, then CIP identity and connection settings, then RPI and I/O behavior. Do not treat every timeout as a bad cable and do not treat every successful ping as proof that industrial I/O is healthy.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Primary references:</strong> <a href="https://www.odva.org/technology-standards/key-technologies/ethernet-ip/">ODVA — EtherNet/IP</a>, <a href="https://www.odva.org/publication_download/ethernet-ip-technology-overview/">ODVA — EtherNet/IP Technology Overview</a>, and <a href="https://literature.rockwellautomation.com/idc/groups/literature/documents/um/enet-um006_-en-p.pdf">Rockwell Automation — EtherNet/IP Network Devices User Manual</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>BitcoinVersus.Tech Editor's Note:</strong> Industrial Ethernet troubleshooting can affect active control systems. Use only authorized diagnostic tools, follow site change-control procedures, and avoid making network or controller changes on production equipment without an approved rollback plan.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Support independent technology education:</strong> Bitcoin donations help fund BitcoinVersus.Tech research and publishing.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>BitcoinVersus.Tech provides technical education and analysis for informational purposes only.</em></p><!-- /wp:paragraph -->
