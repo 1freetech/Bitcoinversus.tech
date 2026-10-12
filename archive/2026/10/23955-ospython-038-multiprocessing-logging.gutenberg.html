@@ -1,0 +1,143 @@
+<!-- wp:paragraph --><p><strong>Multiprocessing changes the logging problem because separate Python processes do not share one interpreter, one handler lock, or one logging configuration in the same way threads do.</strong> If several worker processes write directly to the same log file, records can become mixed, duplicated, lost, or difficult to rotate safely. The reliable pattern is to let workers create log records and send them to one controlled logging path.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This lesson continues from <a href="https://bitcoinversus.tech/2026/10/11/ospython-037-queuehandler-queuelistener-non-blocking-logging-background-queues/"><strong>OSPython.037: QueueHandler and QueueListener</strong></a>. It also builds on <a href="https://bitcoinversus.tech/2026/10/11/ospython-036-logging-configuration-dictconfig-handlers-formatters-loggers-json/"><strong>OSPython.036: Logging Configuration with dictConfig</strong></a> and <a href="https://bitcoinversus.tech/2026/10/07/ospython-029-logging-to-files-with-filehandler/"><strong>OSPython.029: Logging to Files</strong></a>. The new goal is to make logging safe when work is distributed across multiple operating-system processes.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=fKl2JW_qrso&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Corey Schafer explains Python multiprocessing and ProcessPoolExecutor, providing the process model used throughout this lesson.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Learning Objectives</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li>Explain why one FileHandler should not be shared casually across multiple processes.</li><li>Use QueueHandler to move LogRecords from workers toward one logging owner.</li><li>Use multiprocessing.Queue for process-safe transport.</li><li>Configure logging separately inside worker processes when required.</li><li>Understand the difference between fork and spawn behavior.</li><li>Use a listener thread or listener process as the single writer.</li><li>Understand the ProcessPoolExecutor queue requirement.</li><li>Shut down workers and listeners in the correct order.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Why Multiple Processes Change Logging</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Python logging is thread-safe inside one process, but the official <a href="https://docs.python.org/3.15/howto/logging-cookbook.html#logging-to-a-single-file-from-multiple-processes"><strong>Python 3.15 Logging Cookbook</strong></a> states that direct logging to one file from multiple processes is not supported as a general pattern. The standard FileHandler classes do not use multiprocessing-aware locks to serialize file access across independent processes.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That distinction matters. Threads share process memory, so the logging module can coordinate access to a handler with thread locks. Separate processes have separate memory spaces. Even if two processes point at the same filename, they may each own a different handler object and a different lock.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The engineering rule is therefore simple: <strong>many processes may produce log records, but one controlled path should own the final file output.</strong></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Safe Architecture</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A common architecture is <strong>worker process → QueueHandler → multiprocessing.Queue → listener → final handlers</strong>. Each worker sends records to the queue instead of opening the production log file itself. The listener receives those records and writes them through FileHandler, RotatingFileHandler, StreamHandler, or other final destinations.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This design gives the application one place to control formatting, file rotation, handler levels, and output order. It also avoids having several independent processes competing over the same file.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=pxuXaaT1u3k&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>ArjanCodes covers production Python logging design and why logging configuration should be deliberate rather than scattered through application code.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Worker Processes Need QueueHandler</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Inside each worker, configure the logger with a QueueHandler that points to the shared multiprocessing queue. The worker should not normally create its own FileHandler for the same centralized log file.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Worker setup:</strong><br><code>import logging</code><br><code>from logging.handlers import QueueHandler</code><br><br><code>def configure_worker(log_queue):</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;root = logging.getLogger()</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;root.handlers.clear()</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;root.setLevel(logging.INFO)</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;root.addHandler(QueueHandler(log_queue))</code></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Clearing inherited or previously configured handlers is useful when you want the worker to have one predictable route. The important part is that the worker emits through QueueHandler while the file-owning handler stays somewhere else.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Use multiprocessing.Queue, Not queue.Queue</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The regular <code>queue.Queue</code> class is designed for communication between threads inside one process. For process-to-process logging, use <code>multiprocessing.Queue</code>. Python's current QueueHandler documentation specifically recommends avoiding <code>SimpleQueue</code> for multiprocessing and using <code>multiprocessing.Queue</code> instead.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Create the queue:</strong> <code>log_queue = multiprocessing.Queue(-1)</code>. A negative or omitted practical size is commonly used for an effectively unbounded queue, but production systems should still think about memory growth and the rate at which logs are produced.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">A Listener Thread Can Own the File</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>One approach is to keep the final handlers in the main process and run QueueListener there. Worker processes send records through the multiprocessing queue, while QueueListener's internal thread performs the final output work.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Main-process listener:</strong><br><code>file_handler = logging.FileHandler("app.log")</code><br><code>file_handler.setFormatter(logging.Formatter("%(asctime)s %(processName)s %(levelname)s %(message)s"))</code><br><code>listener = QueueListener(log_queue, file_handler)</code><br><code>listener.start()</code></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The <code>%(processName)s</code> field is especially helpful because it shows which worker produced each record even though one listener writes the final file.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">A Dedicated Listener Process Is Another Option</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The Logging Cookbook also demonstrates a separate listener process. In that design, the listener process owns the final handlers and waits for LogRecords arriving on the multiprocessing queue. Workers never touch the production file.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Listener concept:</strong><br><code>record = log_queue.get()</code><br><code>if record is None:</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;break</code><br><code>logging.getLogger(record.name).handle(record)</code></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The <code>None</code> value in this pattern is a sentinel: it tells the listener that no more worker records are expected and that shutdown can begin. The sentinel must be sent only after workers have finished producing log records.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/learnpython/comments/11hhq1f/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>A learnpython discussion illustrates a common cross-platform problem: logging that appears to work under fork can behave differently under Windows spawn because worker configuration is not inherited the same way.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Fork and Spawn Are Different</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>On systems that use <code>fork</code>, a child begins with a copy of much of the parent's process state. That can make inherited logging configuration appear to work. On <code>spawn</code>, the child starts a fresh interpreter and imports the program again. Windows commonly uses spawn, and modern Python applications should not assume that full logger configuration will simply appear inside every child.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The Python Logging Cookbook explicitly notes that on Windows you cannot rely on fork semantics and that worker logging configuration should run when each worker starts. Cross-platform code should therefore configure the QueueHandler inside the worker initialization path.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Protect the Program Entry Point</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Multiprocessing code should use the normal entry-point guard: <code>if __name__ == "__main__":</code>. Without it, a spawned child may import the module and execute process-creation code again, producing recursive process creation or other failures.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>On Windows and frozen applications, <code>multiprocessing.freeze_support()</code> may also be appropriate. The broader rule is to keep process startup inside an explicit main path rather than at module import time.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">ProcessPoolExecutor Needs a Different Queue Pattern</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>If workers are created with <code>concurrent.futures.ProcessPoolExecutor</code>, the Python 3.15 Logging Cookbook recommends using <code>multiprocessing.Manager().Queue(-1)</code> rather than a plain <code>multiprocessing.Queue(-1)</code> for the shared logging queue used by the executor example.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Executor queue:</strong> <code>manager = multiprocessing.Manager()</code><br><code>log_queue = manager.Queue(-1)</code></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This proxy queue can be passed into ProcessPoolExecutor workers. The logging architecture stays the same: workers use QueueHandler, while one listener path owns the final output handlers.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/learnpython/comments/osqry4/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>This community troubleshooting thread shows the practical symptom that motivates centralized multiprocessing logging: worker processes can appear to lose or ignore a logging setup that worked in the parent process.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Do Not Let Every Process Rotate the Same File</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>File rotation makes multi-process direct writing even riskier. Imagine several processes each holding a RotatingFileHandler pointed at <code>app.log</code>. One process may rename the file while another still has it open. Records can then land in unexpected files, rotation can fail, or retention behavior can become inconsistent.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>A single listener avoids this conflict. Only the listener owns RotatingFileHandler or TimedRotatingFileHandler, so rotation policy is applied in one place.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Avoid the multiprocessing Internal-Logger Trap</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Python's QueueHandler documentation contains an important warning: <code>multiprocessing.Queue</code> can emit DEBUG messages through the multiprocessing module's own internal logger. If those internal messages are routed through a QueueHandler that uses the exact same multiprocessing queue, the setup can recurse or deadlock.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Do not point multiprocessing's internal diagnostics back into the same queue whose activity generated those diagnostics. Keep that internal logger separate or at a level that avoids the cycle.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Shutdown Order Matters</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A common failure is stopping the listener too early. If workers are still running when the listener is stopped, final records may remain queued and never reach the destination.</p><!-- /wp:paragraph -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Start the logging listener.</li><li>Start the worker processes.</li><li>Wait for workers to finish with <code>join()</code> or by waiting for executor futures.</li><li>After workers are finished, stop QueueListener or send the listener-process sentinel.</li><li>Wait for the listener to finish.</li><li>Close final handlers if your application owns their lifecycle explicitly.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Queue Capacity and Backpressure</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Centralizing logs does not make throughput unlimited. If workers generate records faster than the listener can write them, the queue grows. A bounded queue can fill; an unbounded queue can consume increasing memory.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Production design should therefore consider log level, destination speed, queue size, record-dropping policy, and whether DEBUG traffic belongs in the production pipeline at all.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Troubleshooting Order</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Confirm the worker function is actually running.</li><li>Confirm each worker executes its logging configuration.</li><li>Confirm the worker has QueueHandler attached.</li><li>Confirm the same process-safe queue reaches workers and listener.</li><li>Confirm the listener starts before workers emit records.</li><li>Include <code>%(processName)s</code> in the formatter to identify producers.</li><li>Make sure no worker owns a competing FileHandler for the same file.</li><li>Wait for workers before stopping the listener.</li><li>Check for the multiprocessing internal-logger recursion warning.</li><li>For ProcessPoolExecutor, verify that a Manager queue is being used when following the documented pattern.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Hands-On Exercise</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Create a program that starts four worker processes. Give each worker the same multiprocessing queue and configure each worker with QueueHandler. In the main process, create one FileHandler and one QueueListener. Include <code>%(processName)s</code> and <code>%(process)d</code> in the formatter.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Have each worker log ten INFO messages. Wait for all workers to finish, then stop the listener. Confirm that one log file contains records from all four workers and that each record identifies its producing process.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>For a second test, replace the manually created processes with ProcessPoolExecutor and use <code>multiprocessing.Manager().Queue()</code>. Compare the setup and verify that the logging output remains centralized.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Knowledge Check</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Why is direct FileHandler output from many processes unsafe as a general design?</li><li>What handler should worker processes normally use in the centralized-logging pattern?</li><li>Which queue type should be used for normal multiprocessing?</li><li>Why must worker logging configuration be explicit on spawn-based systems?</li><li>Which formatter field identifies the worker by process name?</li><li>When should the listener be stopped?</li><li>What queue pattern does the Python Logging Cookbook recommend with ProcessPoolExecutor?</li><li>What configuration can create recursion or deadlock with multiprocessing's internal logger?</li></ol><!-- /wp:list -->
+
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Answers</h3><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Separate processes do not share the normal logging handler lock, so independent handlers can compete over the same file and rotation state.</li><li>QueueHandler.</li><li><code>multiprocessing.Queue</code>.</li><li>Spawn starts a fresh interpreter rather than relying on inherited fork state, so the worker must establish the handlers it needs.</li><li><code>%(processName)s</code>.</li><li>After all workers have finished producing records.</li><li><code>multiprocessing.Manager().Queue()</code> in the documented executor pattern.</li><li>Sending multiprocessing's own queue DEBUG messages through a QueueHandler that uses that same multiprocessing queue.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Engineering Rule</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>Many processes may create LogRecords. One controlled logging path should own the final file.</strong></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Once this architecture is clear, multiprocessing logging becomes much easier to reason about. Workers do work and enqueue records. The listener owns formatting, filtering, rotation, and final output. That separation keeps concurrency concerns away from the log file itself.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>BitcoinVersus.Tech Editor's Note:</strong> This lesson follows the Python 3.15 documentation current on October 12, 2026. Multiprocessing start methods and application deployment details can differ by operating system, Python version, and runtime environment, so test the complete logging lifecycle on the platforms you actually deploy.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Support independent technology education:</strong> Bitcoin donations help fund BitcoinVersus.Tech research and publishing.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>Disclaimer: BitcoinVersus.Tech provides technology education and analysis for informational purposes only.</em></p><!-- /wp:paragraph -->
