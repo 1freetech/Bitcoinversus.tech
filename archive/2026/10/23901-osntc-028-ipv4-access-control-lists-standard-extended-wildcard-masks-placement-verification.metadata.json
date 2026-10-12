@@ -1,0 +1,27 @@
+{
+  "wordpress_post_id": 23901,
+  "lesson_code": "OSNTC.028",
+  "lesson_number": 28,
+  "certification": "Open-Source Networking Technician Certification",
+  "title": "OSNTC.028: IPv4 Access Control Lists — Standard ACLs, Extended ACLs, Wildcard Masks, Placement, and Verification",
+  "status": "published",
+  "published": "2026-10-12T07:58:20",
+  "modified": "2026-10-12T08:01:15",
+  "live_url": "https://bitcoinversus.tech/2026/10/12/osntc-028-ipv4-access-control-lists-standard-extended-wildcard-masks-placement-verification/",
+  "slug": "osntc-028-ipv4-access-control-lists-standard-extended-wildcard-masks-placement-verification",
+  "featured_media_id": 23891,
+  "featured_media_url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/osntc-028-acl-cover-african-american-1200x630-1.jpg",
+  "youtube": [
+    "https://www.youtube.com/watch?v=0gGhuYOh-54",
+    "https://www.youtube.com/watch?v=K-YJ6h1cvRQ"
+  ],
+  "social": [
+    "https://www.reddit.com/r/ccna/comments/1wzg80f/acl/",
+    "https://www.reddit.com/r/networking/comments/1qvps2s/nat_and_acl_best_practice/"
+  ],
+  "primary_external_source": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/security/acls/acls-configuration-guide/access-control-lists.html",
+  "seo_title": "OSNTC.028: IPv4 Access Control Lists (ACLs)",
+  "seo_description": "Learn IPv4 access control lists: standard and extended ACLs, wildcard masks, first-match processing, implicit deny, interface direction, placement, verification, and troubleshooting.",
+  "gutenberg_content_hash": "92b12892158f5d881e3bfed0e5aced581ee5ace6",
+  "verification": "WordPress rendered-view verification confirmed two YouTube iframe players, two Reddit embed blocks with widget scripts, featured media 23891, classic Gutenberg block content, and no text-box/card/callout blocks."
+}
