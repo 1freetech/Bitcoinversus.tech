@@ -6,9 +6,10 @@ wordpress_post_id: 23877
 wordpress_status: publish
 live_url: "https://bitcoinversus.tech/2026/10/12/8-ai-assistants-ranked-for-privacy-2026/"
 category: "Artificial Intelligence; technology"
-featured_media_id: 23876
-featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/ai-privacy-top-eight-2026-cover-1200x630-1.jpg"
+featured_media_id: 23881
+featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/ai-privacy-diverse-cover-option2.jpg"
 featured_image_dimensions: "1200x630"
+featured_cover_note: "Original non-white woman editorial portrait, replacing previous cover"
 youtube_1: "https://www.youtube.com/watch?v=-1dESaM694U"
 youtube_2: "https://www.youtube.com/watch?v=fgjFiH6EzDs"
 social_embed_1: "https://www.reddit.com/r/privacy/comments/1tz5s5e/best_ai_provider_for_privacy/"
