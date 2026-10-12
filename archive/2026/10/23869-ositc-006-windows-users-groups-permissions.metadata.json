@@ -1,0 +1,18 @@
+{
+  "wordpress_post_id": 23869,
+  "lesson_code": "OSITC.006",
+  "lesson_number": 6,
+  "certification": "Open-Source IT Technician",
+  "title": "OSITC.006: Windows Users, Groups, and Permissions",
+  "status": "published",
+  "published": "2026-10-12T07:11:26",
+  "live_url": "https://bitcoinversus.tech/2026/10/12/ositc-006-windows-users-groups-permissions/",
+  "slug": "ositc-006-windows-users-groups-permissions",
+  "featured_media_id": 23868,
+  "featured_image_dimensions": "1200x630",
+  "youtube_1": "https://www.youtube.com/watch?v=D2XlznYAcAQ",
+  "youtube_2": "https://www.youtube.com/watch?v=fJHFmt6F0Rc",
+  "social_1": "https://bsky.app/profile/phantomofearth.bsky.social/post/3lsom3dqswn23",
+  "seo_title": "OSITC.006: Windows Users, Groups, and Permissions | BitcoinVersus.Tech",
+  "seo_description": "Learn Windows users, groups, and permissions: standard vs administrator accounts, UAC, SIDs, NTFS ACLs, inheritance, ownership, whoami, icacls, and access troubleshooting."
+}
