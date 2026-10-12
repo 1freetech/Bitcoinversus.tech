@@ -40,12 +40,12 @@ https://www.reddit.com/r/nba/comments/1x3l45b/adam_silver_says_league_could_intr
 <p>One use case is out-of-bounds reviews: a sudden change in spin could help determine whether a player touched the ball. Silver also described consumer versions that could analyze shooting angle and rotation. That idea resembles other sensor-heavy sports systems BitcoinVersus.Tech has covered, including <a href="https://bitcoinversus.tech/2026/10/01/sports-tdks-smart-javelin-turns-every-throw-into-real-time-sensor-data/">TDK’s smart javelin</a> and <a href="https://bitcoinversus.tech/2026/10/04/sports-ibm-us-open-serve-quality-limb-tracking-ai/">IBM’s US Open tracking tools</a>.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=qRvAXsaHNkY","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=clT-XYIceIc","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=qRvAXsaHNkY
+https://www.youtube.com/watch?v=clT-XYIceIc
 </div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
-<p><em>Wilson’s earlier X Connected Basketball shows the company has been building sensor-equipped basketballs for years.</em></p>
+<p><em>What’s Inside? cuts open a Wilson X Connected Basketball to show the sensor hardware built into the ball.</em></p>
 <!-- /wp:paragraph -->
