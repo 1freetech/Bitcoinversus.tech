@@ -6,7 +6,7 @@
   "title": "OSNTC.028: IPv4 Access Control Lists — Standard ACLs, Extended ACLs, Wildcard Masks, Placement, and Verification",
   "status": "published",
   "published": "2026-10-12T07:58:20",
-  "modified": "2026-10-12T08:01:15",
+  "modified": "2026-10-12T08:22:54",
   "live_url": "https://bitcoinversus.tech/2026/10/12/osntc-028-ipv4-access-control-lists-standard-extended-wildcard-masks-placement-verification/",
   "slug": "osntc-028-ipv4-access-control-lists-standard-extended-wildcard-masks-placement-verification",
   "featured_media_id": 23891,
@@ -22,6 +22,6 @@
   "primary_external_source": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/security/acls/acls-configuration-guide/access-control-lists.html",
   "seo_title": "OSNTC.028: IPv4 Access Control Lists (ACLs)",
   "seo_description": "Learn IPv4 access control lists: standard and extended ACLs, wildcard masks, first-match processing, implicit deny, interface direction, placement, verification, and troubleshooting.",
-  "gutenberg_content_hash": "92b12892158f5d881e3bfed0e5aced581ee5ace6",
-  "verification": "WordPress rendered-view verification confirmed two YouTube iframe players, two Reddit embed blocks with widget scripts, featured media 23891, classic Gutenberg block content, and no text-box/card/callout blocks."
+  "gutenberg_content_hash": "8c2c99b65c5fbb38a1405d3f9a6a94a3ac709739",
+  "verification": "Live and edit-context audits confirm zero core/code blocks, zero group/card/callout containers, normal Gutenberg paragraphs/headings/lists for lesson text and commands, two rendered YouTube players, two rendered Reddit social embeds, and featured media 23891."
 }
