@@ -1,0 +1,103 @@
+<!-- wp:paragraph --><p><strong><code>lsattr</code> lists Linux filesystem attributes that are separate from normal <code>chmod</code> permissions and ACL entries.</strong> It is especially useful when a file refuses to change or delete even though ownership and mode bits look correct.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This lesson follows <a href="https://bitcoinversus.tech/2026/10/11/linux-command-53-setfacl-linux-os/"><strong>Linux Command #53 – setfacl</strong></a>, <a href="https://bitcoinversus.tech/2026/10/10/linux-command-52-getfacl-linux-os/"><strong>Linux Command #52 – getfacl</strong></a>, and <a href="https://bitcoinversus.tech/2026/10/10/linux-command-50-chmod-linux-os/"><strong>Linux Command #50 – chmod</strong></a>. Those tools explain ownership, mode bits, and ACLs. <code>lsattr</code> checks another layer: filesystem attribute flags.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=1qpH2Pi4_5U&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Cyber Lessons demonstrates Linux file attributes with <code>lsattr</code> and <code>chattr</code>, showing how these flags differ from ordinary permissions.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Learning Objectives</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li>Explain what <code>lsattr</code> reads.</li><li>Distinguish filesystem attributes from mode bits, ACLs, and extended attributes.</li><li>Read common <code>lsattr</code> output flags.</li><li>Inspect one file, one directory, hidden files, or a recursive tree.</li><li>Recognize immutable and append-only attributes.</li><li>Troubleshoot files that cannot be edited, renamed, or deleted.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">What lsattr Reads</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The current <a href="https://man7.org/linux/man-pages/man1/lsattr.1.html"><strong>lsattr(1) manual page</strong></a> describes <code>lsattr</code> as the tool for listing file attributes on ext2, ext3, and ext4 filesystems. The command is part of the <strong>e2fsprogs</strong> package. Other Linux filesystems may expose some compatible flags, but support varies by filesystem and kernel implementation.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>A basic check is simply <code>lsattr FILE</code>. The output normally shows a row of attribute positions followed by the pathname. A dash means that attribute is not set. A letter means the corresponding attribute is present.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Example output might look like <code>----i-------------- config.txt</code>. The <code>i</code> means the immutable flag is set. That flag is not visible in ordinary <code>ls -l</code> mode bits.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Common Attributes You May See</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><code>i</code> — immutable. The file cannot normally be modified, renamed, or deleted while the flag remains set.</li><li><code>a</code> — append only. Existing content cannot normally be overwritten; supported writes are appended.</li><li><code>A</code> — do not update access time.</li><li><code>d</code> — exclude the file from traditional <code>dump</code> backups.</li><li><code>S</code> — request synchronous file updates.</li><li><code>e</code> — the file uses extents. This is commonly seen on ext4 and is normally informational.</li><li><code>I</code> — indexed directory. This is a read-only attribute from the <code>chattr</code> user's perspective.</li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p>The companion <a href="https://man7.org/linux/man-pages/man1/chattr.1.html"><strong>chattr(1) manual page</strong></a> documents the broader flag set and notes that some flags are read-only and that not every filesystem supports every attribute. Do not assume a letter has identical practical behavior on every filesystem.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=CN5YKhmAZy4&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>CodeLucky walks through practical <code>chattr</code> and <code>lsattr</code> examples, including immutable and append-only files.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Check One File</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>Command:</strong> <code>lsattr report.txt</code></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>If the output contains only dashes plus common informational flags, the file may not have a restrictive attribute. If you see <code>i</code>, <code>a</code>, or another meaningful flag, investigate that attribute before changing permissions or ownership.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Inspect a Directory Itself</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Running <code>lsattr DIRECTORY</code> normally lists entries inside the directory. To inspect the directory object itself, use <code>lsattr -d DIRECTORY</code>. That distinction matters because an immutable directory can block creating, deleting, or renaming entries inside it even when the child files themselves do not carry the immutable flag.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/linuxquestions/comments/10jh12u/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>A LinuxQuestions discussion demonstrates the difference between making a directory immutable and recursively applying the immutable attribute to the files inside it.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Include Hidden Files</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Use <code>lsattr -a DIRECTORY</code> to include entries whose names begin with a dot. This is useful when troubleshooting configuration directories because hidden files may carry an attribute even when visible files do not.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">List Attributes Recursively</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Use <code>lsattr -R DIRECTORY</code> to recurse through a directory tree. Recursive output can become large quickly, so narrow the path before running it on production systems. If permissions block traversal, use appropriate privileges rather than automatically running broad recursive commands against the entire filesystem.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>A targeted troubleshooting example is <code>sudo lsattr -R /var/log</code>. That can help identify unusual immutable or append-only flags in a logging tree, but the output should be interpreted carefully because many normal filesystem attributes are not security problems.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/LinuxTeck/comments/1wulx0v/quick_linux_tip_86_linux_file_attributes_find_and/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>A recent LinuxTeck example uses <code>lsattr</code> to locate files carrying restrictive attribute flags before attempting to change them.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Use Long Attribute Names</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The <code>-l</code> option prints attribute names in long form rather than relying only on single-letter positions. Try <code>lsattr -l FILE</code> when you are learning the command or when a less familiar attribute appears.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">lsattr Is Not getfacl</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><code>getfacl</code> reads access-control entries for users and groups. <code>lsattr</code> reads filesystem attribute flags. They solve different problems. A file can have ordinary mode bits, ACL entries, and filesystem attributes at the same time.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>If a user cannot read a file, start with ownership, <code>chmod</code>, and ACLs. If even a privileged process cannot modify or remove a file as expected, <code>lsattr</code> should move much higher in the troubleshooting order.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">lsattr Is Also Not getfattr</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Linux also has <strong>extended attributes</strong>, often called xattrs. Those are name-and-value pairs such as <code>user.example=value</code>. They are inspected with tools such as <code>getfattr</code>, not <code>lsattr</code>. Filesystem flags and xattrs are different mechanisms even though both use the word “attribute.”</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Useful lsattr Commands</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><code>lsattr FILE</code> — list attributes on one file.</li><li><code>lsattr FILE1 FILE2</code> — inspect several files.</li><li><code>lsattr -d DIRECTORY</code> — inspect the directory object itself.</li><li><code>lsattr -a DIRECTORY</code> — include hidden entries.</li><li><code>lsattr -R DIRECTORY</code> — recurse through a tree.</li><li><code>lsattr -l FILE</code> — show long attribute names.</li><li><code>lsattr -p FILE</code> — show the file's project number when supported.</li><li><code>lsattr -v FILE</code> — show the version or generation number when supported.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Troubleshooting a File That Will Not Delete</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Check the file and parent directory with <code>ls -ld</code>.</li><li>Confirm ownership with <code>stat</code> or <code>ls -l</code>.</li><li>Inspect ACLs with <code>getfacl</code>.</li><li>Run <code>lsattr FILE</code>.</li><li>Run <code>lsattr -d PARENT_DIRECTORY</code>.</li><li>If <code>i</code> appears, identify why the object was made immutable before removing the flag.</li><li>If the command reports unsupported behavior, identify the filesystem with <code>findmnt -T FILE</code>.</li><li>Change only the setting you understand, then test again.</li></ol><!-- /wp:list -->
+
+<!-- wp:paragraph --><p>Do not use <code>chattr -i</code> reflexively on system files. Immutable flags are sometimes intentional. They may protect configuration, logs, or application state. Inspect the service, package, automation, or security control responsible for the file before changing it.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Practice Lab</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Create a disposable directory named <code>attr-lab</code> and create two files inside it.</li><li>Run <code>lsattr attr-lab/*</code> and record the baseline output.</li><li>Run <code>lsattr -d attr-lab</code> and compare directory output with child-file output.</li><li>Run <code>lsattr -l attr-lab/*</code> and compare long names with the normal letter positions.</li><li>Add one hidden file and confirm that <code>lsattr -a attr-lab</code> shows it.</li><li>If your disposable filesystem supports it, use <code>chattr</code> in the next lesson to set an attribute, then return to <code>lsattr</code> to verify the change.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Knowledge Check</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>What does <code>lsattr</code> display?</li><li>Which letter commonly indicates an immutable file?</li><li>Which option inspects the directory itself instead of its contents?</li><li>Which option includes dotfiles?</li><li>Which option lists a tree recursively?</li><li>Why can <code>ls -l</code> look normal while a file still refuses to delete?</li><li>What is the difference between <code>lsattr</code> and <code>getfacl</code>?</li><li>Why should filesystem type be checked when an attribute is unsupported?</li></ol><!-- /wp:list -->
+
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Answers</h3><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Filesystem attribute flags associated with files and directories.</li><li><code>i</code>.</li><li><code>-d</code>.</li><li><code>-a</code>.</li><li><code>-R</code>.</li><li>Filesystem attributes such as immutable are separate from ordinary mode bits.</li><li><code>lsattr</code> reads filesystem flags; <code>getfacl</code> reads ACL entries for users and groups.</li><li>Attribute support and behavior vary by filesystem.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Key Takeaway</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong><code>lsattr</code> is the inspection tool for Linux filesystem attribute flags.</strong> When permissions and ACLs look correct but a file still behaves as if it is protected, check <code>lsattr</code> on both the file and its parent directory before changing anything.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>BitcoinVersus.Tech Editor's Note:</strong> The primary reference used for this lesson is the current <code>lsattr(1)</code> manual from e2fsprogs. Attribute support varies by filesystem, so validate behavior on the actual filesystem used in production.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Support independent technology education:</strong> Bitcoin donations help fund BitcoinVersus.Tech research and publishing.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>BitcoinVersus.Tech provides technical education and analysis for informational purposes only.</em></p><!-- /wp:paragraph -->
