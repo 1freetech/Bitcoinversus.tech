@@ -9,14 +9,14 @@
 - Category IDs: 2509703
 - Tag IDs: none
 - SEO title: Microsoft Researcher Called AI Scraping the “Largest Theft of Labor in Human History”
-- SEO description: Microsoft researcher Brent Hecht did call AI scraping the “largest theft of labor in human history” in an internal memo. Here is what the court filing actually shows.
+- SEO description: A 2023 internal Microsoft memo quoted in a 2026 court filing says large-model scraping was the “largest theft of labor in human history.” Microsoft says the remark was one employee’s view.
 - Schema: article
-- Excerpt: A Microsoft researcher did use the phrase “largest theft of labor in human history” in an internal memo, but the quote is from 2023 and became public in September 2026 — not today.
+- Excerpt: A 2023 internal Microsoft memo quoted in a 2026 court filing says large-model scraping amounted to the “largest theft of labor in human history.” Microsoft says the comment does not represent the company’s position.
 
 ## Final Gutenberg Source
 
 <!-- wp:paragraph -->
-<p>Yes — the viral quote is real. But the <a href="https://twitter.com/WatcherGuru/status/2109620383469191543">Watcher.Guru post from October 12</a> is resurfacing material that became public in September, not a new Microsoft statement made today.</p>
+<p>A Microsoft director of applied science described large-model AI scraping as the “largest theft of labor in human history” in a January 2023 internal memo that became public through a court filing in September 2026.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":23949,"sizeSlug":"large","linkDestination":"none"} -->
@@ -24,17 +24,21 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>The line is attributed to Brent Hecht, Microsoft’s director of applied science. In a January 2023 internal memo quoted in the <a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.640396/gov.uscourts.nysd.640396.1977.1.pdf">news publishers’ summary-judgment filing</a>, Hecht described large-model scraping as an “astonishing theft of unprecedented proportions” and called it the “largest theft of labor in human history.”</p>
+<p>The comment is attributed to Brent Hecht, Microsoft’s director of applied science. In the <a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.640396/gov.uscourts.nysd.640396.1977.1.pdf">news publishers’ summary-judgment filing</a>, Hecht is quoted describing large-model scraping as an “astonishing theft of unprecedented proportions” and the “largest theft of labor in human history.”</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://twitter.com/WatcherGuru/status/2109620383469191543","type":"rich","providerNameSlug":"twitter","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
 https://twitter.com/WatcherGuru/status/2109620383469191543
-</div><figcaption class="wp-element-caption"><em>The October 12 Watcher.Guru post that pushed the quote back into circulation.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>Watcher.Guru pushed the quote back into circulation on October 12.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
-<p>The important caveat is context. The public filing quotes the internal memo, but the full underlying exhibit remains sealed. Microsoft has said Hecht’s comments reflect one employee’s individual perspective and do not represent the company’s views.</p>
+<p>The timing matters. The quote was not a new Microsoft statement made on October 12; it came from an internal 2023 memo that surfaced publicly in litigation in September 2026. The full underlying exhibit remains sealed, limiting the amount of context available around the remarks.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Microsoft has said Hecht’s comments reflect one employee’s individual perspective and do not represent the company’s views.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=kUUievwKEaM","type":"video","providerNameSlug":"youtube","responsive":true} -->
@@ -44,9 +48,9 @@ https://www.youtube.com/watch?v=kUUievwKEaM
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
-<p>Microsoft and OpenAI have argued that AI training on copyrighted material can qualify as fair use; <a href="https://openai.com/new-york-times/">OpenAI continues to defend that position publicly</a>. The lawsuit has not produced a final ruling that the companies committed theft.</p>
+<p>Microsoft and OpenAI have argued that training AI systems on copyrighted material can qualify as fair use. <a href="https://openai.com/new-york-times/">OpenAI has defended that position publicly</a>. The lawsuit has not produced a final ruling that the companies committed theft.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The dispute connects directly to broader questions BitcoinVersus has covered around <a href="https://bitcoinversus.tech/2023/07/26/gradually-then-suddenly-how-ai-and-robots-are-reshaping-the-workforce/">AI and labor</a>, <a href="https://bitcoinversus.tech/2026/10/04/culture-suno-v6-rebuilds-ai-music-around-licensed-songs-from-warner-bmg-and-believe/">AI licensing</a>, and <a href="https://bitcoinversus.tech/2026/10/10/open-source-ps5-legal-sony-connectix-anyps5/">copyright and software law</a>.</p>
+<p>The dispute sits inside a broader fight over how AI companies obtain training data and whether creators should be compensated. BitcoinVersus has also covered <a href="https://bitcoinversus.tech/2023/07/26/gradually-then-suddenly-how-ai-and-robots-are-reshaping-the-workforce/">AI and labor</a>, <a href="https://bitcoinversus.tech/2026/10/04/culture-suno-v6-rebuilds-ai-music-around-licensed-songs-from-warner-bmg-and-believe/">AI licensing</a>, and <a href="https://bitcoinversus.tech/2026/10/10/open-source-ps5-legal-sony-connectix-anyps5/">copyright and software law</a>.</p>
 <!-- /wp:paragraph -->
