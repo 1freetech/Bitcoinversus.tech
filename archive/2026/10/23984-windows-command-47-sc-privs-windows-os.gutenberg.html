@@ -1,0 +1,125 @@
+<!-- wp:paragraph --><p><strong><code>sc.exe privs</code> sets the required-privileges list for a Windows service.</strong> It is the write-side companion to <a href="https://bitcoinversus.tech/2026/10/11/windows-command-46-sc-qprivs-windows-os/"><strong>Windows Command #46 – sc qprivs</strong></a>, which reads the current setting.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This command is part of Windows Service Hardening. Its purpose is to reduce the privileges available inside a service process token to the minimum the service actually needs. It does <strong>not</strong> grant a service account new user rights or elevate an account that does not already possess a privilege.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=QSjQpBcuPDg&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>S4 Events — Hardcore Windows Hardening includes practical discussion of Windows Service Hardening and reducing unnecessary service privilege.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Learning Objectives</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li>Explain what <code>sc.exe privs</code> changes.</li><li>Distinguish required service privileges from account user rights.</li><li>Set one or more required privileges for a service.</li><li>Verify the result with <code>sc.exe qprivs</code>.</li><li>Understand why the change takes effect on the next service start.</li><li>Understand shared-process privilege unions.</li><li>Recognize common failure and recovery risks before modifying production services.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">What Required Privileges Mean</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Microsoft documents the required-privileges configuration through <a href="https://learn.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_required_privileges_infow"><strong>SERVICE_REQUIRED_PRIVILEGES_INFO</strong></a>. When a service has a required-privilege list, the Service Control Manager removes privileges that are not required from the process token when the service process starts.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This is a least-privilege control. If no required list is configured, the Service Control Manager can use the privileges normally available to the process token. If a list is configured, Windows keeps the privileges needed by the service and removes unneeded ones. Microsoft specifically recommends using the minimum privilege set required by the service.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>For compatibility, <code>SeChangeNotifyPrivilege</code> is not removed by this mechanism even when it is not explicitly requested. That is why administrators should not assume the displayed list is a complete description of every privilege present in the final process token.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Basic Syntax</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>General form:</strong> <code>sc.exe privs SERVICE_NAME PRIVILEGE_LIST</code></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>When several privileges are required, <code>sc.exe</code> accepts the privilege names as a slash-separated list. A common documented form is <code>SeBackupPrivilege/SeRestorePrivilege</code>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Example:</strong> <code>sc.exe privs DemoService SeBackupPrivilege/SeRestorePrivilege</code></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The privilege names must be valid Windows privilege constants. Do not invent names from display labels. Windows privilege constants use forms such as <code>SeBackupPrivilege</code>, <code>SeRestorePrivilege</code>, <code>SeImpersonatePrivilege</code>, and <code>SeCreateGlobalPrivilege</code>.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=aZPTIBbLjXA&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Be App Savvy — overview of the Windows Service Control Manager, the component that maintains service configuration and controls service startup and runtime state.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Always Query Before You Change</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Before using <code>sc.exe privs</code>, record the existing configuration with <code>sc.exe qprivs SERVICE_NAME</code>. Also inspect the service itself with <code>sc.exe qc SERVICE_NAME</code>. This gives you the service account, startup configuration, binary path, service type, and the current required-privilege list before you modify anything.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This connects directly to <a href="https://bitcoinversus.tech/2026/10/08/windows-command-38-sc-qc-windows-os/"><strong>Windows Command #38 – sc qc</strong></a>. The safest workflow is read, record, change, restart in a lab, then verify.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">The Change Takes Effect on the Next Service Start</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Microsoft states that required-privilege changes take effect the next time the service starts. Changing the configuration does not rebuild the token of a service process that is already running.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That means a normal verification sequence is: run <code>sc.exe qprivs SERVICE_NAME</code>, change the list with <code>sc.exe privs</code>, query the setting again, restart the service during an approved maintenance window, then verify service functionality.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>If the service is critical, do not test this sequence directly in production. A privilege that looks unnecessary may be required only during startup, backup, recovery, impersonation, object creation, or another code path that is not exercised continuously.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Required Privileges Do Not Grant Account Rights</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>This distinction is essential. The service account may receive user rights through Local Security Policy, Group Policy, local groups, domain policy, or other security configuration. The <code>sc.exe privs</code> setting does not add those rights to the account. It tells the Service Control Manager which available privileges should remain in the service process token.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>For example, listing <code>SeBackupPrivilege</code> does not magically grant backup rights to an account that does not possess them. The Service Control Manager determines whether the service can support the requested privilege configuration when the service starts.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/AdvancedInstaller/comments/1vkvw7t/log_on_as_a_service_and_when_to_use_its_policy/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>AdvancedInstaller community discussion — useful contrast between account-level “Log on as a service” rights and the separate least-privilege controls applied to a service process.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Shared-Process Services Need Extra Care</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Many Windows services share a process such as <code>svchost.exe</code>. Microsoft documents that when several services share one process, the Service Control Manager computes the <strong>union</strong> of the privileges required by all services in that process.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>That means reducing one service’s configured list may not remove a privilege from the shared process if another service hosted in that same process still requires it. Use <code>sc.exe qc</code> and <code>sc.exe queryex</code> to understand the service type and process context before drawing conclusions from a privilege change.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Set a Single Required Privilege</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>Example:</strong> <code>sc.exe privs DemoService SeImpersonatePrivilege</code></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>After the command succeeds, verify the stored configuration with <code>sc.exe qprivs DemoService</code>. Do not treat a successful configuration command as proof that the service will still work. The functional test occurs after the service starts and runs through the operations it actually needs.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Set Multiple Required Privileges</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong>Example:</strong> <code>sc.exe privs DemoService SeBackupPrivilege/SeRestorePrivilege</code></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The slash separates privilege names for <code>sc.exe</code>. Record the exact original list before replacing it. Treat the list as a complete service-hardening setting, not as an informal note where you can add one privilege without considering the others already required.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Remote Configuration</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The general SC syntax allows a remote server name before the command. A remote form is <code>sc.exe \\SERVER01 privs DemoService SeBackupPrivilege/SeRestorePrivilege</code>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Remote service configuration requires network reachability and sufficient Service Control Manager permissions on the target system. An access-denied response is an authorization problem; it does not mean the service lacks the requested privilege configuration.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/sysadmin/comments/1enhbp7/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>r/sysadmin discussion — administrators discuss how Windows service control is permission-sensitive and why delegating service-management capabilities requires careful security boundaries.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Why Least Privilege Matters</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Windows privileges are not ordinary file permissions. They are operating-system capabilities that can allow sensitive actions such as backing up protected data, restoring files, impersonating security contexts, changing system state, or interacting with protected resources.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>If a service is compromised, every unnecessary privilege left in its process token can increase the impact of that compromise. The value of <code>sc.exe privs</code> is therefore not simply configuration convenience; it is reduction of attack surface.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Microsoft’s service-hardening guidance describes this directly: services can declare the privileges they require, and the Service Control Manager removes privileges that are not required. The safest target is the smallest list that allows the service to operate correctly.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Troubleshooting Order</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Run <code>sc.exe qprivs SERVICE_NAME</code> and save the original list.</li><li>Run <code>sc.exe qc SERVICE_NAME</code> and record the service account and service type.</li><li>Confirm the exact Windows privilege constant you intend to use.</li><li>Make the change only on a disposable or approved test service first.</li><li>Run <code>sc.exe qprivs SERVICE_NAME</code> again and confirm the stored result.</li><li>Restart the service because the privilege-token change applies on the next start.</li><li>Run <code>sc.exe queryex SERVICE_NAME</code> and verify the service actually started.</li><li>Exercise the service’s real workload, not only its start command.</li><li>If startup or functionality fails, restore the recorded original configuration.</li><li>For shared-process services, remember that another service in the same process can keep a privilege present.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Common Mistakes</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><strong>Confusing service privilege restriction with account rights:</strong> <code>sc.exe privs</code> does not assign a user right to the service account.</li><li><strong>Changing production first:</strong> a missing privilege may break a startup or recovery path that is rarely used.</li><li><strong>Forgetting the restart:</strong> the running process keeps its existing token until the service starts again.</li><li><strong>Using the display name instead of the service name:</strong> SC commands normally expect the service name.</li><li><strong>Ignoring shared hosting:</strong> a shared process can retain the union of privileges required by multiple services.</li><li><strong>Failing to record the original list:</strong> rollback becomes harder if the old configuration was not captured.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Practice Lab</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Use a disposable Windows VM and choose a noncritical test service.</li><li>Run <code>sc.exe qc SERVICE_NAME</code> and record the service account and service type.</li><li>Run <code>sc.exe qprivs SERVICE_NAME</code> and save the original output.</li><li>Choose a privilege list appropriate to the test service only if you understand why that service needs it.</li><li>Apply the list with <code>sc.exe privs SERVICE_NAME PRIVILEGE_LIST</code>.</li><li>Query the list again with <code>sc.exe qprivs SERVICE_NAME</code>.</li><li>Restart the service in the lab.</li><li>Verify status with <code>sc.exe queryex SERVICE_NAME</code>.</li><li>Run the service’s normal workload and check Event Viewer for startup or privilege-related errors.</li><li>Restore the original list when the lab is complete.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Knowledge Check</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>What does <code>sc.exe privs</code> change?</li><li>Does it grant a service account a privilege that the account does not already possess?</li><li>When does the new required-privilege list affect the service process token?</li><li>How are multiple privilege names separated in the SC command syntax?</li><li>Which command should you run before and after the change to inspect the list?</li><li>What happens when multiple services share one process?</li><li>Which privilege is retained for compatibility even when it is not explicitly requested?</li><li>Why is a successful <code>sc.exe privs</code> command not enough to prove the service still works?</li></ol><!-- /wp:list -->
+
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Answers</h3><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>The service’s required-privileges configuration.</li><li>No. It restricts which available privileges remain in the service process token; it is not an account-right assignment mechanism.</li><li>The next time the service starts.</li><li>With forward slashes, such as <code>SeBackupPrivilege/SeRestorePrivilege</code>.</li><li><code>sc.exe qprivs SERVICE_NAME</code>.</li><li>The Service Control Manager uses the union of the privileges required by the services sharing that process.</li><li><code>SeChangeNotifyPrivilege</code>.</li><li>Because the real test is whether the service can start and complete its required workload with the reduced token.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Key Takeaway</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong><code>sc.exe privs</code> is a Windows Service Hardening command, not an elevation command.</strong> Use it to reduce a service process to the minimum privileges it truly needs, verify every change with <code>qprivs</code>, restart to apply the new token, and test the complete service workload before treating the configuration as safe.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Primary references:</strong> <a href="https://learn.microsoft.com/en-us/windows/win32/services/configuring-a-service-using-sc">Microsoft Learn — Configuring a Service Using SC</a>, <a href="https://learn.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_required_privileges_infow">Microsoft Learn — SERVICE_REQUIRED_PRIVILEGES_INFO</a>, and <a href="https://learn.microsoft.com/en-us/windows/win32/services/service-changes-for-windows-vista">Microsoft Learn — Service Changes for Windows Vista / Running with Least Privilege</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>BitcoinVersus.Tech Editor's Note:</strong> Service privilege changes can break software or reduce security if they are applied without understanding the service’s real requirements. Test on disposable systems first and document rollback before changing production services.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Support independent technology education:</strong> Bitcoin donations help fund BitcoinVersus.Tech research and publishing.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>BitcoinVersus.Tech provides technical education and analysis for informational purposes only.</em></p><!-- /wp:paragraph -->
