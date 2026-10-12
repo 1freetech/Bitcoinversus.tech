@@ -1,0 +1,36 @@
+{
+  "wordpress_post_id": 23967,
+  "series": "Linux Command",
+  "lesson_number": 54,
+  "title": "Linux Command #54 – lsattr (Linux OS)",
+  "slug": "linux-command-54-lsattr-linux-os",
+  "status": "published",
+  "published": "2026-10-12T09:27:48",
+  "modified": "2026-10-12T09:28:54",
+  "live_url": "https://bitcoinversus.tech/2026/10/12/linux-command-54-lsattr-linux-os/",
+  "featured_media_id": 23966,
+  "featured_image": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/linux-command-54-lsattr-1200x630-1.jpg",
+  "excerpt": "Learn the Linux lsattr command: inspect immutable, append-only, and other filesystem attributes; read lsattr output; distinguish attributes from ACLs and permissions; and troubleshoot files that will not change or delete.",
+  "seo_title": "Linux Command #54 – lsattr",
+  "seo_description": "Learn the Linux lsattr command: inspect immutable, append-only, and other filesystem attributes; read output; and troubleshoot files that will not change or delete.",
+  "gutenberg_archive": "archive/2026/10/23967-linux-command-54-lsattr-linux-os.gutenberg.html",
+  "media": {
+    "youtube": [
+      "https://www.youtube.com/watch?v=1qpH2Pi4_5U",
+      "https://www.youtube.com/watch?v=CN5YKhmAZy4"
+    ],
+    "social": [
+      "https://www.reddit.com/r/linuxquestions/comments/10jh12u/",
+      "https://www.reddit.com/r/LinuxTeck/comments/1wulx0v/quick_linux_tip_86_linux_file_attributes_find_and/"
+    ]
+  },
+  "qa": {
+    "youtube_players_rendered": true,
+    "social_embeds_rendered": true,
+    "no_text_boxes": true,
+    "no_code_blocks": true,
+    "no_group_card_callout_blocks": true,
+    "featured_image_1200x630": true,
+    "featured_image_subject": "African American Linux technician with Linux penguin theme"
+  }
+}
