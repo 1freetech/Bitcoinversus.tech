@@ -1,0 +1,115 @@
+<!-- wp:paragraph --><p><strong><code>std::exchange</code> replaces an object’s value and returns its previous value in one expression.</strong> It is especially useful when implementing move operations, transferring handles, resetting state, or writing code where “take the old value, leave a known replacement behind” is the exact intent.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This lesson follows <a href="https://bitcoinversus.tech/2026/10/11/oscpp-026-custom-swap-adl-using-std-swap-noexcept-swappable/"><strong>OSC++.026: Custom swap and ADL</strong></a>, <a href="https://bitcoinversus.tech/2026/10/09/oscpp-025-copy-and-swap-exception-safe-assignment-strong-guarantee-noexcept-self-assignment-tradeoffs/"><strong>OSC++.025: Copy-and-Swap and Exception-Safe Assignment</strong></a>, and <a href="https://bitcoinversus.tech/2026/10/07/oscpp-024-rule-of-five-rule-of-zero-copy-move-lifecycle-ownership-safe-class-design/"><strong>OSC++.024: Rule of Five and Rule of Zero</strong></a>. Those lessons established ownership, move operations, assignment, and swapping. <code>std::exchange</code> gives you a compact way to transfer a value while immediately resetting the source.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=2gUqyt5JTtM&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Mike Shah introduces <code>std::move</code> and move semantics, which provide the ownership-transfer foundation needed to understand why <code>std::exchange</code> is useful in move constructors.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Learning Objectives</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li>Explain exactly what <code>std::exchange</code> does.</li><li>Distinguish <code>std::exchange</code> from <code>std::move</code> and <code>std::swap</code>.</li><li>Use <code>std::exchange</code> in move constructors safely.</li><li>Recognize the resource-leak risk in careless move assignment.</li><li>Explain why the replacement value may have a different but assignable type.</li><li>Understand the C++14, C++20, and C++23 behavior changes.</li><li>Use the feature-test macro when version-sensitive code requires it.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">What std::exchange Does</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><code>std::exchange</code> is declared in <code>&lt;utility&gt;</code>. Its conceptual form is <code>std::exchange(obj, new_value)</code>. The function moves the old value out of <code>obj</code>, assigns <code>new_value</code> into <code>obj</code>, and returns the old value.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The current <a href="https://en.cppreference.com/cpp/utility/exchange"><strong>cppreference entry for std::exchange</strong></a> shows the essential behavior as three steps: create <code>old_value</code> from <code>std::move(obj)</code>, assign the forwarded replacement into <code>obj</code>, then return <code>old_value</code>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Simple example:</strong> <code>int old = std::exchange(value, 0);</code>. If <code>value</code> was 42, then after the expression <code>old</code> is 42 and <code>value</code> is 0.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">std::exchange Is Not std::move</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><code>std::move</code> does not move anything by itself. It converts an expression into an xvalue so that move-aware overloads can be selected. The current <a href="https://en.cppreference.com/cpp/utility/move"><strong>cppreference std::move reference</strong></a> describes it as a cast that indicates an object may be moved from.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><code>std::exchange</code> performs an actual two-part state transition: it obtains the old value and then assigns a replacement value into the source object. That makes it useful when you need the moved-from object to immediately contain a specific known state such as <code>nullptr</code>, <code>0</code>, <code>false</code>, or another sentinel.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/cpp_questions/comments/ihlker/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>A C++ community discussion directly compares <code>std::move</code> and <code>std::exchange</code> and reinforces the key distinction: <code>std::move</code> changes value category, while <code>std::exchange</code> replaces state and returns the old state.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">std::exchange Is Not std::swap</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><code>std::swap(a, b)</code> exchanges the values of two existing objects. After the call, <code>a</code> contains the old value of <code>b</code> and <code>b</code> contains the old value of <code>a</code>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><code>std::exchange(a, replacement)</code> is asymmetric. It replaces <code>a</code> with <code>replacement</code> and returns the previous value of <code>a</code>. The replacement expression does not receive the old value.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This is why <code>std::exchange</code> is often clearer for “take and reset” operations, while <code>swap</code> is better when two complete object states should trade places.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">A Move Constructor Example</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Suppose a class owns a raw handle stored in <code>handle_</code>, and the empty state is represented by <code>nullptr</code>. A move constructor can write the transfer directly as <code>Widget(Widget&amp;&amp; other) noexcept : handle_(std::exchange(other.handle_, nullptr)) {}</code>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Read that expression literally: take the old pointer out of <code>other.handle_</code>, put <code>nullptr</code> into <code>other.handle_</code>, and use the returned old pointer to initialize the new object’s <code>handle_</code>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The source object remains valid for destruction because it no longer claims ownership of the transferred handle. This is one of the most recognizable uses of <code>std::exchange</code> in resource-owning move constructors.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=VIWjZmPAvDg&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Fred Overflow reviews move construction and resource ownership transfer, the exact context where resetting a moved-from handle with <code>std::exchange</code> becomes useful.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Why the Moved-From State Matters</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>For standard-library types, moved-from objects are generally left in a valid but unspecified state unless otherwise documented. Your own resource-owning class must also remain safe to destroy and assign after a move.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Using <code>std::exchange</code> can make that state explicit. A pointer becomes <code>nullptr</code>. A file descriptor can become an invalid sentinel such as <code>-1</code>. A size or count can become <code>0</code>. The class invariant becomes easier to read because the transfer and reset happen together.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Be Careful in Move Assignment</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A move constructor starts with a new object that does not yet own an old resource. Move assignment is different: the destination object may already own something that must be released first.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>For example, writing <code>handle_ = std::exchange(other.handle_, nullptr);</code> can leak the resource previously stored in <code>handle_</code> if assigning the new handle simply overwrites the old one. The <a href="https://en.cppreference.com/cpp/utility/exchange"><strong>cppreference notes for std::exchange</strong></a> explicitly warn about this kind of opaque-resource-handle case.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>A correct move-assignment operator must first preserve or release the destination’s existing resource according to the class’s ownership rules. Depending on the design, that may mean cleanup before assignment, a temporary owner, a custom <code>swap</code>, copy-and-swap, or Rule-of-Zero member types that already manage the resource safely.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Different Replacement Types Are Allowed</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The template has two types, conceptually <code>T</code> for the object and <code>U</code> for the replacement value. <code>U</code> defaults to <code>T</code>, but it may be a different type as long as the assignment is valid.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This flexibility is intentional. The original WG21 proposal, <a href="https://open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3668.html"><strong>N3668 — exchange() utility function, revision 3</strong></a>, explains that the second type allows converting assignment and avoids unnecessary temporary objects.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/cpp_questions/comments/vhzctp/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>A focused C++ discussion walks through why <code>std::exchange</code> uses a second template parameter and a forwarding reference for the replacement value.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Version History</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><strong>C++14:</strong> <code>std::exchange</code> entered the standard library.</li><li><strong>C++20:</strong> it became <code>constexpr</code>.</li><li><strong>C++23:</strong> its exception specification became conditionally <code>noexcept</code> based on whether moving the old value and assigning the replacement can throw.</li><li><strong>Feature-test macro:</strong> <code>__cpp_lib_exchange_function</code> has value <code>201304L</code>.</li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p>The WG21 document list records N3668 as adopted in 2013 for the library work that became part of C++14. The modern standard-library reference also documents the later <code>constexpr</code> and conditional-<code>noexcept</code> changes.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Readable State Transitions</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><code>std::exchange</code> is useful outside move constructors whenever a program needs to consume the old state while setting the next state. Examples include replacing a callback pointer, resetting a “first item” flag, taking a numeric counter before clearing it, or updating state-machine variables while preserving the prior state for one expression.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Do not use it merely because it is compact. A normal assignment is clearer when the old value is irrelevant. <code>std::exchange</code> earns its place when both parts of the operation matter: <strong>you need the old value and you need the source replaced immediately.</strong></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Troubleshooting and Review Checklist</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>Ask whether the code actually needs the old value.</li><li>Confirm the replacement value represents a valid state for the source object.</li><li>If the object owns a resource, determine who owns the old resource after the exchange.</li><li>In move assignment, confirm the destination’s current resource is released safely before overwrite.</li><li>Check whether Rule of Zero can eliminate the custom move code entirely.</li><li>Check whether <code>swap</code> communicates the intent better when two full states are trading places.</li><li>Check exception behavior if the operation participates in a <code>noexcept</code> move path.</li><li>Compile with the intended language standard because availability and exception specifications depend on the C++ version.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Practice Exercise</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Create a small class that owns a dynamically allocated integer through a raw pointer only for educational purposes. Give the class a destructor and a move constructor. In the move constructor, initialize the destination pointer with <code>std::exchange(other.ptr_, nullptr)</code>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Then construct one object, move it into another object, and verify that the source pointer becomes <code>nullptr</code>. Next, attempt to design move assignment. Before writing the assignment line, identify what must happen to any resource already owned by the destination. Finally, replace the raw pointer with <code>std::unique_ptr</code> and compare how much custom lifecycle code disappears under the Rule of Zero.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Knowledge Check</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>What value does <code>std::exchange(obj, new_value)</code> return?</li><li>What value remains in <code>obj</code> afterward?</li><li>How is <code>std::exchange</code> different from <code>std::move</code>?</li><li>How is it different from <code>std::swap</code>?</li><li>Why is <code>std::exchange(other.ptr_, nullptr)</code> useful in a move constructor?</li><li>Why can the same pattern be dangerous in move assignment?</li><li>In which C++ version was <code>std::exchange</code> introduced?</li><li>What is the feature-test macro value?</li></ol><!-- /wp:list -->
+
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Answers</h3><!-- /wp:heading -->
+
+<!-- wp:list --><ol class="wp-block-list"><li>The old value of <code>obj</code>.</li><li>The assigned replacement value.</li><li><code>std::move</code> changes value category; <code>std::exchange</code> moves out the old value, assigns a replacement, and returns the old value.</li><li><code>swap</code> trades the values of two objects; <code>exchange</code> replaces one object and returns its old value.</li><li>It transfers the pointer to the destination and immediately resets the source to a non-owning null state.</li><li>The destination may already own a resource that would be leaked if its handle is overwritten without cleanup.</li><li>C++14.</li><li><code>201304L</code>.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Key Takeaway</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><strong><code>std::exchange</code> means “give me the old value and leave this replacement behind.”</strong> It is compact, expressive, and particularly effective for move constructors and explicit state transitions—but only when ownership and cleanup rules remain correct.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Primary references:</strong> <a href="https://open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3668.html">WG21 N3668 — exchange() utility function, revision 3</a>, <a href="https://en.cppreference.com/cpp/utility/exchange">cppreference — std::exchange</a>, and <a href="https://en.cppreference.com/cpp/utility/move">cppreference — std::move</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>BitcoinVersus.Tech Editor's Note:</strong> The examples intentionally expose manual ownership concepts for instruction. In production C++, prefer RAII and Rule-of-Zero designs such as <code>std::unique_ptr</code> whenever they correctly model the resource.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Support independent technology education:</strong> Bitcoin donations help fund BitcoinVersus.Tech research and publishing.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>BitcoinVersus.Tech provides technical education and analysis for informational purposes only.</em></p><!-- /wp:paragraph -->
