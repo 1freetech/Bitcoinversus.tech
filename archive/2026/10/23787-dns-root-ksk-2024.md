@@ -4,7 +4,7 @@ title: "DNS Root Is Now Using KSK-2024"
 live_url: "https://bitcoinversus.tech/2026/10/11/dns-root-ksk-2024/"
 slug: "dns-root-ksk-2024"
 published_at: "2026-10-11T21:50:00"
-modified_at: "2026-10-11T21:53:34"
+modified_at: "2026-10-11T21:55:49"
 featured_media_id: 23784
 featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/dns-root-ksk-2024-rollover-1200x630.jpg"
 status: published
@@ -80,6 +80,6 @@ https://www.youtube.com/watch?v=Hq-qnAZAURY
 <!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Editor’s Note</h3><!-- /wp:heading -->
 <!-- wp:paragraph --><p><em>This article distinguishes IANA’s confirmed October 11 rollover from earlier guidance about the planned event. The rollover is live; later revocation and removal steps for KSK-2017 are still scheduled for 2027.</em></p><!-- /wp:paragraph -->
 
-<!-- wp:paragraph --><p><strong><em>We volunteer daily to help keep BitcoinVersus.Tech verifiably accurate. Support our independent research through the support options available on the site.</em></strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><strong><em>Follow <a href="https://www.linkedin.com/company/bitcoin-versus">BitcoinVersus.Tech on LinkedIn</a> for continuing technology, infrastructure, energy, and Bitcoin coverage. We volunteer daily to help keep BitcoinVersus.Tech verifiably accurate. If you would like to support our independent research, donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb.</em></strong></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>BitcoinVersus.Tech is not a financial advisor. Content is provided for informational purposes.</p><!-- /wp:paragraph -->
