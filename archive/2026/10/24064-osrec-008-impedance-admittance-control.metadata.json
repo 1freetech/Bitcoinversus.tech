@@ -1,0 +1,48 @@
+{
+  "wordpress_post_id": 24064,
+  "series": "Open-Source Robotics Engineer Certification",
+  "lesson_number": 8,
+  "title": "OSREC.008: Impedance and Admittance Control",
+  "slug": "osrec-008-impedance-admittance-control",
+  "status": "published",
+  "published": "2026-10-12T16:33:02",
+  "modified": "2026-10-12T16:33:02",
+  "live_url": "https://bitcoinversus.tech/2026/10/12/osrec-008-impedance-admittance-control/",
+  "featured_media_id": 24061,
+  "featured_image_size": "1200x630",
+  "featured_image_subject": "African American robotics engineer tuning impedance and admittance control on a collaborative robot in an industrial lab",
+  "seo_title": "OSREC.008: Impedance and Admittance Control",
+  "seo_description": "Learn robot impedance and admittance control: stiffness, damping, virtual inertia, torque versus position architectures, passivity, stability, tuning, and contact-task troubleshooting.",
+  "youtube_embeds": [
+    "https://www.youtube.com/watch?v=IolG5V_skv8",
+    "https://www.youtube.com/watch?v=XxjHxX7mEOM"
+  ],
+  "social_embeds": [
+    "https://www.reddit.com/r/robotics/comments/1sdgudd/impedance_controller_wo_ft_sensor/",
+    "https://www.reddit.com/r/ControlTheory/comments/1rkicdm/difference_between_impedance_and_admittance/"
+  ],
+  "primary_references": [
+    "https://modernrobotics.northwestern.edu/nu-gm-book-resource/11-1-control-system-overview/",
+    "https://frankarobotics.github.io/libfranka/0.18.2/cartesian_impedance_control_8cpp-example.html",
+    "https://frankarobotics.github.io/docs/doc/franka_ros2_jazzy/franka_example_controllers/doc/index.html",
+    "https://control.ros.org/master/doc/ros2_controllers/admittance_controller/doc/userdoc.html"
+  ],
+  "previous_related_lessons": [
+    "OSREC.007",
+    "OSREC.006",
+    "OSREC.005",
+    "OSREC.004",
+    "OSREC.002"
+  ],
+  "donation_qr_media_id": 24043,
+  "qa": {
+    "youtube_players_rendered": 2,
+    "social_embeds_rendered": 2,
+    "donation_qr_rendered": true,
+    "text_boxes": 0,
+    "code_blocks": 0,
+    "group_blocks": 0,
+    "card_or_callout_blocks": 0,
+    "separator_blocks": 0
+  }
+}
