@@ -1,0 +1,42 @@
+{
+  "wordpress_post_id": 24054,
+  "series": "Open-Source Semiconductor Engineer Certification",
+  "lesson_number": 8,
+  "title": "OSSEC.008: FinFET Electrostatics — Multi-Gate Control, Fin Geometry, DIBL, Leakage, and Scaling",
+  "slug": "ossec-008-finfet-electrostatics-multi-gate-control-fin-geometry-dibl-leakage-scaling",
+  "status": "published",
+  "published": "2026-10-12T15:24:16",
+  "modified": "2026-10-12T15:24:16",
+  "live_url": "https://bitcoinversus.tech/2026/10/12/ossec-008-finfet-electrostatics-multi-gate-control-fin-geometry-dibl-leakage-scaling/",
+  "featured_media_id": 24053,
+  "featured_image_size": "1200x630",
+  "featured_image_subject": "African American semiconductor engineer examining a wafer and FinFET device imagery in a semiconductor cleanroom",
+  "seo_title": "OSSEC.008: FinFET Electrostatics",
+  "seo_description": "Learn FinFET electrostatics: multi-gate control, fin geometry, effective width, DIBL, leakage, quantized sizing, parasitics, and the transition to gate-all-around.",
+  "youtube_embeds": [
+    "https://www.youtube.com/watch?v=6LcTrp6SB3o",
+    "https://www.youtube.com/watch?v=W3rfVpkNquA"
+  ],
+  "social_embeds": [
+    "https://www.reddit.com/r/ElectricalEngineering/comments/1t8m19z/how_to_learn_about_finfets_and_other_nonplanar/",
+    "https://www.reddit.com/r/chipdesign/comments/1ra33qr/how_do_i_get_started_designing_in_finfet/"
+  ],
+  "previous_related_lessons": [
+    "OSSEC.007",
+    "OSSEC.006",
+    "OSSEC.005",
+    "OSSEC.004",
+    "OSSEC.003"
+  ],
+  "donation_qr_media_id": 24043,
+  "qa": {
+    "youtube_players_rendered": 2,
+    "social_embeds_rendered": 2,
+    "donation_qr_rendered": true,
+    "text_boxes": 0,
+    "code_blocks": 0,
+    "group_blocks": 0,
+    "card_or_callout_blocks": 0,
+    "separator_blocks": 0
+  }
+}
