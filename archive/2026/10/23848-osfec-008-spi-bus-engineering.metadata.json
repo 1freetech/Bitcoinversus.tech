@@ -1,0 +1,19 @@
+{
+  "wordpress_post_id": 23848,
+  "lesson_code": "OSFEC.008",
+  "lesson_number": 8,
+  "certification": "Open-Source Firmware Engineer",
+  "title": "OSFEC.008: SPI Bus Engineering",
+  "status": "published",
+  "published": "2026-10-11T23:06:10",
+  "live_url": "https://bitcoinversus.tech/2026/10/11/osfec-008-spi-bus-engineering/",
+  "slug": "osfec-008-spi-bus-engineering",
+  "featured_media_id": 23847,
+  "featured_image_dimensions": "1200x630",
+  "youtube_1": "https://www.youtube.com/watch?v=eFKeNPJq50g",
+  "youtube_2": "https://www.youtube.com/watch?v=SKZaAKIt8gY",
+  "youtube_3": "https://www.youtube.com/watch?v=Ak9R4yxQPhs",
+  "social_1": "https://twitter.com/observie/status/2044830593930723735",
+  "seo_title": "OSFEC.008: SPI Bus Engineering | BitcoinVersus.Tech",
+  "seo_description": "Learn SPI bus engineering: CPOL/CPHA timing, chip-select architecture, multi-device buses, throughput, DMA, RTOS concurrency, Linux SPI drivers, signal integrity, and validation."
+}
