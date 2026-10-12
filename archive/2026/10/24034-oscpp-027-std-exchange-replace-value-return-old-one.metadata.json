@@ -6,7 +6,7 @@
   "slug": "oscpp-027-std-exchange-replace-value-return-old-one",
   "status": "published",
   "published": "2026-10-12T10:16:18",
-  "modified": "2026-10-12T10:16:18",
+  "modified": "2026-10-12T10:22:35",
   "live_url": "https://bitcoinversus.tech/2026/10/12/oscpp-027-std-exchange-replace-value-return-old-one/",
   "featured_media_id": 24032,
   "featured_image_size": "1200x630",
@@ -25,6 +25,13 @@
     "https://open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3668.html",
     "https://en.cppreference.com/cpp/utility/exchange",
     "https://en.cppreference.com/cpp/utility/move"
+  ],
+  "previous_related_lessons": [
+    "OSC++.026: Custom swap and ADL",
+    "OSC++.025: Copy-and-Swap and Exception-Safe Assignment",
+    "OSC++.024: Rule of Five and Rule of Zero",
+    "OSC++.023: Perfect Forwarding",
+    "OSC++.022: Move Semantics"
   ],
   "qa": {
     "youtube_players_rendered": 2,
