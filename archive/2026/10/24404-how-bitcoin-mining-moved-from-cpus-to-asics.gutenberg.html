@@ -1,0 +1,97 @@
+<!-- wp:paragraph -->
+<p>Bitcoin mining began as a general-purpose computing task. In 2009, the software could use an ordinary computer’s CPU to search for valid SHA-256 hashes. There were few miners, network difficulty was tiny by modern standards, and specialized mining hardware did not yet exist.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=yFE2FV9ia1s","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=yFE2FV9ia1s
+</div><figcaption class="wp-element-caption"><em>Early home-computer Bitcoin mining footage provides a useful look at how accessible mining once was.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">GPUs changed the scale</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>By 2010, miners had begun moving work to graphics processors. GPUs could perform large numbers of simple calculations in parallel, making them far better suited to repeated hashing than a typical desktop CPU. That shift created the first real hardware arms race: more graphics cards meant more hashrate, but also more heat, power draw and increasingly elaborate home-built rigs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=lEGIZOO-HYY","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=lEGIZOO-HYY
+</div><figcaption class="wp-element-caption"><em>Contemporary footage of a dedicated GPU mining setup shows the transition from a desktop activity toward purpose-built rigs.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">FPGAs narrowed the job</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The next step was the field-programmable gate array. Unlike a GPU, an FPGA could be configured around the hashing workload itself. The <a href="https://en.bitcoin.it/wiki/Open_Source_FPGA_Bitcoin_Miner">first open-source FPGA Bitcoin miner</a> was released in May 2011, helping move mining away from general-purpose hardware and toward circuits optimized specifically for SHA-256.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24403,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/lancelot-a-fpga-bitcoin-mining-board.jpg?w=1012" alt="Lancelot-A dual Spartan-6 FPGA board used for early Bitcoin mining hardware experiments." class="wp-image-24403" /><figcaption class="wp-element-caption"><em>Lancelot-A FPGA Bitcoin mining board, representative of the programmable-hardware era between GPUs and ASICs.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=ae97jo4wtis","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=ae97jo4wtis
+</div><figcaption class="wp-element-caption"><em>A 2013 hardware comparison places CPUs, GPUs, FPGAs and early ASICs side by side during the transition.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">ASICs ended the general-purpose era</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>ASICs—application-specific integrated circuits—removed most of the flexibility entirely. Their silicon was built to perform Bitcoin’s hashing workload at much higher throughput per watt. Canaan’s regulatory history says the Avalon team shipped its first batch of ASIC mining machines on January 19, 2013, marking a decisive commercial turning point. <a href="https://www.sec.gov/Archives/edgar/data/1780652/000119312522133564/d279679d20f.htm">Canaan’s SEC filing</a> identifies Avalon as the first batch of consumer Bitcoin mining machines incorporating ASIC technology.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://twitter.com/jgarzik/status/296709252351926273","type":"rich","providerNameSlug":"x","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/jgarzik/status/296709252351926273
+</div><figcaption class="wp-element-caption"><em>Jeff Garzik documented receiving an early Avalon unit in January 2013, one of the clearest public records of the first consumer ASIC era.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p>Once ASICs arrived, mining economics changed permanently. CPU, GPU and FPGA miners could no longer compete on Bitcoin at the same energy cost. From that point forward, competition increasingly centered on chip design, power delivery, cooling, density and efficiency in joules per terahash.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=29PEJEigXTw","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=29PEJEigXTw
+</div><figcaption class="wp-element-caption"><em>A modern overview summarizes the hardware progression from CPUs through GPUs to specialized ASIC mining.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The same race continues</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The hardware changed, but the basic competition did not. Today’s miners chase lower energy per hash and higher machine-level hashrate. BitcoinVersus.Tech’s <a href="https://bitcoinversus.tech/2025/06/02/the-bitcoin-mining-singularity-the-future-of-bitcoin-mining-machine-hashrate-and-asic-chip-efficiency/">Bitcoin Mining Singularity</a> research follows the efficiency side of that trend toward 1 J/TH, while its analysis of <a href="https://bitcoinversus.tech/2025/07/24/proof-of-work-landauers-principle-and-the-absolute-limits-of-bitcoin-mining-hardware-efficiency/">Landauer’s principle and mining efficiency</a> examines the physical limits underneath it. The newest comparative analysis asks how long it could take before a single miner reaches <a href="https://bitcoinversus.tech/2026/10/13/how-long-until-bitcoin-miner-reaches-10-phs/">10 PH/s</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>In less than four years, Bitcoin mining moved from software running on ordinary CPUs to silicon designed almost exclusively for one computation. Every generation since has been an extension of that same specialization.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity" />
+<!-- /wp:separator -->
+
+<!-- wp:paragraph -->
+<p><em>BitcoinVersus.Tech Editor's Note:<br>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24358,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/image3.png?w=1024" alt="Bitcoin donation QR code requesting 5,000 sats for BitcoinVersus.Tech research initiatives." class="wp-image-24358" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>
+<!-- /wp:paragraph -->
