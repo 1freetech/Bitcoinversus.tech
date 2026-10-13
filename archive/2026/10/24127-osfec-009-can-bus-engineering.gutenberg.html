@@ -1,0 +1,61 @@
+<!-- wp:paragraph --><p>CAN bus engineering combines network topology, message arbitration, bit timing, firmware drivers, and fault handling. This OSFEC.009 lesson follows <a href='https://bitcoinversus.tech/2026/10/11/osfec-008-spi-bus-engineering/'>OSFEC.008: SPI Bus Engineering</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Learning objectives</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Design a terminated CAN network, select arbitration priorities, calculate approximate bus loading, distinguish classical CAN from CAN FD, and build reliable firmware error recovery.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Architecture and arbitration</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>CAN is a multi-controller broadcast bus. A dominant zero wins arbitration over a recessive one, so lower numeric message identifiers generally have higher priority. Classical CAN data frames carry up to eight payload bytes; CAN FD permits up to 64 bytes and a separate faster data phase.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=1IjhkMYtGMg&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:heading --><h2>Topology and termination</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A conventional high-speed CAN trunk has approximately 120 Ω termination at each physical end. With the system powered off, the two resistors in parallel often measure near 60 Ω. Engineers must also evaluate stub length, impedance, transceiver common-mode range, grounding, isolation, and electromagnetic compatibility.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Bit timing</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>At 500 kbit/s, one nominal bit takes 2 microseconds. The sample point, time quanta, synchronization jump width, oscillator tolerance, cable delay, and transceiver propagation delay must all be considered. CAN FD requires separate attention to data-phase timing and transceiver delay compensation.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Bus load and worst-case latency</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Estimate periodic load by summing each frame's worst-case transmission time divided by its period. Twenty frames every 10 ms, each taking an assumed 150 microseconds, imply 30 percent utilization. Actual timing includes stuffing, arbitration, CRC, and interframe spacing. Average utilization does not establish worst-case response time because priority interference and bursts matter.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/embedded/comments/vm022i/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:heading --><h2>Firmware driver architecture</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Initialize hardware into a known state, configure acceptance filters, use bounded interrupt service routines, and transfer received frames into appropriately sized queues. Track queue overflow and transmit errors. Preserve diagnostic counters and avoid silent loss of messages. Define application-level freshness timeouts and safe behavior when required data stops arriving.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Error confinement and recovery</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>CAN controllers detect bit, stuff, form, CRC, and acknowledgment errors. Their error counters can move a node into error-passive or bus-off state. Recovery must be intentional: record the failure, apply a controlled retry policy, and investigate repeated failures rather than endlessly restarting the controller.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=fVy_EXkMKMg&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:heading --><h2>Verification</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Measure normal and peak bus load; inspect differential waveforms; verify the intended bitrate; check error counters; and validate latency under high-priority bursts. Conduct electrical fault tests only on approved isolated laboratory fixtures. A production control network must never be used for unapproved fault injection.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/embedded/comments/1je83vv[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:heading --><h2>Engineering exercise</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A controller publishes status every 5 ms, while four other controllers publish every 10 ms. Define message priorities, queue capacity, freshness deadlines, bus-off recovery, and a measurement plan. Explain why a single average utilization number is insufficient to prove that all deadlines will be met.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Knowledge check</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>1. Why do lower identifier values generally win arbitration? 2. What does a 60 Ω powered-off measurement usually indicate? 3. Why does CAN FD need separate data-phase timing? 4. Why is bus-off a symptom rather than a root cause? 5. Why should receive queues report overflow?</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Answer guide</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>1. Dominant zero bits override recessive bits. 2. Two 120 Ω end resistors in parallel. 3. The higher data rate changes timing and physical-layer requirements. 4. Many electrical and configuration problems can trigger bus-off. 5. Silent loss hides reliability problems and invalidates timing assumptions.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>References and previous lessons</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Primary references: <a href='https://www.bosch-semiconductors.com/media/ip_modules/pdf_2/can_fd_spec.pdf'>Bosch CAN FD specification</a>, <a href='https://www.kernel.org/doc/html/latest/networking/can.html'>Linux SocketCAN</a>, and <a href='https://kvaser.com/lesson/introduction-can-bus/'>Kvaser CAN tutorial</a>. Previous lessons: <a href='https://bitcoinversus.tech/2026/10/11/osfec-008-spi-bus-engineering/'>OSFEC.008</a>, <a href='https://bitcoinversus.tech/2026/10/10/osfec-007-i2c-bus-engineering-addressing-pull-ups-clock-stretching-recovery-firmware-diagnostics/'>OSFEC.007</a>, and <a href='https://bitcoinversus.tech/2026/10/08/osfec-006-direct-memory-access-dma-moving-data-without-stalling-the-cpu/'>OSFEC.006</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>BitcoinVersus.Tech Editor's Note:</strong><br>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Bitcoin donation QR code for 5,000 sats." class="wp-image-24043" /></figure><!-- /wp:image -->
