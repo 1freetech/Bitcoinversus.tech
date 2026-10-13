@@ -1,9 +1,21 @@
 <!-- wp:paragraph -->
-<p><strong>Not today.</strong> Current quantum computers cannot break Bitcoin. But a sufficiently powerful, fault-tolerant quantum computer could eventually threaten the elliptic-curve signatures that protect many Bitcoin outputs.</p>
+<p>A quantum computer cannot hack Bitcoin today. The more useful question is whether a future fault-tolerant quantum computer could become powerful enough to recover Bitcoin private keys before the network has time to move to new cryptography.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Bitcoin uses secp256k1 for ECDSA and Schnorr signatures. Google Quantum AI reported in March 2026 that optimized versions of Shor’s algorithm may require fewer resources than earlier estimates to solve the 256-bit elliptic-curve problem. That would matter most when a Bitcoin public key is already exposed. Google therefore recommends migrating blockchains toward <a href="https://bitcoinversus.tech/2026/10/13/what-is-post-quantum-cryptography/">post-quantum cryptography</a>. <a href="https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/">Google Research’s paper summary</a> says viable defenses exist, but deployment takes time.</p>
+<p>In theory, the answer is yes. In practice, that machine does not exist yet, and Bitcoin’s quantum risk is narrower than the phrase “hack Bitcoin” suggests. The main threat is not that a quantum computer suddenly deletes the blockchain or turns off proof of work. It is that sufficiently advanced quantum hardware could attack the digital signatures that prove who is allowed to spend certain coins.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The biggest risk is Bitcoin’s signatures</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Bitcoin uses the secp256k1 elliptic curve for ECDSA and Schnorr signatures. Those systems are secure against ordinary computers because recovering a private key from a public key requires solving an elliptic-curve discrete logarithm problem that is computationally impractical at Bitcoin’s key sizes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Quantum computing changes that assumption. Shor’s algorithm can, in principle, solve the mathematical problem behind elliptic-curve signatures much faster than classical algorithms. In March 2026, <a href="https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/">Google Quantum AI published new resource estimates</a> for attacking the 256-bit elliptic-curve problem used by cryptocurrencies. Its researchers estimated that the computation could be performed with roughly 1,200–1,450 logical qubits, depending on the circuit design.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=9HYNiMVuNIg","type":"video","providerNameSlug":"youtube","responsive":true} -->
@@ -12,38 +24,70 @@ https://www.youtube.com/watch?v=9HYNiMVuNIg
 </div><figcaption class="wp-element-caption"><em>MIT DCI researcher Ethan Heilman discusses the difference between quantum panic and realistic Bitcoin risk.</em></figcaption></figure>
 <!-- /wp:embed -->
 
+<!-- wp:paragraph -->
+<p>That does not mean a 1,200-qubit machine can steal Bitcoin tomorrow. Logical qubits require heavy error correction and can consume many physical qubits. <a href="https://www.nist.gov/blogs/taking-measure/quantum-computers-may-put-internet-traffic-risk-nist-safeguarding-computers-new">NIST said in July 2026</a> that current quantum computers remain too small and unstable to threaten modern cryptography. The important change is that researchers are getting better at estimating the size of the future threat.</p>
+<!-- /wp:paragraph -->
+
 <!-- wp:embed {"url":"https://twitter.com/Blockstream/status/2027030134075560289","type":"rich","providerNameSlug":"x","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
 https://twitter.com/Blockstream/status/2027030134075560289
-</div><figcaption class="wp-element-caption"><em>Blockstream highlights SHRINCS, one of the post-quantum signature approaches being explored for Bitcoin.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>Bitcoin developers and researchers are already testing post-quantum signature approaches rather than waiting for the threat to become immediate.</em></figcaption></figure>
 <!-- /wp:embed -->
 
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Not every Bitcoin output is exposed in the same way</h2>
+<!-- /wp:heading -->
+
 <!-- wp:paragraph -->
-<p>The mining side is different. Bitcoin’s proof of work relies on <a href="https://bitcoinversus.tech/2026/10/11/what-is-a-hash/">SHA-256 hashing</a>. Grover’s algorithm offers a quadratic speedup against hashes, not the dramatic key-recovery attack Shor’s algorithm gives against elliptic-curve cryptography. That means quantum computing does not simply make today’s <a href="https://bitcoinversus.tech/2026/10/13/how-bitcoin-mining-moved-from-cpus-to-asics/">ASIC mining hardware</a> obsolete overnight.</p>
+<p>The distinction between a Bitcoin address and a public key matters here. Some output types hide the public key behind a hash until the owner spends the coins. Others expose a public key directly on-chain. A future quantum attacker would have an easier target when a spendable output already reveals the public key needed for a Shor-style attack.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That makes old pay-to-public-key outputs and some modern constructions more directly relevant to long-exposure risk. Outputs that reveal their key only when they are spent have a different problem: if a future quantum computer became fast enough, an attacker could potentially try to recover the private key during the period between transaction broadcast and confirmation. None of those attacks are practical with today’s quantum hardware.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Quantum computing does not simply break Bitcoin mining</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Bitcoin mining relies on <a href="https://bitcoinversus.tech/2026/10/11/what-is-a-hash/">SHA-256 hashing</a>, not elliptic-curve signatures. The relevant quantum algorithm is Grover’s algorithm, which offers a quadratic search advantage rather than Shor’s much more dramatic attack on public-key cryptography.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That distinction is important. A quantum miner could theoretically search proof-of-work space more efficiently, but that is not the same as instantly taking over Bitcoin. Mining remains a competition for valid hashes, blocks still have to satisfy consensus rules, and network difficulty can adjust as available hashrate changes. Quantum hardware would have to compete economically and operationally with enormous fleets of specialized <a href="https://bitcoinversus.tech/2026/10/13/how-bitcoin-mining-moved-from-cpus-to-asics/">SHA-256 ASICs</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=_LiCq8V8LPI","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=_LiCq8V8LPI
-</div><figcaption class="wp-element-caption"><em>A Bitcoin 2026 panel walks through possible post-quantum soft-fork paths, including BIP 360.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>A Bitcoin 2026 panel examines possible post-quantum upgrade paths and the engineering tradeoffs involved.</em></figcaption></figure>
 <!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Bitcoin has time to migrate—but not forever</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The Bitcoin development community is already debating possible defenses. <a href="https://github.com/bitcoin/bips/blob/master/bip-0360.mediawiki">BIP 360</a>, currently a draft, proposes Pay-to-Merkle-Root outputs that remove Taproot’s key-path spend and reduce long-exposure risk. <a href="https://github.com/bitcoin/bips/blob/master/bip-0361.mediawiki">BIP 361</a>, also a draft, describes a broader migration path that would eventually discourage and then restrict legacy ECDSA and Schnorr signatures after a post-quantum output type exists.</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://twitter.com/aakashgupta/status/2038972845695627576","type":"rich","providerNameSlug":"x","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
 https://twitter.com/aakashgupta/status/2038972845695627576
-</div><figcaption class="wp-element-caption"><em>Discussion around Google’s 2026 resource estimates shows why the migration timeline is getting more attention.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>Google’s 2026 resource estimates helped move the discussion from a distant theoretical risk toward concrete migration planning.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
-<p>Bitcoin developers are already discussing defenses. <a href="https://github.com/bitcoin/bips/blob/master/bip-0360.mediawiki">BIP 360</a> proposes Pay-to-Merkle-Root outputs that reduce long-exposure quantum risk, while broader post-quantum signature work continues.</p>
+<p>Neither proposal is an activated Bitcoin consensus change. They show that the problem is being treated as an engineering and migration issue rather than an unavoidable failure.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The practical answer is simple: quantum computing is a <strong>future migration problem, not a present Bitcoin hack</strong>. The largest risk is waiting too long to upgrade wallets and consensus rules after cryptographically relevant quantum computers become plausible.</p>
+<p>So, will quantum computing hack Bitcoin? <strong>Not with today’s machines.</strong> A future cryptographically relevant quantum computer could create a serious private-key theft problem if Bitcoin were still relying on vulnerable signatures when that day arrived. The network’s strongest defense is therefore not predicting the exact year quantum computers become dangerous. It is moving toward <a href="https://bitcoinversus.tech/2026/10/13/what-is-post-quantum-cryptography/">post-quantum cryptography</a> before the threat becomes operational.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
 <!-- wp:paragraph -->
@@ -51,7 +95,7 @@ https://twitter.com/aakashgupta/status/2038972845695627576
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":24358,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/image3.png?w=1024" alt="Bitcoin donation QR code requesting 5,000 sats for BitcoinVersus.Tech research initiatives." class="wp-image-24358"/></figure>
+<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/image3.png?w=1024" alt="Bitcoin donation QR code requesting 5,000 sats for BitcoinVersus.Tech research initiatives." class="wp-image-24358" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
