@@ -4,10 +4,10 @@ title: "BitFuFu’s Ethiopia Mining Deal Is at Risk"
 slug: bitfufu-ethiopia-mining-deal-risk
 status: publish
 published: 2026-10-13T18:19:37
-modified: 2026-10-13T18:25:07
+modified: 2026-10-13T19:14:55
 live_url: https://bitcoinversus.tech/2026/10/13/bitfufu-ethiopia-mining-deal-risk/
-featured_media: 24506
-featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitfufu-ethiopia-mining-cover-color-pencil-1200x630-1.jpg
+featured_media: 24523
+featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitfufu-ethiopia-mining-deal-risk-cover.jpg
 qr_media_id: 24043
 seo_title: "BitFuFu’s Ethiopia Mining Deal Is at Risk"
 seo_description: "BitFuFu says its proposed Ethiopia mining acquisition may fail after a power-supplier dispute involving an 80 MW site and 13,700 deployed S19 miners."
