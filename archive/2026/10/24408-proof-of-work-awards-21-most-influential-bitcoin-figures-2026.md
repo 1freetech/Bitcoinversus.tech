@@ -329,23 +329,43 @@ https://www.youtube.com/watch?v=kerfDFUdFXk
 <p><strong>Matt Schultz — Chairman and CEO, CleanSpark.</strong> CleanSpark reported 50 EH/s of operational hashrate and 1.8 GW under contract in March while using Bitcoin mining cash flow to fund a broader power-and-compute strategy.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=TYO5KzHFpr8","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=TYO5KzHFpr8
+</div></figure>
+<!-- /wp:embed --><!-- wp:paragraph -->
 <p><strong>Matt Cole — Chairman and CEO, Strive.</strong> Strive reported 32,773 BTC as of October 9 after adding 3,311 BTC in one week, making it one of the largest public Bitcoin treasury companies.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=LADDAupqqHI","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=LADDAupqqHI
+</div></figure>
+<!-- /wp:embed --><!-- wp:paragraph -->
 <p><strong>Adam Back — Co-Founder and CEO, Blockstream.</strong> Back remains one of Bitcoin's most important long-term technical and business figures through Hashcash, Blockstream, Liquid and infrastructure work, even if the top 21 was weighted toward people with especially distinct new milestones in 2026.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=yCoP940I5kk","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=yCoP940I5kk
+</div></figure>
+<!-- /wp:embed --><!-- wp:paragraph -->
 <p><strong>Nayib Bukele — President of El Salvador.</strong> Bukele's historic role in sovereign Bitcoin adoption still shapes the global policy conversation, but this ranking intentionally weighted new work performed during 2026 more heavily than legacy impact.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=hOFErQLbd8k","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=hOFErQLbd8k
+</div></figure>
+<!-- /wp:embed --><!-- wp:paragraph -->
 <p><strong>Abubakar Nur Khalil — Bitcoin Core Contributor and CEO, Recursive Capital.</strong> Khalil remains an important bridge between open-source Bitcoin development, education, capital and Africa's growing Bitcoin ecosystem.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.75rem"}}} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=0t7gJF6Pb9s","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=0t7gJF6Pb9s
+</div></figure>
+<!-- /wp:embed --><!-- wp:paragraph {"style":{"typography":{"fontSize":"0.75rem"}}} -->
 <p style="font-size:0.75rem"><em>This is an opinion-editorial. The rankings are discretionary and represent BitcoinVersus.Tech's assessment of documented influence and contribution from January 1 through October 13, 2026. Ranking an individual does not constitute endorsement of that person's politics, business practices, investment views or every position they have taken.</em></p>
 <!-- /wp:paragraph -->
 
