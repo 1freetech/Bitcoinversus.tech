@@ -1,0 +1,61 @@
+<!-- wp:paragraph -->
+<p><strong>Post-quantum cryptography (PQC)</strong> is a new generation of classical cryptographic algorithms designed to remain secure even if large quantum computers become capable of attacking today’s public-key systems.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The issue is mainly public-key cryptography. RSA and elliptic-curve systems protect key exchange and digital signatures across the modern web, including the <a href="https://bitcoinversus.tech/2026/10/08/networking-what-is-https-tls-certificates-secure-web/">TLS connections behind HTTPS</a>. A sufficiently capable quantum computer could use algorithms such as Shor’s to make those mathematical problems much easier to solve.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=DHIyAbLuQyg","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=DHIyAbLuQyg
+</div><figcaption class="wp-element-caption"><em>Cloudflare explains why the post-quantum migration is moving from research into active Internet infrastructure planning.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.nist.gov/news-events/news/2024/08/announcing-approval-three-federal-information-processing-standards-fips">NIST finalized its first three PQC standards in 2024</a>: <strong>ML-KEM</strong> for key establishment, plus <strong>ML-DSA</strong> and <strong>SLH-DSA</strong> for digital signatures. These use mathematical problems believed to be difficult for both classical and quantum computers.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://twitter.com/GoogleVRP/status/1792940917147488555","type":"rich","providerNameSlug":"x","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/GoogleVRP/status/1792940917147488555
+</div><figcaption class="wp-element-caption"><em>Google’s security team highlights hybrid deployment as a practical way to migrate without relying on a single new algorithm immediately.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p>The urgency comes partly from “harvest now, decrypt later”: encrypted traffic can be recorded today and potentially decrypted years later. That is why browsers, servers and certificate systems are beginning to add PQC before a cryptographically relevant quantum computer exists. BitcoinVersus.Tech previously covered <a href="https://bitcoinversus.tech/2026/10/03/cloudflare-public-ca-post-quantum-merkle-tree-certificates/">Cloudflare’s post-quantum certificate work</a> and how a normal <a href="https://bitcoinversus.tech/2026/10/06/easy-tech-read-what-happens-when-you-type-a-website-into-your-browser/">browser request depends on multiple security layers</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=YJ00O4gBs0I","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=YJ00O4gBs0I
+</div><figcaption class="wp-element-caption"><em>IBM Research discusses the NIST standards and the transition toward quantum-safe systems.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p>PQC does not require a quantum computer. It runs on conventional hardware. The challenge is migration: larger keys, new implementations, compatibility testing and replacing old cryptography across enormous software and hardware inventories.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://blog.cloudflare.com/post-quantum-roadmap/">Cloudflare says it now targets 2029 for full post-quantum security</a>, including authentication. The broader lesson is simple: PQC is less about waiting for quantum computers and more about replacing vulnerable cryptography before they become practical.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph -->
+<p><em>BitcoinVersus.Tech Editor's Note:<br>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24358,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/image3.png?w=1024" alt="Bitcoin donation QR code requesting 5,000 sats for BitcoinVersus.Tech research initiatives." class="wp-image-24358"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>
+<!-- /wp:paragraph -->
