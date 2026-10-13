@@ -4,7 +4,7 @@ title: "Ubitium Raises $14 Million for Physical AI Chip"
 slug: ubitium-14-million-physical-ai-processor
 status: publish
 published: 2026-10-13T18:09:32
-modified: 2026-10-13T18:09:32
+modified: 2026-10-13T18:13:20
 live_url: https://bitcoinversus.tech/2026/10/13/ubitium-14-million-physical-ai-processor/
 featured_media: 24471
 featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/ubitium-physical-ai-processor-cover-1200x630-1.jpg
@@ -39,14 +39,14 @@ https://www.youtube.com/watch?v=1CGRkxZcEx8
 <p>That approach is different from building a system around separate CPUs, DSPs, NPUs and other accelerators. Ubitium describes its design as a coarse-grained reconfigurable architecture whose processing elements can change roles at runtime. The company also uses unified memory and standard RISC-V tools, aiming to reduce chip-to-chip data movement and the software work required to coordinate multiple processors.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://twitter.com/risc_v","type":"rich","providerNameSlug":"twitter","responsive":true} -->
-<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
-https://twitter.com/risc_v
+<!-- wp:embed {"url":"https://www.reddit.com/r/RuntimeWire/comments/1x4qk5y/ubitium_raises_14m_to_put_sensing_ai_and_control/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
+https://www.reddit.com/r/RuntimeWire/comments/1x4qk5y/ubitium_raises_14m_to_put_sensing_ai_and_control/
 </div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
-<p><em>RISC-V International is the nonprofit home of the open instruction-set architecture Ubitium uses for its processor toolchain.</em></p>
+<p><em>A Reddit discussion posted today tracks Ubitium’s $14 million funding round and its attempt to combine sensing, AI inference and control on one processor.</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
