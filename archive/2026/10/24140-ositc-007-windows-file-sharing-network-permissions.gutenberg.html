@@ -1,0 +1,73 @@
+<!-- wp:paragraph --><p>Windows file sharing allows users to access folders over a network while administrators control who can connect, read, modify, or administer data. This lesson follows <a href='https://bitcoinversus.tech/2026/10/12/ositc-006-windows-users-groups-permissions/'>OSITC.006: Windows Users, Groups, and Permissions</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Learning objectives</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li>Explain SMB shares and UNC paths.</li><li>Distinguish NTFS permissions from share permissions.</li><li>Calculate effective access across both permission layers.</li><li>Diagnose authentication, name resolution, firewall, and access-control failures.</li><li>Apply least privilege and safe auditing.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2>SMB and UNC paths</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Server Message Block (SMB) is the primary Windows file-sharing protocol. A Universal Naming Convention (UNC) path identifies a remote resource, for example <code>\\fileserver\engineering</code>. Modern Windows uses SMB 2 and SMB 3 variants; SMB 1 is obsolete and should remain disabled unless an exceptional, controlled legacy requirement has been formally approved.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Share permissions versus NTFS permissions</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A shared folder can have both share-level permissions and NTFS access-control entries. When accessed across the network, the effective permissions are constrained by both layers. A user allowed to modify files at the share level cannot modify a file when NTFS grants only Read. Conversely, an NTFS Modify grant does not overcome a share-level Read restriction.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Windows access evaluation is more nuanced than simply saying 'deny always wins': explicit and inherited access-control entries, group membership, ownership, privileges, and the ordering of access checks matter. Use the Advanced Security settings' Effective Access view for investigation.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Groups and least privilege</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Assign access to security groups representing job functions instead of maintaining individual exceptions. A common design gives a department's readers Read and a smaller editors group Modify, while reserving Full Control for administrators. Avoid granting broad Everyone access without a documented reason and security review.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Creating a share</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li>Create a folder on an NTFS volume and confirm its owner and existing ACL.</li><li>Open Properties → Sharing → Advanced Sharing, enable sharing, and assign a clear share name.</li><li>Configure share permissions and NTFS permissions deliberately.</li><li>Test with a standard user who belongs to each intended group.</li><li>Confirm both allowed actions and denied actions; document results.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2>Useful PowerShell commands</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>On an authorized Windows system, inspect shares with <code>Get-SmbShare</code> and share access with <code>Get-SmbShareAccess -Name Engineering</code>. Inspect folder ACLs with <code>Get-Acl 'C:\Shares\Engineering' | Format-List</code>. Check network connections with <code>Get-SmbConnection</code>. These commands inspect different layers; none by itself proves that a specific user can open or modify a particular file.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Troubleshooting access denied</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li>Verify the user identity and the account actually used for the SMB session.</li><li>Confirm the UNC server and share names, DNS resolution, and basic reachability.</li><li>Check SMB service availability and the approved firewall rules, including TCP port 445.</li><li>Inspect share permissions, NTFS permissions, group membership, and inherited ACLs.</li><li>Check whether a file is locked, encrypted, offline, or blocked by other security controls.</li><li>Re-test with the affected standard user and record the exact error message.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2>Security considerations</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Prefer current SMB versions, patch systems, disable guest access where inappropriate, and require authentication. SMB signing helps protect message integrity; SMB encryption can protect data in transit when supported and configured. Do not expose SMB directly to the public internet. Use approved VPN or zero-trust access pathways for remote users.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=fJHFmt6F0Rc&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>File and share permissions in Windows Server, demonstrated by Eli the Computer Guy (legacy Windows Server 2012 interface; principles remain relevant).</em></p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=OXEd8usJGn8&amp;w=900&amp;h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>BurningIceTech explains NTFS permissions, inheritance, and shared folders.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/sysadmin/comments/1amcswd/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Administrator discussion distinguishing SMB share permissions from NTFS permissions.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/sysadmin/comments/1axoi4w/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Administrator discussion of share-level permissions, NTFS access, and the risks of overbroad access. Community views are not official security guidance.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Practical lab</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>In an isolated Windows test environment, create a shared folder called Engineering. Create a Readers group and an Editors group. Configure Readers to read files and Editors to create and change files, without giving either group administrative control. Verify effective permissions using separate standard accounts. Record each account's result for listing, opening, creating, editing, and deleting a test file.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Knowledge check</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li>What protocol normally provides Windows file sharing?</li><li>Why can a user have share Modify but still be unable to edit a file?</li><li>What is the purpose of a UNC path?</li><li>Why should access be granted to groups rather than many individuals?</li><li>Which PowerShell command lists SMB share permissions?</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2>Answer guide</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li>SMB.</li><li>NTFS permissions may restrict editing despite the share grant.</li><li>It identifies a network resource by server and share.</li><li>Groups simplify administration, auditing, and least-privilege enforcement.</li><li>Get-SmbShareAccess.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2>Primary documentation and previous lessons</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>See Microsoft's <a href='https://learn.microsoft.com/en-us/windows-server/storage/file-server/file-server-smb-overview'>SMB overview</a>, <a href='https://learn.microsoft.com/en-us/powershell/module/smbshare/get-smbshareaccess'>Get-SmbShareAccess documentation</a>, and <a href='https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-security'>SMB security guidance</a>. Review <a href='https://bitcoinversus.tech/2026/10/12/ositc-006-windows-users-groups-permissions/'>OSITC.006</a> and <a href='https://bitcoinversus.tech/2026/10/10/ositc-005-windows-services-fundamentals-service-control-manager-startup-types-dependencies-services-msc-and-verification/'>OSITC.005</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em><strong>BitcoinVersus.Tech Editor's Note:</strong><br>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Bitcoin donation QR code for 5,000 sats." class="wp-image-24043" /></figure><!-- /wp:image -->
