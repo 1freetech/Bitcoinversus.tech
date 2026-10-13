@@ -1,0 +1,73 @@
+<!-- wp:paragraph --><p>IPv6 access control lists (ACLs) filter traffic using IPv6 source and destination prefixes, protocols, and transport-layer ports. This lesson builds on <a href='https://bitcoinversus.tech/2026/10/12/osntc-028-ipv4-access-control-lists-standard-extended-wildcard-masks-placement-verification/'>OSNTC.028: IPv4 Access Control Lists</a>. It emphasizes how IPv6 filtering differs from IPv4 and how to avoid accidentally disrupting basic network operation.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Learning objectives</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li>Recognize IPv6 prefix notation and named ACL syntax.</li><li>Apply an IPv6 ACL in the intended interface direction.</li><li>Explain first-match processing and the implicit deny.</li><li>Identify essential ICMPv6 functions.</li><li>Validate security controls without confusing stateless ACLs with stateful firewalls.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2>IPv6 prefixes and traffic matches</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>An IPv6 address has 128 bits. A prefix such as <code>2001:db8:10::/64</code> matches the first 64 bits; the documentation prefix <code>2001:db8::/32</code> is reserved for examples and should not be deployed as real public addressing. IPv6 ACLs typically match source and destination prefixes directly rather than using IPv4 wildcard masks.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Named ACLs and ordered rules</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>On supported Cisco IOS platforms, create a named IPv6 ACL using <code>ipv6 access-list LAB-V6</code>. Add specific permit or deny entries for the intended flows. An illustrative rule is <code>permit tcp 2001:db8:10::/64 host 2001:db8:20::10 eq 443</code>. Syntax and available keywords vary by device family and software version; consult the target platform documentation.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>ACLs generally evaluate entries in order and stop at the first match. Most have an implicit deny at the end, so a narrow permit without additional provisions can unintentionally block legitimate traffic. Some IPv6 ACL implementations include implicit Neighbor Discovery-related permits; behavior must be checked against the actual platform and ACL type.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=DR5ph1jY0Lk&w=900&h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Practical Networking demonstrates IPv6 ACL syntax, matching, sequence ordering, and configuration.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Applying the ACL</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>On Cisco IOS interfaces that support this syntax, <code>ipv6 traffic-filter LAB-V6 in</code> applies the named ACL to incoming IPv6 packets on that interface. The word <code>in</code> describes the direction relative to the interface, not a blanket inbound-from-the-internet rule. Trace the actual packet path before deployment.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=rqX8JaN02cg&w=900&h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Practical Networking shows how IPv4 and IPv6 ACLs attach to interfaces and why direction matters.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>ICMPv6 is not optional noise</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>IPv6 depends on ICMPv6 for essential functions, including Neighbor Discovery and Path MTU Discovery. Blanket blocking can break neighbor resolution, router discovery, and delivery of packets across links with different maximum transmission units. Design explicit policy that preserves necessary ICMPv6 types and codes for the applicable security zone. Do not blindly allow all ICMPv6 from untrusted sources either; evaluate the environment.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>ACLs versus stateful firewalls</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A traditional router ACL is typically stateless: permitting outbound traffic does not automatically permit every corresponding return packet. Stateful firewalls track connections and can enforce return-traffic policy differently. Both have legitimate roles, but neither should be confused with address translation. IPv6 generally does not require NAT for ordinary end-to-end addressing.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/networking/comments/cqa3lv[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Network operators discuss where stateless ACLs are appropriate and when stateful inspection is preferable.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Dual-stack risks</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>In dual-stack networks, an IPv4 security policy does not automatically protect IPv6. Endpoints may use IPv6 link-local connectivity within a VLAN even when no global IPv6 routing is configured. Inventory both protocols and test endpoint, switch, and firewall behavior.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/networking/comments/1e9jelr/being_asked_to_block_ipv6/[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Administrators discuss the difference between disabling routed IPv6 and controlling local IPv6 communications.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Verification workflow</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li>Record the intended source, destination, protocol, port, interface, and direction.</li><li>Back up the current configuration and establish an approved rollback path.</li><li>Apply the minimum policy in a test environment before production.</li><li>Inspect <code>show ipv6 access-list</code> and the interface configuration, using the commands supported by your platform.</li><li>Test permitted and denied traffic separately, including ICMPv6 and return paths.</li><li>Check counters and logs, while remembering that hardware offload may affect visibility.</li><li>Verify IPv4 and IPv6 behavior independently on dual-stack hosts.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2>Practice exercise</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A lab contains clients on <code>2001:db8:10::/64</code> and a server at <code>2001:db8:20::10</code>. Draft a policy allowing TCP 443 from the client prefix to that server while blocking other unwanted inter-subnet application traffic. Document the ICMPv6 exceptions required by your device and topology. Apply the policy in the correct direction and prove both successful and blocked test cases.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Knowledge check and answers</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li><strong>What does /64 mean?</strong> The first 64 address bits identify the prefix.</li><li><strong>Do IPv6 ACLs use IPv4 wildcard masks?</strong> Typically no; they use IPv6 prefixes.</li><li><strong>What does an interface inbound ACL inspect?</strong> Packets entering that interface.</li><li><strong>Why avoid a blanket ICMPv6 deny?</strong> It can break Neighbor Discovery and Path MTU Discovery.</li><li><strong>Does an ACL automatically track return sessions?</strong> A conventional stateless ACL does not.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2>Primary documentation</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Review <a href='https://www.rfc-editor.org/rfc/rfc4443'>RFC 4443 (ICMPv6)</a>, <a href='https://www.rfc-editor.org/rfc/rfc4861'>RFC 4861 (Neighbor Discovery)</a>, and <a href='https://www.rfc-editor.org/rfc/rfc8200'>RFC 8200 (IPv6 Specification)</a>. For implementation, use your switch or router vendor's ACL documentation for the exact hardware and software version.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Related lessons</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li><a href='https://bitcoinversus.tech/2026/10/12/osntc-028-ipv4-access-control-lists-standard-extended-wildcard-masks-placement-verification/'>OSNTC.028: IPv4 ACLs</a></li><li><a href='https://bitcoinversus.tech/2026/10/11/osntc-027-nat-pat-private-public-static-dynamic-overload-verification/'>OSNTC.027: NAT and PAT</a></li><li><a href='https://bitcoinversus.tech/2026/10/10/osntc-026-dns-troubleshooting-resolver-settings-nslookup-dig-nxdomain-servfail-packet-capture/'>OSNTC.026: DNS Troubleshooting</a></li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p><em><strong>BitcoinVersus.Tech Editor's Note:</strong><br>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Bitcoin donation QR code for 5,000 sats." class="wp-image-24043" /></figure><!-- /wp:image -->
