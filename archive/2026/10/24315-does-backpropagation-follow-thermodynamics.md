@@ -4,7 +4,7 @@ title: "Does Backpropagation Follow Thermodynamics?"
 slug: does-backpropagation-follow-thermodynamics
 status: publish
 published: 2026-10-13T11:10:11
-modified: 2026-10-13T11:10:11
+modified: 2026-10-13T11:40:54
 live_url: https://bitcoinversus.tech/2026/10/13/does-backpropagation-follow-thermodynamics/
 featured_media: 24311
 featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/backpropagation-thermodynamics-cover-1200x630-1.jpg
@@ -35,14 +35,14 @@ https://twitter.com/_yusufknl/status/2109689152895902038
 <p>There is also a technical mix-up. Backpropagation and gradient descent are not the same thing. Backpropagation efficiently computes derivatives of a network’s loss with respect to its weights using the chain rule. Gradient descent then uses those derivatives to update the weights. <a href="https://www.teach.cs.toronto.edu/~csc311notes/neural_networks/backpropagation.html">University of Toronto course notes derive backpropagation directly from the chain rule</a>.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=VIRCybGgHts","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=25zD5qJHYsk","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=VIRCybGgHts
+https://www.youtube.com/watch?v=25zD5qJHYsk
 </div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
-<p><em>In this Stanford seminar, Geoffrey Hinton discusses backpropagation and the harder question of whether biological brains could implement something like it.</em></p>
+<p><em>Stanford CS231N explains neural networks and backpropagation, including how gradients are computed during training.</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -51,6 +51,16 @@ https://www.youtube.com/watch?v=VIRCybGgHts
 
 <!-- wp:paragraph -->
 <p>Thermodynamics is still genuinely useful in machine learning. Researchers have used Fokker–Planck equations, entropy production and fluctuation theorems to study stochastic gradient descent. A <a href="https://arxiv.org/abs/2306.03521">2023 paper on machine learning in and out of equilibrium</a> describes “close parallels” between SGD and physical processes and analyzes entropy production in parameter space. That is a real connection, but it is not the same as proving that backpropagation is the second law.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=tIeHLnjs5U8","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=tIeHLnjs5U8
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>3Blue1Brown walks through the calculus of backpropagation and shows how the chain rule propagates gradients backward through a neural network.</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
