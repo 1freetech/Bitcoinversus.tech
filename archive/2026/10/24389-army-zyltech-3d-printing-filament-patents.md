@@ -15,9 +15,9 @@ status: publish
 <p>This is a licensing step, not a new patent grant or a finished-product announcement. The portfolio includes U.S. Patents 10,968,539, 11,001,945 and 11,566,349, plus published applications 2022/0033998 and 2025/028952. The basic engineering idea is to combine materials with different thermal or flow behavior inside one filament, allowing one phase to preserve geometry while another can flow and strengthen bonding during printing or post-processing.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://twitter.com/RiceUNews/status/2044053813074555369","type":"rich","providerNameSlug":"twitter","responsive":true} -->
-<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">https://twitter.com/RiceUNews/status/2044053813074555369</div></figure>
-<!-- /wp:embed -->
+<!-- wp:shortcode -->
+[tweet https://twitter.com/RiceUNews/status/2044053813074555369]
+<!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->
 <p><em>Rice University’s 2026 post shows another materials-focused direction in additive manufacturing. It is broader 3D-printing context and is not part of the Army licensing action.</em></p>
@@ -27,9 +27,9 @@ status: publish
 <p>The technology also has fresh test data behind it. A <a href="https://arl.devcom.army.mil/arlreport/arl-tr-10414/">September 1 DEVCOM Army Research Laboratory report</a> tested a dual-material ABS+TPE core-shell filament at −40 °C. The researchers reported that it and a PCPBT material showed unusually high cold-weather toughness, with cold in-plane impact strength approaching nearly 10 times that of a benchmark injection-molded nylon part.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=_sj_8LUyg4Q","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=_sj_8LUyg4Q</div></figure>
-<!-- /wp:embed -->
+<!-- wp:html -->
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%">[youtube https://www.youtube.com/watch?v=_sj_8LUyg4Q]</div>
+<!-- /wp:html -->
 
 <!-- wp:paragraph -->
 <p><em>A hands-on look at ZYLtech filament provides company and material context for the planned license.</em></p>
