@@ -1,0 +1,103 @@
+<!-- wp:paragraph -->
+<p>SNMP and TCP/IP are often mentioned in the same networking conversations, but they do completely different jobs. <strong>TCP/IP is the communication foundation of the network. SNMP is a management protocol that normally operates over that foundation.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A switch, router, server or ASIC miner can have a valid IP address and communicate perfectly over TCP/IP without using SNMP at all. SNMP becomes useful when an administrator wants a monitoring system to ask that device questions such as: Are you online? How long have you been running? Is an interface down? How many packets have crossed this port? Is the temperature rising?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=Lq7j-QipNrI","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=Lq7j-QipNrI
+</div><figcaption class="wp-element-caption"><em>CertBros explains SNMP managers, agents, MIBs, OIDs, polling and notifications.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">TCP/IP moves the traffic</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>TCP/IP is not one protocol. It is a suite of networking protocols built around technologies such as IP, TCP, UDP and ICMP. IP identifies and routes packets between networks. TCP can provide reliable, ordered delivery between applications. UDP provides a lighter connectionless transport. Other application protocols then ride on top of those services.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That distinction is why comparing SNMP directly with TCP/IP is a little like comparing a monitoring application with the road system it uses. The roads move the traffic; the monitoring application uses those roads for a specific purpose.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=OTwp3xtd4dg","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=OTwp3xtd4dg
+</div><figcaption class="wp-element-caption"><em>The TCP/IP model places application protocols above transport and Internet-layer services.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">SNMP monitors the devices</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>SNMP stands for <strong>Simple Network Management Protocol</strong>. In a typical deployment, a network management system polls an SNMP agent running on a device. The agent exposes management information through a Management Information Base, or MIB, where individual values are identified by Object Identifiers, or OIDs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.Tech’s earlier <a href="https://bitcoinversus.tech/2026/10/07/networking-what-is-snmp-bitcoin-mining-switch-pdu-monitoring/">SNMP guide</a> shows the practical side of this: switches, PDUs and other infrastructure can expose uptime, interface counters, power readings, temperatures and alarms to a central monitoring system.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.reddit.com/r/sysadmin/comments/1ux522g/do_people_still_use_snmp/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
+https://www.reddit.com/r/sysadmin/comments/1ux522g/do_people_still_use_snmp/
+</div><figcaption class="wp-element-caption"><em>A 2026 sysadmin discussion shows why SNMP remains common for switches, power rails, printers and appliances where installing an agent is impractical.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Where UDP 161 and 162 fit</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>On ordinary IP networks, SNMP most commonly uses UDP rather than TCP. Managers normally send polling requests to an agent on <strong>UDP port 161</strong>. Devices can send traps or informs toward a management system on <strong>UDP port 162</strong>. The packet still needs IP addressing, routing and a functioning network path before the SNMP exchange can happen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This is also why basic troubleshooting should start below SNMP. Confirm the device has the correct IP address, route, VLAN and reachability before assuming an OID or MIB is broken. BitcoinVersus.Tech’s <a href="https://bitcoinversus.tech/2026/10/04/osntc-014-tcp-udp-transport-basics/">TCP and UDP transport guide</a> and <a href="https://bitcoinversus.tech/2026/10/08/what-is-network-socket-ip-address-port-tcp-udp/">network socket explainer</a> cover those lower layers in more detail.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.reddit.com/r/sysadmin/comments/1hskwvj/monitoring_snmpv3_ilo_interface/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
+https://www.reddit.com/r/sysadmin/comments/1hskwvj/monitoring_snmpv3_ilo_interface/
+</div><figcaption class="wp-element-caption"><em>A practical SNMPv3 discussion illustrates how authentication, encryption and UDP ports 161/162 appear in real monitoring deployments.</em></figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">SNMPv3 adds the security layer SNMP needed</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The security difference between SNMP versions matters. Older SNMPv1 and SNMPv2c deployments commonly rely on community strings and do not provide the same message-level authentication and privacy protections as SNMPv3. The <a href="https://datatracker.ietf.org/doc/html/rfc3411">IETF SNMP architecture</a> defines the modular management framework, while <a href="https://datatracker.ietf.org/doc/html/rfc3414">RFC 3414</a> defines the SNMPv3 User-based Security Model for authentication and privacy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Question</th><th>TCP/IP</th><th>SNMP</th></tr></thead><tbody><tr><td>Main job</td><td>Moves data across networks</td><td>Monitors and manages devices</td></tr><tr><td>Scope</td><td>Protocol suite</td><td>Application-layer protocol</td></tr><tr><td>Typical transport</td><td>Includes TCP and UDP</td><td>Usually UDP over IP</td></tr><tr><td>Common ports</td><td>Depends on the application</td><td>UDP 161 and 162</td></tr><tr><td>Examples</td><td>Routing, web traffic, sockets, transport</td><td>Interface counters, uptime, temperature, alarms</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>The simplest way to remember the difference is this: <strong>TCP/IP makes network communication possible; SNMP uses that communication to tell you what the network equipment is doing.</strong> If TCP/IP is broken, SNMP usually cannot reach the device. If TCP/IP is working but SNMP is misconfigured, the device can still communicate normally while remaining invisible to the monitoring platform.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph -->
+<p><em>BitcoinVersus.Tech Editor's Note:<br>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24358,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/image3.png?w=1024" alt="Bitcoin donation QR code requesting 5,000 sats for BitcoinVersus.Tech research initiatives." class="wp-image-24358"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>
+<!-- /wp:paragraph -->
