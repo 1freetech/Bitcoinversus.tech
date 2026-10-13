@@ -1,0 +1,75 @@
+<!-- wp:paragraph --><p>A process pool lets Python run independent work in separate processes. But logging across those processes requires more care than ordinary single-process logging: a normal file handler is not automatically safe for simultaneous writes by multiple workers. This lesson extends <a href='https://bitcoinversus.tech/2026/10/12/ospython-038-multiprocessing-logging/'>OSPython.038: Multiprocessing Logging</a> to <code>concurrent.futures.ProcessPoolExecutor</code>.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Learning objectives</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li>Identify why direct multi-process writes to one log file are risky.</li><li>Use a manager-backed queue to carry worker log records.</li><li>Set up QueueHandler in pool workers and QueueListener in the parent process.</li><li>Ensure clean startup, shutdown, and exception handling.</li><li>Avoid queue recursion and inadvertent loss of records.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2>The process-pool logging problem</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A <code>ProcessPoolExecutor</code> manages worker processes, often using spawn-compatible startup. Each worker has its own Python interpreter state and logger configuration. Passing a logger object into a worker does not establish a reliable shared logging destination. The Python Logging Cookbook recommends collecting records centrally rather than having separate processes write to the same ordinary file handler.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=jxmzY9soFXg&w=900&h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Corey Schafer explains Python loggers, handlers, and formatters—the building blocks used in the process-pool design.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>A queue-based design</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A common architecture uses one queue shared by the pool workers. Each worker attaches <code>logging.handlers.QueueHandler(queue)</code> to its logger. In the parent process, <code>logging.handlers.QueueListener(queue, file_handler)</code> consumes records and writes them through a single destination handler. This separates producing records from formatting and writing them.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>For <code>ProcessPoolExecutor</code>, Python's cookbook specifically illustrates use of a <code>multiprocessing.Manager().Queue()</code>, which can be shared with pool workers. Do not substitute a thread-only <code>queue.Queue</code>. Be cautious with <code>multiprocessing.SimpleQueue</code>, which the logging handlers documentation advises against for multiprocessing.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Minimal implementation steps</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li>Define a top-level <code>configure_worker(queue)</code> function so spawn-based platforms can import it.</li><li>In that function, attach a <code>QueueHandler</code> to the intended application logger and set its level.</li><li>Create a <code>multiprocessing.Manager()</code> in the parent and obtain <code>manager.Queue()</code>.</li><li>Create a file or console handler in the parent, then construct and start <code>QueueListener</code>.</li><li>Construct <code>ProcessPoolExecutor(initializer=configure_worker, initargs=(queue,))</code>.</li><li>Submit jobs and consume their futures to surface exceptions.</li><li>After the executor has shut down and workers have finished, stop the listener before closing the manager and its queue.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2>Illustrative code fragments</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Parent process: <code>with multiprocessing.Manager() as manager:</code> followed by <code>q = manager.Queue()</code>, <code>listener = QueueListener(q, StreamHandler())</code>, and <code>listener.start()</code>. Then create <code>ProcessPoolExecutor(initializer=configure_worker, initargs=(q,))</code>. Stop the listener in a <code>finally</code> clause after the executor finishes. Worker initializer: <code>logging.getLogger('app').addHandler(QueueHandler(q))</code> and <code>logging.getLogger('app').setLevel(logging.INFO)</code>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>These fragments explain the configuration sequence rather than presenting a complete copy-paste program. A complete implementation must import the named classes, define the worker and initializer at module scope, and place process-pool creation under <code>if __name__ == '__main__':</code>. On Windows and spawn-based environments this guard is essential.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=-ARI4Cz-awo&w=900&h=506]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Corey Schafer covers logging levels, file output, and formatting—useful when choosing the destination handler for centralized process-pool logs.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Avoid duplicate and recursive logging</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>If the same logger already has a local StreamHandler or FileHandler, adding a QueueHandler can duplicate output. Review handler inheritance and propagation before configuration. The multiprocessing module has its own internal logger: routing its queue-operation DEBUG messages through a QueueHandler that writes to the same multiprocessing queue can cause recursion or deadlock. Keep the internal multiprocessing logger separate from the application queue pipeline.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>What happens when workers fail?</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A task exception is reported through its Future when you call <code>future.result()</code>; the logging pipeline is not a substitute for handling exceptions. Workers that terminate abruptly may lose queued messages that have not been delivered. Design shutdown order carefully, avoid relying on daemonized worker cleanup, and test crash behavior explicitly.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/learnpython/comments/1hpvfe5[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Developers discuss the challenges of concurrent process logging and the tradeoffs between locks, queues, and separate files.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Performance and reliability</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Queue-based logging reduces contention at the destination, but queue serialization, inter-process communication, and formatting still consume resources. High-volume systems may need bounded queues, backpressure policy, or a dedicated logging service. A non-blocking enqueue can fail when a bounded queue is full; define whether dropping low-priority records is acceptable and monitor losses.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/learnpython/comments/osqry4[/embed]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>A Python community troubleshooting thread describes why logging configuration may not automatically carry across worker processes.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Hands-on exercise</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li>Create a pool with three workers, each logging its process name and task number.</li><li>Route every worker's messages through one manager-backed queue.</li><li>Add a formatter containing timestamp, process name, log level, and message.</li><li>Deliberately raise an exception in one task; capture it with <code>future.result()</code>.</li><li>Verify that the listener shuts down cleanly and all completed tasks' expected messages appear once.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2>Knowledge check and answers</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li><strong>Why not use one FileHandler directly from all workers?</strong> It does not guarantee safe coordinated cross-process writes.</li><li><strong>Which handler sends records into a queue?</strong> QueueHandler.</li><li><strong>Which component consumes queued records?</strong> QueueListener.</li><li><strong>Why use Manager().Queue() in this pool example?</strong> It provides a queue object that can be shared with process-pool workers.</li><li><strong>Why call future.result()?</strong> To obtain results and surface worker exceptions.</li><li><strong>What is a queue-recursion hazard?</strong> Routing the multiprocessing internal logger's queue DEBUG messages into the same queue.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2>Primary documentation</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>See the <a href='https://docs.python.org/3/howto/logging-cookbook.html'>Python Logging Cookbook</a>, <a href='https://docs.python.org/3/library/logging.handlers.html'>QueueHandler and QueueListener documentation</a>, and <a href='https://docs.python.org/3/library/concurrent.futures.html#processpoolexecutor'>ProcessPoolExecutor reference</a>. Python's documentation provides a more complete tested example than the fragments in this lesson.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Related lessons</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul><li><a href='https://bitcoinversus.tech/2026/10/12/ospython-038-multiprocessing-logging/'>OSPython.038: Multiprocessing Logging</a></li><li><a href='https://bitcoinversus.tech/2026/10/11/ospython-037-queuehandler-queuelistener-non-blocking-logging-background-queues/'>OSPython.037: QueueHandler and QueueListener</a></li><li><a href='https://bitcoinversus.tech/2026/10/11/ospython-036-logging-configuration-dictconfig-handlers-formatters-loggers-json/'>OSPython.036: Logging Configuration</a></li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p><em><strong>BitcoinVersus.Tech Editor's Note:</strong><br>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Bitcoin donation QR code for 5,000 sats." class="wp-image-24043" /></figure><!-- /wp:image -->
