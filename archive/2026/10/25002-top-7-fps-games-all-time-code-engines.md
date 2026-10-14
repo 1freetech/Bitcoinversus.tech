@@ -2,7 +2,7 @@
 post_id: 25002
 title: "Top 7 FPS Games of All Time — and the Code Behind Them"
 live_url: "https://bitcoinversus.tech/2026/10/14/top-7-fps-games-all-time-code-engines/"
-featured_media_id: 0
+featured_media_id: 25013
 status: publish
 ---
 
@@ -90,6 +90,12 @@ status: publish
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=tEvGIeZ5gl8</div></figure>
 <!-- /wp:embed -->
 
+<!-- wp:embed {"url":"https://twitter.com/Halo/status/2063701216832508135","type":"rich","providerNameSlug":"x","responsive":true,"className":"wp-block-embed-x"} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/Halo/status/2063701216832508135
+</div></figure>
+<!-- /wp:embed -->
+
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">2. Half-Life 2 — 2004</h2>
 <!-- /wp:heading -->
@@ -120,6 +126,12 @@ status: publish
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=E2MIpi8pIvY","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=E2MIpi8pIvY</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:embed {"url":"https://twitter.com/DOOM/status/1733864161048748321","type":"rich","providerNameSlug":"x","responsive":true,"className":"wp-block-embed-x"} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/DOOM/status/1733864161048748321
+</div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
