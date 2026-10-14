@@ -1,21 +1,9 @@
 # White House Weighs New Ways to Add Bitcoin to U.S. Reserve
 
 - WordPress post ID: 24946
-- Published: 2026-10-14T16:35:16
 - Canonical URL: https://bitcoinversus.tech/2026/10/14/white-house-more-bitcoin-strategic-reserve-budget-neutral/
-- Slug: white-house-more-bitcoin-strategic-reserve-budget-neutral
 - Status: publish
-- Featured media ID: 24942
-- Featured image dimensions: 1200x630
-- Category IDs: 4269, 6
-- Primary source: https://www.whitehouse.gov/presidential-actions/2025/03/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile/
-- Current secondary source: https://en.coinotag.com/white-house-bitcoin-strategic-reserve-gold-revaluation-42
-- Social embed 1: https://www.reddit.com/r/Bitcoin/comments/1tgzu1p/white_house_bitcoin_reserve_announcement_is/
-- Social embed 2: https://www.reddit.com/r/Bitcoin/comments/1j5dvmz
-- YouTube embed 1: https://www.youtube.com/watch?v=uRNs5c7ExCw
-- YouTube embed 2: https://www.youtube.com/watch?v=c853tEGpE5M
-- Archive format: final Gutenberg source
-- Live render verification: both Reddit blocks rendered as reddit-embed-bq with widgets.js; both YouTube blocks rendered as iframe players; original 1170x1038 donation QR rendered intact at the footer.
+- QR update: original donation QR preserved; responsive display width set to 72vw with 1170px maximum and automatic height.
 
 ## Final Gutenberg Source
 
@@ -111,8 +99,8 @@ https://www.reddit.com/r/Bitcoin/comments/1j5dvmz
 <p><em>BitcoinVersus.Tech Editor's Note:<br>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":24043,"width":"1170px","height":"1038px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Bitcoin donation QR code for 5,000 sats." class="wp-image-24043" style="width:1170px;height:1038px" width="1170" height="1038" /></figure>
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full" style="text-align:center"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Bitcoin donation QR code for 5,000 sats." class="wp-image-24043" style="width:72vw;max-width:1170px;height:auto;display:block;margin-left:auto;margin-right:auto" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
