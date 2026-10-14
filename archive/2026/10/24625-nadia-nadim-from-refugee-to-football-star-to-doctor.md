@@ -4,7 +4,7 @@ title: "Nadia Nadim: From Refugee to Football Star to Doctor"
 slug: nadia-nadim-from-refugee-to-football-star-to-doctor
 status: publish
 published: 2026-10-13T21:04:51
-modified: 2026-10-13T21:08:15
+modified: 2026-10-13T21:11:35
 live_url: https://bitcoinversus.tech/2026/10/13/nadia-nadim-from-refugee-to-football-star-to-doctor/
 featured_media: 24624
 featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/nadia-nadim-career-1200x630-1.jpg
@@ -25,10 +25,10 @@ seo_description: "Nadia Nadim went from fleeing Afghanistan and living in a Dani
 <p>Nadim was born in Herat, Afghanistan. After her father was killed by the Taliban, she fled the country with her mother and sisters and eventually reached Denmark, where the family lived in a refugee camp. Football became one of the first things that made the new country feel like home.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.ted.com/talks/nadia_nadim_something_pulling_me_forward","type":"video","providerNameSlug":"ted","responsive":true,"className":"wp-block-embed-ted wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-ted wp-block-embed-ted wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.ted.com/talks/nadia_nadim_something_pulling_me_forward
-</div><figcaption class="wp-element-caption"><em>Nadia Nadim explains how football helped rebuild her life in Denmark and how she refused to choose between elite sport and becoming a doctor.</em></figcaption></figure>
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=gxd0xGjqmoI","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=gxd0xGjqmoI
+</div><figcaption class="wp-element-caption"><em>Major League Soccer interviews Nadia Nadim about her journey from refugee to professional footballer to doctor.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
@@ -49,10 +49,10 @@ https://www.reddit.com/r/soccer/comments/s5ses6
 <p>The combination remains rare even among elite athletes. Nadim has continued playing at a high level while using her platform to support education and equal opportunity. In 2026, the United Nations highlighted her continued work as a UNESCO Champion for Girls’ and Women’s Education.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=6XHBvXbqNqk","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=bszCWeB0pfQ","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=6XHBvXbqNqk
-</div><figcaption class="wp-element-caption"><em>beIN Sports interviewed Nadim during the 2019 Women’s World Cup about her international football career.</em></figcaption></figure>
+https://www.youtube.com/watch?v=bszCWeB0pfQ
+</div><figcaption class="wp-element-caption"><em>Manchester City interviews Nadia Nadim about her move to the club, her Denmark career, and studying to become a doctor.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
