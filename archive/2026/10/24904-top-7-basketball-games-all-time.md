@@ -68,9 +68,9 @@ https://www.youtube.com/watch?v=lleav7IRNVc
 <p>NBA 2K16 may be the best all-around modern 2K package. Its on-court movement, defensive feel, roster depth, MyLeague options and presentation were strong before later entries leaned even harder into virtual currency and live-service design. It was also one of the series’ high points for overall content density.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=WUId2cQa3TQ","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=kaxsc-9VCuo","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=WUId2cQa3TQ
+https://www.youtube.com/watch?v=kaxsc-9VCuo
 </div></figure>
 <!-- /wp:embed -->
 
