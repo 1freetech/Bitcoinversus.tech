@@ -10,8 +10,10 @@
 <p>The distinction matters. A <a href="https://www.cftc.gov/IndustryOversight/TradingOrganizations/DCMs/index.htm">CFTC-designated contract market</a> is an exchange operating under federal derivatives oversight, while an FCM is the intermediary that can accept customer orders and assets for futures-related trading. Blockchain.com has announced applications, not approvals, and has not provided a decision date.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://twitter.com/GiangiulioDavis/status/2108529443979301070","type":"rich","providerNameSlug":"twitter","responsive":true} -->
-<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">https://twitter.com/GiangiulioDavis/status/2108529443979301070</div></figure>
+<!-- wp:embed {"url":"https://twitter.com/GiangiulioDavis/status/2108529443979301070","type":"rich","providerNameSlug":"x","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
+https://twitter.com/GiangiulioDavis/status/2108529443979301070
+</div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
@@ -30,12 +32,14 @@
 <p>Blockchain.com’s applications fit that same direction: crypto trading products are increasingly being pushed toward familiar exchange, brokerage and federal-registration structures rather than remaining limited to offshore platforms.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=yzPcbYMvGjU","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=yzPcbYMvGjU</div></figure>
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=xzhBivl1a7k","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=xzhBivl1a7k
+</div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
-<p><em>Cboe Global Markets explains how regulated Bitcoin ETF index options work inside the U.S. derivatives market.</em></p>
+<p><em>CME Group explains how regulated Bitcoin futures work, including contract structure and market exposure.</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
