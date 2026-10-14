@@ -4,7 +4,7 @@ title: "Nadia Nadim: From Refugee to Football Star to Doctor"
 slug: nadia-nadim-from-refugee-to-football-star-to-doctor
 status: publish
 published: 2026-10-13T21:04:51
-modified: 2026-10-13T21:04:51
+modified: 2026-10-13T21:08:15
 live_url: https://bitcoinversus.tech/2026/10/13/nadia-nadim-from-refugee-to-football-star-to-doctor/
 featured_media: 24624
 featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/nadia-nadim-career-1200x630-1.jpg
@@ -25,10 +25,10 @@ seo_description: "Nadia Nadim went from fleeing Afghanistan and living in a Dani
 <p>Nadim was born in Herat, Afghanistan. After her father was killed by the Taliban, she fled the country with her mother and sisters and eventually reached Denmark, where the family lived in a refugee camp. Football became one of the first things that made the new country feel like home.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=7--dIvq8PiE","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=7--dIvq8PiE
-</div><figcaption class="wp-element-caption"><em>In her TEDx talk, Nadim describes rebuilding her life in Denmark and being told she would have to choose between football and medicine.</em></figcaption></figure>
+<!-- wp:embed {"url":"https://www.ted.com/talks/nadia_nadim_something_pulling_me_forward","type":"video","providerNameSlug":"ted","responsive":true,"className":"wp-block-embed-ted wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-ted wp-block-embed-ted wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.ted.com/talks/nadia_nadim_something_pulling_me_forward
+</div><figcaption class="wp-element-caption"><em>Nadia Nadim explains how football helped rebuild her life in Denmark and how she refused to choose between elite sport and becoming a doctor.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
