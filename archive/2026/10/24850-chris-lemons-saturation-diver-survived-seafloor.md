@@ -4,7 +4,7 @@ title: "Chris Lemons: The Saturation Diver Who Survived on the Seafloor"
 slug: chris-lemons-saturation-diver-survived-seafloor
 status: publish
 published: 2026-10-14T14:41:05
-modified: 2026-10-14T14:41:05
+modified: 2026-10-14T15:33:21
 live_url: https://bitcoinversus.tech/2026/10/14/chris-lemons-saturation-diver-survived-seafloor/
 featured_media: 24848
 featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/chris-lemons-career-cover-1200x630-1.jpg
@@ -25,8 +25,8 @@ seo_description: "Chris Lemons spent more than 20 years in commercial diving and
 <p>According to <a href="https://www.chrislemons.co.uk/chris-lemons">Lemons’ public biography</a>, he has spent more than 20 years in commercial diving and now works as an IMCA diving supervisor. Saturation divers can live inside pressurized chambers for up to 28 days, travel to the seabed in a diving bell and work for hours at depths reaching hundreds of feet.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=Ojo5JtSYKEg","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=Ojo5JtSYKEg</div></figure>
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=u8ksWlbq_J0","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=u8ksWlbq_J0</div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
