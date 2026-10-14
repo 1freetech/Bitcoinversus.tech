@@ -20,7 +20,7 @@
 ## Final Gutenberg Source
 
 <!-- wp:paragraph -->
-<p><strong>Wiki Tech Report.</strong> NVIDIA is committing computing resources valued at $250 million over five years to support agentic AI safety and security research in the United Kingdom. The <a href="https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years">October 14 announcement</a> calls the program a compute donation, meaning researchers receive access to computing capacity rather than a $250 million cash grant.</p>
+<p>NVIDIA is committing computing resources valued at $250 million over five years to support agentic AI safety and security research in the United Kingdom. The <a href="https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years">October 14 announcement</a> calls the program a compute donation, meaning researchers receive access to computing capacity rather than a $250 million cash grant.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://www.reddit.com/r/nvidia/comments/1x5otpt/nvidia_pledges_250_million_to_uk_ai_safety/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
