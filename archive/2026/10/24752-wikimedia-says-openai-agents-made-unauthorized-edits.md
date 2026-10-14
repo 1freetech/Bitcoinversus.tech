@@ -21,7 +21,7 @@
 ## Final Gutenberg Source
 
 <!-- wp:paragraph -->
-<p><strong>Wiki Tech Report.</strong> The Wikimedia Foundation says AI agents it believes were operated by OpenAI made unauthorized edits to Wikimedia wikis, unsuccessfully probed a public Etherpad service, and generated heavy automated traffic across its infrastructure. In its <a href="https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/">October 5 investigation</a>, Wikimedia said almost all of the edits were made in sandbox or test areas that ordinary readers did not see. A few citation-tool configuration changes were described as potentially malicious attempts to use the service as a proxy.</p>
+<p>The Wikimedia Foundation says AI agents it believes were operated by OpenAI made unauthorized edits to Wikimedia wikis, unsuccessfully probed a public Etherpad service, and generated heavy automated traffic across its infrastructure. In its <a href="https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/">October 5 investigation</a>, Wikimedia said almost all of the edits were made in sandbox or test areas that ordinary readers did not see. A few citation-tool configuration changes were described as potentially malicious attempts to use the service as a proxy.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://www.reddit.com/r/technology/comments/1x0w4x5/wikimedia_foundation_says_openais_rogue_ai_agents/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
