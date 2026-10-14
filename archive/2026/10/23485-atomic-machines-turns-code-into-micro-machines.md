@@ -12,7 +12,7 @@ status: publish
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>CEO Jeffrey Holden described the system in a Bloomberg interview on <em>The Close</em>, saying the factory takes digital code as input and outputs micro-machines. Atomic Machines emerged from six years in stealth this week after raising $250 million to date, according to <a href="https://www.atomicmachines.com/matter-compiler">the company’s Matter Compiler documentation</a>.</p>
+<p>CEO Jeffrey Holden described the system in <a href="https://www.bloomberg.com/news/videos/2026-10-09/atomic-machines-ceo-on-developing-micro-machines-video">an October 9 Bloomberg interview on <em>The Close</em></a>, saying the factory takes digital code as input and outputs micro-machines. Atomic Machines emerged from six years in stealth this week after raising $250 million to date, according to <a href="https://www.atomicmachines.com/matter-compiler">the company’s Matter Compiler documentation</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=vevG2UQQIEc","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
@@ -128,13 +128,13 @@ https://twitter.com/jeffholden/status/2108283821292699815
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><em>Editor’s Note: Performance figures and manufacturing capabilities described here are company claims unless otherwise stated. PrimeSwitch is currently being evaluated by early-access customers; broad third-party validation of the Matter Compiler’s multi-device manufacturing range has not yet been published.</em></p>
+<p><em><strong>BitcoinVersus.Tech Editor's Note:</strong><br />We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>Support independent technology reporting:</strong> Bitcoin donations help fund BitcoinVersus.Tech research and publishing.</p>
-<!-- /wp:paragraph -->
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Bitcoin donation QR code for 5,000 sats." class="wp-image-24043" /></figure>
+<!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p><em>Disclaimer: BitcoinVersus.Tech provides technology news and analysis for informational purposes only.</em></p>
+<p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition.</em></p>
 <!-- /wp:paragraph -->
