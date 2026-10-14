@@ -5,6 +5,7 @@
 - Canonical URL: https://bitcoinversus.tech/2026/10/14/the-future-of-money-is-programmable/
 - Featured media ID: 24828
 - Categories: finance, technology, theory
+- Tags: Programmable Money, Bitcoin, Permissionless Payments, Software, Global Networks, NEW VERSE
 - Jetpack Social message: “Cryptocurrencies are the first step to a world with a global programmable money.”
 
 ## Final Gutenberg source
@@ -40,14 +41,6 @@ https://twitter.com/neha/status/1104833135332806662
 https://www.youtube.com/watch?v=pPgd7Hj3ABQ
 </div><figcaption class="wp-element-caption"><em>Original source: Neha Narula’s TED talk, The Future of Money. The quoted verse begins at about 11:58.</em></figcaption></figure>
 <!-- /wp:embed -->
-
-<!-- wp:paragraph -->
-<p><strong>Verse themes:</strong> Programmable Money · Bitcoin · Permissionless Payments · Software · Global Networks</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><strong>Archive status:</strong> NEW VERSE</p>
-<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p><em><strong>BitcoinVersus.Tech Editor's Note:</strong><br />We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>
