@@ -4,7 +4,7 @@ title: "Chris Lemons: The Saturation Diver Who Survived on the Seafloor"
 slug: chris-lemons-saturation-diver-survived-seafloor
 status: publish
 published: 2026-10-14T14:41:05
-modified: 2026-10-14T15:33:21
+modified: 2026-10-14T15:40:52
 live_url: https://bitcoinversus.tech/2026/10/14/chris-lemons-saturation-diver-survived-seafloor/
 featured_media: 24848
 featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/chris-lemons-career-cover-1200x630-1.jpg
@@ -25,9 +25,9 @@ seo_description: "Chris Lemons spent more than 20 years in commercial diving and
 <p>According to <a href="https://www.chrislemons.co.uk/chris-lemons">Lemons’ public biography</a>, he has spent more than 20 years in commercial diving and now works as an IMCA diving supervisor. Saturation divers can live inside pressurized chambers for up to 28 days, travel to the seabed in a diving bell and work for hours at depths reaching hundreds of feet.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=u8ksWlbq_J0","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=u8ksWlbq_J0</div></figure>
-<!-- /wp:embed -->
+<!-- wp:html -->
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%">[youtube https://www.youtube.com/watch?v=u8ksWlbq_J0]</div>
+<!-- /wp:html -->
 
 <!-- wp:paragraph -->
 <p><em>Lemons explains saturation diving and the accident in a long-form interview.</em></p>
@@ -41,12 +41,12 @@ seo_description: "Chris Lemons spent more than 20 years in commercial diving and
 <p>He had only minutes of emergency breathing gas. His rescuers took more than 40 minutes to reach him. Lemons was recovered unconscious and revived inside the diving bell.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.reddit.com/r/ForCuriousSouls/comments/1qstu9j/marine_diver_chris_lemons_nearfatal_accident_when/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
-<figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">https://www.reddit.com/r/ForCuriousSouls/comments/1qstu9j/marine_diver_chris_lemons_nearfatal_accident_when/</div></figure>
-<!-- /wp:embed -->
+<!-- wp:shortcode -->
+[twitter-timeline username=lastbreathmov]
+<!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->
-<p><em>Public discussion of the accident includes footage and technical context from the 2012 incident.</em></p>
+<p><em>The official Last Breath social feed documents the film built from Lemons’ real 2012 survival story.</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
