@@ -4,7 +4,7 @@ title: "Chris Lemons: The Saturation Diver Who Survived on the Seafloor"
 slug: chris-lemons-saturation-diver-survived-seafloor
 status: publish
 published: 2026-10-14T14:41:05
-modified: 2026-10-14T15:40:52
+modified: 2026-10-14T15:46:20
 live_url: https://bitcoinversus.tech/2026/10/14/chris-lemons-saturation-diver-survived-seafloor/
 featured_media: 24848
 featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/chris-lemons-career-cover-1200x630-1.jpg
@@ -39,14 +39,6 @@ seo_description: "Chris Lemons spent more than 20 years in commercial diving and
 
 <!-- wp:paragraph -->
 <p>He had only minutes of emergency breathing gas. His rescuers took more than 40 minutes to reach him. Lemons was recovered unconscious and revived inside the diving bell.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:shortcode -->
-[twitter-timeline username=lastbreathmov]
-<!-- /wp:shortcode -->
-
-<!-- wp:paragraph -->
-<p><em>The official Last Breath social feed documents the film built from Lemons’ real 2012 survival story.</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
