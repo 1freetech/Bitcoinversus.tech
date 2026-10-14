@@ -4,7 +4,7 @@ title: "HEX Founder Richard Heart Reportedly Detained in Istanbul"
 slug: richard-heart-reportedly-detained-istanbul
 status: publish
 published: 2026-10-14T15:48:13
-modified: 2026-10-14T15:48:13
+modified: 2026-10-14T15:54:39
 live_url: https://bitcoinversus.tech/2026/10/14/richard-heart-reportedly-detained-istanbul/
 featured_media: 24894
 featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/richard-heart-istanbul-cover-1200x630-1.jpg
@@ -24,7 +24,7 @@ seo_description: "HEX and PulseChain founder Richard Heart was reportedly detain
 <!-- wp:embed {"url":"https://www.reddit.com/r/CryptoCurrency/comments/1x5u3xh/richard_heart_creator_of_hex_and_pulse_arrested/","type":"rich","providerNameSlug":"reddit","responsive":true,"className":"wp-block-embed-reddit"} -->
 <figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">
 https://www.reddit.com/r/CryptoCurrency/comments/1x5u3xh/richard_heart_creator_of_hex_and_pulse_arrested/
-</div><figcaption class="wp-element-caption"><em>Crypto communities began circulating reports of Heart’s Istanbul detention shortly after the Turkish reports appeared.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>Crypto users discuss the reported detention after Turkish outlets said Richard Heart was taken into custody in Istanbul.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
