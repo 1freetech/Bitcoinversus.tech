@@ -95,6 +95,58 @@ status: publish
 <p><strong>35.15 tokens/s/W</strong> at just <strong>0.0284 J/token</strong> on one B200 using MXFP4. That is roughly 39% more efficient than GPT OSS 120B and more than six times the measured efficiency of Qwen 3 14B in these qualifying configurations.</p>
 <!-- /wp:paragraph -->
 
+<!-- wp:group -->
+<div class="wp-block-group">
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Who’s behind these models and chips?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The seven ranked results collapse into three model builders: <strong>OpenAI</strong>, <strong>Alibaba’s Qwen team</strong>, and <strong>NVIDIA</strong>. On the hardware side, every top-seven ML.ENERGY configuration in this investigation ran on an <strong>NVIDIA B200 or H100</strong>. For the silicon-focused companion ranking, see BitcoinVersus.Tech’s <a href="https://bitcoinversus.tech/2026/10/14/top-7-ai-accelerators-tokens-per-second-joules-per-token/">Top 7 AI Accelerators Ranked by Tokens per Second and Joules per Token</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th>Ranked models</th><th>Model builder</th><th>Benchmark GPU</th><th>Who is deploying or building around it?</th></tr></thead><tbody><tr><td>GPT OSS 20B, GPT OSS 120B</td><td>OpenAI</td><td>NVIDIA B200</td><td>OpenAI lists Azure, Hugging Face, vLLM, Ollama, llama.cpp, LM Studio, Fireworks, Together AI, Baseten, Databricks, Vercel, Cloudflare and OpenRouter among launch deployment partners. Hardware optimization work included NVIDIA, AMD, Cerebras and Groq.</td></tr><tr><td>Qwen 3 14B, Qwen 3 8B, Qwen 3 30B A3B Thinking</td><td>Alibaba / Qwen</td><td>NVIDIA B200</td><td>Qwen distributes Qwen3 through Alibaba services plus Hugging Face, ModelScope and Kaggle, with SGLang and vLLM recommended for deployment and Ollama, LM Studio, MLX, llama.cpp and KTransformers for local use.</td></tr><tr><td>Nemotron Nano 12B V2, Nemotron Nano 9B V2</td><td>NVIDIA</td><td>NVIDIA H100</td><td>NVIDIA builds both the model family and the accelerator platform. Nemotron Nano is distributed through NVIDIA NIM/NGC and Hugging Face, with self-hosted and partner-endpoint deployment options.</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>That makes NVIDIA the common infrastructure layer across this particular top seven: OpenAI and Qwen occupy five model slots while running on NVIDIA B200s in the benchmark, and NVIDIA occupies the other two slots with its own Nemotron models running on H100s. OpenAI is also moving further down the stack: in August 2026 it disclosed measured results from its first custom inference chip, <a href="https://openai.com/index/the-full-stack-behind-abundant-intelligence/">Jalapeño</a>, including a GPT OSS 120B benchmark. Jalapeño was <strong>not</strong> the chip used for the ML.ENERGY numbers above, but it shows OpenAI is now building silicon as well as models.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[tweet https://twitter.com/Alibaba_Qwen/status/1916962087676612998]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em>Alibaba’s Qwen team introduced Qwen3 as an open-weight family spanning dense and mixture-of-experts models, including the 30B-A3B model in this ranking.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[tweet https://twitter.com/NVIDIAAIDev/status/1952871005249999128]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em>NVIDIA AI Developer announced NIM deployment support for OpenAI’s GPT OSS 20B and 120B, directly connecting the top two ranked models with NVIDIA GPU infrastructure.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=1la6fMl7xNA]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em>NVIDIA’s official Blackwell video follows the hardware stack from silicon die through deployment in AI data centers.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[tweet https://twitter.com/AlibabaGroup/status/1926909626508869999]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em>Alibaba Group shows one downstream Qwen deployment: RayNeo smart wearable hardware powered by Alibaba Cloud’s Qwen model family.</em></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">What the ranking actually measures</h2>
 <!-- /wp:heading -->
