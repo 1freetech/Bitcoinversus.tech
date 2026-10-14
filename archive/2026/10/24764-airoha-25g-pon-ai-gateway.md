@@ -20,7 +20,7 @@
 ## Final Gutenberg Source
 
 <!-- wp:paragraph -->
-<p><strong>Wiki Tech Report.</strong> Airoha Technology is pushing more AI directly into fiber-broadband hardware. <a href="https://www.01.co/theblade/reports/digest/2026-10-14">Zero One reported on October 14</a>, citing Chinese-language reporting, that Airoha has integrated a 3-TOPS AI accelerator into its flagship 25G PON chip for home broadband gateways.</p>
+<p>Airoha Technology is pushing more AI directly into fiber-broadband hardware. <a href="https://www.01.co/theblade/reports/digest/2026-10-14">Zero One reported on October 14</a>, citing Chinese-language reporting, that Airoha has integrated a 3-TOPS AI accelerator into its flagship 25G PON chip for home broadband gateways.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://www.reddit.com/r/BroadcomStock/comments/1to732z/broadcom_accelerates_the_ai_era_with_the/","type":"rich","providerNameSlug":"reddit","responsive":true} -->
