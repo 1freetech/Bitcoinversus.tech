@@ -10,8 +10,8 @@ status: publish
 <p>Longevity futurist Rand says <a href="https://twitter.com/rand_longevity/status/2110188843680858590">“80 will be the new 40 by 2035.”</a> It is a striking prediction. As a literal scientific forecast, though, it is not supported by current evidence.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://twitter.com/rand_longevity/status/2110188843680858590","type":"rich","providerNameSlug":"x","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<!-- wp:embed {"url":"https://twitter.com/rand_longevity/status/2110188843680858590","type":"rich","providerNameSlug":"x","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">
 https://twitter.com/rand_longevity/status/2110188843680858590
 </div><figcaption class="wp-element-caption"><em>Rand’s October 14 longevity prediction.</em></figcaption></figure>
 <!-- /wp:embed -->
