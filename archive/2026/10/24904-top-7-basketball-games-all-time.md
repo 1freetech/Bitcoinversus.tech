@@ -7,21 +7,21 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">7. NBA 2K1</h2>
+<h2 class="wp-block-heading">7. College Hoops 2K8</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>NBA 2K1 helped establish the 2K formula before the series became dominant. On Dreamcast it added online multiplayer and outdoor courts such as Rucker Park, pushing the franchise beyond a standard arena simulation. It feels primitive now, but its influence is everywhere in modern basketball games.</p>
+<p>College Hoops 2K8 is still one of the deepest basketball simulations ever released. Its Legacy mode let players start at a small program, recruit, build a coaching career and climb toward national contention, while custom plays, tournaments, chants and 2K Share made the college experience unusually complete. <a href="https://www.gamespot.com/reviews/college-hoops-2k8-review/1900-6184433/">GameSpot’s original review</a> called it the best game in the series, praising the improved Legacy mode, customization and strong on-court play.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=-U-FJ9pIMgU","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=6vko1aorxdo","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=-U-FJ9pIMgU
+https://www.youtube.com/watch?v=6vko1aorxdo
 </div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
-<p><em>NBA 2K1 gameplay shows how early Visual Concepts was already blending simulation basketball with street courts and online play.</em></p>
+<p><em>College Hoops 2K8 gameplay shows the series’ simulation-heavy pace, college atmosphere and deep presentation that helped make Legacy mode so memorable.</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":2} -->
