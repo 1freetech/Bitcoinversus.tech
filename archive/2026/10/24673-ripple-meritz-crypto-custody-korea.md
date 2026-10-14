@@ -32,14 +32,14 @@ https://twitter.com/CoinMarketCap/status/2107929717336641786
 <p>Ripple says Meritz is its first Korean securities-firm partner and its fourth Korean institutional relationship this year, following work with Kyobo Life Insurance, Kbank and Jeonbuk Bank. For now, this remains an infrastructure partnership—not a live tokenized-securities launch.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=knkKI8ttMdE","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=yvzvf3dzj2E","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=knkKI8ttMdE
+https://www.youtube.com/watch?v=yvzvf3dzj2E
 </div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
-<p><em>This Ripple Custody explainer shows how institutional custody fits into tokenization and regulated digital-asset operations.</em></p>
+<p><em>Working Money Channel explains Ripple-owned Metaco’s institutional custody role through its Citi pilot, providing an independent look at the same custody infrastructure behind Ripple’s broader institutional strategy.</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
