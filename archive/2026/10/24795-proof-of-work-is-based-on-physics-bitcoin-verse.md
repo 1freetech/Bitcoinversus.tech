@@ -25,7 +25,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="https://www.fidelitydigitalassets.com/sites/g/files/djuvja3256/files/dam/afhm1qmmfn/fda_us_uk_understandingproofofwork_pdfreport_1104856.3.0_v2.pdf">Fidelity Digital Assets</a> later cited the same passage while explaining why proof of work’s connection to the physical world can be treated as a security feature rather than merely an efficiency cost. The original discussion is also available in this <a href="https://www.youtube.com/watch?v=3yrqBG-7EVE">Lex Fridman interview clip</a>.</p>
+<p><a href="https://www.fidelitydigitalassets.com/sites/g/files/djuvja3256/files/acquiadam/FDA_US_UK_UnderstandingProofOfWork_PDFReport_1104856.3.0_V2.pdf">Fidelity Digital Assets</a> cites this passage and traces it to Ethereum’s official Mainnet Merge Viewing Party. In the <a href="https://www.youtube.com/watch?v=Nx-jYgI0QVI&t=9080s">original source video</a>, Vitalik Buterin gives the proof-of-work-versus-proof-of-stake explanation at about <strong>2:31:20</strong>. That original recording—not a related interview—is the source for this Bitcoin Verse.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://twitter.com/VitalikButerin/status/1570306185391378434","type":"rich","providerNameSlug":"x","responsive":true} -->
@@ -34,10 +34,10 @@ https://twitter.com/VitalikButerin/status/1570306185391378434
 </div><figcaption class="wp-element-caption"><em>Vitalik Buterin marked Ethereum’s 2022 transition from proof of work to proof of stake.</em></figcaption></figure>
 <!-- /wp:embed -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=3yrqBG-7EVE","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=Nx-jYgI0QVI","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=3yrqBG-7EVE
-</div><figcaption class="wp-element-caption"><em>Vitalik Buterin explains proof of stake versus proof of work in conversation with Lex Fridman.</em></figcaption></figure>
+https://www.youtube.com/watch?v=Nx-jYgI0QVI
+</div><figcaption class="wp-element-caption"><em>Original source: Ethereum Mainnet Merge Viewing Party. Vitalik Buterin gives the quoted proof-of-work explanation at about 2:31:20.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
