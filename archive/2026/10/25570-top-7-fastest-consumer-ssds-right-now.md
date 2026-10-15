@@ -37,17 +37,17 @@ Ranked by published peak sequential read speed; peak sequential write speed brea
 
 ## Video embeds
 
-- Rocket 5: https://www.youtube.com/watch?v=PwLufd1r4I0
+- Rocket 5: https://www.youtube.com/watch?v=RkmY1Rb-8OU
 - Crucial T705: https://www.youtube.com/watch?v=6YtjLjVjCRE
 - MSI M580 FROZR: https://www.youtube.com/watch?v=5cF_jrlrSO4
-- Samsung 9100 PRO: https://www.youtube.com/watch?v=s-BO5p_8wpc
-- Crucial T710: https://www.youtube.com/watch?v=WG8JhEud_ds
-- WD_BLACK SN8100: https://www.youtube.com/watch?v=NH2MaxZqS14
+- Samsung 9100 PRO: https://www.youtube.com/watch?v=CIQzEk01HIs
+- Crucial T710: https://www.youtube.com/watch?v=C-_lId9FBI4
+- WD_BLACK SN8100: https://www.youtube.com/watch?v=l172v_F7QN0
 - Corsair MP700 PRO XT: https://www.youtube.com/watch?v=zgdYYdkablc
 
 ## Verification
 
-All seven YouTube videos were re-checked against current search results and matched to the correct SSD. The social embed was replaced with a live October 15, 2026 r/ssd discussion about PCIe 5.0 SSD real-world value. WordPress was then re-read after the edits to confirm the replacement URLs were saved.
+The YouTube set was re-audited on October 15, 2026. Rocket 5, T705, M580 FROZR, Samsung 9100 PRO, T710, SN8100 and MP700 PRO XT each now point to a current product-specific video independently surfaced by web search. WordPress was re-read after the edits and all seven final URLs were confirmed in the saved Gutenberg blocks.
 
 ## Internal links
 
