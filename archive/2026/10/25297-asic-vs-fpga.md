@@ -37,8 +37,6 @@ status: publish
 
 <!-- wp:html -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=s8ie_R57EwQ&amp;w=560&amp;h=315]</div></figure>
-<!-- /wp:html --><!-- wp:html -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=EVy4KEj9kZg&amp;w=560&amp;h=315]</div></figure>
 <!-- /wp:html -->
 
 <!-- wp:heading {"level":2} -->
@@ -55,7 +53,9 @@ status: publish
 
 <!-- wp:html -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=QVttU7u2x-w&amp;w=560&amp;h=315]</div></figure>
-<!-- /wp:html --><!-- wp:heading {"level":2} -->
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">They Often Start With the Same RTL</h2>
 <!-- /wp:heading -->
 
@@ -102,6 +102,10 @@ status: publish
 <!-- wp:paragraph -->
 <p>This makes FPGAs especially valuable for prototyping ASICs, industrial control, test equipment, networking, aerospace, software-defined radio and products built around changing standards. Embedded FPGA blocks can even put reconfigurable logic inside an SoC; our report on <a href="https://bitcoinversus.tech/2026/10/13/quicklogic-efpga-soc-motors-batteries/">QuickLogic’s eFPGA design</a> shows how that middle ground is expanding.</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=EVy4KEj9kZg&amp;w=560&amp;h=315]</div></figure>
+<!-- /wp:html -->
 
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">The Cost Curve Is the Real Battle</h2>
