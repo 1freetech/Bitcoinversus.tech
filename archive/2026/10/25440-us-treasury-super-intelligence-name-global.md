@@ -2,13 +2,10 @@
 
 <!-- wp:paragraph --><p><a href="https://www.reuters.com/world/us-treasury-pushes-global-partners-rename-ai-super-intelligence-2026-10-15/">Reuters reported on October 15</a> that Treasury Undersecretary for International Affairs Erin Browne said the United States is discussing the wording with International Monetary Fund shareholders and wants “SI” reflected in an upcoming International Monetary and Financial Committee statement. The U.S., which currently holds the G20 presidency, is also positioned to promote the terminology through that forum.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://twitter.com/WhiteHouse/status/2105039074033873258","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/WhiteHouse/status/2105039074033873258</div></figure><!-- /wp:embed -->
-<!-- wp:paragraph --><p><em>The White House previously promoted the “Super Intelligence” terminology through its official X account.</em></p><!-- /wp:paragraph -->
-
 <!-- wp:shortcode -->
-[youtube https://www.youtube.com/watch?v=3nRLz65bQv8]
+[youtube https://www.youtube.com/watch?v=6UBA8iL3x54]
 <!-- /wp:shortcode -->
-<!-- wp:paragraph --><p><em>The September 29 White House event where the terminology change was announced.</em></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>Official White House video of President Trump’s September 29 meeting and luncheon on Super Intelligence.</em></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>The distinction matters: Washington is not claiming that a separate technology called artificial superintelligence has suddenly replaced AI. <a href="https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/">Executive Order 14434</a> directs executive agencies to use the new terminology and separately orders officials to propose a federal definition of “Super Intelligence.” In other words, the current shift is primarily one of government language and policy framing.</p><!-- /wp:paragraph -->
 
