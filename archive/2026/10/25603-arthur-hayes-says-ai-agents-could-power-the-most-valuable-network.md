@@ -22,13 +22,13 @@ https://twitter.com/CoinMarketCap/status/2110697455104753774
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The thesis remains highly speculative. <a href="https://beincrypto.com/arthur-hayes-flop-testnet-weeks-away/">BeInCrypto reports</a> that the FLOP testnet is expected within weeks, but the project still has to prove real agent demand, reliable verification and sustained network effects. Nothing yet shows that FLOP—or any other chain—will become the dominant settlement layer for autonomous agents.</p>
+<p>The thesis remains highly speculative. <a href="https://unchainedcrypto.com/arthur-hayes-says-agent-commerce-not-compute-is-what-will-give-his-new-token-value/">Unchained reported</a> that Hayes himself says the network’s token will have limited value unless AI agents actually transact with one another. FLOP still has to prove real agent demand, reliable verification and durable network effects; nothing yet shows it—or any other chain—will become the dominant settlement layer for autonomous agents.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=clWKbuJG5-M","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=9lek2KpBZaY","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=clWKbuJG5-M
-</div><figcaption class="wp-element-caption"><em>Arthur Hayes explains the FLOP concept and his broader AI-agent thesis in the 1000x interview.</em></figcaption></figure>
+https://www.youtube.com/watch?v=9lek2KpBZaY
+</div><figcaption class="wp-element-caption"><em>Arthur Hayes explains why he thinks AI agents may want a currency tied directly to compute in this verified Unchained interview.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
