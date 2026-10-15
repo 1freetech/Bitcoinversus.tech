@@ -15,9 +15,9 @@ status: publish
 <p>The program targets the posterior chain from the calves through the traps. Before each session, Aescape’s system maps the user’s body, then its robotic arms follow the fixed recovery sequence while adapting stroke placement to the person’s proportions. Users can change pressure or pause the session in real time.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://x.com/aescape/status/1970453023731134840","type":"rich","providerNameSlug":"twitter","responsive":true} -->
+<!-- wp:embed {"url":"https://twitter.com/aescape/status/1970453023731134840","type":"rich","providerNameSlug":"twitter","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
-https://x.com/aescape/status/1970453023731134840
+https://twitter.com/aescape/status/1970453023731134840
 </div><figcaption class="wp-element-caption"><em>Aescape announced Brady’s involvement with its robotic recovery platform before turning that collaboration into a dedicated session.</em></figcaption></figure>
 <!-- /wp:embed -->
 
