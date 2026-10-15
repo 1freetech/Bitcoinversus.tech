@@ -33,17 +33,21 @@ Ranked by published peak sequential read speed; peak sequential write speed brea
 
 ## Social embed
 
-- https://www.reddit.com/r/ssd/comments/1v4przp/best_ssd_for_gaming_on_the_market_to_buy_right/
+- https://www.reddit.com/r/ssd/comments/1x68ozn/pcie_50_ssds_are_the_fastest_drives_ive_ever_used/
 
 ## Video embeds
 
-- Rocket 5: https://www.youtube.com/watch?v=RkmY1Rb-8OU
+- Rocket 5: https://www.youtube.com/watch?v=PwLufd1r4I0
 - Crucial T705: https://www.youtube.com/watch?v=6YtjLjVjCRE
 - MSI M580 FROZR: https://www.youtube.com/watch?v=5cF_jrlrSO4
 - Samsung 9100 PRO: https://www.youtube.com/watch?v=s-BO5p_8wpc
 - Crucial T710: https://www.youtube.com/watch?v=WG8JhEud_ds
 - WD_BLACK SN8100: https://www.youtube.com/watch?v=NH2MaxZqS14
 - Corsair MP700 PRO XT: https://www.youtube.com/watch?v=zgdYYdkablc
+
+## Verification
+
+All seven YouTube videos were re-checked against current search results and matched to the correct SSD. The social embed was replaced with a live October 15, 2026 r/ssd discussion about PCIe 5.0 SSD real-world value. WordPress was then re-read after the edits to confirm the replacement URLs were saved.
 
 ## Internal links
 
