@@ -9,7 +9,6 @@
 
 ## Source references
 
-- CoinMarketCap X post: https://twitter.com/CoinMarketCap/status/2110697455104753774
 - Primary: https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2026
 - Secondary: https://www.reuters.com/business/blackrock-profit-jumps-resilient-markets-boost-fees-2026-10-14/
 - Video: https://www.youtube.com/watch?v=C0PVnQDb45I
@@ -18,14 +17,8 @@
 
 ```html
 <!-- wp:paragraph -->
-<p><a href="https://twitter.com/CoinMarketCap/status/2110697455104753774">CoinMarketCap reported</a> that BlackRock’s digital-asset exchange-traded products attracted <strong>$7.9 billion in net inflows during Q3 2026</strong>, ending September with about <strong>$79.6 billion in assets under management</strong>.</p>
+<p><a href="https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2026">BlackRock reported</a> that its digital-asset exchange-traded products attracted <strong>$7.9 billion in net inflows during Q3 2026</strong>, ending September with about <strong>$79.6 billion in assets under management</strong>.</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:embed {"url":"https://twitter.com/CoinMarketCap/status/2110697455104753774","type":"rich","providerNameSlug":"twitter","responsive":true} -->
-<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
-https://twitter.com/CoinMarketCap/status/2110697455104753774
-</div><figcaption class="wp-element-caption"><em>CoinMarketCap highlighted BlackRock’s Q3 digital-asset ETP inflows and quarter-end AUM.</em></figcaption></figure>
-<!-- /wp:embed -->
 
 <!-- wp:paragraph -->
 <p>BlackRock’s <a href="https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2026">official Q3 results</a> confirm the figure more precisely: <strong>$7.907 billion</strong> of net flows into digital assets and <strong>$79.632 billion</strong> in digital-asset AUM. The category represented about 1% of BlackRock’s total AUM, while the firm ended the quarter with <strong>$15.5 trillion</strong> overall and <strong>$205 billion</strong> in total quarterly net inflows.</p>
