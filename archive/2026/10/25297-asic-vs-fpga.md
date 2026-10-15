@@ -36,6 +36,8 @@ status: publish
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=s8ie_R57EwQ&amp;w=560&amp;h=315]</div></figure>
+<!-- /wp:html --><!-- wp:html -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=EVy4KEj9kZg&amp;w=560&amp;h=315]</div></figure>
 <!-- /wp:html -->
 
@@ -51,7 +53,9 @@ status: publish
 <p>That removes much of the overhead required to make an FPGA reconfigurable. An ASIC does not need a sea of generic lookup tables and programmable routing for logic that will never change. Transistors, wires, memories and arithmetic units can instead be optimized around the final workload. The result can be higher clock efficiency, greater density, lower latency and better performance per watt.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":2} -->
+<!-- wp:html -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=QVttU7u2x-w&amp;w=560&amp;h=315]</div></figure>
+<!-- /wp:html --><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">They Often Start With the Same RTL</h2>
 <!-- /wp:heading -->
 
