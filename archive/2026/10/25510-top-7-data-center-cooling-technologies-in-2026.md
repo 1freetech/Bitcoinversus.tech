@@ -9,7 +9,7 @@
 - Featured image dimensions: 1200x630
 - Category ID: 2509703
 - Countdown order: 7 → 1
-- Media QA: six YouTube embeds and one Vimeo embed rendered as iframe players.
+- Media QA: seven YouTube embeds rendered as iframe players after replacing the #3 two-phase immersion Vimeo with Open Compute Project YouTube video https://www.youtube.com/watch?v=s-cuLWnOcXg.
 - Footer QA: original donation QR media ID 24043 rendered intact at the bottom with the required italicized Editor's Note and QR scanning sentence.
 
 ## Final Gutenberg Source
@@ -94,14 +94,12 @@
 <p>Two-phase immersion places electronics in a dielectric fluid that boils at a controlled temperature. Vapor carries heat away from the components, condenses on a heat exchanger and returns to the bath. The phase change can move enormous heat flux with little pumping, but fluid selection, material compatibility, service procedures and environmental rules make deployment more specialized than mainstream cold-plate systems.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://vimeo.com/869661766","type":"video","providerNameSlug":"vimeo","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo"><div class="wp-block-embed__wrapper">
-https://vimeo.com/869661766
-</div></figure>
-<!-- /wp:embed -->
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=s-cuLWnOcXg]
+<!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->
-<p><em>Open Compute Project and LiquidStack specialists explain two-phase immersion cooling and dielectric-fluid considerations.</em></p>
+<p><em>Open Compute Project presents tray-level two-phase immersion testing for OCP Accelerator Modules, including an 8×1000W OAM thermal test vehicle and fluid comparisons.</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":2} -->
