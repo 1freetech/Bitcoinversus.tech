@@ -26,6 +26,12 @@ status: publish
 <p>The SU7 Ultra is the outlier in this list because it is a four-door sedan rather than a seven-figure hypercar. Its three-motor system combines two high-output V8s motors with a V6s unit for roughly 1,138 kW, or about 1,526 mechanical horsepower. That makes Xiaomi’s production sedan powerful enough to sit beside machines built almost entirely around maximum performance. BitcoinVersus.Tech has also covered <a href="https://bitcoinversus.tech/2026/10/03/gaming-xiaomi-vision-gran-turismo-gt7-spec-iv-october/">Xiaomi’s expanding performance-car presence</a>.</p>
 <!-- /wp:paragraph -->
 
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=I2EjtbqkZIU","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=I2EjtbqkZIU
+</div><figcaption class="wp-element-caption"><em>Xiaomi’s official Nürburgring footage shows the SU7 Ultra’s three-motor powertrain under sustained track load.</em></figcaption></figure>
+<!-- /wp:embed -->
+
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">#6 — Rimac Nevera</h3>
 <!-- /wp:heading -->
@@ -34,10 +40,10 @@ status: publish
 <p>The original Nevera remains one of the defining electric hypercars. Four independent motors provide roughly 1,408 kW, with each wheel receiving its own drive unit and torque-vectoring control. The architecture matters as much as the headline number: Rimac built the battery, inverters, motors and control software as one tightly integrated propulsion system. That engineering base is still evolving, including new battery work covered in <a href="https://bitcoinversus.tech/2026/10/12/prologium-rimac-ev-battery-testing/">Rimac’s next-generation EV battery testing</a>.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=cIdqAuIZp2k","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=RSalyqxWWmI","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=cIdqAuIZp2k
-</div><figcaption class="wp-element-caption"><em>Carwow examines the 2,107-hp Nevera R and the engineering changes over the standard Nevera.</em></figcaption></figure>
+https://www.youtube.com/watch?v=RSalyqxWWmI
+</div><figcaption class="wp-element-caption"><em>Rimac founder Mate Rimac explains the engineering story behind the original Nevera.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:heading {"level":3} -->
@@ -48,6 +54,12 @@ https://www.youtube.com/watch?v=cIdqAuIZp2k
 <p>The Battista uses four electric motors and a Rimac-derived electrical architecture, but it is tuned as a luxury hyper GT. Its marketed output is 1,900 hp with more than 2,300 Nm of torque. The important point is that nearly two thousand horsepower no longer requires a giant combustion engine, multi-speed gearbox and mechanical all-wheel-drive system. Software can meter torque independently at all four corners.</p>
 <!-- /wp:paragraph -->
 
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=KD8r4jpZiSk","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=KD8r4jpZiSk
+</div><figcaption class="wp-element-caption"><em>Automobili Pininfarina demonstrates the Battista’s 1,900-hp acceleration performance.</em></figcaption></figure>
+<!-- /wp:embed -->
+
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">#4 — Aspark Owl</h3>
 <!-- /wp:heading -->
@@ -55,6 +67,12 @@ https://www.youtube.com/watch?v=cIdqAuIZp2k
 <!-- wp:paragraph -->
 <p>Japan’s Aspark Owl remains one of the most extreme low-volume EVs ever put into production. Its four motors combine for roughly 1,480 kW, or 1,984 hp. The Owl is also a useful reminder that enormous motor output does not automatically translate into everyday usability: packaging, thermal control, battery discharge capability, tires and software all have to survive the same load.</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=z8PZZAkrIuc","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=z8PZZAkrIuc
+</div><figcaption class="wp-element-caption"><em>Aspark’s official Owl promotional film showcases the four-motor electric hypercar.</em></figcaption></figure>
+<!-- /wp:embed -->
 
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">#3 — Lotus Evija</h3>
@@ -64,6 +82,12 @@ https://www.youtube.com/watch?v=cIdqAuIZp2k
 <p>Lotus targets 1,500 kW from four motors in the Evija, equivalent to roughly 2,011 hp. With one motor assigned to each wheel, the car can use independent torque control rather than a conventional differential. The result shows why four-motor layouts dominate the top of this ranking: they allow manufacturers to combine huge total power with very fine control over how that power reaches the road.</p>
 <!-- /wp:paragraph -->
 
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=dDzc5zHiy6Q","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=dDzc5zHiy6Q
+</div><figcaption class="wp-element-caption"><em>Lotus’s official Evija engineering-development film shows the four-motor hypercar on its Hethel test track.</em></figcaption></figure>
+<!-- /wp:embed -->
+
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">#2 — Rimac Nevera R</h3>
 <!-- /wp:heading -->
@@ -71,6 +95,12 @@ https://www.youtube.com/watch?v=cIdqAuIZp2k
 <!-- wp:paragraph -->
 <p>The Nevera R raises Rimac’s four-motor system to 2,107 hp. It is not simply the standard car with more boost. Rimac paired the higher-output drivetrain with a new 108 kWh battery, revised torque-vectoring software, more downforce, new brakes and a sharper chassis. That is the recurring theme at this power level: once the motors become powerful enough, the challenge shifts to batteries, tires, cooling and control.</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=LOcp3-Ik3G4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=LOcp3-Ik3G4
+</div><figcaption class="wp-element-caption"><em>Rimac’s official Nevera R film covers its 24 verified world records and 2,107-hp powertrain.</em></figcaption></figure>
+<!-- /wp:embed -->
 
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">#1 — Yangwang U9 Xtreme</h3>
@@ -86,10 +116,10 @@ https://twitter.com/wayne_m159/status/2048767008192291033
 </div><figcaption class="wp-element-caption"><em>Video of the U9 Xtreme’s 496.22 km/h run in Germany.</em></figcaption></figure>
 <!-- /wp:embed -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=yM0wi0qK0KA","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=t_6Bb0SRRu4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=yM0wi0qK0KA
-</div><figcaption class="wp-element-caption"><em>The Yangwang U9 Xtreme’s record run shows what nearly 3,000 hp looks like when the full system is engineered around it.</em></figcaption></figure>
+https://www.youtube.com/watch?v=t_6Bb0SRRu4
+</div><figcaption class="wp-element-caption"><em>BYD’s official footage of the Yangwang U9 Xtreme’s 496.22 km/h record run.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
