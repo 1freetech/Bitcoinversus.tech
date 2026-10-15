@@ -67,6 +67,10 @@ status: publish
 [tweet https://twitter.com/invxsecurities/status/2075475133997740189]
 <!-- /wp:shortcode -->
 
+<!-- wp:paragraph -->
+<p><em>English translation: SK hynix is a major memory-chip manufacturer producing DRAM, NAND flash and HBM for systems including AI servers and data centers.</em></p>
+<!-- /wp:paragraph -->
+
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">The Controller Changes Everything</h2>
 <!-- /wp:heading -->
