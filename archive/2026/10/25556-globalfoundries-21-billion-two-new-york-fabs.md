@@ -5,12 +5,13 @@
 - Live URL: https://bitcoinversus.tech/2026/10/15/globalfoundries-21-billion-two-new-york-fabs/
 - Status: publish
 - Category: 284207
-- Featured media: none — WordPress AI image quota was exhausted at publication time
+- Featured media: 25560 — GlobalFoundries $21B New York Fabs Cover
 
 ## Source references
 
 - GlobalFoundries: https://gf.com/news-and-events/news/globalfoundries-selected-to-operate-two-new-semiconductor-fabs-in-new-york-under-landmark-us-japan-initiative/
 - U.S. Department of Commerce / NIST: https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-agreement-globalfoundries-amend-its-existing
+- Reuters verification: https://www.reuters.com/business/retail-consumer/japan-invest-up-21-billion-two-us-chip-factories-be-run-by-globalfoundries-2026-10-14/
 - Social embed: https://www.reddit.com/r/ARBE_Investors/comments/1x6351z/globalfoundries_selected_to_operate_two_new/
 - Video embed: https://www.youtube.com/watch?v=-SCskPV00kU
 
@@ -36,7 +37,7 @@ https://www.reddit.com/r/ARBE_Investors/comments/1x6351z/globalfoundries_selecte
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>That distinction matters: the $21 billion fab initiative is new Japan-backed investment, while the $955 million is a redirected portion of previously awarded U.S. CHIPS funding.</p>
+<p>That distinction matters: the $21 billion fab initiative is new Japan-backed investment, while the $955 million is a redirected portion of previously awarded U.S. CHIPS funding. <a href="https://www.reuters.com/business/retail-consumer/japan-invest-up-21-billion-two-us-chip-factories-be-run-by-globalfoundries-2026-10-14/">Reuters</a> independently reported the same split between the Japan-backed fab financing and the amended U.S. award.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -46,7 +47,7 @@ https://www.reddit.com/r/ARBE_Investors/comments/1x6351z/globalfoundries_selecte
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=-SCskPV00kU","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=-SCskPV00kU
-</div><figcaption class="wp-element-caption"><em>This earlier look at GlobalFoundries’ Malta Fab 8 shows the manufacturing campus that the new expansion will build around.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>This behind-the-scenes look at GlobalFoundries’ Malta Fab 8 shows the manufacturing campus the new expansion will build around.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
