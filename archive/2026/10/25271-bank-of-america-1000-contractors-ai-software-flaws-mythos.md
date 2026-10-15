@@ -24,9 +24,9 @@ https://twitter.com/AnthropicAI/status/2041578416487489601
 <p>One number needs careful handling: Moynihan said a “couple hundred million plus” of third-quarter expense covered <strong>both</strong> anti-money-laundering remediation and Mythos-related remediation. Bank of America did not publicly break out the AI-patching share, so the full amount should not be described as the cost of Mythos.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=-FKM7dwb9wE","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=-FKM7dwb9wE</div></figure>
-<!-- /wp:embed -->
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=-FKM7dwb9wE&amp;w=900&amp;h=506]
+<!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->
 <p><em>A concise overview of Mythos and Project Glasswing provides context for the model’s security-focused deployment.</em></p>
@@ -58,9 +58,9 @@ https://twitter.com/DarioAmodei/status/2041580334693720511
 <p>This follows the same security shift seen in <a href="https://bitcoinversus.tech/2026/10/11/anthropic-free-open-source-oss-scanner-ai-security/">Anthropic’s open-source bug scanner</a>, <a href="https://bitcoinversus.tech/2026/10/10/ibm-red-hat-lightwell-400-java-security-flaws/">IBM and Red Hat’s 400 hidden Java flaws</a>, and <a href="https://bitcoinversus.tech/2026/09/23/palo-alto-networks-launches-continuous-ai-security-testing/">Palo Alto Networks’ continuous AI security testing</a>.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=urkVFZAhz3U","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=urkVFZAhz3U</div></figure>
-<!-- /wp:embed -->
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=urkVFZAhz3U&amp;w=900&amp;h=506]
+<!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->
 <p><em>A skeptical technical assessment offers a useful counterweight to the strongest claims surrounding Mythos and Project Glasswing.</em></p>
