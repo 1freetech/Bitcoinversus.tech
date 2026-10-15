@@ -11,7 +11,7 @@
 - Primary social source: https://twitter.com/rockstargames/status/2110717537964953810
 - Primary release source: https://store.rockstargames.com/game/buy-gta-vi
 - Secondary source: https://as.com/meristation/noticias/es-oficial-el-trailer-de-lanzamiento-de-gta-6-demuestra-por-que-es-el-videojuego-mas-esperado-de-la-historia-f202610-n/
-- YouTube embed: https://www.youtube.com/watch?v=tJbzMqJGH4k
+- YouTube embed: https://www.youtube.com/watch?v=rz1B4B2yBZY
 - Archive format: final Gutenberg source
 
 ## Final Gutenberg Source
@@ -34,14 +34,14 @@ https://twitter.com/rockstargames/status/2110717537964953810
 <p>The trailer arrives just over a month before launch. Rockstar’s <a href="https://store.rockstargames.com/game/buy-gta-vi">official store</a> lists <strong>November 19, 2026</strong> for PlayStation 5 and Xbox Series X|S, with pre-loading beginning November 12. <a href="https://as.com/meristation/noticias/es-oficial-el-trailer-de-lanzamiento-de-gta-6-demuestra-por-que-es-el-videojuego-mas-esperado-de-la-historia-f202610-n/">Meristation</a> independently reported the launch trailer today and highlighted its roughly 90-second runtime, police pursuits, Leonida setting and new music.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=tJbzMqJGH4k","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=rz1B4B2yBZY","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=tJbzMqJGH4k
+https://www.youtube.com/watch?v=rz1B4B2yBZY
 </div></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
-<p><em>Rockstar’s official August extended look provides additional gameplay and world context for the final launch push.</em></p>
+<p><em>Rockstar Games’ official GTA VI Launch Trailer, released October 15, 2026.</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
