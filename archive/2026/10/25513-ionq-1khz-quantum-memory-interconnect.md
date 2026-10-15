@@ -1,8 +1,5 @@
 <!-- wp:paragraph --><p>IonQ says it has demonstrated a photonic quantum interconnect running at more than <strong>1,000 entanglement events per second</strong> between a trapped-ion qubit and a silicon-vacancy quantum memory. The October 9 result targets one of quantum computing’s hardest scaling problems: linking separate processors quickly enough that the network does not become the bottleneck.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://twitter.com/IonQ_Inc/status/2097295350021468371","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/IonQ_Inc/status/2097295350021468371</div></figure><!-- /wp:embed -->
-<!-- wp:paragraph --><p><em>IonQ’s official X account highlighted the 1 kHz optical-entanglement milestone.</em></p><!-- /wp:paragraph -->
-
 <!-- wp:paragraph --><p>IonQ’s <a href="https://www.ionq.com/news/ionq-demonstrates-world-first-quantum-memory-enhanced-interconnect-for-distributed-quantum-applications">official announcement</a> says the rate is more than four times faster than the previous trapped-ion interconnect record. A technical summary from <a href="https://quantumcomputingreport.com/ionq-demonstrates-1-khz-memory-enhanced-quantum-interconnect-connecting-trapped-ions-and-diamond-color-centers/">Quantum Computing Report</a> puts the measured link at about <strong>1.032 kHz with 87.9% state fidelity</strong>.</p><!-- /wp:paragraph -->
 
 <!-- wp:shortcode -->
