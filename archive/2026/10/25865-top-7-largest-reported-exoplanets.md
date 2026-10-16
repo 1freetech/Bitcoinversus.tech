@@ -43,6 +43,10 @@ status: publish
 <p>HAT-P-32 b is another inflated hot Jupiter. Its mass is only about 0.68 Jupiter masses, yet its reported radius is nearly two Jupiters. That low mass-to-size ratio is a reminder that “largest” does not mean “most massive.” Giant planets can swell dramatically when their atmospheres absorb intense energy from nearby stars.</p>
 <!-- /wp:paragraph -->
 
+<!-- wp:image {"id":25887,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/hat-p-32-b.png" alt="Illustrative rendering of HAT-P-32 b from the BitcoinVersus.Tech exoplanet scale comparison, labeled at 1.98 Jupiter radii." class="wp-image-25887" /><figcaption class="wp-element-caption"><em>Illustrative rendering from the BitcoinVersus.Tech scale comparison; HAT-P-32 b is reported at 1.98 Jupiter radii.</em></figcaption></figure>
+<!-- /wp:image -->
+
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">5. TOI-3540 A b — 2.10 Rj</h2>
 <!-- /wp:heading -->
@@ -50,6 +54,10 @@ status: publish
 <!-- wp:paragraph -->
 <p>TOI-3540 A b was announced in 2022 and orbits in about 3.12 days. Its reported 2.10-Rj radius puts it at roughly 23.5 Earth radii. At about 1.18 Jupiter masses, it is another clear example of a giant planet whose atmosphere occupies far more volume than Jupiter’s.</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:image {"id":25888,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/toi-3540-a-b.png" alt="Illustrative rendering of TOI-3540 A b from the BitcoinVersus.Tech exoplanet scale comparison, labeled at 2.10 Jupiter radii." class="wp-image-25888" /><figcaption class="wp-element-caption"><em>Illustrative rendering from the BitcoinVersus.Tech scale comparison; TOI-3540 A b is reported at 2.10 Jupiter radii.</em></figcaption></figure>
+<!-- /wp:image -->
 
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">4. HAT-P-67 b — 2.14 Rj</h2>
@@ -74,6 +82,10 @@ status: publish
 <!-- wp:paragraph -->
 <p>CT Cha b is a young directly imaged companion listed at 2.2 Rj and about 17 Jupiter masses. That mass sits above the often-used 13-Jupiter-mass deuterium-burning boundary, so its classification can depend on the definition being used. Its size estimate is also more model-dependent than a transit radius.</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:image {"id":25889,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/ct-cha-b.png" alt="Illustrative rendering of CT Cha b from the BitcoinVersus.Tech exoplanet scale comparison, labeled at 2.2 Jupiter radii." class="wp-image-25889" /><figcaption class="wp-element-caption"><em>Illustrative rendering from the BitcoinVersus.Tech scale comparison; CT Cha b is reported at 2.2 Jupiter radii.</em></figcaption></figure>
+<!-- /wp:image -->
 
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">2. GQ Lupi b — 3.0 Rj</h2>
@@ -100,11 +112,11 @@ status: publish
 <!-- /wp:paragraph -->
 
 <!-- wp:shortcode -->
-[youtube https://www.youtube.com/watch?v=Uzn12y_sGII]
+[youtube https://www.youtube.com/watch?v=OsOdZQJbr1M]
 <!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->
-<p><em>A recent HD 100546 b explainer reviews the object’s reported scale and the uncertainty surrounding a still-forming giant world.</em></p>
+<p><em>European Southern Observatory (ESO) fly-through of the HD 100546 system, showing the dusty disk where the protoplanet candidate was reported.</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":2} -->
