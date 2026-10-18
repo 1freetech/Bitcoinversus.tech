@@ -5,7 +5,7 @@ lesson_number: 0
 title: "OSHMS.000: The First Engineered Materials"
 live_url: "https://bitcoinversus.tech/2026/10/18/oshms-000-first-engineered-materials/"
 slug: "oshms-000-first-engineered-materials"
-featured_media_id: 26016
+featured_media_id: 26021
 status: publish
 categories: [792614177, 2509703]
 ---
@@ -13,6 +13,18 @@ categories: [792614177, 2509703]
 <!-- wp:paragraph --><p><strong>OSHMS.000 — Open-Source History of Materials Science | Foundational Lesson</strong></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p><strong>Materials engineering began when ancient toolmakers learned that the choice and treatment of a substance could change what it could do.</strong> Long before a written science of atoms, minerals, strength or fracture, early hominins selected stone, struck it, tested the result and eventually learned to control heat, crush minerals and blend mixtures. This first lesson traces the strongest archaeological evidence and carefully separates established findings from interpretations.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Elementary Overview</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Imagine choosing a rock to make a sharp cutting edge. One rock breaks into useful flakes, while another crumbles. The difference is not only the size of the rock: it is how the material behaves. Choosing the right rock and shaping it for a job is an early example of working with material properties.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Much later, people learned that heating some stones made them easier to shape, and that grinding and mixing colored minerals could produce useful compounds. These small steps eventually led toward ceramics, metalworking, glass, plastics and electronic materials. Materials science studies the link between what something is made of, how it is processed and how it performs.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=xob4BB4mRcA]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Smithsonian National Museum of Natural History: How to Tell a Rock from a Stone Tool. This brief demonstration helps learners distinguish intentional toolmaking from naturally broken stone.</em></p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Learning Objectives</h2><!-- /wp:heading -->
 
@@ -97,6 +109,18 @@ categories: [792614177, 2509703]
 <!-- wp:heading --><h2 class="wp-block-heading">References and Further Reading</h2><!-- /wp:heading -->
 
 <!-- wp:list --><ul class="wp-block-list"><li><a href="https://www.nature.com/articles/nature14464">Harmand et al., Nature (2015), “3.3-million-year-old stone tools from Lomekwi 3.”</a></li><li><a href="https://humanorigins.si.edu/evidence/behavior/stone-tools/early-stone-age-tools">Smithsonian Human Origins Program, Early Stone Age Tools.</a></li><li><a href="https://pubmed.ncbi.nlm.nih.gov/19679810/">Brown et al., Science (2009), “Fire as an engineering tool of early modern humans.”</a></li><li><a href="https://pubmed.ncbi.nlm.nih.gov/21998386/">Henshilwood et al., Science (2011), “A 100,000-year-old ochre-processing workshop at Blombos Cave.”</a></li><li><a href="https://www.sciencedirect.com/science/article/pii/S030544032400102X">Neruda et al., Journal of Archaeological Science (2024), micro-CT of the fired-clay Venus of Dolní Věstonice.</a></li><li><a href="https://www.biblegateway.com/verse/en/Genesis%204%3A22">Genesis 4:22, text and translations (context for the later OSHMS.004).</a></li></ul><!-- /wp:list -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Elementary Conclusion</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A material does not need to be metal or plastic to be engineered. When an ancient person selected a specific stone because it could make a good edge, the choice of material already mattered. When later people deliberately heated rock, prepared ochre mixtures and fired clay, they demonstrated increasingly complex ways to control how materials behaved.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The people who made the earliest surviving tools cannot be identified by name. We can still study what they did by examining the marks on tools, the substances left in vessels, and the contexts where objects were discovered. Modern research in <a href="https://bitcoinversus.tech/2026/10/14/what-comes-after-silicon/">materials beyond silicon</a> and <a href="https://bitcoinversus.tech/2026/10/07/semiconductors-asm-ai-angstrom-atomic-precision/">atomic-precision semiconductor engineering</a> uses the same broad principle: choose or change a material to achieve better performance.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=7oXJdAq9Tio]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Texas Parks and Wildlife: The Flintknapper, Making Stone Tools. Angela Parker demonstrates the controlled shaping of stone.</em></p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Continue the OSHMS Certificate</h2><!-- /wp:heading -->
 
