@@ -8,8 +8,6 @@ slug: "oshe-000-the-first-engineers-and-their-work"
 featured_media_id: 26028
 status: "publish"
 categories: [792614178, 2509703]
-embeds_youtube: 6
-embeds_reddit: 2
 ---
 
 <!-- wp:paragraph --><p><strong>OSHE.000 — Open-Source History of Engineering | Foundational Lesson</strong></p><!-- /wp:paragraph -->
@@ -70,11 +68,7 @@ embeds_reddit: 2
 
 <!-- wp:paragraph --><p><em>Harvard Peabody Museum: Sonia Harmand, “Exploring Humanity’s Technological Origins” (2022). Primary research lecture with a full museum transcript.</em></p><!-- /wp:paragraph -->
 
-<!-- wp:shortcode -->
-[youtube https://www.youtube.com/watch?v=GG_pFGRNeSs]
-<!-- /wp:shortcode -->
 
-<!-- wp:paragraph --><p><em>SciNews, “Lomekwi 3 — World's Oldest Stone Tools Predate Humans” (2015). Excavation time-lapse at the West Turkana site; “humans” in the title refers to the genus Homo, not the broader group of hominins.</em></p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">From Flaking to Repeatable Manufacture</h2><!-- /wp:heading -->
 
@@ -170,7 +164,7 @@ embeds_reddit: 2
 
 <!-- wp:heading --><h2 class="wp-block-heading">Gudea and One of the Earliest Surviving Architectural Plans</h2><!-- /wp:heading -->
 
-<!-- wp:paragraph --><p>A later example appears around <strong>2120 BCE</strong> in Mesopotamia. Gudea, ruler of the city-state of Lagash, commissioned temples and inscriptions describing his building activities. A surviving diorite statue in the Louvre, cataloged as the <a href="https://collections.louvre.fr/ark:/53355/cl010119540">“Architect with Plan” (AO 2)</a>, depicts him seated with a plan drawn on a tablet in his lap. The sculpture also shows a stylus and a graduated measuring instrument. It is unusually useful because a named individual, a depicted building plan and construction-associated inscriptions meet in one surviving object.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>A later example appears around <strong>2120 BCE</strong> in Mesopotamia. Gudea, ruler of the city-state of Lagash, commissioned temples and inscriptions describing his building activities. A surviving diorite statue in the Louvre, cataloged as the <a href="https://collections.louvre.fr/ark:/53355/cl010119540">“Architect with Plan” (AO 2)</a>, depicts him seated with a plan drawn on a tablet in his lap. The sculpture also shows a stylus and a graduated measuring instrument. It is especially informative because a named individual, a depicted building plan and construction-associated inscriptions meet in one surviving object.</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>The carved plan is generally interpreted as showing a temple complex, but the statue is not a complete modern drawing set or a surviving project specification. Gudea’s presence on the sculpture also does not prove that he personally drafted the plan or laid the foundation stones. His inscriptions identify his patronage and building program, while the sculpture documents that architectural representation and measurement had become recognizable elements of political and technical culture.</p><!-- /wp:paragraph -->
 
@@ -233,6 +227,12 @@ embeds_reddit: 2
 <!-- wp:heading --><h2 class="wp-block-heading">Conclusion</h2><!-- /wp:heading -->
 
 <!-- wp:paragraph --><p>Engineering did not begin with a single identifiable inventor. The earliest surviving evidence concerns the manufacture of objects by unnamed prehistoric toolmakers. Written traditions later preserve names associated with specialized crafts, while ancient states provide clearer records of officials and monumental construction. Imhotep's association with the Step Pyramid offers an early example of a named individual linked to an enduring engineering work. The next lessons will examine early construction, surveying, hydraulic works, and the documentary record of additional engineers.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2 class="wp-block-heading">Elementary Conclusion</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Engineering has a history much older than any surviving engineer’s name. Stone tools tell us that early people and their relatives learned how materials could be shaped. Monuments show that communities later planned structures, moved heavy stones, and organized complex building work. These remains survive even though we cannot identify all their makers.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Written accounts give names to some later craftspeople and builders. Genesis names Tubal-Cain as a worker of metals. Egyptian evidence connects Imhotep with the court of Djoser and, through historical attribution, the Step Pyramid. The diary of Merer records construction logistics, while Gudea’s statue connects a named ruler with an architectural plan. Each source provides a different degree of certainty. To study the first engineers accurately, we must examine both what was built and exactly what the surviving evidence says about who built it.</p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">References</h2><!-- /wp:heading -->
 
