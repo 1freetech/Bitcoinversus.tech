@@ -30,7 +30,9 @@ categories: [792614177, 2509703]
 
 <!-- wp:paragraph --><p>Stoneworking itself is materials processing. A toolmaker applies controlled force to a core, taking advantage of how brittle stone fractures. The remaining edge and removed flake can perform different jobs. Toolmaking creates an engineered geometry even when the chemistry of the rock stays largely the same. This distinction is important: <strong>manufacturing a new shape does not necessarily mean synthesizing a new substance.</strong></p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=0w9kWRIlPJg","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=0w9kWRIlPJg</div></figure><!-- /wp:embed -->
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=0w9kWRIlPJg]
+<!-- /wp:shortcode -->
 <!-- wp:paragraph --><p><em>Smithsonian National Museum of Natural History: The Origins of Stone Tool Technology (2025). Archaeologist Emma Finestone discusses the earliest stoneworking record and uncertainty about the toolmakers.</em></p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">By 2.6 Million Years Ago: The Oldowan Toolkit</h2><!-- /wp:heading -->
@@ -41,7 +43,9 @@ categories: [792614177, 2509703]
 
 <!-- wp:paragraph --><p>Even a basic stone flake demonstrates selection and control: the maker must choose workable raw material, orient the core and manage the direction of force. The archaeological record preserves discarded flakes as well as successful products. In many cases the <em>debris</em> is exactly how researchers reconstruct a manufacturing sequence.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=f2CcHYuOEsE","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=f2CcHYuOEsE</div></figure><!-- /wp:embed -->
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=f2CcHYuOEsE]
+<!-- /wp:shortcode -->
 <!-- wp:paragraph --><p><em>Cleveland Museum of Natural History: Flintknapping Demonstration (2011). A practical demonstration of stone-tool production, not footage of prehistoric people.</em></p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Approximately 164,000 Years Ago: Heat Becomes a Materials Tool</h2><!-- /wp:heading -->
@@ -50,7 +54,9 @@ categories: [792614177, 2509703]
 
 <!-- wp:paragraph --><p>Heating some siliceous rocks can modify fracture characteristics and make them easier to flake in a controlled manner. The goal is not simply to make the stone “stronger.” Overheating can also damage stone. Investigators distinguish purposeful treatment from accidental fire exposure by examining the context of artifacts together with physical and chemical indicators; a red color alone is not proof of an engineered heat treatment.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.reddit.com/r/Archaeology/comments/1fm3lsd/","type":"rich","providerNameSlug":"reddit","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-reddit wp-block-embed-reddit"><div class="wp-block-embed__wrapper">https://www.reddit.com/r/Archaeology/comments/1fm3lsd/</div></figure><!-- /wp:embed -->
+<!-- wp:shortcode -->
+[embed]https://www.reddit.com/r/Archaeology/comments/1fm3lsd/[/embed]
+<!-- /wp:shortcode -->
 <!-- wp:paragraph --><p><em>Community discussion of heat treating flint. This is a discussion prompt rather than archaeological evidence; the dated scientific findings above remain the evidentiary basis.</em></p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Approximately 100,000 Years Ago: The Blombos Ochre Workshop</h2><!-- /wp:heading -->
@@ -59,7 +65,9 @@ categories: [792614177, 2509703]
 
 <!-- wp:paragraph --><p>Ochre consists of iron-bearing mineral material whose color can be useful as pigment. Making a compound from it involves raw-material procurement, mechanical size reduction, ingredient selection and storage in a vessel. Those are recognizable elements of a production process. However, the team could not determine the mixture’s final use with certainty; proposed purposes include decoration and skin protection. The presence of a recipe-like process should not be confused with proof of one particular application.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=Uzj_wsd_sjo","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=Uzj_wsd_sjo</div></figure><!-- /wp:embed -->
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=Uzj_wsd_sjo]
+<!-- /wp:shortcode -->
 <!-- wp:paragraph --><p><em>Original 2011 report on the Blombos Cave ochre-processing workshop, independently catalogued by Archäologie Online (3:28).</em></p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">Around 30,000–25,000 Years Ago: Fired Clay</h2><!-- /wp:heading -->
