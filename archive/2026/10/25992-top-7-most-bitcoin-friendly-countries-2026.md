@@ -35,13 +35,13 @@ Description: Top 7 Bitcoin-friendly countries in 2026 ranked by legality, taxes,
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=8U-SAl5MP_I","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=8U-SAl5MP_I
-</div><figcaption class="wp-element-caption"><em>Reuters archival footage of El Salvador's 2021 adoption. The 2025 legal reforms described above superseded compulsory acceptance.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>Reuters reports on El Salvador adopting Bitcoin in 2021. This is archival footage; later legal changes are explained above. <a href="https://www.youtube.com/watch?v=8U-SAl5MP_I">Watch directly on YouTube</a>.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:embed {"url":"https://twitter.com/bitcoinofficesv/status/1859470237428490656","type":"rich","providerNameSlug":"twitter","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
 https://twitter.com/bitcoinofficesv/status/1859470237428490656
-</div><figcaption class="wp-element-caption"><em>The Bitcoin Office's November 2024 statement is shown for historical context, not as proof of new 2026 state purchases.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>El Salvador's Bitcoin Office posted this in November 2024; it is historical context, not independent confirmation of current government purchasing. <a href="https://x.com/bitcoinofficesv/status/1859470237428490656">View original post on X</a>.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:heading -->
@@ -55,7 +55,7 @@ https://twitter.com/bitcoinofficesv/status/1859470237428490656
 <!-- wp:embed {"url":"https://twitter.com/DecryptMedia/status/2062968886530617808","type":"rich","providerNameSlug":"twitter","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
 https://twitter.com/DecryptMedia/status/2062968886530617808
-</div><figcaption class="wp-element-caption"><em>A June 2026 Decrypt post highlights continuing debate over U.S. crypto tax proposals; a proposal is not enacted law.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>Decrypt's June 2026 post about proposed U.S. crypto-tax legislation. Proposals should not be mistaken for laws already in force. <a href="https://x.com/DecryptMedia/status/2062968886530617808">View original post on X</a>.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:heading -->
@@ -69,7 +69,7 @@ https://twitter.com/DecryptMedia/status/2062968886530617808
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=-GevVGipcMU","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=-GevVGipcMU
-</div><figcaption class="wp-element-caption"><em>Blocktrainer's October 2024 discussion addresses Germany's one-year Bitcoin tax holding period and possible European changes. Discussion of proposals is not evidence of enacted changes.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>Blocktrainer discusses German Bitcoin tax rules and EU policy proposals. See official tax guidance in the article for legally applicable rules. <a href="https://www.youtube.com/watch?v=-GevVGipcMU">Watch directly on YouTube</a>.</em></figcaption></figure>
 <!-- /wp:embed --><!-- wp:heading -->
 <h2 class="wp-block-heading">4. Czechia — Three-Year Relief and a Small-Transaction Exemption</h2>
 <!-- /wp:heading -->
@@ -78,10 +78,10 @@ https://www.youtube.com/watch?v=-GevVGipcMU
 <p>Czechia introduced significant tax relief effective February 15, 2025: qualifying private disposals of cryptoassets held for more than three years can be exempt, and a separate exemption covers certain annual disposals up to <strong>CZK 100,000</strong>. Conditions and business-asset exclusions apply; do not assume every crypto-related receipt qualifies. The country's <a href="https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/ostatni">Financial Administration</a> and <a href="https://e-sbirka.gov.cz/sb/1992/586">income-tax statute</a> explain the tests. An established Central European digital-asset community and EU market access help put Czechia near the top for long-term individual ownership.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=VlGdLq2NBPA","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=eTPe9buJ5w8","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=VlGdLq2NBPA
-</div><figcaption class="wp-element-caption"><em>BTC Prague's official June 2025 Bitcoin conference footage documents the Czech capital's substantial Bitcoin community; the tax rules in this report are sourced separately.</em></figcaption></figure>
+https://www.youtube.com/watch?v=eTPe9buJ5w8
+</div><figcaption class="wp-element-caption"><em>BTC Prague's official July 2025 recording of Niko Jilch's keynote, a verifiable example of Czechia's active Bitcoin community. <a href="https://www.youtube.com/watch?v=eTPe9buJ5w8">Watch directly on YouTube</a>.</em></figcaption></figure>
 <!-- /wp:embed --><!-- wp:heading -->
 <h2 class="wp-block-heading">3. Singapore — Regulated Access and No General Capital-Gains Tax</h2>
 <!-- /wp:heading -->
@@ -93,7 +93,7 @@ https://www.youtube.com/watch?v=VlGdLq2NBPA
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=yi7KNHd-em0","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=yi7KNHd-em0
-</div><figcaption class="wp-element-caption"><em>CNA reports on MAS digital-payment-token consumer-protection rules in Singapore. This 2023 reporting provides background; the article's linked official sources govern the 2026 situation.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>CNA's November 2023 report on Singapore central-bank rules for retail cryptocurrency services. Its publication date is historical; current policy is linked above. <a href="https://www.youtube.com/watch?v=yi7KNHd-em0">Watch directly on YouTube</a>.</em></figcaption></figure>
 <!-- /wp:embed --><!-- wp:heading -->
 <h2 class="wp-block-heading">2. United Arab Emirates — A Growing Licensed Bitcoin Industry</h2>
 <!-- /wp:heading -->
@@ -105,7 +105,7 @@ https://www.youtube.com/watch?v=yi7KNHd-em0
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=Az1RWyIqIwI","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=Az1RWyIqIwI
-</div><figcaption class="wp-element-caption"><em>TOKEN2049 Dubai 2025 panel, 'UAE's Rise as a Global Crypto Leader,' discusses Dubai's regulated digital-asset ecosystem and VARA's approach.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>TOKEN2049's official May 2025 panel on the UAE's regulated crypto industry, including Dubai VARA leadership. <a href="https://www.youtube.com/watch?v=Az1RWyIqIwI">Watch directly on YouTube</a>.</em></figcaption></figure>
 <!-- /wp:embed --><!-- wp:heading -->
 <h2 class="wp-block-heading">1. Switzerland — The Strongest Overall Bitcoin Ecosystem</h2>
 <!-- /wp:heading -->
@@ -117,7 +117,7 @@ https://www.youtube.com/watch?v=Az1RWyIqIwI
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=E3aeaPjra8g","type":"video","providerNameSlug":"youtube","responsive":true} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=E3aeaPjra8g
-</div><figcaption class="wp-element-caption"><em>WION's December 2025 report shows real Bitcoin payments in Lugano, Switzerland. See the city's current Plan ₿ information and the official tax-payment sources in the text above.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>WION's December 2025 report on Bitcoin payments in Lugano, Switzerland, including real-world merchant adoption. <a href="https://www.youtube.com/watch?v=E3aeaPjra8g">Watch directly on YouTube</a>.</em></figcaption></figure>
 <!-- /wp:embed --><!-- wp:heading -->
 <h2 class="wp-block-heading">Who Almost Made the List?</h2>
 <!-- /wp:heading -->
