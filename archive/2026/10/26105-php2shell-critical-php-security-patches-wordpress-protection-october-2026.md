@@ -16,13 +16,14 @@ primary_sources:
   - "https://www.php.net/archive/2026.php#2026-10-21-5"
   - "https://wordpress.com/blog/2026/10/21/php2shell-vulnerabilities/"
 youtube_embeds:
-  - "https://www.youtube.com/watch?v=Fq8FhvxET2k"
   - "https://www.youtube.com/watch?v=a7_WFUlFS94"
+x_embeds:
+  - "https://twitter.com/NSACyber/status/2112903220209098897"
 reddit_embeds:
   - "https://www.reddit.com/r/PHP/comments/1xbno6r/php_8512_8427_8336_and_8235_fix_two_critical/"
   - "https://www.reddit.com/r/Wordpress/comments/1xbmw05/php_cve_notice/"
 original_qr_media_id: 24043
-qa: "WordPress publishes the post with featured media and verified article content; rendered view contains two YouTube iframe sources, two Reddit embed widgets, all four fixed version numbers and original QR asset. Interactive playback and site-specific PHP binary inspection were not independently possible."
+qa: "WordPress published post contains one PHP explainer YouTube embed, one native NSA Cyber X tweet and two Reddit embeds. Post-view HTML verified NSA X blockquote and platform.x.com/widgets.js, one YouTube iframe, two Reddit embed scripts and original donation QR. Interactive video playback and mobile visual appearance not independently tested."
 ---
 
 <!-- wp:paragraph -->
@@ -53,10 +54,10 @@ qa: "WordPress publishes the post with featured media and verified article conte
 <p>The response differs by hosting model. In an <a href="https://wordpress.com/blog/2026/10/21/php2shell-vulnerabilities/">October 21 statement</a>, WordPress.com says its managed sites are already protected through infrastructure-level work with the PHP Security Team. That claim covers its hosted platform; it is <strong>not a publicly available checksum or build attestation</strong> for every site's PHP binary.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=Fq8FhvxET2k","type":"video","providerNameSlug":"youtube","responsive":true} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=Fq8FhvxET2k
-</div><figcaption class="wp-element-caption"><em>A security discussion recorded before the emergency patches were released; for current fixed versions, use PHP's October 21 advisory.</em></figcaption></figure>
+<!-- wp:embed {"url":"https://twitter.com/NSACyber/status/2112903220209098897","type":"rich","providerNameSlug":"twitter","responsive":true} -->
+<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
+https://twitter.com/NSACyber/status/2112903220209098897
+</div><figcaption class="wp-element-caption"><em>NSA Cyber's October 21 PHP security advisory urges immediate remediation and recommends temporarily taking vulnerable systems offline if patching is not feasible. See the official NSA advisory for full context.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
