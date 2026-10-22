@@ -18,12 +18,12 @@ primary_sources:
 youtube_embeds:
   - "https://www.youtube.com/watch?v=a7_WFUlFS94"
 x_embeds:
-  - "https://twitter.com/NSACyber/status/2112903220209098897"
+  - "https://twitter.com/BleepinComputer/status/2112908598321758361"
 reddit_embeds:
   - "https://www.reddit.com/r/PHP/comments/1xbno6r/php_8512_8427_8336_and_8235_fix_two_critical/"
   - "https://www.reddit.com/r/Wordpress/comments/1xbmw05/php_cve_notice/"
 original_qr_media_id: 24043
-qa: "WordPress published post contains one PHP explainer YouTube embed, one native NSA Cyber X tweet and two Reddit embeds. Post-view HTML verified NSA X blockquote and platform.x.com/widgets.js, one YouTube iframe, two Reddit embed scripts and original donation QR. Interactive video playback and mobile visual appearance not independently tested."
+qa: "October 21 updated WordPress page has native rendered BleepingComputer X news post (blockquote with platform.x.com/widgets.js). NSA embed is absent. PHP explainer video, two Reddit embeds, original QR, and original cover remain. Runtime video playback and mobile visual appearance not independently tested."
 ---
 
 <!-- wp:paragraph -->
@@ -54,10 +54,10 @@ qa: "WordPress published post contains one PHP explainer YouTube embed, one nati
 <p>The response differs by hosting model. In an <a href="https://wordpress.com/blog/2026/10/21/php2shell-vulnerabilities/">October 21 statement</a>, WordPress.com says its managed sites are already protected through infrastructure-level work with the PHP Security Team. That claim covers its hosted platform; it is <strong>not a publicly available checksum or build attestation</strong> for every site's PHP binary.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://twitter.com/NSACyber/status/2112903220209098897","type":"rich","providerNameSlug":"twitter","responsive":true} -->
+<!-- wp:embed {"url":"https://twitter.com/BleepinComputer/status/2112908598321758361","type":"rich","providerNameSlug":"twitter","responsive":true} -->
 <figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
-https://twitter.com/NSACyber/status/2112903220209098897
-</div><figcaption class="wp-element-caption"><em>NSA Cyber's October 21 PHP security advisory urges immediate remediation and recommends temporarily taking vulnerable systems offline if patching is not feasible. See the official NSA advisory for full context.</em></figcaption></figure>
+https://twitter.com/BleepinComputer/status/2112908598321758361
+</div><figcaption class="wp-element-caption"><em>BleepingComputer reports the October 21 emergency PHP2Shell patches, covering two critical remote-code-execution vulnerabilities. PHP's own advisory remains the primary source for fixed versions.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
