@@ -7,6 +7,7 @@ new_chart_media_id: 26116
 reused_projection_chart_media_id: 26109
 qr_media_id: 24043
 chip_warning: 6-7 J/TH is lab-tested silicon, not miner wall-plug efficiency
+comparison_note: 'Hypothetical 12-month change: -26.97% J/TH or +36.92% TH/J; not an observed year-over-year improvement'
 ---
 
 <!-- wp:paragraph -->
@@ -44,7 +45,7 @@ https://www.youtube.com/watch?v=dogBmxzW-Eg
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>The new chart marks Bitdeer's 6–7 J/TH laboratory chip range separately from the two complete BITMAIN machines. Using 6.5 J/TH as a midpoint is only a visual convenience; it is not the measured energy efficiency of a commercial Bitdeer mining rig.</p>
+<p>The new chart marks Bitdeer's 6–7 J/TH laboratory chip range separately from the two complete BITMAIN machines. Using 6.5 J/TH as a midpoint is only a visual convenience; it is not the measured energy efficiency of a commercial Bitdeer mining rig. In a hypothetical 12-month comparison from 8.9 to 6.5 J/TH, energy consumed per terahash falls 26.97%, equivalent to 36.92% more hashes per joule. This is <strong>not an observed year-over-year production improvement</strong>: the values come from different manufacturers, measurement boundaries and disclosure dates.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://twitter.com/bitcoinversus_/status/2113092838963683653","type":"rich","providerNameSlug":"twitter","responsive":true} -->
