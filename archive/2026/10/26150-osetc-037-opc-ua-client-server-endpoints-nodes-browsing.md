@@ -3,7 +3,7 @@ post_id: 26150
 series: "Open-Source Electrical Technician Certification"
 lesson_number: 37
 title: "OSETC.037: OPC UA Client/Server Basics — Endpoints, Nodes, Browsing, and Read-Only Diagnostics"
-status: "publish"
+status: "superseded"
 slug: "osetc-037-opc-ua-client-server-endpoints-nodes-browsing-read-only-diagnostics"
 live_url: "https://bitcoinversus.tech/2026/10/22/osetc-037-opc-ua-client-server-endpoints-nodes-browsing-read-only-diagnostics/"
 featured_media_id: 26149
@@ -11,7 +11,10 @@ featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026
 categories: [547916683, 2509703]
 publication_date: "2026-10-22"
 qa_note: "WordPress rendered 2 YouTube iframe embeds, 2 authentic topical OPC Foundation X blockquotes with widget scripts. Independent interactive video playback not tested."
+superseded_by: "archive/2026/10/26150-osetc-037-insulation-resistance-testing-megohmmeters-motor-windings.md"
 ---
+
+> ARCHIVAL NOTICE: This previous OPC UA article was replaced at WordPress post 26150 on October 22, 2026, because OPC UA is industrial communications rather than an OSETC electrical-technician topic. Retained for editorial provenance; not an active OSETC.037 lesson.
 
 <!-- wp:paragraph --><p><strong>Open-Source Electrical Technician Certification | OSETC.037 | Industrial Communications | Focus: finding and reading industrial data through an OPC UA client/server connection.</strong></p><!-- /wp:paragraph -->
 
