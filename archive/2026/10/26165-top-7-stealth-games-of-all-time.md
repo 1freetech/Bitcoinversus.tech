@@ -13,6 +13,8 @@ published: 2026-10-22
 seo_description: "Explore the top seven stealth games of all time, ranked for their gameplay, innovation, influence and replayability—from Metal Gear Solid to Thief II."
 editorial_basis: stealth depth, innovation, level design, replayability, influence
 videos:
+  - https://www.youtube.com/watch?v=9e8r_xgms4M
+  - https://www.youtube.com/watch?v=ZgdGB-xMaQE
   - https://www.youtube.com/watch?v=sZ7ogfkR3hQ
   - https://www.youtube.com/watch?v=UnsDyv-TtJg
   - https://www.youtube.com/watch?v=oXM77SlUd2M
@@ -24,7 +26,7 @@ sources:
   - https://www.gamespot.com/articles/best-stealth-game/1100-6502568/
 ---
 
-<!-- Final Gutenberg markup exported from published WordPress post -->
+<!-- Final Gutenberg markup exported from published WordPress post, updated 2026-10-22 -->
 
 <!-- wp:paragraph -->
 <p>The best stealth games turn the simple act of <em>not being seen</em> into an entire design philosophy. Guards respond to light, noise, bodies, disguises, camera placement, or suspicious behavior. This <strong>BitcoinVersus.Tech Top 7</strong> ranks individual games and the <em>Hitman</em> trilogy collection by <strong>stealth depth, innovation, level design, replayability, and long-term influence</strong>. It is an editorial judgment, not a sales ranking. For adjacent genre history, read our <a href="https://bitcoinversus.tech/2026/10/14/top-7-fps-games-all-time-code-engines/">Top 7 First-Person Shooters</a> and <a href="https://bitcoinversus.tech/2026/10/14/top-7-strategy-games-code-behind-them/">Top 7 Strategy Games</a>.</p>
@@ -80,6 +82,12 @@ https://twitter.com/Hitman/status/1978883735979278817
 <p><strong>Developer:</strong> Kojima Productions. <strong>Why it matters:</strong> Few stealth sandboxes allow this much improvisation. Enemy outposts can be approached from multiple directions, across day-night cycles and changing security patterns. Fulton extraction, gadgets, support options and adaptive guards create emergent plans. Its unfinished-feeling narrative limits the overall package, but its mechanical freedom remains a benchmark. The earlier <em>Metal Gear Solid 3</em> is another contender for this position.</p>
 <!-- /wp:paragraph -->
 
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=9e8r_xgms4M","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=9e8r_xgms4M
+</div><figcaption class="wp-element-caption"><em>Official Konami trailer for Metal Gear Solid V: The Phantom Pain (2015).</em></figcaption></figure>
+<!-- /wp:embed -->
+
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">3. Thief II: The Metal Age (2000)</h2>
 <!-- /wp:heading -->
@@ -88,12 +96,22 @@ https://twitter.com/Hitman/status/1978883735979278817
 <p><strong>Developer:</strong> Looking Glass Studios. <strong>Why it matters:</strong> <em>Thief II</em> treats the world as an acoustic and lighting puzzle. Stone, tile, carpet and other surfaces affect footsteps; guards react to what they hear and see. Its missions make slipping past a guard, hiding a body, or extinguishing a light more important than swordplay. The result is a foundational demonstration that avoidance can carry an entire first-person game. <a href="https://www.pcgamer.com/best-stealth-games/">PC Gamer's stealth-game history</a> describes the enduring appeal of the genre's demanding classics.</p>
 <!-- /wp:paragraph -->
 
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=ZgdGB-xMaQE","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=ZgdGB-xMaQE
+</div><figcaption class="wp-element-caption"><em>Squakenet gameplay footage of Thief II: The Metal Age (2000), showing the original game.</em></figcaption></figure>
+<!-- /wp:embed -->
+
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">2. Tom Clancy's Splinter Cell: Chaos Theory (2005)</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><strong>Developer:</strong> Ubisoft Montreal, with Ubisoft Milan. <strong>Why it matters:</strong> Sam Fisher's third adventure remains a gold standard for tactical infiltration. Movement speed, shadows, ambient sound, gadgets and guard routes all matter. Its larger missions allow distinct approaches, and its cooperative mode expands the formula beyond solo play. An inspired choice for players who prioritize disciplined sneaking over spectacle; <a href="https://www.gamespot.com/articles/best-stealth-game/1100-6502568/">GameSpot's stealth retrospective</a> similarly highlights its lighting systems and open-ended levels.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.ubisoft.com/en-US/games/9058ea04-847b-4c8d-af09-438b8d804640">Official Ubisoft Splinter Cell: Chaos Theory game page</a> — includes the original game's description and media. A game-specific video is still being sourced; this link is not a playable embed.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":2} -->
