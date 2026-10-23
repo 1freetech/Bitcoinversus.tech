@@ -5,7 +5,7 @@ title: "Michael Saylor Details Strategy’s Bitcoin, Dividend and AI Case"
 slug: "michael-saylor-strategy-bitcoin-daily-dividends-ai-interview"
 status: "publish"
 published_at: "2026-10-23T09:26:01"
-modified_at: "2026-10-23T09:32:53"
+modified_at: "2026-10-23T09:36:03"
 canonical_url: "https://bitcoinversus.tech/2026/10/23/michael-saylor-strategy-bitcoin-daily-dividends-ai-interview/"
 category_ids:
   - 27318186
@@ -67,7 +67,7 @@ youtube_video_id: "BhltoFxmVs8"
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>On policy, Saylor said a capitalist wants <strong>“a bill of rights, not a bill of restrictions,”</strong> then characterized the stalled Clarity Act as the latter. His argument is a policy preference, not a legal conclusion: he favors usable rights to custody, tokenize and trade rather than additional layers of constraint. He also said restrictive monetary, trade and foreign policy had weighed on Bitcoin, while a larger role for bank credit and digital securities could become tailwinds.</p>
+<p>On policy, Saylor said a capitalist wants <strong>“a bill of rights, not a bill of restrictions,”</strong> then characterized the stalled Clarity Act as the latter. His argument is a policy preference, not a legal conclusion: he favors usable rights to custody, tokenize and trade rather than additional layers of constraint. He also said restrictive monetary, trade and foreign policy had weighed on Bitcoin, while a larger role for bank credit and digital securities could become tailwinds. On the macro backdrop, he called monetary policy the <strong>“final boss”</strong> for assets and said Bitcoin <strong>“tends to react like risk squared right now.”</strong> In his view, rising yields and restrictive policy can be a near-term headwind; the longer-term upside case rests on a later expansion of money supply, not on an immediate inflation print.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
