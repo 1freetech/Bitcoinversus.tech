@@ -1,6 +1,8 @@
 ---
 post_id: 24223
-title: "OSETC.035: PROFINET Basics — Device Names, DCP, GSDML, Real-Time I/O, and Troubleshooting"
+series: "Open-Source Networking Technician Certification"
+lesson_number: 33
+title: "OSNTC.033: PROFINET Basics — Device Names, DCP, GSDML, Real-Time I/O, and Troubleshooting"
 live_url: "https://bitcoinversus.tech/2026/10/13/osetc-035-profinet-basics-device-names-dcp-gsdml-real-time-io-troubleshooting/"
 slug: "osetc-035-profinet-basics-device-names-dcp-gsdml-real-time-io-troubleshooting"
 featured_media_id: 24226
@@ -13,7 +15,7 @@ status: publish
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This lesson follows <a href="https://bitcoinversus.tech/2026/10/12/osetc-034-ethernet-ip-basics-cip-explicit-implicit-rpi-ports-troubleshooting/"><strong>OSETC.034: EtherNet/IP Basics</strong></a>, <a href="https://bitcoinversus.tech/2026/10/11/osetc-033-modbus-tcp-ethernet-port-502-mbap-unit-id-registers-troubleshooting/"><strong>OSETC.033: Modbus TCP over Ethernet</strong></a>, and <a href="https://bitcoinversus.tech/2026/10/09/osetc-032-modbus-rtu-rs485-wiring-addressing-function-codes-registers-crc-troubleshooting/"><strong>OSETC.032: Modbus RTU over RS-485</strong></a>. Those lessons make it easier to compare how different industrial networks identify devices and move process data.</p>
+<p>This lesson follows <a href="https://bitcoinversus.tech/2026/10/12/osetc-034-ethernet-ip-basics-cip-explicit-implicit-rpi-ports-troubleshooting/"><strong>OSNTC.032: EtherNet/IP Basics</strong></a>, <a href="https://bitcoinversus.tech/2026/10/11/osetc-033-modbus-tcp-ethernet-port-502-mbap-unit-id-registers-troubleshooting/"><strong>OSNTC.031: Modbus TCP over Ethernet</strong></a>, and <a href="https://bitcoinversus.tech/2026/10/09/osetc-032-modbus-rtu-rs485-wiring-addressing-function-codes-registers-crc-troubleshooting/"><strong>OSETC.032: Modbus RTU over RS-485</strong></a>. Those lessons make it easier to compare how different industrial networks identify devices and move process data.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:shortcode -->
@@ -213,7 +215,7 @@ status: publish
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong>Next:</strong> OSETC.036 will continue the industrial networking sequence with another field-level protocol or troubleshooting skill.</p>
+<p><strong>Next:</strong> OSNTC.034 will continue the industrial networking sequence with another field-level protocol or troubleshooting skill.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
