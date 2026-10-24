@@ -33,4 +33,6 @@ WordPress owner-side post listing and post content were checked on 2026-10-23. P
 
 **Completed:** live post ID/title/category and numbering review; four live networking-post title migrations, targeted in-body cross-reference corrections, preserved historic slugs and cover IDs; three foundational electrical gaps prioritized.
 
+**GitHub archive sync completed:** Updated the four corresponding archive records to match the current published Gutenberg bodies and OSNTC titles, plus the EtherNet/IP metadata record. The historical file paths were preserved just as the live WordPress URLs were.
+
 **Pending:** independent human live-page/embed rendering review and actual publication of new OSETC.033–035 electrical lessons. The four live WordPress title/body changes are already saved. No new electrical lesson was published by this audit.
