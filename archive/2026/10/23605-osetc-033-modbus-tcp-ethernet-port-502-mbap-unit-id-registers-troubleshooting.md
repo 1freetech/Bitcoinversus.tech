@@ -1,6 +1,8 @@
 ---
 post_id: 23605
-title: "OSETC.033: Modbus TCP over Ethernet — Port 502, MBAP Header, Unit IDs, Registers, and Troubleshooting"
+series: "Open-Source Networking Technician Certification"
+lesson_number: 31
+title: "OSNTC.031: Modbus TCP over Ethernet — Port 502, MBAP Header, Unit IDs, Registers, and Troubleshooting"
 live_url: "https://bitcoinversus.tech/2026/10/11/osetc-033-modbus-tcp-ethernet-port-502-mbap-unit-id-registers-troubleshooting/"
 slug: "osetc-033-modbus-tcp-ethernet-port-502-mbap-unit-id-registers-troubleshooting"
 featured_media_id: 23602
