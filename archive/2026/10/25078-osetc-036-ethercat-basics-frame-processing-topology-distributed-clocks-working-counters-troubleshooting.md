@@ -1,12 +1,14 @@
 ---
 post_id: 25078
-title: "OSETC.036: EtherCAT Basics — Frame Processing, Topology, Distributed Clocks, Working Counters, and Troubleshooting"
+series: "Open-Source Networking Technician Certification"
+lesson_number: 34
+title: "OSNTC.034: EtherCAT Basics — Frame Processing, Topology, Distributed Clocks, Working Counters, and Troubleshooting"
 live_url: "https://bitcoinversus.tech/2026/10/14/osetc-036-ethercat-basics-frame-processing-topology-distributed-clocks-working-counters-troubleshooting/"
 slug: "osetc-036-ethercat-basics-frame-processing-topology-distributed-clocks-working-counters-troubleshooting"
 featured_media_id: 25068
 featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/osetc-036-ethercat-basics-cover-1200x630-1.png"
 status: publish
-content_hash: "92593bdb7c86815bf415f41b7bfdc3b80cccf6be"
+content_hash: "c8cdac481ab2b14d6fb037e828eb89d863b65b4d"
 ---
 
 <!-- wp:paragraph -->
@@ -14,7 +16,7 @@ content_hash: "92593bdb7c86815bf415f41b7bfdc3b80cccf6be"
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This lesson follows <a href="https://bitcoinversus.tech/2026/10/13/osetc-035-profinet-basics-device-names-dcp-gsdml-real-time-io-troubleshooting/"><strong>OSETC.035: PROFINET Basics</strong></a>, <a href="https://bitcoinversus.tech/2026/10/12/osetc-034-ethernet-ip-basics-cip-explicit-implicit-rpi-ports-troubleshooting/"><strong>OSETC.034: EtherNet/IP Basics</strong></a>, and <a href="https://bitcoinversus.tech/2026/10/11/osetc-033-modbus-tcp-ethernet-port-502-mbap-unit-id-registers-troubleshooting/"><strong>OSETC.033: Modbus TCP over Ethernet</strong></a>. EtherCAT is another Industrial Ethernet technology, but its traffic flow and timing model are different enough that technicians should not troubleshoot it as if it were ordinary switched Ethernet.</p>
+<p>This lesson follows <a href="https://bitcoinversus.tech/2026/10/13/osetc-035-profinet-basics-device-names-dcp-gsdml-real-time-io-troubleshooting/"><strong>OSNTC.033: PROFINET Basics</strong></a>, <a href="https://bitcoinversus.tech/2026/10/12/osetc-034-ethernet-ip-basics-cip-explicit-implicit-rpi-ports-troubleshooting/"><strong>OSNTC.032: EtherNet/IP Basics</strong></a>, and <a href="https://bitcoinversus.tech/2026/10/11/osetc-033-modbus-tcp-ethernet-port-502-mbap-unit-id-registers-troubleshooting/"><strong>OSNTC.031: Modbus TCP over Ethernet</strong></a>. EtherCAT is another Industrial Ethernet technology, but its traffic flow and timing model are different enough that technicians should not troubleshoot it as if it were ordinary switched Ethernet.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:shortcode -->
