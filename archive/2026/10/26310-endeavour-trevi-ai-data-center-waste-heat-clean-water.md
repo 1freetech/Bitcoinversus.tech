@@ -1,0 +1,33 @@
+---
+post_id: 26310
+status: publish
+date: 2026-10-24
+title: "Endeavour and Trevi Plan to Make Clean Water With AI Data Center Waste Heat"
+url: https://bitcoinversus.tech/2026/10/24/endeavour-trevi-ai-data-center-waste-heat-clean-water/
+featured_media_id: 26308
+featured_image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/endeavour-trevi-data-center-water-diptych-1200x630-1.png
+categories: [5177360, 1212, 27318186]
+format: gutenberg
+---
+
+<!-- wp:paragraph --><p><strong>October 24, 2026 —</strong> Endeavour and Trevi Systems announced an October 22 partnership to make clean water using heat that AI data centers ordinarily reject. The companies intend to pair Endeavour’s <a href="https://endeavourii.com/news-and-stories/every-megawatt-of-ai-capacity">ThermalWorks closed-loop cooling platform</a> with <a href="https://www.trevisystems.com/technology">Trevi’s forward-osmosis desalination process</a>.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2>Key Takeaways</h2><!-- /wp:heading -->
+<!-- wp:list --><ul><li>Target: up to <strong>200,000 gallons of clean water per day per MW</strong> when treating brackish groundwater.</li><li>Trevi’s separation process can use recovered heat at <strong>60–80°C</strong>.</li><li>The water-production figures are company projections, not yet measured output from a commercial AI data center.</li></ul><!-- /wp:list -->
+<!-- wp:heading --><h2>How Heat Can Become Fresh Water</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>In forward osmosis, a concentrated draw solution pulls water across a membrane, separating it from salt and contaminants. Heat then helps recover clean water and regenerate the draw solution for reuse. Unlike conventional reverse osmosis, the separation stage does not rely on comparable high-pressure pumping. Trevi also proposes additional concentration and crystallization stages to reduce liquid-brine discharge.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>Endeavour estimates roughly <strong>50,000 gallons per day per MW</strong> when treating oilfield produced water instead of brackish groundwater. Its illustrative 100 MW campus could produce up to 20 million gallons daily. However, performance depends on feedwater chemistry, recovery efficiency, usable heat temperature, operating hours and the equipment required beyond the computing load. Endeavour has not identified a completed data-center installation proving those yields. <a href="https://www.datacenterdynamics.com/en/news/endeavour-partners-with-us-desalination-firm-trevi-to-turn-data-center-waste-heat-into-clean-water/">Independent industry coverage</a> also describes first deployments as planned.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2>Why It Matters For Data Centers</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>This is different from atmospheric water generation: Trevi treats existing saline or contaminated water rather than extracting moisture from air. BitcoinVersus.Tech previously covered <a href="https://bitcoinversus.tech/2026/10/13/heat-to-water-live-data-center-follow-up/">AirJoule’s heat-to-water data-center pilot</a> and the <a href="https://bitcoinversus.tech/2025/11/01/u-s-army-turns-waste-heat-into-clean-water-for-soldiers/">Army waste-heat water project</a>. Both demonstrate adjacent approaches, not proof of Trevi’s projected yields.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>The shared engineering principle is recovering thermal energy after computation. Other examples include <a href="https://bitcoinversus.tech/2026/10/06/can-data-center-waste-heat-warm-homes-or-nah/">district heating from data centers</a>, <a href="https://bitcoinversus.tech/2026/09/27/canaan-bitcoin-miners-heating-2800-nordic-homes/">Bitcoin miners heating Nordic homes</a>, and <a href="https://bitcoinversus.tech/2026/09/23/eu-plans-data-center-energy-and-water-labels/">proposed European energy and water labels</a>.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2>Videos And Public Discussion</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The next video explains another approach to using low-grade heat for water production. <strong>AirJoule's atmospheric technology is distinct from Trevi's forward osmosis.</strong></p><!-- /wp:paragraph -->
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=Ufnqq_BakPU]<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p>This Bloomberg report explains why capturing server waste heat can be practical in some settings and difficult in others.</p><!-- /wp:paragraph -->
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=NRQExK4mZrI]<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p>The partnership prompted public discussion. The following original X news post reports the proposed deployment and target; the Reddit thread includes questions about scaling and water-resource impacts.</p><!-- /wp:paragraph -->
+<!-- wp:shortcode -->[embed]https://twitter.com/financespotnews/status/2113599315285606555[/embed]<!-- /wp:shortcode -->
+<!-- wp:shortcode -->[embed]https://www.reddit.com/r/Futurology/comments/1xdm4tp/endeavour_partners_with_us_desalination_firm/[/embed]<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p>Read the <a href="https://endeavourii.com/news-and-stories/every-megawatt-of-ai-capacity">October 22 primary announcement</a> and <a href="https://www.trevisystems.com/technology">Trevi’s technical explanation</a> for the companies’ own descriptions. The main test ahead is measured gallons of useful water per MWh of compute, after accounting for water quality, auxiliary energy, treatment costs and any remaining concentrate.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>BitcoinVersus.Tech Editor's Note: We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided.</em></p><!-- /wp:paragraph -->
+<!-- wp:image {"id":24593,"sizeSlug":"medium","linkDestination":"none"} --><figure class="wp-block-image size-medium"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr.png?w=300" alt="Original 5000 sat BitcoinVersus.Tech donation QR screenshot" class="wp-image-24593" /></figure><!-- /wp:image -->
+<!-- wp:paragraph --><p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition.</em></p><!-- /wp:paragraph -->
