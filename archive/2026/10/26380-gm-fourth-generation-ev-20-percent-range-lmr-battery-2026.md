@@ -8,7 +8,7 @@ status: publish
 categories: [6, 27318186]
 source_date: "2026-10-21"
 published_date: "2026-10-25"
-editorial_word_count_excluding_captions_footer: 449
+editorial_word_count_excluding_captions_footer: 420
 
 embed_fix_date: '2026-10-25'
 embed_fix_notes: 'Replaced prior Korean video with verified MotorTrend GM Forward 2025 interview covering GM EV batteries and computing. WordPress rendered YouTube iframe; Reddit shortcode preserved.'
@@ -32,7 +32,7 @@ embed_fix_notes: 'Replaced prior Korean video with verified MotorTrend GM Forwar
 [youtube https://www.youtube.com/watch?v=KGNJL0X8qOA]
 <!-- /wp:shortcode -->
 
-<!-- wp:paragraph --><p><em>MotorTrend's English-language GM Forward interview (October 2025) features General Motors engineers and executives discussing its next-generation computing architecture and lithium-manganese-rich batteries. The battery segment begins about 15 minutes in. This is background to GM's October 2026 fourth-generation platform announcement, not footage of that announcement. <a href="https://www.youtube.com/watch?v=KGNJL0X8qOA">Watch directly on YouTube</a> if the player is unavailable.</em></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>MotorTrend interviews GM engineers about LMR batteries and vehicle computers (2025; battery segment at 15:20). Background to GM's 2026 announcement. <a href="https://www.youtube.com/watch?v=KGNJL0X8qOA">Watch on YouTube</a>.</em></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Beyond chemistry, GM estimates its new drive units can use <strong>40% fewer components</strong>, while the next electrical architecture cuts wiring by about <strong>30%</strong> and offers up to <strong>40 times more computing power</strong>. These are GM comparisons with its present systems, not an industry-wide benchmark. Our <a href="https://bitcoinversus.tech/2026/10/14/top-7-most-powerful-ev-powertrains/">EV powertrain comparison</a> provides context for today's propulsion designs.</p><!-- /wp:paragraph -->
 
