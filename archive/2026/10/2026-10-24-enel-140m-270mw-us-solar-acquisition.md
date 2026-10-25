@@ -4,9 +4,9 @@ url: "https://bitcoinversus.tech/2026/10/24/enel-140-million-270mw-us-solar-acqu
 publication_date: "2026-10-24"
 post_id: 26311
 wordpress_status: publish
-featured_media_id: 26309
-featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/wide_cinematic_anime_style_landscape_scene_of_a_s.png"
-featured_media_original_dimensions: "1730x909"
+featured_media_id: 26315
+featured_media_url: "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/enel_270mw_solar_anime_cover_1200x630.jpg"
+featured_media_original_dimensions: "1200x630"
 featured_media_style: "anime editorial artwork"
 category_ids: [1212, 27318186]
 excerpt: "Enel has added seven operating solar plants across Virginia and the Carolinas. Explore the $140 million deal, 270 MWdc capacity, and what the numbers mean."
