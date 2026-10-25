@@ -8,10 +8,10 @@ status: publish
 categories: [6, 27318186]
 source_date: "2026-10-21"
 published_date: "2026-10-25"
-editorial_word_count_excluding_captions_footer: 410
+editorial_word_count_excluding_captions_footer: 449
 
 embed_fix_date: '2026-10-25'
-embed_fix_notes: 'YouTube WordPress shortcode renders iframe; Reddit embed shortcode renders blockquote and widget loader; X removed; direct links retained.'
+embed_fix_notes: 'Replaced prior Korean video with verified MotorTrend GM Forward 2025 interview covering GM EV batteries and computing. WordPress rendered YouTube iframe; Reddit shortcode preserved.'
 ---
 
 <!-- wp:paragraph --><p>General Motors outlined its <strong>fourth-generation electric-vehicle platform</strong> on <strong>October 21, 2026</strong>, at GM Forward in New York. The automaker says redesigned batteries, motors, aerodynamics and computing could deliver <strong>roughly 20% more driving range per kilowatt-hour</strong> than today's EVs. The platform remains under development; that efficiency gain is GM's early engineering projection, not a published production-vehicle test.</p><!-- /wp:paragraph -->
@@ -29,10 +29,10 @@ embed_fix_notes: 'YouTube WordPress shortcode renders iframe; Reddit embed short
 <!-- wp:paragraph --><p>GM says it evaluated <strong>more than 300,000 virtual cell designs</strong> before constructing a physical prototype. LMR cells are planned for its Ultium Cells venture with LG Energy Solution in Spring Hill, Tennessee. Their promised 33% density advantage is relative to lithium-iron-phosphate chemistry, not every battery currently on sale. For another emerging approach, see our report on <a href="https://bitcoinversus.tech/2026/10/12/prologium-rimac-ev-battery-testing/">ProLogium and Rimac battery testing</a>.</p><!-- /wp:paragraph -->
 
 <!-- wp:shortcode -->
-[youtube https://www.youtube.com/watch?v=B0_KXaZmlAA]
+[youtube https://www.youtube.com/watch?v=KGNJL0X8qOA]
 <!-- /wp:shortcode -->
 
-<!-- wp:paragraph --><p><em>MOCAR explains LMR batteries (Korean). <a href="https://www.youtube.com/watch?v=B0_KXaZmlAA">Watch on YouTube</a> if needed; GM's figures remain projections.</em></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><em>MotorTrend's English-language GM Forward interview (October 2025) features General Motors engineers and executives discussing its next-generation computing architecture and lithium-manganese-rich batteries. The battery segment begins about 15 minutes in. This is background to GM's October 2026 fourth-generation platform announcement, not footage of that announcement. <a href="https://www.youtube.com/watch?v=KGNJL0X8qOA">Watch directly on YouTube</a> if the player is unavailable.</em></p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Beyond chemistry, GM estimates its new drive units can use <strong>40% fewer components</strong>, while the next electrical architecture cuts wiring by about <strong>30%</strong> and offers up to <strong>40 times more computing power</strong>. These are GM comparisons with its present systems, not an industry-wide benchmark. Our <a href="https://bitcoinversus.tech/2026/10/14/top-7-most-powerful-ev-powertrains/">EV powertrain comparison</a> provides context for today's propulsion designs.</p><!-- /wp:paragraph -->
 
