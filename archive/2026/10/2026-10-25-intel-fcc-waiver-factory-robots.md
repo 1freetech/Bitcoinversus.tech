@@ -17,11 +17,13 @@ embeds:
   youtube:
     - https://www.youtube.com/watch?v=NvBB2T8NHzY
     - https://www.youtube.com/watch?v=-KTKg0Y1snQ
-  x: https://twitter.com/arstechnica/status/2113682053409763355
+  x_source_link: https://x.com/arstechnica/status/2113682053409763355
 qa:
   wordpress_status_confirmed: true
   wordpress_youtube_iframe_count: 2
-  wordpress_twitter_native_block_present: true
+  wordpress_twitter_native_block_present: false
+  broken_twitter_embed_removed: true
+  x_source_link_present: true
   twitter_rich_card_confirmed: false
   live_browser_playback_confirmed: false
   original_donation_qr_image_present: true
@@ -48,9 +50,7 @@ qa:
 
 <!-- wp:paragraph --><p>An industrial vehicle’s controller and firmware interact with navigation, motor drives, safety interlocks and manufacturing systems. Blocking necessary updates or compatible component replacements can create downtime risks even when existing robots remain legally operable. The FCC limited Intel’s relief to specified changes on existing units inside its factories.</p><!-- /wp:paragraph -->
 
-<!-- wp:paragraph --><p>In reporting that prompted this story, <a href="https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/">Ars Technica</a> highlighted Intel’s uncertainty over how the foreign-robot restrictions applied. Its original social post is embedded below.</p><!-- /wp:paragraph -->
-
-<!-- wp:embed {"url":"https://twitter.com/arstechnica/status/2113682053409763355","type":"rich","providerNameSlug":"twitter","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">https://twitter.com/arstechnica/status/2113682053409763355</div></figure><!-- /wp:embed -->
+<!-- wp:paragraph --><p>In reporting that prompted this story, <a href="https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/">Ars Technica</a> highlighted Intel’s uncertainty over how the foreign-robot restrictions applied. Read <a href="https://x.com/arstechnica/status/2113682053409763355">Ars Technica’s original X post</a> for its public summary.</p><!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>For additional engineering context, Intel’s earlier video follows the software and automation behind wafer movement through a fab. These materials predate the 2026 waiver.</p><!-- /wp:paragraph -->
 
