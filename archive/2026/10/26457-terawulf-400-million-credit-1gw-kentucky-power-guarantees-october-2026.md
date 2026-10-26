@@ -14,8 +14,9 @@ primary_sources:
   - https://www.sec.gov/Archives/edgar/data/1083301/000162828026067100/wulf-20261023.htm
   - https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001083301-26-000166/wulf-20260630.htm
   - https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001628280-26-064757/wulf-20261001.htm
-media_verification: "Native YouTube Gutenberg block persisted; actual playback and live-page screenshot not independently verified (runtime cannot access the public web page)"
+media_verification: "Verified WordPress view HTML produces an iframe for the canonical YouTube video; actual playback and live-page screenshot not independently verified (runtime network cannot access the page)"
 ---
+
 <!-- wp:paragraph --><p>Bitcoin miner-turned-data-center developer <strong>TeraWulf increased its committed revolving credit facility 60%, from $250 million to approximately $400 million</strong>, under an amendment effective October 23, 2026. Its <a href="https://www.sec.gov/Archives/edgar/data/1083301/000162828026067100/wulf-20261023.htm">SEC Form 8-K</a> also removes a restriction on letters of credit—financial guarantees that can be critical when arranging large electricity and transmission connections.</p><!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Key Takeaways</h2><!-- /wp:heading -->
@@ -28,7 +29,7 @@ media_verification: "Native YouTube Gutenberg block persisted; actual playback a
 
 <!-- wp:paragraph --><p>The power connection is tangible. TeraWulf’s <a href="https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001083301-26-000166/wulf-20260630.htm">June-quarter filing</a> reports $360.7 million in letters of credit posted in July for Kentucky Power energy-service and transmission obligations at Muskie. Of that amount, $74 million came through its revolver; $286.7 million used a separate, cash-backed facility. These were posted guarantees, not a reported electricity bill.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=DosmgDM6rjA","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=DosmgDM6rjA</div><figcaption class="wp-element-caption"><em>TeraWulf’s earlier official company video explains its move from Bitcoin mining to energy-intensive AI infrastructure. Background context, not evidence of the October 23 financing.</em></figcaption></figure><!-- /wp:embed -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=DosmgDM6rjA","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">[youtube https://www.youtube.com/watch?v=DosmgDM6rjA]</div><figcaption class="wp-element-caption"><em>TeraWulf’s earlier official company video explains its move from Bitcoin mining to energy-intensive AI infrastructure. Background context, not evidence of the October 23 financing.</em></figcaption></figure><!-- /wp:embed -->
 
 <!-- wp:paragraph --><p>Securing those guarantees matters because the company’s <a href="https://investors.terawulf.com/sec-filings/all-sec-filings/content/0001628280-26-064757/wulf-20261001.htm">October 5 disclosure</a> increased planned contracted power at its eastern Kentucky Muskie campus from 500 MW to <strong>1 GW</strong>. The first 500 MW is targeted to ramp in 2028; the second phase is targeted for 2029, subject to approvals and utility construction. Neither phase is already operating at that capacity.</p><!-- /wp:paragraph -->
 
