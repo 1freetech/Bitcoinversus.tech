@@ -8,10 +8,10 @@
 - Featured media ID: 26473
 - Featured cover: original 1200×630 editorial conceptual illustration
 - Categories: information-technology (5812), semiconductors (284207), technology (6), trending-news (27318186)
-- In-story media: official Cadence ChipStack AI Super Agent demonstration https://www.youtube.com/watch?v=p_U-4-jKgcU
+- In-story media: official Cadence ChipStack video via WordPress.com native [youtube] shortcode (https://www.youtube.com/watch?v=p_U-4-jKgcU); contextual caption restored.
 - Source verification: Cadence official October 26, 2026 press release, Cadence Q3 investor release, NVIDIA OpenShell official release.
 - Editorial limitations: 'up to 30%' and '5×' are Cadence-reported initial test claims, not independently verified benchmarks.
-- QA: WordPress saved-content re-read complete; local screenshot navigation blocked (ERR_BLOCKED_BY_ADMINISTRATOR) for desktop/mobile, playback unverified.
+- QA: WordPress view rendered an actual YouTube iframe via the WordPress.com native [youtube] shortcode; independent browser playback and desktop/mobile screenshots remain unverified because browser navigation is blocked.
 - Donation footer: original screenshot image media ID 24043.
 - Internal hyperlinks: 4; primary external hyperlinks: 2.
 
@@ -29,9 +29,11 @@
 
 <!-- wp:paragraph --><p>The distinction matters. AI-generated layouts and verification plans still need to meet timing, power, area and manufacturing constraints. A convincing language-model answer alone does not establish that a chip can be fabricated or will operate correctly. Our earlier coverage of <a href="https://bitcoinversus.tech/2026/09/25/cadence-adds-ai-agent-for-rtl-chip-design/">Cadence's RTL-generation agent</a> explains one part of that workflow.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=p_U-4-jKgcU","type":"video","providerNameSlug":"youtube","responsive":true} --><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">https://www.youtube.com/watch?v=p_U-4-jKgcU</div><figcaption class="wp-element-caption"><em>Cadence's official February 2026 ChipStack AI Super Agent demonstration shows a related design workflow; it is not a Maestro benchmark.</em></figcaption></figure><!-- /wp:embed -->
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=p_U-4-jKgcU]
+<!-- /wp:shortcode -->
 
-<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Security, Competition and Availability</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p><em>Video: Cadence Design Systems demonstrates its February 2026 ChipStack AI Super Agent workflow. This earlier demonstration provides technical context; it is not an independent test of the new Maestro models.</em></p><!-- /wp:paragraph --><!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Security, Competition and Availability</h2><!-- /wp:heading -->
 
 <!-- wp:paragraph --><p>Customers can deploy Maestro on Cadence infrastructure, in a public cloud or inside their own data centers, and can further train models on private designs. The platform uses NVIDIA Nemotron alongside other models. Cadence and NVIDIA are also developing integration with <a href="https://nvidianews.nvidia.com/news/openshell-reference-architecture">NVIDIA's OpenShell architecture</a> for more controlled AI-agent operations.</p><!-- /wp:paragraph -->
 
