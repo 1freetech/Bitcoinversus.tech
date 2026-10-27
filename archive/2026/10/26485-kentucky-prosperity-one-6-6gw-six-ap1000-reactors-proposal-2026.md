@@ -7,10 +7,10 @@
 - Featured media ID: 26483 (original 1200×630 conceptual editorial image)
 - In-story chart media ID: 26484 (1200×520)
 - Categories: energy, Trending News
-- Social embed: https://twitter.com/TheNuclearCo/status/2112831438814933052
+- Social embed: original company tweet via WordPress.com `[tweet https://twitter.com/TheNuclearCo/status/2112831438814933052]` shortcode
 - Editorial checks: primary announcement and NRC design rule verified; prepublication site duplicate search completed.
-- Saved-block check: chart and original X announcement are present in final Gutenberg content.
-- Visual QA status: not screenshot verified; live X video playback not independently verified, because browsing/headless access to the public page was unavailable.
+- Saved-block check: chart, original tweet shortcode, featured cover, original QR footer preserved.
+- Rendered WordPress API QA: verified original tweet renders as a full Twitter blockquote with tweet text, author, timestamp and video short-link, not just a bare URL. Live browser screenshots and playback remain unverified.
 - Source date: The Nuclear Company, 2026-10-21
 
 ## Final Gutenberg source
@@ -29,7 +29,9 @@
 
 <!-- wp:paragraph --><p>The official announcement video offers a view of the developer's ambitions; it should not be confused with evidence of a finished plant or approved construction.</p><!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://twitter.com/TheNuclearCo/status/2112831438814933052","type":"rich","providerNameSlug":"x","responsive":true} --><figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper">https://twitter.com/TheNuclearCo/status/2112831438814933052</div><figcaption class="wp-element-caption">The Nuclear Company's October 21 original announcement video presents the proposed campus. It is promotional media, not footage of a completed facility.</figcaption></figure><!-- /wp:embed -->
+<!-- wp:shortcode -->
+[tweet https://twitter.com/TheNuclearCo/status/2112831438814933052]
+<!-- /wp:shortcode -->
 
 <!-- wp:heading {"level":2} --><h2 class="wp-block-heading">A Familiar Reactor Design, but a New Site</h2><!-- /wp:heading -->
 
