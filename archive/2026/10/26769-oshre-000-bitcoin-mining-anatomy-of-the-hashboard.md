@@ -5,13 +5,14 @@ title: "OSHRE.000: Bitcoin Mining — The Anatomy of the Hashboard"
 url: "https://bitcoinversus.tech/2026/10/27/oshre-000-bitcoin-mining-anatomy-of-the-hashboard/"
 featured_media: 26764
 featured_image_dimensions: 1200x630
-in_story_media_count: 3
-in_story_media_ids: [26765, 21674, 21686]
+in_story_media_count: 5
+in_story_photo_ids: [26765, 21674, 21686]
+in_story_youtube_video_ids: [C9ngKOd49XA, u8M7ED11ciE]
 footer_donation_qr_id: 24043
 category_ids: [57414501, 792778074, 284207, 2509703]
 style: textbook-wiki
-qa_status: "published-live-qa-pending"
-qa_note: "WordPress publish status and exact saved Gutenberg content confirmed. Independent desktop/mobile screenshots not obtained; actual third-party video playback not applicable (images-only article)."
+qa_status: "published-live-visual-qa-pending"
+qa_note: "Saved WordPress Gutenberg contains two canonical YouTube embed blocks and WordPress view output contains two youtube.com/embed iframes. Independent video playback and desktop/mobile screenshots have not been verified. All five in-story media are included before the donation QR; live visual checks remain outstanding."
 ---
 
 <!-- wp:paragraph --><p><strong>OSHRE.000 — Open-Source Hashboard Repair Engineering / Super-Fundamentals.</strong> A <strong>hashboard</strong> is a specialized printed-circuit assembly carrying the ASICs that execute Bitcoin mining calculations. It is not the miner’s control board, power supply or network interface. This opening lesson surveys how hashboards developed, what sits on them, why different generations cannot simply be interchanged, and how repair engineers recognize the fundamental electrical and thermal systems before attempting fault isolation. For a shorter introduction, see <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-hardware-what-is-hashboard-asic-board/">what a hashboard is</a>; this course begins the engineering-level treatment.</p><!-- /wp:paragraph -->
@@ -43,6 +44,14 @@ qa_note: "WordPress publish status and exact saved Gutenberg content confirmed. 
 <!-- wp:image {"id":21674,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/antminer-bm1387b-asic-board-source.jpg" alt="Close-up original photograph of Bitmain Antminer BM1387B mining ASIC mounted on a printed circuit board" class="wp-image-21674" /><figcaption class="wp-element-caption"><em>Real Bitmain BM1387B ASIC package and surrounding circuit board. Photograph: John McMaster, <a href="https://commons.wikimedia.org/wiki/File:Pcb1_-_Antminer_BM1387B_-_John_McMaster.jpg">Wikimedia Commons</a>, CC BY 4.0.</em></figcaption></figure><!-- /wp:image -->
 
 <!-- wp:paragraph --><p>A chip part number is not a universal compatibility promise. For example, the <a href="https://github.com/bitaxeorg/bitaxeGamma">open-source Bitaxe Gamma project</a> documents a BM1370 chip sourced from the S21 Pro design and notes that its footprint and pinout differ from earlier BM-series chips. Physical fit, electrical levels, firmware support and thermal assembly must all match; see <a href="https://bitcoinversus.tech/2026/09/27/bitcoin-mining-hashboard-consolidation-compatibility/">why hashboards are not universally interchangeable</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The following technical repair demonstration shows the physical BM1397 package removal and board pad preparation on an Antminer T17 hashboard. It illustrates professional chip-level handling—not a substitute for training, safe isolation or a model-specific service procedure.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=C9ngKOd49XA","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=C9ngKOd49XA
+</div><figcaption class="wp-element-caption"><em>Antminer Repair demonstrates removing a BM1397 mining ASIC from a T17 hashboard and preparing the board for replacement. Video: Antminer Repair, April 2021.</em></figcaption></figure>
+<!-- /wp:embed -->
 
 <!-- wp:heading --><h2>4. Power architecture and voltage domains</h2><!-- /wp:heading -->
 
@@ -83,6 +92,14 @@ qa_note: "WordPress publish status and exact saved Gutenberg content confirmed. 
 <!-- wp:table --><figure class="wp-block-table"><table><thead><tr><th scope="col">Observed symptom</th><th scope="col">Possible fault categories — not a diagnosis</th></tr></thead><tbody><tr><td>Control interface works, one board absent</td><td>Board power connection, controller cable, PSU output, board supervisor or ASIC chain fault.</td></tr><tr><td>Board detects only part of chip chain</td><td>Clock/command/return signal path, damaged chip or solder joint, or failed local power domain.</td></tr><tr><td>All boards report low hashrate</td><td>Power limits, firmware settings, pool workload, inlet temperature, airflow or system-wide PSU behavior.</td></tr><tr><td>Sudden temperature shutdown</td><td>Fan or pump issue, heatsink contact, sensor fault, thermal interface, blocked cooling path.</td></tr><tr><td>Intermittent hash errors</td><td>Marginal supply regulation, signal integrity, overheating, chip degradation or unstable tuning.</td></tr></tbody></table></figure><!-- /wp:table -->
 
 <!-- wp:paragraph --><p>Good fault isolation avoids replacing chips simply because a log shows “missing ASIC.” Preserve the baseline data, verify the test fixture, compare with a known-good assembly of the same revision, document each measurement and rerun the same acceptance tests after repair. Manufacturer warranty and service terms may restrict component-level interventions.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>A dedicated Bitmain hashboard test fixture helps trained repair technicians interpret ASIC chain responses before choosing a repair. In this recorded demonstration, Antminer Repair examines test-fixture serial output and shows why a reported bad chip alone may not establish the true diagnosis.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=u8M7ED11ciE","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=u8M7ED11ciE
+</div><figcaption class="wp-element-caption"><em>Antminer Repair investigates Bitmain hashboard test-fixture output and chip-detection behavior, including a case where replacing a reported chip did not immediately resolve the observed symptom. Video: Antminer Repair, July 2021.</em></figcaption></figure>
+<!-- /wp:embed -->
 
 <!-- wp:heading --><h2>9. The future of hashboard engineering</h2><!-- /wp:heading -->
 
