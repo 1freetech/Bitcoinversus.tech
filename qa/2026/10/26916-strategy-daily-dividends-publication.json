@@ -1,0 +1,61 @@
+{
+  "post_id": 26916,
+  "date": "2026-10-28",
+  "title": "Strategy Shareholders Approve Daily Dividends for Four Preferred Stocks",
+  "canonical_url": "https://bitcoinversus.tech/2026/10/28/strategy-shareholders-approve-daily-dividends-strc-strf-strk-strd-2026/",
+  "editorial_policy": "BitcoinVersus.Tech Perfect Writer v2, October 2026 latest applicable publishing rules",
+  "wordpress_status": "publish",
+  "featured_media_id": 26915,
+  "cover_style": "Realistic Editorial Photography (conceptual artwork)",
+  "cover_dimensions": [
+    1200,
+    630
+  ],
+  "media": [
+    {
+      "type": "x",
+      "status_id": "2115451822915928244",
+      "origin": "Michael Saylor",
+      "verification": "WordPress rendered native X post and script; actual end-user browser rendering not checked"
+    },
+    {
+      "type": "youtube",
+      "video_id": "_Y8HAqAYMhE",
+      "origin": "Bitcoin Magazine April 2026 Michael Saylor STRC keynote",
+      "verification": "YouTube embed iframe in WordPress rendered output; actual playback not independently tested"
+    }
+  ],
+  "sources": [
+    "https://www.strategy.com/press/strategy-announces-approval-of-the-daily-dividends-amendment_10-28-2026",
+    "https://www.sec.gov/Archives/edgar/data/1050446/000119312526435451/0001193125-26-435451-index.htm",
+    "https://www.sec.gov/Archives/edgar/data/1050446/000119312526413159/d503578ddef14a.htm"
+  ],
+  "checks": {
+    "duplicate_search": "passed (no duplicate of today's approval; prior Strategy preferred-stock coverage linked)",
+    "factual_dates": "passed against October 28 8-K and proxy",
+    "published_wordpress": "passed",
+    "unique_featured_cover": "passed",
+    "cover_dimensions": "passed",
+    "media_quota": "passed (2 in-story)",
+    "wordpress_rendered_x_and_youtube": "passed at server-rendered HTML level",
+    "footer_qr": "passed",
+    "archive_write_and_fetchback": "passed",
+    "exact_archive_source_match": "passed",
+    "independent_desktop_screenshot": "not tested",
+    "independent_mobile_screenshot": "not tested",
+    "youtube_playback": "not tested",
+    "x_javascript_execution": "not tested"
+  },
+  "archive_path": "archive/2026/10/26916-strategy-shareholders-daily-dividends-strc-strf-strk-strd.md",
+  "archive_blob_sha": "6553978503f5cc839a4c67cea412a1c3bc1a0a94",
+  "quality_learning": [
+    "Verify 99.3% refers to votes cast, not fraction of all eligible shares.",
+    "Distinguish daily record dates from actual business-day payment mechanics.",
+    "Older videos must be explicitly described as educational context, not current meeting footage.",
+    "WordPress server-rendered iframes and X blockquote do not prove playback or interactive widget execution."
+  ],
+  "outstanding": [
+    "Desktop/mobile screenshot verification unavailable in this run",
+    "Actual YouTube playback and X widget JS execution not tested"
+  ]
+}
