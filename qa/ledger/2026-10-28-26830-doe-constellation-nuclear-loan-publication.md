@@ -28,3 +28,14 @@
 - **Outstanding:** No desktop/mobile screenshot capture or interactive playback/browser testing possible with the available tools in this run. WordPress's returned HTML contains image markup, but visual load and mobile layout remain unverified; no video used, therefore no playback claim.
 - **Future test:** Open [live article](https://bitcoinversus.tech/2026/10/28/doe-5-billion-constellation-nuclear-uprates-illinois-maryland-pennsylvania-2026/) at 1440px and 375px; visually inspect cover, images, captions, spacing, responsive layout and QR rendering; save screenshots. After edits, fetch final content from WordPress again and update GitHub archive.
 - **Status:** WordPress publication PASS; source/duplicate check PASS; saved/rendered media markup PASS; cover dimensions PASS; donation QR PASS; final archive PASS; desktop/mobile screenshots NOT TESTED.
+
+## October 28, 2026 — post-publication headline refinement
+
+- **Editorial feedback / fingerprint:** `BV-26830-HEADLINE-UPRATES-JARGON`: technically correct phrase "Nuclear Uprates" is specialist industry vocabulary and was less readable as a general energy-news headline. This is a clarity issue, not an error in the reporting.
+- **Former headline:** "DOE Offers Up to $5 Billion for Constellation Nuclear Uprates Across Three States."
+- **New headline:** "DOE Offers Up to $5 Billion to Increase Output at Eight Nuclear Plants."
+- **SEO title:** "DOE Offers $5B to Increase Output at Eight Nuclear Plants | BitcoinVersus.Tech."
+- **SEO description:** "DOE offers up to $5 billion in conditional financing to help increase output at eight existing Constellation nuclear plants across three states."
+- **Fix:** Updated original published WordPress post 26830 in place; preserved canonical slug/permalink and unchanged factual article content, featured image, inline original source links, two licensed plant photographs, and 5,000-sat QR footer.
+- **Regression test:** For public-facing energy headlines, prefer plain descriptions of the action over specialized terms such as "uprates" when meaning can be preserved; technical words can remain and be defined in the article body. Check published title and SEO via WordPress fetch-back, then update the *existing* GitHub archive using the exact final Gutenberg content; do not create a second article or change the permalink unnecessarily.
+- **Verification:** Published WordPress title and archived title/SEO match. Full browser screenshot verification remains pending as documented above.
