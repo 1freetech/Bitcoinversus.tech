@@ -1,0 +1,24 @@
+# Idaho Top 3 Data Center Projects — publication and QA ledger
+
+- Report date: October 28, 2026
+- Exact title: Top 3 Largest Data Center Projects in Idaho (2026)
+- WordPress post ID: 26871
+- WordPress publication status: publish; independently confirmed through fresh posts.get after publication
+- Live permalink returned by WordPress: https://bitcoinversus.tech/2026/10/28/top-3-largest-idaho-data-center-projects-2026-full-report/
+- Featured image: Media ID 26861; upload metadata confirmed 1200×630 original JPEG
+- In-story media: 3 relevant source-backed images (IDs 26862 Meta rendering; 26864 Blacks Creek landscape; 26866 Gemstone roadside notice). Excludes cover and QR.
+- Caption standard: only describe visible content plus source credit; no gratuitous "not this" language in captions.
+- Separate donation QR: media ID 24043, 5,000 sats.
+- Contextual internal links: 4. External source links: 19, including operator sources and original local reporting.
+- WordPress published Gutenberg content: 12,512 characters; no content warnings returned.
+- Exact GitHub archive: archive/2026/10/26871-top-3-largest-idaho-data-center-projects-2026-full-report.gutenberg.html
+- GitHub commit: 3f39eaaf33be1fe150992ca7fe5c2e9cd50518a5
+- GitHub fetch-back to fresh WordPress content: exact string equality PASS (12,512 characters).
+- Content preflight: 3 ranked project sections, 3 image blocks plus separate QR, required cover attached, prohibited-word lint PASS.
+- Source distinction: Gemstone 600–800 MW full-buildout estimate attributed to developer at 2025 hearing; Rhea 600 MW preliminary proposed capacity; Meta 198 MW third-party Cleanview modeling, not confirmed operator IT power; operating status Meta confirmed 2026-09-03.
+- Reader-view visual test: NOT VERIFIED. Web open of live page returned inaccessible; container HTTP attempt failed DNS resolution. No desktop/mobile screenshots captured or evaluated. Do not claim browser verification.
+- Embedded video playback: N/A (no YouTube/social embeds; story uses credited in-story images within 2–10 quota).
+- Error fingerprint: IDAHO_26871_LIVE_RENDER_QA_UNAVAILABLE_20261028
+- Root cause: public-domain fetch and browser screenshots unavailable in current tool runtime even while WordPress edit API works.
+- Fix: inspect live permalink on desktop and mobile, confirm all three images, captions, inline links, featured cover and QR actually render; repair any failure.
+- Regression check: authenticated preview desktop/mobile screenshots before publication when available, canonical Gutenberg media check, source audit and link test, post-publication screenshots, WordPress final fetch, GitHub archive and byte equality. Do not conflate URL validity with actual media rendering.
