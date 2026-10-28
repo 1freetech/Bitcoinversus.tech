@@ -1,7 +1,7 @@
 ---
 lesson_id: OSHRE.000
 post_id: 26769
-title: "OSHRE.000: Bitcoin Mining — The Anatomy of the Hashboard"
+title: "OSHRE.000: The Anatomy of the Hashboard"
 url: "https://bitcoinversus.tech/2026/10/27/oshre-000-bitcoin-mining-anatomy-of-the-hashboard/"
 featured_media: 26764
 featured_image_dimensions: 1200x630
