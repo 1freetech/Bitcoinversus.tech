@@ -1,0 +1,64 @@
+{
+  "post_id": 26908,
+  "title": "Google Previews Multi-Party Compute Security for Bank Crypto Custody",
+  "canonical_url": "https://bitcoinversus.tech/2026/10/28/google-multi-party-compute-banks-crypto-custody-security-2026/",
+  "date": "2026-10-28",
+  "editorial_policy": "BitcoinVersus.Tech Perfect Writer v2 and current October 2026 publishing laws",
+  "wordpress_status": "publish",
+  "featured_media_id": 26907,
+  "cover_style": "Split-Screen Editorial Diptych",
+  "cover_dimensions": [
+    1200,
+    630
+  ],
+  "in_story_media": [
+    {
+      "type": "native_x",
+      "status_id": "2115474150487998732",
+      "source": "https://twitter.com/bitcoinmagazine/status/2115474150487998732",
+      "verification": "WordPress server-rendered blockquote and script seen; end-user browser execution not tested"
+    },
+    {
+      "type": "youtube",
+      "id": "Wy0-L1q2fQY",
+      "verification": "WordPress iframe present; player playback not independently tested"
+    },
+    {
+      "type": "youtube",
+      "id": "qRQXQeTEN50",
+      "verification": "WordPress iframe present; player playback not independently tested"
+    }
+  ],
+  "checks": {
+    "live_post_status": "passed",
+    "cover_attachment": "passed",
+    "cover_dimensions": "passed",
+    "media_quota": "passed",
+    "canonical_source_links": "passed",
+    "original_diagram_ban": "passed",
+    "donated_qr_footer": "passed",
+    "git_archive_fetch_back": "passed",
+    "git_archive_matches_saved_wordpress_source": "passed",
+    "mobile_screenshot": "unverified",
+    "desktop_screenshot": "unverified",
+    "youtube_playback": "unverified",
+    "interactive_x_js_rendering": "unverified"
+  },
+  "archive_path": "archive/2026/10/26908-google-multi-party-compute-banks-crypto-custody-security-2026.md",
+  "archive_blob_sha": "ba85ad973ec12a7268393433bc47a22105c76501",
+  "research_notes": [
+    "Google's own product overview establishes preview status, threshold signing, and policy-veto caveat.",
+    "CoinDesk reports planned commercial availability in early 2027 and unnamed bank preview partners.",
+    "Older Google 2023 webinar and independent 2025 lab demo are explicitly labeled historical context, not the new preview product."
+  ],
+  "regression_precautions": [
+    "For X: verify exact originating status ID and rendered blockquote/widget markup; do not treat URL as proof of functional X UI.",
+    "For YouTube: verify each saved native block and WordPress-rendered iframe; never claim playback without a real play test.",
+    "For product claims: re-check Google's primary docs for preview stage and distinction between policy evaluation and signer override."
+  ],
+  "defects_found": [],
+  "unresolved_limitations": [
+    "Desktop and mobile browser screenshots not available in this workflow",
+    "Third-party YouTube playback and X widget JS execution not independently tested"
+  ]
+}
