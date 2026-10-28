@@ -1,0 +1,81 @@
+<!-- wp:paragraph --><p><strong>OSITC.011 — Windows Resource Monitor.</strong> is a built-in diagnostic application for viewing which processes are using processor time, memory, storage and network capacity in real time. A Windows computer that feels slow may have a busy CPU, a storage queue, memory pressure or heavy network activity; Resource Monitor helps a technician distinguish those possibilities before changing a configuration. It complements <a href="https://bitcoinversus.tech/2026/10/27/ositc-010-windows-reliability-monitor-crash-history-perfmon-rel/">Windows Reliability Monitor</a>, which is designed to investigate dated crashes and failures, and <a href="https://bitcoinversus.tech/2026/10/08/ositc-003-windows-process-troubleshooting-task-manager-pid-process-explorer/">Windows process troubleshooting</a>, which introduces Task Manager, process IDs and Process Explorer.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Definition and purpose</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Resource Monitor, commonly launched as <code>resmon.exe</code>, is a graphical performance troubleshooting utility included with Windows desktop and Windows Server editions that provide the tool. It groups observations under <strong>Overview, CPU, Memory, Disk and Network</strong>. Microsoft's <a href="https://learn.microsoft.com/en-us/windows/win32/perfctrs/using-performance-counters">performance-counter documentation</a> identifies Resource Monitor alongside Performance Monitor and other built-in monitoring utilities. Resource Monitor's live readings are snapshots and short rolling graphs, not a substitute for a recorded multihour performance trace.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Opening Resource Monitor</h2><!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} --><ol class="wp-block-list"><li>Press <strong>Windows + R</strong>, type <code>resmon</code> or <code>resmon.exe</code>, and select <strong>OK</strong>.</li><li>Alternatively search the Start menu for <strong>Resource Monitor</strong>.</li><li>Inspect the <strong>Overview</strong> tab, then choose the resource associated with the user-reported symptom.</li></ol><!-- /wp:list -->
+
+<!-- wp:paragraph --><p>The separate command <code>perfmon /res</code> also starts the resource view; Microsoft's <a href="https://learn.microsoft.com/windows-server/administration/windows-commands/perfmon">perfmon command reference</a> documents that switch. On managed workstations, administrative policy can affect which diagnostic tools or protected process details are accessible. Start with observation rather than elevating or terminating applications unnecessarily.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Video walkthrough — the live diagnostic views</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The first demonstration walks through Resource Monitor's CPU, memory, disk, network, associated-handle and connection views. As you watch, focus on identifying the <em>process ID (PID)</em> that accompanies each observation rather than guessing from the application's displayed name.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=WQfRlSmRRzo","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=WQfRlSmRRzo
+</div><figcaption class="wp-element-caption">Darien's Tips, <em>Windows Performance and Monitoring: Resource Monitor Tutorial</em> (January 2026). <a href="https://www.youtube.com/watch?v=WQfRlSmRRzo">Open the original video</a>.</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading --><h2>CPU — process activity and wait conditions</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>On the <strong>CPU</strong> tab, examine each process's current CPU consumption and <strong>Average CPU</strong> across the tool's sampling window. If a process repeatedly tops the list while users report latency, record its name and PID, then compare the timing with the affected application. <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/troubleshoot-high-cpu-usage-guidance">Microsoft's high-CPU troubleshooting guidance</a> recommends sorting Resource Monitor by Average CPU before investigating sustained consumption.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The CPU tab can also expose <strong>Associated Handles</strong>, which may help identify a program holding an open file or resource, and <strong>Analyze Wait Chain</strong> for some unresponsive processes. Finding an open handle does not prove a program is defective. Avoid closing handles or killing processes as a first diagnostic step, especially on production equipment.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Memory — use, commitment and hard faults</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The <strong>Memory</strong> tab shows how much physical RAM is being used and how individual processes are consuming or reserving memory. <strong>Commit</strong> indicates committed virtual memory for a process, not necessarily physical RAM currently resident. <strong>Hard Faults/sec</strong> measures references that required retrieving pages not presently in physical memory; some such faults are normal, and a spike alone does not prove faulty hardware.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>When users report freezes during large file operations, compare sustained hard faults, available memory and disk activity. For the distinction between RAM, committed memory, paging files and virtual address spaces, read <a href="https://bitcoinversus.tech/2026/10/08/it-what-is-virtual-memory-ram-pagefile-swap-page-faults/">What Is Virtual Memory?</a>. Treat all four measurements as context, not an automatic diagnosis.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Disk — identify the actual files generating I/O</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Under <strong>Disk</strong>, sort by total bytes per second, reads or writes to see which processes are active. In <strong>Disk Activity</strong>, the file-path column can show where I/O is occurring. The disk response time, queue length and <em>active time</em> may help distinguish a device under load from one moving data quickly. A disk can be near 100% busy while transferring relatively little data if requests are small, slow or highly fragmented; a percentage without latency and workload context is insufficient.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Example: an application hangs during a backup. Resource Monitor shows the backup process repeatedly reading many small files, while disk response time rises. The sound next step is to record the measurements and check the storage subsystem, free space, recent changes and competing workloads—not to disable antivirus or stop a backup without authorization.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Network — processes, connections and listening ports</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The <strong>Network</strong> tab associates processes with send/receive activity and, where visible, TCP connections. Examine the executable, PID, destination address and connection state together. A <strong>listening port</strong> indicates that software is ready to accept appropriate connection attempts; it does not by itself mean an intrusion occurred. Likewise, an unfamiliar remote IP address is a clue for investigation, not proof of malicious activity.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>For a slow remote-management session, compare the application's network traffic with concurrent downloads and other processes. Check authorization and the system's approved network baseline before taking action. Resource Monitor observes local activity but cannot diagnose every possible upstream switch, router, DNS or service issue.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Video study — launching Resource Monitor in Windows 11</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>This separate video demonstrates ways to open the tool in Windows 11. Interface paths may differ among releases, so the <code>resmon.exe</code> command is a convenient version-independent starting point for environments where the utility is available.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=tPSK5yb-HzA","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=tPSK5yb-HzA
+</div><figcaption class="wp-element-caption">TechPenguin, <em>How to Use Windows 11 Resource Monitor for CPU, Memory, Disk, and Network Performance</em> (December 2025). <a href="https://www.youtube.com/watch?v=tPSK5yb-HzA">Open the original video</a>.</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading --><h2>Practical troubleshooting example</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A technician receives a report that a Windows-based infrastructure workstation is intermittently unresponsive while monitoring a server rack. The operator opens Resource Monitor without altering settings, notes the time and observes CPU, memory, disk and network behavior during the slowdown. Disk activity reveals one process doing sustained writes and another performing a read-heavy scan. That observation narrows the investigation but does not establish which operation is faulty.</p><!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} --><ol class="wp-block-list"><li>Record the computer name, time, application, PID, resource and measurable symptom.</li><li>Repeat the observation during a normal interval to establish a comparison.</li><li>Correlate the PID with <a href="https://bitcoinversus.tech/2026/10/08/ositc-003-windows-process-troubleshooting-task-manager-pid-process-explorer/">Task Manager and Process Explorer</a> and check relevant system or application logs.</li><li>Escalate with evidence and seek change approval before restarting a service, altering security settings or modifying storage operations.</li></ol><!-- /wp:list -->
+
+<!-- wp:heading --><h2>Limits of live monitoring</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Resource Monitor is most useful while a problem is occurring. A missed event, intermittent spike or long-term trend may require <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/support-tools/troubleshoot-issues-performance-monitor/">Performance Monitor data collection</a> and a properly configured Data Collector Set. Note that a percentage, an unfamiliar process name or an elevated hard-fault count is not in itself root-cause evidence. Collected screenshots or logs can include hostnames, user names, file paths and network addresses, so follow the organization's data-handling policy.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Knowledge check</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li>Which command opens Resource Monitor directly?</li><li>Why should a technician record a process ID alongside a program name?</li><li>Does a high hard-fault rate automatically mean damaged RAM?</li><li>Which view can reveal the file paths behind heavy disk I/O?</li><li>What tool is more suitable for retaining long-duration performance records?</li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p><strong>Answer key:</strong> <code>resmon.exe</code>; to track the specific running process; no, hard faults can be part of ordinary paging and must be interpreted in context; the Disk tab's Disk Activity view; and Performance Monitor with configured data collection.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>References and related learning</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The governing Windows references are <a href="https://learn.microsoft.com/en-us/windows/win32/perfctrs/using-performance-counters">Microsoft's performance-counter overview</a>, <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/troubleshoot-high-cpu-usage-guidance">Microsoft's high-CPU diagnosis guide</a>, <a href="https://learn.microsoft.com/windows-server/administration/windows-commands/perfmon">the perfmon command reference</a> and <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/support-tools/troubleshoot-issues-performance-monitor/">the performance-recording guide</a>. For diagnosing a dated crash rather than active load, use <a href="https://bitcoinversus.tech/2026/10/27/ositc-010-windows-reliability-monitor-crash-history-perfmon-rel/">Windows Reliability Monitor</a>. For a contrast with Linux startup performance investigation, see <a href="https://bitcoinversus.tech/2026/10/28/linux-command-65-systemd-analyze-linux-os/">systemd-analyze boot diagnostics</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> This open technical reference focuses on read-only, evidence-led troubleshooting. If this free lesson was useful, support independent research and teaching with a <strong>5,000-satoshi donation</strong>. Scan the original QR code below using a compatible Bitcoin wallet and verify the receiving address before sending.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="BitcoinVersus.Tech original 5,000-satoshi donation QR code" class="wp-image-24043" /></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p><em>For easy scanning, display this page on another screen and scan the QR code with your mobile Bitcoin wallet. BitcoinVersus.Tech publishes educational material for informational purposes.</em></p><!-- /wp:paragraph -->
