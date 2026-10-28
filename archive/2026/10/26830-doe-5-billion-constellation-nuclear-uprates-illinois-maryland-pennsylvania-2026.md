@@ -1,6 +1,6 @@
 ---
 post_id: 26830
-title: "DOE Offers Up to $5 Billion for Constellation Nuclear Uprates Across Three States"
+title: "DOE Offers Up to $5 Billion to Increase Output at Eight Nuclear Plants"
 date: "2026-10-28T06:37:17"
 slug: "doe-5-billion-constellation-nuclear-uprates-illinois-maryland-pennsylvania-2026"
 live_url: "https://bitcoinversus.tech/2026/10/28/doe-5-billion-constellation-nuclear-uprates-illinois-maryland-pennsylvania-2026/"
@@ -10,9 +10,9 @@ featured_image_dimensions: "1200x630"
 featured_cover_style: "Split-Screen Editorial Diptych"
 categories: [5177360, 233999, 1212, 27318186]
 status: publish
-seo_title: "DOE Offers $5B for Nuclear Uprates Across Three States | BitcoinVersus.Tech"
-seo_description: "DOE announces conditional financing up to $5 billion for eight Constellation nuclear sites. What nearly 1.1 GW of proposed uprates would mean."
-source: WordPress final published Gutenberg content fetch-back
+seo_title: "DOE Offers $5B to Increase Output at Eight Nuclear Plants | BitcoinVersus.Tech"
+seo_description: "DOE offers up to $5 billion in conditional financing to help increase output at eight existing Constellation nuclear plants across three states."
+source: WordPress final published Gutenberg content fetch-back after 2026-10-28 headline change
 ---
 
 <!-- wp:paragraph -->
