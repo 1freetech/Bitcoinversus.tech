@@ -1,0 +1,16 @@
+# BitcoinVersus.Tech publishing QA ledger — Windows Resource Monitor — October 28, 2026
+
+- **Curriculum track/slot (internal):** OSITC.011 (next Windows/IT lesson after Linux Command #65; public title follows concept-first 2026-10-28 standard).
+- **WordPress post:** 26921, **draft**, `windows-resource-monitor-cpu-memory-disk-network-troubleshooting`.
+- **Title:** Windows Resource Monitor — Diagnosing CPU, Memory, Disk and Network Bottlenecks.
+- **Featured image:** WordPress media 26918, `windows-resource-monitor-cover-1200x630-1.jpg`. Fresh media.get confirms actual 1200x630 pixels; accessibility alt text present.
+- **Source controls:** Microsoft's resource-monitor references at `https://learn.microsoft.com/en-us/windows/win32/perfctrs/using-performance-counters`, `https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/troubleshoot-high-cpu-usage-guidance`, `https://learn.microsoft.com/windows-server/administration/windows-commands/perfmon`, and `https://learn.microsoft.com/en-us/troubleshoot/windows-server/support-tools/troubleshoot-issues-performance-monitor/`.
+- **In-body approved media, URL verified:** YouTube `https://www.youtube.com/watch?v=WQfRlSmRRzo` and `https://www.youtube.com/watch?v=dE3eZOJr2G8`; these are distinct videos. YouTube URLs and WordPress Gutenberg embed block syntax do **not** establish real browser playback.
+- **Internal contextual links:** Windows Reliability Monitor OSITC.010, Windows process troubleshooting OSITC.003, virtual memory guide, Linux systemd-analyze lesson.
+- **Other content checks:** native Gutenberg blocks; 2 in-body media blocks; no original diagrams; correct 5,000-satoshi donation QR (media ID 24043); no prohibited words; no numbered public lesson headline; SEO metadata and Windows tags saved.
+- **Source readback:** WordPress posts.get on draft ID 26921 confirmed 2 `wp:embed` blocks, exact expected YouTube URLs, featured_media=26918, donation QR, categories and tags.
+- **Error fingerprint:** `VISUAL-QA-UNAVAILABLE/DRAFT-PREVIEW-AUTH-2026-10-28`.
+- **Root cause:** The available owner WordPress content-authoring connector exposes source readback but not authenticated browser screenshot playback. Local Chromium is available but its runtime cannot resolve/connect to the public host. No actual desktop/mobile preview screenshots or video playback tests were produced.
+- **Mitigation taken:** Kept status `draft` rather than publishing on unverified embeds. Do not label this item as published or archived final content.
+- **Regression test / release gate:** Use an authenticated preview-capable browser to inspect desktop and mobile layout at the WordPress preview URL, confirm both embed placeholders render and both video players initiate playback; inspect unique cover, spacing, links, QR and responsiveness. Repair problems up to three passes and recheck, then publish only after acceptance. After publish, independently fetch back the WordPress final Gutenberg markup and commit exact source to `archive/2026/10/`, fetch GitHub file back and record archive SHA and live QA.
+- **Ledger status:** BLOCKED, awaiting real visual/playback verification; GitHub final-content archive intentionally not created.
