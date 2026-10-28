@@ -12,11 +12,11 @@ categories: [233999, 1212, 6, 27318186]
 status: publish
 seo_title: "Samsung SDI Signs 1 GWh U.S. Storage Deal With Alpha Omega Power | BitcoinVersus.Tech"
 seo_description: "Samsung SDI signs a new 1 GWh grid battery deal with Alpha Omega Power, bringing orders to 1.5 GWh. Here’s what the Indiana-made SBB 1.7 provides."
-source: WordPress post-publication Gutenberg fetch-back
+source: WordPress post-publication Gutenberg fetch-back after hyperlink repair
 ---
 
 <!-- wp:paragraph -->
-<p><strong><a href="https://news.samsungsdi.com/global/articleView?seq=468">Samsung SDI</a> announced October 26, 2026, that its U.S. subsidiary agreed to supply <a href="https://www.alphaomegapower.com/">Alpha Omega Power</a> with 1 gigawatt-hour (GWh) of grid-scale batteries.</strong> Combined with a separate 2025 order, the developer has contracted 1.5 GWh. Delivery is planned by year-end 2026, ahead of projects expected to begin construction in 2027.</p>
+<p><strong><a href="https://news.samsungsdi.com/global/articleView?seq=468">Samsung SDI</a> announced October 26, 2026, that its U.S. subsidiary agreed to supply <a href="https://aoprenewables.com/">Alpha Omega Power</a> with 1 gigawatt-hour (GWh) of grid-scale batteries.</strong> Combined with a separate 2025 order, the developer has contracted 1.5 GWh. Delivery is planned by year-end 2026, ahead of projects expected to begin construction in 2027.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":2} -->
