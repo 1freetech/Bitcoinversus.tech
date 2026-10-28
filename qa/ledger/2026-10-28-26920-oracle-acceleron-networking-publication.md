@@ -35,3 +35,17 @@ Archive commit: 2420853a7b171d4fd3d17a9df97374a90e35c89c
 - QA-PUBLIC-PAGE-INACCESSIBLE-20261028: web fetch for public post failed. Root cause unconfirmed (tool access vs site); no evidence of site outage. Fix: browser-check from reachable network and record screenshots.
 - QA-EMBED-PLAYBACK-UNTESTED-20261028: Canonical Gutenberg embeds exist but playback could not be tested. Fix: play each video in desktop/mobile browser; replace blocked video with verified relevant source if needed. Regression: capture desktop/mobile screenshots plus playback outcome and re-fetch published Gutenberg content after repair.
 - No unsupported assertion of screenshot proof or successful playback.
+
+
+## Footer regression correction — 2026-10-28
+- Error fingerprint: QA-EDITORS-NOTE-TEMPLATE-DRIFT-20261028
+- Root cause: initial publication substituted a topical disclosure/donation amount for the publisher's standard immutable Editor's Note.
+- Corrective action: replaced only the Editor's Note top-level paragraph block (index 11) via optimistic-locking post-sections.replace. Preserved image ID 24043 and the separate existing financial advisory disclaimer paragraph.
+- Required exact text:
+  BitcoinVersus.Tech Editor's Note:
+  We volunteer daily to ensure the credibility of the information on this platform is Verifiably True.
+
+  If you would like to support to help further secure the integrity of our research initiatives, please scan the QR code to donate (For best results can QR code on Laptop).
+- Verification: WordPress posts.get context=edit confirmed exact phrase, the existing QR block, unchanged published status and featured media. The final retrieved Gutenberg was written to the archive in commit 08c507a4bc82a2ec9e55dd094eb0830c9f0e0ce9.
+- Regression test: For each subsequent post, compare the rendered text of the Editor's Note block to the approved fixed template (including capitalization/punctuation); confirm QR block appears immediately below it. Do not insert article-specific claims, donation amounts or rewritten wording into the standard Note.
+- Browser-rendered footer still not independently screenshot-verified.
