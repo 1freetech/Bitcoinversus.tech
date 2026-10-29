@@ -1,0 +1,118 @@
+<!-- wp:paragraph --><p><strong>OSC++.035 — <code>std::bind_back</code>: binding trailing arguments in C++23.</strong> The C++ standard library provides multiple ways to turn an existing function into a more specialized callable. C++23 introduced <code>std::bind_back</code>, which stores one or more <em>last</em> arguments of an existing callable and leaves the earlier arguments to be supplied later. It complements the earlier <a href="https://bitcoinversus.tech/2026/10/27/oscpp-034-std-bind-front-leading-arguments-cpp20/"><code>std::bind_front</code> lesson</a> and builds on <a href="https://bitcoinversus.tech/2026/10/24/oscpp-033-std-invoke-functions-lambdas-member-pointers/"><code>std::invoke</code></a> and <a href="https://bitcoinversus.tech/2026/10/15/oscpp-032-std-function-callable-objects-functions-lambdas-functors-type-erasure-invocation/">callable objects</a>. This entry explains partial application, argument order, copies and references, compiler availability, and practical examples.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Definition and standard-library availability</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><code>std::bind_back</code> is declared in <code>&lt;functional&gt;</code> beginning with C++23. It returns a new function object whose call forwards the newly supplied arguments to the original callable <em>before</em> the stored trailing arguments. In simplified mathematical form, <code>std::bind_back(f, y)(x)</code> behaves like <code>f(x, y)</code>. The <a href="https://cppreference.com/cpp/utility/functional/bind_back">C++ reference specification</a> states the exact behavior in terms of <code>std::invoke</code>, including forwarding and exception behavior. This is a library feature, not a new C++ language keyword.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The companion function <code>std::bind_front</code> has existed since C++20 and stores leading arguments. The distinction is especially important for subtraction, comparison, filtering, log formatting and callbacks because argument order can change meaning. C++23 library support varies by compiler and standard library release; enabling <code>-std=c++23</code> or an equivalent language setting is necessary but not, by itself, proof that every C++23 facility is implemented.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">A first example — subtracting from opposite ends</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Suppose a function accepts two integers in order: <code>subtract(lhs, rhs)</code>. Binding the second parameter to five creates a function that subtracts five from whatever comes next. Binding the first parameter to five instead creates a function that subtracts the later input from five. The difference becomes visible when the input is 12.</p><!-- /wp:paragraph -->
+
+<!-- wp:preformatted --><pre class="wp-block-preformatted"><code>#include &lt;functional&gt;
+#include &lt;iostream&gt;
+#include &lt;version&gt;
+
+int subtract(int lhs, int rhs) {
+    return lhs - rhs;
+}
+
+int main() {
+#if defined(__cpp_lib_bind_back) &amp;&amp; __cpp_lib_bind_back &gt;= 202202L
+    auto minus_five = std::bind_back(subtract, 5);
+    auto from_five  = std::bind_front(subtract, 5);
+
+    std::cout &lt;&lt; minus_five(12) &lt;&lt; "\n"; // 7
+    std::cout &lt;&lt; from_five(12) &lt;&lt; "\n";  // -7
+#else
+    std::cout &lt;&lt; "std::bind_back unavailable\n";
+#endif
+}</code></pre><!-- /wp:preformatted -->
+
+<!-- wp:paragraph --><p>The C++23 branch prints <strong>7</strong> followed by <strong>-7</strong>. This complete example was compiled using GCC 14 with C++23 enabled, and its output matched those results. The check using <code>__cpp_lib_bind_back</code> makes the example report when the standard-library implementation lacks the feature rather than blindly assuming it is available.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Video lesson — C++23's bind_back</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Jason Turner's C++ Weekly episode concentrates specifically on <code>std::bind_back</code>, including how binding trailing parameters can simplify call sites and how its implementation relates to modern lambdas. It provides a useful companion demonstration to the examples in this article. The video's original <a href="https://cppevo.dev/episodes/346">C++ Weekly episode page</a> directly identifies the YouTube source.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=pDiP2frdMnI","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=pDiP2frdMnI
+</div><figcaption class="wp-element-caption">C++ Weekly with Jason Turner, <a href="https://cppevo.dev/episodes/346">Episode 346: C++23's bind_back</a>, released October 17, 2022. Technical explanation of trailing partial application.</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Partial application without positional placeholders</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Historically, <code>std::bind</code> allowed placeholders such as <code>std::placeholders::_1</code>, and complex expressions could reorder argument positions. <code>std::bind_front</code> and <code>std::bind_back</code> instead intentionally support only binding at one end. This makes the code easier to audit and typically less surprising. The simpler binders do not automatically rearrange or interpret nested bind expressions; the <a href="https://cppreference.com/cpp/utility/functional/bind_back">standard-library reference</a> documents the behavioral differences.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>For many short callbacks, an ordinary lambda can be clearer still. These tools are complementary: use a named binder when attaching a stable configuration value is the central idea; use a lambda when the logic includes a condition, transformation, or a more involved expression. Avoid treating the introduction of a new standard-library utility as a requirement to replace all readable lambdas.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Practical example — fixed error-message prefix</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A diagnostic parser may need to detect whether messages begin with a particular prefix. A reusable predicate can be constructed by binding the final <code>prefix</code> argument of a function-like object while leaving the message to be supplied later.</p><!-- /wp:paragraph -->
+
+<!-- wp:preformatted --><pre class="wp-block-preformatted"><code>#include &lt;functional&gt;
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;version&gt;
+
+int main() {
+#if defined(__cpp_lib_bind_back) &amp;&amp; __cpp_lib_bind_back &gt;= 202202L
+    auto starts_with_error = std::bind_back(
+        [](const std::string&amp; message, const std::string&amp; prefix) {
+            return message.rfind(prefix, 0) == 0;
+        },
+        std::string("error:")
+    );
+    std::cout &lt;&lt; std::boolalpha
+              &lt;&lt; starts_with_error(std::string("error: timeout"))
+              &lt;&lt; "\n"; // true
+#else
+    std::cout &lt;&lt; "Use a lambda fallback\n";
+#endif
+}</code></pre><!-- /wp:preformatted -->
+
+<!-- wp:paragraph --><p>The C++23 implementation prints <code>true</code> for the illustrative message. The bound prefix is stored inside the returned callable rather than re-created by every invocation. A straightforward lambda with the prefix captured by value could express the same behavior. This pattern appears in parser configuration, application logging, <a href="https://bitcoinversus.tech/2026/10/13/oscpp-029-std-optional-values-that-may-not-exist/">optional-value handling</a>, and algorithms that expect a one-argument predicate.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Video comparison — std::bind_front in C++20</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The preceding C++20 feature helps explain the other half of partial application. Jason Turner's earlier demonstration shows why fixing the <em>front</em> of an argument list is useful; compare it with the first video to see that <code>bind_back</code> does the same kind of specialization at the opposite end.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=7pqPfQ_HpmI","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=7pqPfQ_HpmI
+</div><figcaption class="wp-element-caption">C++ Weekly with Jason Turner, <a href="https://www.youtube.com/watch?v=7pqPfQ_HpmI">Episode 174: C++20's std::bind_front</a>, released July 1, 2019. Companion video on binding leading arguments.</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">How bound values are stored</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A binder stores its target callable and its bound arguments using decayed stored types. That normally means copying an lvalue or moving an rvalue into the wrapper at construction. Binding a local variable does <em>not</em> automatically create an ongoing reference to that variable. Use <code>std::ref</code> or <code>std::cref</code> when intentional reference semantics are required; the programmer must then ensure the referenced object remains alive longer than the binder's use. The wrapper itself is an object with a concrete, implementation-defined callable type.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>When the wrapper is invoked, value categories and callable qualifiers can affect which invocation is valid. A binder that holds move-only state may need to be invoked on an rvalue wrapper for operations that consume that state, while a reusable wrapper should not be designed around consuming its stored values on every call. The correct behavior follows the <a href="https://cppreference.com/cpp/utility/functional/bind_back">partial-function-application reference</a> and the underlying callable's requirements. This is important in event handlers, job queues and asynchronous work, where captured object lifetime must be understood before an operation is scheduled.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Compiler and feature-test checks</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The feature-test macro <code>__cpp_lib_bind_back</code> has the value <strong>202202L</strong> for the original C++23 interface. The <a href="https://en.cppreference.com/w/cpp/feature_test">library feature-test reference</a> identifies that value and also lists a distinct newer interface associated with C++26. A project should check the relevant value in a suitable standard-library header and avoid asserting that <code>std::bind_back</code> exists merely because the compiler accepts other C++23 syntax. The <a href="https://gcc.gnu.org/onlinedocs/gcc-16.1.0/libstdc%2B%2B/api/a00113_source.html">GCC libstdc++ implementation documentation</a> is another concrete source showing how its C++23 binder wraps the target and arguments.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>For a toolchain without this feature, a small explicit lambda is a portable alternative. A callback such as <code>auto minus_five = [](int x) { return subtract(x, 5); };</code> requires no <code>bind_back</code>. That equivalence also makes a useful unit test: for the same inputs, the binder and lambda should produce the same result.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Tradeoffs and common mistakes</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><strong>Reversing argument order:</strong> <code>std::bind_back(subtract, 5)(12)</code> means <code>subtract(12, 5)</code>, not <code>subtract(5, 12)</code>.</li><li><strong>Assuming references:</strong> passing an ordinary lvalue stores a decayed copy unless intentional reference wrapping is used.</li><li><strong>Ignoring object lifetime:</strong> a reference wrapper does not keep an object alive and must not outlive its referent.</li><li><strong>Overgeneralizing compiler support:</strong> check the C++23 feature-test macro and the selected standard library.</li><li><strong>Using it for arbitrary argument rearrangement:</strong> binders operate on one end of the parameter list; use a lambda for more intricate calling conventions.</li><li><strong>Assuming performance benefits:</strong> readability and correct semantics come first; measure actual costs when the application is sensitive to allocation, copying or call overhead.</li></ul><!-- /wp:list -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Knowledge check</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li>Which C++ standard first provides <code>std::bind_back</code>?</li><li>In <code>std::bind_back(subtract, 5)(12)</code>, which argument reaches <code>rhs</code>?</li><li>What does <code>std::bind_front(subtract, 5)(12)</code> return?</li><li>What macro can detect the presence of the C++23 binder?</li><li>Does a binder extend the lifetime of an object referenced through <code>std::ref</code>?</li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p><strong>Answers:</strong> C++23; the bound value five; -7; <code>__cpp_lib_bind_back</code> at least <code>202202L</code>; and no, the lifetime remains the caller's responsibility.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">References and connected lessons</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The authoritative specifications are <a href="https://cppreference.com/cpp/utility/functional/bind_back">std::bind_front and std::bind_back on cppreference</a>, <a href="https://en.cppreference.com/w/cpp/23">the C++23 library-feature overview</a>, <a href="https://en.cppreference.com/w/cpp/feature_test">the feature-test macro table</a>, and <a href="https://gcc.gnu.org/onlinedocs/gcc-16.1.0/libstdc%2B%2B/api/a00113_source.html">GCC's libstdc++ implementation reference</a>. The video primary source is <a href="https://cppevo.dev/episodes/346">Jason Turner's C++ Weekly episode 346</a>. Continue into <a href="https://bitcoinversus.tech/2026/10/27/oscpp-034-std-bind-front-leading-arguments-cpp20/">OSC++.034 — std::bind_front</a>, <a href="https://bitcoinversus.tech/2026/10/24/oscpp-033-std-invoke-functions-lambdas-member-pointers/">OSC++.033 — std::invoke</a>, <a href="https://bitcoinversus.tech/2026/10/15/oscpp-032-std-function-callable-objects-functions-lambdas-functors-type-erasure-invocation/">OSC++.032 — std::function and callable objects</a>, and <a href="https://bitcoinversus.tech/2026/10/14/oscpp-030-std-variant-type-safe-alternatives/">std::variant and type-safe alternatives</a> for adjacent standard-library concepts.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to keep technical education accessible, accurate, and independently researched. If this lesson was useful, consider supporting the work with <strong>5,000 satoshis</strong> using the original donation QR code below.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="BitcoinVersus.Tech original 5,000-satoshi donation QR code" class="wp-image-24043" /></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p><em>Open the QR code on a larger screen and scan it with your compatible mobile Bitcoin wallet. Verify the recipient address before sending.</em></p><!-- /wp:paragraph -->
