@@ -1,0 +1,93 @@
+<!-- wp:paragraph --><p><strong>OSFOTC.014 — Live-Fiber Identification and Non-Disruptive Cable Tracing.</strong> A technician working inside a crowded optical distribution frame may encounter several fibers that share the same jacket color, connector type, and route. Before moving or disconnecting one, the technician must establish which circuit it belongs to and whether it carries light. A <strong>live-fiber identifier</strong> can detect optical activity on certain fibers without unplugging a connector. This lesson explains how the instrument works, how to interpret its limitations, and how to document a circuit identity without causing an outage.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>This topic follows <a href="https://bitcoinversus.tech/2026/10/27/osfotc-013-fiber-splice-tray-closure-acceptance/">fiber splice tray and closure acceptance</a> and builds on the earlier lessons about <a href="https://bitcoinversus.tech/2026/10/14/osfotc-011-fiber-patch-panels-odf-management/">optical distribution frame mapping</a>, <a href="https://bitcoinversus.tech/2026/10/25/osfotc-012-fiber-connector-endface-inspection-iec-pass-fail/">connector-endface inspection</a> and <a href="https://bitcoinversus.tech/2026/10/11/osfotc-008-fiber-troubleshooting-restoration/">fiber service restoration</a>. The focus is identification before intervention, not replacing an optical loss test or optical time-domain reflectometer (OTDR) survey.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>What is a live-fiber identifier?</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A live-fiber identifier is a handheld optical test instrument designed to detect light within a suitable fiber while the fiber remains connected. Many models use a controlled bend that allows a small amount of light to couple out of the fiber, where internal photodetectors assess the signal. Depending on the instrument, the result may distinguish a dark fiber, an active signal, a modulated identification tone, the direction of propagation or an estimated power level. The <a href="https://www.foa.org/tech/ref/basic/glossary.htm">Fiber Optic Association (FOA) glossary</a> describes the underlying bend-coupling method, and <a href="https://www.exfo.com/en/products/field-network-testing/live-fiber-detection/lfd-200/">EXFO's LFD-200 technical documentation</a> describes an implementation for singlemode fiber.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>Why cable labels alone are insufficient</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A rack label is an administrative identifier, not a measurement. Records may be incomplete after previous moves, adds, temporary repairs or contractor handoffs. The physical route can pass through multiple patch panels, splice trays and cross-connects, so a sticker on one end does not automatically prove end-to-end continuity. Identification must combine the authorized work order, documentation, asset and port labels, visual route inspection, and appropriate non-disruptive testing. <a href="https://bitcoinversus.tech/2026/10/14/osfotc-011-fiber-patch-panels-odf-management/">Optical distribution frame management</a> explains how circuit records connect panels, trays, ports and remote endpoints.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>Signal detection is not the same as positive circuit identification</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>An instrument displaying <strong>LIVE</strong> can indicate optical activity, but that does not prove the fiber is the requested circuit. Multiple neighboring fibers may be active simultaneously. A <strong>NO SIGNAL</strong> indication does not prove a fiber is de-energized, abandoned or safe to cut: the light may be below the instrument's detection range, at an unsupported wavelength, temporarily absent, propagating differently than expected or masked by conditions that affect sensitivity. Technicians should distinguish <em>signal-present evidence</em>, <em>specific-circuit identification</em> and <em>authorization to perform work</em> as three separate decisions.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>Video demonstration: VIAVI FI-60 live-fiber identifier</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>In its equipment demonstration, <a href="https://www.viavisolutions.com/en-us/products/fi-60-live-fiber-identifier">VIAVI Solutions</a> shows the FI-60 performing non-disruptive live-fiber identification and converting into a conventional optical power meter. The live-fiber function uses the appropriate non-disconnect procedure, while conventional optical power readings use the separate power-meter measurement interface. Review the procedure and compatible fiber sizes in the manufacturer's documentation before applying it in the field.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=lneI5q52xBs","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=lneI5q52xBs
+</div><figcaption class="wp-element-caption">VIAVI Solutions — FI-60 Power Meter to Live Fiber Identifier (official manufacturer demonstration; November 15, 2021).</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph --><p>The tool's ability to detect optical activity does not eliminate its operating constraints. The VIAVI FI-60 product documentation specifies compatibility with a range of fiber coating and jacket diameters, and the instrument must be used only on supported fibers with sufficient accessible slack. Never create an improvised tight bend to obtain a reading. Follow the correct clamping procedure and stop if the fiber is under tension or the access point is unsuitable.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>Modulated tones and direction of light</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>For stronger identification, an authorized test source may inject or impose a recognizable low-frequency optical modulation on a known path. Compatible fiber identifiers can detect certain tones, frequently including 2 kHz, allowing the receiving technician to distinguish the intended fiber from others that simply carry traffic. A tone should be transmitted only where the work plan and equipment permit it; adding a transmitter or disconnecting a circuit to insert one may itself be service-affecting. Direction indicators can help corroborate a path, but the meaning of the direction arrow depends on the device's orientation and the manufacturer's instructions.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The <a href="https://www.exfo.com/en/products/field-network-testing/live-fiber-detection/">EXFO live-fiber detection product family</a> includes instruments that detect optical traffic as well as models paired with an identification-tone generator. Tone reception is useful where labels are disputed, but it is not a substitute for tracing all intermediate cross-connects and documenting the remote endpoint.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>Video demonstration: identifying active optical fibers</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Fiber Instrument Sales presents another demonstration of the VIAVI FI-60 and its non-disruptive signal detection workflow. Compare the physical positioning, controlled engagement and observable status indicators with the official VIAVI demonstration above. The two videos teach the same equipment class from different presenter perspectives, not two independent standards.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=ynaU40VpRkI","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=ynaU40VpRkI
+</div><figcaption class="wp-element-caption">Fiber Instrument Sales — Viavi Fiber Identifier | Product Highlight (equipment demonstration; February 21, 2023).</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph --><p>Neither demonstration should be treated as proof that every live fiber is detectable under all conditions. Instrument wavelength response, optical power, coating type, sheath diameter, fiber bend tolerance and environmental light can influence results. For example, the <a href="https://www.exfo.com/en/products/field-network-testing/live-fiber-detection/lfd-200/">EXFO LFD-200 specifications</a> expressly define its supported fiber type, measurement range and technique; other instruments may differ.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>The field identification workflow</h2><!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} --><h3>Confirm scope and service ownership</h3><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Begin with the approved change or incident record, requested circuit identifiers, location, expected service state, maintenance window if applicable, escalation contacts and rollback procedure. Check the relevant panels and ports against the current circuit map. Where the work is being performed as remote hands, use a read-back confirmation and evidence capture consistent with the site's <a href="https://bitcoinversus.tech/2026/10/14/osdctc-011-remote-hands-change-control/">remote-hands and change-control workflow</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} --><h3>Inspect access and instrument suitability</h3><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Verify that the instrument is rated and configured for the fiber type, coating or jacket diameter, expected wavelength range and available physical clearance. Identify strain relief and allowable slack. Avoid pulling fibers from guides, crushing bundles, opening secured trays without authorization or disturbing neighboring live links. Where the fiber is inaccessible without risk, escalate rather than improvising.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} --><h3>Establish a controlled baseline</h3><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Record the fiber's current label, frame and port position, test instrument model, test location and any service telemetry available from the network team. Inspect the specific fiber route visually without moving connectors. Follow the manufacturer's non-intrusive measurement technique and document a repeatable result at the same location.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} --><h3>Corroborate identification and direction</h3><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Compare results on the candidate fiber with the expected path and, if authorized, with a known test tone or a corresponding remote-side observation. A positive tone response offers stronger identity evidence than generic traffic detection, assuming the tone source is positively associated with the intended circuit. Check adjacent fibers only as permitted by the work plan; do not contact or bend unrelated circuits merely to increase confidence.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} --><h3>Document and hand off</h3><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Save the circuit identifier, frame and port, cable position, instrument identification, whether optical activity was detected, any accepted tone or direction reading, supporting evidence, technician, date and unresolved ambiguity. If results contradict the inventory, mark the record for correction rather than relabeling a production service on the basis of one measurement. Keep the circuit in its original state unless a separate, approved action authorizes a change.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>Optical power meters, OTDRs and visual fault locators</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Different fiber tools answer different questions. A conventional <a href="https://bitcoinversus.tech/2026/10/04/osfotc-002-optical-power-meter-basics-dbm-wavelength-reference-levels-receive-power/">optical power meter</a> reports received optical power at a defined interface, which often requires a deliberate connection change. An <a href="https://bitcoinversus.tech/2026/10/05/osfotc-003-otdr-field-testing-launch-receive-fibers-range-pulse-width-events-dead-zones-fault-location/">OTDR</a> estimates distance to reflecting or loss events along a fiber and needs a suitable test configuration, including launch and receive fibers when relevant. A visual fault locator introduces visible light for continuity and near-end fault checks under controlled conditions, but it is not a blanket license to inject light into an operating communication system. A live-fiber identifier is primarily a non-disruptive presence or identification aid; it cannot certify insertion loss, endface cleanliness, reflectance or system-level performance by itself.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>Safety and outage prevention</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Fiber-optic communications light is commonly invisible. Never stare into a fiber end or connector, and never assume the absence of a visible glow means the path is dark. Follow the facility's optical-safety procedures and instrument documentation; use appropriate equipment to establish the service state. Broken glass fibers are also a puncture hazard and must be collected and disposed of using approved methods. The <a href="https://bitcoinversus.tech/2026/10/25/osfotc-012-fiber-connector-endface-inspection-iec-pass-fail/">connector inspection lesson</a> covers safe inspection practice, while the <a href="https://bitcoinversus.tech/2026/10/07/osfotc-005-optical-loss-testing-workflow-inspect-clean-reference-test-record-troubleshoot/">optical loss testing workflow</a> covers post-work testing when authorized.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>A successful LIVE reading does not authorize disconnecting, cleaning, splicing, cutting or re-routing a fiber. Likewise, a failed reading never overrides a production service designation. Preserve link redundancy and obtain approval from the affected network or service owner before any disruptive work. Where the physical identity remains ambiguous, the correct outcome may be <strong>no change</strong> and escalation.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>Worked example: two identical patch cords</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A technician is dispatched to locate an alleged unused singlemode jumper in an optical distribution frame. Two yellow LC jumpers occupy adjacent channels, and the labels are partially damaged. The service inventory lists one active circuit and one spare, but the physical positions may have changed during a prior maintenance event. The technician uses a compatible non-disruptive identifier and finds detectable traffic on one candidate. The second yields no detectable signal. That result supports further investigation but <strong>does not prove the second cord is spare</strong>. The technician checks endpoint records, seeks owner confirmation, and, if permitted, uses a positively correlated identification tone. Until the physical circuit identity and change approval are established, neither jumper is disconnected.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>Verification and knowledge check</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Explain why an optical activity reading is different from a verified service identifier. What can cause a false dark-fiber indication? How does an authorized 2 kHz identification tone strengthen identification? Why does the physical orientation of the test head matter for direction readings? When should a technician defer work rather than applying a tighter bend or disconnecting a questionable cable?</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>Primary references and further reading</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Technical references include the <a href="https://www.viavisolutions.com/en-us/products/fi-60-live-fiber-identifier">VIAVI FI-60 product page</a>, <a href="https://www.exfo.com/en/products/field-network-testing/live-fiber-detection/lfd-200/">EXFO LFD-200 specifications</a>, <a href="https://www.exfo.com/en/products/field-network-testing/live-fiber-detection/">EXFO's live-fiber identification overview</a> and the <a href="https://www.foa.org/tech/ref/basic/glossary.htm">Fiber Optic Association terminology reference</a>. Related BitcoinVersus.Tech lessons include <a href="https://bitcoinversus.tech/2026/10/27/osfotc-013-fiber-splice-tray-closure-acceptance/">splice tray and closure acceptance</a>, <a href="https://bitcoinversus.tech/2026/10/14/osfotc-011-fiber-patch-panels-odf-management/">patch-panel documentation</a>, <a href="https://bitcoinversus.tech/2026/10/13/osfotc-010-optical-transceiver-installation-troubleshooting/">optical transceiver troubleshooting</a>, <a href="https://bitcoinversus.tech/2026/10/27/osfoec-012-optical-reflectance-return-loss-engineering/">optical reflectance and return-loss engineering</a> and <a href="https://bitcoinversus.tech/2026/10/11/osfotc-008-fiber-troubleshooting-restoration/">fiber service restoration</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em><strong>Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate <strong>5,000 sats</strong>.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="BitcoinVersus.Tech original donation QR code for 5,000 sats" class="wp-image-24043" /></figure><!-- /wp:image -->
