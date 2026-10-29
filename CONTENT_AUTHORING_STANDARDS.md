@@ -17,3 +17,14 @@ Prefer the most specific matching BitcoinVersus.Tech article over a generic cate
 The goal is for BitcoinVersus.Tech to behave like its own internal Wikipedia: readers should be able to move naturally from one concept to related BitcoinVersus.Tech reporting, lessons, guides, and reference articles without leaving the site.
 
 This rule applies site-wide and should be checked during editing, live-page inspection, and archive verification before publication is considered complete.
+
+
+## Publication Footer Standard — October 29, 2026 (Supersedes Earlier Footer Rotation)
+
+For **all new BitcoinVersus.Tech stories, rankings, editorials, and technical lessons**, do **not** include an advertisement label or section, a promotional X/Twitter post or link, or a decorative site-branding block in the article footer. The prior automatically embedded branded X promotion (status `1937006164555993338`) and the prior advertisement section have been retired and must not be automatically reinserted.
+
+End each article with the approved, fully italicized volunteer Editor's Note, the **original** Bitcoin donation QR code (WordPress media ID `24043`), brief compatible-wallet scanning instructions including the established 5,000-satoshi request, and the existing mandatory financial-information disclaimer. Preserve the approved Editor's Note wording:
+
+> *Editor's Note: We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats.*
+
+This rule is forward-looking. On specifically requested article corrections, remove the retired promo, ad label, and extra footer branding without changing body content or breaking third-party media embeds; then verify the live WordPress read-back and rearchive the exact final Gutenberg content in GitHub. The required factual disclaimer remains in place.
