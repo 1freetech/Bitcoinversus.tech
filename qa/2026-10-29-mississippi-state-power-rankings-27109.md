@@ -73,3 +73,36 @@ Each rank contains *its own* relevant real published-video source in a native Gu
 - `MS_27109_PUBLISHER_META_STYLE`: Excerpt, SEO and social copy lead with project updates, don't summarize media count or editorial steps. PASS.
 
 Final status: **PUBLISHED — THREE PER-RANK WORDPRESS HTML VIDEO PLAYERS AND EXACT GITHUB ARCHIVE VERIFIED. ACTUAL BROWSER PLAYBACK, GUI MOBILE/DESKTOP AND THIRD-PARTY IMAGE REUSE RIGHTS REMAIN PENDING.**
+
+
+---
+
+## Editorial correction — October 29, 2026: Remove unconfirmed #3 AWS MW and replace with officially documented Columbus power
+
+**The following section supersedes the original #3 AWS ranking and related media / capacity statements above.** Earlier ledger entries are preserved as a historical error record, NOT as the current article.
+
+### Reason for correction and evidence
+- Editor instruction: remove ranking #3 if capacity is not confirmed, replace with official announcement.
+- Prior #3 Amazon Canton claim of **341 MW** was derived from an independently run data-center tracker, without a matching Amazon announcement or accessible official utility service contract. A separate listing offered a different 477 MW estimate. Five operating AWS buildings are confirmed, but MW isn't. Thus **Amazon was removed from the numbered ranking**; current article covers its operations only in a contextual exclusion paragraph.
+- Replacement: **PowerCompute Inc. / US Digital Mining Mississippi LLC, Columbus — 11 MW signed firm electricity supply**. Direct company Oct 6 2026 original announcement https://www.power-compute.com/investors/news-events/press-releases/detail/203/powercompute-increases-contracted-power-at-mississippi-site ; SEC 8-K https://www.sec.gov/Archives/edgar/data/1640384/000119312526414991/lmfa-20261006.htm explicitly confirms Sept 30 signed Industrial Power Contract with Columbus Light and Water for **11,000 kW firm power** to the **Columbus, Mississippi data center**, contract through September 16, 2030. Previous 8.5 MW contracted; new rate took effect October 1. *11 MW is contractual firm service, not verified continuous draw.*
+- Company original September 18 2025 acquisition release https://www.power-compute.com/investors/news-events/press-releases/detail/168/lm-funding-america-closes-acquisition-of-11-mw-site-and confirms the physical data-center site, approximate $4M purchase, 7.5MW operational mining at acquisition. Company Sept 2026 SEC disclosure https://www.sec.gov/Archives/edgar/data/1640384/000119312526408391/lmfa-ex99_1.htm distinguishes 3.5MW of connected but not-yet-energized electrical capacity. Company Oct 6 release identifies 2,373 Antminers and 205 PH/s at Sep 30. A Bitcoin-mining data center is classed as large data under TVA tariffs; **not** a confirmed 11 MW AI GPU installation.
+- Because **11 MW is far smaller than the other two projects**, revised opening methodology clearly says this is a *source-constrained comparison of sites with official attributable electricity figures*, not a definitive census of the state's largest actual data centers. The mandated series title is unchanged, but the text no longer misleads about completeness.
+- Existing user archive already has related PowerCompute articles, now linked in-context: https://bitcoinversus.tech/2026/10/07/bitcoin-mining-energy-powercompute-locks-in-11-mw-under-tvas-new-data-center-rate/ and https://bitcoinversus.tech/2026/09/30/powercompute-clears-bitcoin-backed-debt-and-targets-964-ph-s/ ; standalone coverage not duplicated.
+
+### Corrected media and copy
+- Removed original #3 AWS Madison County official construction video `8ORZUXIVyKw` from article; it no longer belongs to a ranked entry.
+- New in-story project media WordPress ID **27130**, official corporate Bitcoin-mining illustration obtained from https://www.power-compute.com/us-digital-mining, captioned **NOT an image of the Columbus data center**. The actual numerical announcement and SEC filing are directly linked beside it. Image copyright reuse permission is not independently confirmed; note as a pending rights review.
+- Two remaining ranked videos are unchanged: Compass company official film `UJpAwmVSRYk`, and the LandGate report covering AVAIO `il9NhMmp21g`. All two original project images 27107 and 27106 preserved; 5 in-story source media items total = 2 real YouTube iframes + 3 project/company-linked images, cover/QR excluded.
+- Fresh post-publication WordPress `posts.get(context=view)` returned **2 iframe player elements**, exact `youtube.com/embed/UJpAwmVSRYk` and `youtube.com/embed/il9NhMmp21g`, and WordPress images `wp-image-27130`, `wp-image-27107`, `wp-image-27106`. Each ranked section contains its own distinct relevant media. No remaining AWS ranked heading/video.
+- Preserved original featured anime cover ID 27105 at 1200×630, exact Editor's Note / donation QR 24043, sats, exact disclaimer and same four categories. New natural excerpt, SEO description, and Jetpack Social message include PowerCompute rather than AWS and avoid verification/workflow terminology.
+- Validated source-only vs rendered: two iframes present in WordPress output, but end-to-end visitor browser Play interaction still untested. The new corporate image is supplied by an official site, not necessarily licensed for republication.
+
+### GitHub exact archival update and final status
+- WordPress canonical URL unchanged: https://bitcoinversus.tech/2026/10/29/state-power-rankings-top-3-largest-data-center-projects-mississippi-2026/
+- WordPress post ID 27109 still status **publish** after update; article source **21,708 characters**.
+- GitHub Gutenberg archive updated *in place* at `archive/2026/10/27109-state-power-rankings-top-3-largest-data-center-projects-mississippi-2026.gutenberg.html` — update commit `4a50cbe47df903dda586d735eb0bde0338ffc8ca`, blob `2b13510f05ad6fbaed43f6d6d3a1b28770923baa`.
+- GitHub fetchback exact WordPress vs GitHub source equality verified **21,708 / 21,708 characters**.
+- **Corrected status:** PUBLISHED / AMAZON #3 REMOVED / POWERC0MPUTE 11MW OFFICIAL-SOURCE SUBSTITUTE / EACH RANK HAS MEDIA / VIDEO IFRAME OUTPUT VERIFIED / GUI PLAYBACK AND IMAGE PERMISSION PENDING.
+
+### New regression rule
+For future state power rankings, **no #1/#2/#3 MW from generic facility directories without official developer, utility, regulator, signed-contract or SEC document backing**. A larger data center without confirmed megawatts must remain an unranked contextual mention; never manufacture a power figure to fill a ranking slot. Label Bitcoin mining versus AI separately and distinguish firm service from critical IT and operating load. If only two projects with credible MW figures exist, do not present three as a confidently exhaustive statewide top three without editorial qualification.
