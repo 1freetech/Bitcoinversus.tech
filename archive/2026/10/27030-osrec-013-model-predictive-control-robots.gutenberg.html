@@ -1,0 +1,65 @@
+<!-- wp:paragraph --><p>Model predictive control (MPC) is a feedback-control method that repeatedly forecasts how a robot will move over a finite future interval, solves an optimization problem subject to constraints, applies the first control action, and then plans again using new measurements. In robotics engineering it connects <a href="https://bitcoinversus.tech/2026/10/06/osrec-004-robot-trajectory-planning-joint-space-cartesian-paths-time-scaling-velocity-acceleration-jerk/">trajectory planning</a> with <a href="https://bitcoinversus.tech/2026/10/08/osrec-006-robot-feedback-control-p-pi-pid-feedforward-trajectory-tracking-gain-tuning/">feedback control</a> and <a href="https://bitcoinversus.tech/2026/10/27/osrec-012-control-barrier-functions-safety-filters-robot-motion/">control barrier function safety filters</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Prediction and the receding horizon</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>At each sampling instant, an MPC controller estimates the current robot state, predicts a sequence of future states under candidate inputs, and minimizes a defined cost over a prediction horizon. Only the first optimized input is used. The process repeats as new sensor data arrives, which helps account for disturbances and model mismatch. The horizon length and sampling period are distinct: a horizon of 20 steps at 0.05 seconds per step represents one second of prediction.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>State-space model</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A simplified discrete model is <code>x[k+1] = f(x[k],u[k])</code>, where <code>x</code> contains relevant positions and velocities and <code>u</code> represents motor torque, velocity commands or other inputs, depending on the control architecture. A linear approximation uses <code>x[k+1] = A x[k] + B u[k]</code>. Real manipulators often require nonlinear dynamics or locally linearized models. See <a href="https://bitcoinversus.tech/2026/10/07/osrec-005-robot-dynamics-mass-matrix-coriolis-centrifugal-gravity-inverse-forward-dynamics/">robot dynamics</a> for mass, inertia and torque relationships.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Cost functions and constraints</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A common objective penalizes predicted tracking error, control effort and rapid input changes. One illustrative cost is <code>J = Σ [(xᵢ − xᵢ,ref)ᵀ Q (xᵢ − xᵢ,ref) + uᵢᵀ R uᵢ]</code>, optionally with terminal and input-change penalties. Positive-semidefinite state weights and positive-definite input weights are common design choices, not universal requirements. Constraints may include joint travel, velocity, acceleration, torque, actuator temperature, collision clearance or contact-force limits. Constraints can be hard or softened with explicitly penalized slack variables; softening a safety-critical limit requires independent safety analysis.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Educational video — predictive control foundations</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>This control-theory lecture introduces the prediction-and-reoptimization concept underlying MPC. It is general background rather than a robot-specific commissioning procedure.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=YwodGM2eoy4","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=YwodGM2eoy4
+</div><figcaption>Steve Brunton (University of Washington), Model Predictive Control — introductory lecture.</figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2>Example: robot arm approaching a target</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Consider a robot arm commanded to move toward a target while avoiding a known obstacle. A conventional fixed trajectory is calculated in advance; MPC instead repeatedly optimizes a short predicted motion segment using the latest estimated arm state. If the obstacle moves, an updated obstacle model may change the next planned motion. The method is not automatically collision-free: prediction accuracy, constraint formulation, sensing latency, solver feasibility and safety supervision remain decisive.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>As an illustrative calculation, a controller with a 10-millisecond update period and 30 prediction steps has a 0.30-second horizon. If its optimization routinely takes 18 milliseconds, it cannot reliably finish each solve within the intended 10-millisecond control period. Engineers must simplify the model, reduce decision variables, use a faster solver, change the scheduling architecture or revise the design. A faster processor alone does not prove safe timing.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Solver feasibility and real-time behavior</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Linear MPC with quadratic objectives and linear constraints can often be formulated as a quadratic program. Nonlinear MPC may require sequential quadratic programming or other iterative nonlinear optimization. The controller must handle infeasible problems, numerical failure, late results, poor state estimates and actuator saturation. Practical implementations use monitored fallback behavior and independent safety mechanisms rather than assuming the optimizer always returns a valid action.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Educational video — optimization in feedback control</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A second introductory lecture demonstrates the use of optimization and feedback in MPC. The model and controller must be adapted to the robot's actual dynamics and safety requirements.</p><!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=cEWnixjNdzs","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=cEWnixjNdzs
+</div><figcaption>MATLAB / MathWorks, Understanding MPC Part 2 — receding-horizon optimization tutorial.</figcaption></figure><!-- /wp:embed -->
+
+<!-- wp:heading --><h2>Relation to other robot control methods</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>PID feedback is often inexpensive and effective for local tracking. <a href="https://bitcoinversus.tech/2026/10/13/osrec-010-operational-space-control-null-space-redundancy/">Operational-space control</a> coordinates motion in task coordinates, while <a href="https://bitcoinversus.tech/2026/10/16/osrec-011-whole-body-control-hierarchical-quadratic-programming/">whole-body hierarchical optimization</a> handles multiple tasks and priorities. MPC differs by explicitly optimizing predicted future behavior over time. These techniques may coexist in a layered robot-control architecture.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Model uncertainty and safety</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Prediction errors arise from uncertain payload mass, friction, backlash, compliance, actuator delay and contact forces. Robust or stochastic MPC formulations address some uncertainty through bounded disturbance models or probabilistic constraints, but their guarantees depend on the assumptions. A mathematically feasible trajectory is not a substitute for risk assessment, safeguarding, verified emergency stops or approved industrial robot commissioning.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Engineering validation</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A sound validation plan compares predicted and measured motion, tracks solver completion times and deadline misses, tests actuator saturation and disturbances, verifies constraint handling and records controlled fallback transitions. Start with offline simulation and hardware-in-the-loop testing where appropriate. Physical robot tests require qualified supervision, approved safeguarding and documented acceptance criteria.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>Knowledge check</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Why does MPC apply only the first optimized control action? What happens if the optimization exceeds the control deadline? How do hard and soft constraints differ? Why can a feasible MPC solution still require independent safety protection?</p><!-- /wp:paragraph -->
+
+<!-- wp:heading --><h2>References</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><a href="https://www.mathworks.com/help/mpc/ug/what-is-mpc.html">MathWorks: Model Predictive Control overview</a> explains the receding-horizon approach. <a href="https://www.do-mpc.com/en/latest/">do-mpc documentation</a> describes an open-source MPC framework. <a href="https://web.casadi.org/docs/">CasADi documentation</a> covers algorithmic differentiation and nonlinear optimization tools. The related <a href="https://bitcoinversus.tech/2026/10/13/osrec-009-hybrid-motion-force-control/">hybrid motion-force control</a> and <a href="https://bitcoinversus.tech/2026/10/12/osrec-008-impedance-admittance-control/">impedance/admittance control</a> lessons provide further context.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate <strong>5,000 sats</strong>.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="BitcoinVersus.Tech 5,000-sat donation QR code" class="wp-image-24043" /></figure><!-- /wp:image -->
