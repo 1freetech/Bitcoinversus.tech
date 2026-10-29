@@ -37,3 +37,16 @@ Post-publication archive fetchback: MATCH (6105 characters).
 - PUBLISHED-BUT-LIVE-WEB-FETCH-INACCESSIBLE: Web fetch failed for published URL, potentially access-tool restriction, no confirmed root cause. Regression: open live URL in an unrestricted browser, screenshot desktop and mobile, inspect media and footer.
 - EMBED-PLAYBACK-NOT-VERIFIED: Canonical Gutenberg block exists, but no video playback test; play video, replace or remove only with another approved verified media item if blocked, preserve in-story quota 2–10.
 - On any content repair, fetch WordPress posts.get, update canonical GitHub archived Gutenberg HTML, then record new blob SHA and screenshot/video evidence.
+
+
+## Follow-up YouTube correction — 2026-10-28/29
+- User requested repair of the existing YouTube embed or remaking the story.
+- Previous embedded video `oKJZRgcxg9A` was not independently corroborated as a valid Agilex-related video. Removed from WordPress post.
+- Replaced in existing published post with a native responsive Gutenberg core/embed pointing to `https://www.youtube.com/watch?v=0-4SscmHrCg`.
+- Documentary basis: SiliconANGLE's October 28 Agilex 2X story includes an embedded video of Altera CEO Raghib Hussain, titled `Raghib Hussain, Altera | theCUBE + NYSE Wired: AI Factories`; the source link resolves to YouTube's embed route for this exact ID. Source: https://siliconangle.com/2026/10/28/altera-unveils-agilex-2x-betting-on-ai-developers-to-expand-programmable-computing/
+- The video is transparently labeled as a **June 2026** executive interview about AI factories / FPGA infrastructure, **not** Agilex 27 launch footage.
+- Added direct YouTube fallback link and linked SiliconANGLE source inside video caption.
+- WordPress post-sections.replace reported zero warnings and WordPress posts.get confirmed the old ID was removed, the new ID appears, the two existing official in-story images remain, the featured image remains ID 26987, and the exact Editor's Note and QR text remain unchanged.
+- GitHub archive updated at commit 71141210f0fccfdeba6a6f783c5166f55f03fb7e; post-publication fetched WordPress Gutenberg matches GitHub archive: true.
+- Outstanding: direct click-to-play validation on live desktop and mobile is unavailable in current tools; YouTube watch/embed requests were throttled, therefore **playback cannot be certified**. WordPress rendered embed UI was not independently inspected. If the video fails for readers, the direct link and two official in-story images provide alternative access/coverage; perform browser QA when possible.
+- Regression: do not insert unverified clip IDs from inferred video descriptions; require an original trustworthy page embedding the exact ID (prefer media publisher), then verify actual playback separately. A successful WordPress core/embed save is not proof of playback.
