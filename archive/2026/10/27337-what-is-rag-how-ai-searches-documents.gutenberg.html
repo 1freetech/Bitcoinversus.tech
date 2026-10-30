@@ -1,0 +1,45 @@
+<!-- wp:paragraph --><p>An AI assistant can sound confident without knowing what a company’s latest manual, research paper or internal report actually says. <strong>Retrieval-augmented generation (RAG)</strong> addresses that gap by searching a collection of information <em>before</em> the language model writes its answer. Rather than relying only on patterns learned during training, the system supplies passages relevant to the question and asks the model to use that evidence.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>RAG is not a new kind of model or a guarantee of accuracy. It is a way of connecting an existing model to searchable information such as PDF manuals, support tickets, websites or a company’s document library. A well-designed application can also provide links or document references so readers can check its answers.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=T-D1OfcDW1M]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>IBM Research scientist Marina Danilevsky explains retrieval-augmented generation and its role in sourcing AI answers.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">How a RAG system finds information</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>First, developers collect documents and divide long files into manageable passages, often called <strong>chunks</strong>. A search index stores those passages and information about their origins, such as file names, dates and access permissions. When someone asks a question, a <strong>retriever</strong> finds candidate passages; a ranking system may choose the best ones. The application then sends selected text alongside the original question to the large language model.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Consider an IT technician asking, “Which switch failed during last Tuesday’s maintenance?” A normal chatbot might guess from generic networking knowledge. A RAG application could search maintenance logs, retrieve the relevant incident entry and answer with the device identifier and timestamp—provided the logs contain the information and the retriever finds it. The same architecture supports customer service, technical documentation and research assistants.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Why vector databases matter</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Modern retrieval often uses <a href="https://www.ibm.com/think/topics/embedding">embeddings</a>, numerical representations of text or other content. Sentences that have similar meanings can produce nearby vectors even when they use different words. A <a href="https://www.ibm.com/think/topics/vector-search">vector index</a> compares those representations to find relevant passages quickly. BitcoinVersus.Tech previously covered the idea at the hardware level when <a href="https://bitcoinversus.tech/2026/09/21/dnotitia-vdpu-vector-search-asic-first-silicon/">Dnotitia introduced a processor designed for vector search</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=gl1r1XV0SLw]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>IBM Technology explains how vector embeddings support semantic search and retrieval.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Vector search is useful, but it can miss an exact serial number, error code or product name. That is why many systems combine semantic matching with traditional keyword search, often using techniques such as BM25, then rerank the results. IBM’s <a href="https://www.ibm.com/think/topics/rag-vector-database">RAG database guide</a> describes how indexes, metadata filtering and ranking work together. A vector database is common in RAG, but it is not mandatory; ordinary search engines and databases can retrieve context too.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">RAG versus training and fine-tuning</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>RAG supplies information at <strong>question time</strong> without changing the language model’s underlying weights. Fine-tuning changes those weights by training on additional examples. Updating a manual in a document index is generally simpler than retraining a model, but search results still compete for limited context space. Choosing the right model is another part of the system: BitcoinVersus.Tech’s <a href="https://bitcoinversus.tech/2026/08/10/model-routing/">model-routing explainer</a> examines how applications assign different requests to different models.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=iVUMuC7OzUI]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>IBM Technology discusses the progression from keyword search to semantic search and RAG-based AI answers.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Where RAG can still go wrong</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The retriever might select an outdated policy, overlook a critical exception or surface conflicting sources. Even when the correct passage is supplied, a language model can misunderstand it or invent an unsupported conclusion. Sensitive documents also require access controls, and retrieved text must not be allowed to issue new instructions to the assistant. These risks connect to broader <a href="https://bitcoinversus.tech/2026/10/05/computer-security-openai-misalignment-reports-ai-agent-boundaries/">AI agent security and boundary failures</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The practical test is whether a system retrieves the right passages, respects permissions, identifies uncertainty and produces answers that can be checked against original documents. As <a href="https://www.cloudflare.com/learning/ai/retrieval-augmented-generation-rag/">Cloudflare’s explanation of RAG</a> emphasizes, the value comes from adding relevant external information—not from making the language model infallible.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>Editor’s Note: We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none","align":"center"} --><figure class="wp-block-image aligncenter size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Original BitcoinVersus.Tech Bitcoin donation QR code for 5,000 sats" class="wp-image-24043" /></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p><em>Scan this QR code with a compatible Bitcoin wallet while viewing the article on a laptop or larger screen. Donation address: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</p><!-- /wp:paragraph -->
