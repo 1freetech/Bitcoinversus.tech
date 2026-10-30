@@ -51,3 +51,19 @@ For ordinary short news briefs, two or three credible, relevant external reporti
 The editor has added a **detailed professional fine-art painting family** to the established featured-cover rotation. Continue the existing realistic editorial photography, anime editorial artwork, wordless comic, photo/anime blend, and split-screen diptych styles, and now include an additional **professional oil-painting / Renaissance-inspired editorial art** turn, then repeat. For the new family, create sophisticated, richly detailed, nonminimalist compositions, with painterly textures, chiaroscuro, careful perspective, nuanced lighting, believable equipment, and the finish of a commissioned museum-quality professional painting. Renaissance-inspired visual language must remain historically informed as a *painting style*, while all depicted news subjects, technology and environments must accurately reflect the modern report. Rotate demographic representation across articles deliberately and naturally: vary apparent ages, genders, complexions and professional roles rather than repeatedly depicting the same kind of subject. Do not assume or present the depicted people as actual individuals unless the image is a sourced photo.
 
 Maintain one unique 1200×630 featured image per article, attach as featured media, add specific descriptive alt text, ensure subject relevance, and confirm it renders. No text overlays or original diagrams as in-story media. Oil-painting covers are **editorial illustrations**, not documentary photographs; use source/official photos and videos for documentary in-story evidence. Continue source, in-story media, footer, SEO and QA rules unchanged.
+
+
+## Strict Sequential Featured-Cover Rotation — October 30, 2026
+
+The editor requires that future BitcoinVersus.Tech publication covers use **only an accepted featured art style, and advance exactly one style per publication in order**. Do not pick a style at random, skip a turn, reuse the last style as a shortcut, or invent an alternative look. Approved sequence:
+
+1. Realistic editorial photo / photorealistic editorial illustration.
+2. Anime editorial artwork.
+3. Wordless comic artwork.
+4. Photo/anime blended editorial illustration.
+5. Visually explicit split-screen diptych: **two separate panels**, with a distinct clean division and complementary perspectives, not simply a single cinematic scene or vaguely symmetric composition.
+6. Detailed professional oil painting / Renaissance-inspired fine-art editorial illustration.
+
+Then repeat from realistic editorial. The sixth oil/Renaissance style is already approved by the October 29 style expansion above, not a newly invented style. The October 30 energy-source news run followed 1 Rooppur/nuclear (featured 27449), 2 Alliant/natural gas (27455), 3 Centralia/coal (27462), 4 Tianwan/solar (27471), and 5 Norway/floating wind (**corrected image 27512**, replacing 27494). For the **next item of this energy-source series (hydropower)** use approved style **6, fine-art oil/Renaissance**, then restart at 1.
+
+For other story rotations, identify the last relevant approved cover style rather than assuming the beginning of a new cycle. Always confirm the next style before generation; rotate demographic representation only when people are naturally relevant, vary ages and roles, keep covers historically and technically responsible, use 1200×630, no text overlays, attach featured media and verify live featured_media and media dimensions. A style's label in media metadata is not sufficient: inspect the actual visual to confirm it visibly follows that style before publishing. When a correction is requested, replace the cover with the approved style for that turn, preserve the article body/media/SEO, and document old vs new WordPress media IDs in QA.
