@@ -1,0 +1,37 @@
+<!-- wp:paragraph --><p><a href="https://www.microchip.com/en-us/about/news-releases/products/microchip-brings-ethercat-and-tsn-networking-solutions-to-polarfire-fpga-platform">Microchip Technology</a> expanded its PolarFire FPGA networking platform on October 29 with new support for EtherCAT and Time-Sensitive Networking (TSN), giving designers of industrial robots and automation equipment more ways to coordinate devices over Ethernet. The announcement concerns intellectual-property blocks, software and evaluation tools for existing programmable chips—not the launch of a new processor or a newly fabricated ASIC.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The addition brings <a href="https://www.ethercat.org/en/technology.html">Beckhoff’s EtherCAT technology</a> to PolarFire FPGAs and PolarFire system-on-chip devices, with 10, 100 and 1,000 Mbps connectivity. Microchip’s TSN IP targets <strong>1 Gbps deterministic Ethernet</strong> on PolarFire SoC FPGAs. Unlike ordinary Ethernet, which generally delivers data on a best-effort basis, deterministic networking can reserve transmission opportunities for time-critical control traffic.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=whRHDd8-cqk]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Microchip demonstrates time-sensitive networking on PolarFire hardware in an earlier Embedded World presentation. This video illustrates the technology behind the October announcement.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Why factory robots need predictable network timing</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A robot arm, machine-vision camera and motor controller may share a network with diagnostic and monitoring traffic. Control instructions must arrive in the correct sequence and within predictable timing windows, not simply at a high average speed. EtherCAT is commonly used for distributed industrial motion control; TSN describes a family of IEEE Ethernet features that can schedule and prioritize traffic. They are complementary approaches, not interchangeable protocols.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Microchip’s <a href="https://www.microchip.com/en-us/solutions/industrial/fpga/polarfire-fpgas-for-the-industrial-edge">industrial edge design documentation</a> describes time-aware scheduling, precision time synchronization, traffic filtering and frame preemption. Its published <a href="https://www.microchip.com/en-us/application-notes/an5892">PolarFire SoC TSN demonstration</a> assigns scheduled traffic to a motor-control task while other packets compete for bandwidth, showing how network timing can be tested before equipment reaches the factory floor.</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":27360,"sizeSlug":"large","linkDestination":"none"} --><figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/microchip-polarfire-soc-video-board-2026.png" alt="Microchip PolarFire SoC Video Kit board with chip, ports and associated electronic components" class="wp-image-27360" /><figcaption class="wp-element-caption"><em>Microchip’s existing PolarFire SoC Video Kit, one of the platforms cited for TSN evaluation. Manufacturer photograph.</em></figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p>The development fits a broader move toward more capable <a href="https://bitcoinversus.tech/2026/10/26/renesas-rx74m-rx74n-22nm-mram-600mhz-industrial-chips/">industrial control silicon</a>. PolarFire devices use reconfigurable FPGA fabric, while SoC versions combine programmable logic with embedded processing. That flexibility matters to equipment makers adapting robotics or networking designs without waiting for a custom fixed-function chip.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=GmitNBnw22I]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Microchip’s official tour of its PolarFire SoC Discovery Kit explains the underlying RISC-V processor and FPGA development platform. The video predates the new EtherCAT/TSN support.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">What developers can test now</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The company lists its Libero SoC toolchain, reference designs, a <a href="https://www.microchip.com/en-us/development-tool/eth-dc-dualgbe">dual-port Gigabit Ethernet FMC card</a> and the PolarFire SoC Video Kit as evaluation tools. Existing developers can explore the interfaces before committing to an embedded product, but Microchip has not released independent power-consumption benchmarks or guaranteed factory deployment timelines for this specific networking update.</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":27361,"sizeSlug":"large","linkDestination":"none"} --><figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/microchip-polarfire-soc-discovery-kit-reichelt.png" alt="Black Microchip PolarFire SoC Discovery Kit printed circuit board with Ethernet port and multiple electronic headers" class="wp-image-27361" /><figcaption class="wp-element-caption"><em>An existing PolarFire SoC Discovery Kit development board, pictured by electronics distributor Reichelt.</em></figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p>The practical challenge is interoperability across controllers, switches and software stacks. BitcoinVersus.Tech previously explained <a href="https://bitcoinversus.tech/2026/10/14/osetc-036-ethercat-basics-frame-processing-topology-distributed-clocks-working-counters-troubleshooting/">EtherCAT frame processing and distributed clocks</a> and covered <a href="https://bitcoinversus.tech/2026/10/14/infineon-physical-ai-electronica-2026/">industrial hardware for physical AI</a>. Microchip’s new IP broadens the choices for those systems; real-world latency, reliability and integration costs still need to be validated in each application.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>Editor’s Note: We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none","align":"center"} --><figure class="wp-block-image aligncenter size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Original BitcoinVersus.Tech donation QR code for 5,000 sats" class="wp-image-24043" /></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p><em>Scan the QR code with a compatible Bitcoin wallet while viewing the article on a laptop or larger screen. Donation address: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</p><!-- /wp:paragraph -->
