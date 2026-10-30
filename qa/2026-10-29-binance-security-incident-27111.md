@@ -1,3 +1,22 @@
+# UPDATE — Successful X embed repair (October 29, 2026)
+
+**This update supersedes the earlier temporary conclusion that the supplied X posts could only be linked.** All four exact status IDs provided by the editor are now included as functioning WordPress oEmbed shortcodes.
+
+- Cointelegraph: 2115919718011851188
+- CZ: 2115915423174853077
+- Watcher.Guru: 2115922259739349132
+- Cointelegraph follow-up: 2115925539735433264
+
+**Successful fix:** Place a clean Twitter status URL in the native WordPress Shortcode block, using an enclosing `[embed]` and `[/embed]` pair. Unlike the earlier attempted `[twitter url=...]` syntax, this resolved to complete post markup.
+
+**Evidence:** The authenticated WordPress edit response contains four shortcode blocks. The view/render response contains four distinct `twitter-tweet` blockquotes and four `platform.x.com/widgets.js` script references. Each original status ID and attributed author were present. The old two generic in-story images were removed; original 1200×630 cover and donation QR remain. Browser-side widget execution was not independently tested.
+
+**Archive:** Updated the Gutenberg archive and fetched it back, confirming a byte-for-byte exact match with the final WordPress edit content.
+
+**Prevention:** Supplied social-post links must be prioritized as story media and not downgraded to contextual links or generic images until the native shortcode repair route has been tested. Use two or three strong external reporting sources for routine news briefs; typically stop discovery after about five relevant sites unless unresolved factual issues warrant more.
+
+---
+
 # BitcoinVersus.Tech Publication QA — Binance Security Incident (27111)
 
 - **Article:** Binance Investigates Suspected Hack as $2.54 Billion in Assets Frozen
