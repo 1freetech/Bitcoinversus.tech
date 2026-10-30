@@ -1,0 +1,14 @@
+# BitcoinVersus.Tech publishing QA ledger — post 27389 — October 30, 2026
+
+- Article: [Top 3 Largest Data Center Projects in South Carolina (2026)](https://bitcoinversus.tech/2026/10/30/top-3-largest-data-center-projects-south-carolina-2026/)
+- Publication status: **publish**, confirmed with WordPress post update and separate posts.get readback.
+- Archive: [exact final Gutenberg content](../../archive/2026/10/27389-top-3-largest-data-center-projects-south-carolina-2026.gutenberg.html)
+- WordPress article ID: 27389.
+- Featured media: 27383, original anime editorial cover, 1200 × 630, alt text; visual is explicitly conceptual.
+- Metadata: SEO description, excerpt, public social copy and category assignments saved.
+- Ranked capacities: Savannah River 1,000 MW **proposed/lease negotiations** (DOE NNSA July 20); Valara 457 MW **construction / development agreement first reading** (Spartanburg County Oct. 22 and SCDES Oct. 14); QTS York ~300 MW **industry-reported capacity and construction** (QTS project page plus Data Center Record). Cielo Gaffney's competing 300 MW proposal is disclosed in text; original ACE Basin Eagle Rock site excluded because development there was withdrawn/restricted.
+- Native YouTube embed blocks saved: WCNC QTS report `uj13FvWOERI`, official Spartanburg County Oct. 22 meeting `w9WjCmqwWQI`. Both canonical watch URLs embedded with `providerNameSlug:"youtube"`. Source provenance: verified published WCNC video search result and county's own link to its meeting video.
+- Footer: branded publication name, fully italic editor note, original QR image 24043, 5,000-sats instructions, mandatory disclaimer. User-requested X promo omitted. In-story media count: 2 native YouTube blocks (cover/QR excluded).
+- Body save/readback: 12,773 UTF-16 characters and exact-match GitHub archive fetch-back. Banned words absent. No ornamental text boxes or original in-story diagrams.
+- **QA status limitation:** Native Gutenberg blocks and source URLs are confirmed. Actual YouTube player playback, screenshot-based mobile/desktop visual rendering and public-page HTML fetch could not be checked in this environment because YouTube oEmbed fetch was disabled/throttled and direct site requests were inaccessible. Do not label these checks as passed.
+- **Error fingerprint:** `MEDIA-PLAYBACK-UNVERIFIED/external-request-blocked`. Symptom: oEmbed endpoint disabled / page requests throttled; original videos not known to be broken. Root cause: tool browsing limits, not a diagnosed WordPress or media defect. Attempted fix: authoritative native canonical Gutenberg embeds, checked save/readback and source link. **Regression test required:** open the published page in desktop and mobile browsers, check visible playable YouTube iframes and click play on both; verify QR and cover on page. If either fails, replace with another source-backed relevant playable video and update post plus GitHub archive.
