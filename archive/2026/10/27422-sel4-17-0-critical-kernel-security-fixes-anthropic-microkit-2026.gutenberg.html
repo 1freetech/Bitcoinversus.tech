@@ -1,0 +1,31 @@
+<!-- wp:paragraph --><p>The <a href="https://sel4.systems/news/">seL4 Foundation</a> released <strong>seL4 17.0.0</strong> on October 30, 2026, correcting critical kernel crash vulnerabilities and other security weaknesses in its formally verified microkernel. The maintainers credited <a href="https://www.anthropic.com/">Anthropic</a> for responsibly reporting multiple issues and urged organizations running earlier versions to upgrade.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>seL4 is a small operating-system kernel designed to isolate applications and services with capability-based access controls. Its mathematical security proofs are a distinguishing feature, but those proofs cover defined configurations and properties—not every instruction, configuration or hardware interaction.</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":27420,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/sel4-foundation-official-logo-network-project-photo.png" alt="Official seL4 Foundation logo graphic over a connected green and white network of nodes" class="wp-image-27420" /><figcaption class="wp-element-caption"><em>seL4 Foundation project artwork. The October 30 release contains fixes across several processor architectures. Source: <a href="https://sel4.systems/">seL4 Foundation</a>.</em></figcaption></figure><!-- /wp:image -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Critical fixes across Arm and x86</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The <a href="https://docs.sel4.systems/releases/sel4/17.0.0">official 17.0.0 release notes</a> describe a critical Arm hypervisor issue allowing a guest virtual machine to halt the kernel through untrapped debug-register accesses. On x86, another critical flaw could cause a system crash when a thread entered the kernel with attacker-controlled processor flags.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Other fixes address Arm system registers that could allow interference between virtual machines, stale memory mappings, device access and several virtualization problems. Some affected configurations were covered by formal proofs, but the flaws occurred outside the specific behavior those proofs guarantee. The release does not mean seL4's mathematical verification was invalidated.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=9JK9P4k_08w&amp;w=560&amp;h=315]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Background video: seL4 Summit 2026 presentation by Lesley Rossouw on composing Microkit systems with Acacia, recorded before the October security release. <a href="https://www.youtube.com/watch?v=9JK9P4k_08w">Watch directly on YouTube</a>. Source: <a href="https://trustworthy.systems/publications/papers/Rossouw_26:sel4s_acacia.abstract">Summit presentation listing</a>.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">What users need to upgrade</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The accompanying <a href="https://docs.sel4.systems/releases/microkit/2.4.0.html">Microkit 2.4.0</a> update also closes two isolation weaknesses. One previously allowed a server to grant capabilities through replies; another allowed a protection domain to inject fake faults into its parent or consume messages intended for the parent.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Developers should prepare for compatibility work: seL4 17.0.0, Microkit 2.4.0 and Rust support 6.0.0 contain breaking changes. The CAmkES 3.13.1 and capDL 0.6.1 releases remain backward-compatible, according to the foundation.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The changes matter to teams building embedded controls, virtualization platforms and other security-critical systems. They also arrive alongside scrutiny of <a href="https://bitcoinversus.tech/2026/10/30/anthropic-claude-linux-kernel-root-access-cve-2026-98432/">a separate Linux TCP kernel flaw</a> disclosed this week. The two operating-system vulnerabilities are distinct and should not be conflated.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>System maintainers should identify their seL4 version, processor architecture, hypervisor configuration and Microkit dependencies before upgrading, then run compatibility and security tests. The foundation has published <a href="https://docs.sel4.systems/releases.html">release documentation</a> and upgrade guidance; it has not claimed that every installation was exploitable.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em><strong>BitcoinVersus.Tech Editor's Note:</strong><br>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True.<br><br>If you would like to support to help further secure the integrity of our research initiatives, please scan the QR code to donate (For the best results, scan the QR code on a Laptop or larger screen).</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="BitcoinVersus.Tech original Bitcoin donation QR code" class="wp-image-24043" /></figure><!-- /wp:image -->
