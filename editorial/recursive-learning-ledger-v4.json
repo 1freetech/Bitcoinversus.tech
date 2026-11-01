@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 3,
+  "ledger_revision": 4,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -560,6 +560,181 @@
         "Recheck public-page browser access and pursue independent comparative on-device benchmarks before publishing numerical efficiency claims."
       ],
       "status": "published_wordpress_qa_verified_external_visual_outstanding"
+    },
+    {
+      "post_id": 28076,
+      "title": "Seoul Viosys Starts Rare-Earth-Free White MicroLED Production",
+      "publication_date": "2026-11-01",
+      "category": "Semiconductors",
+      "url": "https://bitcoinversus.tech/2026/11/01/seoul-viosys-wicop3-rare-earth-free-white-microled-production-2026/",
+      "archive_path": "archive/2026/11/28076-seoul-viosys-wicop3-rare-earth-free-white-microleds.md",
+      "sources": [
+        {
+          "url": "https://www.seoulviosys.com/en/media/news/212",
+          "type": "verified_fact",
+          "role": "First-party October 28/29 rare-earth-free WICOP 3 production announcement; dimensions, efficacy, goals and launch status"
+        },
+        {
+          "url": "https://www.seoulsemicon.com/en/media/newsroom/271",
+          "type": "verified_fact",
+          "role": "Primary parallel Seoul Semiconductor statement"
+        },
+        {
+          "url": "https://www.semiconductor-today.com/news_items/2026/oct/seoul-291026.shtml",
+          "type": "verified_fact",
+          "role": "Independent semiconductor press confirmation of company announcement"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:LED_Die_and_Bondwire.jpg",
+          "type": "verified_fact",
+          "role": "CC0 AirCombat photograph of conventional LED, not WICOP 3"
+        }
+      ],
+      "duplicate_checks": {
+        "wordpress_queries": [
+          "Seoul Viosys",
+          "Seoul Semiconductor",
+          "WICOP",
+          "rare-earth-free",
+          "micro LED"
+        ],
+        "github_queries": [
+          "WICOP 3",
+          "Wolfspeed transparent silicon carbide"
+        ],
+        "result": "No prior WICOP 3 production story found. Alternative Wolfspeed TSiC candidate rejected as already published Oct 30; avoiding duplication verified."
+      },
+      "word_count_excluding_captions_footer": 368,
+      "internal_links_count": 4,
+      "media": {
+        "in_story_count": 3,
+        "items": [
+          {
+            "id": 28070,
+            "type": "original conceptual device comparison illustration",
+            "source": "site generated",
+            "notes": "Illustrative only; explicitly not an actual WICOP 3 cross-section",
+            "verification": "WordPress published raw+rendered media block and caption present"
+          },
+          {
+            "id": 28073,
+            "type": "real photomicrograph of conventional LED die",
+            "source": "AirCombat / Wikimedia Commons",
+            "license": "CC0 1.0",
+            "notes": "Historical comparison; not 2026 new product",
+            "verification": "WordPress rendered media and caption present"
+          },
+          {
+            "id": 28071,
+            "type": "source-backed efficacy comparison bar chart",
+            "data": [
+              {
+                "year": 2026,
+                "status": "company reported approximately",
+                "lumens_per_watt": 100
+              },
+              {
+                "year": 2028,
+                "status": "company goal not achieved",
+                "lumens_per_watt": 200
+              }
+            ],
+            "source": "Seoul Viosys original press announcement",
+            "verification": "WordPress native image block + source and forecast warning caption confirmed"
+          }
+        ],
+        "youtube_video_embeds": 0,
+        "reason": "Relevant confirmed video not located; three working image media were preferred over unrelated generic footage."
+      },
+      "cover": {
+        "id": 28072,
+        "dimensions": [
+          1200,
+          630
+        ],
+        "style": "anime editorial artwork",
+        "subject": "fictional adult East Asian male optoelectronics engineer in lab",
+        "alt_text_confirmed": true,
+        "visual_inspection": "rendered cover dimensions verified, independent anatomy inspection unavailable"
+      },
+      "chart": {
+        "appropriate": true,
+        "type": "bar",
+        "units": "lumens per watt",
+        "status_distinction": "2026 manufacturer's approximate reported figure vs 2028 company target, not measured",
+        "data_source": "Seoul Viosys October 28 release",
+        "verified": true
+      },
+      "publication_qa": {
+        "wordpress_published": true,
+        "wordpress_edit_and_view_readback": true,
+        "all_images_rendered_html": true,
+        "all_three_image_captions": true,
+        "internal_links": 4,
+        "original_qr": true,
+        "approved_editor_note": true,
+        "required_disclaimer": true,
+        "x_promo_absent": true,
+        "cover_dimensions_verified": true,
+        "public_browser_request": "inaccessible to independent public web tool",
+        "desktop_and_mobile_visual_qa": "unavailable",
+        "actual_device_image_loading": "unverified",
+        "unknown_user_feedback": "not accessible"
+      },
+      "quality_score": {
+        "accuracy_and_sources": 25,
+        "originality_and_newsworthiness": 15,
+        "technical_depth_and_clarity": 14,
+        "media_function_and_relevance": 14,
+        "cover_and_chart_quality": 9,
+        "internal_links_and_seo": 9,
+        "live_page_qa_and_formatting": 7,
+        "total": 93,
+        "target": 95,
+        "target_met": false,
+        "reason": "Independent browser/device visual QA unavailable; otherwise three WordPress-rendered media and source-based chart verified."
+      },
+      "observations": [
+        {
+          "classification": "verified_fact",
+          "detail": "Seoul Viosys/Seoul Semiconductor announced new WICOP 3 white microLED production Oct 28; 25×10 µm first production chip and efficacy near 100 lm/W are manufacturer claims.",
+          "evidence": "Primary official Seoul press release"
+        },
+        {
+          "classification": "user_preference",
+          "detail": "300-420 words; 2-10 functional media; 4-9 contextual internal links; cover rotated and 1200×630; original QR and note; commit learning.",
+          "evidence": "Recursive writer v4.0 and existing newsroom rules"
+        },
+        {
+          "classification": "measured_result",
+          "detail": "368 news words; four internal links; three published WordPress native image media blocks; three captions; featured cover 1200×630",
+          "evidence": "WordPress posts.get(edit/view), post-sections.list and media.get"
+        },
+        {
+          "classification": "hypothesis",
+          "detail": "On-site product micrographs and independent lifetime/efficacy testing could strengthen follow-up reporting if released.",
+          "evidence": "Future reporting opportunity, not a verified outcome"
+        }
+      ],
+      "defects_and_corrections": {
+        "media_source_403": "Historical official WICOP exhibit image distribution server rejected WordPress import with HTTP 403. Replaced with CC0 source photo of conventional LED die and labeled it explicitly as historical comparison.",
+        "draft_caption_typo": "Stray irrelevant caption fragment discovered by WordPress rendered HTML read-back; repaired using targeted post-sections.update before publication and confirmed absent in published HTML.",
+        "unresolved": [
+          "Actual public-page desktop/mobile screenshots not captured.",
+          "Independent third-party verification of manufacturer efficacy and lifetime claims not available."
+        ]
+      },
+      "user_feedback": {
+        "reactions": "not accessible",
+        "analytics": "not accessible",
+        "post_specific_feedback": "none available"
+      },
+      "next_three_improvements": [
+        "When an official image server blocks imports, select correctly licensed actual hardware photography and label model/date and limitations; verify canonical source URL first.",
+        "Require a pre-publication caption-text quality gate in addition to media/iframe counts and confirm that stale terms from other stories are absent.",
+        "Preserve status distinctions and uncertainties in charts and continue attempting independent public-page/mobile checks without claiming they succeeded."
+      ],
+      "status": "published_wordpress_verified; external_visual_qa_incomplete"
     }
   ]
 }
