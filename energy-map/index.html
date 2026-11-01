@@ -209,6 +209,111 @@ function draw(){visible=filtered();markers.clear();group.clearLayers();visible.f
 $('#points').textContent=visible.length;$('#states').textContent=new Set(visible.map(p=>p.state)).size;$('#topten').textContent=visible.filter(p=>p.nationalRank).length;$('#mine').textContent=personal.length;
 if(editorActive){return}if(visible.length){const p=visible.find(p=>p.id===selectedId)||visible[0];details(p)}else{$('#detail').innerHTML='<div class="kicker">No matches</div><h2>No project matches your filters</h2><p class="brief">Try clearing search terms or selecting another state.</p>'}
 const st=$('#state').value;if(st&&visible.length){const bounds=L.latLngBounds(visible.map(p=>{const l=location(p);return [l.lat,l.lon]}));map.fitBounds(bounds.pad(.35),{maxZoom:8,animate:false})}else if($('#view').value==='personal'&&visible.length){const l=location(visible[0]);map.setView([l.lat,l.lon],Math.max(5,map.getZoom()),{animate:false})}else if($('#view').value==='national'){map.setView([38.5,-103],4,{animate:false})}else{map.setView([39,-98],4,{animate:false})}}
+
+let draftPin=null;
+function pin(lat,lon){
+ if(!Number.isFinite(lat)||!Number.isFinite(lon)||Math.abs(lat)>90||Math.abs(lon)>180)return;
+ if(draftPin)map.removeLayer(draftPin);
+ draftPin=L.circleMarker([lat,lon],{radius:12,color:'#e9b56f',weight:3,fillColor:'#b989fb',fillOpacity:.95,interactive:false}).addTo(map);
+}
+function closeEditor(){editorActive=false;editId=null;if(draftPin){map.removeLayer(draftPin);draftPin=null}draw()}
+function openEditor(p){
+ editorActive=true;editId=p?.id||null;selectedId=p?.id||null;
+ const current=p||{},state=current.state||$('#state').value||'Custom / Other';
+ const stateOptions=[...Object.keys(CENTERS),'Custom / Other'].sort().map(s=>'<option value="'+esc(s)+'"'+(state===s?' selected':'')+'>'+esc(s)+'</option>').join('');
+ const statOptions=[['planned','Planned / proposed'],['construction','Under construction'],['operating','Operating / partial'],['paused','Paused / canceled'],['other','Other / not confirmed']].map(([value,label])=>'<option value="'+value+'"'+(current.customStatus===value?' selected':'')+'>'+label+'</option>').join('');
+ const energyOptions=['Data center / AI','Bitcoin mining','Natural gas','Nuclear','Solar','Wind','Hydropower','Battery storage','Mixed / hybrid','Other'].map(v=>'<option value="'+esc(v)+'"'+(current.energyType===v?' selected':'')+'>'+esc(v)+'</option>').join('');
+ const loc=p?location(p):null;
+ $('#detail').innerHTML='<div class="kicker">'+(p?'Edit custom site':'Build your own energy map')+'</div>'+
+ '<h2>'+(p?'Update this site':'Add an energy or data center site')+'</h2>'+
+ '<p class="formhint">Click a spot on the map to place a new pin, or enter coordinates below. Custom pins are saved locally in this browser and can be edited, deleted or exported. They are not part of the editorial ranking until reviewed.</p>'+
+ '<form id="siteForm" class="formgrid">'+
+ '<label class="wide">Site or project name *<input name="name" maxlength="180" required placeholder="e.g., Riverbend Solar and Data Center" value="'+esc(current.name||'')+'"></label>'+
+ '<label>U.S. state / area <select name="state">'+stateOptions+'</select></label>'+
+ '<label>Site type <select name="energyType">'+energyOptions+'</select></label>'+
+ '<label class="wide">City, county or location description<input name="locationLabel" maxlength="120" placeholder="e.g., near Enid, Oklahoma" value="'+esc(current.locationLabel||'')+'"></label>'+
+ '<label>Latitude *<input type="number" min="-90" max="90" step="any" name="lat" id="siteLat" required placeholder="Click map" value="'+esc(loc?loc.lat:'')+'"></label>'+
+ '<label>Longitude *<input type="number" min="-180" max="180" step="any" name="lon" id="siteLon" required placeholder="Click map" value="'+esc(loc?loc.lon:'')+'"></label>'+
+ '<label>Reported capacity (MW)<input type="number" min="0" step="any" name="capacityMW" placeholder="Leave blank if unknown" value="'+esc(current.capacityMW??'')+'"></label>'+
+ '<label>Current production (MW)<input type="number" min="0" step="any" name="productionMW" placeholder="Only if actually measured" value="'+esc(current.productionMW??'')+'"></label>'+
+ '<label class="wide">What does the capacity figure measure?<select name="capacityBasis">'+['Planned site capacity','Operating IT load','Planned IT load','Installed generation capacity','Planned generation capacity','Contracted utility service','Battery discharge capacity','Other / not comparable'].map(v=>'<option'+(current.capacityBasis===v?' selected':'')+'>'+esc(v)+'</option>').join('')+'</select></label>'+
+ '<label>Development status <select name="customStatus">'+statOptions+'</select></label>'+
+ '<label class="wide">Site briefing<textarea name="brief" maxlength="3000" placeholder="What is planned, operating, built and what evidence is available?">'+esc(current.brief||'')+'</textarea></label>'+
+ '<label class="wide">Public source link (optional)<input type="url" name="article" placeholder="https://…" maxlength="1000" value="'+esc(current.article||'')+'"></label>'+
+ '<div id="formMessage" class="wide" role="status"></div>'+
+ '<div class="wide formactions"><button class="addsite" type="submit">'+(p?'Save changes':'Save new site')+'</button><button id="cancelSite" type="button">Cancel</button></div>'+
+ '</form>';
+ $('#cancelSite').addEventListener('click',closeEditor);
+ $('#siteForm').addEventListener('submit',saveEditor);
+ for(const field of ['siteLat','siteLon'])$('#'+field).addEventListener('change',()=>pin(Number($('#siteLat').value),Number($('#siteLon').value)));
+ if(loc){pin(loc.lat,loc.lon);map.flyTo([loc.lat,loc.lon],Math.max(map.getZoom(),6),{duration:.6})}
+ if(window.innerWidth<900)$('#detail').scrollIntoView({behavior:'smooth',block:'start'});
+ $('#siteForm [name="name"]').focus();
+}
+function saveEditor(ev){
+ ev.preventDefault();
+ const f=new FormData(ev.currentTarget),v=n=>String(f.get(n)||'').trim();
+ const name=v('name'),lat=Number(v('lat')),lon=Number(v('lon'));
+ const hasCapacity=v('capacityMW')!=='',hasProduction=v('productionMW')!=='';
+ const capacity=hasCapacity?Number(v('capacityMW')):null,production=hasProduction?Number(v('productionMW')):null;
+ const msg=$('#formMessage'),url=v('article');
+ if(!name){msg.textContent='Please enter a site name.';return}
+ if(!v('lat')||!v('lon')||!Number.isFinite(lat)||!Number.isFinite(lon)||Math.abs(lat)>90||Math.abs(lon)>180){msg.textContent='Choose a pin on the map or enter valid latitude and longitude.';return}
+ if((hasCapacity&&(!Number.isFinite(capacity)||capacity<0))||(hasProduction&&(!Number.isFinite(production)||production<0))){msg.textContent='Capacity and production must be nonnegative numbers.';return}
+ if(url&&!sanitizeUrl(url)){msg.textContent='Please use a full http(s) source URL.';return}
+ const existing=personal.find(p=>p.id===editId);
+ const d={
+ id:existing?.id||'mine-'+(crypto?.randomUUID?.()||Date.now().toString(36)+'-'+Math.random().toString(36).slice(2)),
+ personal:true,rank:null,nationalRank:null,state:v('state')||'Custom / Other',name,
+ heading:name,lat,lon,
+ locationLabel:v('locationLabel')||'User-selected point',capacityMW:capacity,
+ capacityLabel:hasCapacity?capacity.toLocaleString(undefined,{maximumFractionDigits:3})+' MW':'Not disclosed',
+ capacityBasis:v('capacityBasis'),productionMW:production,customStatus:v('customStatus'),
+ energyType:v('energyType'),brief:v('brief')||'User-supplied site; no briefing added.',
+ article:sanitizeUrl(url),articleTitle:'User-added site',updated:new Date().toISOString().slice(0,10)
+ };
+ if(existing){personal=personal.map(p=>p.id===existing.id?d:p)}else{personal.push(d)}
+ savePersonal();editorActive=false;editId=null;if(draftPin){map.removeLayer(draftPin);draftPin=null}
+ selectedId=d.id;$('#view').value='personal';$('#phase').value='';$('#state').value='';$('#search').value='';
+ refreshStates();draw();map.flyTo([lat,lon],Math.max(map.getZoom(),6),{duration:.6});
+}
+function deletePersonal(id){const p=personal.find(x=>x.id===id);if(!p||!confirm('Delete "'+p.name+'" from your custom map?'))return;personal=personal.filter(x=>x.id!==id);savePersonal();selectedId=null;draw()}
+function exportPersonal(){
+ const obj={format:'bitcoinversus-personal-energy-map-v1',exportedAt:new Date().toISOString(),description:'Your own map additions; not verified BitcoinVersus.Tech editorial data',sites:personal};
+ const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download='bitcoinversus-my-energy-map.json';document.body.appendChild(a);a.click();a.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
+function normalizeImport(v){
+ if(!validPersonal(v))return null;
+ const n=Number(v.capacityMW),hasCap=v.capacityMW!==null&&v.capacityMW!==undefined&&v.capacityMW!==''&&Number.isFinite(n)&&n>=0;
+ const produced=Number(v.productionMW),hasProd=v.productionMW!==null&&v.productionMW!==undefined&&v.productionMW!==''&&Number.isFinite(produced)&&produced>=0;
+ const status=['operating','construction','planned','paused','other'].includes(v.customStatus)?v.customStatus:'other';
+ const id=typeof v.id==='string'&&v.id.startsWith('mine-')&&v.id.length<=100?v.id:'mine-'+(crypto?.randomUUID?.()||Date.now().toString(36)+Math.random().toString(36).slice(2));
+ return {id,personal:true,rank:null,nationalRank:null,name:String(v.name).trim().slice(0,180),heading:String(v.name).trim().slice(0,180),
+ state:String(v.state||'Custom / Other').slice(0,90),lat:Number(v.lat),lon:Number(v.lon),locationLabel:String(v.locationLabel||'User-selected point').slice(0,120),
+ capacityMW:hasCap?n:null,capacityLabel:hasCap?n.toLocaleString(undefined,{maximumFractionDigits:3})+' MW':'Not disclosed',
+ capacityBasis:String(v.capacityBasis||'Other / not comparable').slice(0,100),productionMW:hasProd?produced:null,customStatus:status,
+ energyType:String(v.energyType||'Other').slice(0,70),brief:String(v.brief||'User-supplied site').slice(0,3000),
+ article:sanitizeUrl(v.article),articleTitle:'User-added site',updated:new Date().toISOString().slice(0,10)};
+}
+async function importPersonal(ev){
+ const file=ev.target.files?.[0];ev.target.value='';
+ if(!file)return;
+ if(file.size>2_000_000){alert('Import files must be smaller than 2 MB.');return}
+ try{
+ const data=JSON.parse(await file.text()),source=Array.isArray(data)?data:data?.sites;
+ if(!Array.isArray(source)||source.length>1000)throw Error('Expected an array of at most 1,000 sites.');
+ const clean=source.map(normalizeImport).filter(Boolean);
+ if(clean.length===0)throw Error('No valid geolocated sites found in this file.');
+ if(!confirm('Import '+clean.length+' sites into your personal map? Existing custom entries with matching IDs will be updated. Editorial rankings will not change.'))return;
+ const old=new Map(personal.map(p=>[p.id,p]));clean.forEach(p=>old.set(p.id,p));personal=[...old.values()].slice(0,1000);
+ savePersonal();refreshStates();$('#state').value='';$('#view').value='personal';$('#phase').value='';$('#search').value='';selectedId=clean[0].id;draw();
+ alert('Imported '+clean.length+' site records. Your map is now saved in this browser.');
+ }catch(e){alert('Unable to import this map: '+e.message)}
+}
+
 async function boot(){try{
 if(!window.L)throw Error('Leaflet map library failed to load.');
 map=L.map('map',{preferCanvas:true,zoomControl:true,minZoom:2}).setView([39,-98],4);
@@ -218,8 +323,8 @@ const batches=await Promise.all(FILES.map(url=>fetch(url).then(r=>{if(!r.ok)thro
 records=batches.flat().filter(x=>x.name&&x.article&&x.state);
 const stateRecords=records.filter(x=>Number.isFinite(x.rank)),nat=records.filter(x=>Number.isFinite(x.nationalRank));
 if(new Set(stateRecords.map(p=>p.state)).size!==50||nat.length!==10)throw Error('Data audit failed: expected all 50 states and ten national rankings.');
-Object.keys(CENTERS).sort().forEach(s=>{const opt=document.createElement('option');opt.value=s;opt.textContent=s;$('#state').appendChild(opt)});
-['state','view','phase'].forEach(id=>$('#'+id).addEventListener('change',draw));$('#search').addEventListener('input',draw);$('#reset').addEventListener('click',()=>{$('#state').value='';$('#view').value='all';$('#phase').value='';$('#search').value='';draw()});
+personal=loadPersonal();refreshStates();map.on('click',ev=>{if(!editorActive)return;const {lat,lng}=ev.latlng;$('#siteLat').value=lat.toFixed(6);$('#siteLon').value=lng.toFixed(6);pin(lat,lng);$('#formMessage').textContent='Pin selected: '+lat.toFixed(4)+', '+lng.toFixed(4)});
+$('#addSite').addEventListener('click',()=>openEditor());$('#exportMap').addEventListener('click',exportPersonal);$('#importMap').addEventListener('click',()=>$('#mapFile').click());$('#mapFile').addEventListener('change',importPersonal);window.addEventListener('storage',ev=>{if(ev.key===STORAGE_KEY&&!editorActive){personal=loadPersonal();refreshStates();draw()}});['state','view','phase'].forEach(id=>$('#'+id).addEventListener('change',draw));$('#search').addEventListener('input',draw);$('#reset').addEventListener('click',()=>{$('#state').value='';$('#view').value='all';$('#phase').value='';$('#search').value='';draw()});
 draw();}catch(e){$('#map').innerHTML='<div class="error">Map could not load. '+esc(e.message)+'</div>';$('#detail').innerHTML='<div class="kicker">Data loading issue</div><h2>Map not ready</h2><p class="brief">'+esc(e.message)+'</p><p class="small">Open the map from a hosted HTTPS website, not a local file URL, so the seven data files can be fetched.</p>';}}
 boot();
 </script>
