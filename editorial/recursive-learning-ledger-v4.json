@@ -1,0 +1,222 @@
+{
+  "schema_version": "4.0.0",
+  "ledger_revision": 1,
+  "created_at": "2026-11-01",
+  "updated_at": "2026-11-01",
+  "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
+  "taxonomy": [
+    "verified_fact",
+    "user_preference",
+    "measured_result",
+    "hypothesis"
+  ],
+  "quality_rubric": {
+    "source_accuracy": 25,
+    "originality_newsworthiness": 15,
+    "technical_depth_clarity": 15,
+    "media_function_and_relevance": 15,
+    "cover_visualization": 10,
+    "internal_links_seo": 10,
+    "live_page_qa_formatting": 10,
+    "target": 95,
+    "mandatory_gates": [
+      "accuracy",
+      "duplicate_prevention",
+      "functional_media"
+    ]
+  },
+  "entries": [
+    {
+      "post_id": 27982,
+      "title": "Bitcoin Core Fixes Three AI-Discovered Node Security Flaws",
+      "publication_date": "2026-11-01",
+      "category": "Bitcoin",
+      "url": "https://bitcoinversus.tech/2026/11/01/bitcoin-core-ai-found-three-node-security-flaws-patched-2026/",
+      "archive_path": "archive/2026/11/27982-bitcoin-core-ai-found-three-node-security-flaws-patched-2026.md",
+      "original_sources": [
+        {
+          "url": "https://bitcoincore.org/en/2026/10/28/disclose-tcp-oom/",
+          "role": "primary security advisory CVE-2026-117350",
+          "verification": "verified on official project site"
+        },
+        {
+          "url": "https://bitcoincore.org/en/2026/10/28/disclose-fpausesend-oom/",
+          "role": "primary security advisory CVE-2026-117349, per-peer MB/hour figures",
+          "verification": "verified on official project site"
+        },
+        {
+          "url": "https://bitcoincore.org/en/2026/10/28/disclose-undo-overflow/",
+          "role": "primary advisory CVE-2026-117346 and residual limitations",
+          "verification": "verified on official project site"
+        },
+        {
+          "url": "https://bitcoincore.org/en/releases/32.1/",
+          "role": "release notes and supported upgrade guidance",
+          "verification": "verified on official project site"
+        }
+      ],
+      "corroborating_source": {
+        "url": "https://bitcoinops.org/en/newsletters/2026/10/30/",
+        "role": "independent Bitcoin development newsletter summarizing security policy and fixes",
+        "verification": "read"
+      },
+      "duplicate_checks": {
+        "wordpress_queries": [
+          "Bitcoin Core 32.1",
+          "node crash",
+          "AI-discovered",
+          "CVE-2026-117350",
+          "Bitcoin Core"
+        ],
+        "github_queries": [
+          "Bitcoin Core 32.1",
+          "CVE-2026-117350",
+          "Project Loupe"
+        ],
+        "result": "No identical published story or archive match found. Earlier Oct 25 article covered security-disclosure policy, not Oct 28 fixes."
+      },
+      "article_length_words_excluding_footer_and_media_captions": 397,
+      "internal_link_count": 6,
+      "media": {
+        "in_story_count": 3,
+        "items": [
+          {
+            "id": 27977,
+            "type": "original conceptual editorial illustration",
+            "topic": "Bitcoin node P2P queue pressure",
+            "status": "native WordPress image block present in published rendered HTML",
+            "license": "site-generated original"
+          },
+          {
+            "id": 27979,
+            "type": "source-backed horizontal bar chart",
+            "topic": "CVE-2026-117349 potential per-peer memory growth",
+            "data": [
+              {
+                "peer": "inbound",
+                "rate_mb_per_hour": 2
+              },
+              {
+                "peer": "outbound",
+                "rate_mb_per_hour": 5
+              }
+            ],
+            "source": "https://bitcoincore.org/en/2026/10/28/disclose-fpausesend-oom/",
+            "status": "native WordPress image block, caption and attribution confirmed"
+          },
+          {
+            "id": 27978,
+            "type": "historical software screenshot",
+            "topic": "Bitcoin Core v0.10.0 interface, 2015",
+            "source": "https://commons.wikimedia.org/wiki/File:Bitcoin-core-v0.10.0.png",
+            "license": "MIT/Expat, author Bitcoin Core developers",
+            "status": "native WordPress image block and historical clarification caption present"
+          }
+        ],
+        "youtube_video_embeds": 0,
+        "video_selection_note": "No directly relevant independently verifiable October 2026 YouTube video found during search; did not add loosely related footage.",
+        "rendered_media_validation": "WordPress published read-back confirmed three in-body image blocks with three captions and correct IDs; external browser visual QA unavailable."
+      },
+      "featured_cover": {
+        "media_id": 27980,
+        "size_px": [
+          1200,
+          630
+        ],
+        "style": "split-screen diptych",
+        "subject": "fictional adult Indigenous woman cybersecurity engineer, age late 30s",
+        "alt_text_attached": true,
+        "visual_review": "automated dimensions verified; no independent visual/anatomy inspection"
+      },
+      "links": {
+        "primary_source_urls_verified": true,
+        "internal_link_count": 6,
+        "seo_metadata_verified": true
+      },
+      "footer": {
+        "exact_approved_editor_note": true,
+        "original_qr_media_id": 24043,
+        "request_5000_sats": true,
+        "required_disclaimer": true,
+        "retired_x_promo_absent": true
+      },
+      "publication_qa": {
+        "wordpress_status": "publish",
+        "wordpress_permalink_readback": true,
+        "wordpress_rendered_media_readback": true,
+        "cover_dimensions_verified": true,
+        "independent_live_browser_request": "inaccessible to public web checker",
+        "mobile_screenshot": "not available",
+        "desktop_screenshot": "not available",
+        "actual_youtube_playback": "not applicable; no video in story",
+        "outstanding": [
+          "Independent browser-based public-page visual QA remains unverified.",
+          "Actual generated cover composition/anatomy not visually inspected with a browser or image analysis tool."
+        ]
+      },
+      "quality_score": {
+        "source_accuracy": 25,
+        "originality_newsworthiness": 15,
+        "technical_depth_clarity": 14,
+        "media_function_and_relevance": 13,
+        "cover_visualization": 9,
+        "internal_links_seo": 10,
+        "live_page_qa_formatting": 7,
+        "total": 93,
+        "target": 95,
+        "target_met": false,
+        "reason_for_gap": "WordPress confirms content but independent public browser and mobile visual checks were not possible."
+      },
+      "observations": [
+        {
+          "kind": "verified_fact",
+          "detail": "Bitcoin Core disclosed three AI-discovered bugs on Oct 28 and provided maintenance fixes in four maintained releases.",
+          "evidence": "official advisories and release notes"
+        },
+        {
+          "kind": "verified_fact",
+          "detail": "Earlier Oct 25 WordPress story covered disclosure policy; new story reports concrete released patches.",
+          "evidence": "WordPress archive comparison"
+        },
+        {
+          "kind": "user_preference",
+          "detail": "News 300-420 words; 2-10 working media; 4-9 relevant internal links; original QR and exact approved footer.",
+          "evidence": "Perfect Bite-Size News Writer v3.1 and Recursive Learning News Writer v4.0 instructions"
+        },
+        {
+          "kind": "measured_result",
+          "detail": "Published WordPress read-back: 397 news words, three in-body image embeds, six internal links, 1200x630 featured cover.",
+          "evidence": "WordPress posts.get(edit/view), post-sections.list, media.get"
+        },
+        {
+          "kind": "hypothesis",
+          "detail": "A directly relevant official interview or more browser-backed visual QA could raise future scores.",
+          "evidence": "Improvement opportunity, not engagement data"
+        }
+      ],
+      "editorial_defects": {
+        "confirmed_in_this_post": [],
+        "inherited_known_issue": "Earlier newsroom articles had YouTube blocks that rendered as plain links; choose media by confirmed rendered markup instead of URL presence.",
+        "correction_in_this_post": "none"
+      },
+      "feedback": {
+        "user_thumb_feedback": "not accessible",
+        "editorial_feedback_for_this_specific_post": "not yet received",
+        "web_analytics": "not accessible",
+        "engagement_results": "unavailable"
+      },
+      "next_three_improvements": [
+        "Continue selecting real primary sources and perform model-specific technical cross-checks; separate patched risks from residual exceptions.",
+        "Keep a pre-publish rendered-media gate, log original licenses and data provenance, and only use video when exact relevant playback can be confirmed.",
+        "Add genuine desktop and mobile public-page screenshot checks when supported, including independent visual inspection of generated cover anatomy."
+      ],
+      "next_story_learning_checks": [
+        "Verify whether desktop/mobile public-page access became available.",
+        "Check if previously identified high-risk media URLs render before drafting.",
+        "Preserve exact approved footer and chart labels."
+      ],
+      "validation_status": "published_and_wordpress_verified_with_external_visual_qa_outstanding",
+      "recorded_utc_date": "2026-11-01"
+    }
+  ]
+}
