@@ -59,3 +59,14 @@ Version: 1.0 | Date: 2026-11-01 | WordPress ID: 28183
 1. Recheck live posts and central ledger immediately before publication, not just research start.
 2. Keep a hard source/denominator/time-window gate for all mining charts.
 3. Separate WordPress-rendered HTML QA from an independent external visual and asset-loading check; report blocked browser checks without claiming full verification.
+
+## 2026-11-01 Editorial correction: one-chart limit (verified)
+- **User preference, explicitly requested:** one chart maximum per story; remaining in-story media must be sourced from the internet. Preserve focus on equipment/product imagery rather than people.
+- **Before correction:** three original graphs/diagrams (IDs 28180, 28182, 28181). **After:** exactly one chart (28180) and two sourced Creative Commons photographs (28187, 28188). Removed 28182 and 28181 from the post body without deleting library assets.
+- Internet photograph 28187: 2018 Bitmain Antminer S9 and its PSU, Steve Rainwater, CC BY-SA 2.0, https://commons.wikimedia.org/wiki/File:Antminer_ASIC_Miner.jpeg.
+- Internet photograph 28188: 2018 Argo Blockchain Mirabel Bitcoin mining racks, MikeBogosian, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Argo_Blockchain_Mirabel_Facility.jpg.
+- Both captioned as historical, illustrative images—not contemporary evidence of the nine-day fee series. License links, source links, alt descriptions and creator names included. Images uploaded from the verified Internet source pages as WordPress media.
+- Fresh WordPress posts.update returned publish; fresh posts.get(context=view) confirmed published status, same URL, and ordered in-story image IDs [28180,28187,28188], with original QR 24043, Editor's Note, disclaimer, and cover 28157 intact.
+- External browser returned an internal URL access error; real-user page rendering and image delivery remain unverified.
+- Explicit standing rule committed to editorial/media-policy-one-chart-2026-11-01.md.
+- Previous QA media inventory above documents the pre-correction state and is superseded for the current article by this section.
