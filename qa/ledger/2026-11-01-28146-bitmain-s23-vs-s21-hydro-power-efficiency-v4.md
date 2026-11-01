@@ -52,3 +52,23 @@
 - User preferences: v3.1/v4.0 editorial, 2–10 media, cover art rotation, 4–9 links, footer and ledger.
 - Hypotheses: 8.9 J/TH may reduce site operating costs when realized, but cooling/site economics can change net benefit.
 - Measured engagement and thumbs: unavailable.
+
+
+---
+
+### Revision log — 2026-11-01: Replace generic media with original BitcoinVersus J/TH charts + X
+
+- **User preference / explicit change:** Replace the article's original generic BITMAIN YouTube embed and two machine-level comparison charts with existing BitcoinVersus original J/TH visuals from the WordPress/Library assets and original research embedded from the owned X accounts. The original article text, title, slug, categories, and cover remain unchanged aside from a short framing explanation.
+- **Verified WordPress update:** Post #28146 remains published at https://bitcoinversus.tech/2026/11/01/bitmain-s23-xp-hyd-8-9-jth-s21-xp-electricity-savings-1ph-bitcoin-2026/ ; posts.update returned publish and posts.get(view) confirmed the resulting markup.
+- **In-story media, revised four items (featured cover and footer QR excluded):**
+  1. WordPress media #24357, an original BitcoinVersus J/TH efficiency-projection chart covering 2025–2046 and 8.3% alternative: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/img_0659.png
+  2. WordPress media #26109, an original BitcoinVersus 1 J/TH scenario chart showing 2033, 2046 and longer-run alternatives beginning from 8.9 J/TH in 2026: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoin-1jth-asic-2033-2046-scenario-curves.png
+  3. Original @bitcoinversus_ tweet about the 8.3%-minimum hypothesis https://x.com/bitcoinversus_/status/2111022048025985132 (WordPress embed source uses the Twitter-compatible permalink).
+  4. Original @1BitcoinVersus 2025 research tweet about 2033–2039: https://x.com/1BitcoinVersus/status/1953501059940339840
+- **Verified embed rendering:** Both tweets return native `<blockquote class="twitter-tweet">` markup and the platform widgets script in WordPress's published rendered HTML. Both images appear as WordPress image IDs #24357 and #26109. Old image IDs #28135/#28139 and old manufacturer YouTube `8OoI2HnT6NA` are absent from the updated article. This proves native embed markup but not independent browser loading or visual confirmation.
+- **Editorial caveat:** Both charts represent user-authored mathematical **projections**, not independent current S23-versus-S21 energy-cost charts. Updated captions explain this; 8.3% fixed annual reduction from 8.9 J/TH crosses 1 J/TH around 2052, not 2046. Original 2025 tweet's 2033–2039 path is a hypothesis, not proof of shipped hardware.
+- **Reporting length:** Approximately 380 reporting words excluding footers and media captions, plus heading words still under the 420-word limit. After removing the two comparative charts, the article's electricity-cost worked examples remain in prose.
+- **Unchanged and verified:** One 1200×630 cover #28143, required Editor's Note, original donation QR #24043, disclaimer and order, four current contextual internal links, no discontinued X promotional footer.
+- **Non-action / transparency:** The standalone ChatGPT Library image file did not transfer to WordPress via connector file ID because the media endpoint requires an HTTPS-downloadable attachment. Used original existing **WordPress media library** chart assets instead, eliminating the need for an unsupported upload and choosing updated/dated versions over older inconsistent Library graphics.
+- **Open QA limitations:** Independent desktop/mobile browser inspection, live image rendering, and client-side X-widget display were not verified beyond the WordPress generated HTML. No account engagement/reaction metrics accessed.
+- **Learning:** Test original X post embeds using the `twitter.com` canonical-compatible URL (as prior Barclays repair) and verify WordPress output. Date/version-label original J/TH charts to prevent forecasts or obsolete values from being mistaken for observed benchmarks.
