@@ -263,7 +263,7 @@ function saveEditor(ev){
  if(url&&!sanitizeUrl(url)){msg.textContent='Please use a full http(s) source URL.';return}
  const existing=personal.find(p=>p.id===editId);
  const d={
- id:existing?.id||'mine-'+(crypto?.randomUUID?.()||Date.now().toString(36)+'-'+Math.random().toString(36).slice(2)),
+ id:existing?.id||'mine-'+((typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID():null)||Date.now().toString(36)+'-'+Math.random().toString(36).slice(2)),
  personal:true,rank:null,nationalRank:null,state:v('state')||'Custom / Other',name,
  heading:name,lat,lon,
  locationLabel:v('locationLabel')||'User-selected point',capacityMW:capacity,
@@ -290,7 +290,7 @@ function normalizeImport(v){
  const n=Number(v.capacityMW),hasCap=v.capacityMW!==null&&v.capacityMW!==undefined&&v.capacityMW!==''&&Number.isFinite(n)&&n>=0;
  const produced=Number(v.productionMW),hasProd=v.productionMW!==null&&v.productionMW!==undefined&&v.productionMW!==''&&Number.isFinite(produced)&&produced>=0;
  const status=['operating','construction','planned','paused','other'].includes(v.customStatus)?v.customStatus:'other';
- const id=typeof v.id==='string'&&v.id.startsWith('mine-')&&v.id.length<=100?v.id:'mine-'+(crypto?.randomUUID?.()||Date.now().toString(36)+Math.random().toString(36).slice(2));
+ const id=typeof v.id==='string'&&v.id.startsWith('mine-')&&v.id.length<=100?v.id:'mine-'+((typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID():null)||Date.now().toString(36)+Math.random().toString(36).slice(2));
  return {id,personal:true,rank:null,nationalRank:null,name:String(v.name).trim().slice(0,180),heading:String(v.name).trim().slice(0,180),
  state:String(v.state||'Custom / Other').slice(0,90),lat:Number(v.lat),lon:Number(v.lon),locationLabel:String(v.locationLabel||'User-selected point').slice(0,120),
  capacityMW:hasCap?n:null,capacityLabel:hasCap?n.toLocaleString(undefined,{maximumFractionDigits:3})+' MW':'Not disclosed',
