@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 6,
+  "ledger_revision": 7,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -1080,6 +1080,101 @@
         "Add independent public-page screenshot and cover-anatomy inspection when a browser capable of accessing WordPress becomes available, without claiming it already passed."
       ],
       "status": "published_wordpress_verified_independent_visual_QA_outstanding"
+    },
+    {
+      "post_id": 28147,
+      "title": "At $33 Hashprice, a 200 TH/s Bitcoin Miner Faces a 7.86¢ Power Limit",
+      "publication_date": "2026-11-01",
+      "category": "Bitcoin Mining",
+      "url": "https://bitcoinversus.tech/2026/11/01/bitcoin-antminer-s21-200ths-hashprice-electricity-breakeven-november-2026/",
+      "original_sources": [
+        {
+          "url": "https://support.bitmain.com/hc/en-us/articles/23794895251609-S21-Specification",
+          "role": "manufacturer S21 specification 200 TH/s 3500 W 17.5 J/TH",
+          "verification": "verified primary"
+        },
+        {
+          "url": "https://cloudminecrypto.com/data",
+          "role": "daily hashprice 2026-10-24 through partial 2026-11-01, CC BY 4.0",
+          "verification": "verified dataset, Nov 1 provisional"
+        },
+        {
+          "url": "https://mempool.space/mining",
+          "role": "Oct 29 block 973728 difficulty 148.36T +5.54%",
+          "verification": "verified blockchain dashboard"
+        }
+      ],
+      "internal_link_count": 5,
+      "article_length_words_excluding_footer_and_media_captions": 357,
+      "media": {
+        "in_story_count": 2,
+        "items": [
+          {
+            "id": 28137,
+            "type": "original CC-BY-data-derived hashprice line chart",
+            "verification": "Gutenberg raw and rendered HTML"
+          },
+          {
+            "id": 28140,
+            "type": "original electricity-only scenario bar chart",
+            "verification": "Gutenberg raw and rendered HTML"
+          }
+        ]
+      },
+      "featured_cover": {
+        "id": 28136,
+        "width": 1200,
+        "height": 630,
+        "style": "realistic industrial editorial",
+        "subject": "ASIC mining equipment, no people",
+        "verification": "WordPress media.get"
+      },
+      "quantitative_model": {
+        "asic_hashrate_ths": 200,
+        "wall_power_w": 3500,
+        "nov1_provisional_hashprice_usd_ph_day": 33,
+        "gross_usd_day": 6.6,
+        "continuous_kwh_day": 84,
+        "power_only_breakeven_cents_kwh": 7.86,
+        "limitations": "Not profit or payout; pool/hosting fees, downtime, cooling, maintenance and hardware costs excluded"
+      },
+      "publication_verification": "WordPress posts.update returned publish and independent posts.get view returned publish, 2 image figures and original footer; public browser and mobile layout unverified",
+      "duplicate_prevention": "QBT, Tether MDK, Oct 31 difficulty and October miner profitability ranking existed; checked WordPress searches and GitHub without finding identical Nov 1 S21 break-even analysis",
+      "quality_score": {
+        "source_accuracy": 24,
+        "originality_newsworthiness": 14,
+        "technical_depth_clarity": 14,
+        "media_function_relevance": 13,
+        "cover_visualization": 10,
+        "internal_links_seo": 9,
+        "live_page_qa_formatting": 7,
+        "total": 91,
+        "target": 95
+      },
+      "observations": [
+        {
+          "classification": "verified_fact",
+          "detail": "Source datum $33/PH-day is a partial-day Nov 1 estimate and labeled provisional"
+        },
+        {
+          "classification": "user_preference",
+          "detail": "Equipment-only visuals over generic person-led images"
+        },
+        {
+          "classification": "hypothesis",
+          "detail": "Device-level cost break-even charts improve interpretation of network-wide difficulty news"
+        }
+      ],
+      "improvements_next": [
+        "Capture source snapshot time and identify partial-day mutable figures",
+        "Use device-level engineering calculations with explicit operating assumptions",
+        "Verify external browser loading and mobile layout, not just WordPress rendered HTML"
+      ],
+      "remaining_issues": [
+        "External independent desktop/mobile rendering not tested",
+        "Not all hyperlinks independently HTTP-checked"
+      ],
+      "qa_record": "qa/ledger/2026-11-01-28147-antminer-s21-break-even-recursive-v4.md"
     }
   ]
 }
