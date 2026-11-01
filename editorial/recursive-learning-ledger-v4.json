@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 2,
+  "ledger_revision": 3,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -396,6 +396,170 @@
       ],
       "classified_status": "published_and_wordpress_verified; public browser inspection incomplete",
       "recorded_date": "2026-11-01"
+    },
+    {
+      "post_id": 28059,
+      "title": "BrainChip Launches AKD1500 Raspberry Pi 5 Kit for On-Device AI",
+      "publication_date": "2026-11-01",
+      "category": "ASICs / Hardware",
+      "url": "https://bitcoinversus.tech/2026/11/01/brainchip-akd1500-raspberry-pi-5-neuromorphic-ai-dev-kit-2026/",
+      "archive_path": "archive/2026/11/28059-brainchip-akd1500-raspberry-pi5-2026.md",
+      "sources": [
+        {
+          "url": "https://brainchip.com/press/brainchip-launches-akd1500-raspberry-pi-5-kit-giving-developers-a-direct-path-from-prototype-to-production/",
+          "kind": "verified_fact",
+          "role": "October 29 kit launch, hardware pairing, MetaTF, local learning"
+        },
+        {
+          "url": "https://brainchip.com/press/brainchip-unveils-akd1500-spi-chip-bringing-neuromorphic-ai-to-everyday-edge-devices/",
+          "kind": "verified_fact",
+          "role": "October AKD1500 SPI variant details"
+        },
+        {
+          "url": "https://brainchip.com/press/brainchip-announces-commercial-availability-and-production-shipments-of-akd1500-neuromorphic-processors/",
+          "kind": "verified_fact",
+          "role": "June production shipments and GlobalFoundries 22FDX"
+        },
+        {
+          "url": "https://www.globenewswire.com/NewsRoom/AttachmentNg/7574c999-bb99-4b7c-881d-77f6488b0a75",
+          "kind": "verified_fact",
+          "role": "official product photograph BrainChip"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Raspberry_Pi_5_Computer.jpg",
+          "kind": "verified_fact",
+          "role": "licensed Raspberry Pi 5 board photo by RetroEditor"
+        }
+      ],
+      "duplicate_checks": {
+        "wordpress_queries": [
+          "BrainChip",
+          "AKD1500",
+          "Akida"
+        ],
+        "prior_related": "BrainChip Brings Generative AI to Battery-Powered Devices (Oct 14) concerns Sequora rather than Oct 29 AKD1500 Raspberry Pi kit.",
+        "github_search": [
+          "AKD1500 Raspberry Pi 5"
+        ],
+        "outcome": "No exact duplicate of the Oct 29 dev kit launch found in WordPress or GitHub archive search."
+      },
+      "article_words_excluding_captions_footer": 319,
+      "internal_links_count": 4,
+      "media": {
+        "count": 2,
+        "items": [
+          {
+            "id": 28052,
+            "type": "official manufacturer news-product image",
+            "caption": "BrainChip AKD1500 Raspberry Pi 5 kit, © BrainChip Holdings",
+            "verified": "WordPress published rendered HTML image and caption"
+          },
+          {
+            "id": 28054,
+            "type": "Raspberry Pi 5 host board photograph",
+            "creator": "RetroEditor",
+            "license": "CC BY 4.0",
+            "caption": "Clearly disclaims AKD1500 module absent",
+            "verified": "WordPress published rendered HTML image and caption"
+          }
+        ],
+        "youtube_videos": 0,
+        "notes": "No directly relevant verified on-product demonstration found that should be embedded; no unrelated media added; two native images satisfy media quota."
+      },
+      "featured_cover": {
+        "media_id": 28056,
+        "width": 1200,
+        "height": 630,
+        "style": "realistic editorial photo illustration",
+        "subject": "fictional Black woman embedded electronics engineer",
+        "alt_text": true,
+        "visual_review": "Dimensions and attachment verified, independent full-composition/anatomy review unavailable"
+      },
+      "visualization": {
+        "included": false,
+        "reason": "No controlled quantitative performance comparison published with kit announcement; 22nm fab process detail is not a multi-value chart."
+      },
+      "footer": {
+        "editor_note_approved": true,
+        "qr_media_id": 24043,
+        "requested_amount_sats": 5000,
+        "disclaimer": true,
+        "x_promo_absent": true
+      },
+      "publication_qa": {
+        "wordpress_published": true,
+        "post_id": 28059,
+        "wordpress_rendered_readback": true,
+        "images": 2,
+        "captions": 2,
+        "correct_cover": true,
+        "seo_verified": true,
+        "internal_links": 4,
+        "public_page_browser_access": "inaccessible",
+        "actual_photo_loading_browser": "not independently tested",
+        "desktop_mobile_screenshots": "not performed",
+        "independent_youtube_playback": "not applicable"
+      },
+      "score": {
+        "accuracy_source_verification": 25,
+        "originality_newsworthiness": 15,
+        "technical_depth": 14,
+        "working_media_relevance": 13,
+        "cover_visualization_quality": 9,
+        "internal_links_seo": 9,
+        "live_qa_formatting": 7,
+        "total": 92,
+        "target": 95,
+        "passed_target": false,
+        "reason": "No actual browser visual checks or comparative performance evidence; minimum relevant media quota was two, both rendered."
+      },
+      "observations": [
+        {
+          "kind": "verified_fact",
+          "detail": "Official BrainChip October 29 release pairs Pi 5 with AKD1500 M.2 and targets an evaluation-to-product transition.",
+          "evidence": "Primary manufacturer October 29 release"
+        },
+        {
+          "kind": "verified_fact",
+          "detail": "No vendor-controlled comparative power benchmark for kit was presented in the cited launch.",
+          "evidence": "Official primary launch material"
+        },
+        {
+          "kind": "user_preference",
+          "detail": "Publish fresh nonduplicate news with source-led media, cover rotation and contextual internal links.",
+          "evidence": "Recursive News Writer v4.0"
+        },
+        {
+          "kind": "measured_result",
+          "detail": "319 news words, two in-body images with captions, four contextual internal links, 1200x630 cover, published WordPress status.",
+          "evidence": "Published WordPress edit+rendered read-back"
+        },
+        {
+          "kind": "hypothesis",
+          "detail": "An original demonstrable comparative energy/accuracy chart might improve reader usefulness once third-party benchmarks appear.",
+          "evidence": "Opportunity only; no engagement data"
+        }
+      ],
+      "issues": {
+        "confirmed": [
+          "Initial guessed Wikimedia Pi-board image source URL returned 404; corrected to verified /9/94/ original path before drafting."
+        ],
+        "unresolved": [
+          "Independent web checker could not access WordPress public article.",
+          "Actual desktop/mobile visual QA and product image loading unverified."
+        ]
+      },
+      "feedback": {
+        "thumbs": "not accessible",
+        "analytics": "not accessible",
+        "post_specific_editor_feedback": "none received"
+      },
+      "next_three_improvements": [
+        "Use clicked canonical licensed photograph URLs rather than guessed Wikimedia hash paths.",
+        "Prioritize first-party product images and separate them from host-only illustrative hardware; always caption distinctions.",
+        "Recheck public-page browser access and pursue independent comparative on-device benchmarks before publishing numerical efficiency claims."
+      ],
+      "status": "published_wordpress_qa_verified_external_visual_outstanding"
     }
   ]
 }
