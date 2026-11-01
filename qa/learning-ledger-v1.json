@@ -381,6 +381,335 @@
         "status": "not_accessible",
         "data": null
       }
+    },
+    {
+      "post_id": 28053,
+      "article_title": "Intel Shares Sink 28.6% as Chip Stocks Slide on Weak Outlook",
+      "publication_date": "2026-11-01",
+      "category_names": [
+        "Semiconductors",
+        "Intel",
+        "Finance",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        284207,
+        12068,
+        4269,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/01/intel-shares-28-6-percent-chip-stocks-october-30-2026-earnings-outlook/",
+      "archive_path": "archive/2026/11/28053-intel-28-6-percent-semiconductor-stock-rout-q3-earnings-2026.md",
+      "archive_blob_sha": "3201c9da3b56969d35cc32cf5d54c07e65ec90b0",
+      "archive_verified_repositories": [
+        "1freetech/Bitcoinversus.tech",
+        "1freetech/opencert.tech",
+        "1freetech/techcert"
+      ],
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "published_timestamp": "2026-11-01T14:51:13",
+        "evidence": "WordPress posts.update returned publish with permanent URL. Independent posts.get context=edit and context=view both returned publish and matched URL; public web browser fetch was not accessible."
+      },
+      "editorial_body_word_count": 338,
+      "original_sources": [
+        {
+          "type": "primary_company_earnings",
+          "url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results",
+          "date": "2026-10-29",
+          "verification": "Intel's own Q3 results read directly: $16.5B Q3 revenue +21%; $15.0–16.0B Q4 guidance; DCAI $7.3B +78%; CCPG $8.1B -5%; business segments include internal transfers and elimination. Primary claim scope checked."
+        },
+        {
+          "type": "primary_regulatory_filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm",
+          "date": "2026-10-29",
+          "verification": "SEC-filed Intel Exhibit 99 earnings release, with same revenue and Q4 guidance amounts."
+        },
+        {
+          "type": "secondary_firsthand_market_reporting",
+          "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+          "date": "2026-10-30",
+          "verification": "Reuters U.S. closing market report: Intel -28.6%, AMD -10.9%, Nvidia -4.2%, Philadelphia semiconductor index -7.2%; used for chart's same-day comparable values."
+        },
+        {
+          "type": "secondary_firsthand_earnings_reaction",
+          "url": "https://www.reuters.com/business/intel-warning-sparks-chip-rout-pc-weakness-clouds-turnaround-2026-10-30/",
+          "date": "2026-10-30",
+          "verification": "Reuters reporting about earnings disappointment, stock selloff and manufacturing/PC cash-flow context."
+        },
+        {
+          "type": "secondary_original_report",
+          "url": "https://www.reuters.com/business/intel-signals-slower-growth-as-pc-market-remains-under-pressure-2026-10-29/",
+          "date": "2026-10-29",
+          "verification": "Reuters reported analysts expected approximately $17.07B Q4 revenue and expected ~$600M Israeli fab revenue impact; URL not independently opened in this run, so the article cites the opened October 30 Reuters recap."
+        }
+      ],
+      "fact_status": [
+        {
+          "classification": "verified_fact",
+          "claim": "Intel Q3 consolidated revenue $16.5B, 21% year-on-year growth",
+          "basis": "Intel primary reported Q3 2026 results"
+        },
+        {
+          "classification": "verified_fact",
+          "claim": "Intel Q4 2026 guidance $15.0–$16.0B",
+          "basis": "Intel primary outlook, clearly forecast rather than actual"
+        },
+        {
+          "classification": "verified_fact",
+          "claim": "October 30 closing Intel -28.6%, AMD -10.9%, Nvidia -4.2%, semiconductor index -7.2%",
+          "basis": "Reuters same U.S. trading session close; negative percent returns, not market cap, sales or power efficiency"
+        },
+        {
+          "classification": "verified_fact",
+          "claim": "Data Center and AI $7.3B +78%; Client Computing and Physical AI $8.1B -5%",
+          "basis": "Intel earnings business-unit summary; segment figures not simply additive with consolidated revenue"
+        },
+        {
+          "classification": "attributed_reporting",
+          "claim": "Intel Israeli fab disruption expected ~$600M revenue impact over two quarters",
+          "basis": "Reuters Oct 29–30 attribution, not Intel's actual realized result"
+        },
+        {
+          "classification": "forecast",
+          "claim": "Intel and its CEO expect Q4 headwinds and cash constraints",
+          "basis": "Intel management outlook and Reuters market analysis; no final Q4 actual outcomes"
+        }
+      ],
+      "duplicate_check": {
+        "classification": "verified_fact",
+        "wordpress_searches": [
+          "Quantum Blockchain Technologies",
+          "QBT",
+          "Method A/B/C",
+          "Bitaxe Gamma",
+          "Intel shares",
+          "Intel Q3",
+          "Intel earnings",
+          "semiconductor stocks",
+          "chip rout"
+        ],
+        "github_searches": [
+          "Quantum Blockchain Technologies",
+          "Method C",
+          "Intel stock crash",
+          "Intel Q3 2026 earnings",
+          "chip rout"
+        ],
+        "prevented_duplicate": {
+          "title": "QBT Says All Three Bitcoin Mining Methods Are Now Running Live",
+          "post_id": 27060,
+          "date": "2026-10-29",
+          "result": "Rejected QBT Oct 29 as existing identical news topic before drafting, despite available primary announcement and source videos."
+        },
+        "selected_story": "October 30 Intel share market selloff, distinct event from already published Intel Kiryat Gat explosion story WordPress 28000 and from earlier earnings-related background articles.",
+        "limitation": "Search queries cover titles and content of accessible WordPress/GitHub indexes, not guaranteed complete semantic matching of every 2023–present item."
+      },
+      "internal_links": {
+        "count": 5,
+        "status": "verified_in_published_WordPress_raw_markup",
+        "urls": [
+          "https://bitcoinversus.tech/2026/10/10/pc-shipments-plunge-20-1-q3-2026-memory-costs-ai-data-centers/",
+          "https://bitcoinversus.tech/2026/10/14/intel-one-command-llm-inference-xeon/",
+          "https://bitcoinversus.tech/2026/11/01/intel-kiryat-gat-fab28-explosion-two-week-shutdown-xeon-revenue-2026/",
+          "https://bitcoinversus.tech/2026/10/14/asml-ai-demand-outrunning-supply/",
+          "https://bitcoinversus.tech/2026/10/28/sk-hynix-q3-2026-104-trillion-won-hbm4-ai-memory-profit/"
+        ],
+        "outbound_http_recheck": "Referenced Intel/SEC/Reuters primary and market source pages were searched and read; every contextual internal destination was not independently loaded as a browser URL, though URLs are established from WordPress archive."
+      },
+      "in_story_media": {
+        "count": 4,
+        "media_verified_in_published_WordPress_html": true,
+        "caption_after_each": true,
+        "at_least_one_paragraph_between_media": true,
+        "types": [
+          {
+            "type": "source_backed_chart",
+            "media_id": 28045,
+            "dimensions": "1200x650",
+            "subject": "Intel -28.6%, AMD -10.9%, Nvidia -4.2% one-session price returns October 30",
+            "verification": "WordPress full image and Gutenberg figure caption present; Reuters market close source confirmed; screenshot of visible chart not independently inspected."
+          },
+          {
+            "type": "official_youtube",
+            "video_id": "EZhz7FocD-g",
+            "publisher": "Intel Business",
+            "date": "2026-06-01",
+            "subject": "Xeon 6+ server CPU product context",
+            "verification": "Original video identity from YouTube metadata, correct canonical Gutenberg shortcode and embedded iframe in published HTML; actual playback untested; explicitly NOT October 30 trading video."
+          },
+          {
+            "type": "historical_licensed_photo",
+            "media_id": 28046,
+            "dimensions": "1280x850",
+            "source_url": "https://commons.wikimedia.org/wiki/File:4th_Generation_Intel%C2%AE_Core%E2%84%A2_Processor_Wafer_01.jpg",
+            "creator": "Intel in Deutschland",
+            "date": "2013",
+            "license": "CC BY-SA 2.0",
+            "verification": "Source license and original identification read directly in Wikimedia Commons; WordPress image caption correctly distinguishes historical wafer from 2026 Xeon."
+          },
+          {
+            "type": "official_youtube",
+            "video_id": "_FfoGzK4VEQ",
+            "publisher": "Intel Newsroom",
+            "date": "2025-01-30",
+            "subject": "Intel 18A process technology background",
+            "verification": "YouTube metadata verified; Gutenberg shortcode and published iframe render; actual playback untested; contextual process technology, not same-day earnings footage."
+          }
+        ],
+        "known_limitations": [
+          "Video iframe markup and canonical URLs do not prove actual playback on desktop/mobile browser.",
+          "No independent responsive screenshot test of image/cover, chart or player.",
+          "Both official videos are older context footage; captions explicitly mark them as such."
+        ]
+      },
+      "featured_cover": {
+        "media_id": 28047,
+        "width": 1200,
+        "height": 630,
+        "style": "realistic editorial photo-style illustration",
+        "person": "fictional Southeast Asian adult woman semiconductor process engineer aged 30s",
+        "identity": "fictional, not a real Intel employee or documentary coverage",
+        "alt_text_verified": true,
+        "featured_attachment_verified": true,
+        "no_text_requested_in_generation": true,
+        "visual_anatomy_review": "not independently visually inspected in a graphical browser",
+        "rotation_evidence": "Prior Braiins OS post 28025 used an oil-painting-style cover with a man; next uses realistic scene and female professional; no generic desk."
+      },
+      "chart": {
+        "media_id": 28045,
+        "chart_type": "horizontal bar",
+        "interpretation": "same-session one-day percentage stock losses for three listed chip manufacturers; three directly comparable percentages, not dollar market cap and not operating income",
+        "data": [
+          {
+            "name": "Intel",
+            "return_pct": -28.6
+          },
+          {
+            "name": "AMD",
+            "return_pct": -10.9
+          },
+          {
+            "name": "Nvidia",
+            "return_pct": -4.2
+          }
+        ],
+        "source": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "comparison_scope": "All from U.S. Oct 30 close, not forecasts or mixed time windows",
+        "visual_inspection": "image dimensions and rendered HTML confirmed; screenshot analysis not possible."
+      },
+      "footers": {
+        "exact_approved_editors_note_verified": true,
+        "original_qr_wordpress_media_id": 24043,
+        "donation_request_sats": 5000,
+        "bitcoin_address": "3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb",
+        "disclaimer_verified": true,
+        "no_discontinued_promo": true,
+        "order": "Editor's Note → QR → scanning instructions → disclaimer"
+      },
+      "corrections_and_defects": [
+        {
+          "classification": "verified_fact",
+          "status": "avoided_prepublication",
+          "detail": "Rejected near-duplicate QBT methods announcement after WordPress found Oct 29 article 27060 and GitHub archive match; pursued distinct Intel October 30 stock-market event."
+        },
+        {
+          "classification": "verified_fact",
+          "status": "documented_limit",
+          "detail": "No full external public-page browser render; published HTML read-back passed but end-to-end YouTube playback untested."
+        },
+        {
+          "classification": "verified_fact",
+          "status": "improvement",
+          "detail": "Comparison chart now uses same-date, same-unit percentage returns, addressing prior Teesside threshold-vs-ambition ambiguity."
+        },
+        {
+          "classification": "verified_fact",
+          "status": "improvement",
+          "detail": "Intel revenue and segment claims now cited from direct official Intel and SEC primary release, rather than only secondary interpretation."
+        }
+      ],
+      "prior_learning_applied": [
+        {
+          "prior_post_id": 27966,
+          "priority": 1,
+          "status": "met",
+          "evidence": "Read Intel's full Q3 earnings release and SEC exhibit for exact material actuals and guidance; Reuters U.S. closing numbers for chart."
+        },
+        {
+          "prior_post_id": 27966,
+          "priority": 2,
+          "status": "partially_met",
+          "evidence": "Validated YouTube video identities, Gutenberg shortcode and WordPress iframe read-back; desktop/mobile playback test was still inaccessible."
+        },
+        {
+          "prior_post_id": 27966,
+          "priority": 3,
+          "status": "met_with_visual_limit",
+          "evidence": "Created single-session percentage decline chart with consistent scope and confirmed original QR WordPress ID 24043 plus verbatim Editor's Note; no image screenshot test."
+        }
+      ],
+      "external_verification_limitations": [
+        "Independent web.open of the public permalink returned inaccessible. WordPress published status, URL, and rendered HTML returned success, not a graphical browser view.",
+        "Neither YouTube player was started/playback-tested on a user device; no desktop or mobile screenshots.",
+        "Featured-cover anatomy and chart visual composition could not be independently inspected via actual image screenshot.",
+        "No thumbs-up/down history or reader analytics exposed.",
+        "Not every internal and external target URL was individually fetched through a browser; sourced factual materials were read."
+      ],
+      "quality_score": {
+        "target": 95,
+        "achieved": 92,
+        "met_target": false,
+        "breakdown": {
+          "Accuracy and source verification": 24,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 15,
+          "Working embeds and media relevance": 12,
+          "Cover and visualization quality": 9,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 7
+        },
+        "gate_status": {
+          "accuracy": "PASS_WITH_DISCLOSED_EXTERNAL_LINK_LIMITS",
+          "duplicate_prevention": "PASS_WP_AND_GITHUB_DETECTED_AND_AVOIDED_QBT_DUPLICATE",
+          "functional_media": "PARTIAL__RENDERED_IFRAMES_VERIFIED__INDEPENDENT_PLAYBACK_UNTESTED",
+          "all_mandatory_gates_fully_proven": false
+        },
+        "reviewer_note": "92/100 evidence-backed editorial estimate (+4 vs first ledger entry). Not a score for tested reader engagement or actual browser playback. An unmet functional media gate prevents claiming fully QA-complete despite publication."
+      },
+      "three_improvements_to_carry_forward": [
+        {
+          "priority": 1,
+          "classification": "action",
+          "instruction": "Add a real graphical browser/device media test for playback, mobile scaling and featured-cover anatomy when computer-use or browser capability is available. Keep a source-level verified/unverified matrix if unavailable; never use iframe markup as a playback guarantee.",
+          "verification_on_next_story": "Real player start plus screenshot or explicitly documented unavailability; compare with current post 28053."
+        },
+        {
+          "priority": 2,
+          "classification": "action",
+          "instruction": "Before selection, search exact entities and synonyms in WordPress AND GitHub; the QBT candidate was demonstrably duplicate. Preserve the rejected candidate in the ledger to avoid recycling announcements.",
+          "verification_on_next_story": "Record at least one title/entity collision check and exact rejection/pivot rationale."
+        },
+        {
+          "priority": 3,
+          "classification": "action",
+          "instruction": "Read official primary financial/technical documents for every material number and build only like-for-like charts. Perform a source-license and image-visual spot check and recheck all five internal links at their destination when feasible.",
+          "verification_on_next_story": "Document direct primary paragraph/section source plus comparison units and link/copyright QA."
+        }
+      ],
+      "user_rating_feedback": {
+        "classification": "not_accessible",
+        "status": "not_accessible",
+        "data": null
+      },
+      "engagement_metrics": {
+        "classification": "not_accessible",
+        "status": "not_accessible",
+        "data": null
+      }
     }
   ],
   "future_article_template_required_fields": [
