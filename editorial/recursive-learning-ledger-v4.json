@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 4,
+  "ledger_revision": 5,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -735,6 +735,182 @@
         "Preserve status distinctions and uncertainties in charts and continue attempting independent public-page/mobile checks without claiming they succeeded."
       ],
       "status": "published_wordpress_verified; external_visual_qa_incomplete"
+    },
+    {
+      "post_id": 28108,
+      "title": "Ceva Expands NeuPro NPU IP From Sensors to AI Data Centers",
+      "publication_date": "2026-11-01",
+      "category": "AI / AI Hardware",
+      "url": "https://bitcoinversus.tech/2026/11/01/ceva-neupro-nano-prime-max-ultra-ai-npu-2026/",
+      "archive_path": "archive/2026/11/28108-ceva-neupro-nano-prime-max-ultra-npu-ai-infrastructure.md",
+      "original_sources": [
+        {
+          "url": "https://www.ceva-ip.com/press/ceva-unveils-next-generation-neupro-npu-portfolio-and-announces-expansion-into-ai-infrastructure/",
+          "role": "Primary Ceva Oct 28 announcement; product segmentation, claims and Q2 2027 availability",
+          "status": "verified_fact"
+        },
+        {
+          "url": "https://www.ceva-ip.com/product/ceva-neupro/",
+          "role": "Ceva's descriptions of Nano, Prime, Max and Ultra workloads",
+          "status": "verified_fact"
+        },
+        {
+          "url": "https://www.ceva-ip.com/blog/designing-for-what-comes-next-in-ai/",
+          "role": "First-party architecture explanation and lessons from previous IP licensees",
+          "status": "verified_fact"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/ceva-unveils-next-generation-neupro-npu-portfolio-and-announces-expansion-into-ai-infrastructure-302921417.html",
+          "role": "Syndicated release, not independent testing",
+          "status": "verified_fact"
+        }
+      ],
+      "duplicate_prevention": {
+        "wordpress_queries": [
+          "Ceva",
+          "NeuPro",
+          "Altera",
+          "Agilex 2X",
+          "QuartusIQ",
+          "NPU portfolio"
+        ],
+        "github_queries": [
+          "NeuPro Ultra",
+          "Agilex 2X"
+        ],
+        "results": "No Ceva NeuPro Ultra coverage found. Altera Agilex 2X rejected due to published Oct 29 article 26991 and GitHub archive."
+      },
+      "article_word_count_excluding_footer_and_captions": 385,
+      "internal_link_count": 5,
+      "media": {
+        "in_story_count": 3,
+        "images": [
+          {
+            "id": 28097,
+            "type": "original concept illustration",
+            "subject": "Four NPU workload tiers from sensors to infrastructure",
+            "status": "WordPress published raw and rendered image block and caption confirmed"
+          },
+          {
+            "id": 28098,
+            "type": "company-reported normalized performance chart",
+            "subject": "Throughput/mm² first generation=100, new up to 200; energy efficiency first=100, new=150",
+            "source": "Ceva Oct 28 statement",
+            "status": "WordPress raw and rendered image plus source and qualifier caption confirmed"
+          },
+          {
+            "id": 28104,
+            "type": "original concept illustration",
+            "subject": "AI inference data movement between memory and processor",
+            "status": "WordPress rendered image+caption; not proprietary die picture"
+          }
+        ],
+        "youtube_count": 0,
+        "reason": "No exact relevant independently verified official demo for new Oct 28 IP portfolio; three functional relevant media instead of unrelated footage."
+      },
+      "featured_cover": {
+        "id": 28101,
+        "size_px": [
+          1200,
+          630
+        ],
+        "style": "wordless comic",
+        "subject": "Fictional adult Latina semiconductor architect, late 40s",
+        "alt_text_confirmed": true,
+        "actual_visual_anatomy_review": "unverified due public media fetch inaccessible"
+      },
+      "chart": {
+        "included": true,
+        "chart_type": "grouped bar indexed comparison",
+        "series": [
+          {
+            "name": "throughput per mm²",
+            "first_generation_index": 100,
+            "new_generation_max_claimed_index": 200
+          },
+          {
+            "name": "energy efficiency",
+            "first_generation_index": 100,
+            "new_generation_claimed_index": 150
+          }
+        ],
+        "data_status": "Ceva manufacturer claims, not third-party measured results; normalized across different dimensions",
+        "source": "https://www.ceva-ip.com/press/ceva-unveils-next-generation-neupro-npu-portfolio-and-announces-expansion-into-ai-infrastructure/"
+      },
+      "qa": {
+        "published_wordpress_status": true,
+        "published_edit_and_view_html_read_back": true,
+        "three_distinct_in_body_images_and_captions_verified": true,
+        "cover_1200x630": true,
+        "seo_title_contains_product_and_npu_ip": true,
+        "internal_links_count": 5,
+        "primary_source_linked": true,
+        "licensing_status": "original images",
+        "original_editor_note": true,
+        "original_donation_qr": true,
+        "bitcoin_5000_sats": true,
+        "disclaimer": true,
+        "retired_footer_promo_absent": true,
+        "independent_public_page_web_fetch": "inaccessible",
+        "desktop_mobile_screenshot_check": "not performed",
+        "youtube_playback_check": "not applicable",
+        "full_cover_anatomy_inspection": "not performed"
+      },
+      "quality_score": {
+        "accuracy_source_verification": 25,
+        "originality_newsworthiness": 15,
+        "technical_depth_clarity": 14,
+        "media_function_relevance": 14,
+        "cover_visualization": 9,
+        "internal_links_seo": 10,
+        "live_page_qa_formatting": 7,
+        "total": 94,
+        "target": 95,
+        "target_met": false,
+        "reason": "WordPress rendered HTML verified but independent public browser checks and cover visual inspection unavailable."
+      },
+      "observations": [
+        {
+          "classification": "verified_fact",
+          "detail": "Ceva announced four new next-generation NPU IP tiers on Oct 28 with claimed throughput-density and efficiency improvements; general availability planned Q2 2027.",
+          "evidence": "Ceva original October 28 press release"
+        },
+        {
+          "classification": "user_preference",
+          "detail": "News 300–420 words, 2–10 functional media, 4–9 internal links, single 1200×630 rotated featured cover, exact footer, versioned learning ledger.",
+          "evidence": "Recursive Learning News Writer v4.0"
+        },
+        {
+          "classification": "measured_result",
+          "detail": "385 news words, five contextual internal links, three WordPress-rendered image blocks/captions, verified 1200x630 cover metadata.",
+          "evidence": "WordPress posts.get edit/view, media.get, post-sections.list"
+        },
+        {
+          "classification": "hypothesis",
+          "detail": "Independent production-chip and benchmark demonstrations could strengthen future follow-up if Ceva/customer releases them.",
+          "evidence": "Reporting opportunity only; no measured engagement data"
+        }
+      ],
+      "editorial_corrections": {
+        "prepublish": "Changed title from 'AI Chips' to 'NPU IP' to avoid implying four finished chips already sold.",
+        "archive_error": "Two GitHub creates initially conflicted with concurrent branch updates. Fetched existing state and wrote each archive sequentially, verifying the third as source.",
+        "confirmed_postpublication_content_defect": [],
+        "unresolved": [
+          "Actual public browser desktop/mobile screenshot checks unavailable.",
+          "Full cover composition and hands not independently inspected."
+        ]
+      },
+      "user_feedback": {
+        "thumb_up_down": "not accessible",
+        "engagement_analytics": "not accessible",
+        "specific_feedback": "not available"
+      },
+      "three_improvements": [
+        "Keep title and first paragraph accurate about semiconductor IP versus merchant chips; verify sampling and availability separately from announced performance.",
+        "Re-use a normalized comparison chart only when both units and vendor-reported status are prominently labeled, and check all embedded captions in published HTML.",
+        "Check public browser screenshots and cover anatomy when access is possible; record GitHub concurrent-branch conflicts and retry sequentially after refreshing rather than overwriting."
+      ],
+      "status": "published_and_wordpress_rendered_verified; independent_public_page_visual_qa_unverified"
     }
   ]
 }
