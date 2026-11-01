@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 5,
+  "ledger_revision": 6,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -911,6 +911,175 @@
         "Check public browser screenshots and cover anatomy when access is possible; record GitHub concurrent-branch conflicts and retry sequentially after refreshing rather than overwriting."
       ],
       "status": "published_and_wordpress_rendered_verified; independent_public_page_visual_qa_unverified"
+    },
+    {
+      "post_id": 28133,
+      "title": "Z Squared Begins Arkansas AI Campus Engineering With 8 MW Energized",
+      "publication_date": "2026-11-01",
+      "category": "Data Centers",
+      "url": "https://bitcoinversus.tech/2026/11/01/z-squared-arkansas-data-center-8mw-150mw-site-engineering-2026/",
+      "archive_path": "archive/2026/11/28133-z-squared-arkansas-ai-campus-8mw-150mw-engineering-2026.md",
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/z-squared-begins-site-planning-and-engineering-at-energized-union-county-campus-in-el-dorado-arkansas-302924495.html",
+          "classification": "verified_fact",
+          "role": "October 30 announcement 8 MW utility service, up-to-150 MW target, A2 Advisors engagement; no tenant lease"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1759186/000118518526003984/zsqrex99-1.htm",
+          "classification": "verified_fact",
+          "role": "September SEC-filed transaction update and interruptible Entergy service up to 8 MW"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1759186/000118518526003263/zsqr8k080426.htm",
+          "classification": "verified_fact",
+          "role": "Earlier SEC transaction details including legacy immersion-cooling infrastructure"
+        }
+      ],
+      "duplicate_prevention": {
+        "wordpress_queries": [
+          "Z Squared",
+          "Paradox Data",
+          "El Dorado",
+          "Union County Campus",
+          "Arkansas"
+        ],
+        "github_query": "Z Squared Union County El Dorado",
+        "specific_check": "Arkansas Top 3 ranking 26727 text checked for Z Squared/Paradox/El Dorado, all absent",
+        "result": "No matching published story or archive; Arkansas state-ranking covers other projects."
+      },
+      "article_words_excluding_footer_media_captions": 402,
+      "internal_link_count": 4,
+      "media": {
+        "in_story_count": 3,
+        "items": [
+          {
+            "id": 28122,
+            "type": "original conceptual future-site planning graphic",
+            "status": "WordPress published raw and rendered native image with caption; not actual Z Squared site"
+          },
+          {
+            "id": 28123,
+            "type": "source-backed comparison bar chart",
+            "values": [
+              {
+                "label": "existing interruptible utility service",
+                "mw": 8
+              },
+              {
+                "label": "future AI-ready capacity ambition",
+                "mw": 150
+              }
+            ],
+            "status": "Published native chart image with source, units, and separate non-contracted target caveat"
+          },
+          {
+            "id": 28126,
+            "type": "original conceptual immersion-cooling illustration",
+            "status": "WordPress published native image with caption; generic illustration not actual campus equipment"
+          }
+        ],
+        "youtube_embeds": 0,
+        "notes": "No directly verified project-specific relevant video was found; three verified image/chart blocks used instead of unrelated video."
+      },
+      "cover": {
+        "id": 28124,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "photo-anime blend",
+        "subject": "fictional adult Black male data-center electrical engineer in his 50s reviewing utilities",
+        "alt_text_attached": true,
+        "independent_visual_composition_review": "not independently performed"
+      },
+      "chart": {
+        "included": true,
+        "type": "bar comparison",
+        "units": "megawatts",
+        "values": [
+          8,
+          150
+        ],
+        "status_distinction": "8 MW existing interruptible utility supply vs 150 MW future development target, additional uncontracted/unenergized; not operational IT load",
+        "source": "October 30 Z Squared announcement and September SEC filing"
+      },
+      "footer": {
+        "approved_editors_note": true,
+        "original_qr_media_id": 24043,
+        "donation_5000_sats": true,
+        "disclaimer": true,
+        "retired_promo_absent": true
+      },
+      "qa": {
+        "wordpress_published": true,
+        "wordpress_edit_view_readback": true,
+        "three_image_blocks_rendered_html": true,
+        "three_image_captions": true,
+        "featured_image_1200x630": true,
+        "verified_SEO_title": true,
+        "internal_links": 4,
+        "external_primary_sources_verified": true,
+        "independent_public_web_fetch": "inaccessible",
+        "mobile_desktop_visual_QA": "unavailable",
+        "actual_external_image_loading": "not verified",
+        "user_device_playback": "not applicable"
+      },
+      "quality_score": {
+        "accuracy_and_sources": 25,
+        "originality_newsworthiness": 15,
+        "technical_clarity": 14,
+        "media_relevance_and_function": 14,
+        "cover_and_chart_quality": 9,
+        "internal_links_and_seo": 10,
+        "live_QA_and_formatting": 7,
+        "total": 94,
+        "target": 95,
+        "target_met": false,
+        "reason_for_gap": "WordPress rendered HTML and media IDs verified but independent public browser, mobile and cover anatomy checks unavailable."
+      },
+      "observations": [
+        {
+          "classification": "verified_fact",
+          "detail": "Z Squared October 30 release states site planning begins with existing 8 MW utility service and a 150 MW target that is not secured.",
+          "evidence": "First party release and SEC exhibit"
+        },
+        {
+          "classification": "user_preference",
+          "detail": "Continue category rotation comprehensively; original 300–420 word report, 2–10 media, contextual links, cover rotation, chart status distinction, QA and ledger.",
+          "evidence": "Recursive Learning v4.0 newsroom instructions"
+        },
+        {
+          "classification": "measured_result",
+          "detail": "402 news words, 4 contextual internal links, 3 published media blocks and captions, 1200×630 featured cover.",
+          "evidence": "Published WordPress posts.get and media.get"
+        },
+        {
+          "classification": "hypothesis",
+          "detail": "A verified permit application, utility service agreement or named tenant could materially change the story's development status.",
+          "evidence": "Future reporting opportunity, not confirmed progress"
+        }
+      ],
+      "corrections_and_limitations": {
+        "prepublication": "No known content defect after WordPress draft readback. Conceptual site and cooling images are explicitly labeled to prevent fabricated documentary evidence.",
+        "postpublication": "No confirmed content defect.",
+        "unresolved": [
+          "Independent desktop/mobile public-page screenshots unavailable due site fetch error.",
+          "Cover composition and actual image loading not independently inspected outside WordPress.",
+          "No signed tenant lease or 150 MW secured service confirmed."
+        ]
+      },
+      "user_feedback": {
+        "thumbs": "not accessible",
+        "post_specific": "not available",
+        "engagement_analytics": "not accessible"
+      },
+      "next_three_improvements": [
+        "Require development-stage field labels and SEC cross-check before comparing electric service and proposed IT capacity; never conflate utility MW with deployed servers.",
+        "Keep all illustrative campus/rendered cooling media clearly captioned as concepts and verify at least one sourced chart for meaningful numeric differences.",
+        "Add independent public-page screenshot and cover-anatomy inspection when a browser capable of accessing WordPress becomes available, without claiming it already passed."
+      ],
+      "status": "published_wordpress_verified_independent_visual_QA_outstanding"
     }
   ]
 }
