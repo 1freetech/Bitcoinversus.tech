@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 9,
+  "ledger_revision": 10,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -1311,6 +1311,100 @@
         "policy_path": "editorial/media-policy-one-chart-2026-11-01.md",
         "verification": "published WordPress post returned expected figures; public browser unavailable"
       }
+    },
+    {
+      "post_id": 28201,
+      "title": "VeriSilicon GLTiny Targets 3D Graphics in Smartwatch and Smart-Glasses Chips",
+      "publication_date": "2026-11-01",
+      "category": "ASICs & Hardware",
+      "url": "https://bitcoinversus.tech/2026/11/01/verisilicon-gltiny-3d-gpu-wearable-graphics-low-memory-2026/",
+      "qa_record": "qa/ledger/2026-11-01-28201-verisilicon-gltiny-recursive-v4.md",
+      "original_sources": [
+        {
+          "url": "https://www.verisilicon.com/en/PressRelease/GLTiny",
+          "verification": "first-party launch, October 29, 2026"
+        },
+        {
+          "url": "https://www.verisilicon.com/en/PressRelease/GCNano3DVG",
+          "verification": "earlier 2025 Nano GPU hardware context"
+        },
+        {
+          "url": "https://www.khronos.org/gltf/",
+          "verification": "primary glTF specification"
+        }
+      ],
+      "duplicate_checks": {
+        "wordpress_searches": [
+          "GLTiny",
+          "VeriSilicon",
+          "VGLite",
+          "Nano GPU"
+        ],
+        "github_searches": [
+          "GLTiny"
+        ],
+        "result": "No event-specific earlier live post or GitHub archive match found; fresh WordPress/ledger check immediately before publishing."
+      },
+      "article_length_words_excluding_footer_and_captions": 321,
+      "internal_link_count": 4,
+      "media": {
+        "in_story_count": 2,
+        "chart_count": 0,
+        "items": [
+          {
+            "id": 28196,
+            "type": "Internet sourced real PineTime smartwatch photo",
+            "license": "CC0",
+            "source": "https://commons.wikimedia.org/wiki/File:PineTime_smartwatch.jpg",
+            "status": "native published WordPress figure verified; external end-user loading unverified"
+          },
+          {
+            "id": 28195,
+            "type": "Internet sourced glTF chronograph sample screenshot",
+            "license": "CC BY 4.0 plus legal marks",
+            "source": "https://github.khronos.org/glTF-Assets/images/ChronographWatch.webp",
+            "status": "native published WordPress figure verified; no GLTiny product claim"
+          }
+        ],
+        "featured_media_id": 28194,
+        "featured_width": 1200,
+        "featured_height": 630,
+        "featured_style": "original product-only split-screen technological illustration, no people",
+        "video_embeds": 0
+      },
+      "chart_policy": "maximum one chart; zero because primary announcement had no benchmark data to plot",
+      "footers_and_qa": {
+        "wordpress_status": "publish verified by fresh update and read",
+        "rendered_images_and_footer": "two images and original 5000-sat QR verified",
+        "public_browser": "unverified",
+        "quality_score": 90,
+        "target": 95
+      },
+      "evidence_classes": {
+        "verified_fact": [
+          "first-party technical launch details",
+          "WordPress publish and media IDs",
+          "source license and attribution"
+        ],
+        "user_preference": [
+          "product imagery prioritized",
+          "maximum one chart; other media sourced from Internet"
+        ],
+        "measured_result": [],
+        "hypothesis": [
+          "qualifying absent benchmark claims improves reader understanding"
+        ]
+      },
+      "improvements_to_carry_forward": [
+        "repeat last-minute duplicate checks across WordPress and ledger",
+        "never invent a performance chart where measurement absent",
+        "explicitly label sourced illustrative images as separate from manufacturer product demonstrations"
+      ],
+      "remaining_issues": [
+        "independent desktop/mobile browser inspection unavailable",
+        "full external link status audit not completed",
+        "no user-specific thumbs-up/engagement feed accessible"
+      ]
     }
   ]
 }
