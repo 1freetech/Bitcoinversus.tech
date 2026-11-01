@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 14,
+  "ledger_revision": 15,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -1877,6 +1877,125 @@
         "independent public site browser and responsive checks unavailable",
         "end-user image delivery not independently observed",
         "manufacturer image reuse terms not verified for broad redistribution"
+      ]
+    },
+    {
+      "post_id": 28303,
+      "title": "Aligned Delta Cube 3.0 Claims 10% More Cooling in the Same Space",
+      "publication_date": "2026-11-01",
+      "category": "Data Centers / Cooling",
+      "url": "https://bitcoinversus.tech/2026/11/01/aligned-delta-cube-3-air-cooling-10-percent-data-center-2026/",
+      "qa_record": "qa/ledger/2026-11-01-28303-aligned-delta-cube3-recursive-v4.md",
+      "original_sources": [
+        {
+          "url": "https://aligneddc.com/press-release/aligned-data-centers-advances-cooling-architecture-delivering-significant-energy-efficiency-and-cooling-capacity-improvements/",
+          "verification": "Oct 28 official supplier launch; 10 percent claims"
+        },
+        {
+          "url": "https://aligneddc.com/video-resources/behind-the-engineering-delta-cube-3/",
+          "verification": "first-party engineering overview and factory video link"
+        },
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/10/28/3390277/0/en/aligned-data-centers-advances-cooling-architecture-delivering-significant-energy-efficiency-and-cooling-capacity-improvements.html",
+          "verification": "dated full supplier disclosure"
+        }
+      ],
+      "duplicate_checks": {
+        "wordpress_queries": [
+          "Delta Cube 3.0",
+          "Aligned Data Centers cooling",
+          "Aligned cooling capacity",
+          "Vertiv SmartIT"
+        ],
+        "github_queries": [
+          "Delta Cube 3.0",
+          "Vertiv SmartIT"
+        ],
+        "result": "SmartIT candidate collided with already live article 28274; unpublished candidate 28280 preserved as draft. Delta Cube 3.0 had no duplicate in final WordPress and ledger check."
+      },
+      "article_length_words_excluding_footer_and_captions": 358,
+      "sentence_count": 24,
+      "paragraph_count": 12,
+      "paragraph_sentence_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "internal_link_count": 4,
+      "media": {
+        "in_story_count": 3,
+        "chart_count": 0,
+        "items": [
+          {
+            "id": 28294,
+            "type": "official image of existing Aligned Delta Cube fan unit",
+            "source": "https://aligneddc.com/wp-content/uploads/2025/09/srcurity-compliance-img.jpg.webp",
+            "status": "WordPress rendered figure confirmed, specifically labeled older product family"
+          },
+          {
+            "id": 28293,
+            "type": "official Aligned cooling laboratory photograph",
+            "source": "https://aligneddc.com/wp-content/uploads/2025/09/Advanced-Cooling-Lab.jpg",
+            "status": "WordPress rendered figure confirmed, labeled representative lab"
+          },
+          {
+            "type": "native Gutenberg YouTube video",
+            "video_id": "D9wckS6Obtc",
+            "url": "https://www.youtube.com/watch?v=D9wckS6Obtc",
+            "status": "WordPress rendered iframe confirmed; independent video playback unverified"
+          }
+        ],
+        "featured_media_id": 28292,
+        "featured_width": 1200,
+        "featured_height": 630,
+        "featured_style": "original realistic fan-wall equipment conceptual image, no people",
+        "video_embeds": 1
+      },
+      "chart_policy": "maximum one chart; zero charts because manufacturer disclosed aggregate 10 percent claims but no independent measured series",
+      "footers_and_qa": {
+        "wordpress_status": "publish verified by update and fresh get(view)",
+        "rendered_images_and_footer": "two official internet photographs, one YouTube iframe, original 5,000-sat QR and disclaimer",
+        "public_browser": "unavailable; mobile/desktop and playback unverified",
+        "quality_score": 90,
+        "target": 95
+      },
+      "evidence_classes": {
+        "verified_fact": [
+          "Aligned first-party date and claims",
+          "WordPress publish and rendered media",
+          "image 404 replaced with valid manufacturer image",
+          "same-day SmartIT duplicate prevented"
+        ],
+        "user_preference": [
+          "20-40 sentences and 2-3 sentences each paragraph",
+          "one chart maximum",
+          "real product infrastructure imagery preferred"
+        ],
+        "measured_result": [
+          "358 reporting words; 24 sentences; 12 paragraphs each of two sentences"
+        ],
+        "hypothesis": [
+          "two-sentence paragraphs may improve readability"
+        ]
+      },
+      "improvements_to_carry_forward": [
+        "run WP and central ledger recheck immediately before publishing",
+        "replace 404 source images and label images of earlier product generations",
+        "never equate an embed iframe with independently verified video playback"
+      ],
+      "remaining_issues": [
+        "external browser visual check blocked",
+        "YouTube playback not independently verified",
+        "no article engagement reactions available"
       ]
     }
   ]
