@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 1,
+  "ledger_revision": 2,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -217,6 +217,185 @@
       ],
       "validation_status": "published_and_wordpress_verified_with_external_visual_qa_outstanding",
       "recorded_utc_date": "2026-11-01"
+    },
+    {
+      "post_id": 28025,
+      "title": "Braiins OS 26.10 Cuts Bitcoin Miner Restarts and Improves Cooling",
+      "publication_date": "2026-11-01",
+      "category": "Bitcoin Mining",
+      "url": "https://bitcoinversus.tech/2026/11/01/braiins-os-2610-bitcoin-mining-firmware-restarts-fan-psu-fixes-2026/",
+      "archive_path": "archive/2026/11/28025-braiins-os-2610-miner-restarts-cooling-psu.md",
+      "source_verification": [
+        {
+          "url": "https://academy.braiins.com/braiins-os/whats-new",
+          "role": "Official Braiins OS 26.10 Oct 27 firmware changelog with specific fixes",
+          "classification": "verified_fact",
+          "verification": "public source open and matched against story"
+        },
+        {
+          "url": "https://downloads.braiins.com/braiins-os/",
+          "role": "Manufacturer current release, release number, model list and package verification details",
+          "classification": "verified_fact",
+          "verification": "public source opened"
+        },
+        {
+          "url": "https://academy.braiins.com/braiins-os/configuration",
+          "role": "Official older cooling configuration screenshot documentation",
+          "classification": "verified_fact",
+          "verification": "public source inspected"
+        },
+        {
+          "url": "https://academy.braiins.com/braiins-os/dps",
+          "role": "Official older dynamic performance scaling screenshot documentation",
+          "classification": "verified_fact",
+          "verification": "public source inspected"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Antminer_ASIC_Miner.jpeg",
+          "role": "Historical Antminer S9 photo, 2018, Steve Rainwater, CC BY-SA 2.0",
+          "classification": "verified_fact",
+          "verification": "source license and depiction checked"
+        }
+      ],
+      "duplicate_check": {
+        "wordpress_queries": [
+          "Braiins OS 26.10",
+          "Braiins 26.10",
+          "target-change restarts",
+          "Braiins"
+        ],
+        "github_queries": [
+          "Braiins OS 26.10",
+          "bosminer restarts",
+          "PSU I2C Zynq"
+        ],
+        "result": "No exact prior report for version 26.10 found. Earlier Braiins 26.09 and 26.09.1 coverage was contextual."
+      },
+      "article_length_words_excluding_footer_captions": 325,
+      "internal_link_count": 6,
+      "media": {
+        "in_story_count": 3,
+        "items": [
+          {
+            "id": 28021,
+            "type": "official documentation screenshot",
+            "caption": "Example Braiins Dynamic Performance Scaling dashboard",
+            "source": "https://academy.braiins.com/braiins-os/dps",
+            "status": "WordPress raw and published rendered HTML contain native image block and caption; not presented as screenshot of version 26.10."
+          },
+          {
+            "id": 28020,
+            "type": "official documentation screenshot",
+            "caption": "Example Braiins cooling configuration",
+            "source": "https://academy.braiins.com/braiins-os/configuration",
+            "status": "WordPress native image block and caption verified; historical illustrative documentation."
+          },
+          {
+            "id": 28024,
+            "type": "licensed historical hardware photograph",
+            "caption": "Steve Rainwater 2018 Antminer S9 (not covered by 26.10 changes)",
+            "source": "https://commons.wikimedia.org/wiki/File:Antminer_ASIC_Miner.jpeg",
+            "license": "CC BY-SA 2.0",
+            "status": "WordPress native image block and caption verified."
+          }
+        ],
+        "youtube_embeds": 0,
+        "selection_explanation": "No verified 26.10-specific YouTube demo was found; the media law accepts directly relevant credited photography and genuine documentation screenshots; generic clips were excluded."
+      },
+      "featured_cover": {
+        "media_id": 28023,
+        "size_px": [
+          1200,
+          630
+        ],
+        "style": "detailed oil/fine-art painting",
+        "subject": "Fictional adult male mining technician inspecting ASIC miner cooling hardware",
+        "alt_text": true,
+        "compositional_visual_qa": "Generation and 1200x630 dimensions verified. Independent image inspection of anatomical accuracy not performed."
+      },
+      "visualization": {
+        "chart_needed": false,
+        "reason": "No measured post-release comparative rates or independently verified quantitative benefit data. No decorative chart inserted."
+      },
+      "footer": {
+        "approved_italicized_editors_note": true,
+        "original_donation_qr_media_id": 24043,
+        "donation_request_5000_sats": true,
+        "disclaimer": true,
+        "no_discontinued_brand_promo": true
+      },
+      "qa": {
+        "published": true,
+        "wordpress_post_id": 28025,
+        "correct_permalink_after_slug_polish": true,
+        "published_raw_and_rendered_retrieval": true,
+        "all_three_image_embeds_rendered_html": true,
+        "featured_cover_attached": true,
+        "seo_metadata_checked": true,
+        "six_internal_links": true,
+        "external_primary_sources_verified": true,
+        "independent_public_web_fetch": "inaccessible",
+        "desktop_screenshot": "not available",
+        "mobile_screenshot": "not available",
+        "actual_browser_image_loading": "not tested",
+        "current_gates": "accuracy and duplicate-prevention passed; native media rendered HTML passed; independent browser checks pending"
+      },
+      "quality_score": {
+        "accuracy_and_sources": 25,
+        "originality_and_newsworthiness": 15,
+        "technical_depth_and_clarity": 14,
+        "working_embeds_media_relevance": 14,
+        "cover_and_visualization": 9,
+        "internal_links_and_seo": 10,
+        "live_page_qa_and_formatting": 7,
+        "total": 94,
+        "target": 95,
+        "target_met": false,
+        "reason_for_gap": "Public web fetch inaccessible and no real-device screenshot test; lack of post-release quantitative impact data limits claims."
+      },
+      "observations": [
+        {
+          "type": "verified_fact",
+          "detail": "Braiins OS 26.10 was published Oct 27, 2026 and addresses two unnecessary bosminer restart scenarios, fan reaction and PSU/I2C issues.",
+          "evidence": "Official Braiins whats-new and downloads"
+        },
+        {
+          "type": "measured_result",
+          "detail": "325 article words, six internal links, 3 in-body rendered image blocks with captions, 1200x630 featured cover, WordPress published state.",
+          "evidence": "WordPress posts.get and media.get"
+        },
+        {
+          "type": "user_preference",
+          "detail": "300-420 words, article media 2-10, 4-9 contextual wiki links, cover rotation, exact footer, versioned learning ledger.",
+          "evidence": "Recursive Learning News Writer v4.0"
+        },
+        {
+          "type": "hypothesis",
+          "detail": "Direct model-specific video plus measured post-upgrade fleet telemetry could improve explanatory and media value if available for a later update.",
+          "evidence": "Opportunity; no user-engagement or performance evidence"
+        }
+      ],
+      "editorial_corrections": {
+        "prevented": "The first attempted historical mining image source URL returned 404; verified Wikimedia file path replaced it before publication.",
+        "post_creation": "Polished an awkward pre-publication URL slug from 'restarter' to 'restarts' while preserving correct title and source.",
+        "confirmed_remaining_defects": [],
+        "observational_limits": [
+          "Actual device playback or desktop/mobile screenshots not confirmed.",
+          "Featured cover anatomy not independently inspected."
+        ]
+      },
+      "feedback": {
+        "thumb_up_down": "not accessible",
+        "analytics": "not available",
+        "user_response_specific_to_article": "none yet"
+      },
+      "next_three_improvements": [
+        "Retain manufacturer changelog cross-verification and avoid interpreting restarts or thermal fixes as measured hashrate/revenue gains.",
+        "Verify direct image URLs and licensing before upload, and confirm image blocks through published rendered HTML; avoid unsourced video substitutions.",
+        "Seek first-hand live-page mobile/desktop visual QA and compare cover compositions to the approved rotation before scoring full completion."
+      ],
+      "classified_status": "published_and_wordpress_verified; public browser inspection incomplete",
+      "recorded_date": "2026-11-01"
     }
   ]
 }
