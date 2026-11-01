@@ -26,7 +26,7 @@ Open **http://localhost:8000/energy-map/**. An HTTP server is required because b
 
 1. Choose **+ Add a site**.
 2. Click anywhere on the map to place its pin, or enter latitude and longitude manually.
-3. Fill in name, state, site type, stage, measured or proposed capacity, capacity basis, and an optional production figure with its own basis.
+3. Fill in name, state, site type, stage, measured or proposed capacity, capacity basis, and optional operating power (MW). If reporting generated or consumed energy, enter MWh **and** the associated measurement period.
 4. Add an explanatory briefing and public source, then choose **Save new site**.
 5. Open **My map** to see only your custom sites. Click a purple marker to **Edit** or **Delete** it.
 6. **Export my map** saves your custom records as `bitcoinversus-my-energy-map.json`; **Import map** loads that file in another browser or device. An imported record with the same custom ID replaces the earlier personal version.
