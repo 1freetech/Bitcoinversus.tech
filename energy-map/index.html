@@ -199,7 +199,7 @@ function details(p){selectedId=p.id;const rank=p.personal?'Your map · custom en
 const loc=location(p);let brief=(p.brief||'').trim();if(brief.length>850)brief=brief.slice(0,850).replace(/\s+\S*$/,'')+'…';
 const c='<div class="kicker">'+esc(rank)+'</div><h2>'+esc(p.name)+'</h2><div class="amount">'+esc(p.capacityLabel)+'</div><div class="small">'+esc(capacityBasis(p))+'</div><div class="chips"><span class="chip">'+esc(stage(p)==='other'?'Development stage: see article':stage(p).replace(/-/g,' '))+'</span><span class="chip">'+esc(p.state)+'</span></div>'+
 '<div class="section-title">Project briefing</div><p class="brief">'+esc(brief)+'</p>'+
-'<div class="section-title">Power / energy production</div><p class="brief">'+(p.personal?'Site type: '+esc(p.energyType||'Not selected')+'. '+(p.productionMW!==null&&p.productionMW!==undefined?'User-reported current output: '+esc(p.productionMW)+' MW. ':'No measured production figure supplied. ')+'Custom entries are user-supplied and not independently verified.':'The ranked capacity is <strong>not</strong> a verified output or current electricity draw. Read the full report for documented delivery, operating IT load, generation and milestones where available.')+'</p>'+
+'<div class="section-title">Power / energy production</div><p class="brief">'+(p.personal?'Site type: '+esc(p.energyType||'Not selected')+'. '+(p.productionMW!==null&&p.productionMW!==undefined?'User-reported current output: '+esc(p.productionMW)+' MW. ':'No measured production figure supplied. ')+(p.energyMWh!==null&&p.energyMWh!==undefined?'User-reported energy: '+esc(Number(p.energyMWh).toLocaleString())+' MWh during '+esc(p.energyPeriod||'unspecified period')+'. ':'')+'Custom entries are user-supplied and not independently verified.':'The ranked capacity is <strong>not</strong> a verified output or current electricity draw. Read the full report for documented delivery, operating IT load, generation and milestones where available.')+'</p>'+
 '<div class="section-title">Map position</div><p class="small">'+esc(loc.label)+' · '+esc(loc.precision)+'</p>'+
 '<div class="section-title">Published source</div><p class="small">'+esc(p.personal?'Your locally saved map entry':p.articleTitle||'BitcoinVersus.Tech ranking')+'<br>'+esc(p.updated||'October 2026')+'</p>'+
 (sanitizeUrl(p.article)?'<a class="cta" href="'+esc(sanitizeUrl(p.article))+'" target="_blank" rel="noopener noreferrer">'+(p.personal?'Open supplied source ↗':'Read complete article ↗')+'</a>':'')+
@@ -209,7 +209,7 @@ $('#detail').innerHTML=c;
 $('#detail').querySelectorAll('[data-which]').forEach(b=>b.addEventListener('click',()=>focus(b.getAttribute('data-which'))));if(p.personal){$('#editCustom').addEventListener('click',()=>openEditor(p));$('#deleteCustom').addEventListener('click',()=>deletePersonal(p.id))}
 }
 function focus(id){const p=visible.find(v=>v.id===id);if(!p)return;details(p);const l=location(p);map.flyTo([l.lat,l.lon],Math.max(6,map.getZoom()),{duration:.65});const m=markers.get(p.id);if(m)m.openTooltip();if(window.innerWidth<900)$('#detail').scrollIntoView({behavior:'smooth',block:'start'})}
-function filtered(){const st=$('#state').value,mode=$('#view').value,phase=$('#phase').value,q=$('#search').value.toLowerCase().trim();return [...records,...personal].filter(p=>(!st||p.state===st)&&(mode==='all'||mode==='national'&&p.nationalRank||mode==='state'&&p.rank||mode==='personal'&&p.personal)&&(!phase||stage(p)===phase)&&(!q||(p.name+' '+p.heading+' '+p.state+' '+p.brief).toLowerCase().includes(q)))}
+function filtered(){const st=$('#state').value,mode=$('#view').value,phase=$('#phase').value,q=$('#search').value.toLowerCase().trim();return [...records,...personal].filter(p=>(!st||p.state===st)&&(mode==='all'||mode==='national'&&p.nationalRank||mode==='state'&&p.rank||mode==='personal'&&p.personal)&&(!phase||stage(p)===phase)&&(!q||(p.name+' '+p.heading+' '+p.state+' '+p.brief).toLowerCase().includes(q))).sort((a,b)=>(a.personal?2:a.nationalRank?0:1)-(b.personal?2:b.nationalRank?0:1)||(a.nationalRank||a.rank||99)-(b.nationalRank||b.rank||99)||a.state.localeCompare(b.state))}
 function draw(){visible=filtered();markers.clear();group.clearLayers();visible.forEach(p=>{const loc=location(p),col=color(p),icon=L.divIcon({className:'',html:'<div class="dot-marker" style="background:'+col+'"></div>',iconSize:[15,15],iconAnchor:[8,8]});const mark=L.marker([loc.lat,loc.lon],{icon,keyboard:true,title:p.name});mark.bindTooltip(tip(p),{className:'energy-tip',sticky:true,direction:'top'});mark.on('click',()=>details(p));group.addLayer(mark);markers.set(p.id,mark)});
 $('#points').textContent=visible.length;$('#states').textContent=new Set(visible.map(p=>p.state)).size;$('#topten').textContent=visible.filter(p=>p.nationalRank).length;$('#mine').textContent=personal.length;
 if(editorActive){return}if(visible.length){const p=visible.find(p=>p.id===selectedId)||visible[0];details(p)}else{$('#detail').innerHTML='<div class="kicker">No matches</div><h2>No project matches your filters</h2><p class="brief">Try clearing search terms or selecting another state.</p>'}
@@ -225,7 +225,7 @@ function closeEditor(){editorActive=false;editId=null;if(draftPin){map.removeLay
 function openEditor(p){
  editorActive=true;editId=p?.id||null;selectedId=p?.id||null;
  const current=p||{},state=current.state||$('#state').value||'Custom / Other';
- const stateOptions=[...Object.keys(CENTERS),'Custom / Other'].sort().map(s=>'<option value="'+esc(s)+'"'+(state===s?' selected':'')+'>'+esc(s)+'</option>').join('');
+ const stateOptions=[...new Set([...Object.keys(CENTERS),'Custom / Other',state])].sort().map(s=>'<option value="'+esc(s)+'"'+(state===s?' selected':'')+'>'+esc(s)+'</option>').join('');
  const statOptions=[['planned','Planned / proposed'],['construction','Under construction'],['operating','Operating / partial'],['paused','Paused / canceled'],['other','Other / not confirmed']].map(([value,label])=>'<option value="'+value+'"'+(current.customStatus===value?' selected':'')+'>'+label+'</option>').join('');
  const energyOptions=['Data center / AI','Bitcoin mining','Natural gas','Nuclear','Solar','Wind','Hydropower','Battery storage','Mixed / hybrid','Other'].map(v=>'<option value="'+esc(v)+'"'+(current.energyType===v?' selected':'')+'>'+esc(v)+'</option>').join('');
  const loc=p?location(p):null;
@@ -240,7 +240,9 @@ function openEditor(p){
  '<label>Latitude *<input type="number" min="-90" max="90" step="any" name="lat" id="siteLat" required placeholder="Click map" value="'+esc(loc?loc.lat:'')+'"></label>'+
  '<label>Longitude *<input type="number" min="-180" max="180" step="any" name="lon" id="siteLon" required placeholder="Click map" value="'+esc(loc?loc.lon:'')+'"></label>'+
  '<label>Reported capacity (MW)<input type="number" min="0" step="any" name="capacityMW" placeholder="Leave blank if unknown" value="'+esc(current.capacityMW??'')+'"></label>'+
- '<label>Current production (MW)<input type="number" min="0" step="any" name="productionMW" placeholder="Only if actually measured" value="'+esc(current.productionMW??'')+'"></label>'+
+ '<label>Measured operating output / load (MW)<input type="number" min="0" step="any" name="productionMW" placeholder="Only if actually measured" value="'+esc(current.productionMW??'')+'"></label>'+
+ '<label>Measured energy (MWh)<input type="number" min="0" step="any" name="energyMWh" placeholder="Optional, period required" value="'+esc(current.energyMWh??'')+'"></label>'+
+ '<label>Energy measurement period<input name="energyPeriod" maxlength="100" placeholder="e.g., 2026 or Jan–Jun 2026" value="'+esc(current.energyPeriod||'')+'"></label>'+
  '<label class="wide">What does the capacity figure measure?<select name="capacityBasis">'+['Planned site capacity','Operating IT load','Planned IT load','Installed generation capacity','Planned generation capacity','Contracted utility service','Battery discharge capacity','Other / not comparable'].map(v=>'<option'+(current.capacityBasis===v?' selected':'')+'>'+esc(v)+'</option>').join('')+'</select></label>'+
  '<label>Development status <select name="customStatus">'+statOptions+'</select></label>'+
  '<label class="wide">Site briefing<textarea name="brief" maxlength="3000" placeholder="What is planned, operating, built and what evidence is available?">'+esc(current.brief||'')+'</textarea></label>'+
@@ -260,11 +262,11 @@ function saveEditor(ev){
  const f=new FormData(ev.currentTarget),v=n=>String(f.get(n)||'').trim();
  const name=v('name'),lat=Number(v('lat')),lon=Number(v('lon'));
  const hasCapacity=v('capacityMW')!=='',hasProduction=v('productionMW')!=='';
- const capacity=hasCapacity?Number(v('capacityMW')):null,production=hasProduction?Number(v('productionMW')):null;
+ const capacity=hasCapacity?Number(v('capacityMW')):null,production=hasProduction?Number(v('productionMW')):null,hasEnergy=v('energyMWh')!=='',energy=hasEnergy?Number(v('energyMWh')):null;
  const msg=$('#formMessage'),url=v('article');
  if(!name){msg.textContent='Please enter a site name.';return}
  if(!v('lat')||!v('lon')||!Number.isFinite(lat)||!Number.isFinite(lon)||Math.abs(lat)>90||Math.abs(lon)>180){msg.textContent='Choose a pin on the map or enter valid latitude and longitude.';return}
- if((hasCapacity&&(!Number.isFinite(capacity)||capacity<0))||(hasProduction&&(!Number.isFinite(production)||production<0))){msg.textContent='Capacity and production must be nonnegative numbers.';return}
+ if((hasCapacity&&(!Number.isFinite(capacity)||capacity<0))||(hasProduction&&(!Number.isFinite(production)||production<0))||(hasEnergy&&(!Number.isFinite(energy)||energy<0))){msg.textContent='Power and energy figures must be nonnegative numbers.';return}if(hasEnergy&&!v('energyPeriod')){msg.textContent='For energy in MWh, please supply its measurement period.';return}
  if(url&&!sanitizeUrl(url)){msg.textContent='Please use a full http(s) source URL.';return}
  const existing=personal.find(p=>p.id===editId);
  const d={
@@ -273,7 +275,7 @@ function saveEditor(ev){
  heading:name,lat,lon,
  locationLabel:v('locationLabel')||'User-selected point',capacityMW:capacity,
  capacityLabel:hasCapacity?capacity.toLocaleString(undefined,{maximumFractionDigits:3})+' MW':'Not disclosed',
- capacityBasis:v('capacityBasis'),productionMW:production,customStatus:v('customStatus'),
+ capacityBasis:v('capacityBasis'),productionMW:production,energyMWh:energy,energyPeriod:v('energyPeriod'),customStatus:v('customStatus'),
  energyType:v('energyType'),brief:v('brief')||'User-supplied site; no briefing added.',
  article:sanitizeUrl(url),articleTitle:'User-added site',updated:new Date().toISOString().slice(0,10)
  };
@@ -294,12 +296,13 @@ function normalizeImport(v){
  if(!validPersonal(v))return null;
  const n=Number(v.capacityMW),hasCap=v.capacityMW!==null&&v.capacityMW!==undefined&&v.capacityMW!==''&&Number.isFinite(n)&&n>=0;
  const produced=Number(v.productionMW),hasProd=v.productionMW!==null&&v.productionMW!==undefined&&v.productionMW!==''&&Number.isFinite(produced)&&produced>=0;
+ const e=Number(v.energyMWh),hasEnergy=v.energyMWh!==null&&v.energyMWh!==undefined&&v.energyMWh!==''&&Number.isFinite(e)&&e>=0&&String(v.energyPeriod||'').trim().length>0;
  const status=['operating','construction','planned','paused','other'].includes(v.customStatus)?v.customStatus:'other';
  const id=typeof v.id==='string'&&v.id.startsWith('mine-')&&v.id.length<=100?v.id:'mine-'+((typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID():null)||Date.now().toString(36)+Math.random().toString(36).slice(2));
  return {id,personal:true,rank:null,nationalRank:null,name:String(v.name).trim().slice(0,180),heading:String(v.name).trim().slice(0,180),
  state:String(v.state||'Custom / Other').slice(0,90),lat:Number(v.lat),lon:Number(v.lon),locationLabel:String(v.locationLabel||'User-selected point').slice(0,120),
  capacityMW:hasCap?n:null,capacityLabel:hasCap?n.toLocaleString(undefined,{maximumFractionDigits:3})+' MW':'Not disclosed',
- capacityBasis:String(v.capacityBasis||'Other / not comparable').slice(0,100),productionMW:hasProd?produced:null,customStatus:status,
+ capacityBasis:String(v.capacityBasis||'Other / not comparable').slice(0,100),productionMW:hasProd?produced:null,energyMWh:hasEnergy?e:null,energyPeriod:hasEnergy?String(v.energyPeriod).slice(0,100):'',customStatus:status,
  energyType:String(v.energyType||'Other').slice(0,70),brief:String(v.brief||'User-supplied site').slice(0,3000),
  article:sanitizeUrl(v.article),articleTitle:'User-added site',updated:new Date().toISOString().slice(0,10)};
 }
