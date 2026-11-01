@@ -1,0 +1,234 @@
+{
+  "schema_version": "5.0-draft-1",
+  "artifact_id": "wordpress:28335",
+  "created_date": "2026-11-01",
+  "status": "BLOCKED",
+  "title": "Foxconn and Lightwave Target Faster AI Links With Polymer Optics",
+  "draft_preview": "https://bitcoinversus.tech/?p=28335&preview=true",
+  "category": "Networking/Fiber; selected after data-center article 28303, but concurrently published energy stories make global next position uncertain",
+  "claims": [
+    {
+      "claim_id": "C1",
+      "statement": "Lightwave announced a Foxconn demonstration scheduled for October 30–31 in Taipei.",
+      "source_type": "primary company statement",
+      "source_url": "https://www.nasdaq.com/press-release/lightwave-logic-inc-electro-optic-polymer-technology-integrated-hon-hai-technology",
+      "published_date": "2026-10-29",
+      "retrieved_date": "2026-11-01",
+      "confidence": "high",
+      "verification": "supported as announced schedule; independent attendance not established",
+      "limitations": [
+        "event completion not independently verified"
+      ]
+    },
+    {
+      "claim_id": "C2",
+      "statement": "The collaboration targets 200 and 400 Gb/s per lane.",
+      "source_type": "primary company statement",
+      "source_url": "https://www.nasdaq.com/press-release/lightwave-logic-inc-electro-optic-polymer-technology-integrated-hon-hai-technology",
+      "published_date": "2026-10-29",
+      "retrieved_date": "2026-11-01",
+      "confidence": "high",
+      "verification": "supported as targets",
+      "limitations": [
+        "not a measured demo result"
+      ]
+    },
+    {
+      "claim_id": "C3",
+      "statement": "Foxconn leads implementation of the SOH modulator architecture and integration into an optical engine and transceiver platform.",
+      "source_type": "primary company statement attributed to Foxconn executive",
+      "source_url": "https://www.nasdaq.com/press-release/lightwave-logic-inc-electro-optic-polymer-technology-integrated-hon-hai-technology",
+      "published_date": "2026-10-29",
+      "retrieved_date": "2026-11-01",
+      "confidence": "high",
+      "verification": "supported as attributed company statement",
+      "limitations": [
+        "independent performance testing not available"
+      ]
+    },
+    {
+      "claim_id": "C4",
+      "statement": "Electro-optic material properties change with an applied field.",
+      "source_type": "technical primary overview",
+      "source_url": "https://www.lightwavelogic.com/technology-overview",
+      "published_date": null,
+      "retrieved_date": "2026-11-01",
+      "confidence": "high",
+      "verification": "supported",
+      "limitations": []
+    },
+    {
+      "claim_id": "C5",
+      "statement": "Researchers reported silicon-organic hybrid modulator results in 2017.",
+      "source_type": "research paper",
+      "source_url": "https://arxiv.org/abs/1709.01793",
+      "published_date": "2017-09-01",
+      "retrieved_date": "2026-11-01",
+      "confidence": "high",
+      "verification": "supported",
+      "limitations": [
+        "not a measurement of the Foxconn demo"
+      ]
+    },
+    {
+      "claim_id": "C6",
+      "statement": "400 Gb/s per lane is twice 200 Gb/s per lane.",
+      "source_type": "derived calculation",
+      "source_url": "https://www.nasdaq.com/press-release/lightwave-logic-inc-electro-optic-polymer-technology-integrated-hon-hai-technology",
+      "published_date": "2026-10-29",
+      "retrieved_date": "2026-11-01",
+      "confidence": "high",
+      "verification": "400/200=2; both values are announced targets",
+      "limitations": [
+        "not a measured uplift"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_id": "28335-donation-mismatch",
+      "issue_type": "DONATION_ADDRESS_MISMATCH",
+      "observation": "Original QR 24043 decodes to bc1q3ur9wx5ppjp8snnyv70kt5m2je7utallvh5g58h62u27ahtlk6qsz3tx4u with amount 0.00005 BTC; explicit established address is 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb.",
+      "evidence_url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png",
+      "root_cause": "Different destination addresses; ownership and intended destination not established.",
+      "corrective_action": "Blocked publication. Preserved original QR and note in draft, labeled difference; confirm intended address and then resolve footer.",
+      "verification_status": "OPEN — user confirmation needed"
+    },
+    {
+      "event_id": "28335-smartchart-semantics",
+      "issue_type": "CHART_COMPOSITION_FALSE_POSITIVE",
+      "observation": "SmartChart v2 evaluated all 40 chart types and listed donut and waffle as eligible for two non-additive alternative target rates.",
+      "evidence_url": "https://github.com/1freetech/SmartChart/blob/main/docs/chart-selection-protocol-v2.md",
+      "root_cause": "Schema-only eligibility does not establish a genuine whole.",
+      "corrective_action": "Applied semantic exclusion for parts-of-whole forms and added regression checks.",
+      "verification_status": "LOCAL TESTS PASS; SmartChart upstream itself unchanged"
+    },
+    {
+      "event_id": "28335-video",
+      "issue_type": "PLAYBACK_UNVERIFIED",
+      "observation": "The source-referenced Luceda Photonics video showed a player but its video element remained at 0 seconds with readyState 0 in this browser.",
+      "evidence_url": "https://www.youtube.com/watch?v=utME_HIReBc",
+      "root_cause": "Not established; browser playback did not advance.",
+      "corrective_action": "Left video out; used one sourced chart and two openly licensed photos in the draft.",
+      "verification_status": "PREVIEW IMAGES LOADED; VIDEO NOT COUNTED"
+    },
+    {
+      "event_id": "28335-chart-readability",
+      "issue_type": "CHART_LABEL_SIZE",
+      "observation": "Initial chart labels were too small in the WordPress desktop preview.",
+      "evidence_url": "https://bitcoinversus.tech/?p=28335&preview=true",
+      "root_cause": "Scaling a wide 1680-pixel figure into the site's narrow text column.",
+      "corrective_action": "Regenerated chart with larger labels, uploaded 28343, and replaced 28330 in the draft.",
+      "verification_status": "REVISED FILE AND SAVED BLOCK VERIFIED; final mobile QA pending"
+    }
+  ],
+  "duplication": {
+    "wordpress_queries": [
+      "Lightwave Logic",
+      "Hon Hai Lightwave",
+      "Foxconn",
+      "polymer"
+    ],
+    "github_queries": [
+      "Lightwave Logic",
+      "Foxconn polymer",
+      "Perkinamine"
+    ],
+    "result": "No specific matching Lightwave/Foxconn polymer story found; earlier Foxconn and optical stories are related but distinct.",
+    "coverage_limit": "Search results and the GitHub default branch index, not proof every historical item is indexed."
+  },
+  "body_words": 351,
+  "internal_links": 4,
+  "media": {
+    "body": [
+      {
+        "id": 28343,
+        "type": "sourced vertical target chart"
+      },
+      {
+        "id": 27919,
+        "type": "10G transceiver photograph, CC BY-SA 4.0"
+      },
+      {
+        "id": 27918,
+        "type": "disassembled 40G transceiver photograph, CC0"
+      }
+    ],
+    "preview_render": "three in-body images and cover loaded; QR loaded after scrolling",
+    "video": "Luceda video not included because playback did not advance",
+    "live_render": "not applicable — draft"
+  },
+  "cover": {
+    "media_id": 28328,
+    "style": "anime editorial conceptual illustration",
+    "width": 1200,
+    "height": 630,
+    "alt_text": true,
+    "exact_rotation": "following last tracked realistic cover; global position may have changed in concurrent publishing"
+  },
+  "chart": {
+    "dataset": [
+      {
+        "application": "200G",
+        "Gbps_per_lane": 200,
+        "status": "target"
+      },
+      {
+        "application": "400G",
+        "Gbps_per_lane": 400,
+        "status": "target"
+      }
+    ],
+    "source": "https://www.nasdaq.com/press-release/lightwave-logic-inc-electro-optic-polymer-technology-integrated-hon-hai-technology",
+    "selection": "vertical bar with zero baseline, clear units and explicit target label",
+    "candidate_count": 40,
+    "alternatives": {
+      "lollipop": "eligible but zero-based target magnitudes are more direct in bars",
+      "dot": "possible small-data endpoint display but the atlas distribution-oriented form could imply sampled observations",
+      "donut": "rejected: values are not shares of a whole"
+    },
+    "method_source": "https://clauswilke.com/dataviz/visualizing-amounts.html"
+  },
+  "quality_score": {
+    "provisional": 86,
+    "rubric": {
+      "accuracy": 23,
+      "research": 13,
+      "originality": 9,
+      "media": 13,
+      "internal_links": 8,
+      "charts_cover": 7,
+      "readability": 7,
+      "accessibility_metadata": 5,
+      "publication_live": 0,
+      "learning": 1
+    },
+    "note": "Judgment-based, not independent evidence of learning; hard gate failed regardless of numeric score."
+  },
+  "hard_gates": {
+    "factual_support": "pass with stated limitations",
+    "duplicate_screening": "pass with index-coverage limitation",
+    "body_media": "preview loaded; live check pending",
+    "featured_cover": "dimensions and attachment passed; exact global rotation uncertain",
+    "canonical_footer": "BLOCKED: QR destination differs from stated address",
+    "publication": "authorized but not performed",
+    "known_defects": "donation destination unresolved"
+  },
+  "learning_hypotheses": [
+    {
+      "change": "Decode donation QR and compare amount and intended destination before every release.",
+      "hypothesis": "This will block all deliberately injected mismatch fixtures in the regression suite.",
+      "comparison": "Baseline: one mismatch discovered in this run; future releases must record actual results."
+    },
+    {
+      "change": "Apply semantic parts-of-whole checks after SmartChart schema scoring.",
+      "hypothesis": "Invalid pie, donut and waffle choices fall to zero for independent target-rate fixtures.",
+      "comparison": "Baseline: SmartChart v2 labeled donut and waffle eligible here."
+    },
+    {
+      "change": "Record a main-rotation cursor and recheck it immediately before publication.",
+      "hypothesis": "A versioned cursor with a concurrency check reduces ambiguous category assignments across the next 10 simultaneous production attempts.",
+      "comparison": "Baseline: other energy and lesson posts appeared during this run; no measured outcome yet."
+    }
+  ]
+}
