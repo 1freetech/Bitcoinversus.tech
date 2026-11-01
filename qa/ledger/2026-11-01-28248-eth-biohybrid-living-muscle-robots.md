@@ -42,3 +42,12 @@ Accuracy & direct-source verification 25/25; originality & newsworthiness 15/15;
 
 ## Outstanding checks
 Independently test public-page video playback, source image loads and mobile/desktop layouts when accessible; fix, retest or replace broken media if any are found.
+
+
+## User-directed chart correction — 2026-11-01
+- [User preference] Prefer VERTICAL bars for short category comparisons, but always choose the best chart from the SmartChart taxonomy rather than forcing vertical bars on trends, distributions, geographic data, correlations, or unreadable category labels.
+- [Verified repository guidance] SmartChart repository https://github.com/1freetech/SmartChart : atlas/catalog.json category `bars` includes horizontal or vertical bars, for categorical comparison, with value axis starting at zero. README requires selection by analytical goal, real observation units and source citations.
+- [Verified live change] Replaced horizontal chart image ID 28245 with vertical chart WordPress media ID 28268 (2400×1600 PNG). WordPress post-sections.replace changed only the chart block (index 11); no article text, photo, video, cover or footer blocks changed. WordPress posts.get(edit/view) both show image 28268, no old image 28245, post status publish.
+- [Source and caveat] A normalized 1× reference and the ETH research team's *up to 11×* maximum range of motion (not average). Bar value axis starts at zero and expresses relative motion range; image caption cites ETH Zurich original press release.
+- [Browser limitation] Public web browsing of the WordPress-hosted media image was inaccessible to the external viewer. Media library dimensions and rendered HTML confirmed, but independent pixel-level, desktop, mobile visual and playback verification remain open.
+- [Action for future editorial QA] First use SmartChart chart-family selection, then choose vertical orientation when both bars are legitimate and labels remain short. A horizontal ranked comparison may still be more readable with many or long category names. Do not change unrelated historical charts en masse.
