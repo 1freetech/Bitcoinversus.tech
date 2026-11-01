@@ -45,7 +45,7 @@ const localStorage={setItem:(k,v)=>mem.set(k,String(v)),getItem:k=>mem.get(k)||n
 const fn=new Function('localStorage',noBoot+';return {normalizeImport,validPersonal,loadPersonal,savePersonal,stage,location,sanitizeUrl,setPersonal:p=>{personal=p}};');
 const a=fn(localStorage);
 const site=a.normalizeImport({name:'My wind farm',lat:41.5,lon:-92.5,state:'Iowa',capacityMW:120,productionMW:46,
-  customStatus:'operating',capacityBasis:'Installed generation capacity',energyType:'Wind',article:'https://example.org/plant'});
+  customStatus:'operating',capacityBasis:'Installed generation capacity',energyType:'Wind',energyMWh:52000,energyPeriod:'calendar year 2026',article:'https://example.org/plant'});
 assert(a.validPersonal(site),'User-supplied point must validate');
 assert.equal(a.stage(site),'operating','Personal status remains explicit');
 assert.equal(a.location(site).lat,41.5,'Personal coordinates must be used unchanged');
@@ -54,4 +54,5 @@ assert.equal(a.normalizeImport({name:'invalid',lat:1234,lon:-90}),null,'Out of r
 a.setPersonal([site]);
 assert(a.savePersonal(),'Custom records must persist');
 assert.equal(a.loadPersonal()[0].name,'My wind farm','Custom records must survive reload');
+assert.equal(a.loadPersonal()[0].energyMWh,52000,'Period-qualified MWh data must survive reload');
 console.log('PASS: 166 records; 50 states; 10 national; UI script; personal map validation and persistence.');
