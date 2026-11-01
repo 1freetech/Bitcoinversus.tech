@@ -1,0 +1,26 @@
+name: Validate energy atlas
+
+on:
+  pull_request:
+    paths:
+      - "energy-map/**"
+      - ".github/workflows/energy-map-validate.yml"
+  push:
+    branches: [main]
+    paths:
+      - "energy-map/**"
+      - ".github/workflows/energy-map-validate.yml"
+  workflow_dispatch:
+
+jobs:
+  validate-atlas:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate ranking records and custom map features
+        run: node energy-map/tests/validate.mjs
