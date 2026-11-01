@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 13,
+  "ledger_revision": 14,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -1760,6 +1760,123 @@
         "public browser GET failed; no independent mobile/desktop rendering",
         "actual end-user photo and chart delivery not independently verified",
         "thumbs-up/down and readership analytics inaccessible"
+      ]
+    },
+    {
+      "post_id": 28274,
+      "title": "Vertiv SmartIT Combines 142 kW AI Rack Power With Liquid Cooling",
+      "publication_date": "2026-11-01",
+      "category": "Data Centers",
+      "url": "https://bitcoinversus.tech/2026/11/01/vertiv-smartit-142kw-ai-rack-power-cooling-nvidia-2026/",
+      "qa_record": "qa/ledger/2026-11-01-28274-vertiv-smartit-recursive-v4.md",
+      "original_sources": [
+        {
+          "url": "https://www.vertiv.com/en-us/about/news-and-events/corporate-news/2026/vertiv-simplifies-high-density-ai-infrastructure-deployment-across-data-center-environments/",
+          "verification": "official Vertiv launch Oct 26 2026"
+        },
+        {
+          "url": "https://www.vertiv.com/en-us/products-catalog/facilities-enclosures-and-racks/integrated-solutions/vertiv-smartit-for-nvidia-gb300-nvl72/",
+          "verification": "manufacturer SmartIT 142 kW and 1400 A specifications"
+        },
+        {
+          "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Infrastructure-Helps-Bring-NVIDIA-AI-Computing-Capability-to-the-Naval-Postgraduate-School/default.aspx",
+          "verification": "related July 2026 real NVIDIA DGX GB300 infrastructure reference"
+        }
+      ],
+      "duplicate_checks": {
+        "wordpress_queries": [
+          "SmartIT",
+          "Vertiv SmartIT",
+          "NVIDIA MGX ORV3",
+          "Vertiv high-density",
+          "DGX GB300"
+        ],
+        "github_queries": [
+          "Vertiv SmartIT",
+          "SmartIT"
+        ],
+        "result": "No same-topic article in WordPress, GitHub archive or central ledger; fresh pre-publication checks confirmed."
+      },
+      "article_length_words_excluding_footer_and_captions": 355,
+      "sentence_count": 26,
+      "paragraph_count": 13,
+      "paragraph_sentence_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "internal_link_count": 5,
+      "media": {
+        "in_story_count": 3,
+        "chart_count": 0,
+        "items": [
+          {
+            "id": 28270,
+            "type": "manufacturer Vertiv NVIDIA MGX rack product photograph",
+            "source": "https://www.vertiv.com/en-emea/products-catalog/facilities-enclosures-and-racks/racks-and-containment/vertiv-open-rack-mgx/",
+            "status": "native published WordPress image verified; manufacturer photo is related component"
+          },
+          {
+            "id": 28271,
+            "type": "manufacturer Vertiv CoolChip CDU image",
+            "source": "https://www.vertiv.com/en-cn/products-catalog/thermal-management/high-density-solutions/vertiv-coolchip-cdu/",
+            "status": "native published WordPress image verified; related cooling component"
+          },
+          {
+            "id": 28272,
+            "type": "manufacturer Vertiv rear-door heat exchanger depiction",
+            "source": "https://www.vertiv.com/en-asia/solutions/360ai/",
+            "status": "native published WordPress figure verified; illustration distinct from SmartIT"
+          }
+        ],
+        "featured_media_id": 28269,
+        "featured_width": 1200,
+        "featured_height": 630,
+        "featured_style": "original realistic product-only liquid-cooled AI rack illustration, no people or text",
+        "video_embeds": 0
+      },
+      "chart_policy": "zero chart; unrelated power, current, and cooling specification numbers cannot be honestly compared in one quantitative chart.",
+      "footers_and_qa": {
+        "wordpress_status": "publish verified by update and fresh posts.get(view)",
+        "rendered_images_and_footer": "three in-story figures, QR 24043 and approved footer verified",
+        "public_browser": "internal access error; independent desktop/mobile rendering unavailable",
+        "quality_score": 93,
+        "target": 95
+      },
+      "evidence_classes": {
+        "verified_fact": [
+          "Vertiv October 26 launch and official 142kW capacity",
+          "WordPress published status, figures and cover"
+        ],
+        "user_preference": [
+          "20–40 sentences per story in 2–3 sentence paragraphs",
+          "maximum one chart, online-sourced remaining media",
+          "no people by default; product imagery"
+        ],
+        "measured_result": [],
+        "hypothesis": [
+          "compact paragraphs improve readability without sacrificing necessary technical caveats"
+        ]
+      },
+      "improvements_to_carry_forward": [
+        "write 20–40 sentences in 2–3 sentence paragraphs; confirm programmatically",
+        "label neighboring hardware products as illustrative",
+        "separate rated power from actual facility electricity consumption"
+      ],
+      "remaining_issues": [
+        "independent public site browser and responsive checks unavailable",
+        "end-user image delivery not independently observed",
+        "manufacturer image reuse terms not verified for broad redistribution"
       ]
     }
   ]
