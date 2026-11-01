@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 8,
+  "ledger_revision": 9,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -1216,25 +1216,32 @@
         "items": [
           {
             "id": 28180,
-            "type": "CC BY 4.0 sourced daily bar chart",
-            "status": "WordPress HTML figure verified; external visual loading not verified"
+            "type": "single source-backed daily transaction-fee-share bar chart",
+            "status": "WordPress published rendered figure verified; external public browser unverified",
+            "source": "https://cloudminecrypto.com/data"
           },
           {
-            "id": 28182,
-            "type": "original explanatory block-reward schematic",
-            "status": "WordPress HTML figure verified"
+            "id": 28187,
+            "type": "sourced Internet photo (historical Antminer S9, Steve Rainwater, 2018)",
+            "license": "CC BY-SA 2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Antminer_ASIC_Miner.jpeg",
+            "status": "WordPress published rendered figure verified; creator and license linked"
           },
           {
-            "id": 28181,
-            "type": "sourced proportional chart of October 30 fee share",
-            "status": "WordPress HTML figure verified"
+            "id": 28188,
+            "type": "sourced Internet photo (historical Argo Mirabel racks, MikeBogosian, 2018)",
+            "license": "CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Argo_Blockchain_Mirabel_Facility.jpg",
+            "status": "WordPress published rendered figure verified; creator and license linked"
           }
         ],
         "featured_media_id": 28157,
         "featured_width": 1200,
         "featured_height": 630,
         "featured_style": "realistic original equipment illustration, no people",
-        "video_embeds": 0
+        "video_embeds": 0,
+        "chart_count": 1,
+        "sourced_internet_photo_count": 2
       },
       "data_visualization": {
         "observations": [
@@ -1270,7 +1277,8 @@
           "duplicate draft restored after collision"
         ],
         "user_preference": [
-          "mining hardware imagery, not people"
+          "mining hardware imagery, not people",
+          "one chart maximum per story; remaining in-body media from sourced Internet material"
         ],
         "measured_result": [],
         "hypothesis": [
@@ -1278,6 +1286,7 @@
         ]
       },
       "improvements_to_carry_forward": [
+        "enforce one in-story chart maximum and use licensed Internet photos or verified video embeds for remaining media",
         "recheck new WordPress posts AND central ledger immediately before publishing",
         "explicitly distinguish percent-of-total-reward from percent-of-subsidy and data windows",
         "document external public rendering as unverified unless independently confirmed"
@@ -1286,7 +1295,22 @@
         "public-page browser visual inspection blocked",
         "actual image delivery on reader devices not independently tested",
         "engagement/feedback inaccessible"
-      ]
+      ],
+      "editorial_correction_2026_11_01": {
+        "reason": "User found multiple charts excessive",
+        "before_media_ids": [
+          28180,
+          28182,
+          28181
+        ],
+        "after_media_ids": [
+          28180,
+          28187,
+          28188
+        ],
+        "policy_path": "editorial/media-policy-one-chart-2026-11-01.md",
+        "verification": "published WordPress post returned expected figures; public browser unavailable"
+      }
     }
   ]
 }
