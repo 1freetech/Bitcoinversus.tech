@@ -1,0 +1,84 @@
+<!-- BitcoinVersus.Tech Gutenberg article archive -->
+<!-- Post ID 28238; published 2026-11-01; source: connected WordPress edit context -->
+<!-- Canonical: https://bitcoinversus.tech/2026/11/01/what-is-cxl-4-0-ai-data-centers-memory-pooling-128-gts/ -->
+<!-- Featured image ID: 28232 -->
+
+<!-- wp:paragraph -->
+<p>A server can have fast processors and still run short of usable memory. <a href="https://computeexpresslink.org/about-cxl/">Compute Express Link (CXL)</a> addresses that imbalance by allowing processors to access memory and accelerators through a cache-coherent connection built on PCI Express. In November 2025, the industry consortium released CXL 4.0; throughout 2026, vendors and researchers have continued testing how memory sharing works under demanding AI workloads.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">How pooled memory works</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In ordinary servers, DDR5 modules sit close to each CPU. Applications running elsewhere cannot automatically borrow unused capacity. CXL memory expanders add another accessible memory tier; compatible switches and software can also organize capacity into pools for multiple hosts. Think of it as moving beyond each server's fixed memory allocation, not turning every rack into one unlimited computer.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":28231,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/cxl-memory-pooling-between-two-servers-e28094-editorial-illustration.png" alt="Conceptual illustration of two servers and a shared CXL memory device" class="wp-image-28231" /><figcaption class="wp-element-caption"><em>Original conceptual CXL memory-pooling illustration; actual device topology and supported features depend on the implementation.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>That distinction matters for <a href="https://bitcoinversus.tech/2026/10/13/sk-hynix-mars-memory-centric-ai-racks/">memory-centric AI rack designs</a>. Models can require substantial key-value cache storage during inference, and capacity pressure can force data toward slower tiers. CXL may provide additional addressable capacity, but capacity is not equivalent to local DRAM bandwidth or latency.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">What changed in CXL 4.0</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The <a href="https://computeexpresslink.org/news/cxl-consortium-releases-the-compute-express-link-4-0-specification-increasing-speed-and-bandwidth/">CXL 4.0 release</a> doubled the nominal per-lane transfer rate from 64 to <strong>128 GT/s</strong>, added bundled-port connectivity and strengthened memory reliability features. GT/s counts transfers, not delivered gigabytes per second; actual usable throughput depends on link width, encoding, protocol overhead and implementation. The consortium says the update preserves compatibility with earlier CXL revisions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":28233,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/cxl-2-3-4-per-lane-transfer-rates-32-64-128-gts.png" alt="Bar chart of nominal CXL per-lane transfer rates from 32 to 128 GT/s" class="wp-image-28233" /><figcaption class="wp-element-caption"><em>BitcoinVersus.Tech chart of <a href="https://computeexpresslink.org/wp-content/uploads/2025/12/CXL_4.0-Webinar_December-2025_FINAL.pdf">CXL Consortium published version rates</a>: 32 GT/s (2.0), 64 GT/s (3.0), 128 GT/s (4.0). Nominal transfers per lane, not application bandwidth.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Previous releases laid the groundwork: CXL 2.0 introduced switching and pooling, while 3.x expanded fabric and sharing capabilities. That is why a <a href="https://bitcoinversus.tech/2026/10/12/marvell-structera-x-cxl-9tb-memory/">9 TB CXL memory expansion platform</a> and <a href="https://bitcoinversus.tech/2026/09/27/astera-labs-leo-x-series-ai-memory-cxl-3-2/">Astera Labs' memory controllers</a> are relevant without automatically supporting every new CXL 4.0 feature. Our <a href="https://bitcoinversus.tech/2026/10/09/what-is-a-pcie-retimer/">PCIe retimer explainer</a> covers another essential signal-integrity component.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">The real performance test</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Real deployments still face congestion. A <a href="https://www.usenix.org/conference/nsdi26/presentation/guo-zerui">2026 USENIX study</a> investigated competing flows inside switched CXL pools, showing that unmanaged sharing can hurt neighboring applications. Another <a href="https://confpad.io/conferences/nsdi-26/octopus-enhancing-cxl-memory-pods-via-sparse-topology">NSDI 2026 project</a> explored alternative connection layouts for better memory utilization. Neither establishes universal improvements for all data centers.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=WmeazSJKLPo","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=WmeazSJKLPo
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>USENIX NSDI 2026 research presentation on congestion and fairness in switched CXL memory pooling; technical talk, not a vendor product benchmark.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>For operators, the question is practical: does pooled capacity reduce stranded memory enough to justify switching hardware, power, firmware and software complexity? The <a href="https://computeexpresslink.org/blog/increasing-tokens-per-dollar-with-cxl-fms-2026-recap-4788/">consortium's August 2026 recap</a> describes working CXL 3.x demonstrations, not proof that 4.0 is already everywhere. Future deployments will be judged by measured workload performance and cost, not the headline link speed alone.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=CC8_nnhyyI4","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=CC8_nnhyyI4
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>NSDI 2026 researchers explain the Octopus CXL memory-pod design and its experimental results; results are specific to their test conditions.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">BitcoinVersus.Tech</h2>
+<!-- /wp:heading --><!-- wp:paragraph -->
+<p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats. For best results, scan the QR code from a laptop or larger screen.</em></p>
+<!-- /wp:paragraph --><!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Original BitcoinVersus.Tech 5,000 satoshi donation QR code" class="wp-image-24043" /><figcaption class="wp-element-caption"><em>BitcoinVersus.Tech original donation QR; verify the receiving address before transferring Bitcoin.</em></figcaption></figure>
+<!-- /wp:image --><!-- wp:paragraph -->
+<p><em>Bitcoin address: <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong>. On a phone, open the QR image on another screen or copy and verify the address in your wallet before sending.</em></p>
+<!-- /wp:paragraph --><!-- wp:paragraph -->
+<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>
+<!-- /wp:paragraph -->
