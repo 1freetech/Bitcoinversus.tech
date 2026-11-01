@@ -80,7 +80,7 @@ footer{font-size:12px;color:#9aacc2;padding:22px clamp(18px,3vw,48px);border-top
 <div class="stats"><div class="stat"><strong id="points">—</strong> visible records</div><div class="stat"><strong id="states">—</strong> states represented</div><div class="stat"><strong id="topten">—</strong> national Top 10 entries</div><div class="stat">Ranking edition: October 2026</div></div>
 <div class="key"><span><i class="swatch" style="background:#f2b661"></i>America Top 10</span><span><i class="swatch" style="background:#3cc79d"></i>Operating / partial</span><span><i class="swatch" style="background:#57a6ec"></i>Construction</span><span><i class="swatch" style="background:#879cd5"></i>Planning and other</span><span><i class="swatch" style="background:#98a1ad"></i>Paused / canceled</span></div>
 <main class="layout"><div id="map" role="region" aria-label="Interactive U.S. energy project map"></div><aside id="detail" aria-live="polite"><div class="kicker">Loading rankings</div><h2>Project briefing</h2><p class="brief">Reading the published state and national rankings…</p></aside></main>
-<footer><strong>How to read this map:</strong> Each dot represents a ranked project, not a measurement of online generating capacity. State-ranking markers are presently positioned as <strong>approximate state-level locators</strong>, spaced to prevent collisions, rather than claiming an exact project address. America's Top 10 markers have locality-level positioning where identified, except where the article names only a state. Project capacity may represent generation, electricity service, gross site development, critical IT power, or another distinct figure. Never sum these different measurements as actual production. Original article links provide supporting evidence and status updates. Basemap © OpenStreetMap contributors. Mapping library: Leaflet.</footer>
+<footer><strong>How to read this map:</strong> Each dot represents a ranked project, not a measurement of online generating capacity. State-ranking markers are positioned at approximate named city/county locations when available, otherwise at state-level locators. They are <strong>not</strong> verified facility addresses or parcel centroids. America's Top 10 markers have locality-level positioning where identified, except where the article names only a state. Project capacity may represent generation, electricity service, gross site development, critical IT power, or another distinct figure. Never sum these different measurements as actual production. Original article links provide supporting evidence and status updates. Basemap © OpenStreetMap contributors. Mapping library: Leaflet.</footer>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
@@ -101,6 +101,58 @@ const CENTERS={
 'Tennessee':[35.8,-86],'Texas':[31,-99.3],'Utah':[39.3,-111.6],'Vermont':[44,-72.7],
 'Virginia':[37.5,-78.8],'Washington':[47.4,-120.7],'West Virginia':[38.7,-80.6],
 'Wisconsin':[44.7,-89.7],'Wyoming':[43,-107.5]};
+const CITY_PINS={
+'Alabama':[[32.16,-86.65,'Lowndes County'],[33.40,-86.96,'Bessemer'],[33.28,-86.35,'Childersburg']],
+'Alaska':[[70.1,-149.5,'North Slope region'],[60.8,-151.2,'Cook Inlet region'],[69.7,-148.7,'Franklin Bluffs area']],
+'Arizona':[[33.37,-112.58,'Buckeye'],[33.46,-112.75,'West Valley / Hassayampa area'],[32.44,-111.22,'Marana']],
+'Arkansas':[[34.75,-92.28,'Pulaski County'],[35.47,-93.47,'Clarksville'],[35.15,-90.18,'West Memphis']],
+'California':[[37.34,-121.89,'San José'],[35.35,-118.90,'Kern County region'],[37.40,-121.91,'North San José']],
+'Colorado':[[40.07,-104.64,'Hudson'],null,null],
+'Connecticut':[[41.60,-72.65,'Cromwell'],[41.44,-73.06,'Beacon Falls'],[41.66,-72.78,'New Britain']],
+'Delaware':[[39.45,-75.72,'Middletown'],[39.66,-75.57,'New Castle'],[39.68,-75.75,'Newark']],
+'Florida':[[27.75,-81.80,'Fort Meade'],[28.11,-81.62,'Haines City'],[27.45,-80.33,'Fort Pierce']],
+'Georgia':[[32.36,-81.38,'Effingham County'],[34.22,-84.80,'Bartow County'],[31.38,-84.93,'Blakely']],
+'Hawaii':[[21.31,-157.86,'Honolulu'],[21.34,-158.09,'Kapolei'],[21.38,-157.93,'Oahu region']],
+'Idaho':[null,[43.45,-116.07,'Blacks Creek area'],[43.49,-116.42,'Kuna']],
+'Illinois':[[41.53,-88.08,'Joliet'],[41.64,-88.45,'Yorkville'],[42.35,-88.04,'Grayslake']],
+'Indiana':[[41.70,-86.51,'New Carlisle'],[40.49,-86.13,'Kokomo'],[41.66,-85.97,'Elkhart County']],
+'Iowa':[[42.00,-91.67,'Cedar Rapids'],[41.65,-93.46,'Altoona'],[41.53,-93.95,'Van Meter']],
+'Kansas':[[38.98,-94.97,'De Soto'],[39.11,-95.09,'Tonganoxie'],[39.11,-94.63,'Kansas City, KS']],
+'Kentucky':[[38.65,-83.76,'Mason County / Maysville'],[38.52,-82.69,'Russell'],[37.08,-88.60,'Paducah']],
+'Louisiana':[[32.43,-91.75,'Richland Parish'],null,null],
+'Maine':[[43.44,-70.77,'Sanford'],[44.50,-70.22,'Jay'],[45.66,-68.71,'Millinocket']],
+'Maryland':[[39.31,-77.47,'Adamstown'],[38.37,-76.96,'Newburg'],[38.93,-76.88,'Landover']],
+'Massachusetts':[[42.13,-72.75,'Westfield'],[42.20,-72.61,'Holyoke'],[42.20,-72.61,'Holyoke']],
+'Michigan':[[42.17,-83.75,'Saline Township'],[42.22,-83.45,'Van Buren Township'],[41.98,-86.11,'Dowagiac']],
+'Minnesota':[[44.20,-92.65,'Pine Island'],[44.64,-93.14,'Farmington'],[46.81,-92.24,'Hermantown']],
+'Mississippi':[[32.27,-89.99,'Brandon'],[32.36,-88.70,'Meridian'],[33.50,-88.43,'Columbus']],
+'Missouri':[[39.10,-94.40,'Independence'],[39.10,-94.58,'Kansas City'],[38.22,-90.40,'Festus']],
+'Montana':[[46.10,-108.88,'Broadview'],[46.01,-112.54,'Butte'],[45.87,-106.63,'Eastern Montana / BNI area']],
+'Nebraska':[[40.70,-99.08,'Kearney'],[40.50,-98.95,'Minden'],[40.53,-96.78,'Hallam']],
+'Nevada':[[39.50,-119.44,'Virginia Highlands / Storey County'],null,[39.02,-119.17,'Mason Valley']],
+'New Hampshire':[[43.13,-71.54,'Bow'],[43.21,-71.54,'Concord'],[42.99,-71.46,'Manchester']],
+'New Jersey':[[39.49,-75.03,'Vineland'],[40.55,-74.46,'Piscataway'],[40.26,-74.53,'East Windsor']],
+'New Mexico':[[33.39,-104.52,'Roswell'],[32.28,-106.80,'Doña Ana County'],[34.81,-106.73,'Los Lunas']],
+'New York':[[43.33,-78.55,'Barker'],[44.93,-74.89,'Massena'],[43.09,-79.06,'Niagara Falls']],
+'North Carolina':[[35.00,-79.75,'Richmond County'],[36.36,-78.40,'Vance County'],[35.72,-79.24,'Chatham County']],
+'North Dakota':[[48.15,-103.62,'Williston area'],[46.88,-96.79,'Cass County'],[48.15,-103.62,'Williston']],
+'Ohio':[[39.07,-83.03,'Piketon'],[40.08,-82.81,'New Albany'],[40.15,-82.69,'Johnstown']],
+'Oklahoma':[[36.40,-97.88,'Enid'],[35.75,-95.37,'Muskogee'],[35.64,-97.75,'Piedmont']],
+'Oregon':[[45.84,-119.70,'Boardman'],[45.84,-119.70,'Boardman'],[45.52,-123.00,'Hillsboro']],
+'Pennsylvania':[[40.54,-79.16,'Homer City'],[40.57,-79.70,'Upper Burrell'],[40.63,-80.42,'Shippingport']],
+'Rhode Island':[[41.82,-71.41,'Providence'],[41.82,-71.41,'Providence'],[41.82,-71.41,'Providence']],
+'South Carolina':[[33.32,-81.72,'Savannah River Site area'],[34.95,-81.93,'Spartanburg'],[35.00,-81.15,'York County']],
+'South Dakota':[[43.55,-96.73,'Sioux Falls'],[44.73,-100.14,'Sully County'],[45.72,-98.94,'Leola']],
+'Tennessee':[[35.15,-90.05,'Memphis'],[36.39,-86.45,'Gallatin'],[35.15,-90.05,'Memphis']],
+'Texas':[[35.35,-101.40,'Carson County / Amarillo'],[29.85,-97.65,'Caldwell County'],[32.47,-100.41,'Sweetwater'],[31.42,-103.49,'Pecos'],[33.60,-100.84,'Dickens County'],[32.75,-99.35,'Shackelford County'],[32.45,-99.73,'Abilene']],
+'Utah':[[39.35,-112.58,'Millard County / Delta'],[41.51,-112.02,'Box Elder County'],[39.32,-112.55,'Millard County']],
+'Vermont':[[44.46,-73.17,'South Burlington'],[44.48,-73.21,'Burlington / Williston'],[43.61,-72.97,'Rutland']],
+'Virginia':[[38.00,-77.99,'Louisa County'],[37.76,-77.37,'Hanover County'],[38.00,-77.99,'Louisa County'],[38.42,-77.41,'Stafford'],[39.00,-77.40,'Sterling']],
+'Washington':[[47.23,-119.85,'Quincy'],[47.37,-120.20,'Malaga'],[47.23,-119.85,'Quincy']],
+'West Virginia':[[38.85,-82.15,'Mason County'],[38.85,-82.15,'Mason County'],[39.10,-79.59,'Tucker County']],
+'Wisconsin':[[43.39,-87.87,'Port Washington'],[42.72,-87.89,'Mount Pleasant'],[43.46,-88.84,'Beaver Dam']],
+'Wyoming':[[41.14,-104.82,'Cheyenne'],[41.27,-110.96,'Evanston'],[41.10,-104.80,'Laramie County']]
+};
 const NATIONAL={
 1:{lat:35.22,lon:-101.83,place:'Near Amarillo, TX'},
 2:{lat:39.35,lon:-112.58,place:'Delta area, UT'},
@@ -118,7 +170,7 @@ let records=[],visible=[],map,group,markers=new Map(),selectedId=null;
 function stage(p){const t=(p.heading||'').toLowerCase();if(/cancel|on hold|paused|stalled|suspend|not verified built/.test(t))return 'paused';if(/operating (?:MW|load|IT) unconfirmed|not operating|no operating/.test(t))return 'other';if(/operating|delivered|online|partial service|in service/.test(t))return 'operating';if(/under construction|construction|site infrastructure underway|first building topped/.test(t))return 'construction';if(/plan|propos|target|concept|pre-construction|potential|ambition/.test(t))return 'planned';return 'other'}
 function capacityBasis(p){const h=(p.heading||'').toLowerCase();if(/generation|generating|power stack|power plant|energy plan|power campus/.test(h))return 'Planned generation / energy infrastructure';if(/critical it|it power|it capacity|it load|compute capacity/.test(h))return 'IT / computing capacity';if(/storage|battery/.test(h))return 'Storage power';if(/grid|utility|service|authorized demand|contracted/.test(h))return 'Electricity service / grid capacity';if(/site capacity|gross|development|campus/.test(h))return 'Campus / development capacity';return 'Reported project-scale figure — measurement basis varies'}
 function color(p){return p.nationalRank?'#f2b661':stage(p)==='paused'?'#98a1ad':stage(p)==='operating'?'#3cc79d':stage(p)==='construction'?'#57a6ec':'#879cd5'}
-function location(p){if(p.nationalRank){const n=NATIONAL[p.nationalRank];return {lat:n.lat,lon:n.lon,label:n.place,precision:n.place.startsWith('Utah;')?'State level — approximate':'Named locality — approximate, not parcel coordinate'}}const c=CENTERS[p.state]||[39,-98],n=Number(p.rank)||1;const shift=['Rhode Island','Delaware','New Jersey','Connecticut','Massachusetts','Maryland'].includes(p.state)?.12:['Alaska','Texas','California','Nevada','Montana'].includes(p.state)?.65:.30;const phi=(n-1)*2.39996;const radius=(n===1?0:Math.sqrt(n-1))*shift;return {lat:c[0]+Math.sin(phi)*radius,lon:c[1]+Math.cos(phi)*radius,label:p.state+' state-level locator',precision:'State-level approximate — site address not geocoded'};}
+function location(p){if(p.nationalRank){const n=NATIONAL[p.nationalRank];return {lat:n.lat,lon:n.lon,label:n.place,precision:n.place.startsWith('Utah;')?'State level — approximate':'Named locality — approximate, not parcel coordinate'}}const n=Number(p.rank)||1,loc=(CITY_PINS[p.state]||[])[n-1];if(loc){const nearby=(p.state==='Rhode Island'||p.state==='Washington'||p.state==='West Virginia'||p.state==='Tennessee'||p.state==='Massachusetts')?(n-1)*.015:0;return {lat:loc[0]+nearby,lon:loc[1]+nearby,label:loc[2],precision:'City/county-level approximate — not a verified site address'}}const c=CENTERS[p.state]||[39,-98],shift=.30,phi=(n-1)*2.39996,radius=(n===1?0:Math.sqrt(n-1))*shift;return {lat:c[0]+Math.sin(phi)*radius,lon:c[1]+Math.cos(phi)*radius,label:p.state+' state-level locator',precision:'State-level approximate — site locality not geocoded'};}
 function tip(p){return '<div class="tip-title">'+esc(p.name)+'</div><div class="tip-value">'+esc(p.capacityLabel)+'</div><div class="tip-note">'+esc(p.state)+' · '+(p.nationalRank?'America #'+p.nationalRank:'State #'+p.rank)+'<br>'+esc(capacityBasis(p))+'<br>'+esc(location(p).precision)+'</div>'}
 function details(p){selectedId=p.id;const rank=p.nationalRank?'America Top 10 · #'+p.nationalRank:p.state+' · #'+p.rank;
 const loc=location(p);let brief=(p.brief||'').trim();if(brief.length>850)brief=brief.slice(0,850).replace(/\s+\S*$/,'')+'…';
