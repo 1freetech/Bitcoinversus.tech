@@ -4,18 +4,17 @@ title: "Ranking the Rankers: The Top 7 NFL Draft Evaluators"
 permalink: "https://bitcoinversus.tech/2026/11/01/ranking-the-rankers-top-7-nfl-draft-evaluators-chris-simms-mel-kiper/"
 published: "2026-11-01"
 category: "Sports"
-featured_media_id: 27806
+featured_media_id: 28151
 featured_media_dimensions: "1200x630"
-in_story_media_ids: [27799, 27800, 27801, 27802, 27803, 27804, 27805]
+in_story_video_ids: [PPq1HhFEky4, ODKrDS_LhhI, MFCC8VLKCb4, NBHipQTavBs, ZrUhgEh6KOc, x48C1BRc_ZU, hz_vtwPOy5I]
 in_story_media_count: 7
-in_story_media_type: "native Gutenberg images, explicitly marked AI-generated editorial illustrations"
-media_readback: "WordPress rendered HTML displays all seven unique core/image media items in rank order. No video playback is claimed."
+in_story_media_type: "seven unique native Gutenberg YouTube video embeds with captions; no additional in-story images"
+media_readback: "WordPress context=view confirmed seven real YouTube iframe player URLs, one under each analyst; independent playback not verified"
 ranking: ["7 Bucky Brooks", "6 Dane Brugler", "5 Todd McShay", "4 Daniel Jeremiah", "3 Mike Mayock", "2 Mel Kiper Jr.", "1 Chris Simms"]
 ---
-
 <!-- wp:paragraph --><p>The NFL Draft is often described as an annual examination for college prospects. It should also be an examination of the analysts who grade them. This BitcoinVersus.Tech ranking evaluates seven influential media scouts on the clarity of their reasoning, commitment to film study, independence from consensus and lasting impact on how fans understand player evaluation.</p><!-- /wp:paragraph -->
 
-<!-- wp:paragraph --><p>This is a <strong>subjective editorial countdown</strong>, not a calculated accuracy leaderboard: comparable career-long prediction records are not publicly available for all seven. We distinguish forecasting the exact team and draft slot from identifying a prospect's eventual NFL ability. One rank-specific editorial illustration appears under every analyst so readers have seven functional in-story media items, while directly relevant source videos and reports are linked in the discussion.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>This is a <strong>subjective editorial countdown</strong>, not a calculated accuracy leaderboard: comparable career-long prediction records are not publicly available for all seven. We distinguish forecasting the exact team and draft slot from identifying a prospect's eventual NFL ability. A relevant, playable-format YouTube video is embedded under each analyst's ranking; the clips illustrate the analysts' actual scouting work, while source reports remain linked in the discussion.</p><!-- /wp:paragraph -->
 
 <!-- wp:heading --><h2 class="wp-block-heading">How the evaluators were ranked</h2><!-- /wp:heading -->
 
@@ -23,7 +22,15 @@ ranking: ["7 Bucky Brooks", "6 Dane Brugler", "5 Todd McShay", "4 Daniel Jeremia
 
 <!-- wp:heading --><h2 class="wp-block-heading">7. Bucky Brooks</h2><!-- /wp:heading -->
 
-<!-- wp:image {"id":27799,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/ranking-the-rankers-e28094-bucky-editorial-illustration.jpg" alt="AI-generated editorial illustration depicting NFL Draft evaluator Bucky Brooks at work" class="wp-image-27799" /><figcaption class="wp-element-caption"><em>Bucky Brooks — AI-generated editorial illustration, not a documentary photograph.</em></figcaption></figure><!-- /wp:image -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=PPq1HhFEky4","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=PPq1HhFEky4
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>Bucky Brooks presents his 2026 top-five prospects by position alongside Daniel Jeremiah on the NFL's Move the Sticks (March 20, 2026).</em></p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Bucky Brooks is one of the few prominent draft broadcasters whose analysis is grounded in his own front-office scouting work. His time evaluating players for NFL teams helps him explain how size, movement, football intelligence and positional fit become real roster decisions. That does not guarantee perfect predictions, but it gives his audience a useful view inside an evaluation process that usually stays private. His long-running collaboration with Daniel Jeremiah on <em>Move the Sticks</em> also shows how reasonable scouts can disagree about what matters most.</p><!-- /wp:paragraph -->
 
@@ -31,7 +38,15 @@ ranking: ["7 Bucky Brooks", "6 Dane Brugler", "5 Todd McShay", "4 Daniel Jeremia
 
 <!-- wp:heading --><h2 class="wp-block-heading">6. Dane Brugler</h2><!-- /wp:heading -->
 
-<!-- wp:image {"id":27800,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/ranking-the-rankers-e28094-dane-editorial-illustration.png" alt="AI-generated editorial illustration depicting NFL Draft evaluator Dane Brugler at work" class="wp-image-27800" /><figcaption class="wp-element-caption"><em>Dane Brugler — AI-generated editorial illustration, not a documentary photograph.</em></figcaption></figure><!-- /wp:image -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=ODKrDS_LhhI","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=ODKrDS_LhhI
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>Dane Brugler explains how he constructs The Beast draft guide and previews 2027 prospects in his April 28, 2026 interview with You Better You Bet.</em></p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Dane Brugler's distinguishing contribution is the sheer depth of <em>The Beast</em>, his annual NFL Draft reference guide for The Athletic. The 2026 edition contained 402 player profiles, 2,700 rankings and approximately 45,000 verified measurements, according to a Minnesota Vikings review of the guide. Those figures put substance behind his reputation for exhaustive preparation. More importantly, a comprehensive prospect directory makes the draft understandable beyond the first-round celebrity names.</p><!-- /wp:paragraph -->
 
@@ -39,7 +54,15 @@ ranking: ["7 Bucky Brooks", "6 Dane Brugler", "5 Todd McShay", "4 Daniel Jeremia
 
 <!-- wp:heading --><h2 class="wp-block-heading">5. Todd McShay</h2><!-- /wp:heading -->
 
-<!-- wp:image {"id":27801,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/ranking-the-rankers-e28094-todd-editorial-illustration.png" alt="AI-generated editorial illustration depicting NFL Draft evaluator Todd McShay at work" class="wp-image-27801" /><figcaption class="wp-element-caption"><em>Todd McShay — AI-generated editorial illustration, not a documentary photograph.</em></figcaption></figure><!-- /wp:image -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=MFCC8VLKCb4","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=MFCC8VLKCb4
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>Todd McShay evaluates the 2026 edge and tight end groups, then previews the Senior Bowl with Drew Fabianich on The McShay Show (January 22, 2026).</em></p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Todd McShay brought a sustained counterweight to ESPN's Mel Kiper Jr., regularly separating his own film judgments from more established draft consensus. His evaluations now continue through The Ringer's <em>McShay Draft Room</em>, where rankings, reporting and longer scouting breakdowns sit together. That continuity matters: draft analysts should show how a view changes between September and April, not merely publish a final list.</p><!-- /wp:paragraph -->
 
@@ -47,7 +70,15 @@ ranking: ["7 Bucky Brooks", "6 Dane Brugler", "5 Todd McShay", "4 Daniel Jeremia
 
 <!-- wp:heading --><h2 class="wp-block-heading">4. Daniel Jeremiah</h2><!-- /wp:heading -->
 
-<!-- wp:image {"id":27802,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/ranking-the-rankers-e28094-daniel-editorial-illustration.png" alt="AI-generated editorial illustration depicting NFL Draft evaluator Daniel Jeremiah at work" class="wp-image-27802" /><figcaption class="wp-element-caption"><em>Daniel Jeremiah — AI-generated editorial illustration, not a documentary photograph.</em></figcaption></figure><!-- /wp:image -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=NBHipQTavBs","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=NBHipQTavBs
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>Daniel Jeremiah and Bucky Brooks explain their non-negotiable positional scouting traits in the NFL's Move the Sticks (March 30, 2026).</em></p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Daniel Jeremiah successfully carried NFL Network's draft franchise into the era after Mike Mayock. A former NFL scout, he can explain both the trait on tape and the circumstances that might make a team covet it. His best segments discuss roles: which offensive system benefits a quarterback, whether a defender can execute a coverage assignment, and how positional value changes a board. That makes his analysis useful even when an eventual selection differs from his prediction.</p><!-- /wp:paragraph -->
 
@@ -55,7 +86,15 @@ ranking: ["7 Bucky Brooks", "6 Dane Brugler", "5 Todd McShay", "4 Daniel Jeremia
 
 <!-- wp:heading --><h2 class="wp-block-heading">3. Mike Mayock</h2><!-- /wp:heading -->
 
-<!-- wp:image {"id":27803,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/ranking-the-rankers-e28094-mayock-editorial-illustration.png" alt="AI-generated editorial illustration depicting NFL Draft evaluator Mike Mayock at work" class="wp-image-27803" /><figcaption class="wp-element-caption"><em>Mike Mayock — AI-generated editorial illustration, not a documentary photograph.</em></figcaption></figure><!-- /wp:image -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=ZrUhgEh6KOc","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=ZrUhgEh6KOc
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>Mike Mayock discusses scouting traits, draft-board decisions, and his 2026 wide-receiver evaluations with Steve Smith Sr. (April 17, 2026).</em></p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Mike Mayock is the longtime NFL Network draft analyst many viewers remember from <em>Path to the Draft</em>, NFL Scouting Combine coverage and draft-night broadcasts. He joined NFL Network in 2004 and remained one of its most recognizable scouting voices until the Raiders named him general manager on December 31, 2018. Mayock could translate a defensive back's technique, a lineman's leverage or a quarterback's field vision without reducing every prospect to a stopwatch measurement.</p><!-- /wp:paragraph -->
 
@@ -63,7 +102,15 @@ ranking: ["7 Bucky Brooks", "6 Dane Brugler", "5 Todd McShay", "4 Daniel Jeremia
 
 <!-- wp:heading --><h2 class="wp-block-heading">2. Mel Kiper Jr.</h2><!-- /wp:heading -->
 
-<!-- wp:image {"id":27804,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/ranking-the-rankers-e28094-mel-editorial-illustration.png" alt="AI-generated editorial illustration depicting NFL Draft evaluator Mel Kiper Jr. at work" class="wp-image-27804" /><figcaption class="wp-element-caption"><em>Mel Kiper Jr. — AI-generated editorial illustration, not a documentary photograph.</em></figcaption></figure><!-- /wp:image -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=x48C1BRc_ZU","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=x48C1BRc_ZU
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>Mel Kiper Jr. explains his leading 2026 NFL Draft prospects during ESPN's Get Up (February 24, 2026).</em></p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Mel Kiper Jr. almost defines the profession. ESPN says he has worked its annual NFL Draft coverage since 1984, and his decades of big boards, reports and live reaction helped make prospect scouting a mainstream sports-media business. The annual draft became a debate that fans could follow month after month, not just a list of names announced at a podium. Others may have better individual evaluations, but few analysts have shaped the field as extensively.</p><!-- /wp:paragraph -->
 
@@ -71,7 +118,15 @@ ranking: ["7 Bucky Brooks", "6 Dane Brugler", "5 Todd McShay", "4 Daniel Jeremia
 
 <!-- wp:heading --><h2 class="wp-block-heading">1. Chris Simms</h2><!-- /wp:heading -->
 
-<!-- wp:image {"id":27805,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/ranking-the-rankers-e28094-simms-editorial-illustration.png" alt="AI-generated editorial illustration depicting NFL Draft evaluator Chris Simms at work" class="wp-image-27805" /><figcaption class="wp-element-caption"><em>Chris Simms — AI-generated editorial illustration, not a documentary photograph.</em></figcaption></figure><!-- /wp:image -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=hz_vtwPOy5I","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=hz_vtwPOy5I
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>The Dan Patrick Show looks back at Chris Simms's 2018 quarterback draft evaluations, including his early support for Lamar Jackson (November 11, 2019). The original March 2018 assessment is linked in the article.</em></p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph --><p>Chris Simms takes our No. 1 spot for one especially consequential act of independent judgment. On March 12, 2018, Bleacher Report published his evaluation of Lamar Jackson as the best quarterback prospect in that draft class. Jackson had won the Heisman Trophy and produced exceptional passing and rushing totals at Louisville, but still encountered a pre-draft conversation in which some evaluators questioned whether he should remain a quarterback at all. Simms identified the player rather than forcing him into that preconceived box.</p><!-- /wp:paragraph -->
 
