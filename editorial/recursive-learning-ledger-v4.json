@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 11,
+  "ledger_revision": 12,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -1511,6 +1511,117 @@
         "external browser failed to load page",
         "full individual link HTTP and public mobile layout not independently tested",
         "reader analytics and thumbs-up data not accessible"
+      ]
+    },
+    {
+      "post_id": 28240,
+      "title": "Renesas RL78/G21 Cuts MCU Run Current to 34 µA/MHz for Smart Appliances",
+      "publication_date": "2026-11-01",
+      "category": "Semiconductors",
+      "url": "https://bitcoinversus.tech/2026/11/01/renesas-rl78-g21-34-microamps-per-mhz-smart-appliance-chip-2026/",
+      "qa_record": "qa/ledger/2026-11-01-28240-renesas-rl78g21-recursive-v4.md",
+      "original_sources": [
+        {
+          "url": "https://www.renesas.com/en/about/newsroom/renesas-expands-rl78-family-ultra-low-power-16-bit-rl78g21-mcu-optimized-smart-appliance-system",
+          "verification": "official press release Oct 28 2026"
+        },
+        {
+          "url": "https://www.renesas.com/en/products/rl78-g21",
+          "verification": "official G21 specs and availability"
+        },
+        {
+          "url": "https://www.renesas.com/en/design-resources/boards-kits/fpb-rl78g21",
+          "verification": "official actual G21 board model and product context"
+        }
+      ],
+      "duplicate_checks": {
+        "wordpress_queries": [
+          "RL78/G21",
+          "RL78 G21",
+          "Renesas 16-bit appliance",
+          "34 µA/MHz",
+          "RL78/G23 touch"
+        ],
+        "github_queries": [
+          "RL78/G21",
+          "PolarFire EtherCAT TSN"
+        ],
+        "result": "No G21-specific duplicate found; a Microchip FPGA news candidate was rejected as existing post 27364. Repeat check of live WordPress and GitHub ledger immediately before publishing was negative."
+      },
+      "article_length_words_excluding_footer_and_captions": 378,
+      "internal_link_count": 4,
+      "media": {
+        "in_story_count": 3,
+        "chart_count": 1,
+        "items": [
+          {
+            "id": 28236,
+            "type": "Internet-sourced official Renesas 44-pin LQFP package rendering",
+            "source": "https://www.renesas.com/sites/default/files/styles/cards_image/public/media/images/lqfp-44pin-pkg11807-chip.png?itok=0mCU2NSN",
+            "status": "native WordPress image figure verified; clearly package illustration"
+          },
+          {
+            "id": 28235,
+            "type": "original Renesas-source grouped bar chart for separate RL78/G23 touch variants",
+            "source": "https://www.renesas.com/en/about/newsroom/renesas-expands-rl78-family-ultra-low-power-16-bit-rl78g21-mcu-optimized-smart-appliance-system",
+            "data": {
+              "pins_44": {
+                "old": 14,
+                "new": 24
+              },
+              "pins_48": {
+                "old": 16,
+                "new": 25
+              }
+            },
+            "status": "rendered WordPress image verified, not G21 data"
+          },
+          {
+            "id": 28237,
+            "type": "internet-sourced official Renesas RL78/G24 prototype board (related family)",
+            "source": "https://www.renesas.com/sites/default/files/rl78g24-fpb-board.jpg",
+            "status": "rendered WordPress image verified, explicit NOT G21 caption"
+          }
+        ],
+        "featured_media_id": 28234,
+        "featured_width": 1200,
+        "featured_height": 630,
+        "featured_style": "product-centered realistic editorial conceptual illustration of MCU board and appliances, no people",
+        "video_embeds": 0
+      },
+      "chart_policy": "one chart; two official internet-sourced device images; avoids unsupported chip-to-chip current bar chart",
+      "footers_and_qa": {
+        "wordpress_status": "publish confirmed by update and fresh get(view)",
+        "rendered_images_and_footer": "images 28236,28235,28237 plus original QR 24043 and disclaimer confirmed",
+        "public_browser": "browser internal access error; desktop/mobile unverified",
+        "quality_score": 91,
+        "target": 95
+      },
+      "evidence_classes": {
+        "verified_fact": [
+          "Renesas Oct 28 specification, pricing and family distinctions",
+          "WordPress published article and media",
+          "G21 product/board source"
+        ],
+        "user_preference": [
+          "one chart max",
+          "Internet-sourced supporting images",
+          "technology imagery over people"
+        ],
+        "measured_result": [],
+        "hypothesis": [
+          "family-specific caption and grouping improve understanding"
+        ]
+      },
+      "improvements_to_carry_forward": [
+        "live and GitHub duplicate checks immediately prepublish",
+        "prefer exact official model photos rather than related models where available",
+        "clearly separate manufacturer benchmarks from measured field performance and external browser check"
+      ],
+      "remaining_issues": [
+        "independent reader browser failed",
+        "only a related-model development board image available, explicitly disclosed",
+        "no actual chip energy test or reader engagement measurement"
       ]
     }
   ]
