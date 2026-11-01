@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 10,
+  "ledger_revision": 11,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -1404,6 +1404,113 @@
         "independent desktop/mobile browser inspection unavailable",
         "full external link status audit not completed",
         "no user-specific thumbs-up/engagement feed accessible"
+      ]
+    },
+    {
+      "post_id": 28224,
+      "title": "What Is a Thermal Pad? Thermal Pad vs. Thermal Paste Explained",
+      "publication_date": "2026-11-01",
+      "category": "Tech Docs / ASICs & Hardware",
+      "url": "https://bitcoinversus.tech/2026/11/01/what-is-thermal-pad-vs-thermal-paste-beginners-guide/",
+      "qa_record": "qa/ledger/2026-11-01-28224-thermal-pad-vs-paste-evergreen-v4.md",
+      "original_sources": [
+        {
+          "url": "https://www.laird.com/products/thermal-interface-materials/gap-fillers",
+          "verification": "manufacturer reference, thermal pads and gap fillers"
+        },
+        {
+          "url": "https://docs.amd.com/r/en-US/xapp1377-heatsinks-thermal/Types-of-TIM-Material",
+          "verification": "AMD primary engineering design guidance"
+        },
+        {
+          "url": "https://next.henkel-adhesives.com/us/en/applications/thermal-management-materials/thermal-gap-pad-materials.html",
+          "verification": "manufacturer gap-pad product/application documentation"
+        }
+      ],
+      "duplicate_checks": {
+        "wordpress_queries": [
+          "thermal pad",
+          "thermal paste",
+          "What Is a Thermal Pad",
+          "Thermal Pad vs Thermal Paste",
+          "thermal gap filler"
+        ],
+        "github_queries": [
+          "thermal pad",
+          "thermal pad vs thermal paste"
+        ],
+        "result": "No exact focused explainer found. Related CPU TIM installation tutorials exist and were linked."
+      },
+      "article_length_words_excluding_footer_and_captions": 356,
+      "internal_link_count": 4,
+      "media": {
+        "in_story_count": 3,
+        "chart_count": 0,
+        "items": [
+          {
+            "id": 28214,
+            "type": "licensed real thermal pad photograph",
+            "source": "https://commons.wikimedia.org/wiki/File:Waermeleitpad01.jpg",
+            "license": "CC BY-SA 2.0 Germany",
+            "creator": "Rainer Knäpper",
+            "status": "native WordPress figure confirmed; public browser unavailable"
+          },
+          {
+            "id": 28217,
+            "type": "licensed real thermal paste photo",
+            "source": "https://commons.wikimedia.org/wiki/File:Thermal_Paste_9648.jpg",
+            "license": "CC BY 4.0",
+            "creator": "Ashley Pomeroy",
+            "status": "native WordPress figure confirmed"
+          },
+          {
+            "id": 28218,
+            "type": "licensed real cooling hardware photo",
+            "source": "https://commons.wikimedia.org/wiki/File:Computer_heatsink_and_fan.jpg",
+            "license": "CC BY 3.0",
+            "creator": "Douglas Paul Perkins",
+            "status": "native WordPress figure confirmed"
+          }
+        ],
+        "featured_media_id": 28212,
+        "featured_width": 1200,
+        "featured_height": 630,
+        "featured_style": "original conceptual close-up of cooling components; no people or text",
+        "video_embeds": 0
+      },
+      "chart_policy": "No chart needed for nonnumeric practical materials comparison (one maximum).",
+      "footers_and_qa": {
+        "wordpress_status": "publish confirmed by update and independent view",
+        "rendered_images_and_footer": "three images plus original 5000-sat QR and disclaimer confirmed",
+        "public_browser": "internal access error, desktop/mobile not independently checked",
+        "quality_score": 93,
+        "target": 95
+      },
+      "evidence_classes": {
+        "verified_fact": [
+          "Laird, AMD, Henkel documentation",
+          "image license/source pages",
+          "WordPress post published and media IDs"
+        ],
+        "user_preference": [
+          "easy evergreen educational articles",
+          "product imagery rather than people",
+          "one chart maximum; other media from sourced internet"
+        ],
+        "measured_result": [],
+        "hypothesis": [
+          "practical decision-making explainer may help readers avoid swapping pad for paste incorrectly"
+        ]
+      },
+      "improvements_to_carry_forward": [
+        "differentiate concepts from existing CPU assembly tutorials",
+        "source and attribute authentic product photos with date and license",
+        "treat WordPress rendered HTML and public-browser mobile tests as separate checks"
+      ],
+      "remaining_issues": [
+        "external browser failed to load page",
+        "full individual link HTTP and public mobile layout not independently tested",
+        "reader analytics and thumbs-up data not accessible"
       ]
     }
   ]
