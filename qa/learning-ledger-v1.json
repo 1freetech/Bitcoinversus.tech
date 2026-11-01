@@ -1125,6 +1125,308 @@
         "status": "not_accessible",
         "data": null
       }
+    },
+    {
+      "post_id": 28173,
+      "article_title": "NASA Seeks Commercial Hubble Reboost Plans Before 2032",
+      "publication_date": "2026-11-01",
+      "category_names": [
+        "Space",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        174,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/01/nasa-hubble-commercial-reboost-600km-2032-request-industry-2026/",
+      "archive_path": "archive/2026/11/28173-nasa-hubble-commercial-reboost-options-2032.md",
+      "archive_blob_sha": "0e569b2a1312587aeea76d1951e12563406ae7ea",
+      "verified_archived_repositories": [
+        "1freetech/Bitcoinversus.tech",
+        "1freetech/opencert.tech",
+        "1freetech/techcert"
+      ],
+      "body_reporting_words": 404,
+      "publication_status": {
+        "classification": "verified_fact",
+        "wordpress_status": "publish",
+        "date": "2026-11-01T15:43:03",
+        "check": "WordPress posts.update returned publish and canonical permalink. Independently read published posts.get context=edit and context=view; all 16 structural, SEO, media and footer checks passed. External web.open public URL failed."
+      },
+      "sources": [
+        {
+          "type": "primary NASA mission announcement",
+          "url": "https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/",
+          "date": "2026-10-30",
+          "verified": "Read NASA announcement directly; Oct 29 RFI, options, Nov 30 3 pm EST deadline, 2032 mission timing and 2033–34 unboosted reentry forecast."
+        },
+        {
+          "type": "primary federal RFI notice",
+          "url": "https://sam.gov/workspace/contract/opp/2ecd9dbf4a3946b4968cc0ebaa75d0b3/view",
+          "date": "2026-10-29",
+          "verified": "Official SAM URL was linked from NASA. Direct SAM webpage fetch contained no readable text in the tool; exact notice 80GSFC27RFIHSTS, 600 km option and July 2026 cumulative reentry probabilities crosschecked against GovTribe and SAM-derived listings."
+        },
+        {
+          "type": "verbatim secondary federal notice reproduction",
+          "url": "https://govtribe.com/opportunity/federal-contract-opportunity/hubble-space-telescope-hst-servicing-80gsfc27rfihsts",
+          "date": "2026-10-29",
+          "verified": "Public listing includes the NASA RFI text, reboost to at least 600km, contractor resources, by-2032 aim, July 2026 10% by Sep 2032 and 50% by Dec 2033 modeling."
+        },
+        {
+          "type": "primary NASA history",
+          "url": "https://science.nasa.gov/mission/hubble/overview/the-history-of-hubble/",
+          "verified": "NASA's official history confirms the telescope's 1990 launch, servicing missions and technical aging."
+        },
+        {
+          "type": "primary NASA older study",
+          "url": "https://science.nasa.gov/missions/hubble/nasa-spacex-to-study-hubble-telescope-reboost-possibility/",
+          "date": "2022-12-22",
+          "verified": "NASA prior commercial reboost study did not commit funding or select a mission."
+        }
+      ],
+      "reported_fact_status": [
+        {
+          "classification": "verified_fact",
+          "claim": "NASA issued October 29 2026 industry request for Hubble commercial reboost, servicing, or disposal options",
+          "source": "NASA official October 30 announcement"
+        },
+        {
+          "classification": "verified_fact",
+          "claim": "RFI responses due 3 p.m. Eastern Nov 30 2026; NASA considers by-2032 timing",
+          "source": "NASA primary announcement; due time is EST."
+        },
+        {
+          "classification": "engineering_requirement_in_republished_RFI",
+          "claim": "Potential capture-and-reboost option aims for at least 600km",
+          "source": "NASA RFI mirrored verbatim on GovTribe and federal solicitation listings; direct SAM text inaccessible."
+        },
+        {
+          "classification": "modeled_forecast_not_event",
+          "claim": "10% cumulative chance of natural reentry by Sep 2032 and 50% by Dec 2033 absent intervention",
+          "source": "NASA July 2026 lifetime analysis as reproduced in the solicitation."
+        },
+        {
+          "classification": "modeled_forecast_not_event",
+          "claim": "Unboosted Hubble reentry projected 2033–34 by NASA",
+          "source": "NASA official October 30 announcement."
+        },
+        {
+          "classification": "NOT_confirmed",
+          "claim": "Approved commercial servicing contract, selected contractor, funded launch date, confirmed 600 km new orbit",
+          "evidence": "None announced; article states the RFI is NOT a procurement award."
+        }
+      ],
+      "duplicate_check": {
+        "classification": "verified_fact",
+        "wordpress_queries": [
+          "Hubble servicing",
+          "Hubble reboost",
+          "Hubble Space Telescope"
+        ],
+        "github_queries": [
+          "Hubble reboost",
+          "Hubble servicing"
+        ],
+        "result": "No article about the Oct 29 2026 Hubble commercial-servicing RFI in accessible archive; existing WordPress stories about astronaut Story Musgrave, Kathryn Sullivan and space chips were related background, not this event.",
+        "archive_scope_note": "Keyword/semantic discovery checked accessible WordPress and GitHub; not a mathematical exhaustive proof of every 2023–present file."
+      },
+      "internal_links": {
+        "count": 5,
+        "status": "verified published Gutenberg href markup",
+        "topics": [
+          "ISRO NVS-03 orbit raising",
+          "Story Musgrave Hubble servicing astronaut",
+          "Kathryn Sullivan shuttle era",
+          "space-rated chips and aging electronics",
+          "NASA commercial post-ISS space stations"
+        ],
+        "outbound_destination_checks": "WordPress archive names/URLs known; individual links not all loaded in independent browser."
+      },
+      "in_story_media": {
+        "count": 5,
+        "types": [
+          {
+            "type": "original NASA photograph",
+            "wordpress_media_id": 28168,
+            "date": "1997-02-19",
+            "source": "https://commons.wikimedia.org/wiki/File:Hubble_Redeployment_-_GPN-2000-001066.jpg",
+            "license": "NASA public domain",
+            "caption_after": true
+          },
+          {
+            "type": "official NASA Goddard YouTube video",
+            "youtube_id": "CQ8MXH2jlWA",
+            "published": "2024-05-10",
+            "topic": "Hubble last shuttle servicing in 2009",
+            "publisher_identity_verified": true,
+            "postpublication_iframe_verified": true,
+            "caption_after": true,
+            "independent_actual_playback_verified": false
+          },
+          {
+            "type": "NASA lifetime forecast source chart",
+            "wordpress_media_id": 28170,
+            "dimensions": "1200x600",
+            "basis": "NASA July 2026 RFI analysis without intervention",
+            "values": "10% cumulative by Sep 2032; 50% cumulative by Dec 2033",
+            "caption_after": true
+          },
+          {
+            "type": "original NASA photograph",
+            "wordpress_media_id": 28169,
+            "date": "1993-12-09",
+            "source": "https://commons.wikimedia.org/wiki/File:Hubble_First_Servicing_EVA_-_GPN-2000-001085.jpg",
+            "license": "NASA public domain",
+            "caption_after": true
+          },
+          {
+            "type": "official NASA Goddard YouTube video",
+            "youtube_id": "2X0Hghl3SYk",
+            "published": "2020-12-02",
+            "topic": "Hubble 1993 optical servicing",
+            "publisher_identity_verified": true,
+            "postpublication_iframe_verified": true,
+            "caption_after": true,
+            "independent_actual_playback_verified": false
+          }
+        ],
+        "player_verification": "Both publisher video IDs checked against NASA Goddard listings; WordPress draft and published rendered HTML each have correct playable-player iframe elements and immediate caption paragraphs.",
+        "actual_playback_verified": false,
+        "spacing_requirement_met": true
+      },
+      "featured_cover": {
+        "wordpress_media_id": 28171,
+        "dimensions": "1200x630",
+        "style": "photo/anime blend",
+        "adult_professional": "fictional older Black male spacecraft rendezvous engineer aged 50s–60s",
+        "attached_as_featured_media": true,
+        "alt_text_present": true,
+        "artwork_is_conceptual_not_documentary": true,
+        "graphical_visual_review": "not performed; image URL inaccessible to external browser",
+        "previous_style": "wordless comic"
+      },
+      "chart": {
+        "media_id": 28170,
+        "style": "horizontal two-date probability comparison",
+        "unit": "cumulative chance of Hubble natural reentry (%)",
+        "dates": [
+          "September 2032",
+          "December 2033"
+        ],
+        "values_pct": [
+          10,
+          50
+        ],
+        "scope": "Without reboost or servicing; July 2026 model, not actual reentry dates",
+        "source": "NASA RFI 80GSFC27RFIHSTS, as reproduced by GovTribe",
+        "note": "Uses same cumulative probability metric on same 0–100% axis; does not extrapolate or make 2034 certainty claim. Chart pixel-level inspection unavailable."
+      },
+      "footers": {
+        "exact_approved_editor_note": true,
+        "original_qr_wordpress_media_id": 24043,
+        "donation_amount_sats": 5000,
+        "disclaimer_present": true,
+        "retired_promo_absent": true,
+        "order": "Editor's Note → QR → scan/address instructions → disclaimer"
+      },
+      "corrections_and_defects": [
+        {
+          "classification": "verified_fact",
+          "change": "No user-facing error found during WordPress prepublication or postpublication structural QA; 19 draft and 16 published automated checks passed."
+        },
+        {
+          "classification": "verified_fact",
+          "change": "TechCert archive first create action was blocked by tool safety; successfully retried by fetching the already archived exact source. All three repositories returned the same blob SHA."
+        },
+        {
+          "classification": "unverified",
+          "change": "No actual video player-start, complete-watch or desktop/mobile screenshot test; external webpage fetch blocked."
+        },
+        {
+          "classification": "unverified",
+          "change": "Official SAM.gov solicitation full body could not be read directly; exact RFI detail and probability claims checked in faithful public copies."
+        }
+      ],
+      "prior_learning_applied": [
+        {
+          "from_post_id": 28138,
+          "priority": 1,
+          "status": "partially_applied",
+          "evidence": "Two verified NASA Goddard IDs and published YouTube iframe sources checked; actual playback inaccessible and explicitly marked untested."
+        },
+        {
+          "from_post_id": 28138,
+          "priority": 2,
+          "status": "partially_applied",
+          "evidence": "Correct 1200x630 cover and chart dimensions confirmed through WordPress metadata; unable to pixel-inspect files on a browser/device."
+        },
+        {
+          "from_post_id": 28138,
+          "priority": 3,
+          "status": "applied",
+          "evidence": "NASA RFI and lifetime probabilities classified as scenarios, forecasts and industry-information request, not a funded mission or delivered orbit."
+        }
+      ],
+      "quality_score": {
+        "target": 95,
+        "achieved": 94,
+        "met_target": false,
+        "breakdown": {
+          "Accuracy and source verification": 24,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 15,
+          "Working embeds and media relevance": 12,
+          "Cover and visualization quality": 9,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 9
+        },
+        "gate_status": {
+          "accuracy": "PASS_WITH_OFFICIAL_RFI_DIRECT_ACCESS_LIMITATION",
+          "duplicate_prevention": "PASS_WORDPRESS_AND_GITHUB_SEARCH",
+          "functional_media": "PUBLISHED_IFRAME_MARKUP_VERIFIED_BUT_VIDEO_PLAYBACK_UNTESTED",
+          "all_mandatory_gates_fully_proven": false
+        },
+        "reviewer_note": "94/100 evidence-based editorial assessment. Despite complete WordPress structure checks, actual end-to-end video playback remains inaccessible and official SAM notice detail crosschecked through republication. Do not report target 95 reached or playback fully proved."
+      },
+      "three_improvements_to_carry_forward": [
+        {
+          "priority": 1,
+          "classification": "action",
+          "instruction": "Before declaring a video 'working', run a real browser player-start test on desktop and mobile when available; otherwise explicitly report that iframe presence is not playback.",
+          "verification_on_next_story": "Record tested player ID, playback response, timestamp and viewport or unavailable."
+        },
+        {
+          "priority": 2,
+          "classification": "action",
+          "instruction": "Improve access to primary government technical documents: independently retrieve the full SAM.gov RFI/agency annex before publishing exact probability and altitude details; if inaccessible, cite NASA statement and identify the reproduced solicitation as such.",
+          "verification_on_next_story": "Save primary paragraph/page evidence and note provenance."
+        },
+        {
+          "priority": 3,
+          "classification": "action",
+          "instruction": "For a following science story, pixel-inspect sourced photos, chart axes and generated anatomy when graphical tools permit; preserve same-blob GitHub triple archive validation and footer QR regression.",
+          "verification_on_next_story": "Capture visual QA evidence plus identical Git blob SHAs or flag pending issue."
+        }
+      ],
+      "external_verification_limitations": [
+        "External web tool could not fetch the public WordPress permalink; WordPress published edit/view checks confirm status and rendered markup.",
+        "NASA's original SAM.gov notice did not expose readable body via browsing; the Oct 29 NASA release and independently mirrored notice support cited specifics.",
+        "Real video start/playback and desktop/mobile viewport checks not performed.",
+        "Featured image anatomy and chart rendered pixels not independently visually inspected.",
+        "Full thumbs-up/down history, traffic analytics, social engagement not accessible."
+      ],
+      "user_rating_feedback": {
+        "classification": "not_accessible",
+        "status": "not_accessible",
+        "data": null
+      },
+      "engagement_metrics": {
+        "classification": "not_accessible",
+        "status": "not_accessible",
+        "data": null
+      }
     }
   ],
   "future_article_template_required_fields": [
