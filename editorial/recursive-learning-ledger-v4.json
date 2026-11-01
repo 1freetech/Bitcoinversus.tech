@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 7,
+  "ledger_revision": 8,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -1175,6 +1175,118 @@
         "Not all hyperlinks independently HTTP-checked"
       ],
       "qa_record": "qa/ledger/2026-11-01-28147-antminer-s21-break-even-recursive-v4.md"
+    },
+    {
+      "post_id": 28183,
+      "title": "Bitcoin Transaction Fees Stayed Below 1% of Miner Rewards for Nine Days",
+      "publication_date": "2026-11-01",
+      "category": "Bitcoin Mining",
+      "url": "https://bitcoinversus.tech/2026/11/01/bitcoin-mining-transaction-fees-under-one-percent-october-november-2026/",
+      "qa_record": "qa/ledger/2026-11-01-28183-bitcoin-miner-fee-share-recursive-v4.md",
+      "original_sources": [
+        {
+          "url": "https://cloudminecrypto.com/data",
+          "role": "October 24-November 1 daily miner fee-share table, CC BY 4.0",
+          "verification": "verified source table, Nov 1 provisional"
+        },
+        {
+          "url": "https://btcmining.markets/insights/market-pulse/weekly/2026-10-30/",
+          "role": "independent node-based corroboration, different fee ratio denominator",
+          "verification": "verified weekly figures"
+        }
+      ],
+      "duplicate_checks": {
+        "wordpress_searches": [
+          "fee share",
+          "0.85%",
+          "0.54%",
+          "transaction fees below 1%",
+          "miner fee share"
+        ],
+        "github_searches": [
+          "0.85% October 30 miner fees",
+          "transaction fees under one percent"
+        ],
+        "result": "No exact mining-fee-share nine-day article found in searched archive. Initial S21 break-even article had collided with separate published post 28147; duplicate post 28164 reverted to draft after publication and verified. Recheck central ledger immediately before publication in future."
+      },
+      "article_length_words_excluding_footer_and_captions": 321,
+      "internal_link_count": 5,
+      "media": {
+        "in_story_count": 3,
+        "items": [
+          {
+            "id": 28180,
+            "type": "CC BY 4.0 sourced daily bar chart",
+            "status": "WordPress HTML figure verified; external visual loading not verified"
+          },
+          {
+            "id": 28182,
+            "type": "original explanatory block-reward schematic",
+            "status": "WordPress HTML figure verified"
+          },
+          {
+            "id": 28181,
+            "type": "sourced proportional chart of October 30 fee share",
+            "status": "WordPress HTML figure verified"
+          }
+        ],
+        "featured_media_id": 28157,
+        "featured_width": 1200,
+        "featured_height": 630,
+        "featured_style": "realistic original equipment illustration, no people",
+        "video_embeds": 0
+      },
+      "data_visualization": {
+        "observations": [
+          0.44,
+          0.38,
+          0.49,
+          0.46,
+          0.53,
+          0.62,
+          0.85,
+          0.47,
+          0.46
+        ],
+        "unit": "percent of total miner rewards",
+        "window": "2026-10-24 to 2026-11-01 inclusive",
+        "provisional_last_day": true,
+        "nine_day_unweighted_mean_percent": 0.5222,
+        "peak_date": "2026-10-30",
+        "peak_percent": 0.85
+      },
+      "footers_and_qa": {
+        "wordpress_status": "publish verified by posts.update and posts.get(view)",
+        "rendered_images_and_footer": "verified native figures plus QR and disclaimer",
+        "public_browser": "failed internal access; visual desktop/mobile unverified",
+        "score": 92,
+        "target": 95
+      },
+      "evidence_classes": {
+        "verified_fact": [
+          "source data and arithmetic",
+          "WordPress publication",
+          "native image render output",
+          "duplicate draft restored after collision"
+        ],
+        "user_preference": [
+          "mining hardware imagery, not people"
+        ],
+        "measured_result": [],
+        "hypothesis": [
+          "explicit denominator labels reduce reader confusion"
+        ]
+      },
+      "improvements_to_carry_forward": [
+        "recheck new WordPress posts AND central ledger immediately before publishing",
+        "explicitly distinguish percent-of-total-reward from percent-of-subsidy and data windows",
+        "document external public rendering as unverified unless independently confirmed"
+      ],
+      "remaining_issues": [
+        "public-page browser visual inspection blocked",
+        "actual image delivery on reader devices not independently tested",
+        "engagement/feedback inaccessible"
+      ]
     }
   ]
 }
