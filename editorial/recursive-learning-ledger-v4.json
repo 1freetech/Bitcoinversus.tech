@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 12,
+  "ledger_revision": 13,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -1622,6 +1622,144 @@
         "independent reader browser failed",
         "only a related-model development board image available, explicitly disclosed",
         "no actual chip energy test or reader engagement measurement"
+      ]
+    },
+    {
+      "post_id": 28257,
+      "title": "Dream-1 Robot AI Controls New Arms Through a $3-an-Hour API",
+      "publication_date": "2026-11-01",
+      "category": "AI / AI Hardware",
+      "url": "https://bitcoinversus.tech/2026/11/01/dream-labs-dream-1-robot-ai-world-action-model-3-dollars-hour-2026/",
+      "qa_record": "qa/ledger/2026-11-01-28257-dream1-robot-ai-recursive-v4.md",
+      "original_sources": [
+        {
+          "url": "https://dreamlabs.ai/research/dream-1/",
+          "role": "primary research launch and price, $90M seed, demonstrated robots, limitations",
+          "verification": "reviewed company launch page"
+        },
+        {
+          "url": "https://robocurve.org/",
+          "role": "independent RoboDojo-RC Tier 1 benchmark of model progress",
+          "verification": "verified independent dataset and test scope"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Innorobo_2015_-_Rethink_Robotics_-_Baxter.JPG",
+          "role": "real robot photograph and CC BY-SA 4.0",
+          "verification": "license author date confirmed"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:PR2_at_Maker_Faire.jpg",
+          "role": "real robot photograph and CC BY 2.0",
+          "verification": "license author date confirmed"
+        }
+      ],
+      "duplicate_checks": {
+        "wordpress_queries": [
+          "Dream-1",
+          "Dream Labs robot",
+          "robotics API",
+          "robot intelligence",
+          "robot foundation model"
+        ],
+        "github_queries": [
+          "Dream-1",
+          "PsiQuantum optical circuit switching"
+        ],
+        "result": "No Dream-1 news duplicate. PsiQuantum optical switch news candidate rejected as existing published post 27021; BrainChip AKD1500 already posted. Fresh WordPress and learning ledger check immediately prior to publish negative."
+      },
+      "article_length_words_excluding_footer_and_captions": 364,
+      "internal_link_count": 5,
+      "media": {
+        "in_story_count": 3,
+        "chart_count": 1,
+        "items": [
+          {
+            "id": 28252,
+            "type": "Internet-sourced Rethink Robotics Baxter real photo",
+            "source": "https://commons.wikimedia.org/wiki/File:Innorobo_2015_-_Rethink_Robotics_-_Baxter.JPG",
+            "license": "CC BY-SA 4.0",
+            "creator": "Xavier Caré",
+            "status": "WordPress native rendered figure confirmed; historical illustrative photo"
+          },
+          {
+            "id": 28250,
+            "type": "original benchmark bar chart, independent RoboCurve mean task progress",
+            "source": "https://robocurve.org/",
+            "status": "WordPress rendered figure confirmed; YAM-arm test qualification explicit"
+          },
+          {
+            "id": 28253,
+            "type": "Internet-sourced PR2 service robot real photo",
+            "source": "https://commons.wikimedia.org/wiki/File:PR2_at_Maker_Faire.jpg",
+            "license": "CC BY 2.0",
+            "creator": "Timothy Vollmer",
+            "status": "WordPress rendered figure confirmed; historical illustrative photo"
+          }
+        ],
+        "featured_media_id": 28249,
+        "featured_width": 1200,
+        "featured_height": 630,
+        "featured_style": "original realistic dual-arm robot hardware research lab, no people and no text",
+        "video_embeds": 0
+      },
+      "data_visualization": {
+        "chart_type": "horizontal bar",
+        "benchmark": "RoboDojo-RC Tier 1",
+        "metric": "mean progress percent, not full-task success rate",
+        "configurations": [
+          {
+            "name": "Dream-1",
+            "score": 59.3
+          },
+          {
+            "name": "Gemini 4 Argon (high)",
+            "score": 48.2
+          },
+          {
+            "name": "Opus 5.5 (high)",
+            "score": 38.2
+          },
+          {
+            "name": "MolmoAct2",
+            "score": 18.9
+          }
+        ],
+        "attempts_per_configuration": 120,
+        "known_limit": "evaluation on YAM arms, not proof of zero-shot control on unseen robot embodiments"
+      },
+      "footers_and_qa": {
+        "wordpress_status": "publish verified by independent update and view",
+        "rendered_images_and_footer": "three in-body images including one chart, original QR and disclaimer confirmed",
+        "public_browser": "external browser could not load public URL; desktop/mobile unverified",
+        "quality_score": 92,
+        "target": 95
+      },
+      "evidence_classes": {
+        "verified_fact": [
+          "October 19 Dream Labs launch, API rate and warnings",
+          "independent RoboCurve benchmark scores and limitations",
+          "WordPress published post and images"
+        ],
+        "user_preference": [
+          "technology-only imagery unless people necessary",
+          "at most one chart, rest credited internet imagery"
+        ],
+        "measured_result": [
+          "RoboCurve published partial task progress benchmark, not site engagement"
+        ],
+        "hypothesis": [
+          "platform and metric caveat improves comprehension"
+        ]
+      },
+      "improvements_to_carry_forward": [
+        "last-minute WordPress and GitHub duplicate checks",
+        "disclose robot benchmark partial progress vs full success and platform limitations",
+        "use single chart plus licensed authentic robot-hardware photos with dated captions"
+      ],
+      "remaining_issues": [
+        "public browser GET failed; no independent mobile/desktop rendering",
+        "actual end-user photo and chart delivery not independently verified",
+        "thumbs-up/down and readership analytics inaccessible"
       ]
     }
   ]
