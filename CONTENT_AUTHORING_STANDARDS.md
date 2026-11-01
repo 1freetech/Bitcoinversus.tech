@@ -79,3 +79,15 @@ The editor requires that future BitcoinVersus.Tech publication covers use **only
 Then repeat from realistic editorial. The sixth oil/Renaissance style is already approved by the October 29 style expansion above, not a newly invented style. The October 30 energy-source news run followed 1 Rooppur/nuclear (featured 27449), 2 Alliant/natural gas (27455), 3 Centralia/coal (27462), 4 Tianwan/solar (27471), and 5 Norway/floating wind (**corrected image 27512**, replacing 27494). For the **next item of this energy-source series (hydropower)** use approved style **6, fine-art oil/Renaissance**, then restart at 1.
 
 For other story rotations, identify the last relevant approved cover style rather than assuming the beginning of a new cycle. Always confirm the next style before generation; rotate demographic representation only when people are naturally relevant, vary ages and roles, keep covers historically and technically responsible, use 1200×630, no text overlays, attach featured media and verify live featured_media and media dimensions. A style's label in media metadata is not sufficient: inspect the actual visual to confirm it visibly follows that style before publishing. When a correction is requested, replace the cover with the approved style for that turn, preserve the article body/media/SEO, and document old vs new WordPress media IDs in QA.
+
+
+## Recursive Learning News Writer v4.0 — November 1, 2026
+
+The editor has explicitly adopted **BITCOINVERSUS.TECH — RECURSIVE LEARNING NEWS WRITER v4.0** as an **additional research, publishing QA, scoring and continuous-improvement workflow** for subsequent news posts. It does **not** repeal, relax or silently amend any earlier substantive editorial law, publication/footer requirement, cover rule, embed rule, chart rule, or lesson-specific instruction contained in this document.
+
+- **Operating specification:** [`editorial/RECURSIVE_LEARNING_NEWS_WRITER_V4.0.md`](editorial/RECURSIVE_LEARNING_NEWS_WRITER_V4.0.md).
+- **Persistent versioned evidence ledger:** [`qa/learning-ledger-v1.json`](qa/learning-ledger-v1.json). Append the final article's sourced metadata, relevant prior corrections, verification scope, score and three prioritized improvements after each published news story.
+- **Execution:** Recall → Research → Reason → Write → Verify → Publish → Evaluate → Learn → Repeat.
+- **Target:** 95/100 quality score; accuracy, anti-duplication and functional-media rules remain mandatory gates. **Never call iframe presence an independent playback test** or claim desktop/mobile screenshots, positive ratings, analytics or traffic data when unavailable.
+- **Regression protection:** Check the exact approved italic Editor's Note, original QR media **24043**, 5,000-sat instructions and disclaimer; do not substitute a different prior QR even when it looks similar. Keep photo/source licensing and chart-status caveats explicit.
+- **Activation detail:** v4.0 arrived after the publication of WordPress post 27966. The story was audited and logged retrospectively. Only subsequent stories should be described as receiving the v4.0 prepublication workflow.
