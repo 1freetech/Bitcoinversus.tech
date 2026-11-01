@@ -819,6 +819,312 @@
         "Real video playback and screenshots not performed",
         "TechCert archive unsynchronized"
       ]
+    },
+    {
+      "post_id": 28138,
+      "article_title": "Ford's $28,350 Fathom Moves Home Backup Inverter Into the Truck",
+      "publication_date": "2026-11-01",
+      "category_names": [
+        "Automotive",
+        "Energy",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        2024,
+        1212,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/01/ford-fathom-2027-bidirectional-home-backup-inverter-10kw-28350/",
+      "archive_path": "archive/2026/11/28138-ford-fathom-2027-home-backup-embedded-inverter.md",
+      "archive_blob_sha": "15931453576c3c392a53c678655d137e4e35a1b3",
+      "verified_archive_repositories": [
+        "1freetech/Bitcoinversus.tech",
+        "1freetech/opencert.tech",
+        "1freetech/techcert"
+      ],
+      "reporting_words": 399,
+      "publication_status": {
+        "classification": "verified_fact",
+        "wordpress_status": "publish",
+        "post_id": 28138,
+        "verification": "WordPress posts.update returned publish, title, featured_media 28127 and canonical URL. Both postpublication posts.get(context=edit) and posts.get(context=view) returned publish with identical canonical URL, three embedded YouTube iframes, two in-body images and the approved footer. Public external web.open of the URL was inaccessible."
+      },
+      "original_sources": [
+        {
+          "type": "primary_manufacturer_engineering",
+          "url": "https://www.fromtheroad.ford.com/us/en/articles/2026/fathom-ev-bidirectional-home-power",
+          "dated": "2026-10-27",
+          "verification": "Full Ford Model e report read directly; $28,350 planned starting MSRP, projected over 10 kW AC output, station about half cost, backup hardware at least 60% below first generation, release planned 2027, utility and accessory conditions."
+        },
+        {
+          "type": "primary_manufacturer_grid_interface",
+          "url": "https://www.fromtheroad.ford.com/us/en/articles/2026/bidirectional-evs-scale-utility-interconnection",
+          "dated": "2026-10-27",
+          "verification": "Direct Ford engineering article read: E-box built-in inverter, five modules, UL 1741/IEEE 1547 design intent and SAE J3068, 5 utility working-group members, distinguishing standalone isolated home backup and grid-parallel connection."
+        },
+        {
+          "type": "primary_vehicle_pricing",
+          "url": "https://corporate.ford.com/electric/fathom/",
+          "verification": "Official Ford Fathom product page directly read: $28,350 MSRP excludes $1,595 destination, preorders scheduled early 2027 and EPA range not yet available."
+        },
+        {
+          "type": "historical_firsthand_backup_demonstration",
+          "url": "https://www.youtube.com/watch?v=P7gCIT5FoAw",
+          "dated": "2023-01-17",
+          "verification": "State of Charge video indexed with title, channel, publication date and detailed firsthand installation description; deliberately identified as older F-150 Lightning, not new Fathom hardware."
+        },
+        {
+          "type": "corroborating_original_reporting",
+          "url": "https://arstechnica.com/cars/2026/10/ford-builds-bidrectional-charging-into-its-30k-electric-truck/",
+          "dated": "2026-10-27",
+          "verification": "Ars Technica reported integrated-inverter Fathom hardware and plans. Main material values traced to Ford primary documents."
+        }
+      ],
+      "fact_status": [
+        {
+          "classification": "verified_fact",
+          "claim": "Ford announced the Fathom vehicle-integrated home inverter and two planned home use configurations October 27, 2026",
+          "basis": "Official Ford engineering articles"
+        },
+        {
+          "classification": "planned_company_product",
+          "claim": "Fathom 2027 vehicle starting MSRP $28,350 before $1,595 destination; preorders planned early 2027",
+          "basis": "Ford official vehicle product page"
+        },
+        {
+          "classification": "vendor_projection_not_independently_measured",
+          "claim": "More than 10 kW AC output, management charger roughly 50% cheaper, backup hardware at least 60% cheaper",
+          "basis": "Ford company figures, not independently customer-tested performance or final installed prices"
+        },
+        {
+          "classification": "derived_math",
+          "claim": "Base MSRP $28,350 plus destination $1,595 equals $29,945 before tax/options",
+          "basis": "Direct arithmetic from Ford published numbers"
+        },
+        {
+          "classification": "engineering_qualification",
+          "claim": "Ford says Fathom design targets UL 1741 and IEEE 1547 requirements",
+          "basis": "Ford article states 'designed to meet'; NOT a verified third-party product-certification result"
+        },
+        {
+          "classification": "unverified",
+          "claim": "Actual home runtime/whole-home coverage/customer installation price",
+          "basis": "No delivered Fathom product or independent testing exists in evidence"
+        }
+      ],
+      "duplicate_check": {
+        "wordpress_searches": [
+          "Ford Fathom",
+          "Ford Home Power",
+          "vehicle to home",
+          "F-150 Lightning",
+          "inverter",
+          "automotive"
+        ],
+        "github_searches": [
+          "Ford Fathom",
+          "bidirectional charging",
+          "F-150 Lightning"
+        ],
+        "rejected_candidate": {
+          "classification": "verified_fact",
+          "topic": "Toyota / Waymo Japan-built bZ4X robotaxis 2027",
+          "reason": "Already published BitcoinVersus.Tech post 28039, November 1 2026."
+        },
+        "selected_topic_status": "No exact Fathom integrated E-box/October 27 home-power announcement detected in searched WordPress or editorial GitHub archives.",
+        "limitation": "Keyword/title/content searches are not exhaustive semantic comparison of the entire 2023–present archive."
+      },
+      "internal_links": {
+        "count": 4,
+        "verification": "Matching contextual links present in saved WordPress Gutenberg source; WordPress archive search returned corresponding articles. No independent desktop-browser navigation test of every destination.",
+        "targets": [
+          "https://bitcoinversus.tech/2026/10/04/energy-germany-turns-ev-batteries-into-grid-assets-with-new-v2g-rules/",
+          "https://bitcoinversus.tech/2026/10/04/tesla-sunrun-california-home-batteries-580-mw-virtual-power-plant/",
+          "https://bitcoinversus.tech/2026/10/25/gm-fourth-generation-ev-20-percent-range-lmr-battery-2026/",
+          "https://bitcoinversus.tech/2026/10/08/honda-wireless-charging-road-150kw-moving-electric-trucks/"
+        ]
+      },
+      "in_story_media": {
+        "count": 5,
+        "postpublication_wordpress_iframe_count": 3,
+        "all_captions_after_media": true,
+        "at_least_one_paragraph_between_media": true,
+        "embedded_video_playback_tested": false,
+        "types": [
+          {
+            "type": "official_video",
+            "youtube_id": "mjnxQHhCT_4",
+            "publisher": "Ford Motor Company",
+            "date": "2026-08-06",
+            "topic": "Fathom vehicle and UEV platform launch",
+            "verification": "Official verified Ford video metadata and explicit channel permission to share/embed. WordPress published HTML iframe src matches canonical video ID. Not October technical announcement footage."
+          },
+          {
+            "type": "official_manufacturer_photo",
+            "wordpress_media_id": 28128,
+            "dimensions": "2048x2048",
+            "topic": "Ford E-box high-voltage connection",
+            "source": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2026/bidirectional-evs-at-a-new-scale/UEV_Ebox_1.jpg",
+            "verification": "Photo opened at Ford domain, reused as Ford-owned editorial photograph and attributed in caption. WordPress published image tag and caption verified."
+          },
+          {
+            "type": "source_backed_comparison_chart",
+            "wordpress_media_id": 28130,
+            "dimensions": "1200x620",
+            "topic": "Prior-generation cost baseline indexed to 100; Ford target approximately 50 for station and at most 40 for backup hardware",
+            "verification": "Every comparison uses same within-category baseline and Ford projected cost reductions; caption states no retail prices, installation excluded."
+          },
+          {
+            "type": "independent_firsthand_video",
+            "youtube_id": "P7gCIT5FoAw",
+            "publisher": "State of Charge",
+            "date": "2023-01-17",
+            "topic": "Real older Ford F-150 Lightning home backup equipment installation",
+            "verification": "Public video publisher/channel metadata present and WordPress postpublication iframe src correct, caption explicitly says historical comparison not Fathom demonstration."
+          },
+          {
+            "type": "official_video",
+            "youtube_id": "YK3B70XFCmU",
+            "publisher": "Ford Motor Company",
+            "date": "2026-08-13",
+            "topic": "Louisville Fathom manufacturing retooling and production line",
+            "verification": "Official Ford video metadata and WordPress published iframe, caption marks earlier factory work and no production performance proof."
+          }
+        ]
+      },
+      "featured_cover": {
+        "wordpress_media_id": 28127,
+        "dimensions": {
+          "width": 1200,
+          "height": 630
+        },
+        "style": "wordless comic",
+        "adult_subject": "fictional Black female power engineer aged about 50",
+        "alt_text_verified": true,
+        "attached_as_featured_media": true,
+        "anatomy_visual_review_status": "not independently inspected in a graphical/mobile browser",
+        "conceptual_not_documentary": true,
+        "rotation_prior": "Neural Dawn story 28099 was anime editorial artwork with male; next is wordless comic with female"
+      },
+      "chart": {
+        "wordpress_media_id": 28130,
+        "shape": "grouped relative-index comparison",
+        "normalized_unit": "previous-generation cost index = 100 within each distinct configuration",
+        "prior_values": [
+          100,
+          100
+        ],
+        "new_vendor_estimates": [
+          50,
+          40
+        ],
+        "interpretation": "50 is approximate, 40 is maximum based on at least 60% savings; relative index not actual consumer price",
+        "source": "https://www.fromtheroad.ford.com/us/en/articles/2026/fathom-ev-bidirectional-home-power",
+        "limitation": "Ford estimates; final retail hardware and installation costs unpublished. Graphic markup/source verified, no screenshot review."
+      },
+      "footers": {
+        "approved_editor_note_exact": true,
+        "original_qr_media_id": 24043,
+        "donation_amount_sats": 5000,
+        "address": "3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb",
+        "disclaimer_present": true,
+        "retired_x_promo_absent": true,
+        "order": "Editor's Note -> original QR -> 5,000 sats instructions -> disclaimer"
+      },
+      "corrections_and_defects": [
+        {
+          "classification": "verified_fact",
+          "detail": "No content correction required after initial WordPress draft QA and publish read-back; all 15 postpublication checks passed."
+        },
+        {
+          "classification": "unverified",
+          "detail": "External web opening of the published BitcoinVersus.Tech page inaccessible; functional YouTube playback and desktop/mobile graphical screenshots unavailable."
+        },
+        {
+          "classification": "verified_fact",
+          "detail": "Unlike prior Neural Dawn post, all 3 GitHub archives were created and read back successfully with identical Git blob SHA."
+        }
+      ],
+      "previous_learning_applied": [
+        {
+          "from_post_id": 28099,
+          "priority": 1,
+          "status": "partial",
+          "evidence": "Video IDs sourced from official Ford verified YouTube metadata and State of Charge original demonstration; postpublication player iframe tags checked, but no independent video start/playback available."
+        },
+        {
+          "from_post_id": 28099,
+          "priority": 2,
+          "status": "met",
+          "evidence": "All three GitHub archives created with one shared exact content body, then fetched for identical blob SHA."
+        },
+        {
+          "from_post_id": 28099,
+          "priority": 3,
+          "status": "met",
+          "evidence": "Ford primary engineering documents used for numeric claims; chart uses within-category normalized costs, vendor claims explicitly labeled."
+        }
+      ],
+      "external_verification_limits": [
+        "Actual player start/seek/complete testing on live reader device unavailable; iframe HTML does not establish continuous playback.",
+        "External public page fetch returned inaccessible though WordPress published raw and rendered views both confirmed live post.",
+        "No independent visual desktop/mobile screenshot, artwork anatomy proof or chart pixel-level inspection.",
+        "Not every internal/external link target visited individually through browser.",
+        "No reader reactions, thumbs-up/down history or engagement analytics surfaced."
+      ],
+      "quality_score": {
+        "target": 95,
+        "achieved": 94,
+        "met_target": false,
+        "breakdown": {
+          "Accuracy and source verification": 25,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 15,
+          "Working embeds and media relevance": 12,
+          "Cover and visualization quality": 9,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 8
+        },
+        "gate_status": {
+          "accuracy": "PASS_WITH_NOTED_FORECASTS",
+          "duplicate_prevention": "PASS_WORDPRESS_AND_GITHUB_SEARCHES",
+          "functional_media": "IFRAMES_VERIFIED_IN_PUBLISHED_WORDPRESS_VIEW__REAL_PLAYBACK_UNTESTED",
+          "all_mandatory_gates_fully_proven": false
+        },
+        "reviewer_note": "94/100 evidence-weighted editorial judgment, not measured traffic or satisfaction. Target 95 not reached because real video playback and graphical browser checks remain inaccessible; do not claim functional-media gate fully proven."
+      },
+      "three_improvements_to_carry_forward": [
+        {
+          "priority": 1,
+          "classification": "action",
+          "instruction": "For the next Space/Science category story, test actual YouTube playback with a real browser if tools permit; otherwise retain exact distinction between iframe/player availability and verified playback.",
+          "verification_on_next_story": "Log test device/timestamp/screenshot or explicit unavailable state."
+        },
+        {
+          "priority": 2,
+          "classification": "action",
+          "instruction": "Visually inspect the 1200x630 cover and quantitative charts for typography, anatomy and scales; use actual external screenshots/browser mode where supported, otherwise track this as unresolved.",
+          "verification_on_next_story": "Record screenshots or unavailable status; do not infer quality from generated-image prompt alone."
+        },
+        {
+          "priority": 3,
+          "classification": "action",
+          "instruction": "Preserve Ford's fact/forecast separation as the standard: verify original engineering source data and specify standards as design intent until certification and completed tests are shown.",
+          "verification_on_next_story": "Document primary engineering claim, release date, uncertainty, and comparability of quantitative claims."
+        }
+      ],
+      "user_rating_feedback": {
+        "classification": "not_accessible",
+        "status": "not_accessible",
+        "data": null
+      },
+      "engagement_metrics": {
+        "classification": "not_accessible",
+        "status": "not_accessible",
+        "data": null
+      }
     }
   ],
   "future_article_template_required_fields": [
