@@ -1,0 +1,406 @@
+{
+  "schema_version": "1.0.0",
+  "title": "BitcoinVersus.Tech Recursive Editorial Learning Ledger",
+  "last_updated": "2026-11-01",
+  "effective_prompt": "BITCOINVERSUS.TECH — RECURSIVE LEARNING NEWS WRITER v4.0",
+  "principles": [
+    "RECALL → RESEARCH → REASON → WRITE → VERIFY → PUBLISH → EVALUATE → LEARN → REPEAT",
+    "Keep all existing Perfect Bite-Size News Writer v3.1, Embed Law v3.0, Featured Cover Law, chart, rotation, internal-link and footer standards authoritative.",
+    "Mandatory accuracy, no-duplicate and functioning media gates are not bypassed by a numerical quality score.",
+    "Record only evidence actually checked; distinguish WordPress rendered player markup from independently proven playback.",
+    "Do not infer thumbs up/down, engagement, clickthrough, or conversion from absent analytics."
+  ],
+  "feedback_access": {
+    "user_editorial_preferences": [
+      {
+        "kind": "user_preference",
+        "detail": "The user explicitly requires the v4.0 recursive cycle and an evidence-backed learning ledger."
+      },
+      {
+        "kind": "user_preference",
+        "detail": "The user prioritizes actual relevant, working in-story YouTube/X embeds, captions after media, 2–10 media, rotating covers and accurate charts."
+      },
+      {
+        "kind": "user_preference",
+        "detail": "The user requires the exact original Bitcoin donation QR, with 5,000 sat instructions, Editor's Note and disclaimer."
+      }
+    ],
+    "thumbs_up_down_history": {
+      "status": "not_accessible",
+      "value": null,
+      "claim": "No thumbs-up/down history was exposed through the WordPress, GitHub, or chat tools; no preference inference from ratings."
+    },
+    "measured_engagement": {
+      "status": "not_accessible",
+      "value": null,
+      "claim": "No verified site analytics or engagement metric retrieved."
+    }
+  },
+  "score_rubric": {
+    "max_score": 100,
+    "target": 95,
+    "criteria": [
+      {
+        "name": "Accuracy and source verification",
+        "max": 25
+      },
+      {
+        "name": "Originality and newsworthiness",
+        "max": 15
+      },
+      {
+        "name": "Technical depth and explanatory clarity",
+        "max": 15
+      },
+      {
+        "name": "Working embeds and media relevance",
+        "max": 15
+      },
+      {
+        "name": "Cover and visualization quality",
+        "max": 10
+      },
+      {
+        "name": "Internal links and SEO",
+        "max": 10
+      },
+      {
+        "name": "Live-page QA and formatting",
+        "max": 10
+      }
+    ],
+    "mandatory_gates": [
+      "accuracy",
+      "duplicate_prevention",
+      "functional_media"
+    ],
+    "scoring_warning": "No score ≥95/100 is a substitute for actually passing a mandatory gate. Mark unverified/failed gates explicitly."
+  },
+  "entries": [
+    {
+      "post_id": 27966,
+      "article_title": "National Grid Secures 73 Acres for Teesside AI Substation",
+      "publication_date": "2026-11-01",
+      "category_names": [
+        "Energy",
+        "Data Centers",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        5177360,
+        1212,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/01/national-grid-tees-dock-teesside-73-acres-400kv-ai-substation-2026/",
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "evidence": "WordPress posts.get context=edit and context=view both returned publish and identical public URL; independent site fetch failed."
+      },
+      "editorial_body_word_count": 339,
+      "origin_and_timing": {
+        "classification": "verified_fact",
+        "description": "Same-day November 1, 2026 land-agreement reports; 73 acres corroborated in Sky News syndication and The Guardian; outline planning application R/2026/0711/OOM remains valid, without a recorded decision."
+      },
+      "original_sources": [
+        {
+          "type": "primary_official",
+          "url": "https://planning.redcar-cleveland.gov.uk/Planning/Display/R/2026/0711/OOM",
+          "verified": "search-result content confirmed proposed 400kV substation, 2026-09-24 filing and no decision. Direct opened fetch sometimes times out."
+        },
+        {
+          "type": "primary_project_directory",
+          "url": "https://www.nationalgrid.com/electricity-transmission/network-and-infrastructure/infrastructure-projects",
+          "verified": "Public National Grid project directory lists planned Tees Dock substation at Dorman Point. Detailed >1GW contract quote not directly fetched in this directory view."
+        },
+        {
+          "type": "primary_regulatory_index",
+          "url": "https://www.riiot3.nationalgrid.com/reopeners",
+          "verified": "National Grid October 2026 summaries index lists Tees Dock Substation needs-case documents; individual technical PDF not examined in this audit."
+        },
+        {
+          "type": "secondary_original_reporting",
+          "url": "https://uk.finance.yahoo.com/news/national-grid-sparks-deal-pave-074400601.html",
+          "verified": "Sky News reporting dated 2026-11-01 describes >70 acre land transaction and planned AI site."
+        },
+        {
+          "type": "secondary_original_reporting",
+          "url": "https://www.theguardian.com/business/2026/nov/01/national-grid-to-site-biggest-substation-on-teesside-near-planned-ai-datacentre",
+          "verified": "The Guardian dated 2026-11-01 reports 73 acres, 3.2GW mayoral claim and campus comparison."
+        },
+        {
+          "type": "secondary_document_analysis",
+          "url": "https://tsnmedia.org/teesside-substation-national-grid-dorman-point/",
+          "verified": "Secondary 2026-11-01 article reports reading National Grid's >1GW import/export capacity and Ofgem needs-case summary; exact original project-page passage was not independently fetched."
+        }
+      ],
+      "fact_status": [
+        {
+          "claim": "73 acre land agreement",
+          "classification": "verified_fact",
+          "confidence": "high",
+          "qualifier": "Reported by Sky News and The Guardian; transaction details not independently retrieved from signed deed."
+        },
+        {
+          "claim": "400kV Dorman Point substation plan",
+          "classification": "verified_fact",
+          "confidence": "high",
+          "qualifier": "Official council planning application and National Grid project directory."
+        },
+        {
+          "claim": "more than 1GW of contracted import/export capacity",
+          "classification": "reported_fact",
+          "confidence": "medium",
+          "qualifier": "Secondary document reading; original full project-specific document not read in this audit."
+        },
+        {
+          "claim": "up to 3.2GW claimed by mayor",
+          "classification": "attributed_ambition",
+          "confidence": "high",
+          "qualifier": "Distinct scope from contract; cannot add/compare as delivered capacity."
+        },
+        {
+          "claim": "Britain's largest substation or named contractor",
+          "classification": "projected_or_unconfirmed",
+          "qualifier": "Not reported as built, approved or officially awarded."
+        }
+      ],
+      "duplicate_check": {
+        "classification": "verified_fact",
+        "wordpress_searches": [
+          "Teesworks",
+          "Dorman Point",
+          "Teesside substation",
+          "Tees Dock",
+          "National Grid",
+          "substation"
+        ],
+        "github_searches": [
+          "Tees Dock",
+          "Dorman Point",
+          "Teesworks substation"
+        ],
+        "result": "No exact earlier BitcoinVersus.Tech report matching the Dorman Point land deal detected. Search is not proof of exhaustive archive-wide semantic uniqueness."
+      },
+      "internal_links": {
+        "count": 5,
+        "status": "verified_wordpress_markup",
+        "topics": [
+          "Nscale UK grid delays",
+          "GE Vernova HV equipment",
+          "Idaho transformer test",
+          "Siemens microgrid switchboard",
+          "Top 10 US energy projects"
+        ],
+        "external_link_verification": "Target pages were not all individually opened as a live browser."
+      },
+      "in_story_media": {
+        "count": 5,
+        "verified_markup": true,
+        "types": [
+          {
+            "type": "licensed_photo",
+            "media_id": 27963,
+            "subject": "Teesside Steelworks 2019 archival contextual photo",
+            "license": "CC BY-SA 2.0",
+            "caption_after": true,
+            "not_actual_project": true
+          },
+          {
+            "type": "official_youtube",
+            "youtube_id": "XaF4IyEd0TU",
+            "source": "National Grid UK, What is a Substation?, 2026-05-16",
+            "verified_external_video_identity": true,
+            "verified_wordpress_iframe": true,
+            "independent_playback_verified": false,
+            "caption_after": true
+          },
+          {
+            "type": "attributed_chart",
+            "media_id": 27964,
+            "subject": "National Grid >1GW lower bound vs separate mayoral 3.2GW ambition; different claim scopes",
+            "measurement_status": "Illustrative, thresholds and aspirations, not like-for-like delivered capacity",
+            "verified_rendered_img_markup": true,
+            "caption_after": true
+          },
+          {
+            "type": "licensed_photo",
+            "media_id": 27962,
+            "subject": "Actual Creyke Beck substation, illustrative, not Tees Dock",
+            "license": "CC BY-SA 2.0",
+            "caption_after": true,
+            "not_actual_project": true
+          },
+          {
+            "type": "independent_youtube",
+            "youtube_id": "7Q-aVBv7PWM",
+            "source": "Practical Engineering, How Do Substations Work?, 2019-08-27",
+            "verified_external_video_identity": true,
+            "verified_wordpress_iframe": true,
+            "independent_playback_verified": false,
+            "caption_after": true
+          }
+        ],
+        "native_wordpress_embedding_method": "Gutenberg core/shortcode [youtube canonical watch URL], renders a YouTube iframe in posts.get(context=view).",
+        "failure_or_limitation": "Public HTML iframe and video identity verified; no independent video start/playback on desktop or mobile. Distinguish player markup from tested function."
+      },
+      "featured_cover": {
+        "media_id": 27965,
+        "dimensions": {
+          "width": 1200,
+          "height": 630
+        },
+        "style": "anime editorial artwork",
+        "person": "fictional adult Black British female transmission engineer, late 30s",
+        "alt_text_checked": true,
+        "attached_as_featured_media": true,
+        "no_text_overlay_by_prompt": true,
+        "visual_anatomy_manual_inspection": "not independently visually reviewed in desktop browser; generation constraints requested correct anatomy",
+        "site_composition": "Industrial transmission planning landscape; conceptual image not actual built Dorman Point."
+      },
+      "chart": {
+        "media_id": 27964,
+        "purpose": "prevent category confusion between contracted connection threshold and broad political ambition",
+        "visualization": "annotated horizontal comparison",
+        "values": [
+          {
+            "value": 1,
+            "unit": "GW",
+            "kind": "strict lower threshold for >1GW contract, not exact"
+          },
+          {
+            "value": 3.2,
+            "unit": "GW",
+            "kind": "up to site ambition, not verified capacity"
+          }
+        ],
+        "concern": "A common numeric axis can falsely imply directly comparable metrics. Text, axis label, and caption disclose distinct scopes; next time prefer a clearly differentiated scope panel or source-native comparable quantities.",
+        "source_urls": [
+          "https://www.nationalgrid.com/electricity-transmission/network-and-infrastructure/infrastructure-projects",
+          "https://uk.finance.yahoo.com/news/national-grid-sparks-deal-pave-074400601.html"
+        ]
+      },
+      "footers": {
+        "exact_approved_editors_note_verified": true,
+        "original_donation_qr_media_id": 24043,
+        "donation_request_sats": 5000,
+        "disclaimer_verified": true,
+        "discontinued_x_promo_absent": true
+      },
+      "before_after_comparison": {
+        "classification": "verified_fact",
+        "previous_story_id": 27959,
+        "previous_story_title": "Krafton's Ludo Robotics Shows Ludi 0.2 AI for Understanding Human Intent",
+        "previous_story_observation": "WordPress raw content for previous story contained footer QR media 24593 and a nonstandard support heading; new story correctly uses required QR media 24043 and exact approved italic Editor's Note.",
+        "not_inferred": "No user satisfaction or engagement inferred from difference."
+      },
+      "external_verification_limitations": [
+        "Independent web fetch of the published bitcoinversus.tech article URL failed; publication status and rendered content independently checked through connected WordPress read APIs.",
+        "No desktop/mobile browser screenshots or full YouTube player playback test available in this run.",
+        "Not every contextual internal link and external attribution destination was individually clicked/opened.",
+        "No personally rated user feedback/likes, engagement metrics, or subscriber stats accessible.",
+        "Full National Grid project-specific needs-case PDF and original direct wording of >1GW capacity were not opened."
+      ],
+      "correction_log": [
+        {
+          "classification": "verified_fact",
+          "change": "No post-publication editorial text correction made in this cycle.",
+          "status": "no_change"
+        },
+        {
+          "classification": "verified_fact",
+          "change": "The user introduced Recursive Learning News Writer v4.0 after this post was already published. The article received a retrospective evaluation rather than claiming an original v4.0 prepublish pass.",
+          "status": "documentation"
+        }
+      ],
+      "quality_score": {
+        "target": 95,
+        "achieved": 88,
+        "met_target": false,
+        "breakdown": {
+          "Accuracy and source verification": 22,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 14,
+          "Working embeds and media relevance": 12,
+          "Cover and visualization quality": 8,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 7
+        },
+        "gate_status": {
+          "accuracy": "PASS_WITH_DISCLOSED_LIMITS",
+          "duplicate_prevention": "PASS_SEARCHED_WP_AND_GITHUB",
+          "functional_media": "UNVERIFIED_END_TO_END_PLAYBACK",
+          "all_mandatory_gates_fully_proven": false
+        },
+        "reviewer_note": "Score is an explicitly evidence-based editorial estimate, not a measured reader outcome. 88/100 is below target. Do not represent functional-video/visual-browser acceptance as completed."
+      },
+      "three_improvements_to_carry_forward": [
+        {
+          "priority": 1,
+          "classification": "action",
+          "instruction": "For material numeric claims, read the exact originating National Grid/Ofgem or equivalent project-specific primary document, not just a project directory and secondary account; capture page or paragraph and date before publication.",
+          "verification_on_next_story": "Document direct primary claim evidence and match chart labels to that primary scope."
+        },
+        {
+          "priority": 2,
+          "classification": "action",
+          "instruction": "Add an end-to-end media/browser QA gate: validate iframe markup, video identity, actual desktop/mobile playback and external media response when supported. If not available, report as unverified and avoid claiming a high completed score.",
+          "verification_on_next_story": "Store player screenshot/playback test result or clearly marked unavailable status."
+        },
+        {
+          "priority": 3,
+          "classification": "action",
+          "instruction": "Strengthen chart semantics and footer regression: compare genuinely commensurate quantities or separate non-comparable thresholds/aspirations; independently check original donation QR WordPress ID 24043 and exact approved Editor's Note.",
+          "verification_on_next_story": "Verify chart-source mapping plus exact footer media identity and document outcomes."
+        }
+      ],
+      "pending_followups": [
+        {
+          "type": "dependency",
+          "description": "Check Redcar & Cleveland R/2026/0711/OOM before November 11 consultation close and review future decision if reporting a follow-up.",
+          "automation_created": false
+        },
+        {
+          "type": "technical_qa",
+          "description": "Obtain independent live browser/player and responsive image QA when browser tools support it.",
+          "automation_created": false
+        },
+        {
+          "type": "source_qa",
+          "description": "Read National Grid Tees Dock original needs-case / project-specific >1GW passage and confirm exact interpretation.",
+          "automation_created": false
+        }
+      ],
+      "engagement_metrics": {
+        "status": "not_accessible",
+        "data": null
+      },
+      "user_rating_feedback": {
+        "status": "not_accessible",
+        "data": null
+      }
+    }
+  ],
+  "future_article_template_required_fields": [
+    "post_id",
+    "article_title",
+    "publication_date",
+    "category_names",
+    "live_url",
+    "original_sources",
+    "duplicate_check",
+    "internal_links",
+    "in_story_media",
+    "featured_cover",
+    "chart",
+    "footers",
+    "correction_log",
+    "quality_score",
+    "three_improvements_to_carry_forward",
+    "external_verification_limitations",
+    "engagement_metrics",
+    "user_rating_feedback"
+  ]
+}
