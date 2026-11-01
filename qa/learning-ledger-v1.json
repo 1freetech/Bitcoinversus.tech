@@ -710,6 +710,115 @@
         "status": "not_accessible",
         "data": null
       }
+    },
+    {
+      "post_id": 28099,
+      "article_title": "Arm Releases Neural Dawn Mobile Game With AI Ray Tracing on Five Devices",
+      "publication_date": "2026-11-01",
+      "category_names": [
+        "Artificial Intelligence",
+        "Gaming",
+        "Semiconductors"
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/01/arm-neural-dawn-mobile-game-download-ai-ray-tracing-five-devices-2026/",
+      "original_sources": [
+        {
+          "url": "https://newsroom.arm.com/blog/neural-dawn-game-available-to-download",
+          "verified": "publisher original read"
+        },
+        {
+          "url": "https://developer.arm.com/mobile-graphics-and-gaming/neural-technology/build-games",
+          "verified": "five-model compatibility list read"
+        },
+        {
+          "url": "https://www.unrealengine.com/learning/octobers-epic-learning-content-mobile-development-in-unreal-engine",
+          "verified": "official Epic recording"
+        }
+      ],
+      "duplicate_check": {
+        "wordpress": "Neural Dawn search no duplicate",
+        "github": "Neural Dawn search no duplicate",
+        "rejected_candidate": "Microchip PolarFire TSN exact-topic duplicate post 27364"
+      },
+      "internal_links": {
+        "count": 4
+      },
+      "in_story_media": {
+        "count": 4,
+        "types": [
+          "Arm gameplay YouTube e4cnNm805YI",
+          "supported hardware chart WordPress 28088",
+          "Arm launch YouTube Y53HNgb6U48",
+          "Epic developer walkthrough YouTube XG5W2Ei_J0Q"
+        ],
+        "verified_draft_wordpress_iframes": 3,
+        "verified_actual_playback": false
+      },
+      "featured_cover": {
+        "id": 28090,
+        "dimensions": "1200x630",
+        "style": "anime editorial artwork",
+        "subject": "fictional adult male mobile graphics engineer"
+      },
+      "chart": {
+        "media_id": 28088,
+        "values": "three MediaTek 9600 Pro models, two Xiaomi XRING O3 models",
+        "source": "Arm October 29 compatibility page",
+        "unit": "device model count"
+      },
+      "footers": {
+        "verified_note": true,
+        "original_qr_id": 24043,
+        "disclaimer": true
+      },
+      "editorial_corrections": [
+        "WordPress posts.create blocked, recovered via draft shell and update",
+        "TechCert archive synchronization returned concurrent conflict; not completed",
+        "Postpublication view and public browser fetch blocked; actual YouTube playback untested"
+      ],
+      "feedback": {
+        "status": "not_accessible"
+      },
+      "engagement": {
+        "status": "not_accessible"
+      },
+      "quality_score": {
+        "achieved": 91,
+        "target": 95,
+        "breakdown": {
+          "Accuracy and source verification": 25,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 15,
+          "Working embeds and media relevance": 12,
+          "Cover and visualization quality": 8,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 6
+        },
+        "gate_status": {
+          "accuracy": "pass",
+          "duplicate": "pass",
+          "video_playback": "unverified"
+        }
+      },
+      "three_improvements_to_carry_forward": [
+        {
+          "priority": 1,
+          "instruction": "Require actual browser player-start test when available; record unavailable otherwise."
+        },
+        {
+          "priority": 2,
+          "instruction": "Make GitHub writes conflict-safe; verify all repository archive blob SHAs."
+        },
+        {
+          "priority": 3,
+          "instruction": "Continue using original source compatibility lists and comparable chart metrics."
+        }
+      ],
+      "remaining_issues": [
+        "Postpublication view retrieval blocked",
+        "Real video playback and screenshots not performed",
+        "TechCert archive unsynchronized"
+      ]
     }
   ],
   "future_article_template_required_fields": [
