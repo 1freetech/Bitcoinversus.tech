@@ -1,6 +1,6 @@
 {
   "schema_version": "4.0.0",
-  "ledger_revision": 15,
+  "ledger_revision": 16,
   "created_at": "2026-11-01",
   "updated_at": "2026-11-01",
   "purpose": "Evidence-classified recursive learning ledger for BitcoinVersus.Tech editorial production. Append verified story records without overwriting immutable editorial laws.",
@@ -1997,6 +1997,184 @@
         "YouTube playback not independently verified",
         "no article engagement reactions available"
       ]
+    },
+    {
+      "post_id": 28477,
+      "title": "Kopin’s AI Bottleneck Panel Puts MicroLED Optics and GPU Networking in Focus",
+      "publication_date": "2026-11-01",
+      "category": "Networking / Fiber",
+      "url": "https://bitcoinversus.tech/2026/11/01/kopin-ai-bottleneck-panel-microled-optical-interconnect-gpu-networking-2026/",
+      "archive_path": "archive/2026/11/28477-kopin-ai-infrastructure-bottleneck-microled-optical-networking.md",
+      "sources": [
+        {
+          "url": "https://www.kopin.com/press-releases/kopin-to-host-live-youtube-ask-me-anything-panel-from-nasdaq-marketsite-on-the-future-of-ai-infrastructure/",
+          "role": "Primary Oct 16 panel announcement verifies participants, date, webcast location and intended discussion",
+          "classification": "verified_fact"
+        },
+        {
+          "url": "https://fabricai.com/",
+          "role": "Event co-host official company homepage explicitly lists Oct 20 full AMA replay, source link resolves to youtube-nocookie embed/dGJkJET9tuY",
+          "classification": "verified_fact"
+        },
+        {
+          "url": "https://www.kopin.com/press-releases/kopin-analysis-finds-optical-interconnect-architecture-could-break-the-data-center-copper-wall/",
+          "role": "October white paper release: 10,000 GPU modeled gain 1.3–1.6x useful training throughput and 23–38% less training time, exploratory architecture, Jan 2027 and 2028 targets",
+          "classification": "company_model_not_production_measurement"
+        },
+        {
+          "url": "https://www.youtube.com/live/dGJkJET9tuY",
+          "role": "Official panel replay linked by Kopin press release and Fabric.AI site; WordPress iframe rendering verified",
+          "classification": "primary_video_no_independent_playback"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kMaIyVDMrxY",
+          "role": "April 28 Stockhouse executive interview, produced in partnership with Kopin; relevant but company-affiliated background, not independent validation",
+          "classification": "sponsored_interview"
+        }
+      ],
+      "duplicate_prevention": {
+        "wordpress_queries": [
+          "Kopin",
+          "Trillion Dollar AI Bottleneck",
+          "Fabric.AI",
+          "Neural I/o",
+          "optical interconnect",
+          "GPU utilization"
+        ],
+        "github_query": "Trillion Dollar AI Bottleneck Kopin Fabric",
+        "result": "No existing Kopin panel story found; broader prior topics on optical transceivers, co-packaged optics, and MicroLED are distinct and linked."
+      },
+      "word_count_excluding_media_captions_and_footer": 381,
+      "internal_links_count": 5,
+      "media": {
+        "in_body_count": 3,
+        "video_iframe_count": 2,
+        "items": [
+          {
+            "type": "official panel replay",
+            "youtube_id": "dGJkJET9tuY",
+            "status": "WordPress published view iframe verified, caption immediately following, player runtime playback not tested"
+          },
+          {
+            "type": "related CEO interview",
+            "youtube_id": "kMaIyVDMrxY",
+            "status": "WordPress published iframe verified, caption identifies company-partner production"
+          },
+          {
+            "type": "sourced chart",
+            "wordpress_media_id": 28471,
+            "status": "Published native image with caption, model status explicitly labeled"
+          }
+        ]
+      },
+      "cover": {
+        "media_id": 28474,
+        "dimensions": [
+          1200,
+          630
+        ],
+        "style": "realistic technical editorial illustration",
+        "subject": "GPU racks, copper cabling and MicroLED optical parallel fiber interconnects",
+        "alt_text_attached": true,
+        "no_human_figure": true,
+        "pixel_visual_inspection": "unverified",
+        "source_status": "original concept, not a photograph of existing product"
+      },
+      "chart": {
+        "type": "vertical bar",
+        "selection_rationale": "Single common normalized throughput metric across reference and two modeled cases; vertical bar appropriate to category comparison; not historical data, waterfall or composition",
+        "metric": "Useful training throughput normalized index",
+        "data": [
+          {
+            "scenario": "current reference",
+            "index": 100,
+            "status": "reference baseline"
+          },
+          {
+            "scenario": "Neural I/o low",
+            "index": 130,
+            "status": "vendor modeled"
+          },
+          {
+            "scenario": "Neural I/o high",
+            "index": 160,
+            "status": "vendor modeled"
+          }
+        ],
+        "source": "Kopin/Fabric.AI October 2026 whitepaper",
+        "interpretation": "1.3–1.6x useful training throughput. Equal-workload duration 1/1.3–1/1.6 = 77–62.5% of reference, hence ≈23–38% reduction. No measured hardware dataset."
+      },
+      "qa": {
+        "wordpress_published_and_view_verified": true,
+        "news_word_count": 381,
+        "video_iframes_rendered": true,
+        "after_media_captions": true,
+        "chart_inline_captioned": true,
+        "cover_1200x630": true,
+        "source_status_distinction": true,
+        "five_contextual_links_verified_live_wordpress": true,
+        "editor_note_original": true,
+        "donation_qr_original": true,
+        "disclaimer": true,
+        "retired_promo_absent": true,
+        "decorative_box_blocks": 0,
+        "actual_reader_video_playback": "not tested",
+        "independent_public_browser_and_mobile_screenshots": "not available"
+      },
+      "quality_score": {
+        "accuracy_primary_sources": 25,
+        "originality_and_duplicate_check": 15,
+        "technical_clarity": 14,
+        "media_relevance": 14,
+        "cover_and_chart_methods": 9,
+        "internal_links_and_seo": 10,
+        "live_wordpress_qa": 7,
+        "total": 94,
+        "target": 95,
+        "target_met": false,
+        "reason": "Publisher rendering confirmed, but no independent device playback or pixel/mobile screenshot QA; official presentation not directly transcribed."
+      },
+      "observations": [
+        {
+          "classification": "verified_fact",
+          "detail": "Kopin hosted advertised live AMA October 20 2026 from Nasdaq MarketSite with Murray, Altucher and Harding.",
+          "evidence": "Kopin Oct 16 announcement and Fabric.AI replay listing"
+        },
+        {
+          "classification": "measured_result",
+          "detail": "Published WordPress HTML has two distinct actual youtube.com/embed iframe srcs, 1 chart image, 5 internal links, and 1200x630 featured cover.",
+          "evidence": "WordPress posts.get edit/view, post-sections.list, media.get"
+        },
+        {
+          "classification": "vendor_projection",
+          "detail": "Kopin/Fabric.AI modeled useful training throughput 1.3–1.6x and training duration 23–38% shorter; not achieved production benchmark.",
+          "evidence": "Oct 2026 white paper official release"
+        },
+        {
+          "classification": "user_preference",
+          "detail": "News 300–420 words, 2–10 relevant in-body media, 4–9 contextual links, accepted relevant cover, caption after each embed, no decorative text boxes, fix/retest before publishing.",
+          "evidence": "Editorial rules and current story instruction"
+        }
+      ],
+      "editorial_corrections": {
+        "draft_issues": [],
+        "unresolved": [
+          "Official YouTube replay could be embedded and source URL confirmed; actual playback on reader device unverified.",
+          "The article attributes panel discussion topics to event announcement/replay listing, not to independent transcript observations.",
+          "No production GPU fleet optical interconnect benchmarks available."
+        ]
+      },
+      "user_feedback": {
+        "thumbs": "not accessible",
+        "analytics": "not accessible",
+        "engagement": "not accessible"
+      },
+      "next_three_improvements": [
+        "Preserve official replay identity from both partner websites and clearly separate iframe-rendered status from independently tested playback.",
+        "For company models publish normalized chart values with explicit scenario status, source and formula for derived time savings; avoid treating white-paper performance as measured.",
+        "Use original no-human optical communication cover with precise technology alt text; add independent browser/mobile and image QA if a public browser becomes available."
+      ],
+      "status": "published_and_wordpress_verified; independent_playback_and_external_visual_QA_outstanding"
     }
   ]
 }
