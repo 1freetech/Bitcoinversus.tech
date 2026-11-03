@@ -63,7 +63,7 @@
     "independent_visual_desktop_inspection": "unverified",
     "independent_visual_mobile_inspection": "unverified",
     "public_unauthenticated_fetch": "unverified-web-open-failed",
-    "exact_github_archive": "pending-until-create-and-fetch"
+    "exact_github_archive": "passed-both-files-created-and-fetched-by-exact-path"
   },
   "defect_log": [
     {
@@ -108,5 +108,13 @@
       "classification": "unavailable",
       "recommendation": "Implement authentic mobile and desktop viewport visual inspection and independent playback tests when the remote browser or capture tools permit; do not claim unavailable checks passed."
     }
-  ]
+  ],
+  "github": {
+    "article_archive": "https://github.com/1freetech/Bitcoinversus.tech/blob/main/archive/2026/11/28723-bosch-semiconductors-division-2028-five-billion-sales-2030.md",
+    "qa_archive": "https://github.com/1freetech/Bitcoinversus.tech/blob/main/archive/2026/11/28723-bosch-semiconductors-division-2028-five-billion-sales-2030.qa.json",
+    "article_archive_verified": "read-back-content-matches-published-WordPress",
+    "audit_record_verified": "read-back-and-current-sha-checked",
+    "initial_article_archive_commit": "a851d534fbc18a86247c3b218e604c786a1045f9",
+    "initial_qa_commit": "02738e61d741175bd90c8b99cffef1a9039d874f"
+  }
 }
