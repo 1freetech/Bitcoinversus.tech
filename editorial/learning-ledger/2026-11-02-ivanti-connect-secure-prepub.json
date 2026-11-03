@@ -1,0 +1,91 @@
+{
+  "run_id": "2026-11-02-ivanti-vpn-cisa",
+  "timestamp_date": "2026-11-02",
+  "news_category": "Cybersecurity",
+  "status": "QA_APPROVED",
+  "title": "CISA Sets November 2 Deadline as Ivanti VPN Attack Chain Gets More Patches",
+  "facts_sources": [
+    "CISA October 30 bulletin",
+    "Volexity October 13 incident research with October 29 update",
+    "Rapid7 November 2 mitigation table"
+  ],
+  "sources": [
+    "https://content.govdelivery.com/accounts/USDHSCISA/bulletins/4311c77",
+    "https://www.volexity.com/blog/2026/10/13/a-series-of-unauthenticated-events-chained-exploitation-of-ivanti-connect-secure-zero-days/",
+    "https://www.rapid7.com/blog/post/etr-additional-ivanti-connect-secure-zero-days-exploited-in-the-wild-cve-2026-111357-cve-2026-118527/"
+  ],
+  "checks": {
+    "word_count": 338,
+    "internal_links": 4,
+    "story_media": 3,
+    "caption_checks": [
+      {
+        "after": true,
+        "text_present": true,
+        "negated": false
+      },
+      {
+        "after": true,
+        "text_present": true,
+        "negated": false
+      },
+      {
+        "after": true,
+        "text_present": true,
+        "negated": false
+      }
+    ],
+    "duplicate_matches": 0,
+    "canonical_note": true,
+    "canonical_qr": true,
+    "canonical_wallet": true,
+    "canonical_disclaimer": true,
+    "amount_in_note": true,
+    "fixed_cover": [
+      28599,
+      1200,
+      630
+    ],
+    "banned_words": false
+  },
+  "rubric": {
+    "factual_accuracy": 25,
+    "source_and_research_quality": 15,
+    "duplicate_prevention": 10,
+    "contextual_links": 10,
+    "media_and_embed_quality": 14,
+    "cover_and_presentation": 10,
+    "charts_and_mathematical_integrity": 5,
+    "metadata_and_footer": 5,
+    "publishing_consistency": 4
+  },
+  "provisional_prepub_score": 98,
+  "publication_status": "not_yet_published",
+  "defect_correction": {
+    "issue": "False footer validation requiring sats amount in wallet paragraph",
+    "root_cause": "QR amount appears in approved Editor's Note",
+    "repair": "Check '5,000 sats' in note and verify wallet address separately",
+    "retest": "passed"
+  },
+  "visualization": {
+    "atlas": "40-style SmartChart",
+    "selected": "dated milestone sequence",
+    "alternatives": [
+      "Gantt unsuitable without durations",
+      "severity bars misleading due to mixed CVSS scoring",
+      "simple milestone table loses sequence"
+    ],
+    "source_dates": [
+      "2026-10-03",
+      "2026-10-13",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-13"
+    ]
+  },
+  "limitations": [
+    "Public image load can only be tested after publishing",
+    "Exact 12-person demographic roster not confirmed in accessible file"
+  ]
+}
