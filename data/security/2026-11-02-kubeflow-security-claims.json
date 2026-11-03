@@ -1,0 +1,88 @@
+{
+  "run_id": "2026-11-02-wordpress-28603",
+  "published_story_url": "https://bitcoinversus.tech/2026/11/02/kubeflow-pipelines-2-18-0-logs-zip-bomb-cve-2026-118759-118761/",
+  "events": [
+    {
+      "event": "Kubeflow Pipelines 2.18.0 release",
+      "date": "2026-10-28",
+      "source": "https://github.com/kubeflow/pipelines/releases/tag/2.18.0",
+      "status": "verified_primary_release"
+    },
+    {
+      "event": "Security advisories published",
+      "date": "2026-10-29",
+      "updated": "2026-10-30",
+      "source": "https://github.com/advisories/GHSA-wg5q-x4j9-qm54",
+      "status": "verified_vendor_advisory"
+    }
+  ],
+  "claims": [
+    {
+      "id": "CVE-2026-118759",
+      "type": "confidentiality",
+      "summary": "Backend run-log retrieval missing per-run authorization; may read unrelated pod logs if backend reachable and identifiers known",
+      "cvss_v3_1": 7.5,
+      "attack_preconditions": [
+        "reachable backend log endpoint",
+        "known run ID and pod/node ID",
+        "effective backend pod-log permissions"
+      ],
+      "fixed": "2.18.0",
+      "fix": "readLog permission and pod runid label check",
+      "source": "https://github.com/advisories/GHSA-wg5q-x4j9-qm54",
+      "status": "primary_security_advisory_verified"
+    },
+    {
+      "id": "CVE-2026-118761",
+      "type": "availability",
+      "summary": "Multipart archive decompression before namespace authorization could exhaust API server memory",
+      "cvss_v3_1": 7.5,
+      "attack_preconditions": [
+        "reachable pipeline archive upload API",
+        "compressed archive causing sufficient expansion for workload limits"
+      ],
+      "fixed": "2.18.0",
+      "fix": "compressed and extracted archive budgets, tar traversal limits",
+      "source": "https://github.com/advisories/GHSA-8fmv-6rg5-5924",
+      "status": "primary_security_advisory_verified"
+    }
+  ],
+  "other_sources": [
+    "https://kubeflow-pipelines.readthedocs.io/en/latest/operator-guides/upgrade-2.18.html",
+    "https://kubeflow-pipelines.readthedocs.io/en/latest/user-guides/core-functions/run-a-pipeline.html",
+    "https://cloud.google.com/blog/products/ai-machine-learning/getting-started-kubeflow-pipelines"
+  ],
+  "chart_decision": {
+    "selected": "none",
+    "rationale": "Two independent CVEs both share 7.5 CVSS scores, so no meaningful numeric distribution or trend exists. A number chart would be redundant; narrative contrasts confidentiality vs availability.",
+    "numerical_status": "Identical publisher-reported CVSS 3.1 severity scores; no measured exploit rates."
+  },
+  "visual_assets": [
+    {
+      "media_id": 28595,
+      "credit": "Kubeflow project documentation",
+      "subject": "pipeline upload interface"
+    },
+    {
+      "media_id": 28597,
+      "credit": "Google Cloud",
+      "subject": "pipeline log viewer"
+    },
+    {
+      "media_id": 28596,
+      "credit": "Kubeflow project documentation",
+      "subject": "run configuration screen"
+    }
+  ],
+  "verification": {
+    "wordpress_status": "publish",
+    "wordpress_live_readback": true,
+    "cover_id": 28598,
+    "cover_dimensions": [
+      1200,
+      630
+    ],
+    "public_browser": "not_accessible",
+    "media_embed_runtime": "WordPress rendered image markup verified; external image pixels not independently tested"
+  }
+}
