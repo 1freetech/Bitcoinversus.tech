@@ -1,0 +1,117 @@
+{
+  "version": "BitcoinVersus.Tech v5.1",
+  "date": "2026-11-03",
+  "wordpress_id": 28739,
+  "publication_url": "https://bitcoinversus.tech/2026/11/03/liquid-network-bitcoin-backing-restored-4000-btc-exploit-pegout-restrictions-2026/",
+  "featured_media_id": 28719,
+  "story_title": "Liquid Network Restores Bitcoin Backing After 4,000 BTC Exploit, but Withdrawals Remain Restricted",
+  "archive_path": "archive/2026/11/28739-liquid-network-bitcoin-backing-restored-4000-btc-exploit-pegout-restrictions-2026.md",
+  "archive_commit": "f705b0b3fa63e94164f6fa44de9069256320804f",
+  "evidence": [
+    {
+      "claim": "The Liquid Federation announced full 1:1 L-BTC backing November 3, 2026",
+      "status": "verified primary announcement",
+      "source": "https://x.com/Liquid_BTC/status/2117407283391214047"
+    },
+    {
+      "claim": "About 4,000 L-BTC were invalidly created and roughly 4,000 BTC withdrawn September 6; reserves fell about 4205 to 197 BTC",
+      "status": "verified published incident assessment",
+      "source": "https://blog.blockstream.com/liquid-network-security-incident-assessment/"
+    },
+    {
+      "claim": "SideSwap reports 4270.54 BTC backing 4270.54 L-BTC on the morning of November 3 and continuing Federation peg-out restrictions",
+      "status": "verified provider statement; dated snapshot",
+      "source": "https://testnet.sideswap.io/news/the-liquid-peg-is-back-to-one-to-one/"
+    },
+    {
+      "claim": "Samson Mow attributed reserve replacement to Blockstream; federation has not provided a full provenance breakdown",
+      "status": "attributed not independently audited",
+      "source": "https://www.theblock.co/news/ecosystems/2026-11-03-liquid-network-restores-full-bitcoin-backing-following-exploit-432387"
+    }
+  ],
+  "chart": {
+    "catalog": "1freetech/SmartChart atlas/catalog.json (40 entries inspected)",
+    "finalists": [
+      {
+        "name": "vertical bar",
+        "rank": 1
+      },
+      {
+        "name": "lollipop",
+        "rank": 2
+      },
+      {
+        "name": "step chart",
+        "rank": 3,
+        "warning": "interval observations insufficient to imply continuous levels"
+      }
+    ],
+    "selection": "vertical bar with zero baseline",
+    "units": "BTC",
+    "values": [
+      4205,
+      197,
+      4270.54
+    ],
+    "precision": "first two approximations, last dated SideSwap snapshot",
+    "data_sources": [
+      "https://blog.blockstream.com/liquid-network-security-incident-assessment/",
+      "https://testnet.sideswap.io/news/the-liquid-peg-is-back-to-one-to-one/"
+    ],
+    "source_code": "Generated locally with Matplotlib; working files not committed here"
+  },
+  "qa": {
+    "duplicates": "Targeted WordPress keyword and GitHub archive searches found no direct matching prior story before publication",
+    "saved_gutenberg": "verified WordPress post-get edit context",
+    "server_rendered_html": "verified WordPress post-get view context",
+    "internal_links": 4,
+    "in_story_media_count": 3,
+    "media": [
+      "Liquid Federation X blockquote",
+      "BTC Sessions 2021 YouTube rendered iframe",
+      "source-based bar chart image"
+    ],
+    "featured_cover_dimensions": "1200x630 verified media metadata",
+    "featured_cover_body_duplicate": false,
+    "footer": "original donation QR 24593 and disclaimer present",
+    "external_public_browser": "unavailable: web page fetch failed; independent browser desktop/mobile not confirmed",
+    "youtube_playback": "unverified: iframe rendered, live playback not tested",
+    "x_embeds_live": "unverified: server-rendered blockquote present, client script not tested"
+  },
+  "defects": [
+    {
+      "issue": "Draft initially contained 3 rather than 4 contextual internal links",
+      "cause": "Insufficient link-count preflight",
+      "repair": "Inserted fourth verified related Bitcoin security link prior to creation",
+      "regression_check": "Saved post contains four bitcoinversus.tech contextual links",
+      "status": "resolved before publication"
+    },
+    {
+      "issue": "External desktop/mobile live rendering and playback not verified",
+      "cause": "Public URL not retrievable by web browsing source; local container cannot resolve website",
+      "repair": "Server-rendered WordPress content inspected; external validation remains necessary",
+      "regression_check": "Verify page on desktop and mobile and play video/X when browser access is available",
+      "status": "open"
+    }
+  ],
+  "improvements": [
+    {
+      "rank": 1,
+      "label": "verified lesson",
+      "observation": "Restored reserve backing is distinct from normal Federation peg-out service",
+      "action": "Keep reserve and withdrawal-status fields separate in recovery coverage"
+    },
+    {
+      "rank": 2,
+      "label": "hypothesis",
+      "observation": "A reusable QA preflight could prevent missing contextual links",
+      "action": "Run required count and link target checks before publication"
+    },
+    {
+      "rank": 3,
+      "label": "unavailable",
+      "observation": "Independent external mobile layout and video playback could not be exercised",
+      "action": "Introduce real browser device and media playback verification gate before future publication"
+    }
+  ]
+}
