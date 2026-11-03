@@ -126,7 +126,7 @@
         "reason": "could illustrate disclosed historical count series; rejected no series"
       }
     ],
-    "github_archive": "pending exact-path readback"
+    "github_archive": "passed exact-path GitHub fetch on article and QA files"
   },
   "defects": [
     {
@@ -164,5 +164,12 @@
       "type": "unavailable",
       "proposal": "Add actual desktop/mobile viewport screenshot inspection and playback checks; don't promote iframe presence or screenshot readiness to tested playback."
     }
-  ]
+  ],
+  "github": {
+    "article_url": "https://github.com/1freetech/Bitcoinversus.tech/blob/main/archive/2026/11/28893-samsung-2nm-foundry-project-orders-double-2026.md",
+    "qa_url": "https://github.com/1freetech/Bitcoinversus.tech/blob/main/archive/2026/11/28893-samsung-2nm-foundry-project-orders-double-2026.qa.json",
+    "initial_article_commit": "23836d7dcc038a5d8cf517b73f6a3ff6d694816d",
+    "initial_qa_commit": "802ccef9b8df773b15ce87b755327f6b8c9fdfb9",
+    "verification": "both exact paths fetched and content checked"
+  }
 }
