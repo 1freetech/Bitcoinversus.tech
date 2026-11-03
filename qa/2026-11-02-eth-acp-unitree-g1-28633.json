@@ -1,0 +1,233 @@
+{
+  "schema_version": "5.1",
+  "post_id": 28633,
+  "site": "bitcoinversus.tech",
+  "mode": "news",
+  "title": "ETH Zurich's Unitree G1 Climbs Ladders With One AI Control Policy",
+  "slug": "eth-zurich-unitree-g1-attention-contact-planning-ladders-92-5-percent-2026",
+  "source_event_date": "2026-10-22",
+  "checked_on": "2026-11-02",
+  "wordpress_status": "publish",
+  "publication_status": "published_unverified",
+  "publication_url": "https://bitcoinversus.tech/2026/11/02/eth-zurich-unitree-g1-attention-contact-planning-ladders-92-5-percent-2026/",
+  "topic": "robotics",
+  "rotation": {
+    "previous": "cybersecurity",
+    "current": "robotics",
+    "basis": "Latest published CISA Ivanti VPN post; distinct robotics research, approved autonomous selection",
+    "advanced_after_publish": true
+  },
+  "duplicate_checks": {
+    "wordpress": {
+      "query_terms": [
+        "Humanoid Mobility via Attention-based Contacts",
+        "contact planning",
+        "13.2 minutes",
+        "92.5%",
+        "Unitree G1 ladder"
+      ],
+      "result": "no matching event; other Unitree G1 and ETH Zurich walking-hand topics found, distinct"
+    },
+    "github": {
+      "query_terms": [
+        "Humanoid Mobility via Attention-based Contacts",
+        "13.2 minutes",
+        "contact planning"
+      ],
+      "result": "no matching archived article"
+    }
+  },
+  "sources": [
+    {
+      "type": "primary_research_preprint",
+      "url": "https://arxiv.org/abs/2610.31608",
+      "date": "2026-10-22",
+      "peer_review": "under review"
+    },
+    {
+      "type": "primary_project_page",
+      "url": "https://leggedrobotics.github.io/ACP/",
+      "date": "2026-10-22"
+    },
+    {
+      "type": "secondary_reporting_video_id",
+      "url": "https://www.i-programmer.info/news/169-robotics/19254-mastering-humanoid-mobility.html",
+      "date": "2026-11-01"
+    },
+    {
+      "type": "chart_method",
+      "url": "https://github.com/1freetech/SmartChart/blob/main/docs/chart-selection-protocol-v2.md",
+      "date": "2026-11-01"
+    }
+  ],
+  "calculations": [
+    {
+      "name": "simulation_percentage_point_gap",
+      "expression": "92.5 - 58.8",
+      "result": 33.7,
+      "unit": "percentage points",
+      "source": "https://arxiv.org/abs/2610.31608"
+    }
+  ],
+  "chart_selection": {
+    "catalog": "1freetech/SmartChart/atlas/catalog.json",
+    "catalog_count": 40,
+    "reviewed_type_ids": [
+      "line",
+      "area",
+      "stackedArea",
+      "step",
+      "candlestick",
+      "spark",
+      "slope",
+      "bump",
+      "bars",
+      "groupedBars",
+      "stackedBars",
+      "percentBars",
+      "lollipop",
+      "dumbbell",
+      "bullet",
+      "waterfall",
+      "pareto",
+      "tornado",
+      "histogram",
+      "boxplot",
+      "violin",
+      "dot",
+      "density",
+      "scatter",
+      "bubble",
+      "heatmap",
+      "hexbin",
+      "donut",
+      "treemap",
+      "waffle",
+      "sunburst",
+      "sankey",
+      "funnel",
+      "gantt",
+      "calendar",
+      "control",
+      "gauge",
+      "radar",
+      "choropleth",
+      "symbolMap"
+    ],
+    "eligible_finalists": [
+      {
+        "type": "bars",
+        "why": "One aggregate success rate per model; direct vertical comparison with zero baseline and common percent unit",
+        "decision": "selected"
+      },
+      {
+        "type": "lollipop",
+        "why": "Also shows two rates but weaker visual baseline for a percentage comparison",
+        "decision": "not_selected"
+      },
+      {
+        "type": "dumbbell",
+        "why": "A comparison of two variants can be shown on one scale, but dataset has one aggregate comparison rather than multiple matched categories",
+        "decision": "not_selected"
+      }
+    ],
+    "selected_type": "vertical_bar",
+    "dataset": {
+      "metric": "average success across eight composite simulated obstacle courses",
+      "values": [
+        {
+          "name": "ACP",
+          "value": 92.5
+        },
+        {
+          "name": "MGMT",
+          "value": 58.8
+        }
+      ],
+      "unit": "percent",
+      "status": "simulation",
+      "limitations": "Simulation test disables some noise, domain randomization and action delays; no inferred field success rate"
+    },
+    "chart_asset_id": 28630,
+    "chart_dimensions": [
+      1200,
+      630
+    ]
+  },
+  "content": {
+    "reporting_word_count_approx": 319,
+    "in_body_media": [
+      {
+        "kind": "youtube",
+        "canonical_url": "https://www.youtube.com/watch?v=bpqIqHL3LwE",
+        "rendered_iframe_verified": true,
+        "playback_test": "unavailable"
+      },
+      {
+        "kind": "official_photo",
+        "media_id": 28623,
+        "rendered": true
+      },
+      {
+        "kind": "original_comparison_chart",
+        "media_id": 28630,
+        "rendered": true
+      },
+      {
+        "kind": "official_project_diagram",
+        "media_id": 28624,
+        "rendered": true
+      }
+    ],
+    "internal_links": 5,
+    "featured_cover": {
+      "media_id": 28625,
+      "width": 1200,
+      "height": 630,
+      "alt_text": true,
+      "source": "cropped ETH Zurich official research image"
+    },
+    "footer": {
+      "canonical_editor_note": true,
+      "original_donation_qr_id": 24043,
+      "disclaimer": true
+    },
+    "metadata": {
+      "seo_title": true,
+      "seo_description": true,
+      "excerpt": true
+    }
+  },
+  "qa": {
+    "prepublication": "passed_structural_and_source_checks",
+    "postpublication_wordpress_readback": "passed",
+    "rendered_youtube_iframe": "passed",
+    "actual_playback": "unavailable",
+    "desktop_visual": "unavailable",
+    "mobile_visual": "unavailable",
+    "public_web_fetch": "failed_external_access",
+    "full_qa_score": null,
+    "hard_gate_media_playback": "pending",
+    "status": "published_unverified"
+  },
+  "learning_events": [
+    {
+      "label": "verified_lesson",
+      "priority": 1,
+      "observation": "A draft with native Gutenberg YouTube provider rendered a YouTube iframe in WordPress view HTML before publication.",
+      "prevention_check": "Verify both saved embed block and rendered iframe, then separately test actual playback when browser available."
+    },
+    {
+      "label": "verified_lesson",
+      "priority": 2,
+      "observation": "Image proxy crop was imported into WordPress and media metadata reported exactly 1200x630 for featured asset 28625.",
+      "prevention_check": "Confirm uploaded media dimensions and alt text prior to assigning featured_media."
+    },
+    {
+      "label": "proposed_hypothesis",
+      "priority": 3,
+      "observation": "Browser playback and mobile audit unavailable despite post readback.",
+      "prevention_check": "Add independent browser video playback and responsive screenshot inspection before marking published_verified."
+    }
+  ]
+}
