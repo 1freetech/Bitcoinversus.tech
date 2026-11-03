@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "post_id": 28923,
+  "topic": "US spot Bitcoin ETF flows, October 26–November 2, 2026",
+  "as_of": "2026-11-03",
+  "reporting_window": "latest complete US ETF session November 2, 2026",
+  "unit": "US dollars, millions",
+  "primary_source": "https://farside.co.uk/bitcoin-etf-flow-all-data/",
+  "fund_source": "https://www.ishares.com/us/products/333011/isharesBitcoin-trust-etf",
+  "sec_source": "https://www.sec.gov/Archives/edgar/data/1980994/000143774926026004/bit20260630c_10q.htm",
+  "observations": [
+    {
+      "date": "2026-10-26",
+      "total": 110.3
+    },
+    {
+      "date": "2026-10-27",
+      "total": 176
+    },
+    {
+      "date": "2026-10-28",
+      "total": 137.3
+    },
+    {
+      "date": "2026-10-29",
+      "total": 17.2
+    },
+    {
+      "date": "2026-10-30",
+      "total": -643.2,
+      "ibit": -233.7,
+      "fbTC": -201,
+      "arkb": -129.5,
+      "bitb": -25.7,
+      "gbtc": -53.3
+    },
+    {
+      "date": "2026-11-02",
+      "total": -398.6,
+      "ibit": -405.3,
+      "fbTC": 6.7
+    }
+  ],
+  "derived": {
+    "prior_four_session_inflow_usdm": 440.8,
+    "two_session_outflow_usdm": 1041.8,
+    "ibit_two_session_outflow_usdm": 639,
+    "ibit_share_of_two_session_net_outflow_pct": 61.33
+  },
+  "prices": {
+    "date": "2026-11-03",
+    "intraday_low_approx_usd": 76300,
+    "subsequent_approx_usd": 76900,
+    "period": "European morning; not US closing price",
+    "source": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto"
+  },
+  "chart": {
+    "smartchart_catalog": "https://github.com/1freetech/SmartChart/blob/main/atlas/catalog.json",
+    "catalog_count": 40,
+    "considered_all": true,
+    "chosen": "vertical bar",
+    "finalists": [
+      {
+        "rank": 1,
+        "type": "vertical bar",
+        "reason": "Signed daily categorical flows; meaningful zero line and reversal"
+      },
+      {
+        "rank": 2,
+        "type": "line",
+        "reason": "Chronological observations, but visually implies continuity across exchange closures and weekends"
+      },
+      {
+        "rank": 3,
+        "type": "waterfall",
+        "reason": "Good for cumulative contributions, but less direct for per-session comparison"
+      }
+    ],
+    "zero_baseline": true,
+    "media_id": 28914,
+    "code_path": "editorial/code/2026-11-03-bitcoin-etf-28923-chart.py"
+  },
+  "caveats": [
+    "ETF dollar net flows are not the number of Bitcoin sold on-chain at a specific instant.",
+    "Trading sessions have gaps for weekends; zero data was not filled in.",
+    "Farside data may be revised; source should be checked again before updating totals.",
+    "No verified Nov 3 session flow was included."
+  ]
+}
