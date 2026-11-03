@@ -1,0 +1,84 @@
+<!-- BitcoinVersus.Tech native Gutenberg archive -->
+<!-- WordPress ID 28544; published 2026-11-02T20:17:41 -->
+<!-- URL: https://bitcoinversus.tech/2026/11/02/reactor-world-models-robotics-ai-video-60fps-decoder-speed-2026/ -->
+<!-- Featured image 28540 -->
+
+<!-- wp:paragraph -->
+<p>San Francisco AI infrastructure company <a href="https://www.reactor.inc/blog/reactor-launch">Reactor</a> is demonstrating interactive, AI-generated worlds intended for robotics and gaming. In an <a href="https://www.youtube.com/watch?v=RMspGHdVg-Q">October 30, 2026 presentation</a> published by Scale, co-founder Alberto Taiuti showed a character moving through a generated environment while explaining why responsive simulations require more than impressive video. The critical test is whether a virtual world reacts quickly <em>and</em> behaves consistently with real physics.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=RMspGHdVg-Q","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=RMspGHdVg-Q
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>Scale's October 30, 2026 presentation with Reactor CEO Alberto Taiuti includes a live interactive world-model demonstration. Claims about frame rate and physical realism are the company's, not independent validation.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">A world model must do more than draw convincing scenes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Unlike prerecorded generative video, a world model must remember the scene, accept an action and produce the next observation immediately. Taiuti's demo features a dog exploring a synthetic park, reportedly streamed at about <strong>60 frames per second</strong>. That is a demonstration of interactive visual output, not an independently measured robotics-control benchmark.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":28539,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/world-model-robotics-cloud-feedback-loop-e28094-original-conceptual-technical-illustration.png" alt="Conceptual illustration of real robot sensors connecting to GPU cloud inference and a world-model simulation of robot manipulation" class="wp-image-28539" /><figcaption class="wp-element-caption"><em>Original conceptual editorial illustration—not a photograph or proprietary Reactor infrastructure diagram—of a physical robot, GPU inference servers and a simulated world-model workcell.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Reactor's <a href="https://www.reactor.inc/robotics">robotics infrastructure</a> aims to serve policies remotely and let developers test actions inside simulated environments. It is not the same product as <a href="https://bitcoinversus.tech/2026/10/27/google-deepmind-genie-4-real-time-interactive-worlds-audio-2026/">Google's Genie 4</a>, and a visually convincing scene does not automatically reproduce friction, contact force, or a real robot's sensor readings.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=Ivu5B3WbpaE","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=Ivu5B3WbpaE
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>Reactor's earlier official introduction to its real-time generative-video platform, embedded on the company's May 28, 2026 launch announcement; historical company material, not a new October demo.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Where the 2.2× decoder gain comes from</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A measurable engineering improvement comes from Reactor's <a href="https://www.reactor.inc/blog/optimizing-wan-decoder">October 12 technical report</a>. Its Wan video decoder initially needed <strong>133.8 milliseconds per chunk</strong>. Changing GPU memory layout reduced that to 85.9 ms; processing latent frames together brought it to 78.8 ms; further kernel changes reached <strong>60.2 ms</strong>, approximately 2.2 times faster. These are company-reported timings for one decoder benchmark, not whole-system response times.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":28541,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/reactor-wan-vae-decoder-optimization-stages-vertical-bars.png" alt="Four vertical bars showing Reactor Wan decoder per-chunk times of 133.8, 85.9, 78.8 and 60.2 milliseconds after successive optimization steps" class="wp-image-28541" /><figcaption class="wp-element-caption"><em>SmartChart categorical vertical bars using <a href="https://www.reactor.inc/blog/optimizing-wan-decoder">Reactor's October 12, 2026 engineering benchmark</a>: 133.8 → 85.9 → 78.8 → 60.2 milliseconds per decoded chunk. Lower is better. Company-reported GPU decoder timing—not end-to-end network or robot-control latency.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>The optimization is important because an AI model produces compressed representations before a decoder creates visible frames. Less decoding delay frees time for simulation, transmission and robot decisions. The company's reported boost relied on an NVIDIA B200 test environment; actual results depend on model, GPU, network and control-loop requirements.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Physical accuracy remains the test</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>That distinction applies to <a href="https://bitcoinversus.tech/2026/11/01/krafton-ludo-robotics-ludi-02-social-ai-robot-human-intent-2026/">Krafton's social-robot research</a> and <a href="https://bitcoinversus.tech/2026/10/31/osrec-013-robot-state-estimation-kalman-filters-sensor-fusion-uncertainty/">robot-state estimation</a>: photorealistic pixels are useful, but robots must track position, uncertainty and physical contact. <a href="https://bitcoinversus.tech/2026/10/30/pika-h3-flex-ai-video-open-weights-six-step-generation-2026/">Recent AI video models</a> face different goals when producing finished clips rather than continuous simulations.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Reactor says investors including NVIDIA joined its funding round in October and its infrastructure supports interactive developers. Independent tests of physical accuracy, end-to-end latency, cost and robot success rates will determine whether these world models deliver dependable training—not just convincing demonstrations.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">BitcoinVersus.Tech</h2>
+<!-- /wp:heading --><!-- wp:paragraph -->
+<p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats. For best results, scan the QR code from a laptop or larger screen.</em></p>
+<!-- /wp:paragraph --><!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Original BitcoinVersus.Tech Bitcoin donation QR code for 5,000 satoshis" class="wp-image-24043" /><figcaption class="wp-element-caption"><em>Original BitcoinVersus.Tech QR code. Verify the address and amount before sending Bitcoin.</em></figcaption></figure>
+<!-- /wp:image --><!-- wp:paragraph -->
+<p><em>Bitcoin address: <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong>. On a phone, open the QR image on another screen or copy and verify the address in your wallet before sending.</em></p>
+<!-- /wp:paragraph --><!-- wp:paragraph -->
+<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>
+<!-- /wp:paragraph -->
