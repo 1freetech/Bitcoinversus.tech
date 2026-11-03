@@ -1,0 +1,395 @@
+{
+  "schema_version": "5.1",
+  "engine": "PerfectRecursiveLearningContentEngineer",
+  "post_id": 28673,
+  "title": "Franklin Templeton Says Blockchain Could Power the AI Agent Economy",
+  "url": "https://bitcoinversus.tech/2026/11/02/franklin-templeton-agentic-ai-blockchain-machine-payments-sandy-kaul-2026/",
+  "publication_status": "published_unverified",
+  "original_thesis_date": "2026-07-21",
+  "recent_context_date": "2026-10-29",
+  "published_date": "2026-11-02",
+  "focus": "Bitcoin/AI/Finance user-selected topic overrides long rotation",
+  "duplicate_checks": {
+    "wordpress_queries": [
+      "Franklin Templeton agentic AI",
+      "Sandy Kaul blockchain",
+      "killer use case blockchain",
+      "agentic payments",
+      "x402 Franklin Templeton"
+    ],
+    "matched_original_event": false,
+    "other_related_articles": true,
+    "github_queries": [
+      "Sandy Kaul",
+      "Franklin Templeton agentic",
+      "agentic AI killer use case"
+    ],
+    "matching_archive_found": false
+  },
+  "claims": [
+    {
+      "id": "FT-001",
+      "type": "source_claim",
+      "claim": "Sandy Kaul wrote that blockchain could be pivotal to autonomous AI commerce",
+      "source": "https://www.ftinstitutionalemea.com/articles/2026/digital-assets/agentic-ai-the-killer-use-case-for-blockchain-and-crypto",
+      "event_date": "2026-07-21"
+    },
+    {
+      "id": "FT-002",
+      "type": "projection",
+      "claim": "15%–25% of US e-commerce sales may involve AI agents by 2030",
+      "source": "https://www.ftinstitutionalemea.com/articles/2026/digital-assets/agentic-ai-the-killer-use-case-for-blockchain-and-crypto",
+      "source_notes": "Third-party forecast cited in Franklin essay; neither observed adoption nor measured blockchain settlement"
+    },
+    {
+      "id": "FT-003",
+      "type": "verified_context",
+      "claim": "Julian Love separately examined finance agents and programmable on-chain permissions",
+      "source": "https://www.ftinstitutional.com/articles/2026/digital-assets/the-next-front-in-the-personal-agent-wars-consumer-finance",
+      "event_date": "2026-10-29"
+    },
+    {
+      "id": "FT-004",
+      "type": "industry_technical_context",
+      "claim": "x402 provides HTTP 402-based machine payment flow, with authorization and onchain settlement in demonstration",
+      "source": "https://confpad.io/conferences/devworld-2026/giving-ai-agents-a-wallet"
+    }
+  ],
+  "chart_selection": {
+    "catalog": "https://github.com/1freetech/SmartChart/blob/main/atlas/catalog.json",
+    "catalog_count": 40,
+    "data": [
+      {
+        "metric": "US e-commerce sales share involving AI agents",
+        "year": 2030,
+        "forecast_lower_percent": 15,
+        "forecast_upper_percent": 25
+      }
+    ],
+    "data_origin": "Third-party estimate cited by Kaul's July 21, 2026 Franklin Templeton essay",
+    "data_kind": "forecast_interval_not_observed",
+    "unit": "percent_of_total_US_ecommerce_sales",
+    "evaluated_types": [
+      {
+        "id": "line",
+        "chart": "Line chart",
+        "status": "ineligible",
+        "reason": "ordered time-series"
+      },
+      {
+        "id": "area",
+        "chart": "Area chart",
+        "status": "ineligible",
+        "reason": "ordered time-series"
+      },
+      {
+        "id": "stackedArea",
+        "chart": "Stacked area",
+        "status": "ineligible",
+        "reason": "ordered time-series"
+      },
+      {
+        "id": "step",
+        "chart": "Step chart",
+        "status": "ineligible",
+        "reason": "ordered time-series"
+      },
+      {
+        "id": "candlestick",
+        "chart": "Candlestick",
+        "status": "ineligible",
+        "reason": "ordered time-series"
+      },
+      {
+        "id": "spark",
+        "chart": "Sparkline",
+        "status": "ineligible",
+        "reason": "ordered time-series"
+      },
+      {
+        "id": "slope",
+        "chart": "Slopegraph",
+        "status": "ineligible",
+        "reason": "no independent comparison across dated categories"
+      },
+      {
+        "id": "bump",
+        "chart": "Bump chart",
+        "status": "ineligible",
+        "reason": "ordered time-series"
+      },
+      {
+        "id": "bars",
+        "chart": "Horizontal / vertical bar",
+        "status": "selected_rendered",
+        "reason": "Chart.js horizontal floating bar accurately renders the single [15,25] forecast interval on a 0–100% share axis; unlike a conventional zero-baseline magnitude bar, it explicitly starts at the lower bound."
+      },
+      {
+        "id": "groupedBars",
+        "chart": "Grouped bars",
+        "status": "ineligible",
+        "reason": "relationships need paired variables"
+      },
+      {
+        "id": "stackedBars",
+        "chart": "Stacked bars",
+        "status": "ineligible",
+        "reason": "components-of-total requires additive groups"
+      },
+      {
+        "id": "percentBars",
+        "chart": "100% stacked bars",
+        "status": "ineligible",
+        "reason": "components-of-total requires additive groups"
+      },
+      {
+        "id": "lollipop",
+        "chart": "Lollipop",
+        "status": "ineligible",
+        "reason": "no independent comparison across dated categories"
+      },
+      {
+        "id": "dumbbell",
+        "chart": "Dumbbell",
+        "status": "eligible_preferred_concept",
+        "reason": "Two endpoints of the same forecast interval in one category. A bounded interval avoids fabricating historical readings."
+      },
+      {
+        "id": "bullet",
+        "chart": "Bullet",
+        "status": "ineligible",
+        "reason": "no task schedule/target"
+      },
+      {
+        "id": "waterfall",
+        "chart": "Waterfall",
+        "status": "ineligible",
+        "reason": "no independent comparison across dated categories"
+      },
+      {
+        "id": "pareto",
+        "chart": "Pareto",
+        "status": "ineligible",
+        "reason": "no independent comparison across dated categories"
+      },
+      {
+        "id": "tornado",
+        "chart": "Tornado",
+        "status": "ineligible",
+        "reason": "no independent comparison across dated categories"
+      },
+      {
+        "id": "histogram",
+        "chart": "Histogram",
+        "status": "ineligible",
+        "reason": "distribution requires sample"
+      },
+      {
+        "id": "boxplot",
+        "chart": "Box-and-whisker",
+        "status": "ineligible",
+        "reason": "distribution requires sample"
+      },
+      {
+        "id": "violin",
+        "chart": "Violin",
+        "status": "ineligible",
+        "reason": "distribution requires sample"
+      },
+      {
+        "id": "dot",
+        "chart": "Dot / beeswarm",
+        "status": "eligible_alternative",
+        "reason": "Two points and a connecting segment could display endpoints, but a floating interval is easier to read at a glance."
+      },
+      {
+        "id": "density",
+        "chart": "Density curve",
+        "status": "ineligible",
+        "reason": "distribution requires sample"
+      },
+      {
+        "id": "scatter",
+        "chart": "Scatter plot",
+        "status": "ineligible",
+        "reason": "relationships need paired variables"
+      },
+      {
+        "id": "bubble",
+        "chart": "Bubble chart",
+        "status": "ineligible",
+        "reason": "relationships need paired variables"
+      },
+      {
+        "id": "heatmap",
+        "chart": "Heatmap",
+        "status": "ineligible",
+        "reason": "relationships need paired variables"
+      },
+      {
+        "id": "hexbin",
+        "chart": "Hexbin plot",
+        "status": "ineligible",
+        "reason": "distribution requires sample"
+      },
+      {
+        "id": "donut",
+        "chart": "Pie / donut",
+        "status": "ineligible",
+        "reason": "components-of-total requires additive groups"
+      },
+      {
+        "id": "treemap",
+        "chart": "Treemap",
+        "status": "ineligible",
+        "reason": "components-of-total requires additive groups"
+      },
+      {
+        "id": "waffle",
+        "chart": "Waffle",
+        "status": "ineligible",
+        "reason": "components-of-total requires additive groups"
+      },
+      {
+        "id": "sunburst",
+        "chart": "Sunburst",
+        "status": "ineligible",
+        "reason": "components-of-total requires additive groups"
+      },
+      {
+        "id": "sankey",
+        "chart": "Sankey",
+        "status": "ineligible",
+        "reason": "flow requires measured routes"
+      },
+      {
+        "id": "funnel",
+        "chart": "Funnel",
+        "status": "ineligible",
+        "reason": "flow requires measured routes"
+      },
+      {
+        "id": "gantt",
+        "chart": "Gantt / timeline",
+        "status": "ineligible",
+        "reason": "no task schedule/target"
+      },
+      {
+        "id": "calendar",
+        "chart": "Calendar heatmap",
+        "status": "ineligible",
+        "reason": "ordered time-series"
+      },
+      {
+        "id": "control",
+        "chart": "Control chart",
+        "status": "ineligible",
+        "reason": "ordered time-series"
+      },
+      {
+        "id": "gauge",
+        "chart": "Gauge",
+        "status": "ineligible",
+        "reason": "no task schedule/target"
+      },
+      {
+        "id": "radar",
+        "chart": "Radar / spider",
+        "status": "ineligible",
+        "reason": "relationships need paired variables"
+      },
+      {
+        "id": "choropleth",
+        "chart": "Choropleth map",
+        "status": "ineligible",
+        "reason": "geography requires verified location variation"
+      },
+      {
+        "id": "symbolMap",
+        "chart": "Proportional-symbol map",
+        "status": "ineligible",
+        "reason": "geography requires verified location variation"
+      }
+    ],
+    "finalists": [
+      {
+        "id": "dumbbell",
+        "status": "eligible_preferred_concept",
+        "reason": "Two endpoints of the same forecast interval in one category. A bounded interval avoids fabricating historical readings."
+      },
+      {
+        "id": "bars",
+        "status": "selected_rendered",
+        "reason": "Chart.js horizontal floating bar accurately renders the single [15,25] forecast interval on a 0–100% share axis; unlike a conventional zero-baseline magnitude bar, it explicitly starts at the lower bound."
+      },
+      {
+        "id": "dot",
+        "status": "eligible_alternative",
+        "reason": "Two points and a connecting segment could display endpoints, but a floating interval is easier to read at a glance."
+      }
+    ],
+    "final_visual": "horizontal floating interval bar (dumbbell/range semantics)",
+    "rationale": "An interval communicates a range estimate without inventing a time series, zero baseline value, or multiple unrelated quantities.",
+    "chart_asset_id": 28671,
+    "chart_asset_dimensions": [
+      1200,
+      630
+    ],
+    "method_source": "https://github.com/1freetech/SmartChart/blob/main/docs/chart-selection-protocol-v2.md"
+  },
+  "prepublication": {
+    "word_count": 376,
+    "inbody_media_count": 4,
+    "official_speaker_portrait": 28669,
+    "featured_cover_media_id": 28670,
+    "cover_dimensions": [
+      1200,
+      630
+    ],
+    "chart_media_id": 28671,
+    "video_sources": [
+      "https://www.youtube.com/watch?v=qlErmOkxhCc",
+      "https://www.youtube.com/watch?v=ju2RarIQVnA"
+    ],
+    "internal_links_verified_live": 5,
+    "footer_template": "WP post 28576 canonical",
+    "duplicate_absent": true,
+    "hard_gates_passed": true
+  },
+  "postpublication": {
+    "wordpress_record_status": "publish",
+    "rendered_youtube_iframes": 2,
+    "media_images_in_rendered_html": 2,
+    "seo_persisted": true,
+    "footer_persisted": true,
+    "original_qr_image_id": 24043,
+    "wordpress_media_dimensions_verified": true,
+    "desktop_visual": "unavailable",
+    "mobile_visual": "unavailable",
+    "public_web_access": "failed",
+    "youtube_playback": "unavailable",
+    "qa_score": null,
+    "full_verification": "pending"
+  },
+  "archive_path": "archive/2026/11/28673-franklin-templeton-agentic-ai-blockchain-machine-payments-sandy-kaul-2026.gutenberg.html",
+  "learning": [
+    {
+      "rank": 1,
+      "type": "verified_lesson",
+      "observation": "Original quote circulated again but its first-publication date was July 21, not November 2.",
+      "prevention": "Check source chronology and distinguish recycled statements from newly reported company analysis before writing a headline."
+    },
+    {
+      "rank": 2,
+      "type": "verified_lesson",
+      "observation": "Forecast from a single interval was the only meaningful quantitative comparison; a floating range avoids a spurious trend.",
+      "prevention": "Select chart from variable semantics and data status, then log 40-catalog exclusions and three finalists."
+    },
+    {
+      "rank": 3,
+      "type": "proposed_hypothesis",
+      "observation": "Both YouTube blocks rendered as iframes through WordPress but browser playback and mobile tests were inaccessible.",
+      "prevention": "Implement independent browser playback and responsive screenshot QA before upgrading to published_verified."
+    }
+  ]
+}
