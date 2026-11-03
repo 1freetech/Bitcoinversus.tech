@@ -32,7 +32,8 @@
     "independent_desktop_mobile_browser": "unavailable: external page URL not accessible to browser tool",
     "youtube_real_playback": "unverified; iframe exists but playing media was not tested",
     "external_x_playback": "unverified; embedded text appears but media playback untested",
-    "exact_github_archive": "pending next read-back"
+    "exact_github_archive": "verified: GitHub archive source contains byte-for-byte WordPress saved Gutenberg markup, after YAML front matter",
+    "archive_read_back_date": "2026-11-03"
   },
   "chart_review": {
     "all_40_smartchart_types_considered": true,
