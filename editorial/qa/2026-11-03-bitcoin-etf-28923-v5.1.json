@@ -1,0 +1,90 @@
+{
+  "version": "BitcoinVersus.Tech v5.1",
+  "timestamp": "2026-11-03",
+  "post_id": 28923,
+  "article": "Bitcoin ETFs Lose $1.04 Billion in Two Sessions",
+  "post_url": "https://bitcoinversus.tech/2026/11/03/bitcoin-etfs-lose-1-04-billion-two-sessions-november-2026/",
+  "status": "publish",
+  "featured_media_id": 28912,
+  "chart_media_id": 28914,
+  "archive": "archive/2026/11/28923-bitcoin-etfs-lose-1-04-billion-two-sessions-november-2026.md",
+  "claim_sources": [
+    {
+      "statement": "October 30 and November 2 net ETF outflows total $1,041.8m",
+      "status": "verified from dated source figures",
+      "source": "https://farside.co.uk/bitcoin-etf-flow-all-data/",
+      "calculation": "643.2+398.6=1041.8"
+    },
+    {
+      "statement": "IBIT outflows total $639m over the two sessions; FBTC inflow Nov 2 +$6.7m",
+      "status": "verified from Farside session breakdown",
+      "source": "https://farside.co.uk/bitcoin-etf-flow-all-data/",
+      "calculation": "233.7+405.3=639; 639/1041.8=61.3%"
+    },
+    {
+      "statement": "BTC briefly reached about $76,300 during European morning Nov 3",
+      "status": "attributed report, intraday approximate not daily closing level",
+      "source": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto"
+    },
+    {
+      "statement": "IBIT tracks spot Bitcoin before fund expenses",
+      "status": "verified official issuer document",
+      "source": "https://www.ishares.com/us/products/333011/isharesBitcoin-trust-etf"
+    }
+  ],
+  "qa_gates": {
+    "duplicate_preflight": "targeted WordPress searches ETF outflows, IBIT, 643.2, 398.6, exact slug plus GitHub code search; no matching article found",
+    "saved_gutenberg": "verified: 19 blocks",
+    "server_rendered_wordpress_html": "verified",
+    "source_to_chart_recalculation": "verified: data values, zero baseline and 1041.8 sum",
+    "contextual_internal_links": 4,
+    "original_news_words": 463,
+    "forbidden_editorial_words": 0,
+    "featured_cover": "media 28912 verified 1200x630, unique and excluded from body",
+    "in_body_media": [
+      "original source-backed vertical-bar chart ID 28914",
+      "CNBC archival historical YouTube video YFx0F3GaQh8"
+    ],
+    "chart_selection": "all 40 SmartChart types reviewed; bar versus line versus waterfall",
+    "editor_note_donation_disclaimer": "verified in saved and WordPress rendered markup",
+    "youtube_iframe": "present in WordPress rendered HTML, actual playback unverified",
+    "public_desktop_mobile": "unverified, independent public browser retrieval failed",
+    "media_playback": "unverified, no direct player instrumentation",
+    "github_exact_archive": "pending next independent read-back"
+  },
+  "defects": [
+    {
+      "issue": "Independent live desktop/mobile rendering unavailable",
+      "cause": "Web retrieval returned an inaccessible URL error; WordPress render verified but no external responsive browser test",
+      "repair": "Server-rendered WordPress HTML verified; keep visual QA outstanding",
+      "regression_check": "Inspect article at mobile/desktop widths and check overflow with a real browser",
+      "status": "open"
+    },
+    {
+      "issue": "Embedded video playback not verified",
+      "cause": "Server returned an iframe but could not execute playback",
+      "repair": "Source video URL independently identified and WordPress embed generated",
+      "regression_check": "Watch actual embedded player and confirm playback, not only markup",
+      "status": "open"
+    }
+  ],
+  "ranked_improvements": [
+    {
+      "rank": 1,
+      "label": "verified lesson",
+      "recommendation": "Distinguish ETF net dollar redemptions from spot BTC market transactions; never infer causation from coincident timestamps"
+    },
+    {
+      "rank": 2,
+      "label": "hypothesis",
+      "recommendation": "Automatically compare post sources, chart annotations, daily sums and prior archive headlines before publishing"
+    },
+    {
+      "rank": 3,
+      "label": "unavailable",
+      "recommendation": "Enable independent browser device and playback verification before publication for future reports"
+    }
+  ],
+  "sources_path": "editorial/data/2026-11-03-bitcoin-etf-28923-farside.json",
+  "chart_code_path": "editorial/code/2026-11-03-bitcoin-etf-28923-chart.py"
+}
