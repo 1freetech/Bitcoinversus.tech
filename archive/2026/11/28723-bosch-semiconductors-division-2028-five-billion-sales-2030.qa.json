@@ -82,7 +82,9 @@
     "official_video_embed": "passed-saved-native-Gutenberg-core-embed",
     "wp_view_player_iframe": "passed-WP-context-view-generates-youtube-iframe",
     "screenshot_url": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fbitcoinversus.tech%2F2026%2F11%2F03%2Fbosch-semiconductors-division-2028-five-billion-sales-2030%2F?vpw=1200&vph=3500&w=1200&requeue=true",
-    "screenshot_status": "ready-with-WordPress-service"
+    "screenshot_status": "ready-with-WordPress-service",
+    "top_of_article_screenshot_url": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fbitcoinversus.tech%2F2026%2F11%2F03%2Fbosch-semiconductors-division-2028-five-billion-sales-2030%2F?vpw=1200&vph=1600&w=1200&requeue=true",
+    "top_of_article_screenshot_status": "ready-reported-by-WordPress-screenshot-service; image-bytes-not-inspected"
   },
   "defect_log": [
     {
