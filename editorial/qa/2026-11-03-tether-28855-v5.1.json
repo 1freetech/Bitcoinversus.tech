@@ -1,0 +1,90 @@
+{
+  "edition": "BitcoinVersus.Tech v5.1",
+  "timestamp": "2026-11-03",
+  "publication": {
+    "id": 28855,
+    "title": "Tether CEO Says Company Holds 150,000 Bitcoin, Above USDT Reserve Figure",
+    "url": "https://bitcoinversus.tech/2026/11/03/tether-ceo-150000-bitcoin-usdt-reserves-bdo-attestation-2026/",
+    "status": "publish",
+    "featured_media": 28781
+  },
+  "primary_sources": [
+    "https://tether.io/news/tether-generates-1-5-billion-in-q3-net-operating-profit-as-reserve-buffer-doubles-to-almost-8-billion/",
+    "https://assets.ctfassets.net/vyse88cgwfbl/7nQYtcoP9GxIUFSyro2dGK/8d0521470b9e99c8c0831019cabea4ee/ISAE_3000R_-_Opinion_Tether_International_Financial_Figure_30-09-2026.pdf",
+    "https://x.com/paoloardoino/status/2115151361029611596"
+  ],
+  "publication_checks": {
+    "duplicates": "targeted WordPress title/amount/slug and GitHub phrase checks: no matching article identified",
+    "gutenberg_edit_read": "verified",
+    "word_count_original_article": 495,
+    "internal_links": 4,
+    "forbidden_words": 0,
+    "cover_dimensions": "1200x630 verified WordPress media metadata",
+    "body_media": [
+      "CEO X keynote post",
+      "2026 Bitcoin Magazine archival YouTube keynote",
+      "data-backed chart 28783"
+    ],
+    "original_donation_qr": 24593,
+    "ordered_footer": "Editor Note > QR and instructions > disclaimer",
+    "server_rendered_wordpress_html": "verified contains full body and one YouTube iframe",
+    "x_embed": "X shortcode stored and server-rendered markup present",
+    "independent_desktop_mobile_browser": "unavailable: external page URL not accessible to browser tool",
+    "youtube_real_playback": "unverified; iframe exists but playing media was not tested",
+    "external_x_playback": "unverified; embedded text appears but media playback untested",
+    "exact_github_archive": "pending next read-back"
+  },
+  "chart_review": {
+    "all_40_smartchart_types_considered": true,
+    "finalists": [
+      "vertical bar",
+      "lollipop",
+      "dumbbell"
+    ],
+    "data_path": "editorial/data/2026-11-03-tether-28855-holdings.json",
+    "code_path": "editorial/code/2026-11-03-tether-28855-chart.py",
+    "media_id": 28783,
+    "zero_baseline": true,
+    "scope_and_date_warning": true
+  },
+  "defects": [
+    {
+      "name": "Independent desktop/mobile page QA not available",
+      "cause": "Public article URL inaccessible through independent web retrieval",
+      "repair": "WordPress saved and server-rendered markup reviewed; browser-level verification remains necessary",
+      "regression": "Check at desktop and phone widths with real browser and inspect overflow",
+      "status": "open"
+    },
+    {
+      "name": "Media playback outside WordPress not verified",
+      "cause": "No executable external browser/player validation",
+      "repair": "Embed source URLs checked and WordPress iframe generated",
+      "regression": "Open YouTube and CEO X embeds and verify actual playback",
+      "status": "open"
+    }
+  ],
+  "ranked_improvements": [
+    {
+      "rank": 1,
+      "type": "verified lesson",
+      "result": "Different reporting scopes do not establish a 49,940 BTC purchase",
+      "action": "Require amount, entity, valuation date and assurance status next to each charted claim"
+    },
+    {
+      "rank": 2,
+      "type": "hypothesis",
+      "result": "Read-back of server-rendered HTML may catch failed embeds sooner",
+      "action": "Gate publication with saved block, rendered iframe and client playback checks"
+    },
+    {
+      "rank": 3,
+      "type": "unavailable",
+      "result": "Independent desktop/mobile layout and full playback cannot be asserted",
+      "action": "Add accessible browser/device inspection before publication when possible"
+    }
+  ],
+  "archive_path": "archive/2026/11/28855-tether-ceo-150000-bitcoin-usdt-reserves-bdo-attestation-2026.md",
+  "archive_commit": "5f8659f0f322cec49cc585352ba85e2476578c99",
+  "data_commit": "9c12285ee6ba1499953ce1cc02bb709561bb7516",
+  "chart_code_commit": "788e8410014c1fa0415abf8ebd680caa52909edc"
+}
