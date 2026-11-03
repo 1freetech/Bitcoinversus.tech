@@ -114,7 +114,7 @@
     "mobile_visual_inspection": "unverified",
     "video_playback": "unverified-no-independent-player-test",
     "chart_evaluation": "not applicable: only gross-area diameter calculation and noncomparable funding/investment values; numerical data insufficient for meaningful SmartChart chart",
-    "github_exact_archive": "pending-until-create-fetch"
+    "github_exact_archive": "passed-exact-path-github-fetches-reviewed"
   },
   "capture": {
     "url": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fbitcoinversus.tech%2F2026%2F11%2F03%2Fbosch-roseville-sic-fab-samples-commercial-production-qualification-2026%2F?vpw=1200&vph=3600&w=1200&requeue=true",
@@ -151,5 +151,12 @@
       "type": "unavailable",
       "recommendation": "Perform visual screenshot-pixel and player playback inspection with a browser before marking full embed QA complete."
     }
-  ]
+  ],
+  "github": {
+    "article_url": "https://github.com/1freetech/Bitcoinversus.tech/blob/main/archive/2026/11/28870-bosch-roseville-sic-fab-samples-commercial-production-qualification-2026.md",
+    "qa_url": "https://github.com/1freetech/Bitcoinversus.tech/blob/main/archive/2026/11/28870-bosch-roseville-sic-fab-samples-commercial-production-qualification-2026.qa.json",
+    "initial_article_commit": "e6dd8970f125a9ea1f27d86ff3d8278761387ffe",
+    "initial_qa_commit": "971c178d937ccb065e06b1b9b579af4e3f1235d3",
+    "readback": "exact file ids and video id verified"
+  }
 }
