@@ -1,0 +1,73 @@
+<!-- wp:paragraph -->
+<p>Researchers at <strong>ETH Zurich</strong> and collaborators released a new humanoid-control study on <strong>October 22, 2026</strong>, demonstrating a <strong>Unitree G1</strong> climbing ladders, vaulting obstacles, crawling and recovering from falls using one learned policy. The <a href="https://arxiv.org/abs/2610.31608">research preprint</a>, titled <em>Humanoid Mobility via Attention-based Contacts</em>, describes an experimental method rather than a commercial robot deployment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">The robot plans where to touch</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Instead of memorizing complete movements for each obstacle, an attention-based planner chooses where the robot's <strong>hands, elbows, knees, feet and pelvis</strong> should contact its surroundings. A second network turns those contact targets into whole-body motion. The <a href="https://leggedrobotics.github.io/ACP/">project documentation</a> says the two networks run onboard at <strong>50 Hz</strong>, direct 23 joints and look up to 1.5 seconds ahead.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=bpqIqHL3LwE","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=bpqIqHL3LwE
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p><em>ETH Zurich Robotic Systems Lab's Unitree G1 mobility research video, showing climbing, vaulting and other whole-body movements.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The team used just <strong>13.2 minutes of human motion demonstrations</strong> as a training prior before reinforcement-learning refinement. During deployment, the controller uses LiDAR terrain mapping and onboard sensors, not a prerecorded human trajectory. The approach complements <a href="https://bitcoinversus.tech/2026/10/16/osrec-011-whole-body-control-hierarchical-quadratic-programming/">whole-body robot control</a> and <a href="https://bitcoinversus.tech/2026/10/29/model-predictive-control-robots-trajectory-optimization-constraints-receding-horizons/">model-predictive planning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":28624,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/eth-acp-contact-planning-research-pipeline.png" alt="Original ETH Zurich diagram of the attention-based contact planning and robot motion control pipeline." class="wp-image-28624" /><figcaption class="wp-element-caption"><em>ETH Zurich's research pipeline links terrain observations, future body-contact predictions and the robot's movement controller.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">The simulation benchmark needs context</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Across eight <strong>simulated composite obstacle courses</strong>, researchers report a <strong>92.5% average success rate</strong>, compared with <strong>58.8%</strong> for the MGMT comparison method: a 33.7-percentage-point advantage. These experiments omit certain real-world sensor noise and action delays. The percentages are <strong>not measured reliability rates for robots operating in workplaces</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":28630,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/eth-acp-vs-mgmt-simulation-success-92-5-58-8-chart.png" alt="Vertical columns showing 92.5 percent simulation success for ACP and 58.8 percent for the MGMT baseline across eight composite courses." class="wp-image-28630" /><figcaption class="wp-element-caption"><em>BitcoinVersus.Tech <a href="https://bitcoinversus.tech/2026/10/31/40-types-of-charts-explained-visual-guide-examples/">Chart Atlas</a> comparison using <a href="https://arxiv.org/abs/2610.31608">researcher-reported simulation results</a>. Zero-baseline vertical bars show two comparable success rates; not real-world trials.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>A single generalist policy can reduce the need for separate controllers and transitions, but local goal-directed mobility is only part of autonomy. The researchers still identify constraints involving overhead contacts, object manipulation and route planning. Prior <a href="https://bitcoinversus.tech/2026/10/04/robotics-unitree-says-g1-humanoid-fights-autonomously-with-unifolm-x2/">Unitree G1 demonstrations</a> and <a href="https://bitcoinversus.tech/2026/10/03/eth-zurich-robot-hand-walks-fingertips-fingers-as-legs/">ETH Zurich's walking robotic hand</a> address different control problems.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":28623,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/eth-acp-unitree-g1-official-skills.jpg" alt="ETH Zurich research photographs of the Unitree G1 humanoid performing multiple terrain traversal skills." class="wp-image-28623" /><figcaption class="wp-element-caption"><em>ETH Zurich Robotic Systems Lab shows Unitree G1 mobility skills, including movements that use whole-body contact with obstacles.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>The next test is repeatable performance outside carefully controlled research conditions, including varying sensor quality, obstacle geometry and hardware wear. The paper remains a <strong>preprint under review</strong>; the published demonstrations show promising skills, not verified industrial deployment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">BitcoinVersus.Tech</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats. For best results, scan the QR code from a laptop or larger screen.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Original BitcoinVersus.Tech QR code requesting 5000 satoshis" class="wp-image-24043" /><figcaption class="wp-element-caption"><em>Original BitcoinVersus.Tech 5,000-sat Bitcoin donation QR.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><em>Bitcoin address: <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong>. On a phone, open the QR image on another screen or copy and verify the address in your wallet before sending.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>
+<!-- /wp:paragraph -->
