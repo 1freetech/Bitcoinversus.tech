@@ -1,1 +1,1946 @@
-{"schema_version":"1.0.0","title":"BitcoinVersus.Tech Recursive Editorial Learning Ledger","last_updated":"2026-11-02","effective_prompt":"BITCOINVERSUS.TECH — RECURSIVE LEARNING NEWS WRITER v4.0","principles":["RECALL → RESEARCH → REASON → WRITE → VERIFY → PUBLISH → EVALUATE → LEARN → REPEAT","Keep all existing Perfect Bite-Size News Writer v3.1, Embed Law v3.0, Featured Cover Law, chart, rotation, internal-link and footer standards authoritative.","Mandatory accuracy, no-duplicate and functioning media gates are not bypassed by a numerical quality score.","Record only evidence actually checked; distinguish WordPress rendered player markup from independently proven playback.","Do not infer thumbs up/down, engagement, clickthrough, or conversion from absent analytics."],"feedback_access":{"user_editorial_preferences":[{"kind":"user_preference","detail":"The user explicitly requires the v4.0 recursive cycle and an evidence-backed learning ledger."},{"kind":"user_preference","detail":"The user prioritizes actual relevant, working in-story YouTube/X embeds, captions after media, 2–10 media, rotating covers and accurate charts."},{"kind":"user_preference","detail":"The user requires the exact original Bitcoin donation QR, with 5,000 sat instructions, Editor's Note and disclaimer."}],"thumbs_up_down_history":{"status":"not_accessible","value":null,"claim":"No thumbs-up/down history was exposed through the WordPress, GitHub, or chat tools; no preference inference from ratings."},"measured_engagement":{"status":"not_accessible","value":null,"claim":"No verified site analytics or engagement metric retrieved."}},"score_rubric":{"max_score":100,"target":95,"criteria":[{"name":"Accuracy and source verification","max":25},{"name":"Originality and newsworthiness","max":15},{"name":"Technical depth and explanatory clarity","max":15},{"name":"Working embeds and media relevance","max":15},{"name":"Cover and visualization quality","max":10},{"name":"Internal links and SEO","max":10},{"name":"Live-page QA and formatting","max":10}],"mandatory_gates":["accuracy","duplicate_prevention","functional_media"],"scoring_warning":"No score ≥95/100 is a substitute for actually passing a mandatory gate. Mark unverified/failed gates explicitly."},"entries":[{"post_id":27966,"article_title":"National Grid Secures 73 Acres for Teesside AI Substation","publication_date":"2026-11-01","category_names":["Energy","Data Centers","Technology","Trending News"],"wordpress_category_ids":[5177360,1212,6,27318186],"live_url":"https://bitcoinversus.tech/2026/11/01/national-grid-tees-dock-teesside-73-acres-400kv-ai-substation-2026/","wordpress_publication_status":{"classification":"verified_fact","status":"publish","evidence":"WordPress posts.get context=edit and context=view both returned publish and identical public URL; independent site fetch failed."},"editorial_body_word_count":339,"origin_and_timing":{"classification":"verified_fact","description":"Same-day November 1, 2026 land-agreement reports; 73 acres corroborated in Sky News syndication and The Guardian; outline planning application R/2026/0711/OOM remains valid, without a recorded decision."},"original_sources":[{"type":"primary_official","url":"https://planning.redcar-cleveland.gov.uk/Planning/Display/R/2026/0711/OOM","verified":"search-result content confirmed proposed 400kV substation, 2026-09-24 filing and no decision. Direct opened fetch sometimes times out."},{"type":"primary_project_directory","url":"https://www.nationalgrid.com/electricity-transmission/network-and-infrastructure/infrastructure-projects","verified":"Public National Grid project directory lists planned Tees Dock substation at Dorman Point. Detailed >1GW contract quote not directly fetched in this directory view."},{"type":"primary_regulatory_index","url":"https://www.riiot3.nationalgrid.com/reopeners","verified":"National Grid October 2026 summaries index lists Tees Dock Substation needs-case documents; individual technical PDF not examined in this audit."},{"type":"secondary_original_reporting","url":"https://uk.finance.yahoo.com/news/national-grid-sparks-deal-pave-074400601.html","verified":"Sky News reporting dated 2026-11-01 describes >70 acre land transaction and planned AI site."},{"type":"secondary_original_reporting","url":"https://www.theguardian.com/business/2026/nov/01/national-grid-to-site-biggest-substation-on-teesside-near-planned-ai-datacentre","verified":"The Guardian dated 2026-11-01 reports 73 acres, 3.2GW mayoral claim and campus comparison."},{"type":"secondary_document_analysis","url":"https://tsnmedia.org/teesside-substation-national-grid-dorman-point/","verified":"Secondary 2026-11-01 article reports reading National Grid's >1GW import/export capacity and Ofgem needs-case summary; exact original project-page passage was not independently fetched."}],"fact_status":[{"claim":"73 acre land agreement","classification":"verified_fact","confidence":"high","qualifier":"Reported by Sky News and The Guardian; transaction details not independently retrieved from signed deed."},{"claim":"400kV Dorman Point substation plan","classification":"verified_fact","confidence":"high","qualifier":"Official council planning application and National Grid project directory."},{"claim":"more than 1GW of contracted import/export capacity","classification":"reported_fact","confidence":"medium","qualifier":"Secondary document reading; original full project-specific document not read in this audit."},{"claim":"up to 3.2GW claimed by mayor","classification":"attributed_ambition","confidence":"high","qualifier":"Distinct scope from contract; cannot add/compare as delivered capacity."},{"claim":"Britain's largest substation or named contractor","classification":"projected_or_unconfirmed","qualifier":"Not reported as built, approved or officially awarded."}],"duplicate_check":{"classification":"verified_fact","wordpress_searches":["Teesworks","Dorman Point","Teesside substation","Tees Dock","National Grid","substation"],"github_searches":["Tees Dock","Dorman Point","Teesworks substation"],"result":"No exact earlier BitcoinVersus.Tech report matching the Dorman Point land deal detected. Search is not proof of exhaustive archive-wide semantic uniqueness."},"internal_links":{"count":5,"status":"verified_wordpress_markup","topics":["Nscale UK grid delays","GE Vernova HV equipment","Idaho transformer test","Siemens microgrid switchboard","Top 10 US energy projects"],"external_link_verification":"Target pages were not all individually opened as a live browser."},"in_story_media":{"count":5,"verified_markup":true,"types":[{"type":"licensed_photo","media_id":27963,"subject":"Teesside Steelworks 2019 archival contextual photo","license":"CC BY-SA 2.0","caption_after":true,"not_actual_project":true},{"type":"official_youtube","youtube_id":"XaF4IyEd0TU","source":"National Grid UK, What is a Substation?, 2026-05-16","verified_external_video_identity":true,"verified_wordpress_iframe":true,"independent_playback_verified":false,"caption_after":true},{"type":"attributed_chart","media_id":27964,"subject":"National Grid >1GW lower bound vs separate mayoral 3.2GW ambition; different claim scopes","measurement_status":"Illustrative, thresholds and aspirations, not like-for-like delivered capacity","verified_rendered_img_markup":true,"caption_after":true},{"type":"licensed_photo","media_id":27962,"subject":"Actual Creyke Beck substation, illustrative, not Tees Dock","license":"CC BY-SA 2.0","caption_after":true,"not_actual_project":true},{"type":"independent_youtube","youtube_id":"7Q-aVBv7PWM","source":"Practical Engineering, How Do Substations Work?, 2019-08-27","verified_external_video_identity":true,"verified_wordpress_iframe":true,"independent_playback_verified":false,"caption_after":true}],"native_wordpress_embedding_method":"Gutenberg core/shortcode [youtube canonical watch URL], renders a YouTube iframe in posts.get(context=view).","failure_or_limitation":"Public HTML iframe and video identity verified; no independent video start/playback on desktop or mobile. Distinguish player markup from tested function."},"featured_cover":{"media_id":27965,"dimensions":{"width":1200,"height":630},"style":"anime editorial artwork","person":"fictional adult Black British female transmission engineer, late 30s","alt_text_checked":true,"attached_as_featured_media":true,"no_text_overlay_by_prompt":true,"visual_anatomy_manual_inspection":"not independently visually reviewed in desktop browser; generation constraints requested correct anatomy","site_composition":"Industrial transmission planning landscape; conceptual image not actual built Dorman Point."},"chart":{"media_id":27964,"purpose":"prevent category confusion between contracted connection threshold and broad political ambition","visualization":"annotated horizontal comparison","values":[{"value":1,"unit":"GW","kind":"strict lower threshold for >1GW contract, not exact"},{"value":3.2,"unit":"GW","kind":"up to site ambition, not verified capacity"}],"concern":"A common numeric axis can falsely imply directly comparable metrics. Text, axis label, and caption disclose distinct scopes; next time prefer a clearly differentiated scope panel or source-native comparable quantities.","source_urls":["https://www.nationalgrid.com/electricity-transmission/network-and-infrastructure/infrastructure-projects","https://uk.finance.yahoo.com/news/national-grid-sparks-deal-pave-074400601.html"]},"footers":{"exact_approved_editors_note_verified":true,"original_donation_qr_media_id":24043,"donation_request_sats":5000,"disclaimer_verified":true,"discontinued_x_promo_absent":true},"before_after_comparison":{"classification":"verified_fact","previous_story_id":27959,"previous_story_title":"Krafton's Ludo Robotics Shows Ludi 0.2 AI for Understanding Human Intent","previous_story_observation":"WordPress raw content for previous story contained footer QR media 24593 and a nonstandard support heading; new story correctly uses required QR media 24043 and exact approved italic Editor's Note.","not_inferred":"No user satisfaction or engagement inferred from difference."},"external_verification_limitations":["Independent web fetch of the published bitcoinversus.tech article URL failed; publication status and rendered content independently checked through connected WordPress read APIs.","No desktop/mobile browser screenshots or full YouTube player playback test available in this run.","Not every contextual internal link and external attribution destination was individually clicked/opened.","No personally rated user feedback/likes, engagement metrics, or subscriber stats accessible.","Full National Grid project-specific needs-case PDF and original direct wording of >1GW capacity were not opened."],"correction_log":[{"classification":"verified_fact","change":"No post-publication editorial text correction made in this cycle.","status":"no_change"},{"classification":"verified_fact","change":"The user introduced Recursive Learning News Writer v4.0 after this post was already published. The article received a retrospective evaluation rather than claiming an original v4.0 prepublish pass.","status":"documentation"}],"quality_score":{"target":95,"achieved":88,"met_target":false,"breakdown":{"Accuracy and source verification":22,"Originality and newsworthiness":15,"Technical depth and explanatory clarity":14,"Working embeds and media relevance":12,"Cover and visualization quality":8,"Internal links and SEO":10,"Live-page QA and formatting":7},"gate_status":{"accuracy":"PASS_WITH_DISCLOSED_LIMITS","duplicate_prevention":"PASS_SEARCHED_WP_AND_GITHUB","functional_media":"UNVERIFIED_END_TO_END_PLAYBACK","all_mandatory_gates_fully_proven":false},"reviewer_note":"Score is an explicitly evidence-based editorial estimate, not a measured reader outcome. 88/100 is below target. Do not represent functional-video/visual-browser acceptance as completed."},"three_improvements_to_carry_forward":[{"priority":1,"classification":"action","instruction":"For material numeric claims, read the exact originating National Grid/Ofgem or equivalent project-specific primary document, not just a project directory and secondary account; capture page or paragraph and date before publication.","verification_on_next_story":"Document direct primary claim evidence and match chart labels to that primary scope."},{"priority":2,"classification":"action","instruction":"Add an end-to-end media/browser QA gate: validate iframe markup, video identity, actual desktop/mobile playback and external media response when supported. If not available, report as unverified and avoid claiming a high completed score.","verification_on_next_story":"Store player screenshot/playback test result or clearly marked unavailable status."},{"priority":3,"classification":"action","instruction":"Strengthen chart semantics and footer regression: compare genuinely commensurate quantities or separate non-comparable thresholds/aspirations; independently check original donation QR WordPress ID 24043 and exact approved Editor's Note.","verification_on_next_story":"Verify chart-source mapping plus exact footer media identity and document outcomes."}],"pending_followups":[{"type":"dependency","description":"Check Redcar & Cleveland R/2026/0711/OOM before November 11 consultation close and review future decision if reporting a follow-up.","automation_created":false},{"type":"technical_qa","description":"Obtain independent live browser/player and responsive image QA when browser tools support it.","automation_created":false},{"type":"source_qa","description":"Read National Grid Tees Dock original needs-case / project-specific >1GW passage and confirm exact interpretation.","automation_created":false}],"engagement_metrics":{"status":"not_accessible","data":null},"user_rating_feedback":{"status":"not_accessible","data":null}},{"post_id":28053,"article_title":"Intel Shares Sink 28.6% as Chip Stocks Slide on Weak Outlook","publication_date":"2026-11-01","category_names":["Semiconductors","Intel","Finance","Technology","Trending News"],"wordpress_category_ids":[284207,12068,4269,6,27318186],"live_url":"https://bitcoinversus.tech/2026/11/01/intel-shares-28-6-percent-chip-stocks-october-30-2026-earnings-outlook/","archive_path":"archive/2026/11/28053-intel-28-6-percent-semiconductor-stock-rout-q3-earnings-2026.md","archive_blob_sha":"3201c9da3b56969d35cc32cf5d54c07e65ec90b0","archive_verified_repositories":["1freetech/Bitcoinversus.tech","1freetech/opencert.tech","1freetech/techcert"],"wordpress_publication_status":{"classification":"verified_fact","status":"publish","published_timestamp":"2026-11-01T14:51:13","evidence":"WordPress posts.update returned publish with permanent URL. Independent posts.get context=edit and context=view both returned publish and matched URL; public web browser fetch was not accessible."},"editorial_body_word_count":338,"original_sources":[{"type":"primary_company_earnings","url":"https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results","date":"2026-10-29","verification":"Intel's own Q3 results read directly: $16.5B Q3 revenue +21%; $15.0–16.0B Q4 guidance; DCAI $7.3B +78%; CCPG $8.1B -5%; business segments include internal transfers and elimination. Primary claim scope checked."},{"type":"primary_regulatory_filing","url":"https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm","date":"2026-10-29","verification":"SEC-filed Intel Exhibit 99 earnings release, with same revenue and Q4 guidance amounts."},{"type":"secondary_firsthand_market_reporting","url":"https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/","date":"2026-10-30","verification":"Reuters U.S. closing market report: Intel -28.6%, AMD -10.9%, Nvidia -4.2%, Philadelphia semiconductor index -7.2%; used for chart's same-day comparable values."},{"type":"secondary_firsthand_earnings_reaction","url":"https://www.reuters.com/business/intel-warning-sparks-chip-rout-pc-weakness-clouds-turnaround-2026-10-30/","date":"2026-10-30","verification":"Reuters reporting about earnings disappointment, stock selloff and manufacturing/PC cash-flow context."},{"type":"secondary_original_report","url":"https://www.reuters.com/business/intel-signals-slower-growth-as-pc-market-remains-under-pressure-2026-10-29/","date":"2026-10-29","verification":"Reuters reported analysts expected approximately $17.07B Q4 revenue and expected ~$600M Israeli fab revenue impact; URL not independently opened in this run, so the article cites the opened October 30 Reuters recap."}],"fact_status":[{"classification":"verified_fact","claim":"Intel Q3 consolidated revenue $16.5B, 21% year-on-year growth","basis":"Intel primary reported Q3 2026 results"},{"classification":"verified_fact","claim":"Intel Q4 2026 guidance $15.0–$16.0B","basis":"Intel primary outlook, clearly forecast rather than actual"},{"classification":"verified_fact","claim":"October 30 closing Intel -28.6%, AMD -10.9%, Nvidia -4.2%, semiconductor index -7.2%","basis":"Reuters same U.S. trading session close; negative percent returns, not market cap, sales or power efficiency"},{"classification":"verified_fact","claim":"Data Center and AI $7.3B +78%; Client Computing and Physical AI $8.1B -5%","basis":"Intel earnings business-unit summary; segment figures not simply additive with consolidated revenue"},{"classification":"attributed_reporting","claim":"Intel Israeli fab disruption expected ~$600M revenue impact over two quarters","basis":"Reuters Oct 29–30 attribution, not Intel's actual realized result"},{"classification":"forecast","claim":"Intel and its CEO expect Q4 headwinds and cash constraints","basis":"Intel management outlook and Reuters market analysis; no final Q4 actual outcomes"}],"duplicate_check":{"classification":"verified_fact","wordpress_searches":["Quantum Blockchain Technologies","QBT","Method A/B/C","Bitaxe Gamma","Intel shares","Intel Q3","Intel earnings","semiconductor stocks","chip rout"],"github_searches":["Quantum Blockchain Technologies","Method C","Intel stock crash","Intel Q3 2026 earnings","chip rout"],"prevented_duplicate":{"title":"QBT Says All Three Bitcoin Mining Methods Are Now Running Live","post_id":27060,"date":"2026-10-29","result":"Rejected QBT Oct 29 as existing identical news topic before drafting, despite available primary announcement and source videos."},"selected_story":"October 30 Intel share market selloff, distinct event from already published Intel Kiryat Gat explosion story WordPress 28000 and from earlier earnings-related background articles.","limitation":"Search queries cover titles and content of accessible WordPress/GitHub indexes, not guaranteed complete semantic matching of every 2023–present item."},"internal_links":{"count":5,"status":"verified_in_published_WordPress_raw_markup","urls":["https://bitcoinversus.tech/2026/10/10/pc-shipments-plunge-20-1-q3-2026-memory-costs-ai-data-centers/","https://bitcoinversus.tech/2026/10/14/intel-one-command-llm-inference-xeon/","https://bitcoinversus.tech/2026/11/01/intel-kiryat-gat-fab28-explosion-two-week-shutdown-xeon-revenue-2026/","https://bitcoinversus.tech/2026/10/14/asml-ai-demand-outrunning-supply/","https://bitcoinversus.tech/2026/10/28/sk-hynix-q3-2026-104-trillion-won-hbm4-ai-memory-profit/"],"outbound_http_recheck":"Referenced Intel/SEC/Reuters primary and market source pages were searched and read; every contextual internal destination was not independently loaded as a browser URL, though URLs are established from WordPress archive."},"in_story_media":{"count":4,"media_verified_in_published_WordPress_html":true,"caption_after_each":true,"at_least_one_paragraph_between_media":true,"types":[{"type":"source_backed_chart","media_id":28045,"dimensions":"1200x650","subject":"Intel -28.6%, AMD -10.9%, Nvidia -4.2% one-session price returns October 30","verification":"WordPress full image and Gutenberg figure caption present; Reuters market close source confirmed; screenshot of visible chart not independently inspected."},{"type":"official_youtube","video_id":"EZhz7FocD-g","publisher":"Intel Business","date":"2026-06-01","subject":"Xeon 6+ server CPU product context","verification":"Original video identity from YouTube metadata, correct canonical Gutenberg shortcode and embedded iframe in published HTML; actual playback untested; explicitly NOT October 30 trading video."},{"type":"historical_licensed_photo","media_id":28046,"dimensions":"1280x850","source_url":"https://commons.wikimedia.org/wiki/File:4th_Generation_Intel%C2%AE_Core%E2%84%A2_Processor_Wafer_01.jpg","creator":"Intel in Deutschland","date":"2013","license":"CC BY-SA 2.0","verification":"Source license and original identification read directly in Wikimedia Commons; WordPress image caption correctly distinguishes historical wafer from 2026 Xeon."},{"type":"official_youtube","video_id":"_FfoGzK4VEQ","publisher":"Intel Newsroom","date":"2025-01-30","subject":"Intel 18A process technology background","verification":"YouTube metadata verified; Gutenberg shortcode and published iframe render; actual playback untested; contextual process technology, not same-day earnings footage."}],"known_limitations":["Video iframe markup and canonical URLs do not prove actual playback on desktop/mobile browser.","No independent responsive screenshot test of image/cover, chart or player.","Both official videos are older context footage; captions explicitly mark them as such."]},"featured_cover":{"media_id":28047,"width":1200,"height":630,"style":"realistic editorial photo-style illustration","person":"fictional Southeast Asian adult woman semiconductor process engineer aged 30s","identity":"fictional, not a real Intel employee or documentary coverage","alt_text_verified":true,"featured_attachment_verified":true,"no_text_requested_in_generation":true,"visual_anatomy_review":"not independently visually inspected in a graphical browser","rotation_evidence":"Prior Braiins OS post 28025 used an oil-painting-style cover with a man; next uses realistic scene and female professional; no generic desk."},"chart":{"media_id":28045,"chart_type":"horizontal bar","interpretation":"same-session one-day percentage stock losses for three listed chip manufacturers; three directly comparable percentages, not dollar market cap and not operating income","data":[{"name":"Intel","return_pct":-28.6},{"name":"AMD","return_pct":-10.9},{"name":"Nvidia","return_pct":-4.2}],"source":"https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/","comparison_scope":"All from U.S. Oct 30 close, not forecasts or mixed time windows","visual_inspection":"image dimensions and rendered HTML confirmed; screenshot analysis not possible."},"footers":{"exact_approved_editors_note_verified":true,"original_qr_wordpress_media_id":24043,"donation_request_sats":5000,"bitcoin_address":"3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb","disclaimer_verified":true,"no_discontinued_promo":true,"order":"Editor's Note → QR → scanning instructions → disclaimer"},"corrections_and_defects":[{"classification":"verified_fact","status":"avoided_prepublication","detail":"Rejected near-duplicate QBT methods announcement after WordPress found Oct 29 article 27060 and GitHub archive match; pursued distinct Intel October 30 stock-market event."},{"classification":"verified_fact","status":"documented_limit","detail":"No full external public-page browser render; published HTML read-back passed but end-to-end YouTube playback untested."},{"classification":"verified_fact","status":"improvement","detail":"Comparison chart now uses same-date, same-unit percentage returns, addressing prior Teesside threshold-vs-ambition ambiguity."},{"classification":"verified_fact","status":"improvement","detail":"Intel revenue and segment claims now cited from direct official Intel and SEC primary release, rather than only secondary interpretation."}],"prior_learning_applied":[{"prior_post_id":27966,"priority":1,"status":"met","evidence":"Read Intel's full Q3 earnings release and SEC exhibit for exact material actuals and guidance; Reuters U.S. closing numbers for chart."},{"prior_post_id":27966,"priority":2,"status":"partially_met","evidence":"Validated YouTube video identities, Gutenberg shortcode and WordPress iframe read-back; desktop/mobile playback test was still inaccessible."},{"prior_post_id":27966,"priority":3,"status":"met_with_visual_limit","evidence":"Created single-session percentage decline chart with consistent scope and confirmed original QR WordPress ID 24043 plus verbatim Editor's Note; no image screenshot test."}],"external_verification_limitations":["Independent web.open of the public permalink returned inaccessible. WordPress published status, URL, and rendered HTML returned success, not a graphical browser view.","Neither YouTube player was started/playback-tested on a user device; no desktop or mobile screenshots.","Featured-cover anatomy and chart visual composition could not be independently inspected via actual image screenshot.","No thumbs-up/down history or reader analytics exposed.","Not every internal and external target URL was individually fetched through a browser; sourced factual materials were read."],"quality_score":{"target":95,"achieved":92,"met_target":false,"breakdown":{"Accuracy and source verification":24,"Originality and newsworthiness":15,"Technical depth and explanatory clarity":15,"Working embeds and media relevance":12,"Cover and visualization quality":9,"Internal links and SEO":10,"Live-page QA and formatting":7},"gate_status":{"accuracy":"PASS_WITH_DISCLOSED_EXTERNAL_LINK_LIMITS","duplicate_prevention":"PASS_WP_AND_GITHUB_DETECTED_AND_AVOIDED_QBT_DUPLICATE","functional_media":"PARTIAL__RENDERED_IFRAMES_VERIFIED__INDEPENDENT_PLAYBACK_UNTESTED","all_mandatory_gates_fully_proven":false},"reviewer_note":"92/100 evidence-backed editorial estimate (+4 vs first ledger entry). Not a score for tested reader engagement or actual browser playback. An unmet functional media gate prevents claiming fully QA-complete despite publication."},"three_improvements_to_carry_forward":[{"priority":1,"classification":"action","instruction":"Add a real graphical browser/device media test for playback, mobile scaling and featured-cover anatomy when computer-use or browser capability is available. Keep a source-level verified/unverified matrix if unavailable; never use iframe markup as a playback guarantee.","verification_on_next_story":"Real player start plus screenshot or explicitly documented unavailability; compare with current post 28053."},{"priority":2,"classification":"action","instruction":"Before selection, search exact entities and synonyms in WordPress AND GitHub; the QBT candidate was demonstrably duplicate. Preserve the rejected candidate in the ledger to avoid recycling announcements.","verification_on_next_story":"Record at least one title/entity collision check and exact rejection/pivot rationale."},{"priority":3,"classification":"action","instruction":"Read official primary financial/technical documents for every material number and build only like-for-like charts. Perform a source-license and image-visual spot check and recheck all five internal links at their destination when feasible.","verification_on_next_story":"Document direct primary paragraph/section source plus comparison units and link/copyright QA."}],"user_rating_feedback":{"classification":"not_accessible","status":"not_accessible","data":null},"engagement_metrics":{"classification":"not_accessible","status":"not_accessible","data":null}},{"post_id":28099,"article_title":"Arm Releases Neural Dawn Mobile Game With AI Ray Tracing on Five Devices","publication_date":"2026-11-01","category_names":["Artificial Intelligence","Gaming","Semiconductors"],"live_url":"https://bitcoinversus.tech/2026/11/01/arm-neural-dawn-mobile-game-download-ai-ray-tracing-five-devices-2026/","original_sources":[{"url":"https://newsroom.arm.com/blog/neural-dawn-game-available-to-download","verified":"publisher original read"},{"url":"https://developer.arm.com/mobile-graphics-and-gaming/neural-technology/build-games","verified":"five-model compatibility list read"},{"url":"https://www.unrealengine.com/learning/octobers-epic-learning-content-mobile-development-in-unreal-engine","verified":"official Epic recording"}],"duplicate_check":{"wordpress":"Neural Dawn search no duplicate","github":"Neural Dawn search no duplicate","rejected_candidate":"Microchip PolarFire TSN exact-topic duplicate post 27364"},"internal_links":{"count":4},"in_story_media":{"count":4,"types":["Arm gameplay YouTube e4cnNm805YI","supported hardware chart WordPress 28088","Arm launch YouTube Y53HNgb6U48","Epic developer walkthrough YouTube XG5W2Ei_J0Q"],"verified_draft_wordpress_iframes":3,"verified_actual_playback":false},"featured_cover":{"id":28090,"dimensions":"1200x630","style":"anime editorial artwork","subject":"fictional adult male mobile graphics engineer"},"chart":{"media_id":28088,"values":"three MediaTek 9600 Pro models, two Xiaomi XRING O3 models","source":"Arm October 29 compatibility page","unit":"device model count"},"footers":{"verified_note":true,"original_qr_id":24043,"disclaimer":true},"editorial_corrections":["WordPress posts.create blocked, recovered via draft shell and update","TechCert archive synchronization returned concurrent conflict; not completed","Postpublication view and public browser fetch blocked; actual YouTube playback untested"],"feedback":{"status":"not_accessible"},"engagement":{"status":"not_accessible"},"quality_score":{"achieved":91,"target":95,"breakdown":{"Accuracy and source verification":25,"Originality and newsworthiness":15,"Technical depth and explanatory clarity":15,"Working embeds and media relevance":12,"Cover and visualization quality":8,"Internal links and SEO":10,"Live-page QA and formatting":6},"gate_status":{"accuracy":"pass","duplicate":"pass","video_playback":"unverified"}},"three_improvements_to_carry_forward":[{"priority":1,"instruction":"Require actual browser player-start test when available; record unavailable otherwise."},{"priority":2,"instruction":"Make GitHub writes conflict-safe; verify all repository archive blob SHAs."},{"priority":3,"instruction":"Continue using original source compatibility lists and comparable chart metrics."}],"remaining_issues":["Postpublication view retrieval blocked","Real video playback and screenshots not performed","TechCert archive unsynchronized"]},{"post_id":28138,"article_title":"Ford's $28,350 Fathom Moves Home Backup Inverter Into the Truck","publication_date":"2026-11-01","category_names":["Automotive","Energy","Technology","Trending News"],"wordpress_category_ids":[2024,1212,6,27318186],"live_url":"https://bitcoinversus.tech/2026/11/01/ford-fathom-2027-bidirectional-home-backup-inverter-10kw-28350/","archive_path":"archive/2026/11/28138-ford-fathom-2027-home-backup-embedded-inverter.md","archive_blob_sha":"15931453576c3c392a53c678655d137e4e35a1b3","verified_archive_repositories":["1freetech/Bitcoinversus.tech","1freetech/opencert.tech","1freetech/techcert"],"reporting_words":399,"publication_status":{"classification":"verified_fact","wordpress_status":"publish","post_id":28138,"verification":"WordPress posts.update returned publish, title, featured_media 28127 and canonical URL. Both postpublication posts.get(context=edit) and posts.get(context=view) returned publish with identical canonical URL, three embedded YouTube iframes, two in-body images and the approved footer. Public external web.open of the URL was inaccessible."},"original_sources":[{"type":"primary_manufacturer_engineering","url":"https://www.fromtheroad.ford.com/us/en/articles/2026/fathom-ev-bidirectional-home-power","dated":"2026-10-27","verification":"Full Ford Model e report read directly; $28,350 planned starting MSRP, projected over 10 kW AC output, station about half cost, backup hardware at least 60% below first generation, release planned 2027, utility and accessory conditions."},{"type":"primary_manufacturer_grid_interface","url":"https://www.fromtheroad.ford.com/us/en/articles/2026/bidirectional-evs-scale-utility-interconnection","dated":"2026-10-27","verification":"Direct Ford engineering article read: E-box built-in inverter, five modules, UL 1741/IEEE 1547 design intent and SAE J3068, 5 utility working-group members, distinguishing standalone isolated home backup and grid-parallel connection."},{"type":"primary_vehicle_pricing","url":"https://corporate.ford.com/electric/fathom/","verification":"Official Ford Fathom product page directly read: $28,350 MSRP excludes $1,595 destination, preorders scheduled early 2027 and EPA range not yet available."},{"type":"historical_firsthand_backup_demonstration","url":"https://www.youtube.com/watch?v=P7gCIT5FoAw","dated":"2023-01-17","verification":"State of Charge video indexed with title, channel, publication date and detailed firsthand installation description; deliberately identified as older F-150 Lightning, not new Fathom hardware."},{"type":"corroborating_original_reporting","url":"https://arstechnica.com/cars/2026/10/ford-builds-bidrectional-charging-into-its-30k-electric-truck/","dated":"2026-10-27","verification":"Ars Technica reported integrated-inverter Fathom hardware and plans. Main material values traced to Ford primary documents."}],"fact_status":[{"classification":"verified_fact","claim":"Ford announced the Fathom vehicle-integrated home inverter and two planned home use configurations October 27, 2026","basis":"Official Ford engineering articles"},{"classification":"planned_company_product","claim":"Fathom 2027 vehicle starting MSRP $28,350 before $1,595 destination; preorders planned early 2027","basis":"Ford official vehicle product page"},{"classification":"vendor_projection_not_independently_measured","claim":"More than 10 kW AC output, management charger roughly 50% cheaper, backup hardware at least 60% cheaper","basis":"Ford company figures, not independently customer-tested performance or final installed prices"},{"classification":"derived_math","claim":"Base MSRP $28,350 plus destination $1,595 equals $29,945 before tax/options","basis":"Direct arithmetic from Ford published numbers"},{"classification":"engineering_qualification","claim":"Ford says Fathom design targets UL 1741 and IEEE 1547 requirements","basis":"Ford article states 'designed to meet'; NOT a verified third-party product-certification result"},{"classification":"unverified","claim":"Actual home runtime/whole-home coverage/customer installation price","basis":"No delivered Fathom product or independent testing exists in evidence"}],"duplicate_check":{"wordpress_searches":["Ford Fathom","Ford Home Power","vehicle to home","F-150 Lightning","inverter","automotive"],"github_searches":["Ford Fathom","bidirectional charging","F-150 Lightning"],"rejected_candidate":{"classification":"verified_fact","topic":"Toyota / Waymo Japan-built bZ4X robotaxis 2027","reason":"Already published BitcoinVersus.Tech post 28039, November 1 2026."},"selected_topic_status":"No exact Fathom integrated E-box/October 27 home-power announcement detected in searched WordPress or editorial GitHub archives.","limitation":"Keyword/title/content searches are not exhaustive semantic comparison of the entire 2023–present archive."},"internal_links":{"count":4,"verification":"Matching contextual links present in saved WordPress Gutenberg source; WordPress archive search returned corresponding articles. No independent desktop-browser navigation test of every destination.","targets":["https://bitcoinversus.tech/2026/10/04/energy-germany-turns-ev-batteries-into-grid-assets-with-new-v2g-rules/","https://bitcoinversus.tech/2026/10/04/tesla-sunrun-california-home-batteries-580-mw-virtual-power-plant/","https://bitcoinversus.tech/2026/10/25/gm-fourth-generation-ev-20-percent-range-lmr-battery-2026/","https://bitcoinversus.tech/2026/10/08/honda-wireless-charging-road-150kw-moving-electric-trucks/"]},"in_story_media":{"count":5,"postpublication_wordpress_iframe_count":3,"all_captions_after_media":true,"at_least_one_paragraph_between_media":true,"embedded_video_playback_tested":false,"types":[{"type":"official_video","youtube_id":"mjnxQHhCT_4","publisher":"Ford Motor Company","date":"2026-08-06","topic":"Fathom vehicle and UEV platform launch","verification":"Official verified Ford video metadata and explicit channel permission to share/embed. WordPress published HTML iframe src matches canonical video ID. Not October technical announcement footage."},{"type":"official_manufacturer_photo","wordpress_media_id":28128,"dimensions":"2048x2048","topic":"Ford E-box high-voltage connection","source":"https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2026/bidirectional-evs-at-a-new-scale/UEV_Ebox_1.jpg","verification":"Photo opened at Ford domain, reused as Ford-owned editorial photograph and attributed in caption. WordPress published image tag and caption verified."},{"type":"source_backed_comparison_chart","wordpress_media_id":28130,"dimensions":"1200x620","topic":"Prior-generation cost baseline indexed to 100; Ford target approximately 50 for station and at most 40 for backup hardware","verification":"Every comparison uses same within-category baseline and Ford projected cost reductions; caption states no retail prices, installation excluded."},{"type":"independent_firsthand_video","youtube_id":"P7gCIT5FoAw","publisher":"State of Charge","date":"2023-01-17","topic":"Real older Ford F-150 Lightning home backup equipment installation","verification":"Public video publisher/channel metadata present and WordPress postpublication iframe src correct, caption explicitly says historical comparison not Fathom demonstration."},{"type":"official_video","youtube_id":"YK3B70XFCmU","publisher":"Ford Motor Company","date":"2026-08-13","topic":"Louisville Fathom manufacturing retooling and production line","verification":"Official Ford video metadata and WordPress published iframe, caption marks earlier factory work and no production performance proof."}]},"featured_cover":{"wordpress_media_id":28127,"dimensions":{"width":1200,"height":630},"style":"wordless comic","adult_subject":"fictional Black female power engineer aged about 50","alt_text_verified":true,"attached_as_featured_media":true,"anatomy_visual_review_status":"not independently inspected in a graphical/mobile browser","conceptual_not_documentary":true,"rotation_prior":"Neural Dawn story 28099 was anime editorial artwork with male; next is wordless comic with female"},"chart":{"wordpress_media_id":28130,"shape":"grouped relative-index comparison","normalized_unit":"previous-generation cost index = 100 within each distinct configuration","prior_values":[100,100],"new_vendor_estimates":[50,40],"interpretation":"50 is approximate, 40 is maximum based on at least 60% savings; relative index not actual consumer price","source":"https://www.fromtheroad.ford.com/us/en/articles/2026/fathom-ev-bidirectional-home-power","limitation":"Ford estimates; final retail hardware and installation costs unpublished. Graphic markup/source verified, no screenshot review."},"footers":{"approved_editor_note_exact":true,"original_qr_media_id":24043,"donation_amount_sats":5000,"address":"3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb","disclaimer_present":true,"retired_x_promo_absent":true,"order":"Editor's Note -> original QR -> 5,000 sats instructions -> disclaimer"},"corrections_and_defects":[{"classification":"verified_fact","detail":"No content correction required after initial WordPress draft QA and publish read-back; all 15 postpublication checks passed."},{"classification":"unverified","detail":"External web opening of the published BitcoinVersus.Tech page inaccessible; functional YouTube playback and desktop/mobile graphical screenshots unavailable."},{"classification":"verified_fact","detail":"Unlike prior Neural Dawn post, all 3 GitHub archives were created and read back successfully with identical Git blob SHA."}],"previous_learning_applied":[{"from_post_id":28099,"priority":1,"status":"partial","evidence":"Video IDs sourced from official Ford verified YouTube metadata and State of Charge original demonstration; postpublication player iframe tags checked, but no independent video start/playback available."},{"from_post_id":28099,"priority":2,"status":"met","evidence":"All three GitHub archives created with one shared exact content body, then fetched for identical blob SHA."},{"from_post_id":28099,"priority":3,"status":"met","evidence":"Ford primary engineering documents used for numeric claims; chart uses within-category normalized costs, vendor claims explicitly labeled."}],"external_verification_limits":["Actual player start/seek/complete testing on live reader device unavailable; iframe HTML does not establish continuous playback.","External public page fetch returned inaccessible though WordPress published raw and rendered views both confirmed live post.","No independent visual desktop/mobile screenshot, artwork anatomy proof or chart pixel-level inspection.","Not every internal/external link target visited individually through browser.","No reader reactions, thumbs-up/down history or engagement analytics surfaced."],"quality_score":{"target":95,"achieved":94,"met_target":false,"breakdown":{"Accuracy and source verification":25,"Originality and newsworthiness":15,"Technical depth and explanatory clarity":15,"Working embeds and media relevance":12,"Cover and visualization quality":9,"Internal links and SEO":10,"Live-page QA and formatting":8},"gate_status":{"accuracy":"PASS_WITH_NOTED_FORECASTS","duplicate_prevention":"PASS_WORDPRESS_AND_GITHUB_SEARCHES","functional_media":"IFRAMES_VERIFIED_IN_PUBLISHED_WORDPRESS_VIEW__REAL_PLAYBACK_UNTESTED","all_mandatory_gates_fully_proven":false},"reviewer_note":"94/100 evidence-weighted editorial judgment, not measured traffic or satisfaction. Target 95 not reached because real video playback and graphical browser checks remain inaccessible; do not claim functional-media gate fully proven."},"three_improvements_to_carry_forward":[{"priority":1,"classification":"action","instruction":"For the next Space/Science category story, test actual YouTube playback with a real browser if tools permit; otherwise retain exact distinction between iframe/player availability and verified playback.","verification_on_next_story":"Log test device/timestamp/screenshot or explicit unavailable state."},{"priority":2,"classification":"action","instruction":"Visually inspect the 1200x630 cover and quantitative charts for typography, anatomy and scales; use actual external screenshots/browser mode where supported, otherwise track this as unresolved.","verification_on_next_story":"Record screenshots or unavailable status; do not infer quality from generated-image prompt alone."},{"priority":3,"classification":"action","instruction":"Preserve Ford's fact/forecast separation as the standard: verify original engineering source data and specify standards as design intent until certification and completed tests are shown.","verification_on_next_story":"Document primary engineering claim, release date, uncertainty, and comparability of quantitative claims."}],"user_rating_feedback":{"classification":"not_accessible","status":"not_accessible","data":null},"engagement_metrics":{"classification":"not_accessible","status":"not_accessible","data":null}},{"post_id":28173,"article_title":"NASA Seeks Commercial Hubble Reboost Plans Before 2032","publication_date":"2026-11-01","category_names":["Space","Technology","Trending News"],"wordpress_category_ids":[174,6,27318186],"live_url":"https://bitcoinversus.tech/2026/11/01/nasa-hubble-commercial-reboost-600km-2032-request-industry-2026/","archive_path":"archive/2026/11/28173-nasa-hubble-commercial-reboost-options-2032.md","archive_blob_sha":"0e569b2a1312587aeea76d1951e12563406ae7ea","verified_archived_repositories":["1freetech/Bitcoinversus.tech","1freetech/opencert.tech","1freetech/techcert"],"body_reporting_words":404,"publication_status":{"classification":"verified_fact","wordpress_status":"publish","date":"2026-11-01T15:43:03","check":"WordPress posts.update returned publish and canonical permalink. Independently read published posts.get context=edit and context=view; all 16 structural, SEO, media and footer checks passed. External web.open public URL failed."},"sources":[{"type":"primary NASA mission announcement","url":"https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/","date":"2026-10-30","verified":"Read NASA announcement directly; Oct 29 RFI, options, Nov 30 3 pm EST deadline, 2032 mission timing and 2033–34 unboosted reentry forecast."},{"type":"primary federal RFI notice","url":"https://sam.gov/workspace/contract/opp/2ecd9dbf4a3946b4968cc0ebaa75d0b3/view","date":"2026-10-29","verified":"Official SAM URL was linked from NASA. Direct SAM webpage fetch contained no readable text in the tool; exact notice 80GSFC27RFIHSTS, 600 km option and July 2026 cumulative reentry probabilities crosschecked against GovTribe and SAM-derived listings."},{"type":"verbatim secondary federal notice reproduction","url":"https://govtribe.com/opportunity/federal-contract-opportunity/hubble-space-telescope-hst-servicing-80gsfc27rfihsts","date":"2026-10-29","verified":"Public listing includes the NASA RFI text, reboost to at least 600km, contractor resources, by-2032 aim, July 2026 10% by Sep 2032 and 50% by Dec 2033 modeling."},{"type":"primary NASA history","url":"https://science.nasa.gov/mission/hubble/overview/the-history-of-hubble/","verified":"NASA's official history confirms the telescope's 1990 launch, servicing missions and technical aging."},{"type":"primary NASA older study","url":"https://science.nasa.gov/missions/hubble/nasa-spacex-to-study-hubble-telescope-reboost-possibility/","date":"2022-12-22","verified":"NASA prior commercial reboost study did not commit funding or select a mission."}],"reported_fact_status":[{"classification":"verified_fact","claim":"NASA issued October 29 2026 industry request for Hubble commercial reboost, servicing, or disposal options","source":"NASA official October 30 announcement"},{"classification":"verified_fact","claim":"RFI responses due 3 p.m. Eastern Nov 30 2026; NASA considers by-2032 timing","source":"NASA primary announcement; due time is EST."},{"classification":"engineering_requirement_in_republished_RFI","claim":"Potential capture-and-reboost option aims for at least 600km","source":"NASA RFI mirrored verbatim on GovTribe and federal solicitation listings; direct SAM text inaccessible."},{"classification":"modeled_forecast_not_event","claim":"10% cumulative chance of natural reentry by Sep 2032 and 50% by Dec 2033 absent intervention","source":"NASA July 2026 lifetime analysis as reproduced in the solicitation."},{"classification":"modeled_forecast_not_event","claim":"Unboosted Hubble reentry projected 2033–34 by NASA","source":"NASA official October 30 announcement."},{"classification":"NOT_confirmed","claim":"Approved commercial servicing contract, selected contractor, funded launch date, confirmed 600 km new orbit","evidence":"None announced; article states the RFI is NOT a procurement award."}],"duplicate_check":{"classification":"verified_fact","wordpress_queries":["Hubble servicing","Hubble reboost","Hubble Space Telescope"],"github_queries":["Hubble reboost","Hubble servicing"],"result":"No article about the Oct 29 2026 Hubble commercial-servicing RFI in accessible archive; existing WordPress stories about astronaut Story Musgrave, Kathryn Sullivan and space chips were related background, not this event.","archive_scope_note":"Keyword/semantic discovery checked accessible WordPress and GitHub; not a mathematical exhaustive proof of every 2023–present file."},"internal_links":{"count":5,"status":"verified published Gutenberg href markup","topics":["ISRO NVS-03 orbit raising","Story Musgrave Hubble servicing astronaut","Kathryn Sullivan shuttle era","space-rated chips and aging electronics","NASA commercial post-ISS space stations"],"outbound_destination_checks":"WordPress archive names/URLs known; individual links not all loaded in independent browser."},"in_story_media":{"count":5,"types":[{"type":"original NASA photograph","wordpress_media_id":28168,"date":"1997-02-19","source":"https://commons.wikimedia.org/wiki/File:Hubble_Redeployment_-_GPN-2000-001066.jpg","license":"NASA public domain","caption_after":true},{"type":"official NASA Goddard YouTube video","youtube_id":"CQ8MXH2jlWA","published":"2024-05-10","topic":"Hubble last shuttle servicing in 2009","publisher_identity_verified":true,"postpublication_iframe_verified":true,"caption_after":true,"independent_actual_playback_verified":false},{"type":"NASA lifetime forecast source chart","wordpress_media_id":28170,"dimensions":"1200x600","basis":"NASA July 2026 RFI analysis without intervention","values":"10% cumulative by Sep 2032; 50% cumulative by Dec 2033","caption_after":true},{"type":"original NASA photograph","wordpress_media_id":28169,"date":"1993-12-09","source":"https://commons.wikimedia.org/wiki/File:Hubble_First_Servicing_EVA_-_GPN-2000-001085.jpg","license":"NASA public domain","caption_after":true},{"type":"official NASA Goddard YouTube video","youtube_id":"2X0Hghl3SYk","published":"2020-12-02","topic":"Hubble 1993 optical servicing","publisher_identity_verified":true,"postpublication_iframe_verified":true,"caption_after":true,"independent_actual_playback_verified":false}],"player_verification":"Both publisher video IDs checked against NASA Goddard listings; WordPress draft and published rendered HTML each have correct playable-player iframe elements and immediate caption paragraphs.","actual_playback_verified":false,"spacing_requirement_met":true},"featured_cover":{"wordpress_media_id":28171,"dimensions":"1200x630","style":"photo/anime blend","adult_professional":"fictional older Black male spacecraft rendezvous engineer aged 50s–60s","attached_as_featured_media":true,"alt_text_present":true,"artwork_is_conceptual_not_documentary":true,"graphical_visual_review":"not performed; image URL inaccessible to external browser","previous_style":"wordless comic"},"chart":{"media_id":28170,"style":"horizontal two-date probability comparison","unit":"cumulative chance of Hubble natural reentry (%)","dates":["September 2032","December 2033"],"values_pct":[10,50],"scope":"Without reboost or servicing; July 2026 model, not actual reentry dates","source":"NASA RFI 80GSFC27RFIHSTS, as reproduced by GovTribe","note":"Uses same cumulative probability metric on same 0–100% axis; does not extrapolate or make 2034 certainty claim. Chart pixel-level inspection unavailable."},"footers":{"exact_approved_editor_note":true,"original_qr_wordpress_media_id":24043,"donation_amount_sats":5000,"disclaimer_present":true,"retired_promo_absent":true,"order":"Editor's Note → QR → scan/address instructions → disclaimer"},"corrections_and_defects":[{"classification":"verified_fact","change":"No user-facing error found during WordPress prepublication or postpublication structural QA; 19 draft and 16 published automated checks passed."},{"classification":"verified_fact","change":"TechCert archive first create action was blocked by tool safety; successfully retried by fetching the already archived exact source. All three repositories returned the same blob SHA."},{"classification":"unverified","change":"No actual video player-start, complete-watch or desktop/mobile screenshot test; external webpage fetch blocked."},{"classification":"unverified","change":"Official SAM.gov solicitation full body could not be read directly; exact RFI detail and probability claims checked in faithful public copies."}],"prior_learning_applied":[{"from_post_id":28138,"priority":1,"status":"partially_applied","evidence":"Two verified NASA Goddard IDs and published YouTube iframe sources checked; actual playback inaccessible and explicitly marked untested."},{"from_post_id":28138,"priority":2,"status":"partially_applied","evidence":"Correct 1200x630 cover and chart dimensions confirmed through WordPress metadata; unable to pixel-inspect files on a browser/device."},{"from_post_id":28138,"priority":3,"status":"applied","evidence":"NASA RFI and lifetime probabilities classified as scenarios, forecasts and industry-information request, not a funded mission or delivered orbit."}],"quality_score":{"target":95,"achieved":94,"met_target":false,"breakdown":{"Accuracy and source verification":24,"Originality and newsworthiness":15,"Technical depth and explanatory clarity":15,"Working embeds and media relevance":12,"Cover and visualization quality":9,"Internal links and SEO":10,"Live-page QA and formatting":9},"gate_status":{"accuracy":"PASS_WITH_OFFICIAL_RFI_DIRECT_ACCESS_LIMITATION","duplicate_prevention":"PASS_WORDPRESS_AND_GITHUB_SEARCH","functional_media":"PUBLISHED_IFRAME_MARKUP_VERIFIED_BUT_VIDEO_PLAYBACK_UNTESTED","all_mandatory_gates_fully_proven":false},"reviewer_note":"94/100 evidence-based editorial assessment. Despite complete WordPress structure checks, actual end-to-end video playback remains inaccessible and official SAM notice detail crosschecked through republication. Do not report target 95 reached or playback fully proved."},"three_improvements_to_carry_forward":[{"priority":1,"classification":"action","instruction":"Before declaring a video 'working', run a real browser player-start test on desktop and mobile when available; otherwise explicitly report that iframe presence is not playback.","verification_on_next_story":"Record tested player ID, playback response, timestamp and viewport or unavailable."},{"priority":2,"classification":"action","instruction":"Improve access to primary government technical documents: independently retrieve the full SAM.gov RFI/agency annex before publishing exact probability and altitude details; if inaccessible, cite NASA statement and identify the reproduced solicitation as such.","verification_on_next_story":"Save primary paragraph/page evidence and note provenance."},{"priority":3,"classification":"action","instruction":"For a following science story, pixel-inspect sourced photos, chart axes and generated anatomy when graphical tools permit; preserve same-blob GitHub triple archive validation and footer QR regression.","verification_on_next_story":"Capture visual QA evidence plus identical Git blob SHAs or flag pending issue."}],"external_verification_limitations":["External web tool could not fetch the public WordPress permalink; WordPress published edit/view checks confirm status and rendered markup.","NASA's original SAM.gov notice did not expose readable body via browsing; the Oct 29 NASA release and independently mirrored notice support cited specifics.","Real video start/playback and desktop/mobile viewport checks not performed.","Featured image anatomy and chart rendered pixels not independently visually inspected.","Full thumbs-up/down history, traffic analytics, social engagement not accessible."],"user_rating_feedback":{"classification":"not_accessible","status":"not_accessible","data":null},"engagement_metrics":{"classification":"not_accessible","status":"not_accessible","data":null}},{"post_id":28530,"article_title":"Ceva’s NeuPro NPU Enters Production in Mobilint’s 10-TOPS REGULUS Chip","publication_date":"2026-11-02","category_names":["Semiconductors","ASICs & Hardware","Technology","Trending News"],"wordpress_category_ids":[284207,792826578,6,27318186],"live_url":"https://bitcoinversus.tech/2026/11/02/ceva-mobilint-regulus-10tops-neupro-production-edge-ai-2026/","wordpress_publication_status":"publish","editorial_body_word_count":382,"original_sources":[{"url":"https://www.ceva-ip.com/press/ceva-and-mobilint-advance-physical-ai-with-regulus-edge-ai-soc-2/","classification":"verified_fact","detail":"November 2 production announcement, Ceva NeuPro Nano NPN32 and SensPro, 10 TOPS under 3 W, MLD-R1 commercial status"},{"url":"https://www.mobilint.com/products/regulus","classification":"verified_fact","detail":"Manufacturer 10 dense INT8 TOPS, 17 mm package, 4K 60 fps and product design"},{"url":"https://www.mobilint.com/products/regulus/mld-r1-ai-usb","classification":"verified_fact","detail":"MLD-R1 host/framework support and approximately 4 W complete-device specification"},{"url":"https://armdevices.net/2026/03/15/mobilint-aries-and-regulus-edge-ai-mla400-llm-inference-and-multi-camera-vision/","classification":"verified_fact","detail":"March 2026 recorded trade-show demonstration; links YouTube ylvPT1Mlv_g"}],"fact_status":"Vendor-specified metrics attributed to vendor; no independent chip benchmark claimed. Chip <3W and full USB device ~4W are different measurement boundaries.","duplicate_check":{"wordpress_queries":["Ceva","Mobilint","REGULUS"],"github_query":"REGULUS Mobilint Ceva in 1freetech/Bitcoinversus.tech","result":"WordPress found earlier Ceva 28108 (new NPU portfolio) and SEMIFIVE-Mobilint 20029 (future design partnership), but no November 2 REGULUS NeuPro production milestone. GitHub direct keyword search returned no same story.","scope_limit":"WordPress keyword searches and GitHub indexed search are not an exhaustive semantic inventory of every 2023-2026 archive file."},"internal_links":{"count":5,"verified_in_published_markup":true,"individual_destination_http_tests":"not independently attempted","topics":["Ceva next-generation NeuPro portfolio","SEMIFIVE and Mobilint robotics chip collaboration","Ubitium physical AI","VeriSilicon GLTiny","Dream Labs robot API"]},"in_story_media":{"count":3,"items":[{"type":"official manufacturer photograph","id":28519,"subject":"REGULUS chip","rendered_image_verified":true,"caption_after":true},{"type":"native Gutenberg YouTube","youtube_id":"ylvPT1Mlv_g","publisher":"ARMdevices","subject":"Mobilint edge AI hardware at Embedded World 2026","rendered_iframe_verified":true,"actual_playback_verified":false,"caption_after":true},{"type":"official manufacturer photograph","id":28520,"subject":"MLD-R1 USB accelerator","rendered_image_verified":true,"caption_after":true}],"excluded_footer_qr_id":24043},"featured_cover":{"id":28522,"dimensions_px":[1200,630],"style":"realistic editorial photo, conceptual","subject":"adult Black woman semiconductor validation engineer working at microscope on PCB","alt_text_verified":true,"generated_via":"WordPress AI image generation then WordPress CDN exact crop and reupload","composition_anatomy_independently_inspected":false},"chart":{"included":false,"reason":"Only device-specific headline TOPS and differently scoped chip and USB power claims; no comparable independent measured series. Reject bars/line/radar/treemap as misleading; no decorative chart."},"footers":{"approved_editors_note_exact":true,"qr_media_id":24043,"bitcoin_5000_sats":true,"disclaimer":true,"retired_promo_absent":true},"metadata":{"advanced_seo_description_set":true,"subscriber_email_sent":false},"quality_score":{"accuracy":25,"originality_newsworthiness":15,"technical_depth":14,"working_embeds_media":12,"cover_visualization":9,"internal_links_seo":10,"live_page_qa":7,"total":92,"target":95,"passed":false,"reason":"Source, WordPress status, native image elements and YouTube iframe confirmed; actual video playback, cover visual inspection and mobile layout independently unverified."},"publication_qa":{"site_status":"publish","readback_edit":true,"readback_rendered":true,"rendered_youtube_iframe":true,"featured_id_readback":true,"cover_dimensions_media_api":true,"screenshot_capture_status":"ready, capture_shows site; not pixel inspected","desktop_browser_visual":"not independently inspected","mobile_browser_visual":"not independently inspected","video_playback":"not verifiable","hard_gate_status":"source+duplicate checks passed within available scope; video playback remains unverified"},"feedback":{"thumb_feedback":"unavailable","engagement":"not collected","user_feedback_this_article":"none yet"},"editorial_corrections":[{"classification":"verified_fact","issue":"Earlier articles sometimes displayed bare YouTube URLs","correction":"Native Gutenberg embed resolved to iframe in WordPress rendered view"},{"classification":"verified_fact","issue":"Vendor quotes different power for SoC and USB device","correction":"Report chip <3W and USB ~4W separately; avoid misleading comparison chart"}],"three_improvements_to_carry_forward":["Use WordPress transformed image source and reimport to guarantee exact 1200x630 media dimensions; verify in media_details before publishing.","Inspect rendered HTML for real iframe src and known images, but add actual click-to-play tests when a true browser is available; never equate iframe with playback.","Keep power, compute and benchmark figures tied to explicit chip/system boundary and numeric precision; chart only comparable datasets."],"observations":[{"classification":"verified_fact","detail":"WP posts.get rendered exposes a YouTube iframe, two official media images and the canonical footer."},{"classification":"user_preference","detail":"2-10 functional in-body media, exactly one 1200x630 featured media, 300-420 words, 4-9 internal links, no text boxes."},{"classification":"hypothesis","detail":"A controlled desktop/mobile playback harness would reduce unresolved video QA risk; not yet measured."}]},{"post_id":28549,"article_title":"OSSolidity.002: Contract Structure — SPDX, Pragma, State Variables, and Functions","publication_date":"2026-11-02","category_names":["computer programming","Information Technology","Tech Docs","technology"],"wordpress_category_ids":[44329,5812,2509703,6],"live_url":"https://bitcoinversus.tech/2026/11/02/ossolidity-002-contract-structure-spdx-pragma-state-variables-functions-remix/","wordpress_publication_status":"publish","lesson_id":"OSSolidity.002","complete_rotation_subject_count":43,"next_subject":"sql","next_lesson_id":"OSSQL.005","original_sources":[{"url":"https://docs.soliditylang.org/en/v0.8.38/layout-of-source-files.html","type":"official language documentation"},{"url":"https://docs.soliditylang.org/en/v0.8.38/structure-of-a-contract.html","type":"official language documentation"},{"url":"https://remix-ide.readthedocs.io/en/latest/run.html","type":"official IDE documentation"},{"url":"https://www.soliditylang.org/blog/2026/10/22/solidity-0.8.38-release-announcement/","type":"compiler release notes"}],"duplicate_check":{"wordpress_search":"OSSolidity.002 found zero prior published posts and one result after publication; OSSolidity.001 #22233 exists","github_search":"Indexed query found preceding OSSolidity.001 and no prior OSSolidity.002","scope_note":"search index not entire 2023-present semantic audit"},"internal_links":{"count":6,"status":"present in published Gutenberg source"},"in_story_media":{"count":3,"items":[{"type":"native YouTube player","video_id":"AAubEOgE5p8","caption_after":true,"rendered_iframe_verified":true,"actual_playback_verified":false},{"type":"native YouTube player","video_id":"nPLqdGNW_4U","caption_after":true,"rendered_iframe_verified":true,"actual_playback_verified":false},{"type":"native YouTube player","video_id":"E3KM1c7xeJM","caption_after":true,"rendered_iframe_verified":true,"actual_playback_verified":false}],"synthetic_inbody_images":0},"featured_cover":{"media_id":28543,"dimensions_px":[1200,630],"style":"split-screen technical diptych; subject-only, no people requested","alt_text_verified":true,"independent_visual_inspection":false},"chart":{"included":false,"reason":"Foundational syntax lesson without a numerical dataset suitable for quantitative visualization; source examples and code lab are more appropriate"},"code":{"language":"Solidity","filename":"Counter.sol","pragma":"^0.8.20","teaching_level":"beginner","format":"unboxed transparent source block","compiler_runtime_verification":"unavailable, solc not installed","remix_vm_instructions":true},"footers":{"approved_editors_note":true,"original_donation_qr_id":24043,"donation_request":"5000 satoshis","disclaimer":true,"retired_promo":false},"archival":{"repos":["1freetech/Bitcoinversus.tech","1freetech/opencert.tech","1freetech/techcert"],"raw_gutenberg_sha":"abfa420fa773199b63cec4b0a07b44aa8867f655","identical_across_3":true},"quality_score":{"accuracy":24,"originality_nonduplicate":14,"technical_clarity":14,"working_media":12,"cover_visualization":9,"internal_links_seo":10,"live_page_qa":7,"total":90,"target":95,"met":false,"why":"Independent video playback, image-pixel inspection, desktop/mobile layout and actual solc compilation not available. Content verified via official documentation and WordPress rendered readback."},"feedback":{"user_thumb_history":"unavailable","engagement_metrics":"unavailable"},"observations":[{"classification":"verified_fact","detail":"WordPress rendered all three native video IDs as iframe players, not bare links."},{"classification":"measured_result","detail":"Three archived Gutenberg files have matching Git blob SHA and 11,371 characters."},{"classification":"user_preference","detail":"Full subject rotation, no-person cover, unboxed code, 2–10 valid in-story embeds and approved footer."},{"classification":"hypothesis","detail":"Independent device playback and runtime compilation would improve confidence."}],"three_improvements_to_carry_forward":["Before publishing a lesson, reconcile complete curriculum registry and WordPress duplicate search to prevent numbering collisions.","Repeat iframe readback for every relevant video, and obtain actual device playback tests when available; never confuse player markup with playable success.","Supply a reproducible compiler-based lesson test and run it when a compatible compiler exists, alongside explicit media and footer QA."]}],"future_article_template_required_fields":["post_id","article_title","publication_date","category_names","live_url","original_sources","duplicate_check","internal_links","in_story_media","featured_cover","chart","footers","correction_log","quality_score","three_improvements_to_carry_forward","external_verification_limitations","engagement_metrics","user_rating_feedback"]}
+{
+  "schema_version": "1.0.0",
+  "title": "BitcoinVersus.Tech Recursive Editorial Learning Ledger",
+  "last_updated": "2026-11-02",
+  "effective_prompt": "BITCOINVERSUS.TECH — RECURSIVE LEARNING NEWS WRITER v4.0",
+  "principles": [
+    "RECALL → RESEARCH → REASON → WRITE → VERIFY → PUBLISH → EVALUATE → LEARN → REPEAT",
+    "Keep all existing Perfect Bite-Size News Writer v3.1, Embed Law v3.0, Featured Cover Law, chart, rotation, internal-link and footer standards authoritative.",
+    "Mandatory accuracy, no-duplicate and functioning media gates are not bypassed by a numerical quality score.",
+    "Record only evidence actually checked; distinguish WordPress rendered player markup from independently proven playback.",
+    "Do not infer thumbs up/down, engagement, clickthrough, or conversion from absent analytics."
+  ],
+  "feedback_access": {
+    "user_editorial_preferences": [
+      {
+        "kind": "user_preference",
+        "detail": "The user explicitly requires the v4.0 recursive cycle and an evidence-backed learning ledger."
+      },
+      {
+        "kind": "user_preference",
+        "detail": "The user prioritizes actual relevant, working in-story YouTube/X embeds, captions after media, 2–10 media, rotating covers and accurate charts."
+      },
+      {
+        "kind": "user_preference",
+        "detail": "The user requires the exact original Bitcoin donation QR, with 5,000 sat instructions, Editor's Note and disclaimer."
+      }
+    ],
+    "thumbs_up_down_history": {
+      "status": "not_accessible",
+      "value": null,
+      "claim": "No thumbs-up/down history was exposed through the WordPress, GitHub, or chat tools; no preference inference from ratings."
+    },
+    "measured_engagement": {
+      "status": "not_accessible",
+      "value": null,
+      "claim": "No verified site analytics or engagement metric retrieved."
+    }
+  },
+  "score_rubric": {
+    "max_score": 100,
+    "target": 95,
+    "criteria": [
+      {
+        "name": "Accuracy and source verification",
+        "max": 25
+      },
+      {
+        "name": "Originality and newsworthiness",
+        "max": 15
+      },
+      {
+        "name": "Technical depth and explanatory clarity",
+        "max": 15
+      },
+      {
+        "name": "Working embeds and media relevance",
+        "max": 15
+      },
+      {
+        "name": "Cover and visualization quality",
+        "max": 10
+      },
+      {
+        "name": "Internal links and SEO",
+        "max": 10
+      },
+      {
+        "name": "Live-page QA and formatting",
+        "max": 10
+      }
+    ],
+    "mandatory_gates": [
+      "accuracy",
+      "duplicate_prevention",
+      "functional_media"
+    ],
+    "scoring_warning": "No score ≥95/100 is a substitute for actually passing a mandatory gate. Mark unverified/failed gates explicitly."
+  },
+  "entries": [
+    {
+      "post_id": 27966,
+      "article_title": "National Grid Secures 73 Acres for Teesside AI Substation",
+      "publication_date": "2026-11-01",
+      "category_names": [
+        "Energy",
+        "Data Centers",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        5177360,
+        1212,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/01/national-grid-tees-dock-teesside-73-acres-400kv-ai-substation-2026/",
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "evidence": "WordPress posts.get context=edit and context=view both returned publish and identical public URL; independent site fetch failed."
+      },
+      "editorial_body_word_count": 339,
+      "origin_and_timing": {
+        "classification": "verified_fact",
+        "description": "Same-day November 1, 2026 land-agreement reports; 73 acres corroborated in Sky News syndication and The Guardian; outline planning application R/2026/0711/OOM remains valid, without a recorded decision."
+      },
+      "original_sources": [
+        {
+          "type": "primary_official",
+          "url": "https://planning.redcar-cleveland.gov.uk/Planning/Display/R/2026/0711/OOM",
+          "verified": "search-result content confirmed proposed 400kV substation, 2026-09-24 filing and no decision. Direct opened fetch sometimes times out."
+        },
+        {
+          "type": "primary_project_directory",
+          "url": "https://www.nationalgrid.com/electricity-transmission/network-and-infrastructure/infrastructure-projects",
+          "verified": "Public National Grid project directory lists planned Tees Dock substation at Dorman Point. Detailed >1GW contract quote not directly fetched in this directory view."
+        },
+        {
+          "type": "primary_regulatory_index",
+          "url": "https://www.riiot3.nationalgrid.com/reopeners",
+          "verified": "National Grid October 2026 summaries index lists Tees Dock Substation needs-case documents; individual technical PDF not examined in this audit."
+        },
+        {
+          "type": "secondary_original_reporting",
+          "url": "https://uk.finance.yahoo.com/news/national-grid-sparks-deal-pave-074400601.html",
+          "verified": "Sky News reporting dated 2026-11-01 describes >70 acre land transaction and planned AI site."
+        },
+        {
+          "type": "secondary_original_reporting",
+          "url": "https://www.theguardian.com/business/2026/nov/01/national-grid-to-site-biggest-substation-on-teesside-near-planned-ai-datacentre",
+          "verified": "The Guardian dated 2026-11-01 reports 73 acres, 3.2GW mayoral claim and campus comparison."
+        },
+        {
+          "type": "secondary_document_analysis",
+          "url": "https://tsnmedia.org/teesside-substation-national-grid-dorman-point/",
+          "verified": "Secondary 2026-11-01 article reports reading National Grid's >1GW import/export capacity and Ofgem needs-case summary; exact original project-page passage was not independently fetched."
+        }
+      ],
+      "fact_status": [
+        {
+          "claim": "73 acre land agreement",
+          "classification": "verified_fact",
+          "confidence": "high",
+          "qualifier": "Reported by Sky News and The Guardian; transaction details not independently retrieved from signed deed."
+        },
+        {
+          "claim": "400kV Dorman Point substation plan",
+          "classification": "verified_fact",
+          "confidence": "high",
+          "qualifier": "Official council planning application and National Grid project directory."
+        },
+        {
+          "claim": "more than 1GW of contracted import/export capacity",
+          "classification": "reported_fact",
+          "confidence": "medium",
+          "qualifier": "Secondary document reading; original full project-specific document not read in this audit."
+        },
+        {
+          "claim": "up to 3.2GW claimed by mayor",
+          "classification": "attributed_ambition",
+          "confidence": "high",
+          "qualifier": "Distinct scope from contract; cannot add/compare as delivered capacity."
+        },
+        {
+          "claim": "Britain's largest substation or named contractor",
+          "classification": "projected_or_unconfirmed",
+          "qualifier": "Not reported as built, approved or officially awarded."
+        }
+      ],
+      "duplicate_check": {
+        "classification": "verified_fact",
+        "wordpress_searches": [
+          "Teesworks",
+          "Dorman Point",
+          "Teesside substation",
+          "Tees Dock",
+          "National Grid",
+          "substation"
+        ],
+        "github_searches": [
+          "Tees Dock",
+          "Dorman Point",
+          "Teesworks substation"
+        ],
+        "result": "No exact earlier BitcoinVersus.Tech report matching the Dorman Point land deal detected. Search is not proof of exhaustive archive-wide semantic uniqueness."
+      },
+      "internal_links": {
+        "count": 5,
+        "status": "verified_wordpress_markup",
+        "topics": [
+          "Nscale UK grid delays",
+          "GE Vernova HV equipment",
+          "Idaho transformer test",
+          "Siemens microgrid switchboard",
+          "Top 10 US energy projects"
+        ],
+        "external_link_verification": "Target pages were not all individually opened as a live browser."
+      },
+      "in_story_media": {
+        "count": 5,
+        "verified_markup": true,
+        "types": [
+          {
+            "type": "licensed_photo",
+            "media_id": 27963,
+            "subject": "Teesside Steelworks 2019 archival contextual photo",
+            "license": "CC BY-SA 2.0",
+            "caption_after": true,
+            "not_actual_project": true
+          },
+          {
+            "type": "official_youtube",
+            "youtube_id": "XaF4IyEd0TU",
+            "source": "National Grid UK, What is a Substation?, 2026-05-16",
+            "verified_external_video_identity": true,
+            "verified_wordpress_iframe": true,
+            "independent_playback_verified": false,
+            "caption_after": true
+          },
+          {
+            "type": "attributed_chart",
+            "media_id": 27964,
+            "subject": "National Grid >1GW lower bound vs separate mayoral 3.2GW ambition; different claim scopes",
+            "measurement_status": "Illustrative, thresholds and aspirations, not like-for-like delivered capacity",
+            "verified_rendered_img_markup": true,
+            "caption_after": true
+          },
+          {
+            "type": "licensed_photo",
+            "media_id": 27962,
+            "subject": "Actual Creyke Beck substation, illustrative, not Tees Dock",
+            "license": "CC BY-SA 2.0",
+            "caption_after": true,
+            "not_actual_project": true
+          },
+          {
+            "type": "independent_youtube",
+            "youtube_id": "7Q-aVBv7PWM",
+            "source": "Practical Engineering, How Do Substations Work?, 2019-08-27",
+            "verified_external_video_identity": true,
+            "verified_wordpress_iframe": true,
+            "independent_playback_verified": false,
+            "caption_after": true
+          }
+        ],
+        "native_wordpress_embedding_method": "Gutenberg core/shortcode [youtube canonical watch URL], renders a YouTube iframe in posts.get(context=view).",
+        "failure_or_limitation": "Public HTML iframe and video identity verified; no independent video start/playback on desktop or mobile. Distinguish player markup from tested function."
+      },
+      "featured_cover": {
+        "media_id": 27965,
+        "dimensions": {
+          "width": 1200,
+          "height": 630
+        },
+        "style": "anime editorial artwork",
+        "person": "fictional adult Black British female transmission engineer, late 30s",
+        "alt_text_checked": true,
+        "attached_as_featured_media": true,
+        "no_text_overlay_by_prompt": true,
+        "visual_anatomy_manual_inspection": "not independently visually reviewed in desktop browser; generation constraints requested correct anatomy",
+        "site_composition": "Industrial transmission planning landscape; conceptual image not actual built Dorman Point."
+      },
+      "chart": {
+        "media_id": 27964,
+        "purpose": "prevent category confusion between contracted connection threshold and broad political ambition",
+        "visualization": "annotated horizontal comparison",
+        "values": [
+          {
+            "value": 1,
+            "unit": "GW",
+            "kind": "strict lower threshold for >1GW contract, not exact"
+          },
+          {
+            "value": 3.2,
+            "unit": "GW",
+            "kind": "up to site ambition, not verified capacity"
+          }
+        ],
+        "concern": "A common numeric axis can falsely imply directly comparable metrics. Text, axis label, and caption disclose distinct scopes; next time prefer a clearly differentiated scope panel or source-native comparable quantities.",
+        "source_urls": [
+          "https://www.nationalgrid.com/electricity-transmission/network-and-infrastructure/infrastructure-projects",
+          "https://uk.finance.yahoo.com/news/national-grid-sparks-deal-pave-074400601.html"
+        ]
+      },
+      "footers": {
+        "exact_approved_editors_note_verified": true,
+        "original_donation_qr_media_id": 24043,
+        "donation_request_sats": 5000,
+        "disclaimer_verified": true,
+        "discontinued_x_promo_absent": true
+      },
+      "before_after_comparison": {
+        "classification": "verified_fact",
+        "previous_story_id": 27959,
+        "previous_story_title": "Krafton's Ludo Robotics Shows Ludi 0.2 AI for Understanding Human Intent",
+        "previous_story_observation": "WordPress raw content for previous story contained footer QR media 24593 and a nonstandard support heading; new story correctly uses required QR media 24043 and exact approved italic Editor's Note.",
+        "not_inferred": "No user satisfaction or engagement inferred from difference."
+      },
+      "external_verification_limitations": [
+        "Independent web fetch of the published bitcoinversus.tech article URL failed; publication status and rendered content independently checked through connected WordPress read APIs.",
+        "No desktop/mobile browser screenshots or full YouTube player playback test available in this run.",
+        "Not every contextual internal link and external attribution destination was individually clicked/opened.",
+        "No personally rated user feedback/likes, engagement metrics, or subscriber stats accessible.",
+        "Full National Grid project-specific needs-case PDF and original direct wording of >1GW capacity were not opened."
+      ],
+      "correction_log": [
+        {
+          "classification": "verified_fact",
+          "change": "No post-publication editorial text correction made in this cycle.",
+          "status": "no_change"
+        },
+        {
+          "classification": "verified_fact",
+          "change": "The user introduced Recursive Learning News Writer v4.0 after this post was already published. The article received a retrospective evaluation rather than claiming an original v4.0 prepublish pass.",
+          "status": "documentation"
+        }
+      ],
+      "quality_score": {
+        "target": 95,
+        "achieved": 88,
+        "met_target": false,
+        "breakdown": {
+          "Accuracy and source verification": 22,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 14,
+          "Working embeds and media relevance": 12,
+          "Cover and visualization quality": 8,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 7
+        },
+        "gate_status": {
+          "accuracy": "PASS_WITH_DISCLOSED_LIMITS",
+          "duplicate_prevention": "PASS_SEARCHED_WP_AND_GITHUB",
+          "functional_media": "UNVERIFIED_END_TO_END_PLAYBACK",
+          "all_mandatory_gates_fully_proven": false
+        },
+        "reviewer_note": "Score is an explicitly evidence-based editorial estimate, not a measured reader outcome. 88/100 is below target. Do not represent functional-video/visual-browser acceptance as completed."
+      },
+      "three_improvements_to_carry_forward": [
+        {
+          "priority": 1,
+          "classification": "action",
+          "instruction": "For material numeric claims, read the exact originating National Grid/Ofgem or equivalent project-specific primary document, not just a project directory and secondary account; capture page or paragraph and date before publication.",
+          "verification_on_next_story": "Document direct primary claim evidence and match chart labels to that primary scope."
+        },
+        {
+          "priority": 2,
+          "classification": "action",
+          "instruction": "Add an end-to-end media/browser QA gate: validate iframe markup, video identity, actual desktop/mobile playback and external media response when supported. If not available, report as unverified and avoid claiming a high completed score.",
+          "verification_on_next_story": "Store player screenshot/playback test result or clearly marked unavailable status."
+        },
+        {
+          "priority": 3,
+          "classification": "action",
+          "instruction": "Strengthen chart semantics and footer regression: compare genuinely commensurate quantities or separate non-comparable thresholds/aspirations; independently check original donation QR WordPress ID 24043 and exact approved Editor's Note.",
+          "verification_on_next_story": "Verify chart-source mapping plus exact footer media identity and document outcomes."
+        }
+      ],
+      "pending_followups": [
+        {
+          "type": "dependency",
+          "description": "Check Redcar & Cleveland R/2026/0711/OOM before November 11 consultation close and review future decision if reporting a follow-up.",
+          "automation_created": false
+        },
+        {
+          "type": "technical_qa",
+          "description": "Obtain independent live browser/player and responsive image QA when browser tools support it.",
+          "automation_created": false
+        },
+        {
+          "type": "source_qa",
+          "description": "Read National Grid Tees Dock original needs-case / project-specific >1GW passage and confirm exact interpretation.",
+          "automation_created": false
+        }
+      ],
+      "engagement_metrics": {
+        "status": "not_accessible",
+        "data": null
+      },
+      "user_rating_feedback": {
+        "status": "not_accessible",
+        "data": null
+      }
+    },
+    {
+      "post_id": 28053,
+      "article_title": "Intel Shares Sink 28.6% as Chip Stocks Slide on Weak Outlook",
+      "publication_date": "2026-11-01",
+      "category_names": [
+        "Semiconductors",
+        "Intel",
+        "Finance",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        284207,
+        12068,
+        4269,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/01/intel-shares-28-6-percent-chip-stocks-october-30-2026-earnings-outlook/",
+      "archive_path": "archive/2026/11/28053-intel-28-6-percent-semiconductor-stock-rout-q3-earnings-2026.md",
+      "archive_blob_sha": "3201c9da3b56969d35cc32cf5d54c07e65ec90b0",
+      "archive_verified_repositories": [
+        "1freetech/Bitcoinversus.tech",
+        "1freetech/opencert.tech",
+        "1freetech/techcert"
+      ],
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "published_timestamp": "2026-11-01T14:51:13",
+        "evidence": "WordPress posts.update returned publish with permanent URL. Independent posts.get context=edit and context=view both returned publish and matched URL; public web browser fetch was not accessible."
+      },
+      "editorial_body_word_count": 338,
+      "original_sources": [
+        {
+          "type": "primary_company_earnings",
+          "url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results",
+          "date": "2026-10-29",
+          "verification": "Intel's own Q3 results read directly: $16.5B Q3 revenue +21%; $15.0–16.0B Q4 guidance; DCAI $7.3B +78%; CCPG $8.1B -5%; business segments include internal transfers and elimination. Primary claim scope checked."
+        },
+        {
+          "type": "primary_regulatory_filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm",
+          "date": "2026-10-29",
+          "verification": "SEC-filed Intel Exhibit 99 earnings release, with same revenue and Q4 guidance amounts."
+        },
+        {
+          "type": "secondary_firsthand_market_reporting",
+          "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+          "date": "2026-10-30",
+          "verification": "Reuters U.S. closing market report: Intel -28.6%, AMD -10.9%, Nvidia -4.2%, Philadelphia semiconductor index -7.2%; used for chart's same-day comparable values."
+        },
+        {
+          "type": "secondary_firsthand_earnings_reaction",
+          "url": "https://www.reuters.com/business/intel-warning-sparks-chip-rout-pc-weakness-clouds-turnaround-2026-10-30/",
+          "date": "2026-10-30",
+          "verification": "Reuters reporting about earnings disappointment, stock selloff and manufacturing/PC cash-flow context."
+        },
+        {
+          "type": "secondary_original_report",
+          "url": "https://www.reuters.com/business/intel-signals-slower-growth-as-pc-market-remains-under-pressure-2026-10-29/",
+          "date": "2026-10-29",
+          "verification": "Reuters reported analysts expected approximately $17.07B Q4 revenue and expected ~$600M Israeli fab revenue impact; URL not independently opened in this run, so the article cites the opened October 30 Reuters recap."
+        }
+      ],
+      "fact_status": [
+        {
+          "classification": "verified_fact",
+          "claim": "Intel Q3 consolidated revenue $16.5B, 21% year-on-year growth",
+          "basis": "Intel primary reported Q3 2026 results"
+        },
+        {
+          "classification": "verified_fact",
+          "claim": "Intel Q4 2026 guidance $15.0–$16.0B",
+          "basis": "Intel primary outlook, clearly forecast rather than actual"
+        },
+        {
+          "classification": "verified_fact",
+          "claim": "October 30 closing Intel -28.6%, AMD -10.9%, Nvidia -4.2%, semiconductor index -7.2%",
+          "basis": "Reuters same U.S. trading session close; negative percent returns, not market cap, sales or power efficiency"
+        },
+        {
+          "classification": "verified_fact",
+          "claim": "Data Center and AI $7.3B +78%; Client Computing and Physical AI $8.1B -5%",
+          "basis": "Intel earnings business-unit summary; segment figures not simply additive with consolidated revenue"
+        },
+        {
+          "classification": "attributed_reporting",
+          "claim": "Intel Israeli fab disruption expected ~$600M revenue impact over two quarters",
+          "basis": "Reuters Oct 29–30 attribution, not Intel's actual realized result"
+        },
+        {
+          "classification": "forecast",
+          "claim": "Intel and its CEO expect Q4 headwinds and cash constraints",
+          "basis": "Intel management outlook and Reuters market analysis; no final Q4 actual outcomes"
+        }
+      ],
+      "duplicate_check": {
+        "classification": "verified_fact",
+        "wordpress_searches": [
+          "Quantum Blockchain Technologies",
+          "QBT",
+          "Method A/B/C",
+          "Bitaxe Gamma",
+          "Intel shares",
+          "Intel Q3",
+          "Intel earnings",
+          "semiconductor stocks",
+          "chip rout"
+        ],
+        "github_searches": [
+          "Quantum Blockchain Technologies",
+          "Method C",
+          "Intel stock crash",
+          "Intel Q3 2026 earnings",
+          "chip rout"
+        ],
+        "prevented_duplicate": {
+          "title": "QBT Says All Three Bitcoin Mining Methods Are Now Running Live",
+          "post_id": 27060,
+          "date": "2026-10-29",
+          "result": "Rejected QBT Oct 29 as existing identical news topic before drafting, despite available primary announcement and source videos."
+        },
+        "selected_story": "October 30 Intel share market selloff, distinct event from already published Intel Kiryat Gat explosion story WordPress 28000 and from earlier earnings-related background articles.",
+        "limitation": "Search queries cover titles and content of accessible WordPress/GitHub indexes, not guaranteed complete semantic matching of every 2023–present item."
+      },
+      "internal_links": {
+        "count": 5,
+        "status": "verified_in_published_WordPress_raw_markup",
+        "urls": [
+          "https://bitcoinversus.tech/2026/10/10/pc-shipments-plunge-20-1-q3-2026-memory-costs-ai-data-centers/",
+          "https://bitcoinversus.tech/2026/10/14/intel-one-command-llm-inference-xeon/",
+          "https://bitcoinversus.tech/2026/11/01/intel-kiryat-gat-fab28-explosion-two-week-shutdown-xeon-revenue-2026/",
+          "https://bitcoinversus.tech/2026/10/14/asml-ai-demand-outrunning-supply/",
+          "https://bitcoinversus.tech/2026/10/28/sk-hynix-q3-2026-104-trillion-won-hbm4-ai-memory-profit/"
+        ],
+        "outbound_http_recheck": "Referenced Intel/SEC/Reuters primary and market source pages were searched and read; every contextual internal destination was not independently loaded as a browser URL, though URLs are established from WordPress archive."
+      },
+      "in_story_media": {
+        "count": 4,
+        "media_verified_in_published_WordPress_html": true,
+        "caption_after_each": true,
+        "at_least_one_paragraph_between_media": true,
+        "types": [
+          {
+            "type": "source_backed_chart",
+            "media_id": 28045,
+            "dimensions": "1200x650",
+            "subject": "Intel -28.6%, AMD -10.9%, Nvidia -4.2% one-session price returns October 30",
+            "verification": "WordPress full image and Gutenberg figure caption present; Reuters market close source confirmed; screenshot of visible chart not independently inspected."
+          },
+          {
+            "type": "official_youtube",
+            "video_id": "EZhz7FocD-g",
+            "publisher": "Intel Business",
+            "date": "2026-06-01",
+            "subject": "Xeon 6+ server CPU product context",
+            "verification": "Original video identity from YouTube metadata, correct canonical Gutenberg shortcode and embedded iframe in published HTML; actual playback untested; explicitly NOT October 30 trading video."
+          },
+          {
+            "type": "historical_licensed_photo",
+            "media_id": 28046,
+            "dimensions": "1280x850",
+            "source_url": "https://commons.wikimedia.org/wiki/File:4th_Generation_Intel%C2%AE_Core%E2%84%A2_Processor_Wafer_01.jpg",
+            "creator": "Intel in Deutschland",
+            "date": "2013",
+            "license": "CC BY-SA 2.0",
+            "verification": "Source license and original identification read directly in Wikimedia Commons; WordPress image caption correctly distinguishes historical wafer from 2026 Xeon."
+          },
+          {
+            "type": "official_youtube",
+            "video_id": "_FfoGzK4VEQ",
+            "publisher": "Intel Newsroom",
+            "date": "2025-01-30",
+            "subject": "Intel 18A process technology background",
+            "verification": "YouTube metadata verified; Gutenberg shortcode and published iframe render; actual playback untested; contextual process technology, not same-day earnings footage."
+          }
+        ],
+        "known_limitations": [
+          "Video iframe markup and canonical URLs do not prove actual playback on desktop/mobile browser.",
+          "No independent responsive screenshot test of image/cover, chart or player.",
+          "Both official videos are older context footage; captions explicitly mark them as such."
+        ]
+      },
+      "featured_cover": {
+        "media_id": 28047,
+        "width": 1200,
+        "height": 630,
+        "style": "realistic editorial photo-style illustration",
+        "person": "fictional Southeast Asian adult woman semiconductor process engineer aged 30s",
+        "identity": "fictional, not a real Intel employee or documentary coverage",
+        "alt_text_verified": true,
+        "featured_attachment_verified": true,
+        "no_text_requested_in_generation": true,
+        "visual_anatomy_review": "not independently visually inspected in a graphical browser",
+        "rotation_evidence": "Prior Braiins OS post 28025 used an oil-painting-style cover with a man; next uses realistic scene and female professional; no generic desk."
+      },
+      "chart": {
+        "media_id": 28045,
+        "chart_type": "horizontal bar",
+        "interpretation": "same-session one-day percentage stock losses for three listed chip manufacturers; three directly comparable percentages, not dollar market cap and not operating income",
+        "data": [
+          {
+            "name": "Intel",
+            "return_pct": -28.6
+          },
+          {
+            "name": "AMD",
+            "return_pct": -10.9
+          },
+          {
+            "name": "Nvidia",
+            "return_pct": -4.2
+          }
+        ],
+        "source": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "comparison_scope": "All from U.S. Oct 30 close, not forecasts or mixed time windows",
+        "visual_inspection": "image dimensions and rendered HTML confirmed; screenshot analysis not possible."
+      },
+      "footers": {
+        "exact_approved_editors_note_verified": true,
+        "original_qr_wordpress_media_id": 24043,
+        "donation_request_sats": 5000,
+        "bitcoin_address": "3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb",
+        "disclaimer_verified": true,
+        "no_discontinued_promo": true,
+        "order": "Editor's Note → QR → scanning instructions → disclaimer"
+      },
+      "corrections_and_defects": [
+        {
+          "classification": "verified_fact",
+          "status": "avoided_prepublication",
+          "detail": "Rejected near-duplicate QBT methods announcement after WordPress found Oct 29 article 27060 and GitHub archive match; pursued distinct Intel October 30 stock-market event."
+        },
+        {
+          "classification": "verified_fact",
+          "status": "documented_limit",
+          "detail": "No full external public-page browser render; published HTML read-back passed but end-to-end YouTube playback untested."
+        },
+        {
+          "classification": "verified_fact",
+          "status": "improvement",
+          "detail": "Comparison chart now uses same-date, same-unit percentage returns, addressing prior Teesside threshold-vs-ambition ambiguity."
+        },
+        {
+          "classification": "verified_fact",
+          "status": "improvement",
+          "detail": "Intel revenue and segment claims now cited from direct official Intel and SEC primary release, rather than only secondary interpretation."
+        }
+      ],
+      "prior_learning_applied": [
+        {
+          "prior_post_id": 27966,
+          "priority": 1,
+          "status": "met",
+          "evidence": "Read Intel's full Q3 earnings release and SEC exhibit for exact material actuals and guidance; Reuters U.S. closing numbers for chart."
+        },
+        {
+          "prior_post_id": 27966,
+          "priority": 2,
+          "status": "partially_met",
+          "evidence": "Validated YouTube video identities, Gutenberg shortcode and WordPress iframe read-back; desktop/mobile playback test was still inaccessible."
+        },
+        {
+          "prior_post_id": 27966,
+          "priority": 3,
+          "status": "met_with_visual_limit",
+          "evidence": "Created single-session percentage decline chart with consistent scope and confirmed original QR WordPress ID 24043 plus verbatim Editor's Note; no image screenshot test."
+        }
+      ],
+      "external_verification_limitations": [
+        "Independent web.open of the public permalink returned inaccessible. WordPress published status, URL, and rendered HTML returned success, not a graphical browser view.",
+        "Neither YouTube player was started/playback-tested on a user device; no desktop or mobile screenshots.",
+        "Featured-cover anatomy and chart visual composition could not be independently inspected via actual image screenshot.",
+        "No thumbs-up/down history or reader analytics exposed.",
+        "Not every internal and external target URL was individually fetched through a browser; sourced factual materials were read."
+      ],
+      "quality_score": {
+        "target": 95,
+        "achieved": 92,
+        "met_target": false,
+        "breakdown": {
+          "Accuracy and source verification": 24,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 15,
+          "Working embeds and media relevance": 12,
+          "Cover and visualization quality": 9,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 7
+        },
+        "gate_status": {
+          "accuracy": "PASS_WITH_DISCLOSED_EXTERNAL_LINK_LIMITS",
+          "duplicate_prevention": "PASS_WP_AND_GITHUB_DETECTED_AND_AVOIDED_QBT_DUPLICATE",
+          "functional_media": "PARTIAL__RENDERED_IFRAMES_VERIFIED__INDEPENDENT_PLAYBACK_UNTESTED",
+          "all_mandatory_gates_fully_proven": false
+        },
+        "reviewer_note": "92/100 evidence-backed editorial estimate (+4 vs first ledger entry). Not a score for tested reader engagement or actual browser playback. An unmet functional media gate prevents claiming fully QA-complete despite publication."
+      },
+      "three_improvements_to_carry_forward": [
+        {
+          "priority": 1,
+          "classification": "action",
+          "instruction": "Add a real graphical browser/device media test for playback, mobile scaling and featured-cover anatomy when computer-use or browser capability is available. Keep a source-level verified/unverified matrix if unavailable; never use iframe markup as a playback guarantee.",
+          "verification_on_next_story": "Real player start plus screenshot or explicitly documented unavailability; compare with current post 28053."
+        },
+        {
+          "priority": 2,
+          "classification": "action",
+          "instruction": "Before selection, search exact entities and synonyms in WordPress AND GitHub; the QBT candidate was demonstrably duplicate. Preserve the rejected candidate in the ledger to avoid recycling announcements.",
+          "verification_on_next_story": "Record at least one title/entity collision check and exact rejection/pivot rationale."
+        },
+        {
+          "priority": 3,
+          "classification": "action",
+          "instruction": "Read official primary financial/technical documents for every material number and build only like-for-like charts. Perform a source-license and image-visual spot check and recheck all five internal links at their destination when feasible.",
+          "verification_on_next_story": "Document direct primary paragraph/section source plus comparison units and link/copyright QA."
+        }
+      ],
+      "user_rating_feedback": {
+        "classification": "not_accessible",
+        "status": "not_accessible",
+        "data": null
+      },
+      "engagement_metrics": {
+        "classification": "not_accessible",
+        "status": "not_accessible",
+        "data": null
+      }
+    },
+    {
+      "post_id": 28099,
+      "article_title": "Arm Releases Neural Dawn Mobile Game With AI Ray Tracing on Five Devices",
+      "publication_date": "2026-11-01",
+      "category_names": [
+        "Artificial Intelligence",
+        "Gaming",
+        "Semiconductors"
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/01/arm-neural-dawn-mobile-game-download-ai-ray-tracing-five-devices-2026/",
+      "original_sources": [
+        {
+          "url": "https://newsroom.arm.com/blog/neural-dawn-game-available-to-download",
+          "verified": "publisher original read"
+        },
+        {
+          "url": "https://developer.arm.com/mobile-graphics-and-gaming/neural-technology/build-games",
+          "verified": "five-model compatibility list read"
+        },
+        {
+          "url": "https://www.unrealengine.com/learning/octobers-epic-learning-content-mobile-development-in-unreal-engine",
+          "verified": "official Epic recording"
+        }
+      ],
+      "duplicate_check": {
+        "wordpress": "Neural Dawn search no duplicate",
+        "github": "Neural Dawn search no duplicate",
+        "rejected_candidate": "Microchip PolarFire TSN exact-topic duplicate post 27364"
+      },
+      "internal_links": {
+        "count": 4
+      },
+      "in_story_media": {
+        "count": 4,
+        "types": [
+          "Arm gameplay YouTube e4cnNm805YI",
+          "supported hardware chart WordPress 28088",
+          "Arm launch YouTube Y53HNgb6U48",
+          "Epic developer walkthrough YouTube XG5W2Ei_J0Q"
+        ],
+        "verified_draft_wordpress_iframes": 3,
+        "verified_actual_playback": false
+      },
+      "featured_cover": {
+        "id": 28090,
+        "dimensions": "1200x630",
+        "style": "anime editorial artwork",
+        "subject": "fictional adult male mobile graphics engineer"
+      },
+      "chart": {
+        "media_id": 28088,
+        "values": "three MediaTek 9600 Pro models, two Xiaomi XRING O3 models",
+        "source": "Arm October 29 compatibility page",
+        "unit": "device model count"
+      },
+      "footers": {
+        "verified_note": true,
+        "original_qr_id": 24043,
+        "disclaimer": true
+      },
+      "editorial_corrections": [
+        "WordPress posts.create blocked, recovered via draft shell and update",
+        "TechCert archive synchronization returned concurrent conflict; not completed",
+        "Postpublication view and public browser fetch blocked; actual YouTube playback untested"
+      ],
+      "feedback": {
+        "status": "not_accessible"
+      },
+      "engagement": {
+        "status": "not_accessible"
+      },
+      "quality_score": {
+        "achieved": 91,
+        "target": 95,
+        "breakdown": {
+          "Accuracy and source verification": 25,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 15,
+          "Working embeds and media relevance": 12,
+          "Cover and visualization quality": 8,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 6
+        },
+        "gate_status": {
+          "accuracy": "pass",
+          "duplicate": "pass",
+          "video_playback": "unverified"
+        }
+      },
+      "three_improvements_to_carry_forward": [
+        {
+          "priority": 1,
+          "instruction": "Require actual browser player-start test when available; record unavailable otherwise."
+        },
+        {
+          "priority": 2,
+          "instruction": "Make GitHub writes conflict-safe; verify all repository archive blob SHAs."
+        },
+        {
+          "priority": 3,
+          "instruction": "Continue using original source compatibility lists and comparable chart metrics."
+        }
+      ],
+      "remaining_issues": [
+        "Postpublication view retrieval blocked",
+        "Real video playback and screenshots not performed",
+        "TechCert archive unsynchronized"
+      ]
+    },
+    {
+      "post_id": 28138,
+      "article_title": "Ford's $28,350 Fathom Moves Home Backup Inverter Into the Truck",
+      "publication_date": "2026-11-01",
+      "category_names": [
+        "Automotive",
+        "Energy",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        2024,
+        1212,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/01/ford-fathom-2027-bidirectional-home-backup-inverter-10kw-28350/",
+      "archive_path": "archive/2026/11/28138-ford-fathom-2027-home-backup-embedded-inverter.md",
+      "archive_blob_sha": "15931453576c3c392a53c678655d137e4e35a1b3",
+      "verified_archive_repositories": [
+        "1freetech/Bitcoinversus.tech",
+        "1freetech/opencert.tech",
+        "1freetech/techcert"
+      ],
+      "reporting_words": 399,
+      "publication_status": {
+        "classification": "verified_fact",
+        "wordpress_status": "publish",
+        "post_id": 28138,
+        "verification": "WordPress posts.update returned publish, title, featured_media 28127 and canonical URL. Both postpublication posts.get(context=edit) and posts.get(context=view) returned publish with identical canonical URL, three embedded YouTube iframes, two in-body images and the approved footer. Public external web.open of the URL was inaccessible."
+      },
+      "original_sources": [
+        {
+          "type": "primary_manufacturer_engineering",
+          "url": "https://www.fromtheroad.ford.com/us/en/articles/2026/fathom-ev-bidirectional-home-power",
+          "dated": "2026-10-27",
+          "verification": "Full Ford Model e report read directly; $28,350 planned starting MSRP, projected over 10 kW AC output, station about half cost, backup hardware at least 60% below first generation, release planned 2027, utility and accessory conditions."
+        },
+        {
+          "type": "primary_manufacturer_grid_interface",
+          "url": "https://www.fromtheroad.ford.com/us/en/articles/2026/bidirectional-evs-scale-utility-interconnection",
+          "dated": "2026-10-27",
+          "verification": "Direct Ford engineering article read: E-box built-in inverter, five modules, UL 1741/IEEE 1547 design intent and SAE J3068, 5 utility working-group members, distinguishing standalone isolated home backup and grid-parallel connection."
+        },
+        {
+          "type": "primary_vehicle_pricing",
+          "url": "https://corporate.ford.com/electric/fathom/",
+          "verification": "Official Ford Fathom product page directly read: $28,350 MSRP excludes $1,595 destination, preorders scheduled early 2027 and EPA range not yet available."
+        },
+        {
+          "type": "historical_firsthand_backup_demonstration",
+          "url": "https://www.youtube.com/watch?v=P7gCIT5FoAw",
+          "dated": "2023-01-17",
+          "verification": "State of Charge video indexed with title, channel, publication date and detailed firsthand installation description; deliberately identified as older F-150 Lightning, not new Fathom hardware."
+        },
+        {
+          "type": "corroborating_original_reporting",
+          "url": "https://arstechnica.com/cars/2026/10/ford-builds-bidrectional-charging-into-its-30k-electric-truck/",
+          "dated": "2026-10-27",
+          "verification": "Ars Technica reported integrated-inverter Fathom hardware and plans. Main material values traced to Ford primary documents."
+        }
+      ],
+      "fact_status": [
+        {
+          "classification": "verified_fact",
+          "claim": "Ford announced the Fathom vehicle-integrated home inverter and two planned home use configurations October 27, 2026",
+          "basis": "Official Ford engineering articles"
+        },
+        {
+          "classification": "planned_company_product",
+          "claim": "Fathom 2027 vehicle starting MSRP $28,350 before $1,595 destination; preorders planned early 2027",
+          "basis": "Ford official vehicle product page"
+        },
+        {
+          "classification": "vendor_projection_not_independently_measured",
+          "claim": "More than 10 kW AC output, management charger roughly 50% cheaper, backup hardware at least 60% cheaper",
+          "basis": "Ford company figures, not independently customer-tested performance or final installed prices"
+        },
+        {
+          "classification": "derived_math",
+          "claim": "Base MSRP $28,350 plus destination $1,595 equals $29,945 before tax/options",
+          "basis": "Direct arithmetic from Ford published numbers"
+        },
+        {
+          "classification": "engineering_qualification",
+          "claim": "Ford says Fathom design targets UL 1741 and IEEE 1547 requirements",
+          "basis": "Ford article states 'designed to meet'; NOT a verified third-party product-certification result"
+        },
+        {
+          "classification": "unverified",
+          "claim": "Actual home runtime/whole-home coverage/customer installation price",
+          "basis": "No delivered Fathom product or independent testing exists in evidence"
+        }
+      ],
+      "duplicate_check": {
+        "wordpress_searches": [
+          "Ford Fathom",
+          "Ford Home Power",
+          "vehicle to home",
+          "F-150 Lightning",
+          "inverter",
+          "automotive"
+        ],
+        "github_searches": [
+          "Ford Fathom",
+          "bidirectional charging",
+          "F-150 Lightning"
+        ],
+        "rejected_candidate": {
+          "classification": "verified_fact",
+          "topic": "Toyota / Waymo Japan-built bZ4X robotaxis 2027",
+          "reason": "Already published BitcoinVersus.Tech post 28039, November 1 2026."
+        },
+        "selected_topic_status": "No exact Fathom integrated E-box/October 27 home-power announcement detected in searched WordPress or editorial GitHub archives.",
+        "limitation": "Keyword/title/content searches are not exhaustive semantic comparison of the entire 2023–present archive."
+      },
+      "internal_links": {
+        "count": 4,
+        "verification": "Matching contextual links present in saved WordPress Gutenberg source; WordPress archive search returned corresponding articles. No independent desktop-browser navigation test of every destination.",
+        "targets": [
+          "https://bitcoinversus.tech/2026/10/04/energy-germany-turns-ev-batteries-into-grid-assets-with-new-v2g-rules/",
+          "https://bitcoinversus.tech/2026/10/04/tesla-sunrun-california-home-batteries-580-mw-virtual-power-plant/",
+          "https://bitcoinversus.tech/2026/10/25/gm-fourth-generation-ev-20-percent-range-lmr-battery-2026/",
+          "https://bitcoinversus.tech/2026/10/08/honda-wireless-charging-road-150kw-moving-electric-trucks/"
+        ]
+      },
+      "in_story_media": {
+        "count": 5,
+        "postpublication_wordpress_iframe_count": 3,
+        "all_captions_after_media": true,
+        "at_least_one_paragraph_between_media": true,
+        "embedded_video_playback_tested": false,
+        "types": [
+          {
+            "type": "official_video",
+            "youtube_id": "mjnxQHhCT_4",
+            "publisher": "Ford Motor Company",
+            "date": "2026-08-06",
+            "topic": "Fathom vehicle and UEV platform launch",
+            "verification": "Official verified Ford video metadata and explicit channel permission to share/embed. WordPress published HTML iframe src matches canonical video ID. Not October technical announcement footage."
+          },
+          {
+            "type": "official_manufacturer_photo",
+            "wordpress_media_id": 28128,
+            "dimensions": "2048x2048",
+            "topic": "Ford E-box high-voltage connection",
+            "source": "https://www.fromtheroad.ford.com/content/dam/fordmediasite/us/en/library/2026/bidirectional-evs-at-a-new-scale/UEV_Ebox_1.jpg",
+            "verification": "Photo opened at Ford domain, reused as Ford-owned editorial photograph and attributed in caption. WordPress published image tag and caption verified."
+          },
+          {
+            "type": "source_backed_comparison_chart",
+            "wordpress_media_id": 28130,
+            "dimensions": "1200x620",
+            "topic": "Prior-generation cost baseline indexed to 100; Ford target approximately 50 for station and at most 40 for backup hardware",
+            "verification": "Every comparison uses same within-category baseline and Ford projected cost reductions; caption states no retail prices, installation excluded."
+          },
+          {
+            "type": "independent_firsthand_video",
+            "youtube_id": "P7gCIT5FoAw",
+            "publisher": "State of Charge",
+            "date": "2023-01-17",
+            "topic": "Real older Ford F-150 Lightning home backup equipment installation",
+            "verification": "Public video publisher/channel metadata present and WordPress postpublication iframe src correct, caption explicitly says historical comparison not Fathom demonstration."
+          },
+          {
+            "type": "official_video",
+            "youtube_id": "YK3B70XFCmU",
+            "publisher": "Ford Motor Company",
+            "date": "2026-08-13",
+            "topic": "Louisville Fathom manufacturing retooling and production line",
+            "verification": "Official Ford video metadata and WordPress published iframe, caption marks earlier factory work and no production performance proof."
+          }
+        ]
+      },
+      "featured_cover": {
+        "wordpress_media_id": 28127,
+        "dimensions": {
+          "width": 1200,
+          "height": 630
+        },
+        "style": "wordless comic",
+        "adult_subject": "fictional Black female power engineer aged about 50",
+        "alt_text_verified": true,
+        "attached_as_featured_media": true,
+        "anatomy_visual_review_status": "not independently inspected in a graphical/mobile browser",
+        "conceptual_not_documentary": true,
+        "rotation_prior": "Neural Dawn story 28099 was anime editorial artwork with male; next is wordless comic with female"
+      },
+      "chart": {
+        "wordpress_media_id": 28130,
+        "shape": "grouped relative-index comparison",
+        "normalized_unit": "previous-generation cost index = 100 within each distinct configuration",
+        "prior_values": [
+          100,
+          100
+        ],
+        "new_vendor_estimates": [
+          50,
+          40
+        ],
+        "interpretation": "50 is approximate, 40 is maximum based on at least 60% savings; relative index not actual consumer price",
+        "source": "https://www.fromtheroad.ford.com/us/en/articles/2026/fathom-ev-bidirectional-home-power",
+        "limitation": "Ford estimates; final retail hardware and installation costs unpublished. Graphic markup/source verified, no screenshot review."
+      },
+      "footers": {
+        "approved_editor_note_exact": true,
+        "original_qr_media_id": 24043,
+        "donation_amount_sats": 5000,
+        "address": "3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb",
+        "disclaimer_present": true,
+        "retired_x_promo_absent": true,
+        "order": "Editor's Note -> original QR -> 5,000 sats instructions -> disclaimer"
+      },
+      "corrections_and_defects": [
+        {
+          "classification": "verified_fact",
+          "detail": "No content correction required after initial WordPress draft QA and publish read-back; all 15 postpublication checks passed."
+        },
+        {
+          "classification": "unverified",
+          "detail": "External web opening of the published BitcoinVersus.Tech page inaccessible; functional YouTube playback and desktop/mobile graphical screenshots unavailable."
+        },
+        {
+          "classification": "verified_fact",
+          "detail": "Unlike prior Neural Dawn post, all 3 GitHub archives were created and read back successfully with identical Git blob SHA."
+        }
+      ],
+      "previous_learning_applied": [
+        {
+          "from_post_id": 28099,
+          "priority": 1,
+          "status": "partial",
+          "evidence": "Video IDs sourced from official Ford verified YouTube metadata and State of Charge original demonstration; postpublication player iframe tags checked, but no independent video start/playback available."
+        },
+        {
+          "from_post_id": 28099,
+          "priority": 2,
+          "status": "met",
+          "evidence": "All three GitHub archives created with one shared exact content body, then fetched for identical blob SHA."
+        },
+        {
+          "from_post_id": 28099,
+          "priority": 3,
+          "status": "met",
+          "evidence": "Ford primary engineering documents used for numeric claims; chart uses within-category normalized costs, vendor claims explicitly labeled."
+        }
+      ],
+      "external_verification_limits": [
+        "Actual player start/seek/complete testing on live reader device unavailable; iframe HTML does not establish continuous playback.",
+        "External public page fetch returned inaccessible though WordPress published raw and rendered views both confirmed live post.",
+        "No independent visual desktop/mobile screenshot, artwork anatomy proof or chart pixel-level inspection.",
+        "Not every internal/external link target visited individually through browser.",
+        "No reader reactions, thumbs-up/down history or engagement analytics surfaced."
+      ],
+      "quality_score": {
+        "target": 95,
+        "achieved": 94,
+        "met_target": false,
+        "breakdown": {
+          "Accuracy and source verification": 25,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 15,
+          "Working embeds and media relevance": 12,
+          "Cover and visualization quality": 9,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 8
+        },
+        "gate_status": {
+          "accuracy": "PASS_WITH_NOTED_FORECASTS",
+          "duplicate_prevention": "PASS_WORDPRESS_AND_GITHUB_SEARCHES",
+          "functional_media": "IFRAMES_VERIFIED_IN_PUBLISHED_WORDPRESS_VIEW__REAL_PLAYBACK_UNTESTED",
+          "all_mandatory_gates_fully_proven": false
+        },
+        "reviewer_note": "94/100 evidence-weighted editorial judgment, not measured traffic or satisfaction. Target 95 not reached because real video playback and graphical browser checks remain inaccessible; do not claim functional-media gate fully proven."
+      },
+      "three_improvements_to_carry_forward": [
+        {
+          "priority": 1,
+          "classification": "action",
+          "instruction": "For the next Space/Science category story, test actual YouTube playback with a real browser if tools permit; otherwise retain exact distinction between iframe/player availability and verified playback.",
+          "verification_on_next_story": "Log test device/timestamp/screenshot or explicit unavailable state."
+        },
+        {
+          "priority": 2,
+          "classification": "action",
+          "instruction": "Visually inspect the 1200x630 cover and quantitative charts for typography, anatomy and scales; use actual external screenshots/browser mode where supported, otherwise track this as unresolved.",
+          "verification_on_next_story": "Record screenshots or unavailable status; do not infer quality from generated-image prompt alone."
+        },
+        {
+          "priority": 3,
+          "classification": "action",
+          "instruction": "Preserve Ford's fact/forecast separation as the standard: verify original engineering source data and specify standards as design intent until certification and completed tests are shown.",
+          "verification_on_next_story": "Document primary engineering claim, release date, uncertainty, and comparability of quantitative claims."
+        }
+      ],
+      "user_rating_feedback": {
+        "classification": "not_accessible",
+        "status": "not_accessible",
+        "data": null
+      },
+      "engagement_metrics": {
+        "classification": "not_accessible",
+        "status": "not_accessible",
+        "data": null
+      }
+    },
+    {
+      "post_id": 28173,
+      "article_title": "NASA Seeks Commercial Hubble Reboost Plans Before 2032",
+      "publication_date": "2026-11-01",
+      "category_names": [
+        "Space",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        174,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/01/nasa-hubble-commercial-reboost-600km-2032-request-industry-2026/",
+      "archive_path": "archive/2026/11/28173-nasa-hubble-commercial-reboost-options-2032.md",
+      "archive_blob_sha": "0e569b2a1312587aeea76d1951e12563406ae7ea",
+      "verified_archived_repositories": [
+        "1freetech/Bitcoinversus.tech",
+        "1freetech/opencert.tech",
+        "1freetech/techcert"
+      ],
+      "body_reporting_words": 404,
+      "publication_status": {
+        "classification": "verified_fact",
+        "wordpress_status": "publish",
+        "date": "2026-11-01T15:43:03",
+        "check": "WordPress posts.update returned publish and canonical permalink. Independently read published posts.get context=edit and context=view; all 16 structural, SEO, media and footer checks passed. External web.open public URL failed."
+      },
+      "sources": [
+        {
+          "type": "primary NASA mission announcement",
+          "url": "https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/",
+          "date": "2026-10-30",
+          "verified": "Read NASA announcement directly; Oct 29 RFI, options, Nov 30 3 pm EST deadline, 2032 mission timing and 2033–34 unboosted reentry forecast."
+        },
+        {
+          "type": "primary federal RFI notice",
+          "url": "https://sam.gov/workspace/contract/opp/2ecd9dbf4a3946b4968cc0ebaa75d0b3/view",
+          "date": "2026-10-29",
+          "verified": "Official SAM URL was linked from NASA. Direct SAM webpage fetch contained no readable text in the tool; exact notice 80GSFC27RFIHSTS, 600 km option and July 2026 cumulative reentry probabilities crosschecked against GovTribe and SAM-derived listings."
+        },
+        {
+          "type": "verbatim secondary federal notice reproduction",
+          "url": "https://govtribe.com/opportunity/federal-contract-opportunity/hubble-space-telescope-hst-servicing-80gsfc27rfihsts",
+          "date": "2026-10-29",
+          "verified": "Public listing includes the NASA RFI text, reboost to at least 600km, contractor resources, by-2032 aim, July 2026 10% by Sep 2032 and 50% by Dec 2033 modeling."
+        },
+        {
+          "type": "primary NASA history",
+          "url": "https://science.nasa.gov/mission/hubble/overview/the-history-of-hubble/",
+          "verified": "NASA's official history confirms the telescope's 1990 launch, servicing missions and technical aging."
+        },
+        {
+          "type": "primary NASA older study",
+          "url": "https://science.nasa.gov/missions/hubble/nasa-spacex-to-study-hubble-telescope-reboost-possibility/",
+          "date": "2022-12-22",
+          "verified": "NASA prior commercial reboost study did not commit funding or select a mission."
+        }
+      ],
+      "reported_fact_status": [
+        {
+          "classification": "verified_fact",
+          "claim": "NASA issued October 29 2026 industry request for Hubble commercial reboost, servicing, or disposal options",
+          "source": "NASA official October 30 announcement"
+        },
+        {
+          "classification": "verified_fact",
+          "claim": "RFI responses due 3 p.m. Eastern Nov 30 2026; NASA considers by-2032 timing",
+          "source": "NASA primary announcement; due time is EST."
+        },
+        {
+          "classification": "engineering_requirement_in_republished_RFI",
+          "claim": "Potential capture-and-reboost option aims for at least 600km",
+          "source": "NASA RFI mirrored verbatim on GovTribe and federal solicitation listings; direct SAM text inaccessible."
+        },
+        {
+          "classification": "modeled_forecast_not_event",
+          "claim": "10% cumulative chance of natural reentry by Sep 2032 and 50% by Dec 2033 absent intervention",
+          "source": "NASA July 2026 lifetime analysis as reproduced in the solicitation."
+        },
+        {
+          "classification": "modeled_forecast_not_event",
+          "claim": "Unboosted Hubble reentry projected 2033–34 by NASA",
+          "source": "NASA official October 30 announcement."
+        },
+        {
+          "classification": "NOT_confirmed",
+          "claim": "Approved commercial servicing contract, selected contractor, funded launch date, confirmed 600 km new orbit",
+          "evidence": "None announced; article states the RFI is NOT a procurement award."
+        }
+      ],
+      "duplicate_check": {
+        "classification": "verified_fact",
+        "wordpress_queries": [
+          "Hubble servicing",
+          "Hubble reboost",
+          "Hubble Space Telescope"
+        ],
+        "github_queries": [
+          "Hubble reboost",
+          "Hubble servicing"
+        ],
+        "result": "No article about the Oct 29 2026 Hubble commercial-servicing RFI in accessible archive; existing WordPress stories about astronaut Story Musgrave, Kathryn Sullivan and space chips were related background, not this event.",
+        "archive_scope_note": "Keyword/semantic discovery checked accessible WordPress and GitHub; not a mathematical exhaustive proof of every 2023–present file."
+      },
+      "internal_links": {
+        "count": 5,
+        "status": "verified published Gutenberg href markup",
+        "topics": [
+          "ISRO NVS-03 orbit raising",
+          "Story Musgrave Hubble servicing astronaut",
+          "Kathryn Sullivan shuttle era",
+          "space-rated chips and aging electronics",
+          "NASA commercial post-ISS space stations"
+        ],
+        "outbound_destination_checks": "WordPress archive names/URLs known; individual links not all loaded in independent browser."
+      },
+      "in_story_media": {
+        "count": 5,
+        "types": [
+          {
+            "type": "original NASA photograph",
+            "wordpress_media_id": 28168,
+            "date": "1997-02-19",
+            "source": "https://commons.wikimedia.org/wiki/File:Hubble_Redeployment_-_GPN-2000-001066.jpg",
+            "license": "NASA public domain",
+            "caption_after": true
+          },
+          {
+            "type": "official NASA Goddard YouTube video",
+            "youtube_id": "CQ8MXH2jlWA",
+            "published": "2024-05-10",
+            "topic": "Hubble last shuttle servicing in 2009",
+            "publisher_identity_verified": true,
+            "postpublication_iframe_verified": true,
+            "caption_after": true,
+            "independent_actual_playback_verified": false
+          },
+          {
+            "type": "NASA lifetime forecast source chart",
+            "wordpress_media_id": 28170,
+            "dimensions": "1200x600",
+            "basis": "NASA July 2026 RFI analysis without intervention",
+            "values": "10% cumulative by Sep 2032; 50% cumulative by Dec 2033",
+            "caption_after": true
+          },
+          {
+            "type": "original NASA photograph",
+            "wordpress_media_id": 28169,
+            "date": "1993-12-09",
+            "source": "https://commons.wikimedia.org/wiki/File:Hubble_First_Servicing_EVA_-_GPN-2000-001085.jpg",
+            "license": "NASA public domain",
+            "caption_after": true
+          },
+          {
+            "type": "official NASA Goddard YouTube video",
+            "youtube_id": "2X0Hghl3SYk",
+            "published": "2020-12-02",
+            "topic": "Hubble 1993 optical servicing",
+            "publisher_identity_verified": true,
+            "postpublication_iframe_verified": true,
+            "caption_after": true,
+            "independent_actual_playback_verified": false
+          }
+        ],
+        "player_verification": "Both publisher video IDs checked against NASA Goddard listings; WordPress draft and published rendered HTML each have correct playable-player iframe elements and immediate caption paragraphs.",
+        "actual_playback_verified": false,
+        "spacing_requirement_met": true
+      },
+      "featured_cover": {
+        "wordpress_media_id": 28171,
+        "dimensions": "1200x630",
+        "style": "photo/anime blend",
+        "adult_professional": "fictional older Black male spacecraft rendezvous engineer aged 50s–60s",
+        "attached_as_featured_media": true,
+        "alt_text_present": true,
+        "artwork_is_conceptual_not_documentary": true,
+        "graphical_visual_review": "not performed; image URL inaccessible to external browser",
+        "previous_style": "wordless comic"
+      },
+      "chart": {
+        "media_id": 28170,
+        "style": "horizontal two-date probability comparison",
+        "unit": "cumulative chance of Hubble natural reentry (%)",
+        "dates": [
+          "September 2032",
+          "December 2033"
+        ],
+        "values_pct": [
+          10,
+          50
+        ],
+        "scope": "Without reboost or servicing; July 2026 model, not actual reentry dates",
+        "source": "NASA RFI 80GSFC27RFIHSTS, as reproduced by GovTribe",
+        "note": "Uses same cumulative probability metric on same 0–100% axis; does not extrapolate or make 2034 certainty claim. Chart pixel-level inspection unavailable."
+      },
+      "footers": {
+        "exact_approved_editor_note": true,
+        "original_qr_wordpress_media_id": 24043,
+        "donation_amount_sats": 5000,
+        "disclaimer_present": true,
+        "retired_promo_absent": true,
+        "order": "Editor's Note → QR → scan/address instructions → disclaimer"
+      },
+      "corrections_and_defects": [
+        {
+          "classification": "verified_fact",
+          "change": "No user-facing error found during WordPress prepublication or postpublication structural QA; 19 draft and 16 published automated checks passed."
+        },
+        {
+          "classification": "verified_fact",
+          "change": "TechCert archive first create action was blocked by tool safety; successfully retried by fetching the already archived exact source. All three repositories returned the same blob SHA."
+        },
+        {
+          "classification": "unverified",
+          "change": "No actual video player-start, complete-watch or desktop/mobile screenshot test; external webpage fetch blocked."
+        },
+        {
+          "classification": "unverified",
+          "change": "Official SAM.gov solicitation full body could not be read directly; exact RFI detail and probability claims checked in faithful public copies."
+        }
+      ],
+      "prior_learning_applied": [
+        {
+          "from_post_id": 28138,
+          "priority": 1,
+          "status": "partially_applied",
+          "evidence": "Two verified NASA Goddard IDs and published YouTube iframe sources checked; actual playback inaccessible and explicitly marked untested."
+        },
+        {
+          "from_post_id": 28138,
+          "priority": 2,
+          "status": "partially_applied",
+          "evidence": "Correct 1200x630 cover and chart dimensions confirmed through WordPress metadata; unable to pixel-inspect files on a browser/device."
+        },
+        {
+          "from_post_id": 28138,
+          "priority": 3,
+          "status": "applied",
+          "evidence": "NASA RFI and lifetime probabilities classified as scenarios, forecasts and industry-information request, not a funded mission or delivered orbit."
+        }
+      ],
+      "quality_score": {
+        "target": 95,
+        "achieved": 94,
+        "met_target": false,
+        "breakdown": {
+          "Accuracy and source verification": 24,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 15,
+          "Working embeds and media relevance": 12,
+          "Cover and visualization quality": 9,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 9
+        },
+        "gate_status": {
+          "accuracy": "PASS_WITH_OFFICIAL_RFI_DIRECT_ACCESS_LIMITATION",
+          "duplicate_prevention": "PASS_WORDPRESS_AND_GITHUB_SEARCH",
+          "functional_media": "PUBLISHED_IFRAME_MARKUP_VERIFIED_BUT_VIDEO_PLAYBACK_UNTESTED",
+          "all_mandatory_gates_fully_proven": false
+        },
+        "reviewer_note": "94/100 evidence-based editorial assessment. Despite complete WordPress structure checks, actual end-to-end video playback remains inaccessible and official SAM notice detail crosschecked through republication. Do not report target 95 reached or playback fully proved."
+      },
+      "three_improvements_to_carry_forward": [
+        {
+          "priority": 1,
+          "classification": "action",
+          "instruction": "Before declaring a video 'working', run a real browser player-start test on desktop and mobile when available; otherwise explicitly report that iframe presence is not playback.",
+          "verification_on_next_story": "Record tested player ID, playback response, timestamp and viewport or unavailable."
+        },
+        {
+          "priority": 2,
+          "classification": "action",
+          "instruction": "Improve access to primary government technical documents: independently retrieve the full SAM.gov RFI/agency annex before publishing exact probability and altitude details; if inaccessible, cite NASA statement and identify the reproduced solicitation as such.",
+          "verification_on_next_story": "Save primary paragraph/page evidence and note provenance."
+        },
+        {
+          "priority": 3,
+          "classification": "action",
+          "instruction": "For a following science story, pixel-inspect sourced photos, chart axes and generated anatomy when graphical tools permit; preserve same-blob GitHub triple archive validation and footer QR regression.",
+          "verification_on_next_story": "Capture visual QA evidence plus identical Git blob SHAs or flag pending issue."
+        }
+      ],
+      "external_verification_limitations": [
+        "External web tool could not fetch the public WordPress permalink; WordPress published edit/view checks confirm status and rendered markup.",
+        "NASA's original SAM.gov notice did not expose readable body via browsing; the Oct 29 NASA release and independently mirrored notice support cited specifics.",
+        "Real video start/playback and desktop/mobile viewport checks not performed.",
+        "Featured image anatomy and chart rendered pixels not independently visually inspected.",
+        "Full thumbs-up/down history, traffic analytics, social engagement not accessible."
+      ],
+      "user_rating_feedback": {
+        "classification": "not_accessible",
+        "status": "not_accessible",
+        "data": null
+      },
+      "engagement_metrics": {
+        "classification": "not_accessible",
+        "status": "not_accessible",
+        "data": null
+      }
+    },
+    {
+      "post_id": 28530,
+      "article_title": "Ceva’s NeuPro NPU Enters Production in Mobilint’s 10-TOPS REGULUS Chip",
+      "publication_date": "2026-11-02",
+      "category_names": [
+        "Semiconductors",
+        "ASICs & Hardware",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        284207,
+        792826578,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/02/ceva-mobilint-regulus-10tops-neupro-production-edge-ai-2026/",
+      "wordpress_publication_status": "publish",
+      "editorial_body_word_count": 382,
+      "original_sources": [
+        {
+          "url": "https://www.ceva-ip.com/press/ceva-and-mobilint-advance-physical-ai-with-regulus-edge-ai-soc-2/",
+          "classification": "verified_fact",
+          "detail": "November 2 production announcement, Ceva NeuPro Nano NPN32 and SensPro, 10 TOPS under 3 W, MLD-R1 commercial status"
+        },
+        {
+          "url": "https://www.mobilint.com/products/regulus",
+          "classification": "verified_fact",
+          "detail": "Manufacturer 10 dense INT8 TOPS, 17 mm package, 4K 60 fps and product design"
+        },
+        {
+          "url": "https://www.mobilint.com/products/regulus/mld-r1-ai-usb",
+          "classification": "verified_fact",
+          "detail": "MLD-R1 host/framework support and approximately 4 W complete-device specification"
+        },
+        {
+          "url": "https://armdevices.net/2026/03/15/mobilint-aries-and-regulus-edge-ai-mla400-llm-inference-and-multi-camera-vision/",
+          "classification": "verified_fact",
+          "detail": "March 2026 recorded trade-show demonstration; links YouTube ylvPT1Mlv_g"
+        }
+      ],
+      "fact_status": "Vendor-specified metrics attributed to vendor; no independent chip benchmark claimed. Chip <3W and full USB device ~4W are different measurement boundaries.",
+      "duplicate_check": {
+        "wordpress_queries": [
+          "Ceva",
+          "Mobilint",
+          "REGULUS"
+        ],
+        "github_query": "REGULUS Mobilint Ceva in 1freetech/Bitcoinversus.tech",
+        "result": "WordPress found earlier Ceva 28108 (new NPU portfolio) and SEMIFIVE-Mobilint 20029 (future design partnership), but no November 2 REGULUS NeuPro production milestone. GitHub direct keyword search returned no same story.",
+        "scope_limit": "WordPress keyword searches and GitHub indexed search are not an exhaustive semantic inventory of every 2023-2026 archive file."
+      },
+      "internal_links": {
+        "count": 5,
+        "verified_in_published_markup": true,
+        "individual_destination_http_tests": "not independently attempted",
+        "topics": [
+          "Ceva next-generation NeuPro portfolio",
+          "SEMIFIVE and Mobilint robotics chip collaboration",
+          "Ubitium physical AI",
+          "VeriSilicon GLTiny",
+          "Dream Labs robot API"
+        ]
+      },
+      "in_story_media": {
+        "count": 3,
+        "items": [
+          {
+            "type": "official manufacturer photograph",
+            "id": 28519,
+            "subject": "REGULUS chip",
+            "rendered_image_verified": true,
+            "caption_after": true
+          },
+          {
+            "type": "native Gutenberg YouTube",
+            "youtube_id": "ylvPT1Mlv_g",
+            "publisher": "ARMdevices",
+            "subject": "Mobilint edge AI hardware at Embedded World 2026",
+            "rendered_iframe_verified": true,
+            "actual_playback_verified": false,
+            "caption_after": true
+          },
+          {
+            "type": "official manufacturer photograph",
+            "id": 28520,
+            "subject": "MLD-R1 USB accelerator",
+            "rendered_image_verified": true,
+            "caption_after": true
+          }
+        ],
+        "excluded_footer_qr_id": 24043
+      },
+      "featured_cover": {
+        "id": 28522,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "realistic editorial photo, conceptual",
+        "subject": "adult Black woman semiconductor validation engineer working at microscope on PCB",
+        "alt_text_verified": true,
+        "generated_via": "WordPress AI image generation then WordPress CDN exact crop and reupload",
+        "composition_anatomy_independently_inspected": false
+      },
+      "chart": {
+        "included": false,
+        "reason": "Only device-specific headline TOPS and differently scoped chip and USB power claims; no comparable independent measured series. Reject bars/line/radar/treemap as misleading; no decorative chart."
+      },
+      "footers": {
+        "approved_editors_note_exact": true,
+        "qr_media_id": 24043,
+        "bitcoin_5000_sats": true,
+        "disclaimer": true,
+        "retired_promo_absent": true
+      },
+      "metadata": {
+        "advanced_seo_description_set": true,
+        "subscriber_email_sent": false
+      },
+      "quality_score": {
+        "accuracy": 25,
+        "originality_newsworthiness": 15,
+        "technical_depth": 14,
+        "working_embeds_media": 12,
+        "cover_visualization": 9,
+        "internal_links_seo": 10,
+        "live_page_qa": 7,
+        "total": 92,
+        "target": 95,
+        "passed": false,
+        "reason": "Source, WordPress status, native image elements and YouTube iframe confirmed; actual video playback, cover visual inspection and mobile layout independently unverified."
+      },
+      "publication_qa": {
+        "site_status": "publish",
+        "readback_edit": true,
+        "readback_rendered": true,
+        "rendered_youtube_iframe": true,
+        "featured_id_readback": true,
+        "cover_dimensions_media_api": true,
+        "screenshot_capture_status": "ready, capture_shows site; not pixel inspected",
+        "desktop_browser_visual": "not independently inspected",
+        "mobile_browser_visual": "not independently inspected",
+        "video_playback": "not verifiable",
+        "hard_gate_status": "source+duplicate checks passed within available scope; video playback remains unverified"
+      },
+      "feedback": {
+        "thumb_feedback": "unavailable",
+        "engagement": "not collected",
+        "user_feedback_this_article": "none yet"
+      },
+      "editorial_corrections": [
+        {
+          "classification": "verified_fact",
+          "issue": "Earlier articles sometimes displayed bare YouTube URLs",
+          "correction": "Native Gutenberg embed resolved to iframe in WordPress rendered view"
+        },
+        {
+          "classification": "verified_fact",
+          "issue": "Vendor quotes different power for SoC and USB device",
+          "correction": "Report chip <3W and USB ~4W separately; avoid misleading comparison chart"
+        }
+      ],
+      "three_improvements_to_carry_forward": [
+        "Use WordPress transformed image source and reimport to guarantee exact 1200x630 media dimensions; verify in media_details before publishing.",
+        "Inspect rendered HTML for real iframe src and known images, but add actual click-to-play tests when a true browser is available; never equate iframe with playback.",
+        "Keep power, compute and benchmark figures tied to explicit chip/system boundary and numeric precision; chart only comparable datasets."
+      ],
+      "observations": [
+        {
+          "classification": "verified_fact",
+          "detail": "WP posts.get rendered exposes a YouTube iframe, two official media images and the canonical footer."
+        },
+        {
+          "classification": "user_preference",
+          "detail": "2-10 functional in-body media, exactly one 1200x630 featured media, 300-420 words, 4-9 internal links, no text boxes."
+        },
+        {
+          "classification": "hypothesis",
+          "detail": "A controlled desktop/mobile playback harness would reduce unresolved video QA risk; not yet measured."
+        }
+      ]
+    },
+    {
+      "post_id": 28549,
+      "article_title": "OSSolidity.002: Contract Structure — SPDX, Pragma, State Variables, and Functions",
+      "publication_date": "2026-11-02",
+      "category_names": [
+        "computer programming",
+        "Information Technology",
+        "Tech Docs",
+        "technology"
+      ],
+      "wordpress_category_ids": [
+        44329,
+        5812,
+        2509703,
+        6
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/02/ossolidity-002-contract-structure-spdx-pragma-state-variables-functions-remix/",
+      "wordpress_publication_status": "publish",
+      "lesson_id": "OSSolidity.002",
+      "complete_rotation_subject_count": 43,
+      "next_subject": "sql",
+      "next_lesson_id": "OSSQL.005",
+      "original_sources": [
+        {
+          "url": "https://docs.soliditylang.org/en/v0.8.38/layout-of-source-files.html",
+          "type": "official language documentation"
+        },
+        {
+          "url": "https://docs.soliditylang.org/en/v0.8.38/structure-of-a-contract.html",
+          "type": "official language documentation"
+        },
+        {
+          "url": "https://remix-ide.readthedocs.io/en/latest/run.html",
+          "type": "official IDE documentation"
+        },
+        {
+          "url": "https://www.soliditylang.org/blog/2026/10/22/solidity-0.8.38-release-announcement/",
+          "type": "compiler release notes"
+        }
+      ],
+      "duplicate_check": {
+        "wordpress_search": "OSSolidity.002 found zero prior published posts and one result after publication; OSSolidity.001 #22233 exists",
+        "github_search": "Indexed query found preceding OSSolidity.001 and no prior OSSolidity.002",
+        "scope_note": "search index not entire 2023-present semantic audit"
+      },
+      "internal_links": {
+        "count": 6,
+        "status": "present in published Gutenberg source"
+      },
+      "in_story_media": {
+        "count": 3,
+        "items": [
+          {
+            "type": "native YouTube player",
+            "video_id": "AAubEOgE5p8",
+            "caption_after": true,
+            "rendered_iframe_verified": true,
+            "actual_playback_verified": false
+          },
+          {
+            "type": "native YouTube player",
+            "video_id": "nPLqdGNW_4U",
+            "caption_after": true,
+            "rendered_iframe_verified": true,
+            "actual_playback_verified": false
+          },
+          {
+            "type": "native YouTube player",
+            "video_id": "E3KM1c7xeJM",
+            "caption_after": true,
+            "rendered_iframe_verified": true,
+            "actual_playback_verified": false
+          }
+        ],
+        "synthetic_inbody_images": 0
+      },
+      "featured_cover": {
+        "media_id": 28543,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "split-screen technical diptych; subject-only, no people requested",
+        "alt_text_verified": true,
+        "independent_visual_inspection": false
+      },
+      "chart": {
+        "included": false,
+        "reason": "Foundational syntax lesson without a numerical dataset suitable for quantitative visualization; source examples and code lab are more appropriate"
+      },
+      "code": {
+        "language": "Solidity",
+        "filename": "Counter.sol",
+        "pragma": "^0.8.20",
+        "teaching_level": "beginner",
+        "format": "unboxed transparent source block",
+        "compiler_runtime_verification": "unavailable, solc not installed",
+        "remix_vm_instructions": true
+      },
+      "footers": {
+        "approved_editors_note": true,
+        "original_donation_qr_id": 24043,
+        "donation_request": "5000 satoshis",
+        "disclaimer": true,
+        "retired_promo": false
+      },
+      "archival": {
+        "repos": [
+          "1freetech/Bitcoinversus.tech",
+          "1freetech/opencert.tech",
+          "1freetech/techcert"
+        ],
+        "raw_gutenberg_sha": "abfa420fa773199b63cec4b0a07b44aa8867f655",
+        "identical_across_3": true
+      },
+      "quality_score": {
+        "accuracy": 24,
+        "originality_nonduplicate": 14,
+        "technical_clarity": 14,
+        "working_media": 12,
+        "cover_visualization": 9,
+        "internal_links_seo": 10,
+        "live_page_qa": 7,
+        "total": 90,
+        "target": 95,
+        "met": false,
+        "why": "Independent video playback, image-pixel inspection, desktop/mobile layout and actual solc compilation not available. Content verified via official documentation and WordPress rendered readback."
+      },
+      "feedback": {
+        "user_thumb_history": "unavailable",
+        "engagement_metrics": "unavailable"
+      },
+      "observations": [
+        {
+          "classification": "verified_fact",
+          "detail": "WordPress rendered all three native video IDs as iframe players, not bare links."
+        },
+        {
+          "classification": "measured_result",
+          "detail": "Three archived Gutenberg files have matching Git blob SHA and 11,371 characters."
+        },
+        {
+          "classification": "user_preference",
+          "detail": "Full subject rotation, no-person cover, unboxed code, 2–10 valid in-story embeds and approved footer."
+        },
+        {
+          "classification": "hypothesis",
+          "detail": "Independent device playback and runtime compilation would improve confidence."
+        }
+      ],
+      "three_improvements_to_carry_forward": [
+        "Before publishing a lesson, reconcile complete curriculum registry and WordPress duplicate search to prevent numbering collisions.",
+        "Repeat iframe readback for every relevant video, and obtain actual device playback tests when available; never confuse player markup with playable success.",
+        "Supply a reproducible compiler-based lesson test and run it when a compatible compiler exists, alongside explicit media and footer QA."
+      ]
+    },
+    {
+      "post_id": 28578,
+      "article_title": "OSSQL.005: LIMIT and OFFSET — Paginating Ordered Query Results",
+      "publication_date": "2026-11-02",
+      "content_type": "technical_lesson",
+      "lesson_id": "OSSQL.005",
+      "category_names": [
+        "computer programming",
+        "Information Technology",
+        "Tech Docs",
+        "technology"
+      ],
+      "wordpress_category_ids": [
+        44329,
+        5812,
+        2509703,
+        6
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/02/ossql-005-limit-offset-sql-pagination-order-by-pages/",
+      "wordpress_publication_status": "publish",
+      "original_sources": [
+        "https://www.postgresql.org/docs/18/queries-limit.html",
+        "https://www.sqlite.org/lang_select.html",
+        "https://www.sqlite.org/rowvalue.html",
+        "https://learn.microsoft.com/en-us/training/azure-databases/postgresql/basic-sql-limit-offset-order-by/"
+      ],
+      "duplicate_check": {
+        "wordpress": "OSSQL.001 through OSSQL.004 published; OSSQL.005 not found before posting",
+        "github": "Prior SQL .004 archive located, no indexed .005 in three repositories",
+        "scope": "Keyword and identifier search rather than exhaustive similarity check"
+      },
+      "internal_links": {
+        "count": 6,
+        "targets_status": "All 6 WordPress target posts were checked as publish"
+      },
+      "in_story_media": {
+        "count": 3,
+        "type": "native YouTube blocks",
+        "video_ids": [
+          "f_E9KlLukBc",
+          "gVmuTTKURAc",
+          "WOhZ7JsBj5s"
+        ],
+        "wordPress_rendered_iframes": 3,
+        "actual_video_playback": "not tested",
+        "captions_after_media": true
+      },
+      "featured_cover": {
+        "media_id": 28573,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "realistic subject-only technical editorial",
+        "alt_text_attached": true,
+        "actual_pixel_visual_inspection": false
+      },
+      "code_testing": {
+        "source": "fictional SQLite 8-row miner training data",
+        "sqlite_version": "3.46.1",
+        "python_unittest_pass_count": 5,
+        "python_unittest_total": 5,
+        "regression_test_repo": "https://github.com/1freetech/opencert.tech/blob/main/tests/test_ossql_005_pagination.py",
+        "expected_page_ids": [
+          [
+            108,
+            106,
+            103
+          ],
+          [
+            102,
+            105,
+            101
+          ],
+          [
+            107,
+            104
+          ],
+          []
+        ]
+      },
+      "chart": {
+        "present": false,
+        "reason": "No sourced real-world numeric dataset to compare; fictional SQL training rows should be demonstrated as query outputs, not charts"
+      },
+      "footer": {
+        "approved_editors_note_exact": true,
+        "original_donation_qr_id": 24043,
+        "donation_request_5000_sats": true,
+        "required_financial_disclaimer": true,
+        "retired_x_footer_absent": true
+      },
+      "archive": {
+        "github_repositories": [
+          "1freetech/Bitcoinversus.tech",
+          "1freetech/opencert.tech",
+          "1freetech/techcert"
+        ],
+        "same_gutenberg_sha": "a2ec95b9a335d14b1b878dd771e2265c079a17ad",
+        "matching_sources": true
+      },
+      "rotation": {
+        "full_active_tracks": 43,
+        "next_subject": "bash",
+        "next_lesson_number": 5,
+        "updated_in_repos": [
+          "1freetech/opencert.tech",
+          "1freetech/techcert"
+        ]
+      },
+      "qa_score": {
+        "criteria": "v5",
+        "accuracy": 25,
+        "source_quality": 15,
+        "duplicate": 10,
+        "links": 10,
+        "media": 11,
+        "cover": 8,
+        "charts": 5,
+        "footer_metadata": 5,
+        "publishing": 3,
+        "total": 92,
+        "target": 95,
+        "preliminary": true,
+        "hard_gates_fully_verified": false,
+        "reason": "No actual YouTube playback test and no independently inspected desktop/mobile or cover pixels"
+      },
+      "observations": [
+        {
+          "classification": "verified_fact",
+          "detail": "WordPress confirms published post #28578 with three rendered YouTube iframes and approved QR/footer"
+        },
+        {
+          "classification": "measured_result",
+          "detail": "Five Python unittest cases executed successfully against SQLite test dataset"
+        },
+        {
+          "classification": "user_preference",
+          "detail": "Full 43-subject rotation and relevant video media with no decorative boxes"
+        },
+        {
+          "classification": "hypothesis",
+          "detail": "A real browser playback runner would improve validation accuracy"
+        }
+      ],
+      "three_improvements_to_carry_forward": [
+        "Keep SQL training datasets executable in the standard library, with output assertions and stored source test file.",
+        "Use final WordPress rendered readback to verify distinct iframe IDs and the full canonical footer rather than trusting saved block URLs.",
+        "Require real device playback and cover pixel QA for complete release certification when those facilities become accessible."
+      ],
+      "feedback": {
+        "ratings": "unavailable",
+        "engagement": "not measured"
+      }
+    }
+  ],
+  "future_article_template_required_fields": [
+    "post_id",
+    "article_title",
+    "publication_date",
+    "category_names",
+    "live_url",
+    "original_sources",
+    "duplicate_check",
+    "internal_links",
+    "in_story_media",
+    "featured_cover",
+    "chart",
+    "footers",
+    "correction_log",
+    "quality_score",
+    "three_improvements_to_carry_forward",
+    "external_verification_limitations",
+    "engagement_metrics",
+    "user_rating_feedback"
+  ]
+}
