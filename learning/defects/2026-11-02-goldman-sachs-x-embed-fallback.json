@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "content_id": 28609,
+  "published_url": "https://bitcoinversus.tech/2026/11/02/goldman-sachs-ai-coding-tools-claude-code-github-traders-restricted-2026/",
+  "timestamp_utc": "2026-11-03",
+  "status": "published_live_wordpress_record_verified",
+  "editorial_accuracy_note": "Goldman restricted advanced coding agent tools for most traders and bankers; not a blanket AI ban. Evidence: Bloomberg Nov 2, Goldman public AI policy, company AI announcements, Reuters.",
+  "duplicate_check": {
+    "wordpress_no_matching_nov_2026_topic": true,
+    "github_no_matching_topic": true
+  },
+  "prepublication": {
+    "body_word_count": 390,
+    "in_body_images": 2,
+    "in_body_embed_blocks": 2,
+    "internal_links": 4,
+    "cover_id": 28606,
+    "cover_dimensions": [
+      1200,
+      630
+    ],
+    "footer_present": true
+  },
+  "postpublication": {
+    "wordpress_status_publish": true,
+    "featured_media_id": 28606,
+    "rendered_youtube_iframe_found": true,
+    "rendered_x_embed": false,
+    "rendered_x_fallback_link": true,
+    "sourced_images_present": 2,
+    "all_captions_after_media": true,
+    "seo_metadata_saved": true,
+    "public_browser_visual_qa": "not_performed",
+    "youtube_playback": "not_independently_tested",
+    "mobile_rendering": "not_tested",
+    "qa_score": null
+  },
+  "defect": {
+    "id": "XEMBED-2026-11-02-28609",
+    "severity": "high",
+    "issue": "WordPress core/embed for user-supplied X status returned an anchor-only fallback in content.rendered rather than a native social post.",
+    "x_url": "https://x.com/exec_sum/status/2117284426128179638",
+    "attempted_repair": "Retrieve raw content, replace failed X embed with contextual source link using connected update endpoint",
+    "attempt_result": "Not applied: wpcom/content-items-update explicitly disallows post type post; WordPress posts-update unavailable in this connected tool session.",
+    "next_repair": "In WordPress editor, remove failed X embed, add a contextual link to the X post or reinsert a native X block if logged-out rendering succeeds. Save, then check site on desktop/mobile. No republishing or duplicate post.",
+    "regression_test": "For every newly published core/embed social block, inspect content.rendered for provider iframe/blockquote; a simple anchor-only wrapper fails the embed gate."
+  },
+  "learning": "WordPress posts-create may accept X Gutenberg markup but render anchor-only fallback; live WordPress readback must inspect actual output and not count markup as working media."
+}
