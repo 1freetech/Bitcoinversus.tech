@@ -1,0 +1,18 @@
+{
+  "id": "COVER-CROP-HTTP403-20261102",
+  "date": "2026-11-02",
+  "severity": "blocking",
+  "precondition": "WordPress media.generate returns a valid image not matching mandatory 1200x630",
+  "failure": "third party remote crop proxy HTTP 403",
+  "retry_hypothesis": "Change source to WordPress.com-hosted image URL with w=1200&h=630&crop=1, then media.create",
+  "assertions": [
+    "returned media_details.width == 1200",
+    "returned media_details.height == 630",
+    "post.featured_media matches validated media ID"
+  ],
+  "outcome": "passed",
+  "limitations": [
+    "pixel appearance not inspected externally"
+  ],
+  "source_post_id": 28557
+}
