@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "topic": "Tether company-wide BTC estimate versus Tether International USDT reserves",
+  "publication_id": 28855,
+  "data": [
+    {
+      "label": "Tether International USDT reserve Bitcoin, as of September 30, 2026",
+      "usd_value": 8367170264,
+      "usd_per_btc": 83621.23,
+      "btc_calculated": 100060.35864337323,
+      "precision": "calculated from value and unit price; not a newly reported November balance",
+      "source": "https://assets.ctfassets.net/vyse88cgwfbl/7nQYtcoP9GxIUFSyro2dGK/8d0521470b9e99c8c0831019cabea4ee/ISAE_3000R_-_Opinion_Tether_International_Financial_Figure_30-09-2026.pdf",
+      "source_page_zero_index": 8
+    },
+    {
+      "label": "Approximate group-level BTC holdings claimed by CEO at October 2026 Plan B Forum, reported November 3",
+      "btc_claim": 150000,
+      "precision": "verbal give-or-take executive estimate, no group-level independent attestation",
+      "sources": [
+        "https://x.com/paoloardoino/status/2115151361029611596",
+        "https://www.coindesk.com/business/2026/11/03/tether-holds-150-000-bitcoin-worth-usd11-5-billion-ceo-paolo-ardoino-says"
+      ]
+    }
+  ],
+  "derived": {
+    "arithmetic_difference_btc": 49939.64135662677,
+    "comparability": "different entities/scopes and dates; difference is not new purchase volume"
+  },
+  "chart": {
+    "atlas_source": "https://github.com/1freetech/SmartChart/blob/main/atlas/catalog.json",
+    "atlas_entries_reviewed": 40,
+    "finalists": [
+      {
+        "rank": 1,
+        "type": "vertical bar",
+        "rationale": "two categorical magnitudes with a zero baseline; clear separate labels"
+      },
+      {
+        "rank": 2,
+        "type": "lollipop",
+        "rationale": "less visual area but not materially better for two values"
+      },
+      {
+        "rank": 3,
+        "type": "dumbbell",
+        "rationale": "connects paired values but incorrectly suggests common scope or continuous change"
+      }
+    ],
+    "chosen": "vertical bar",
+    "baseline": 0,
+    "unit": "BTC",
+    "colors_note": "teal for dated entity reserve, amber for executive estimate",
+    "comparability_warning": true,
+    "chart_media_id": 28783,
+    "source_code_path": "editorial/code/2026-11-03-tether-28855-chart.py"
+  },
+  "limitations": [
+    "no identified wallet addresses for all alleged 150,000 BTC",
+    "no transaction history establishing additional 49,940 BTC purchases",
+    "Q3 report reasonable assurance applies to one entity and September 30 only"
+  ]
+}
