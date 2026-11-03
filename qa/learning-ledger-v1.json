@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "title": "BitcoinVersus.Tech Recursive Editorial Learning Ledger",
-  "last_updated": "2026-11-01",
+  "last_updated": "2026-11-02",
   "effective_prompt": "BITCOINVERSUS.TECH — RECURSIVE LEARNING NEWS WRITER v4.0",
   "principles": [
     "RECALL → RESEARCH → REASON → WRITE → VERIFY → PUBLISH → EVALUATE → LEARN → REPEAT",
@@ -1427,6 +1427,189 @@
         "status": "not_accessible",
         "data": null
       }
+    },
+    {
+      "post_id": 28530,
+      "article_title": "Ceva’s NeuPro NPU Enters Production in Mobilint’s 10-TOPS REGULUS Chip",
+      "publication_date": "2026-11-02",
+      "category_names": [
+        "Semiconductors",
+        "ASICs & Hardware",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        284207,
+        792826578,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/02/ceva-mobilint-regulus-10tops-neupro-production-edge-ai-2026/",
+      "wordpress_publication_status": "publish",
+      "editorial_body_word_count": 382,
+      "original_sources": [
+        {
+          "url": "https://www.ceva-ip.com/press/ceva-and-mobilint-advance-physical-ai-with-regulus-edge-ai-soc-2/",
+          "classification": "verified_fact",
+          "detail": "November 2 production announcement, Ceva NeuPro Nano NPN32 and SensPro, 10 TOPS under 3 W, MLD-R1 commercial status"
+        },
+        {
+          "url": "https://www.mobilint.com/products/regulus",
+          "classification": "verified_fact",
+          "detail": "Manufacturer 10 dense INT8 TOPS, 17 mm package, 4K 60 fps and product design"
+        },
+        {
+          "url": "https://www.mobilint.com/products/regulus/mld-r1-ai-usb",
+          "classification": "verified_fact",
+          "detail": "MLD-R1 host/framework support and approximately 4 W complete-device specification"
+        },
+        {
+          "url": "https://armdevices.net/2026/03/15/mobilint-aries-and-regulus-edge-ai-mla400-llm-inference-and-multi-camera-vision/",
+          "classification": "verified_fact",
+          "detail": "March 2026 recorded trade-show demonstration; links YouTube ylvPT1Mlv_g"
+        }
+      ],
+      "fact_status": "Vendor-specified metrics attributed to vendor; no independent chip benchmark claimed. Chip <3W and full USB device ~4W are different measurement boundaries.",
+      "duplicate_check": {
+        "wordpress_queries": [
+          "Ceva",
+          "Mobilint",
+          "REGULUS"
+        ],
+        "github_query": "REGULUS Mobilint Ceva in 1freetech/Bitcoinversus.tech",
+        "result": "WordPress found earlier Ceva 28108 (new NPU portfolio) and SEMIFIVE-Mobilint 20029 (future design partnership), but no November 2 REGULUS NeuPro production milestone. GitHub direct keyword search returned no same story.",
+        "scope_limit": "WordPress keyword searches and GitHub indexed search are not an exhaustive semantic inventory of every 2023-2026 archive file."
+      },
+      "internal_links": {
+        "count": 5,
+        "verified_in_published_markup": true,
+        "individual_destination_http_tests": "not independently attempted",
+        "topics": [
+          "Ceva next-generation NeuPro portfolio",
+          "SEMIFIVE and Mobilint robotics chip collaboration",
+          "Ubitium physical AI",
+          "VeriSilicon GLTiny",
+          "Dream Labs robot API"
+        ]
+      },
+      "in_story_media": {
+        "count": 3,
+        "items": [
+          {
+            "type": "official manufacturer photograph",
+            "id": 28519,
+            "subject": "REGULUS chip",
+            "rendered_image_verified": true,
+            "caption_after": true
+          },
+          {
+            "type": "native Gutenberg YouTube",
+            "youtube_id": "ylvPT1Mlv_g",
+            "publisher": "ARMdevices",
+            "subject": "Mobilint edge AI hardware at Embedded World 2026",
+            "rendered_iframe_verified": true,
+            "actual_playback_verified": false,
+            "caption_after": true
+          },
+          {
+            "type": "official manufacturer photograph",
+            "id": 28520,
+            "subject": "MLD-R1 USB accelerator",
+            "rendered_image_verified": true,
+            "caption_after": true
+          }
+        ],
+        "excluded_footer_qr_id": 24043
+      },
+      "featured_cover": {
+        "id": 28522,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "realistic editorial photo, conceptual",
+        "subject": "adult Black woman semiconductor validation engineer working at microscope on PCB",
+        "alt_text_verified": true,
+        "generated_via": "WordPress AI image generation then WordPress CDN exact crop and reupload",
+        "composition_anatomy_independently_inspected": false
+      },
+      "chart": {
+        "included": false,
+        "reason": "Only device-specific headline TOPS and differently scoped chip and USB power claims; no comparable independent measured series. Reject bars/line/radar/treemap as misleading; no decorative chart."
+      },
+      "footers": {
+        "approved_editors_note_exact": true,
+        "qr_media_id": 24043,
+        "bitcoin_5000_sats": true,
+        "disclaimer": true,
+        "retired_promo_absent": true
+      },
+      "metadata": {
+        "advanced_seo_description_set": true,
+        "subscriber_email_sent": false
+      },
+      "quality_score": {
+        "accuracy": 25,
+        "originality_newsworthiness": 15,
+        "technical_depth": 14,
+        "working_embeds_media": 12,
+        "cover_visualization": 9,
+        "internal_links_seo": 10,
+        "live_page_qa": 7,
+        "total": 92,
+        "target": 95,
+        "passed": false,
+        "reason": "Source, WordPress status, native image elements and YouTube iframe confirmed; actual video playback, cover visual inspection and mobile layout independently unverified."
+      },
+      "publication_qa": {
+        "site_status": "publish",
+        "readback_edit": true,
+        "readback_rendered": true,
+        "rendered_youtube_iframe": true,
+        "featured_id_readback": true,
+        "cover_dimensions_media_api": true,
+        "screenshot_capture_status": "ready, capture_shows site; not pixel inspected",
+        "desktop_browser_visual": "not independently inspected",
+        "mobile_browser_visual": "not independently inspected",
+        "video_playback": "not verifiable",
+        "hard_gate_status": "source+duplicate checks passed within available scope; video playback remains unverified"
+      },
+      "feedback": {
+        "thumb_feedback": "unavailable",
+        "engagement": "not collected",
+        "user_feedback_this_article": "none yet"
+      },
+      "editorial_corrections": [
+        {
+          "classification": "verified_fact",
+          "issue": "Earlier articles sometimes displayed bare YouTube URLs",
+          "correction": "Native Gutenberg embed resolved to iframe in WordPress rendered view"
+        },
+        {
+          "classification": "verified_fact",
+          "issue": "Vendor quotes different power for SoC and USB device",
+          "correction": "Report chip <3W and USB ~4W separately; avoid misleading comparison chart"
+        }
+      ],
+      "three_improvements_to_carry_forward": [
+        "Use WordPress transformed image source and reimport to guarantee exact 1200x630 media dimensions; verify in media_details before publishing.",
+        "Inspect rendered HTML for real iframe src and known images, but add actual click-to-play tests when a true browser is available; never equate iframe with playback.",
+        "Keep power, compute and benchmark figures tied to explicit chip/system boundary and numeric precision; chart only comparable datasets."
+      ],
+      "observations": [
+        {
+          "classification": "verified_fact",
+          "detail": "WP posts.get rendered exposes a YouTube iframe, two official media images and the canonical footer."
+        },
+        {
+          "classification": "user_preference",
+          "detail": "2-10 functional in-body media, exactly one 1200x630 featured media, 300-420 words, 4-9 internal links, no text boxes."
+        },
+        {
+          "classification": "hypothesis",
+          "detail": "A controlled desktop/mobile playback harness would reduce unresolved video QA risk; not yet measured."
+        }
+      ]
     }
   ],
   "future_article_template_required_fields": [
