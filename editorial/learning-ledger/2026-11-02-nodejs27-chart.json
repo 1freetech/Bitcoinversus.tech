@@ -1,0 +1,87 @@
+{
+  "chart_id": "nodejs27-2026-release-lifecycle",
+  "post_id": 28589,
+  "chart_type": "Gantt/timeline",
+  "chart_question": "How do the Node.js 26 and 27 lifecycle phases overlap over calendar time?",
+  "source": [
+    "https://github.com/nodejs/Release/blob/main/README.md",
+    "https://github.com/nodejs/Release/blob/main/schedule.json",
+    "https://github.com/nodejs/node/releases/tag/v27.0.0-alpha.0.0.0"
+  ],
+  "data": [
+    {
+      "release": "26",
+      "phase": "Current",
+      "start": "2026-05-05",
+      "end": "2026-10-28",
+      "status": "observed"
+    },
+    {
+      "release": "26",
+      "phase": "Active LTS",
+      "start": "2026-10-28",
+      "end": "2027-10-20",
+      "status": "part_observed_future_planned"
+    },
+    {
+      "release": "26",
+      "phase": "Maintenance",
+      "start": "2027-10-20",
+      "end": "2029-04-30",
+      "status": "planned"
+    },
+    {
+      "release": "27",
+      "phase": "Alpha",
+      "start": "2026-10-29",
+      "end": "2027-04-22",
+      "status": "part_observed_future_planned"
+    },
+    {
+      "release": "27",
+      "phase": "Current",
+      "start": "2027-04-22",
+      "end": "2027-10-20",
+      "status": "planned"
+    },
+    {
+      "release": "27",
+      "phase": "Active LTS",
+      "start": "2027-10-20",
+      "end": "2030-04-30",
+      "status": "planned"
+    }
+  ],
+  "method": {
+    "reference": "https://github.com/1freetech/SmartChart/blob/main/docs/chart-selection-protocol-v2.md",
+    "atlas_styles_considered": 40,
+    "selected": "Gantt timeline",
+    "alternatives": [
+      {
+        "chart": "step chart",
+        "reason": "phase boundaries visible but duration comparisons less clear"
+      },
+      {
+        "chart": "milestone timeline",
+        "reason": "shows dates but loses intervals"
+      }
+    ],
+    "rejected_other_families": "No sample distributions, magnitude comparisons, geography, or quantitative flows",
+    "units": "date"
+  },
+  "produced_media": {
+    "wordpress_id": 28580,
+    "dimensions_px": [
+      2160,
+      992
+    ],
+    "caption_after_image": true
+  },
+  "limitation": "Future timeline dates are project plans subject to change",
+  "asset_provenance": {
+    "generator": "Python and matplotlib, run in local execution container",
+    "generator_code_saved_in_container": "/mnt/data/build_node27_media.py",
+    "git_generator_synced": false
+  },
+  "observed_as_of": "2026-11-02"
+}
