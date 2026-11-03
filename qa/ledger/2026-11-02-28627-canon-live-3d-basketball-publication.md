@@ -89,3 +89,10 @@
 3. **Proposed hypothesis:** Direct ingestion of original provider JPGs preserves relevant sourced media while avoiding broken third-party embeds. **Prevention experiment:** follow a sample of imported official photos for 30 days and audit browser image loads and captions; baseline = two photos in this article, metric = actual successfully rendered assets, not URL existence alone.
 
 No claim of user analytics or real video playback is made. Policy v5.1.
+
+## Cover correction — November 2, 2026 (later edit)
+- **Observed defect:** original featured cover #28622 was a low-fidelity schematic with poor editorial polish; the user requested replacement.
+- **Repair:** generated a new original editorial illustration showing real basketball action, synchronized sideline cameras and a tablet with a 3D court reconstruction; resized to exact 1200 × 630. WordPress media **#28639**, JPEG, 283,541 bytes, alt text describes the visible devices and sports scene.
+- **Verified result:** WordPress `posts.update` changed only `featured_media` from 28622 to **28639** without rewriting story blocks. Subsequent separate `context=view` readback confirms post #28627 remains `publish`, `featured_media=28639`, and both official Canon in-body images remain present. Media #28639 metadata confirms **1200 × 630** and association to post #28627.
+- **Public screenshot capability:** Screenshot-link service returned ready and public-page visibility, but actual screenshot pixels, mobile responsive display and front-end crop were **not independently inspected**. Overall post remains `published_unverified` for these checks.
+- **Prevention check:** For future news covers, review visual subject relevance and photo realism before assignment; validate precise 1200 × 630 pixels, WordPress media ID and saved featured-media field independently; inspect public desktop/mobile crop whenever available.
