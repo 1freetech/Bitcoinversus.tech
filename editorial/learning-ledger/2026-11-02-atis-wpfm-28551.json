@@ -1,0 +1,183 @@
+{
+  "ledger_version": "1.0",
+  "record_type": "newsroom_publication_qa",
+  "recorded_on": "2026-11-02",
+  "preceding_ledger": "editorial/learning-ledger/2026-11-02-brown-multiferroic-28537.json",
+  "publication": {
+    "wordpress_id": 28551,
+    "title": "ATIS Proposes Shared AI Model to Help 6G Radios Understand Interference",
+    "url": "https://bitcoinversus.tech/2026/11/02/atis-wireless-physical-layer-foundation-model-6g-neuro-symbolic-ai-2026/",
+    "wordpress_status": "publish",
+    "category_rotation": "Artificial Intelligence → Networking",
+    "categories": [
+      "Artificial Intelligence",
+      "Information Technology",
+      "Technology",
+      "Trending News"
+    ],
+    "body_word_count_excluding_footers": 404,
+    "contextual_internal_links": 4,
+    "featured_media_id": 28546,
+    "in_body_media_count": 3,
+    "tags": [
+      "AI",
+      "research and development",
+      "semiconductor"
+    ],
+    "seo_title_present": true,
+    "seo_description_present": true
+  },
+  "sources": [
+    {
+      "classification": "verified_fact",
+      "source": "https://atis.org/press-releases/atis-introduces-wireless-physical-layer-foundation-models-for-next-generation-wireless-intelligence/",
+      "verification": "Primary ATIS press release; date November 2, 2026",
+      "supports": "New white paper announcement and future-oriented scope"
+    },
+    {
+      "classification": "verified_fact",
+      "source": "https://access.atis.org/higherlogic/ws/public/download/88130/ATIS-I-0000115",
+      "verification": "25-page original ATIS PDF read; framework and neuro-symbolic architecture figures inspected visually",
+      "supports": "Self-supervised RF pretraining, multi-task adaptation, policy governance, constraints, and lack of verified deployment benchmarks"
+    },
+    {
+      "classification": "verified_fact",
+      "source": "https://atis.org/reimagining-wireless-intelligence-a-foundation-model-for-the-physical-layer/",
+      "verification": "2025 ATIS project history",
+      "supports": "Prior initiative, explicitly not brand-new model invention"
+    },
+    {
+      "classification": "verified_fact",
+      "source": "https://arxiv.org/abs/2608.20486",
+      "verification": "August 20 2026 academic preprint",
+      "supports": "Underlying WPFM technology and real-world hardware/latency constraints"
+    }
+  ],
+  "duplication": {
+    "wordpress_terms": [
+      "Wireless Physical Layer Foundation",
+      "ATIS",
+      "neuro-symbolic",
+      "WPFM"
+    ],
+    "exact_current_event_duplicate_found": false,
+    "github_research": "1freetech/Bitcoinversus.tech search for 'Wireless Physical Layer Foundation' yielded unrelated matches",
+    "previously_rejected_story": "Purdue Google TPU 30%: existing WordPress post #27300 and GitHub QA record, not republished",
+    "limitation": "Targeted title/subject and repository code searches; no universal archive fingerprint pass"
+  },
+  "learning_from_prior": {
+    "prior_defect": "The preceding publication had no independently confirmed live end-user page image-load checks.",
+    "adaptation": "Added self-contained, credited original diagrams rather than generic archival semiconductor images; checked new media WordPress IDs and rendered img tags.",
+    "remaining_issue": "External live-page fetch not accessible via web and container DNS; no verified desktop or mobile browser rendering."
+  },
+  "media": [
+    {
+      "id": 28548,
+      "type": "Original synthetic RF spectrogram illustration",
+      "source": "Original generated illustration; source basis ATIS-I-0000115",
+      "not_measured": true,
+      "caption_after": true,
+      "wordpress_rendered_tag": true
+    },
+    {
+      "id": 28547,
+      "type": "Original educational WPFM architecture diagram",
+      "source": "Original diagram based on ATIS-I-0000115 and arXiv:2608.20486",
+      "not_deployed": true,
+      "caption_after": true,
+      "wordpress_rendered_tag": true
+    },
+    {
+      "id": 28550,
+      "type": "CC0 animated phased-array beam steering reference",
+      "source": "https://commons.wikimedia.org/wiki/File:Phased_array_animation_10_frames_371x400px_100ms.gif",
+      "original_author": "Chetvorno",
+      "license": "CC0",
+      "date": "2016",
+      "not_atis_result": true,
+      "caption_after": true,
+      "wordpress_rendered_tag": true,
+      "live_animation_unverified": true
+    }
+  ],
+  "cover": {
+    "id": 28546,
+    "source": "Original AI-generated editorial illustration",
+    "style": "Anime editorial artwork (after previous realistic cover)",
+    "demographics": "Adult Black man RF engineer in 30s",
+    "rotation_evidence": "alternates previous story's adult woman cover; complete twelve-slot cover roster not independently confirmed",
+    "width_px": 1200,
+    "height_px": 630,
+    "no_text_overlay": true,
+    "alt_text_set": true,
+    "featured_id_on_post_confirmed": true
+  },
+  "visualizations": {
+    "numerical_chart_required": false,
+    "rationale": "New white paper specifies design proposals rather than quantified multi-task results; there is no source-backed numerical performance series to chart",
+    "atlas_reference": "https://github.com/1freetech/SmartChart/blob/main/docs/chart-selection-protocol-v2.md",
+    "selection": "Explanatory architecture and synthetic-spectrum illustration instead of an invented numeric chart",
+    "alternatives_rejected": [
+      "Bar chart: no comparable real performance metrics",
+      "Line plot: no time-series measurements",
+      "Sankey: no auditable magnitude flows",
+      "Heatmap as real data: only synthetic educational signals exist"
+    ],
+    "sources": "ATIS original white paper; arXiv:2608.20486"
+  },
+  "compliance": {
+    "verified_word_count": 404,
+    "internal_link_count": 4,
+    "media_count": 3,
+    "feature_cover_dimensions_from_media_api": "1200 × 630",
+    "original_donation_qr_id": 24593,
+    "donation_5000_sats": true,
+    "original_editor_note_present": true,
+    "disclaimer_present": true,
+    "discontinued_promotion_absent": true,
+    "image_captions_after_images": true,
+    "browser_mobile_desktop": "not tested",
+    "public_page_http_check": "attempted; external web reader returned inaccessible and container HTTP connection blocked by DNS",
+    "external_images_http_validation": "not independent; WordPress media API and post read-back completed",
+    "publish_status": "confirmed by create and get WordPress API calls",
+    "native_video_embeds": "none; no invented or unverified YouTube embeds"
+  },
+  "quality": {
+    "provisional_score": 92,
+    "max_score": 100,
+    "target": 95,
+    "breakdown": {
+      "accuracy_and_primary_sources": 25,
+      "originality_and_newsworthiness": 15,
+      "technical_depth_and_clarity": 15,
+      "media_relevance_and_rendered_markup": 12,
+      "cover_and_visualization": 10,
+      "internal_links_and_seo": 10,
+      "live_page_qa": 5
+    },
+    "essential_gates": {
+      "facts_and_sources": "passed",
+      "duplication": "passed targeted checks",
+      "media_markup": "passed backend",
+      "functional_media_end_user": "not independently verifiable; pending"
+    },
+    "score_is_measured": false,
+    "meaning": "Manual evidence-based provisional editorial rubric, not audience engagement or independently recorded analytics"
+  },
+  "user_feedback": {
+    "classification": "not_available",
+    "specific_reactions": "Unavailable",
+    "measured_engagement": "Unavailable"
+  },
+  "top_three_future_improvements": [
+    "Add a real public URL and media load checker with mobile/desktop screenshots; do not promote backend HTML existence to functional playback proof.",
+    "For research papers, inspect original PDF figures and claims to separate experimental performance from proposals, and record which pages were checked.",
+    "Use source-relevant, clearly identified original diagrams and licensed technical animations rather than mislabeled generic illustrations."
+  ],
+  "unresolved_issues": [
+    "Live page and mobile responsiveness not independently verifiable",
+    "GIF actual animation on production page unverified",
+    "Comprehensive historical demographic roster and all-archive duplicate matching not programmatically available"
+  ],
+  "laws_unchanged": true
+}
