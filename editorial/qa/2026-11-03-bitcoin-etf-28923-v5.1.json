@@ -50,7 +50,8 @@
     "youtube_iframe": "present in WordPress rendered HTML, actual playback unverified",
     "public_desktop_mobile": "unverified, independent public browser retrieval failed",
     "media_playback": "unverified, no direct player instrumentation",
-    "github_exact_archive": "pending next independent read-back"
+    "github_exact_archive": "verified: archived markdown contains exactly the saved Gutenberg markup from WordPress edit context",
+    "github_readback_date": "2026-11-03"
   },
   "defects": [
     {
