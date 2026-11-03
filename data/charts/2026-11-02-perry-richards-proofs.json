@@ -1,0 +1,61 @@
+{
+  "chart_id": "2026-11-02-perry-richards-proofs",
+  "title": "Perry Richards analysis proof coverage",
+  "analytical_question": "How much of each compiler-analysis mode's examined sites are provably optimized?",
+  "chart_type": "horizontal_100_percent_stacked_bar",
+  "historical_method": "Part-to-whole composition comparison using common 100% baseline; no historical inventor claimed",
+  "modern_method": "Compare two fractions with slightly different denominators, showing proven/unproven complements",
+  "alternatives_considered": [
+    {
+      "type": "dot_plot",
+      "reason": "Clear rate difference but does not make the unproven share as tangible"
+    },
+    {
+      "type": "slope_graph",
+      "reason": "Might imply a change through time or a single evolving population, which this is not"
+    },
+    {
+      "type": "vertical_grouped_bar",
+      "reason": "Bar charts show magnitudes but 100% stack better highlights proof coverage and its complement"
+    }
+  ],
+  "selected_reason": "The analytical question is proportion proven out of examined sites, not counts or elapsed time. Aligned 0–100% stacks keep denominator context explicit.",
+  "dataset": [
+    {
+      "method": "per_unit",
+      "proven_count": 37,
+      "total_sites": 1822,
+      "unproven_count": 1785,
+      "proven_percent": 2.030735455543359,
+      "unproven_percent": 97.96926454445664
+    },
+    {
+      "method": "whole_program_reference",
+      "proven_count": 1673,
+      "total_sites": 1832,
+      "unproven_count": 159,
+      "proven_percent": 91.32096069868996,
+      "unproven_percent": 8.679039301310043
+    }
+  ],
+  "units": {
+    "proven_count": "sites",
+    "total_sites": "sites",
+    "proven_percent": "percent"
+  },
+  "sources": [
+    "https://www.perryts.com/en/blog/compiling-javascript-aot/"
+  ],
+  "measurement_date": "2026-10-30",
+  "is_forecast": false,
+  "attribution": "Developer-reported internal benchmark, not independently replicated",
+  "calculation": [
+    "proven_percent=proven_count/total_sites*100",
+    "unproven_count=total_sites-proven_count",
+    "unproven_percent=100-proven_percent"
+  ],
+  "caveat": "Slightly different site populations and different analysis strategies; results are static proof coverage, not a runtime performance benchmark",
+  "validation_status": "calculated_and_wordpress_image_attachment_readback",
+  "accessibility_description": "100% stacked horizontal bars: per-unit 2.03% proven and 97.97% unproven, whole-program 91.32% proven and 8.68% unproven.",
+  "rendered_wordpress_media_id": 28586
+}
