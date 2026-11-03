@@ -5,7 +5,7 @@ publication_date: "2026-11-03"
 url: "https://bitcoinversus.tech/2026/11/03/bosch-semiconductors-division-2028-five-billion-sales-2030/"
 slug: "bosch-semiconductors-division-2028-five-billion-sales-2030"
 status: publish
-modified: "2026-11-03T16:04:54"
+modified: "2026-11-03T16:09:36"
 wordpress_category_ids: [792826578, 284207, 27318186]
 categories: "ASICs & Hardware / Semiconductors / Trending News"
 body_reporting_words: 615
@@ -13,15 +13,16 @@ internal_link_count: 4
 featured_media_id: 28714
 featured_cover_dimensions: "1200x630"
 featured_cover_type: "Bosch-supplied real manufacturing press photograph, credited Photo: Bosch"
-in_story_media_count: 2
+in_story_media_count: 3
 in_story_media:
+  - {type: "official Bosch Global Dresden 300mm fab tour, March 2021", youtube_id: "Fo8TWPomHiQ", location: "after introductory second paragraph", video_status: "WordPress view iframe markup confirmed; actual playback unverified" }
   - {type: "official Bosch wafer inspection photograph", wp_media_id: 28716, credit: "Photo: Bosch"}
   - {type: "official Bosch fab cleanroom photograph", wp_media_id: 28715, credit: "Photo: Bosch"}
 footer_donation_qr_media_id: 24043
 primary_sources:
   - "https://www.bosch-presse.de/pressportal/de/en/focus-on-promising-markets-bosch-is-strengthening-its-semiconductor-business-with-a-dedicated-division-286784.html"
   - "https://www.bosch-semiconductors.com/about-us/where-we-produce/"
-verification: "WordPress published status and saved Gutenberg content re-read; 1200x630 featured media verified by media metadata; two separate in-body photos and alt text verified; 4 links exist as published WordPress posts; footer order confirmed; live screenshot service returned ready, but mobile visual layout and external public-page fetch could not be independently checked; video playback not applicable (no videos)."
+verification: "WordPress published status and saved Gutenberg content re-read; 1200x630 featured media verified by media metadata; two separate in-body photos and alt text verified; official Bosch Global YouTube fab video embedded after introduction and verified to render as iframe in WordPress context=view; 4 links exist as published WordPress posts; footer order confirmed; live screenshot service returned ready but pixels and mobile rendering could not be independently inspected; actual video playback unverified."
 qa_record: "28723-bosch-semiconductors-division-2028-five-billion-sales-2030.qa.json"
 editorial_version: "v5.1 per latest explicit user-supplied master prompt"
 ---
@@ -36,7 +37,13 @@ editorial_version: "v5.1 per latest explicit user-supplied master prompt"
 <p>Bosch currently houses its semiconductor activities in Mobility Electronics, alongside work on vehicle control units and power electronics. After the reorganization, Mobility Electronics will concentrate on automotive electronic control units, while the dedicated semiconductor operation will handle chips and sensors. Bosch described an internal divisional change, not a stock-market listing or a separation into an independently owned company.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":28716,"sizeSlug":"full","linkDestination":"none"} -->
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=Fo8TWPomHiQ","type":"video","providerNameSlug":"youtube","responsive":true} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=Fo8TWPomHiQ
+</div></figure>
+<!-- /wp:embed --><!-- wp:paragraph -->
+<p><em>Bosch Global's March 2021 video tours the Dresden 300 mm wafer fab, showing cleanroom chip-processing equipment and automated production. Historical factory footage; source: Bosch Global via YouTube. <a href="https://www.youtube.com/watch?v=Fo8TWPomHiQ">Watch the original video</a>.</em></p>
+<!-- /wp:paragraph --><!-- wp:image {"id":28716,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bosch-sic-wafer-inspection-instory.jpg" alt="Two Bosch cleanroom technicians examining a semiconductor wafer" class="wp-image-28716" /><figcaption class="wp-element-caption"><em>Bosch cleanroom technicians examine a processed semiconductor wafer. Photo: Bosch, from the company’s November 3 press materials.</em></figcaption></figure>
 <!-- /wp:image -->
 
