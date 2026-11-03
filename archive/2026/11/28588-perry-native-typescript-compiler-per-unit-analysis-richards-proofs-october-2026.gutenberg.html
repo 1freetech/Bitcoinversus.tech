@@ -1,0 +1,40 @@
+<!-- Canonical https://bitcoinversus.tech/2026/11/02/perry-native-typescript-compiler-per-unit-analysis-richards-proofs-october-2026/ -->
+<!-- Post ID 28588; featured media 28587 1200x630; category Coding / Programming -->
+<!-- Source: WordPress authenticated posts.get(context=edit) 2026-11-02 -->
+<!-- wp:paragraph --><p><strong>October 30, 2026 —</strong> Developers of <a href="https://www.perryts.com/en/blog/compiling-javascript-aot/">Perry</a>, an experimental Rust-built compiler for JavaScript and TypeScript, detailed a change in how their software proves safe machine-code optimizations. The open-source project uses SWC and LLVM to produce native applications without requiring Node.js or a separate JavaScript engine on users’ machines.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>A compiler can turn an object property read into one fixed-offset memory access when it proves the object’s layout. Otherwise, JavaScript features such as dynamic properties, getters and proxies demand more general lookup logic. TypeScript annotations alone cannot guarantee the object’s real memory layout.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">An Optimization Strategy Meets Its Limits</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Perry replaced its expensive whole-program analysis with smaller analysis units that exchange contracts describing object shapes and function behavior. The new method became the default on October 23, according to the developer’s October 30 <a href="https://github.com/PerryTS/perry">public engineering record</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":28586,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/perry-richards-proven-optimization-sites-stacked-share-2026.png" alt="100% stacked share chart comparing 37 of 1822 sites proven in per-unit mode to 1673 of 1832 in whole-program reference mode on Perry's Richards benchmark, self-reported October 30 2026." class="wp-image-28586" /><figcaption class="wp-element-caption"><em><a href='https://www.perryts.com/en/blog/compiling-javascript-aot/'>Perry’s October 30 test</a>: per-unit 37/1,822 (2.03%) versus whole-program reference 1,673/1,832 (91.32%). Developer-reported proof coverage, with slightly different site counts; not application speed.</em></figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p>The limitation is substantial. On the Richards benchmark, per-unit analysis proved <strong>37 of 1,822 sites (2.03%)</strong>, while the whole-program reference proved <strong>1,673 of 1,832 (91.32%)</strong>. Those percentages describe successful static proofs, <em>not</em> execution speed or software correctness. Unproven sites retain a general lookup path.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The developers say 586 targeted fact-analysis tests pass, but the per-unit compiler remains slower on certain large workloads. The key unresolved task is transferring useful information across unit boundaries without exploding memory use.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Why Native TypeScript Matters</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The promise is familiar JavaScript syntax with machine-code executables and a statically linked runtime and garbage collector. Perry showcases native applications including the Mango MongoDB interface and the emerging Hone code editor; their existence does not establish that arbitrary npm applications will compile unchanged.</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":28584,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/perry-native-typescript-mango-mongodb-gui-official-screenshot-2026.png" alt="Perry's official Mango native MongoDB application screenshot showing database names, query fields and returned user documents." class="wp-image-28584" /><figcaption class="wp-element-caption"><em>Mango, a native MongoDB GUI cited in the <a href='https://www.perryts.com/en/'>Perry showcase</a>. Official product screenshot; application example, not independent speed verification.</em></figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p>That distinguishes Perry from the <a href="https://bitcoinversus.tech/2026/10/08/ts-rust-typescript-7-compiler-rust-181711-tests-ai-agents/">Rust-based TypeScript compiler port</a> pursuing faster type-checking and from <a href="https://bitcoinversus.tech/2026/11/01/osjavascript-004-operators-expressions-type-coercion-strict-equality-nullish-optional-chaining/">JavaScript language semantics</a>, which native compilers must still respect.</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":28585,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/perry-native-typescript-hone-code-editor-official-screenshot-2026.png" alt="Perry's official screenshot of the Hone early-development code editor, including project file explorer, source text and terminal." class="wp-image-28585" /><figcaption class="wp-element-caption"><em>Hone code editor running on the Perry toolchain. <a href='https://hone.codes/'>Official showcase screenshot</a>; product is described as early development.</em></figcaption></figure><!-- /wp:image -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Next: Prove More Without Breaking Programs</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The project is still <strong>pre-1.0</strong>. It needs more precise cross-unit contracts, lower compile costs and stable analysis identifiers before its optimization ambitions can be generalized. Developers can examine Perry’s public tests, while our <a href="https://bitcoinversus.tech/2026/11/01/osrust-006-ownership-moves-borrowing-references-memory-safety/">Rust memory-safety lesson</a> explains a different part of its implementation stack. The larger stakes are clear in <a href="https://bitcoinversus.tech/2026/10/30/github-octoverse-2026-typescript-python-rust-ai-merged-pull-requests/">TypeScript’s growing coding footprint</a>: reliable native builds could expand where those programs run.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">BitcoinVersus.Tech</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><em>BitcoinVersus.Tech Editor's Note: We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats. For best results, scan the QR code from a laptop or larger screen.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24593,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr.png" alt="Original BitcoinVersus.Tech donation QR code for 5000 sats" class="wp-image-24593" /><figcaption class="wp-element-caption"><em>BitcoinVersus.Tech original donation QR. Confirm the address below before sending.</em></figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p>Bitcoin address: <code>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</code>. On mobile, display the QR on another screen or use a wallet’s saved-image scanner.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>Disclaimer: BitcoinVersus.Tech provides technology and financial reporting solely for information and education. Estimated project schedules and performance claims are subject to change. This report is not investment advice.</em></p><!-- /wp:paragraph -->
