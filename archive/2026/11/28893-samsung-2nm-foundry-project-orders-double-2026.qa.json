@@ -1,0 +1,168 @@
+{
+  "schema": "bitcoinversus-publication-qa-v1",
+  "law": "v5.1 user-supplied 2026-11-03",
+  "post_id": 28893,
+  "publication_url": "https://bitcoinversus.tech/2026/11/03/samsung-2nm-foundry-project-orders-double-2026/",
+  "published_status": "publish",
+  "last_saved_modified": "2026-11-03T16:39:29",
+  "claims": [
+    {
+      "claim": "Number of Samsung 2nm project orders expected to more than double for full-year 2026 vs 2025",
+      "status": "forward-looking company forecast, NOT completed 2x result",
+      "source": "https://www.samsung.com/global/ir/",
+      "transcript": "https://stockanalysis.com/quote/krx/005930/transcripts/718820-q3-2026/",
+      "limitation": "exact base and projected counts undisclosed"
+    },
+    {
+      "claim": "Q3 2026 foundry revenue and earnings improved on HBM base-die and advanced-node business; 2nm HPC hyperscaler order wins",
+      "status": "company-reported",
+      "source": "https://news.samsungsemiconductor.com/global/samsung-electronics-announces-third-quarter-2026-results/",
+      "limitation": "2nm revenue, profit and shipments not separately disclosed"
+    },
+    {
+      "claim": "Taylor Texas fab equipment installation and cleanroom operation begun; future start in 2027",
+      "status": "company reported preparation and 2027 operational plan, not proof of qualified volume output",
+      "source": "https://news.samsungsemiconductor.com/global/samsung-electronics-announces-third-quarter-2026-results/",
+      "corroboration": "https://mbiz.heraldcorp.com/article/10918885"
+    },
+    {
+      "claim": "Samsung plans Q4 2026 second-gen 2nm mobile chip production ramp",
+      "status": "company forecast, outcome not established",
+      "source": "https://stockanalysis.com/quote/krx/005930/transcripts/718820-q3-2026/"
+    },
+    {
+      "claim": "Samsung forecasts HPC share of foundry sales mix above 50 percent next year",
+      "status": "company forecast not actual sales mix",
+      "source": "https://stockanalysis.com/quote/krx/005930/transcripts/718820-q3-2026/"
+    }
+  ],
+  "sources": {
+    "primary": [
+      "https://news.samsungsemiconductor.com/global/samsung-electronics-announces-third-quarter-2026-results/",
+      "https://www.samsung.com/global/ir/"
+    ],
+    "corroboration": [
+      "https://mbiz.heraldcorp.com/article/10918885",
+      "https://stockanalysis.com/quote/krx/005930/transcripts/718820-q3-2026/"
+    ],
+    "official_youtube": "https://www.youtube.com/watch?v=9RLJf9d4VkU"
+  },
+  "duplicate_check": {
+    "wordpress": [
+      "Samsung 2nm orders",
+      "2nm foundry",
+      "2nm project",
+      "Samsung foundry",
+      "samsung-2nm-foundry-project-orders-double-2026"
+    ],
+    "github": [
+      "Samsung 2nm orders",
+      "2nm project orders",
+      "Samsung Foundry"
+    ],
+    "outcome": "No dedicated 2026-10-29 Samsung >2x project awards article in targeted WordPress and GitHub searches; related Taylor fab and Samsung 3nm articles exist and are linked"
+  },
+  "media": [
+    {
+      "type": "featured",
+      "media_id": 28892,
+      "width_px": 1200,
+      "height_px": 630,
+      "source": "WordPress generated original editorial art, cropped and saved as JPEG",
+      "disclosure": "Illustration, not production-site photo",
+      "in_body_counted": false
+    },
+    {
+      "type": "official-video-embed",
+      "provider": "YouTube",
+      "id": "9RLJf9d4VkU",
+      "date": "2023-07-11",
+      "evidence": "WP native Gutenberg core/embed plus publicly rendered iframe",
+      "playback": "unverified"
+    },
+    {
+      "type": "body-photo",
+      "media_id": 22895,
+      "source": "Samsung Electronics, archival Pyeongtaek factory tour with AMD CEO",
+      "caption": "Archived 2026 fab-photo context; does not show claimed 2nm order or output"
+    },
+    {
+      "type": "footer-qr",
+      "media_id": 24043,
+      "source": "Original user-provided donation QR",
+      "in_body_counted": false
+    }
+  ],
+  "qa": {
+    "reporting_word_count": 531,
+    "article_status": "passed WP publish and saved read-back",
+    "duplicate_review": "passed targeted",
+    "facts_and_projections": "passed wording distinctions",
+    "registered_core_blocks": "passed",
+    "feature_1200x630": "passed media metadata",
+    "contextual_internal_links": "passed four target posts verified in WordPress",
+    "media_quota": "passed 2 distinct (1 official video, 1 archival photo)",
+    "video_gutenberg": "passed saved core/embed",
+    "video_iframe": "passed WordPress rendered context=view iframe",
+    "video_playback": "unverified no independent playback test available",
+    "desktop_screenshot": "ready via WordPress service; pixel inspection unavailable",
+    "mobile_screenshot": "unverified no mobile-size capture or pixel inspection",
+    "image_alt": "passed media metadata and Gutenberg HTML",
+    "source_caption": "passed Samsung dates and provenance",
+    "footer": "passed original Editor Note, QR, instructions, disclaimer order",
+    "prohibited_editorial_words": "passed prepublish word-boundary scan",
+    "numbers_chart": "no chart. All 40 SmartChart method-by-dataset evaluations not independently completed; no underlying project counts supplied, making plot unsupported.",
+    "chart_finalists": [
+      {
+        "type": "vertical bar",
+        "reason": "2025 vs 2026 project totals would be best if counts published; rejected missing base values"
+      },
+      {
+        "type": "slope chart",
+        "reason": "could represent changing count only with actual comparable endpoints; rejected missing data"
+      },
+      {
+        "type": "indexed line",
+        "reason": "could illustrate disclosed historical count series; rejected no series"
+      }
+    ],
+    "github_archive": "pending exact-path readback"
+  },
+  "defects": [
+    {
+      "event": "Original Samsung media source official library URL rejected by WordPress importer",
+      "cause": "proxy and source redirects were not fetchable by WordPress",
+      "repair": "Original story-specific WordPress generated illustration cropped via recognized media source URL, cropped to 1200x630 and verified metadata",
+      "regression": "final featured ID 28892 with exact 1200x630"
+    },
+    {
+      "event": "Samsung 2nm project growth could be misinterpreted as wafer shipment doubling",
+      "cause": "order-count metric often abbreviated in headlines",
+      "repair": "Headline specifies project orders, lead and analysis distinguish shipments, revenue, profitability and customers",
+      "regression": "textual claims review plus company earnings call"
+    },
+    {
+      "event": "No actual player playback or visual capture bytes",
+      "cause": "tooling returned iframe and screenshot URL only",
+      "repair": "Saved Gutenberg and rendered WordPress context verified; remaining tests marked unverified",
+      "regression": "require browser playback, mobile and desktop pixel inspections before claiming full media QA"
+    }
+  ],
+  "improvements": [
+    {
+      "rank": 1,
+      "type": "verified lesson",
+      "proposal": "Treat 2nm project-win growth as a forecast of contract/project count; exclude financial and wafer-volume extrapolation without counts."
+    },
+    {
+      "rank": 2,
+      "type": "verified lesson",
+      "proposal": "When media URLs fail, preserve original source provenance, use clearly labeled original editorial art, and verify exact WordPress cover dimensions."
+    },
+    {
+      "rank": 3,
+      "type": "unavailable",
+      "proposal": "Add actual desktop/mobile viewport screenshot inspection and playback checks; don't promote iframe presence or screenshot readiness to tested playback."
+    }
+  ]
+}
