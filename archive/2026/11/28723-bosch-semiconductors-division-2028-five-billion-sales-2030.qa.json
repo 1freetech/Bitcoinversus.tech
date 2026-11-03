@@ -1,0 +1,112 @@
+{
+  "schema": "bitcoinversus-publication-qa-v1",
+  "post_id": 28723,
+  "site": "bitcoinversus.tech",
+  "created_at_local": "2026-11-03",
+  "editorial_law": "v5.1",
+  "claim_log": [
+    {
+      "claim": "Bosch new Semiconductors division effective January 1 2028 stays within Mobility",
+      "status": "verified-company-announcement",
+      "source": "https://www.bosch-presse.de/pressportal/de/en/focus-on-promising-markets-bosch-is-strengthening-its-semiconductor-business-with-a-dedicated-division-286784.html"
+    },
+    {
+      "claim": "Bosch €5bn semiconductor annual sales by 2030",
+      "status": "company-target-not-actual-results",
+      "source": "https://www.bosch-presse.de/pressportal/de/en/focus-on-promising-markets-bosch-is-strengthening-its-semiconductor-business-with-a-dedicated-division-286784.html"
+    },
+    {
+      "claim": "Around 40 sites, approximately €3bn Germany fab investment and $2bn Roseville SiC plant equipment",
+      "status": "company-disclosed-investment-figures-with-currency-period-differences",
+      "source": "https://www.bosch-presse.de/pressportal/de/en/focus-on-promising-markets-bosch-is-strengthening-its-semiconductor-business-with-a-dedicated-division-286784.html"
+    },
+    {
+      "claim": "Dresden 300mm; Reutlingen and Roseville 200mm",
+      "status": "company-manufacturing-site-description",
+      "source": "https://www.bosch-semiconductors.com/about-us/where-we-produce/"
+    }
+  ],
+  "duplicates": {
+    "wordpress": "targeted Bosch and new-division published/draft searches found no matching story before publication",
+    "github": "targeted Bosch 2028 search in exact editorial archive returned zero matches before publication",
+    "similar_but_distinct_post": "https://bitcoinversus.tech/2026/10/12/rittal-bosch-800v-power-ai-racks/"
+  },
+  "publication": {
+    "status": "published",
+    "url": "https://bitcoinversus.tech/2026/11/03/bosch-semiconductors-division-2028-five-billion-sales-2030/",
+    "featured_media_id": 28714,
+    "category_ids": [
+      792826578,
+      284207,
+      27318186
+    ],
+    "wordpress_post_id": 28723,
+    "article_words": 615,
+    "inbody_image_ids": [
+      28716,
+      28715
+    ],
+    "donation_qr_id": 24043,
+    "internal_links": 4
+  },
+  "qa": {
+    "saved_wordpress_blocks": "passed",
+    "featured_image_dimensions": "passed-1200x630",
+    "inbody_distinct_media_count": "passed-2",
+    "captions_alt_text": "passed-saved-wordpress-and-media-metadata",
+    "gutenberg_editor_blocks": "passed-saved-core-blocks",
+    "four_internal_links": "passed-existing-posts-confirmed",
+    "footer_order": "passed",
+    "banned_editorial_words": "passed",
+    "video_playback": "not-applicable-no-video",
+    "desktop_screenshot_capture": "ready-screenshot-service-availability-only",
+    "independent_visual_desktop_inspection": "unverified",
+    "independent_visual_mobile_inspection": "unverified",
+    "public_unauthenticated_fetch": "unverified-web-open-failed",
+    "exact_github_archive": "pending-until-create-and-fetch"
+  },
+  "defect_log": [
+    {
+      "defect": "Preflight lineup attributed announcement to November 2",
+      "cause": "earlier lineup date did not match Bosch primary news release",
+      "repair": "Article dates announcement November 3",
+      "regression": "Bosch original November 3 source plus Reuters corrected November 3 news checked",
+      "status": "fixed"
+    },
+    {
+      "defect": "Initial paragraph risked implying a separate company by saying independent division",
+      "cause": "ambiguous word choice",
+      "repair": "Changed to dedicated division via optimistic-locking block edit",
+      "regression": "saved Gutenberg content includes new wording and excludes old wording",
+      "status": "fixed"
+    },
+    {
+      "defect": "Empty QR figcaption block",
+      "cause": "generic image helper serialized a blank figure caption",
+      "repair": "Replaced QR block preserving original media ID 24043",
+      "regression": "saved Gutenberg content excludes blank caption",
+      "status": "fixed"
+    }
+  ],
+  "chart_choice": {
+    "status": "not-applied",
+    "reason": "Brief reports noncomparable sales target, historical capital spending and future timing; no single consistent dataset suited to an honest comparative chart. No unsourced SmartChart output created."
+  },
+  "ranked_improvements": [
+    {
+      "rank": 1,
+      "classification": "verified lesson",
+      "recommendation": "Anchor article announcement dates to the primary company release; correct mistaken preliminary lineup dates before publication."
+    },
+    {
+      "rank": 2,
+      "classification": "verified lesson",
+      "recommendation": "Verify media pixels from WordPress metadata, crop the original press photograph to 1200x630, and keep cover and donation QR outside the in-body quota."
+    },
+    {
+      "rank": 3,
+      "classification": "unavailable",
+      "recommendation": "Implement authentic mobile and desktop viewport visual inspection and independent playback tests when the remote browser or capture tools permit; do not claim unavailable checks passed."
+    }
+  ]
+}
