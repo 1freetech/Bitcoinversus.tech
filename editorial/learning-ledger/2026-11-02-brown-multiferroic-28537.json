@@ -1,0 +1,206 @@
+{
+  "ledger_version": "1.0",
+  "record_type": "newsroom_publication_qa",
+  "recorded_on": "2026-11-02",
+  "post": {
+    "id": 28537,
+    "title": "Brown Researchers Keep Electric and Magnetic Order in 1.6-Nanometer Film",
+    "url": "https://bitcoinversus.tech/2026/11/02/brown-multiferroic-1-6nm-film-altermagnetism-low-power-chips-2026/",
+    "status": "publish",
+    "publication_date": "2026-11-02",
+    "categories": [
+      "Electrical Engineering",
+      "Semiconductors",
+      "Technology",
+      "Trending News"
+    ],
+    "word_count_excluding_footer": 377,
+    "contextual_internal_links": 5,
+    "seo_excerpt": true,
+    "seo_description": true
+  },
+  "evidence": [
+    {
+      "classification": "verified_fact",
+      "claim": "Research publicly reported October 28, 2026, and published in peer-reviewed Nature Materials; four-unit-cell BiFeO3 retains multiferroic order with altermagnetic signatures",
+      "sources": [
+        "https://www.brown.edu/news/2026-10-28/multiferroic-dead-zone",
+        "https://www.nature.com/articles/s41563-026-02786-1"
+      ],
+      "limitations": "Full subscription article was not independently accessed; abstract, extended-data descriptions and university summary were available."
+    },
+    {
+      "classification": "verified_fact",
+      "claim": "2024 PSI image is a distinct archival study, not the Brown experiment",
+      "sources": [
+        "https://www.psi.ch/en/microspec/scientific-highlights/ptychographic-nanoscale-imaging-of-the-magnetoelectric-coupling-in"
+      ]
+    },
+    {
+      "classification": "verified_fact",
+      "claim": "WordPress connector returned status publish with post ID 28537 and the article permalink."
+    },
+    {
+      "classification": "measured_result",
+      "claim": "WordPress rendered content includes 3 in-story image tags, all with following captions, plus one donation QR; 5 internal links; feature image 1200x630.",
+      "measurement_method": "WordPress posts_get context=view + media_get for featured image; visual browser testing not available.",
+      "value": {
+        "in_story_images": 3,
+        "donation_qr": 1,
+        "internal_links": 5,
+        "cover_width_px": 1200,
+        "cover_height_px": 630
+      }
+    },
+    {
+      "classification": "user_preference",
+      "claim": "300–420 words; 4–9 relevant internal links; 2–10 functional media; 1200x630 cover; no unverifiable videos; chart selection from 40-format SmartChart atlas."
+    },
+    {
+      "classification": "hypothesis",
+      "claim": "Future memory and logic built from stabilized multiferroics may reduce energy demand; device-level savings unproven."
+    }
+  ],
+  "duplicate_prevention": {
+    "wordpress_search_queries": [
+      "multiferroic",
+      "bismuth ferrite",
+      "altermagnet"
+    ],
+    "wordpress_exact_matches": 0,
+    "github_repository": "1freetech/Bitcoinversus.tech",
+    "github_code_search": "multiferroic",
+    "github_exact_matches": 0,
+    "limitation": "This was not an exhaustive machine comparison of every archived article. Existing Enphase SST event was explicitly rejected as duplicate."
+  },
+  "media": [
+    {
+      "type": "original_technical_diagram",
+      "wordpress_media_id": 28536,
+      "caption_after_media": true,
+      "rendered_img_confirmed": true,
+      "source": "Brown University and 2026 Nature Materials paper"
+    },
+    {
+      "type": "source_backed_vertical_bar_chart",
+      "wordpress_media_id": 28535,
+      "caption_after_media": true,
+      "rendered_img_confirmed": true,
+      "data": [
+        {
+          "sample": "Four unit cells",
+          "nm": 1.6
+        },
+        {
+          "sample": "3.6 nm",
+          "nm": 3.6
+        },
+        {
+          "sample": "50 nm",
+          "nm": 50
+        }
+      ],
+      "source": "Nature Materials (2026) article and extended data descriptions"
+    },
+    {
+      "type": "official_archival_research_image",
+      "wordpress_media_id": 28532,
+      "caption_after_media": true,
+      "rendered_img_confirmed": true,
+      "source": "Paul Scherrer Institute (2024)",
+      "disclosure": "Explicitly labeled prior work, not Brown 2026."
+    }
+  ],
+  "cover": {
+    "wordpress_media_id": 28531,
+    "url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/brown-multiferroic-cover-1200x630-1.jpg",
+    "width": 1200,
+    "height": 630,
+    "style": "realistic editorial laboratory illustration",
+    "subject": "Adult woman materials scientist inspecting a wafer",
+    "labeling": "Alt text explicitly identifies image as an editorial illustration rather than an actual photo of Brown researchers.",
+    "rotation_slot": "not verifiable from existing ledger"
+  },
+  "chart_audit": {
+    "dataset_source": "https://www.nature.com/articles/s41563-026-02786-1",
+    "source_date": "2026-10-28",
+    "unit": "nanometers",
+    "data_status": "selected documented film sample dimensions, not performance or energy readings",
+    "selection_method": "Reviewed 40-format SmartChart source matrix and selection protocol v2",
+    "selection_reference": "https://github.com/1freetech/SmartChart/blob/main/docs/chart-selection-protocol-v2.md",
+    "chart_selected": "vertical bar",
+    "top_three_considered": [
+      {
+        "style": "vertical bar",
+        "result": "selected; single categorical magnitude per representative sample, zero baseline and units"
+      },
+      {
+        "style": "lollipop",
+        "result": "eligible but less conventional for this simple three-way magnitude comparison"
+      },
+      {
+        "style": "dot plot",
+        "result": "eligible for individual observations but less direct for three named sample categories"
+      }
+    ],
+    "rejected": [
+      "time-series lines: no time axis",
+      "histogram: three nonrepresentative selected sample values, not a population distribution",
+      "dumbbell: no matched before/after endpoints"
+    ],
+    "data_validation": "1.6, 3.6, 50 nm values checked against 2026 Nature Materials text; chart labels state no energy-performance claim"
+  },
+  "required_footer": {
+    "editors_note": "present in WordPress rendered content",
+    "original_qr_id": 24593,
+    "donation_amount_sats": 5000,
+    "donation_wallet_present": true,
+    "disclaimer_present": true,
+    "discontinued_x_promotion": false
+  },
+  "publication_qa": {
+    "backend_post_readback": "pass",
+    "backend_image_markup_and_captions": "pass",
+    "featured_media_id_and_dimensions": "pass",
+    "seo_metadata": "pass",
+    "live_public_http_page": "unverified: external web open could not retrieve newly published permalink",
+    "desktop_mobile_layout": "unverified",
+    "manual_actual_playback": "not applicable; no video or social embeds used",
+    "external_link_http_checks": "not exhaustive"
+  },
+  "quality_score": {
+    "status": "provisional",
+    "total": 90,
+    "out_of": 100,
+    "breakdown": {
+      "accuracy_and_sources": 24,
+      "originality_and_newsworthiness": 15,
+      "technical_depth": 14,
+      "media_relevance_and_backend_rendering": 12,
+      "cover_and_data_visualization": 10,
+      "internal_links_and_seo": 10,
+      "live_page_qa_and_formatting": 5
+    },
+    "mandatory_gates": {
+      "source_accuracy": "pass primary sources",
+      "duplicate_prevention": "pass targeted WordPress and GitHub checks",
+      "functional_media": "backend-rendered images confirmed; live public rendering not independently checked"
+    },
+    "target_met": false
+  },
+  "feedback": {
+    "positive_negative_reactions": "unavailable",
+    "engagement": "unavailable",
+    "editorial_corrections": "none confirmed for this article"
+  },
+  "top_three_improvements": [
+    "Implement a public browser load check for all published image URLs and mobile/desktop layouts before granting full QA credit.",
+    "Keep experimental claims and expected energy savings separate; require device benchmarks before headlines promise chip power reductions.",
+    "Label source provenance on every schematic and archival image; retain selected-chart values and alternative-chart rationale in each ledger entry."
+  ],
+  "outstanding_issues": [
+    "External public-page fetch unavailable immediately after publication; retry live-browser QA when independently accessible.",
+    "Media licensing or reuse terms for archival PSI image were not separately confirmed."
+  ],
+  "revised_policy": false
+}
