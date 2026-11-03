@@ -1815,12 +1815,12 @@
         "captions_after_media": true
       },
       "featured_cover": {
-        "media_id": 28573,
+        "media_id": 28592,
         "dimensions_px": [
           1200,
           630
         ],
-        "style": "realistic subject-only technical editorial",
+        "style": "professional photographic data engineer with SQL query and page-navigation monitors",
         "alt_text_attached": true,
         "actual_pixel_visual_inspection": false
       },
@@ -1913,14 +1913,28 @@
         }
       ],
       "three_improvements_to_carry_forward": [
-        "Keep SQL training datasets executable in the standard library, with output assertions and stored source test file.",
-        "Use final WordPress rendered readback to verify distinct iframe IDs and the full canonical footer rather than trusting saved block URLs.",
-        "Require real device playback and cover pixel QA for complete release certification when those facilities become accessible."
+        "Before accepting a cover, inspect its visual professionalism and relevance rather than relying on media dimensions and prompt alone.",
+        "Make single-field featured-media updates through posts.update and confirm post edit/view readback without rewriting lesson Gutenberg.",
+        "Record cover corrections as separate immutable history in learning ledger and keep three-repo archive metadata synchronized."
       ],
       "feedback": {
         "ratings": "unavailable",
         "engagement": "not measured"
-      }
+      },
+      "corrections": [
+        {
+          "date": "2026-11-02",
+          "type": "featured_cover_replacement",
+          "source": "user_directed_professionalism_correction",
+          "prior_media_id": 28573,
+          "new_media_id": 28592,
+          "source_generation_media_id": 28591,
+          "reason": "Initial cover did not meet user's requested professional visual standard",
+          "verification": "WP post 28578 readback confirms featured_media 28592; WP media metadata 1200x630; three YouTube iframes and 5,000-sat QR unchanged",
+          "mobile_visual_inspection": false,
+          "public_page_pixel_inspection": false
+        }
+      ]
     }
   ],
   "future_article_template_required_fields": [
