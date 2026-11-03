@@ -1,0 +1,409 @@
+{
+  "schema_version": "5.1",
+  "post_id": 28659,
+  "title": "Eco Wave Power Completes AI Digital Twin Phase for Ocean Electricity",
+  "published_url": "https://bitcoinversus.tech/2026/11/02/eco-wave-power-ai-digital-twin-first-phase-ocean-wave-energy-nvidia-2026/",
+  "publication": {
+    "status": "publish",
+    "wordpress_readback_verified": true,
+    "live_public_browser": "unavailable",
+    "published_verified": false
+  },
+  "rotation": {
+    "general_news_prior": "Robotics",
+    "current": "Energy/Power",
+    "advance_on_confirmed_publish": true
+  },
+  "duplication": {
+    "wordpress": {
+      "checked": "2026-11-02",
+      "searches": [
+        "Eco Wave Power",
+        "Eco Wave Power Digital Twin",
+        "AI engineering GmbH"
+      ],
+      "result": "No prior article about November 2 phase-one completion; separate ocean-energy stories exist"
+    },
+    "github": {
+      "checked": "2026-11-02",
+      "searches": [
+        "Eco Wave Power digital twin",
+        "Eco Wave Power",
+        "AI engineering GmbH",
+        "wave energy digital twin"
+      ],
+      "result": "No matching archived November 2 phase-one completion"
+    }
+  },
+  "claims": [
+    {
+      "id": "company_phase1",
+      "type": "source_claim",
+      "statement": "Eco Wave Power and AI engineering completed Phase 1, physics-based wave and floater simulations with preliminary ML forecasting",
+      "source": "https://www.ecowavepower.com/eco-wave-power-completes-first-phase-of-ai-powered-digital-twin-advancing-intelligent-wave-energy-and-future-ai-data-center-applications/",
+      "date": "2026-11-02"
+    },
+    {
+      "id": "nvidia_tools",
+      "type": "source_claim",
+      "statement": "Omniverse and Warp are being used or evaluated for simulation workflows; does not establish NVIDIA financing or commercial energy offtake",
+      "source": "https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/",
+      "date": "2026-06-22"
+    },
+    {
+      "id": "jaffa_peaks",
+      "type": "measured_values_as_reported_by_company",
+      "statement": "February 54kW; April 26.2kW; May 39.1kW selected peak output under differing sea conditions",
+      "source": "https://www.sec.gov/Archives/edgar/data/1846715/000121390026090518/ea030219901ex99-1.htm",
+      "date": "2026-08-17"
+    },
+    {
+      "id": "jaffa_capacity",
+      "type": "verified_documented_spec",
+      "statement": "100kW installed capacity grid-connected Jaffa Port station",
+      "source": "https://tethys.pnnl.gov/project-sites/eco-wave-power-wave-energy-power-station-jaffa"
+    },
+    {
+      "id": "ai_centers",
+      "type": "prospective",
+      "statement": "Supply to coastal AI data centers is under discussion; no signed customer offtake established by Nov 2 announcement",
+      "source": "https://www.ecowavepower.com/eco-wave-power-completes-first-phase-of-ai-powered-digital-twin-advancing-intelligent-wave-energy-and-future-ai-data-center-applications/"
+    }
+  ],
+  "chart_selection": {
+    "catalog_url": "https://github.com/1freetech/SmartChart/blob/main/atlas/catalog.json",
+    "catalog_count": 40,
+    "dataset": [
+      {
+        "month": "February",
+        "peak_power_kw": 54
+      },
+      {
+        "month": "April",
+        "peak_power_kw": 26.2
+      },
+      {
+        "month": "May",
+        "peak_power_kw": 39.1
+      }
+    ],
+    "dataset_source": "https://www.sec.gov/Archives/edgar/data/1846715/000121390026090518/ea030219901ex99-1.htm",
+    "measurement_unit": "kW",
+    "data_status": "company-reported observed peaks from distinct high-wave windows",
+    "method_reference": "https://github.com/1freetech/SmartChart/blob/main/docs/chart-selection-protocol-v2.md",
+    "evaluated_types": [
+      {
+        "id": "line",
+        "name": "Line chart",
+        "status": "excluded",
+        "reason": "Three nonconsecutive high-wave windows have different sea conditions; connected time lines would overstate a continuous trend."
+      },
+      {
+        "id": "area",
+        "name": "Area chart",
+        "status": "excluded",
+        "reason": "Three nonconsecutive high-wave windows have different sea conditions; connected time lines would overstate a continuous trend."
+      },
+      {
+        "id": "stackedArea",
+        "name": "Stacked area",
+        "status": "excluded",
+        "reason": "Three nonconsecutive high-wave windows have different sea conditions; connected time lines would overstate a continuous trend."
+      },
+      {
+        "id": "step",
+        "name": "Step chart",
+        "status": "excluded",
+        "reason": "Three nonconsecutive high-wave windows have different sea conditions; connected time lines would overstate a continuous trend."
+      },
+      {
+        "id": "candlestick",
+        "name": "Candlestick",
+        "status": "excluded",
+        "reason": "Three nonconsecutive high-wave windows have different sea conditions; connected time lines would overstate a continuous trend."
+      },
+      {
+        "id": "spark",
+        "name": "Sparkline",
+        "status": "excluded",
+        "reason": "Three nonconsecutive high-wave windows have different sea conditions; connected time lines would overstate a continuous trend."
+      },
+      {
+        "id": "slope",
+        "name": "Slopegraph",
+        "status": "excluded",
+        "reason": "Three nonconsecutive high-wave windows have different sea conditions; connected time lines would overstate a continuous trend."
+      },
+      {
+        "id": "bump",
+        "name": "Bump chart",
+        "status": "excluded",
+        "reason": "Three nonconsecutive high-wave windows have different sea conditions; connected time lines would overstate a continuous trend."
+      },
+      {
+        "id": "bars",
+        "name": "Horizontal / vertical bar",
+        "status": "selected",
+        "reason": "Three positive kilowatt peak measurements with short month labels; zero baseline retains magnitude comparison without implying uniform wave conditions."
+      },
+      {
+        "id": "groupedBars",
+        "name": "Grouped bars",
+        "status": "excluded",
+        "reason": "No comparable paired continuous variables or consistent wave-height measurements are given."
+      },
+      {
+        "id": "stackedBars",
+        "name": "Stacked bars",
+        "status": "excluded",
+        "reason": "No verified additive parts of a total in this dataset."
+      },
+      {
+        "id": "percentBars",
+        "name": "100% stacked bars",
+        "status": "excluded",
+        "reason": "No verified additive parts of a total in this dataset."
+      },
+      {
+        "id": "lollipop",
+        "name": "Lollipop",
+        "status": "alternative",
+        "reason": "Same categorical peaks on common kW scale; less explicit bar length for general readers."
+      },
+      {
+        "id": "dumbbell",
+        "name": "Dumbbell",
+        "status": "excluded",
+        "reason": "No matched before/after pairs within multiple categories."
+      },
+      {
+        "id": "bullet",
+        "name": "Bullet",
+        "status": "excluded",
+        "reason": "No actual start/end intervals, target values or project completion times."
+      },
+      {
+        "id": "waterfall",
+        "name": "Waterfall",
+        "status": "excluded",
+        "reason": "No actual start/end intervals, target values or project completion times."
+      },
+      {
+        "id": "pareto",
+        "name": "Pareto",
+        "status": "excluded",
+        "reason": "No incident/cause frequencies or cumulative cause-share data."
+      },
+      {
+        "id": "tornado",
+        "name": "Tornado",
+        "status": "excluded",
+        "reason": "No actual start/end intervals, target values or project completion times."
+      },
+      {
+        "id": "histogram",
+        "name": "Histogram",
+        "status": "excluded",
+        "reason": "Only three selected peak observations, not a meaningful statistical sample/distribution."
+      },
+      {
+        "id": "boxplot",
+        "name": "Box-and-whisker",
+        "status": "excluded",
+        "reason": "Only three selected peak observations, not a meaningful statistical sample/distribution."
+      },
+      {
+        "id": "violin",
+        "name": "Violin",
+        "status": "excluded",
+        "reason": "Only three selected peak observations, not a meaningful statistical sample/distribution."
+      },
+      {
+        "id": "dot",
+        "name": "Dot / beeswarm",
+        "status": "alternative",
+        "reason": "Retains individual monthly observations with a zero-based scale; lighter but less immediately legible for three discrete peak magnitudes."
+      },
+      {
+        "id": "density",
+        "name": "Density curve",
+        "status": "excluded",
+        "reason": "Only three selected peak observations, not a meaningful statistical sample/distribution."
+      },
+      {
+        "id": "scatter",
+        "name": "Scatter plot",
+        "status": "excluded",
+        "reason": "No comparable paired continuous variables or consistent wave-height measurements are given."
+      },
+      {
+        "id": "bubble",
+        "name": "Bubble chart",
+        "status": "excluded",
+        "reason": "No comparable paired continuous variables or consistent wave-height measurements are given."
+      },
+      {
+        "id": "heatmap",
+        "name": "Heatmap",
+        "status": "excluded",
+        "reason": "No comparable paired continuous variables or consistent wave-height measurements are given."
+      },
+      {
+        "id": "hexbin",
+        "name": "Hexbin plot",
+        "status": "excluded",
+        "reason": "Only three selected peak observations, not a meaningful statistical sample/distribution."
+      },
+      {
+        "id": "donut",
+        "name": "Pie / donut",
+        "status": "excluded",
+        "reason": "No verified additive parts of a total in this dataset."
+      },
+      {
+        "id": "treemap",
+        "name": "Treemap",
+        "status": "excluded",
+        "reason": "No verified additive parts of a total in this dataset."
+      },
+      {
+        "id": "waffle",
+        "name": "Waffle",
+        "status": "excluded",
+        "reason": "No verified additive parts of a total in this dataset."
+      },
+      {
+        "id": "sunburst",
+        "name": "Sunburst",
+        "status": "excluded",
+        "reason": "No verified additive parts of a total in this dataset."
+      },
+      {
+        "id": "sankey",
+        "name": "Sankey",
+        "status": "excluded",
+        "reason": "No source-destination transfer quantities provided."
+      },
+      {
+        "id": "funnel",
+        "name": "Funnel",
+        "status": "excluded",
+        "reason": "No source-destination transfer quantities provided."
+      },
+      {
+        "id": "gantt",
+        "name": "Gantt / timeline",
+        "status": "excluded",
+        "reason": "No actual start/end intervals, target values or project completion times."
+      },
+      {
+        "id": "calendar",
+        "name": "Calendar heatmap",
+        "status": "excluded",
+        "reason": "Three nonconsecutive high-wave windows have different sea conditions; connected time lines would overstate a continuous trend."
+      },
+      {
+        "id": "control",
+        "name": "Control chart",
+        "status": "excluded",
+        "reason": "Three nonconsecutive high-wave windows have different sea conditions; connected time lines would overstate a continuous trend."
+      },
+      {
+        "id": "gauge",
+        "name": "Gauge",
+        "status": "excluded",
+        "reason": "No actual start/end intervals, target values or project completion times."
+      },
+      {
+        "id": "radar",
+        "name": "Radar / spider",
+        "status": "excluded",
+        "reason": "No comparable paired continuous variables or consistent wave-height measurements are given."
+      },
+      {
+        "id": "choropleth",
+        "name": "Choropleth map",
+        "status": "excluded",
+        "reason": "Measurements come from a single known site; no spatial comparison."
+      },
+      {
+        "id": "symbolMap",
+        "name": "Proportional-symbol map",
+        "status": "excluded",
+        "reason": "Measurements come from a single known site; no spatial comparison."
+      }
+    ],
+    "top_three": [
+      {
+        "id": "bars",
+        "role": "selected",
+        "reason": "Three positive kilowatt peak measurements with short month labels; zero baseline retains magnitude comparison without implying uniform wave conditions."
+      },
+      {
+        "id": "lollipop",
+        "role": "alternative",
+        "reason": "Same categorical peaks on common kW scale; less explicit bar length for general readers."
+      },
+      {
+        "id": "dot",
+        "role": "alternative",
+        "reason": "Retains individual monthly observations with a zero-based scale; lighter but less immediately legible for three discrete peak magnitudes."
+      }
+    ],
+    "chosen": "bars",
+    "chart_media_id": 28646,
+    "chart_alt_text": "February 54, April 26.2, May 39.1 kW selected peaks",
+    "chart_caveat": "Different wave conditions; chart does not imply a steady trend, comparable utilization, or monthly production totals"
+  },
+  "prepublication": {
+    "reporting_word_count": 356,
+    "media_count": 4,
+    "video_url": "https://www.youtube.com/watch?v=ypkGqP-jclA",
+    "images": [
+      28653,
+      28646,
+      28642
+    ],
+    "featured_media": 28654,
+    "featured_dimensions": [
+      1200,
+      630
+    ],
+    "internal_links": 6,
+    "footer": "canonical Editor's Note; original QR #24043; exact disclaimer",
+    "forbidden_terms": false
+  },
+  "postpublication": {
+    "wordpress_status": "publish",
+    "video_iframe_in_rendered_html": true,
+    "video_playback": "unavailable",
+    "in_body_image_rendered_html": true,
+    "internal_links_resolve_as_published": true,
+    "featured_cover": "1200x630 via WordPress media metadata",
+    "public_page_fetch": "unavailable",
+    "mobile_rendering": "unavailable",
+    "full_qa_score": null,
+    "qa_state": "published_unverified"
+  },
+  "archive": "archive/2026/11/28659-eco-wave-power-ai-digital-twin-first-phase-ocean-wave-energy-nvidia-2026.gutenberg.html",
+  "learning": [
+    {
+      "rank": 1,
+      "kind": "verified_lesson",
+      "observation": "Company primary filings provide measured power peaks that can support charting without turning plans into measured outputs",
+      "prevention_check": "Always label observed site measurements separately from roadmap phases and prospective data-center electricity contracts."
+    },
+    {
+      "rank": 2,
+      "kind": "verified_lesson",
+      "observation": "Higher-resolution NVIDIA GTC original image (1600x740) supported a 1200x630 cover, replacing initial low-resolution 400px image",
+      "prevention_check": "Inspect actual image pixel dimensions before selecting a professional cover source."
+    },
+    {
+      "rank": 3,
+      "kind": "proposed_hypothesis",
+      "observation": "WordPress server-rendered YouTube iframe is visible but browser playback and mobile checks could not be run",
+      "prevention_check": "Add browser playback and mobile screenshots before granting published_verified status."
+    }
+  ]
+}
