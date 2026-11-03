@@ -1,0 +1,155 @@
+{
+  "schema": "bitcoinversus-publication-qa-v1",
+  "post_id": 28870,
+  "original_post_id": 28723,
+  "original_post_url": "https://bitcoinversus.tech/2026/11/03/bosch-semiconductors-division-2028-five-billion-sales-2030/",
+  "followup_url": "https://bitcoinversus.tech/2026/11/03/bosch-roseville-sic-fab-samples-commercial-production-qualification-2026/",
+  "editorial_law": "v5.1 user-supplied in current conversation",
+  "story_angle": "distinct production-readiness follow-up: sample SiC chips, CHIPS agreement, 200mm process switch, commercial qualification and yield not established",
+  "duplicate_review": {
+    "wordpress_queries": [
+      "Roseville",
+      "Bosch",
+      "silicon carbide"
+    ],
+    "result": "Only earlier Bosch division archive included Roseville; no matching Roseville production follow-up file",
+    "github_queries": [
+      "Roseville repo:1freetech/Bitcoinversus.tech",
+      "Bosch 225 million repo:1freetech/Bitcoinversus.tech"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Roseville has begun SiC sample production; first commercial chips targeted during 2026",
+      "classification": "verified from July 13 2026 primary company release, target not completed commercial shipments",
+      "source": "https://us.bosch-press.com/pressportal/us/en/press-release-31424.html"
+    },
+    {
+      "claim": "Federal direct funding agreement signed for up to $225m, supporting ~$2bn Roseville conversion",
+      "classification": "verified government announcement, maximum award not automatically cash paid",
+      "source": "https://www.nist.gov/news-events/news/2026/07/department-commerce-announces-direct-funding-agreement-bosch-225-million"
+    },
+    {
+      "claim": "Reutlingen SiC production 150mm phased out May 2026; 200mm in production",
+      "classification": "verified Bosch manufacturing network",
+      "source": "https://www.bosch-semiconductors.com/stories-and-events/boschs-global-sic-semiconductor-manufacturing-network/"
+    },
+    {
+      "claim": "200mm circular wafer ~77.8% larger area than 150mm circular wafer",
+      "classification": "verified calculation gross geometrical area only; no yield increase claim",
+      "formula": "(200/150)^2-1",
+      "result_ratio": 0.7777777777777777
+    },
+    {
+      "claim": "Bosch plans two fab SiC network Reutlingen and Roseville",
+      "classification": "company plan; American commercial readiness remains unverified",
+      "source": "https://www.bosch-semiconductors.com/stories-and-events/two-fabs-one-goal-reliable-sic-supply/"
+    }
+  ],
+  "media": [
+    {
+      "type": "featured cover",
+      "id": 28856,
+      "dimensions_px": [
+        1200,
+        630
+      ],
+      "source": "Bosch 2026 Roseville facility official press photograph",
+      "verified": "WordPress media metadata readback"
+    },
+    {
+      "type": "video embed",
+      "provider": "YouTube",
+      "video_id": "Fo8TWPomHiQ",
+      "content": "Bosch Global March 2021 Dresden wafer fab tour",
+      "verified": "Gutenberg core/embed saved; WordPress public view returns iframe",
+      "actual_playback": "unverified"
+    },
+    {
+      "type": "in-body photo",
+      "id": 28857,
+      "dimensions_px": [
+        1000,
+        670
+      ],
+      "source": "Bosch Media Service July 2026 Roseville cleanroom",
+      "verified": "WordPress media metadata and saved WP image block"
+    },
+    {
+      "type": "footer original donation QR",
+      "id": 24043,
+      "excluded_from_in_story_quota": true
+    }
+  ],
+  "publication": {
+    "wp_post_id": 28870,
+    "status": "publish",
+    "date": "2026-11-03T16:26:03",
+    "cover": 28856,
+    "category_ids": [
+      792826578,
+      284207,
+      27318186
+    ],
+    "reporting_words": 523,
+    "in_body_media_count": 2,
+    "contextual_internal_links": 4,
+    "footer_order": "Editor’s Note → original QR 24043 → instructions → disclaimer"
+  },
+  "qa": {
+    "duplicate_review": "pass-targeted",
+    "fact_check": "pass-primary-source-attribution",
+    "publication_and_saved_blocks": "pass-WordPress-readback",
+    "feature_image_dimensions": "pass-1200x630",
+    "body_embed": "pass-core-embed-block",
+    "public_render_iframe": "pass-youtube-player-iframe-in-WP-context-view",
+    "separate_credited_body_photo": "pass",
+    "caption_positions": "pass-after-media",
+    "image_alt": "pass",
+    "four_internal_links": "pass-link-targets-confirmed-WordPress-posts",
+    "original_donation_qr": "pass",
+    "prohibited_words": "pass-original-prose",
+    "desktop_screenshot_service": "ready, not independently inspected pixels",
+    "desktop_visual_inspection": "unverified",
+    "mobile_visual_inspection": "unverified",
+    "video_playback": "unverified-no-independent-player-test",
+    "chart_evaluation": "not applicable: only gross-area diameter calculation and noncomparable funding/investment values; numerical data insufficient for meaningful SmartChart chart",
+    "github_exact_archive": "pending-until-create-fetch"
+  },
+  "capture": {
+    "url": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fbitcoinversus.tech%2F2026%2F11%2F03%2Fbosch-roseville-sic-fab-samples-commercial-production-qualification-2026%2F?vpw=1200&vph=3600&w=1200&requeue=true",
+    "status": "ready",
+    "image_pixel_inspection": "not possible from screenshot URL alone"
+  },
+  "defects": [
+    {
+      "observed": "Older Bosch division story already discusses Roseville and had Dresden fab video",
+      "root_cause": "Overlap expected for follow-up",
+      "repair": "New article has production readiness as central subject, original linked with status clarification, real Roseville in-body photo and new cover",
+      "regression": "WordPress and GitHub targeted duplicate searches, title and article wording disjoint"
+    },
+    {
+      "observed": "No verified official Roseville YouTube playback embed found",
+      "root_cause": "Bosch Roseville official press page contains B-roll but provider-specific playable public URL not established",
+      "repair": "Use known official Bosch Global Dresden fab video, with explicit historical date and different factory caption",
+      "regression": "WordPress saved core/embed and rendered iframe verified; actual playback remains unverified"
+    }
+  ],
+  "ranked_improvements": [
+    {
+      "rank": 1,
+      "type": "verified lesson",
+      "recommendation": "Separate sample devices, qualified series production, and shipment volume; a target date is not proof of volume ramp."
+    },
+    {
+      "rank": 2,
+      "type": "verified lesson",
+      "recommendation": "Use source-labeled genuine factory images, preserve Bosch facility context, and verify featured-image pixels from media metadata."
+    },
+    {
+      "rank": 3,
+      "type": "unavailable",
+      "recommendation": "Perform visual screenshot-pixel and player playback inspection with a browser before marking full embed QA complete."
+    }
+  ]
+}
