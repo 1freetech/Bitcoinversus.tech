@@ -3,7 +3,7 @@
   "content_id": 28609,
   "published_url": "https://bitcoinversus.tech/2026/11/02/goldman-sachs-ai-coding-tools-claude-code-github-traders-restricted-2026/",
   "timestamp_utc": "2026-11-03",
-  "status": "published_live_wordpress_record_verified",
+  "status": "trashed_on_wordpress_and_archived_copy_removed",
   "editorial_accuracy_note": "Goldman restricted advanced coding agent tools for most traders and bankers; not a blanket AI ban. Evidence: Bloomberg Nov 2, Goldman public AI policy, company AI announcements, Reuters.",
   "duplicate_check": {
     "wordpress_no_matching_nov_2026_topic": true,
@@ -34,7 +34,9 @@
     "youtube_playback": "not_independently_tested",
     "mobile_rendering": "not_tested",
     "qa_score": null,
-    "visual_browser_interaction": "not independently checked"
+    "visual_browser_interaction": "not independently verified",
+    "wordpress_status": "trash",
+    "publication_status": "not_live"
   },
   "defect": {
     "id": "XEMBED-2026-11-02-28609",
@@ -45,10 +47,11 @@
     "attempt_result": "Not applied: wpcom/content-items-update explicitly disallows post type post; WordPress posts-update unavailable in this connected tool session.",
     "next_repair": "In WordPress editor, remove failed X embed, add a contextual link to the X post or reinsert a native X block if logged-out rendering succeeds. Save, then check site on desktop/mobile. No republishing or duplicate post.",
     "regression_test": "For every newly published core/embed social block, inspect content.rendered for provider iframe/blockquote; a simple anchor-only wrapper fails the embed gate.",
-    "status": "resolved",
+    "status": "unresolved_in_browser_story_removed",
     "resolution": "Native Gutenberg Twitter provider with canonical https://twitter.com/exec_sum/status/2117284426128179638 replaced the failed X provider block in place using WordPress post-sections.update; WordPress view output shows full quoted post, @exec_sum author, November 2, 2026 timestamp, canonical permalink, twitter-tweet blockquote and platform.x.com/widgets.js",
-    "resolved_post_id": 28609
+    "resolved_post_id": 28609,
+    "final_disposition": "User requested fix embed or delete. WordPress server-render generated a full native Twitter blockquote but client-side functionality could not be independently verified; public page fetch failed. Original post 28609 moved to Trash. The corresponding GitHub archive file removed from main, preserving history in Git."
   },
-  "learning": "Verified: canonical twitter.com URL with providerNameSlug=twitter and wp-block-embed-twitter resolves to full native Twitter widget server-side. Use post-sections.update with optimistic locks to repair in-place; validate actual rendered content and preserve surrounding blocks. Browser-side widget script execution not independently tested.",
+  "learning": "A working WordPress server-rendered Twitter blockquote is not proof of browser-side embed reliability. When user reports failure and demands fix-or-delete, refrain from claiming the embed is fixed. Attempt supported provider repairs and validate via live browser; if validation remains inaccessible and user explicitly authorizes deletion, unpublish and record unresolved defect.",
   "last_checked_utc": "2026-11-02"
 }
