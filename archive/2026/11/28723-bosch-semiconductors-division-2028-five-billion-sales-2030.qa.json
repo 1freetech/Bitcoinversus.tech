@@ -24,6 +24,11 @@
       "claim": "Dresden 300mm; Reutlingen and Roseville 200mm",
       "status": "company-manufacturing-site-description",
       "source": "https://www.bosch-semiconductors.com/about-us/where-we-produce/"
+    },
+    {
+      "claim": "Bosch Global's historical video tours the Dresden 300 mm semiconductor fab and cleanroom",
+      "status": "verified-official-video-published-2021-03-10-not-evidence-of-2028-reorganization",
+      "source": "https://www.youtube.com/watch?v=Fo8TWPomHiQ"
     }
   ],
   "duplicates": {
@@ -47,7 +52,17 @@
       28715
     ],
     "donation_qr_id": 24043,
-    "internal_links": 4
+    "internal_links": 4,
+    "inbody_video_ids": [
+      "Fo8TWPomHiQ"
+    ],
+    "inbody_media_count": 3,
+    "inbody_media_order": [
+      "Bosch Global YouTube Fo8TWPomHiQ",
+      "WordPress image 28716",
+      "WordPress image 28715"
+    ],
+    "latest_modified": "2026-11-03T16:09:36"
   },
   "qa": {
     "saved_wordpress_blocks": "passed",
@@ -58,12 +73,16 @@
     "four_internal_links": "passed-existing-posts-confirmed",
     "footer_order": "passed",
     "banned_editorial_words": "passed",
-    "video_playback": "not-applicable-no-video",
-    "desktop_screenshot_capture": "ready-screenshot-service-availability-only",
-    "independent_visual_desktop_inspection": "unverified",
+    "video_playback": "unverified-actual-playback-not-tested",
+    "desktop_screenshot_capture": "ready-WordPress-mshots-service; pixel-level visual inspection unavailable",
+    "independent_visual_desktop_inspection": "unverified-screenshot-pixels-not-accessible-to-tools",
     "independent_visual_mobile_inspection": "unverified",
     "public_unauthenticated_fetch": "unverified-web-open-failed",
-    "exact_github_archive": "passed-both-files-created-and-fetched-by-exact-path"
+    "exact_github_archive": "passed-both-files-created-and-fetched-by-exact-path",
+    "official_video_embed": "passed-saved-native-Gutenberg-core-embed",
+    "wp_view_player_iframe": "passed-WP-context-view-generates-youtube-iframe",
+    "screenshot_url": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fbitcoinversus.tech%2F2026%2F11%2F03%2Fbosch-semiconductors-division-2028-five-billion-sales-2030%2F?vpw=1200&vph=3500&w=1200&requeue=true",
+    "screenshot_status": "ready-with-WordPress-service"
   },
   "defect_log": [
     {
@@ -86,6 +105,13 @@
       "repair": "Replaced QR block preserving original media ID 24043",
       "regression": "saved Gutenberg content excludes blank caption",
       "status": "fixed"
+    },
+    {
+      "defect": "Initial publication had two in-story photos but no fab video",
+      "cause": "Original report chose two official Bosch photos for in-body media",
+      "repair": "Inserted one Bosch Global 2021 300mm Dresden fab video via native Gutenberg YouTube embed near beginning; separately added descriptive credit and historical-date caption",
+      "regression": "Read back WordPress saved Gutenberg core/embed and public context=view with actual YouTube iframe for Fo8TWPomHiQ",
+      "status": "fixed-save-and-render"
     }
   ],
   "chart_choice": {
@@ -96,17 +122,17 @@
     {
       "rank": 1,
       "classification": "verified lesson",
-      "recommendation": "Anchor article announcement dates to the primary company release; correct mistaken preliminary lineup dates before publication."
+      "recommendation": "Select official historical manufacturing tour to show semiconductor fab operations; label its original release date and avoid treating historical footage as proof of a new corporate division."
     },
     {
       "rank": 2,
       "classification": "verified lesson",
-      "recommendation": "Verify media pixels from WordPress metadata, crop the original press photograph to 1200x630, and keep cover and donation QR outside the in-body quota."
+      "recommendation": "Verify media embed twice: saved Gutenberg block and rendered WordPress context=view iframe. A pasted URL alone is insufficient."
     },
     {
       "rank": 3,
       "classification": "unavailable",
-      "recommendation": "Implement authentic mobile and desktop viewport visual inspection and independent playback tests when the remote browser or capture tools permit; do not claim unavailable checks passed."
+      "recommendation": "Acquire screenshot bytes and independently inspect iframe pixels and playback on desktop/mobile; screenshot status ready does not prove playback."
     }
   ],
   "github": {
