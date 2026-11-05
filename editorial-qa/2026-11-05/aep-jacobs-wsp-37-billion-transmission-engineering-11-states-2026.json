@@ -1,0 +1,224 @@
+{
+  "schema_version": "bitcoinversus.editorial-qa.v1",
+  "publication": {
+    "wordpress_id": 29632,
+    "title": "AEP Taps Jacobs and WSP for $37 Billion Grid Expansion",
+    "status": "publish",
+    "slug": "aep-jacobs-wsp-37-billion-transmission-engineering-11-states-2026",
+    "url": "https://bitcoinversus.tech/2026/11/05/aep-jacobs-wsp-37-billion-transmission-engineering-11-states-2026/",
+    "date": "2026-11-05T04:56:39",
+    "categories": [
+      233999,
+      1212,
+      6,
+      27318186
+    ],
+    "featured_media_id": 29631
+  },
+  "article": {
+    "raw_gutenberg": "<!-- wp:paragraph -->\n<p>American Electric Power has selected <strong>Jacobs and WSP USA</strong> to support a planned <strong>$37 billion transmission investment</strong> across 11 states, according to the engineering firms' October 29, 2026 announcements. Jacobs will coordinate delivery in seven eastern states, while WSP covers four western states. The program is part of AEP's larger five-year capital plan through 2031 and responds to rising electrical demand, including data centers and industrial facilities. The $37 billion is AEP's proposed network spending, <strong>not</strong> the contractors' undisclosed fees or money already spent.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>What is extra-high-voltage transmission?</strong> Large transmission lines move bulk electricity from generating stations to regional substations, where transformers reduce voltage before power enters local distribution systems. At a given transfer power, increasing voltage generally lowers current, reducing resistive heating losses in comparable conductors. AEP has used <strong>765-kilovolt</strong> transmission since 1969 and operates one of the nation's largest networks at that voltage. Building additional lines also requires substations, protection relays, insulation coordination, telecommunications and extensive safety clearances.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29628,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/aep-delta-765kv-transmission-tower-prototype.jpg?w=1024\" alt=\"AEP Delta 765-kV transmission tower prototype against blue sky\" class=\"wp-image-29628\" /><figcaption class=\"wp-element-caption\"><em>An AEP Delta 765-kV transmission-tower prototype, showing a new extra-high-voltage structural design. Official photo: <a href='https://www.aep.com/news/stories/view/10771/'>AEP, February 2026</a>. It is background engineering imagery, not a completed line under the Jacobs/WSP agreements.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>Jacobs' <a href=\"https://www.jacobs.com/newsroom/press-release/jacobs-selected-advance-american-electric-powers-transmission-modernization\">official announcement</a> identifies Indiana, Michigan, Ohio, Kentucky, Tennessee, West Virginia and Virginia as its eastern delivery region. It will organize engineering, environmental services, project controls, rights-of-way and community outreach, working with ORC, GFT and RC Commonwealth. The contractor describes delivery as underway and expected to increase, but provides no count of completed lines attributable to the new agreement.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>WSP will support the western system in <strong>Texas, Oklahoma, Arkansas and Louisiana</strong>. Its <a href=\"https://www.wsp.com/en-us/news/2026/wsp-selected-as-strategic-delivery-partner-for-american-electric-power\">October 29 release</a> emphasizes grid planning, environmental permitting, design and program management. The arrangement divides management responsibilities by AEP service region rather than assigning each engineering firm half of the $37 billion budget.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>AEP's <a href=\"https://www.aep.com/news/stories/view/12347/\">third-quarter results</a> place the spending inside a broader <strong>$100 billion capital plan</strong>. During its investor call, the utility divided planned transmission investment into roughly <strong>$17 billion for regional grid-operator projects, $11 billion for reliability and modernization, and $9 billion for individual customer connections</strong>. Those three categories total $37 billion. AEP reported 15 gigawatts of new large-load commitments during the quarter and projects 84 GW of incremental contracted demand by 2031; contract commitments are not equivalent to facilities already consuming electricity.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29630,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/aep-westfall-ohio-substation-official.jpg\" alt=\"Existing AEP Westfall substation showing overhead busbars and high voltage switching equipment behind a fence\" class=\"wp-image-29630\" /><figcaption class=\"wp-element-caption\"><em>Existing AEP Westfall Station in Ohio, illustrating substation infrastructure needed to connect transmission lines. Official photo: <a href='https://www.aep.com/news/stories/view/10763/'>AEP, February 2026</a>; unrelated to completion of the newly selected contracting assignments.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>The physical engineering is significant. AEP plans to expand 765-kV infrastructure, a strategy also appearing in BitcoinVersus.Tech's coverage of a <a href=\"https://bitcoinversus.tech/2026/10/24/miso-iowa-765kv-easl-123-billion-transmission-project-2026/\">765-kV MISO transmission project</a>. Higher-voltage designs can carry more power with fewer corridors than multiple lower-voltage circuits, but real benefits depend on network configuration, conductor sizes, losses and substation costs. AEP's February design work introduced a new Delta tower prototype; it is not evidence that every future project will use that structure.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The program comes as grid construction competes with new generation projects and demand from AI campuses. BitcoinVersus.Tech previously examined why <a href=\"https://bitcoinversus.tech/2026/11/03/solar-power-construction-grid-lead-times-ai-2030/\">transmission approvals can outlast solar construction</a> and how <a href=\"https://bitcoinversus.tech/2026/10/13/ai-demand-driving-more-power-lines/\">AI demand is increasing the need for power lines</a>. AEP is also involved in early-stage generation discussions, including a <a href=\"https://bitcoinversus.tech/2026/10/24/aep-x-energy-amazon-960-mw-indiana-nuclear-breed-2026/\">proposed Indiana nuclear project</a>. Those future electricity sources and transmission contracts represent different stages of grid development.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>AEP says customer agreements can help offset some fixed costs for existing customers, but regulatory approvals, equipment availability, construction inflation and rights-of-way remain major variables. Substation and line upgrades must also meet protection and reliability standards, alongside new monitoring systems of the kind discussed in BitcoinVersus.Tech's <a href=\"https://bitcoinversus.tech/2026/11/01/puget-sound-energy-80-million-project-pulse-178-grid-sensors/\">grid-sensor modernization coverage</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The next milestones are detailed route approvals, final engineering packages, procured transformers and switchgear, construction starts and verified in-service dates. The new agreements establish who will help execute AEP's modernization portfolio; they do not establish that $37 billion in infrastructure has already been constructed, energized or transferred to customers.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech original 5,000-satoshi donation QR code\" class=\"wp-image-24043\" /></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Disclaimer: BitcoinVersus.Tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->",
+    "word_count": 580,
+    "technology_explanation_after_lead": true,
+    "prohibited_prose_terms_found": [],
+    "contextual_internal_links": [
+      "https://bitcoinversus.tech/2026/10/24/miso-iowa-765kv-easl-123-billion-transmission-project-2026/",
+      "https://bitcoinversus.tech/2026/11/03/solar-power-construction-grid-lead-times-ai-2030/",
+      "https://bitcoinversus.tech/2026/10/13/ai-demand-driving-more-power-lines/",
+      "https://bitcoinversus.tech/2026/10/24/aep-x-energy-amazon-960-mw-indiana-nuclear-breed-2026/",
+      "https://bitcoinversus.tech/2026/11/01/puget-sound-energy-80-million-project-pulse-178-grid-sensors/"
+    ]
+  },
+  "sources": [
+    {
+      "type": "primary",
+      "date": "2026-10-29",
+      "url": "https://www.jacobs.com/newsroom/press-release/jacobs-selected-advance-american-electric-powers-transmission-modernization",
+      "role": "Jacobs seven eastern states"
+    },
+    {
+      "type": "primary",
+      "date": "2026-10-29",
+      "url": "https://www.wsp.com/en-us/news/2026/wsp-selected-as-strategic-delivery-partner-for-american-electric-power",
+      "role": "WSP four western states"
+    },
+    {
+      "type": "primary",
+      "date": "2026-10-28",
+      "url": "https://www.aep.com/news/stories/view/12347/",
+      "role": "AEP 100B five year capex plan and 37B transmission component"
+    },
+    {
+      "type": "primary_earnings_call",
+      "date": "2026-10-28",
+      "url": "https://stockanalysis.com/stocks/aep/transcripts/719930-q3-2026/",
+      "role": "17B/11B/9B breakdown (call transcription)"
+    },
+    {
+      "type": "primary_technical",
+      "url": "https://www.aep.com/about/businesses/transmission/765kv/",
+      "role": "765-kV transmission background and historical miles"
+    },
+    {
+      "type": "primary_technical",
+      "date": "2026-02-24",
+      "url": "https://www.aep.com/news/stories/view/10771/",
+      "role": "Delta tower engineering background"
+    },
+    {
+      "type": "independent",
+      "date": "2026-11-03",
+      "url": "https://www.constructiondive.com/news/jacobs-wins-project-management-role-transmission-program-american-electric-power/873647/",
+      "role": "contract scale and attribution"
+    },
+    {
+      "type": "independent",
+      "date": "2026-11-04",
+      "url": "https://transformer-magazine.com/?p=0",
+      "role": "industry follow-up"
+    }
+  ],
+  "claim_review": [
+    {
+      "value": 37,
+      "unit": "USD billions",
+      "description": "AEP total planned transmission spending 2027–2031, not contractors' awards or completed construction",
+      "classification": "plan"
+    },
+    {
+      "value": 100,
+      "unit": "USD billions",
+      "description": "AEP broader five-year capital plan including transmission, generation and distribution",
+      "classification": "plan"
+    },
+    {
+      "value": 17,
+      "unit": "USD billions",
+      "description": "RTO-driven transmission portion",
+      "classification": "planned portion"
+    },
+    {
+      "value": 11,
+      "unit": "USD billions",
+      "description": "transmission reliability and modernization portion",
+      "classification": "planned portion"
+    },
+    {
+      "value": 9,
+      "unit": "USD billions",
+      "description": "individual customer connection transmission portion",
+      "classification": "planned portion"
+    },
+    {
+      "check": "17+11+9",
+      "result": 37,
+      "unit": "USD billions",
+      "status": "verified arithmetic"
+    },
+    {
+      "value": 15,
+      "unit": "GW",
+      "description": "AEP Q3 2026 new load commitments",
+      "classification": "signed demand commitments, not energized load"
+    },
+    {
+      "value": 84,
+      "unit": "GW",
+      "description": "AEP projected incremental contracted load by 2031",
+      "classification": "forward expectation not present power demand"
+    },
+    {
+      "value": 765,
+      "unit": "kilovolts",
+      "description": "extra-high-voltage network level",
+      "classification": "engineering rating, not MW"
+    },
+    {
+      "claim": "Jacobs: Indiana Michigan Ohio Kentucky Tennessee West Virginia Virginia",
+      "classification": "announced seven-state management scope"
+    },
+    {
+      "claim": "WSP: Texas Oklahoma Arkansas Louisiana",
+      "classification": "announced four-state management scope"
+    },
+    {
+      "claim": "individual Jacobs and WSP contract values",
+      "classification": "not disclosed; no split of 37B inferred"
+    }
+  ],
+  "media": [
+    {
+      "role": "featured_cover",
+      "id": 29631,
+      "width": 1200,
+      "height": 630,
+      "src": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/aep-jacobs-wsp-transmission-modernization-cover-1200x630-1.jpg",
+      "alt_text": "AEP steel high-voltage transmission towers and conductors running through a wooded Appalachian Ohio valley",
+      "attribution": "AEP official Appalachian Ohio transmission photograph, cropped 1200x630",
+      "disclosure": "representative existing infrastructure; no claim of newly completed line",
+      "assignment": "confirmed in published post",
+      "in_body": false
+    },
+    {
+      "role": "inbody_image",
+      "id": 29628,
+      "source": "https://www.aep.com/news/stories/view/10771/",
+      "description": "AEP 765 kV Delta prototype, Feb 2026",
+      "caption_saved": true,
+      "rendered_img_tag": true,
+      "alt_text_present": true
+    },
+    {
+      "role": "inbody_image",
+      "id": 29630,
+      "source": "https://www.aep.com/news/stories/view/10763/",
+      "description": "Existing AEP Westfall station in Ohio, Feb 2026",
+      "caption_saved": true,
+      "rendered_img_tag": true,
+      "alt_text_present": true
+    },
+    {
+      "role": "footer_qr",
+      "id": 24043,
+      "source_post_id": 29622,
+      "original_asset": true,
+      "saved_and_rendered": true,
+      "qr_optical_scan": "not performed"
+    }
+  ],
+  "quality_assurance": {
+    "duplicate_check": "WordPress published/draft/future searches of AEP Jacobs WSP and 37B transmission found no matching report; rejected duplicate Envision 800V candidate, published post 29611, and competing Vertiv Infineon draft 29625",
+    "rotation": "Electrical Engineering after Renewable Energy / Solar Energy",
+    "prepublish": {
+      "news_word_count": "580",
+      "prohibited_words": "none",
+      "contextual_internal_links": 5,
+      "inbody_media": 2,
+      "cover_exact_dimensions": "1200x630",
+      "footer_provenance": "copied verbatim from published WordPress post 29622",
+      "no_unverified_youtube": true,
+      "source_check": "AEP, Jacobs, WSP and independent trade reporting"
+    },
+    "postpublish": {
+      "wordpress_status": "publish",
+      "saved_gutenberg": "passed",
+      "public_WordPress_view_html": "passed",
+      "featured_assignment": "passed",
+      "cover_dimensions": "1200x630",
+      "two_inbody_images_rendered": "passed",
+      "original_footer_order": "passed Editor's Note then original donation QR and instructions then disclaimer",
+      "italics": "passed in saved markup",
+      "retired_X_ad": "absent",
+      "desktop_screenshot_capture": "WordPress mshots URL ready; fetch failed so visual inspection not performed",
+      "mobile_visual": "not performed",
+      "qr_scannability": "not performed",
+      "youtube": "none; no unverified video inserted"
+    },
+    "observed_defects": [],
+    "open_checks": [
+      "desktop and mobile screenshot visual verification",
+      "physical QR optical scan"
+    ],
+    "smallest_next_step": "Open public post on desktop and mobile, inspect cover and responsive image sizing, scan donation QR and log outcomes. Repair any observed failures.",
+    "release_status": "published with saved/rendered markup QA passed; visual and physical scan checks pending"
+  }
+}
