@@ -1,0 +1,64 @@
+{
+  "publication": {
+    "id": 29557,
+    "title": "NASA Swift Telescope Burns Up Over Indonesia After 22 Years",
+    "url": "https://bitcoinversus.tech/2026/11/05/nasa-swift-telescope-reentry-indonesia-22-years-2026/",
+    "status": "publish",
+    "date": "2026-11-05"
+  },
+  "sources": [
+    "https://science.nasa.gov/missions/swift/nasas-swift-mission-ends/",
+    "https://science.nasa.gov/blogs/swift/2026/11/02/nasas-swift-observatory-to-re-enter-atmosphere/",
+    "https://www.reuters.com/science/nasas-22-year-old-swift-satellite-telescope-falls-orbit-fiery-finale-2026-11-04/",
+    "https://apnews.com/article/5c19afdd7867dc88d68ea61dba1fbaee"
+  ],
+  "word_count_approx": 566,
+  "featured": {
+    "id": 29556,
+    "width": 1200,
+    "height": 630,
+    "type": "editorial illustration"
+  },
+  "media": [
+    {
+      "type": "youtube",
+      "id": "3hvfQMApsYg",
+      "title": "What's In A Name? NASA's Swift Mission",
+      "channel": "NASA Goddard",
+      "live_iframe": true,
+      "playback": "not independently tested"
+    },
+    {
+      "type": "youtube",
+      "id": "Sc7Qd08ugQw",
+      "title": "NASA Explains Gamma-ray Bursts",
+      "channel": "NASA Goddard",
+      "live_iframe": true,
+      "playback": "not independently tested"
+    },
+    {
+      "type": "donation_qr",
+      "id": 24043
+    }
+  ],
+  "qa": {
+    "duplicates": "No WordPress published/draft Swift Observatory or Neil Gehrels article",
+    "saved_markup": "pass",
+    "published_status": "pass",
+    "rendered_youtube_iframes": "pass",
+    "featured_assignment": "pass",
+    "footer_order": "pass",
+    "disclaimer": "We volunteer daily to ensure the information on this platform is Verifiably True. If you would like to support the research, please scan the QR code.",
+    "screenshot": "ready",
+    "screenshot_url": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fbitcoinversus.tech%2F2026%2F11%2F05%2Fnasa-swift-telescope-reentry-indonesia-22-years-2026%2F?vpw=1200&vph=6000&w=1200&requeue=true",
+    "actual_playback": "not independently verified",
+    "mobile_visual": "not independently verified",
+    "qr_scan": "not independently verified",
+    "social_embed": "none; no verified original post",
+    "next_steps": [
+      "Visually inspect desktop/mobile screenshots",
+      "Play both NASA videos and verify responsive playback",
+      "Scan original donation QR"
+    ]
+  }
+}
