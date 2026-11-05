@@ -1,0 +1,59 @@
+{
+  "publication": {
+    "id": 29546,
+    "title": "BMW EV Share Hits 20% as Restructuring Cuts Profit Outlook",
+    "url": "https://bitcoinversus.tech/2026/11/05/bmw-q3-2026-ev-share-20-percent-neue-klasse-restructuring/",
+    "status": "publish"
+  },
+  "sources": [
+    "https://newsroom.bmwgroup.com/global/bmw-group-accelerates-realignment/",
+    "https://newsroom.bmwgroup.com/global/statement-walter-mertl-member-of-the-board-of-management-of-bmw-ag-finance-conference-call-quarterly-statement-to-30-september-2026-munich-4-november-2026-830-am/",
+    "https://newsroom.bmwgroup.com/global/statement-dr-milan-nedeljkovic-chairman-of-the-board-of-management-of-bmw-ag-conference-call-quarterly-report-to-30-september-2026/"
+  ],
+  "word_count_approx": 465,
+  "featured": {
+    "media_id": 29545,
+    "width": 1200,
+    "height": 630,
+    "kind": "original editorial rendering"
+  },
+  "internal_links": 5,
+  "media": [
+    {
+      "kind": "youtube",
+      "id": "fWOx09Lvwg4",
+      "title": "Neue Klasse Documentary Episode 1 The Big Picture",
+      "channel": "BMW Group",
+      "source": "https://www.press.bmwgroup.com/global/article/detail/T0452379EN/exclusive-video-documentation-about-the-development-of-the-neue-klasse-the-biggest-future-project-of",
+      "live_iframe": true,
+      "playback": "not independently tested"
+    },
+    {
+      "kind": "youtube",
+      "id": "CKrLUixaWl4",
+      "title": "Neue Klasse Documentary Episode 2 Reinventing Freude am Fahren",
+      "channel": "BMW Group",
+      "source": "https://www.press.bmwgroup.com/global/article/detail/T0452379EN/exclusive-video-documentation-about-the-development-of-the-neue-klasse-the-biggest-future-project-of",
+      "live_iframe": true,
+      "playback": "not independently tested"
+    },
+    {
+      "kind": "qr",
+      "id": 24043
+    }
+  ],
+  "qa": {
+    "duplicate_search": "BMW, Neue Klasse and Gen5 WordPress inventory searched; distinct November 4 earnings development",
+    "saved_markup": "pass",
+    "published_status": "pass",
+    "live_html_iframes": "pass",
+    "footer_order": "pass",
+    "screenshot": "ready",
+    "screenshot_url": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fbitcoinversus.tech%2F2026%2F11%2F05%2Fbmw-q3-2026-ev-share-20-percent-neue-klasse-restructuring%2F?vpw=1200&vph=6000&w=1200&requeue=true",
+    "mobile_visual": "not independently tested",
+    "playback": "not independently tested",
+    "qr_scan": "not independently tested",
+    "social_embed": "not included; no verified original post id",
+    "next_step": "Inspect mobile page and play both official BMW documentary embeds; physically scan QR"
+  }
+}
