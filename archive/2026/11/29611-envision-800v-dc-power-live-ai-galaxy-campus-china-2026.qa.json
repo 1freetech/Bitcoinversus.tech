@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29611,
+  "wordpress_status": "publish",
+  "title": "Envision Powers Live AI Workloads With 800V DC at China Campus",
+  "publication_date": "2026-11-05T04:35:43",
+  "public_url": "https://bitcoinversus.tech/2026/11/05/envision-800v-dc-power-live-ai-galaxy-campus-china-2026/",
+  "source_archive_path": "archive/2026/11/29611-envision-800v-dc-power-live-ai-galaxy-campus-china-2026.gutenberg.html",
+  "source_blob_sha": "16ef850563bad120ec5dab01b1c129dfbc4f19ea",
+  "source_exact_readback": true,
+  "category_ids": [
+    5177360,
+    233999,
+    1212,
+    27318186
+  ],
+  "content_type": "verified news report",
+  "sources": [
+    {
+      "type": "primary",
+      "url": "https://www.prnewswire.com/news-releases/envision-achieves-worlds-first-commercial-deployment-of-integrated-800v-dc-sst-based-power-system-in-large-scale-ai-data-center-302926109.html",
+      "published": "2026-11-02",
+      "publisher": "Envision"
+    },
+    {
+      "type": "independent",
+      "url": "https://www.datacenterdynamics.com/en/news/envision-claims-to-be-running-the-worlds-first-800vdc-data-center-in-ulanqab-china/",
+      "published": "2026-11-02",
+      "publisher": "Data Center Dynamics"
+    },
+    {
+      "type": "independent",
+      "url": "https://www.energyconnects.com/news/renewables/2026/november/envision-deploys-first-800v-system-to-deliver-green-power-for-ai/",
+      "published": "2026-11-02",
+      "publisher": "Bloomberg via Energy Connects"
+    }
+  ],
+  "figures": {
+    "input": "10 kV AC",
+    "dc_bus": "800 V DC",
+    "operating_scale_MW": null,
+    "planned_campus_capacity_GW": 3,
+    "planned_accelerators": 1000000,
+    "planned_renewable_connection_share_percent_over": 80,
+    "mission_gobi_target_GW": 5,
+    "target_year": 2030,
+    "measured_efficiency": "not provided"
+  },
+  "media": [
+    {
+      "type": "featured_illustration",
+      "wordpress_media_id": 29603,
+      "width": 1200,
+      "height": 630,
+      "original_illustration": true,
+      "not_a_site_photo": true
+    },
+    {
+      "type": "body_illustration",
+      "wordpress_media_id": 29606,
+      "width": 1200,
+      "height": 675,
+      "original_technical_conceptual": true,
+      "not_an_as_built_schematic": true
+    },
+    {
+      "type": "youtube",
+      "id": "E96F7J9BDUQ",
+      "channel": "Schneider Electric",
+      "title": "Why AI Data Centers Are Moving to 800V DC | Schneider Electric Live from Data Center World 2026",
+      "url": "https://www.youtube.com/watch?v=E96F7J9BDUQ",
+      "source_verified": true,
+      "wp_saved_native_block": true,
+      "wp_rendered_iframe": true,
+      "actual_playback_verified": false
+    }
+  ],
+  "gutenberg_qa": {
+    "published_source_readback": true,
+    "rendered_video_iframes": 1,
+    "rendered_body_images": 1,
+    "donation_qr_id": 24043,
+    "donation_qr_rendered": true,
+    "approved_volunteer_disclaimer_rendered": true,
+    "editor_note_saved_markup": true,
+    "internal_links": 4,
+    "boxed_code_or_text_blocks": 0,
+    "featured_media": 29603
+  },
+  "live_page": {
+    "screenshot_link_ready": true,
+    "screenshot_viewport_width": 1200,
+    "screenshot_viewport_height": 4200,
+    "visual_pixels_inspected": false,
+    "mobile_viewport_tested": false
+  },
+  "publication_qa_status": "published_unverified",
+  "open_checks": [
+    "Interactive YouTube playback not tested",
+    "Desktop screenshot pixels not inspected",
+    "Mobile viewport and player playback not tested"
+  ],
+  "editorial_limitations": [
+    "Envision first-commercial claim company-attributed",
+    "Operating megawatts and measured efficiency undisclosed",
+    "3 GW campus and million accelerators are design targets, not operating output"
+  ],
+  "learning": "Retain distinction between 800V prototype tests and live commercial deployment. Canonical Gutenberg iframe renders; do not equate with playback. News uses ordinary prose without text boxes."
+}
