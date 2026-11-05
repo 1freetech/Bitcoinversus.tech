@@ -1,0 +1,168 @@
+{
+  "schema_version": "bitcoinversus.editorial-qa.v1",
+  "publication": {
+    "post_id": 29524,
+    "title": "Fedora Linux 45 Adds Stratis Installs and Stronger Package Checks",
+    "canonical_url": "https://bitcoinversus.tech/2026/11/05/fedora-linux-45-stratis-installer-rpm-signatures-gnome51/",
+    "date": "2026-11-05T03:36:47",
+    "status": "publish",
+    "slug": "fedora-linux-45-stratis-installer-rpm-signatures-gnome51",
+    "categories": [
+      5812,
+      34922710,
+      6,
+      27318186
+    ],
+    "featured_media_id": 29513
+  },
+  "article": {
+    "source_format": "serialized Gutenberg blocks",
+    "content": "<!-- wp:paragraph -->\n<p>The Fedora Project released <strong>Fedora Linux 45 on November 3, 2026</strong>, updating its desktop, server, cloud and container-oriented operating-system editions. The open-source distribution adds installation support for Stratis storage, stricter default RPM package verification and refreshed desktop environments, according to its <a href=\"https://fedoramagazine.org/announcing-fedora-linux-45/\">official release announcement</a>. Fedora 45 is available now, not a beta or a future roadmap.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The most significant installer change is native Stratis support in Anaconda. Stratis combines established Linux components, including device-mapper, XFS and LUKS, to manage storage pools, flexible filesystems and optional encryption. During custom graphical installation, administrators can reach the Cockpit storage interface to configure Stratis; automated Kickstart deployments also support it. Fedora does not claim every installation automatically uses Stratis. The distinction matters when planning root filesystems and recovery procedures, subjects related to BitcoinVersus.Tech's <a href=\"https://bitcoinversus.tech/2026/10/11/how-linux-boots-uefi-grub-initramfs-kernel-systemd/\">guide to UEFI, GRUB and Linux booting</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=09lz67qXEz4\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=09lz67qXEz4\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p><em>Learn Linux TV's November 4, 2026 review of Fedora 45 and the GNOME 51 desktop, including the presenter's comparative assessment. Video: Learn Linux TV; independent commentary.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Fedora 45 also changes the default package-integrity posture. RPM 6.1 enforces cryptographic signature verification at the RPM layer unless administrators explicitly override it. Higher-level package managers already supported signature policies, so the new setting primarily closes gaps in direct RPM workflows. Administrators who build private or unsigned packages should check signing and repository settings before upgrading; a valid signature reduces tampering risk but does not guarantee software is free of vulnerabilities.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29516,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/redhat-cockpit-stratis-create-pool-example.png?w=1024\" alt=\"Red Hat Cockpit screen for creating a Stratis pool and choosing block devices\" class=\"wp-image-29516\" /><figcaption class=\"wp-element-caption\"><em>A Cockpit Stratis pool configuration example from <a href='https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/creating-an-unencrypted-stratis-pool-using-the-web-console_setting-up-stratis-file-systems'>Red Hat documentation</a>. The screenshot shows RHEL 9 tooling, not a Fedora 45 installer screen.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>Additional hardening restricts unprivileged kernel process tracing, or ptrace, to limit unauthorized inspection of other processes. Fedora says debugging configurations can restore expected tracing workflows when required. Security is an ongoing maintenance problem, not a one-time installation property, as earlier BitcoinVersus.Tech reporting on a <a href=\"https://bitcoinversus.tech/2026/10/30/anthropic-claude-linux-kernel-root-access-cve-2026-98432/\">Linux kernel privilege-escalation flaw</a> illustrates.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On the desktop, Fedora Workstation 45 moves to <strong>GNOME 51</strong>, while the Fedora KDE Plasma Desktop edition ships <strong>Plasma 6.8</strong>. Fedora highlights Wayland improvements and smoother interface behavior, although actual performance depends on graphics drivers, workloads and hardware. Fedora also replaces legacy console handling with kmscon, a userspace terminal solution. The changes complement system diagnostics described in BitcoinVersus.Tech's <a href=\"https://bitcoinversus.tech/2026/10/28/linux-command-65-systemd-analyze-linux-os/\">systemd-analyze tutorial</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29515,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/fedora-45-beta-gnome-51-workstation.webp?w=1024\" alt=\"Fedora Linux 45 beta Workstation GNOME 51 desktop with installer window\" class=\"wp-image-29515\" /><figcaption class=\"wp-element-caption\"><em>Fedora Linux 45 prerelease GNOME desktop and installer, captured in September 2026. Screenshot: <a href='https://www.linuxcompatible.org/story/fedora-linux-45-candidate-beta12-released-gnome-51-gcc-162-and-new-installer-features/'>LinuxCompatible</a>; beta imagery, not an image of the final build.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>Developers get newer compiler and runtime packages, including <strong>GCC 16.2, glibc 2.44, LLVM 23 and Go 1.27</strong>, according to the Fedora Project and Red Hat. Such upgrades can unlock language features and newer hardware support while also revealing dependency or toolchain compatibility problems in existing software. Package maintainers and enterprise administrators should test local builds, extensions and scripts instead of treating a major distribution upgrade as risk-free.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Fedora's release notes also warn that two legacy NetworkManager VPN plugins, vpnc and fortisslvpn, are retiring. Users dependent on either plugin should plan a supported alternative before upgrading. Another Linux distribution took a different path: the newly released <a href=\"https://bitcoinversus.tech/2026/11/05/opensuse-leap-16-1-traditional-immutable-linux-agama-release/\">openSUSE Leap 16.1</a> emphasizes traditional and immutable deployment modes, providing a useful contrast in operating-system design.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Fedora's next tests are practical: whether Stratis installations handle varied disks reliably, how unsigned third-party packages behave, and whether desktop changes remain stable across graphics and laptop configurations. Users can consult Fedora's published known-issues guidance, back up important data, verify installation media and test upgrades before broad deployment. The availability announcement establishes shipped functionality; independent performance or security-benefit measurements still require evidence.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech original 5,000-satoshi donation QR code\" class=\"wp-image-24043\" /></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Disclaimer: BitcoinVersus.Tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->",
+    "editorial_word_count": 499,
+    "internal_link_count": 4,
+    "internal_links": [
+      "https://bitcoinversus.tech/2026/10/11/how-linux-boots-uefi-grub-initramfs-kernel-systemd/",
+      "https://bitcoinversus.tech/2026/10/30/anthropic-claude-linux-kernel-root-access-cve-2026-98432/",
+      "https://bitcoinversus.tech/2026/10/28/linux-command-65-systemd-analyze-linux-os/",
+      "https://bitcoinversus.tech/2026/11/05/opensuse-leap-16-1-traditional-immutable-linux-agama-release/"
+    ],
+    "prohibited_words_found": []
+  },
+  "sources": [
+    {
+      "type": "primary_release",
+      "published": "2026-11-03",
+      "url": "https://fedoramagazine.org/announcing-fedora-linux-45/"
+    },
+    {
+      "type": "primary_technical",
+      "published": "2026-11-03",
+      "url": "https://www.redhat.com/en/blog/announcing-fedora-45"
+    },
+    {
+      "type": "primary_stratis_details",
+      "published": "2026-09-23",
+      "url": "https://fedoramagazine.org/installing-fedora-45-on-stratis-storage/"
+    },
+    {
+      "type": "primary_security_configuration",
+      "url": "https://fedoraproject.org/wiki/Changes/Enforcing_signature_checking_by_default"
+    },
+    {
+      "type": "independent",
+      "published": "2026-11-03",
+      "url": "https://www.phoronix.com/news/Fedora-45-Released"
+    },
+    {
+      "type": "independent",
+      "published": "2026-11-03",
+      "url": "https://lwn.net/Articles/1105121/"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Fedora 45 generally available November 3, 2026",
+      "status": "observed announced release"
+    },
+    {
+      "claim": "Stratis installs supported by graphical manual configuration or Kickstart",
+      "status": "released feature, not automatic filesystem for every installation"
+    },
+    {
+      "claim": "RPM 6.1 enforces signature verification default",
+      "status": "released feature; policy overrides possible and DNF may differ"
+    },
+    {
+      "claim": "GNOME 51 / KDE Plasma 6.8",
+      "status": "released Workstation/KDE edition versions"
+    },
+    {
+      "claim": "GCC 16.2, glibc 2.44, LLVM 23, Go 1.27",
+      "status": "reported release package versions"
+    },
+    {
+      "claim": "Performance and security benefit",
+      "status": "anticipated design benefit, not independent measured improvement"
+    }
+  ],
+  "media": [
+    {
+      "type": "featured",
+      "media_id": 29513,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "alt_text": "Fedora Linux 45 official artwork with golden gears on a pale blue backdrop",
+      "url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/fedora45-cover-1200x630-option1.jpg",
+      "attribution": "Fedora Project promotional art from Fedora Magazine",
+      "not_counted_inbody": true
+    },
+    {
+      "type": "video",
+      "video_id": "09lz67qXEz4",
+      "watch_url": "https://www.youtube.com/watch?v=09lz67qXEz4",
+      "title": "Fedora 45 is the very Definition of \"Status Quo\"",
+      "channel": "Learn Linux TV",
+      "video_date": "2026-11-04",
+      "discovery_source": "https://videos.sebae.net/fedora-45-is-the-very-definition-of-status-quo/",
+      "saved_block": "passed",
+      "wordpress_rendered_iframe": "https://www.youtube.com/embed/09lz67qXEz4",
+      "actual_playback": "not performed",
+      "mobile_responsiveness": "not visually inspected"
+    },
+    {
+      "type": "image",
+      "media_id": 29516,
+      "source": "Red Hat Enterprise Linux 9 Cockpit documentation",
+      "context": "Stratis pool example, not Fedora 45 installer",
+      "saved_and_rendered": "passed",
+      "caption": "passed"
+    },
+    {
+      "type": "image",
+      "media_id": 29515,
+      "source": "LinuxCompatible",
+      "context": "Fedora 45 GNOME 51 beta screenshot September 2026",
+      "saved_and_rendered": "passed",
+      "caption": "passed"
+    },
+    {
+      "type": "donation_footer",
+      "media_id": 24043,
+      "original": "yes",
+      "source_post_id": 29498,
+      "rendered": "passed",
+      "optical_scan": "not performed"
+    }
+  ],
+  "qa": {
+    "duplicate_check": "WordPress published/future/draft search Fedora 45 found no existing news post",
+    "prepublish": "passed 499 words, four verified WordPress internal links, exact cover 1200x630, three in-body media, captions and footer",
+    "postpublish": {
+      "status": "publish",
+      "saved_markup": "passed",
+      "rendered_html": "passed through WordPress context=view",
+      "youtube_player_iframe": "passed, matching /embed ID",
+      "actual_playback": "not tested",
+      "photo_render": "two images present in WordPress rendered output",
+      "cover_assignment": "passed, 1200x630",
+      "footer_order": "passed",
+      "original_qr": "passed saved and rendered",
+      "italic_note_disclaimer": "passed in saved markup",
+      "retired_x_ad": "absent",
+      "desktop_screenshot": "ready, visual inspection not performed",
+      "mobile_visual": "not performed",
+      "qr_scan": "not performed"
+    },
+    "comparison_with_prior": "Reused native YouTube Gutenberg provider block that generated actual /embed iframe in prior articles. Did not use shortcode fallback because rendering succeeded.",
+    "defects_found": "none in saved content or WordPress rendered HTML",
+    "open_gates": [
+      "browser video playback",
+      "desktop/mobile visual inspection",
+      "physical QR scan"
+    ],
+    "smallest_next_step": "Open live article in desktop and mobile browsers. Play embedded review; verify image and featured cover sizing, scan original donation QR. Record results and apply FIX → RETEST → REPLACE → REMAKE if any fail.",
+    "release_status": "published, interactive postpublication QA incomplete"
+  }
+}
