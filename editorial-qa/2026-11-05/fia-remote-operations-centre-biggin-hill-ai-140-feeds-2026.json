@@ -1,0 +1,101 @@
+{
+  "schema_version": "bitcoinversus.editorial-qa.v1",
+  "publication": {
+    "id": 29473,
+    "title": "FIA’s New Race Control Hub Analyzes 140-Plus Feeds With AI",
+    "status": "publish",
+    "url": "https://bitcoinversus.tech/2026/11/05/fia-remote-operations-centre-biggin-hill-ai-140-feeds-2026/",
+    "slug": "fia-remote-operations-centre-biggin-hill-ai-140-feeds-2026",
+    "date": "2026-11-05T02:48:51",
+    "category_ids": [
+      12374,
+      5812,
+      67,
+      27318186
+    ],
+    "featured_media_id": 29467
+  },
+  "article": {
+    "format": "gutenberg-raw",
+    "content": "<!-- wp:paragraph -->\n<p>The Fédération Internationale de l’Automobile (FIA) formally opened its new Remote Operations Centre at <strong>Biggin Hill, England, on October 20, 2026</strong>, bringing live race monitoring, telemetry and AI-assisted incident detection into a dedicated facility supporting Formula 1, Formula 2 and Formula 3. The <a href=\"https://www.fia.com/news/fia-opens-new-remote-operations-centre-biggin-hill-ushering-new-era-f1-race-management\">FIA’s announcement</a> says the centre was already fully operational from the 2026 Dutch Grand Prix. The October ceremony marked the official inauguration, not the start of service.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Built with Formula 1 on the sport’s Biggin Hill media campus, the facility consolidates analysis for officials working at circuits around the world. FIA president Mohammed Ben Sulayem and Formula 1 chief executive Stefano Domenicali attended the opening. The FIA described a multimillion-pound investment but did not disclose an exact construction cost or quantified improvement in the accuracy of decisions.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:shortcode -->\n[youtube https://www.youtube.com/watch?v=gzTtqfIuXdU&amp;w=640&amp;h=360]\n<!-- /wp:shortcode -->\n<!-- wp:paragraph -->\n<p><em>FIA’s official “Behind the scenes in the ROC” video, published August 27, 2026, shows the centre operating for the Dutch Grand Prix. Credit: FIA YouTube channel.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":2} -->\n<h2 class=\"wp-block-heading\">More than 140 feeds, with officials deciding</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>During Grand Prix weekends, analysts examine <strong>more than 140 audio and video feeds</strong>, car-position telemetry and team-radio traffic. The FIA reports a race-weekend operating complement of <strong>up to 16 staff</strong>. Those 140 feeds represent information sources, not 140 separate cameras or simultaneous incidents. Advanced systems help flag possible jump starts, incorrect grid positions, track-limits violations, pit-lane offences and failures to serve penalties properly.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The centre employs computer vision, AI-assisted shape recognition and automated radio-message tagging to direct attention toward possible infringements. Software detection is not equivalent to a steward’s ruling: the ROC supplies analysis to Race Control and the stewards, while authorized officials make the final sporting decisions. <a href=\"https://www.autosport.com/f1/news/mission-control-inside-the-fia-and-f1s-latest-answer-to-footballs-var/10866997/\">Autosport’s October 23 site visit</a> describes multi-layer track-limits checks, including position-based monitoring, racing-line deviation and subsequent human video review.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29462,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\" style=\"max-width:790px;margin:1.35rem auto\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/roc_website.jpg\" alt=\"FIA and Formula 1 leaders unveiling the Biggin Hill Remote Operations Centre plaque\" class=\"wp-image-29462\" style=\"width:100%;height:auto\" /><figcaption class=\"wp-element-caption\"><em>FIA’s October 20, 2026 inauguration image shows Formula 1 and FIA leaders unveiling the new centre’s plaque. Credit: FIA press release.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading {\"level\":2} -->\n<h2 class=\"wp-block-heading\">Why race control needs a data centre</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>An incident can require synchronized camera angles, radio audio, timing records and telemetry before a ruling can be supported. Rather than transporting every analyst and system to each venue, a remote team can inspect shared evidence and relay findings to trackside officials. Centralizing infrastructure can reduce duplicated equipment and support consistency, although network reliability, synchronization and outage recovery become critical.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>BitcoinVersus.Tech previously examined <a href=\"https://bitcoinversus.tech/2026/10/11/formula-1-traveling-data-center-one-rack/\">Formula 1’s shrinking trackside data centre</a> and <a href=\"https://bitcoinversus.tech/2026/10/11/how-nfl-turns-every-game-into-real-time-data-center/\">the NFL’s real-time tracking infrastructure</a>. Those systems serve different purposes, yet all depend on moving and reconciling fast-changing signals. Recent coverage of <a href=\"https://bitcoinversus.tech/2026/10/31/brooklyn-nets-alibaba-360-degree-ai-replays-barclays-center-2026/\">AI-assisted basketball replays</a> and <a href=\"https://bitcoinversus.tech/2026/11/02/canon-live-3d-basketball-volumetric-750-devices-16-second-delay-2026/\">Canon’s live volumetric basketball viewing</a> illustrates how the same broad computing disciplines reach fans as well as officials.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:shortcode -->\n[youtube https://www.youtube.com/watch?v=mg_YaIwxARo&amp;w=640&amp;h=360]\n<!-- /wp:shortcode -->\n<!-- wp:paragraph -->\n<p><em>FIA’s official March 25, 2026 explainer, “How F1 Decisions Are Made – Inside FIA Race Operations,” details Race Control, the ROC, stewards, telemetry and track-limits review. Credit: FIA.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":2} -->\n<h2 class=\"wp-block-heading\">Benefits, safeguards and the next test</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The centre also supports post-event review and the FIA’s High Performance Programme for officials, which began in 2023. Improved access to evidence may make investigations faster and training more consistent, but algorithmic flags can be incomplete or misleading. Human review, incident logs, stable data timestamps, security controls and an auditable path from detection to decision remain essential.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>No independently verified reduction in disputed calls, incident-processing times or staffing costs was provided with the opening announcement. The measure of success will be whether the system improves consistent decisions across F1, F2 and F3 under real race conditions, while retaining transparent human accountability. The newly inaugurated room is operational infrastructure, not a claim that artificial intelligence now referees Formula 1.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>Editor’s Note:</strong> The FIA’s October 20 announcement and official videos establish the facility’s launch, operating history and disclosed feed count. Autosport supplies independent on-site reporting. The featured cover is an original editorial rendering, not a photograph of the FIA control room. No improvements to officiating accuracy have been independently quantified.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-medium\" style=\"max-width:260px;margin:1.25rem auto\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"Original BitcoinVersus.Tech donation QR for 5,000 satoshis\" class=\"wp-image-24043\" style=\"width:100%;height:auto\" /><figcaption class=\"wp-element-caption\"><em>BitcoinVersus.Tech original 5,000-sat donation QR code; verify the destination address before payment.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>Scan the donation QR from a laptop or larger screen to donate 5,000 sats. Bitcoin address: <code>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</code>.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong><em>We volunteer daily to improve the credibility of the information on this platform. If you would like to support the research, please donate here: 3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</em></strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>BitcoinVersus.tech is not a financial advisor. This media platform reports on technical and financial subjects purely for informational purposes.</p>\n<!-- /wp:paragraph -->",
+    "body_words_approx": 592,
+    "internal_links": [
+      "https://bitcoinversus.tech/2026/10/11/formula-1-traveling-data-center-one-rack/",
+      "https://bitcoinversus.tech/2026/10/11/how-nfl-turns-every-game-into-real-time-data-center/",
+      "https://bitcoinversus.tech/2026/10/31/brooklyn-nets-alibaba-360-degree-ai-replays-barclays-center-2026/",
+      "https://bitcoinversus.tech/2026/11/02/canon-live-3d-basketball-volumetric-750-devices-16-second-delay-2026/"
+    ]
+  },
+  "sources": [
+    {
+      "publisher": "FIA",
+      "date": "2026-10-20",
+      "url": "https://www.fia.com/news/fia-opens-new-remote-operations-centre-biggin-hill-ushering-new-era-f1-race-management"
+    },
+    {
+      "publisher": "Autosport",
+      "date": "2026-10-23",
+      "url": "https://www.autosport.com/f1/news/mission-control-inside-the-fia-and-f1s-latest-answer-to-footballs-var/10866997/"
+    }
+  ],
+  "media": {
+    "featured": {
+      "id": 29467,
+      "width": 1200,
+      "height": 630,
+      "kind": "original editorial rendering, not a real-site photograph"
+    },
+    "body": [
+      {
+        "id": 29462,
+        "kind": "official FIA press photo"
+      },
+      {
+        "id": "gzTtqfIuXdU",
+        "kind": "YouTube",
+        "channel": "FIA",
+        "title": "Behind the scenes in the ROC",
+        "embedded": true,
+        "playback_tested": false
+      },
+      {
+        "id": "mg_YaIwxARo",
+        "kind": "YouTube",
+        "channel": "FIA",
+        "title": "How F1 Decisions Are Made - Inside FIA Race Operations",
+        "embedded": true,
+        "playback_tested": false
+      }
+    ],
+    "donation_qr": {
+      "id": 24043,
+      "counts_toward_body_media": false
+    }
+  },
+  "qa": {
+    "duplicate_search": "pass; WordPress published and draft candidates",
+    "post_status": "published",
+    "raw_markup": "pass",
+    "rendered_html": "pass",
+    "video_iframes": [
+      "https://www.youtube.com/embed/gzTtqfIuXdU",
+      "https://www.youtube.com/embed/mg_YaIwxARo"
+    ],
+    "video_playback": "unverified",
+    "mobile_visual": "unverified",
+    "qr_scan": "unverified",
+    "original_footer_order": "pass",
+    "internal_links": "pass",
+    "screenshot": "WordPress screenshot ready; detailed visual review not completed",
+    "screenshot_url": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fbitcoinversus.tech%2F2026%2F11%2F05%2Ffia-remote-operations-centre-biggin-hill-ai-140-feeds-2026%2F?vpw=1200&vph=7000&w=1200&requeue=true",
+    "repairs": [
+      "Removed unused Getty copyrighted image from media library (ID 29461)",
+      "Created exact 1200x630 cover (media ID 29467)"
+    ],
+    "next_steps": [
+      "Test actual playback of both videos",
+      "Inspect narrow mobile layout",
+      "Physically scan original donation QR"
+    ]
+  }
+}
