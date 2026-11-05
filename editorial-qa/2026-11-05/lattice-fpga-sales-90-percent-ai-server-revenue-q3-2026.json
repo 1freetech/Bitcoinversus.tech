@@ -1,0 +1,65 @@
+{
+  "publication": {
+    "id": 29561,
+    "title": "Lattice FPGA Sales Jump 90% as AI Server Demand Lifts Revenue",
+    "url": "https://bitcoinversus.tech/2026/11/05/lattice-fpga-sales-90-percent-ai-server-revenue-q3-2026/",
+    "status": "publish",
+    "date": "2026-11-05"
+  },
+  "sources": [
+    "https://latticesemi.gcs-web.com/news-releases/news-release-details/lattice-semiconductor-reports-record-3q26-revenue-118-yoy",
+    "https://www.sec.gov/Archives/edgar/data/855658/000143774926034452/ex_1012509.htm",
+    "https://go.ami.com/visit-lattice-and-ami-at-2026-ocp-global-summit"
+  ],
+  "word_count_approx": 513,
+  "internal_links": 5,
+  "featured": {
+    "id": 29560,
+    "width": 1200,
+    "height": 630,
+    "kind": "editorial rendering"
+  },
+  "media": [
+    {
+      "type": "youtube",
+      "id": "9j5Br58Kp98",
+      "title": "The Open Control Plane: From AI Racks to Autonomous Infrastructure",
+      "source": "official AMI 2026 OCP summit",
+      "live_iframe": true,
+      "playback": "not independently tested"
+    },
+    {
+      "type": "youtube",
+      "id": "TPBN5h0-5NY",
+      "title": "Forging an Open Control Plane for the AI Era",
+      "source": "official AMI 2026 OCP summit",
+      "live_iframe": true,
+      "playback": "not independently tested"
+    },
+    {
+      "type": "donation_qr",
+      "id": 24043
+    }
+  ],
+  "qa": {
+    "duplicate_search": "WordPress Lattice Semiconductor/Lattice FPGA/Lattice 118 searched; no Q3 2026 earnings duplicate",
+    "saved_markup": "pass",
+    "published_status": "pass",
+    "rendered_iframes": "pass",
+    "featured_assignment": "pass",
+    "footer_order": "pass",
+    "disclaimer": "We volunteer daily to ensure the information on this platform is Verifiably True. If you would like to support the research, please scan the QR code.",
+    "screenshot": "ready",
+    "screenshot_url": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fbitcoinversus.tech%2F2026%2F11%2F05%2Flattice-fpga-sales-90-percent-ai-server-revenue-q3-2026%2F?vpw=1200&vph=6000&w=1200&requeue=true",
+    "playback": "not independently verified",
+    "mobile_visual": "not independently verified",
+    "qr_scan": "not independently verified",
+    "social_embed": "none; original post ID not verified",
+    "next_steps": [
+      "Visually inspect desktop/mobile",
+      "Test both YouTube video playback",
+      "Scan QR",
+      "Check source social post for native embed"
+    ]
+  }
+}
