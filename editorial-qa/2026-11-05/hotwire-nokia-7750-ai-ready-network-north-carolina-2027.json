@@ -1,0 +1,157 @@
+{
+  "schema_version": "bitcoinversus.editorial-qa.v1",
+  "publication": {
+    "wordpress_id": 29498,
+    "title": "Hotwire Selects Nokia Routers for North Carolina AI Network",
+    "status": "publish",
+    "slug": "hotwire-nokia-7750-ai-ready-network-north-carolina-2027",
+    "canonical_url": "https://bitcoinversus.tech/2026/11/05/hotwire-nokia-7750-ai-ready-network-north-carolina-2027/",
+    "publication_date": "2026-11-05T03:06:02",
+    "categories": [
+      5812,
+      6,
+      27318186
+    ],
+    "featured_media_id": 29494
+  },
+  "article": {
+    "source_format": "Gutenberg",
+    "raw_content": "<!-- wp:paragraph -->\n<p>Nokia announced on <strong>November 4, 2026</strong>, that Hotwire Communications selected its networking equipment for a new IP network in <strong>North Carolina</strong>, with the system expected to go live in early 2027. The companies are preparing the regional broadband operator's infrastructure for increasing residential, enterprise and AI-related traffic. Nokia's <a href=\"https://www.nokia.com/newsroom/hotwire-communications-selects-nokia-to-build-an-ai-fabric-ready-network-in-north-carolina/\">announcement</a> describes the architecture as “AI-fabric-ready,” but the deployment is not yet operational.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The design centers on the <strong>Nokia 7750 Service Router</strong>, which combines IP packet routing with optical transport interfaces. Integrating functions that previously required separate network elements can shorten the path traffic crosses, simplify management and reduce the number of powered devices. Nokia and Hotwire expect lower latency and reduced cooling requirements; neither company disclosed measured before-and-after latency, energy savings, network capacity, contract value or individual deployment sites.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=RMnWTb2p-o8\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=RMnWTb2p-o8\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p><em>Nokia's April 2024 engineering overview explains how IP/optical convergence and coherent routing can reduce network layers. Video: Nokia; technical background, not footage of Hotwire's new network.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The new agreement follows a different Hotwire experiment. In October, Hotwire and Cisco reported an <a href=\"https://bitcoinversus.tech/2026/10/30/hotwire-cisco-800g-live-south-florida-fiber-test-2026/\">800G Ethernet demonstration across existing South Florida fiber</a>. That Florida test established transport capability on a specific route, whereas Nokia's North Carolina project concerns a broader routing architecture scheduled for future service. The companies have not said that Nokia equipment will replace Cisco equipment used in the trial.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The <a href=\"https://www.nokia.com/ip-networks/7750-service-router/\">7750 router family</a> supports various IP edge, backbone and data center gateway roles, with some configurations offering 400-gigabit and 800-gigabit Ethernet interfaces. Those product specifications describe available hardware options, not the port speeds or total throughput Hotwire has purchased. Optical transceivers, covered in BitcoinVersus.Tech's <a href=\"https://bitcoinversus.tech/2026/11/01/optical-transceivers-complete-guide-sfp-qsfp-fiber-links-800g/\">technical guide to SFP and QSFP links</a>, remain essential for converting electrical network signals into light carried over fiber.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29496,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/nokia-router-7750-rack-official.jpg\" alt=\"Nokia 7750 routers with blue fiber-optic patch cords in a network equipment rack\" class=\"wp-image-29496\" /><figcaption class=\"wp-element-caption\"><em>Nokia 7750 routers and fiber-optic connections. Product photograph: <a href=\"https://www.nokia.com/about-us/newsroom/media-resources/media-library/ip-routers/\">Nokia's official IP router media library</a>. The pictured rack is representative equipment, not Hotwire's planned installation.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>Nokia's strategy also reflects a broader convergence between packet switching and optical networking. Pluggable coherent optics can make IP-layer systems directly handle some long-distance lightwave connections, potentially reducing dedicated transponder layers. Such designs still depend on fiber quality, optical engineering, routing policy and monitoring. The planned Hotwire network is a distinct project from <a href=\"https://bitcoinversus.tech/2026/11/05/bluebird-fiber-tera-core-400g-backbone-800g-roadmap/\">Bluebird Fiber's 400G Tera-Core backbone expansion</a>, which targets capacity growth along established routes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=Bdo9ZM_H6F0\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=Bdo9ZM_H6F0\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p><em>Nokia's March 2023 explanation of router-based network security and the 7750 platform's encryption and DDoS capabilities. Video: Nokia; product background, not an audit of Hotwire's configuration.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Why does a regional operator need AI-ready transport? AI applications can add interactive and machine-to-machine traffic, creating stronger demands for responsive uploads and reliable connections. Yet AI traffic by itself does not establish that a redesigned router will accelerate every customer application. End-to-end performance also depends on last-mile links, cloud-server distance, congestion and application processing. Nokia has separately discussed <a href=\"https://bitcoinversus.tech/2026/10/05/networking-nokia-ai-ran-20-percent-spectral-efficiency/\">AI-assisted improvements to wireless network capacity</a>, a separate technology from Hotwire's fixed-network project.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Energy efficiency claims require comparable measurements under real loads. Removing hardware may reduce rack space, electrical consumption and cooling demand, but results depend on the number and model of devices removed, traffic volume and the replacement equipment's draw. A system that combines functions must also be evaluated for fault isolation, redundancy, software maintenance and recovery after failures. Nokia's security features do not, by themselves, verify the protection settings Hotwire will deploy.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Independent trade reporting by <a href=\"https://www.sdxcentral.com/news/nokia-to-hot-wire-ai-network-for-hotwire-communications/\">SDxCentral</a> likewise describes a future North Carolina rollout. The key next milestone is the targeted early-2027 activation, followed by published topology details, measured latency, availability, power use and customer service results. Until then, the announcement establishes a vendor selection and engineering plan rather than demonstrated network performance.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech original 5,000-satoshi donation QR code\" class=\"wp-image-24043\" /></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Disclaimer: BitcoinVersus.Tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->",
+    "word_count_body": 515,
+    "prohibited_terms": [],
+    "internal_links": [
+      "https://bitcoinversus.tech/2026/10/30/hotwire-cisco-800g-live-south-florida-fiber-test-2026/",
+      "https://bitcoinversus.tech/2026/11/01/optical-transceivers-complete-guide-sfp-qsfp-fiber-links-800g/",
+      "https://bitcoinversus.tech/2026/11/05/bluebird-fiber-tera-core-400g-backbone-800g-roadmap/",
+      "https://bitcoinversus.tech/2026/10/05/networking-nokia-ai-ran-20-percent-spectral-efficiency/"
+    ]
+  },
+  "sources": [
+    {
+      "role": "primary",
+      "date": "2026-11-04",
+      "url": "https://www.nokia.com/newsroom/hotwire-communications-selects-nokia-to-build-an-ai-fabric-ready-network-in-north-carolina/"
+    },
+    {
+      "role": "independent",
+      "date": "2026-11-04",
+      "url": "https://www.sdxcentral.com/news/nokia-to-hot-wire-ai-network-for-hotwire-communications/"
+    },
+    {
+      "role": "product_capabilities",
+      "url": "https://www.nokia.com/ip-networks/7750-service-router/"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Vendor selected for North Carolina next-generation IP network",
+      "classification": "announced vendor selection"
+    },
+    {
+      "claim": "Early 2027 go-live",
+      "classification": "future target, not operating"
+    },
+    {
+      "claim": "Improved latency and lower power/cooling",
+      "classification": "anticipated outcomes; no before/after measurements disclosed"
+    },
+    {
+      "claim": "Hotwire Cisco 800G test in South Florida",
+      "classification": "previous separate project; no replacement assertion"
+    },
+    {
+      "claim": "Network throughput / contract value",
+      "classification": "not disclosed"
+    },
+    {
+      "claim": "Up to 800GE products exist in 7750 family",
+      "classification": "product family option only; not claimed as deployed Hotwire hardware"
+    }
+  ],
+  "media": [
+    {
+      "id": 29494,
+      "role": "featured",
+      "type": "Nokia official press product photograph",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "alt_text": "Official Nokia 7750 SR-1 router equipment photograph showing the front panel and network ports",
+      "source_url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/nokia-hotwire-north-carolina-7750-router-cover-1200x630.jpg.png",
+      "not_actual_hotwire_installation": true
+    },
+    {
+      "id": "RMnWTb2p-o8",
+      "role": "in_body_youtube",
+      "title": "IP/Optical convergence: from technology to deployments",
+      "channel": "Nokia",
+      "date": "2024-04-16",
+      "url": "https://www.youtube.com/watch?v=RMnWTb2p-o8",
+      "saved_markup": "passed",
+      "rendered_iframe": "passed",
+      "playback": "not tested"
+    },
+    {
+      "id": 29496,
+      "role": "in_body_photo",
+      "description": "Official Nokia 7750 router rack",
+      "saved_markup": "passed",
+      "rendered_image": "passed",
+      "caption": "passed",
+      "not_actual_hotwire_installation": true
+    },
+    {
+      "id": "Bdo9ZM_H6F0",
+      "role": "in_body_youtube",
+      "title": "Nokia's unique, router-based approach to IP network security",
+      "channel": "Nokia",
+      "date": "2023-03-12",
+      "url": "https://www.youtube.com/watch?v=Bdo9ZM_H6F0",
+      "saved_markup": "passed",
+      "rendered_iframe": "passed",
+      "playback": "not tested"
+    },
+    {
+      "id": 24043,
+      "role": "donation_QR_footer",
+      "source_post_id": 29474,
+      "in_body": false,
+      "scannability": "not tested"
+    }
+  ],
+  "qa": {
+    "prepublish": {
+      "duplicate": "passed WordPress publish/future/draft Hotwire Nokia exact query",
+      "source_verification": "passed Nokia primary and SDxCentral report",
+      "word_count": 515,
+      "internal_links": "four confirmed published",
+      "media_count": 3,
+      "cover_dimensions": "1200x630",
+      "editorial_style": "official press product photo, separate from in-body photo",
+      "footer_copy": "original copied verbatim from published post 29474"
+    },
+    "postpublish": {
+      "status": "publish",
+      "saved_gutenberg": "two responsive providerNameSlug youtube embed blocks and Nokia photo confirmed",
+      "rendered_html_iframes": [
+        "https://www.youtube.com/embed/RMnWTb2p-o8",
+        "https://www.youtube.com/embed/Bdo9ZM_H6F0"
+      ],
+      "rendered_photo": true,
+      "original_QR": true,
+      "footer_order": "Editor's Note → original donation QR → donation instructions → original disclaimer",
+      "italic_footer": true,
+      "retired_X_ad": false,
+      "desktop_screenshot_capture": "ready (not visually inspected)",
+      "mobile_visual": "not performed",
+      "interactive_video_playback": "not performed",
+      "QR_scanning": "not performed",
+      "external_web_crawler": "unavailable; published WordPress public view succeeded"
+    },
+    "reused_success": "Native Gutenberg YouTube embed structure from prior two 2026-11-05 QA records, actual server-rendered iframe evidence",
+    "defects_found": "none in saved or public rendered markup",
+    "unresolved": "interactive playback, mobile layout inspection, QR optical scan",
+    "smallest_next_step": "Open public article on desktop and phone, play both videos, check no horizontal overflow, scan 5,000-satoshi QR, record results; repair and retest any failure"
+  }
+}
