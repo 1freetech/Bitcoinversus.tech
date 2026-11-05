@@ -1,0 +1,100 @@
+{
+  "schema_version": "bitcoinversus.editorial-qa.v1",
+  "publication": {
+    "id": 29441,
+    "title": "Google Brings Guided Learning to Classrooms Worldwide",
+    "url": "https://bitcoinversus.tech/2026/11/05/google-guided-learning-classroom-global-rollout-school-ai-controls-2026/",
+    "status": "publish",
+    "category_ids": [
+      12374,
+      6,
+      27318186
+    ],
+    "featured_media_id": 29435,
+    "slug": "google-guided-learning-classroom-global-rollout-school-ai-controls-2026"
+  },
+  "article": {
+    "format": "gutenberg-raw",
+    "content": "<!-- wp:paragraph -->\n<p>Google launched teacher-assigned Guided Learning in Google Classroom worldwide on November 3, 2026, giving educators an AI study assistant built around their course materials. The company simultaneously <a href=\"https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/\">announced plans to change access controls</a> for K–12 school accounts, requiring administrators to explicitly enable Gemini, Gemini Notebook, Gemini in Classroom and Google Search. Classroom's Guided Learning rollout is underway; a separate Search pilot is scheduled for selected U.S. schools later in November.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Guided Learning aims to coach students rather than immediately supply answers. The Gemini-based tool presents questions, explanations and follow-up exercises, while teachers can assign activities and review student progress. Google previously offered Guided Learning in the Gemini application, but classroom-wide teacher-directed availability marks a new stage. The development extends an AI education market covered in BitcoinVersus.Tech's <a href=\"https://bitcoinversus.tech/2026/09/30/10-major-tech-platforms-ai-learning-resources/\">survey of ten technology learning platforms</a>. Actual classroom use remains subject to school configuration and access policies.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=5-LZIUmzvrs\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=5-LZIUmzvrs\n</div></figure>\n<!-- /wp:embed -->\n<!-- wp:paragraph -->\n<p><em>Google for Education's September 2025 explanation of Guided Learning in Gemini, showing the earlier study-coaching approach. Video: Google for Education.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google's <a href=\"https://blog.google/products-and-platforms/products/education/guided-learning-uk-japan/\">research summary</a> describes a randomized trial involving more than 300 University of Tokyo students studying statistics for half a day. Students limited to standard web tools improved their test scores by 5.3 percentage points. Students also given Guided Learning improved by 8.1 percentage points. The difference was 2.8 percentage points, or approximately 53% greater improvement relative to the standard-tools group's gain. The figures measure changes during one study session, not permanent learning gains, and come from Google-reported research.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29436,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/google-guided-learning-research-photo.webp?w=1024\" alt=\"Students looking together at a laptop during a learning study\" class=\"wp-image-29436\" /><figcaption class=\"wp-element-caption\"><em>Students collaborate around a laptop in Google's November 3 report on Guided Learning research. Photo: <a href=\"https://blog.google/products-and-platforms/products/education/guided-learning-uk-japan/\">Google</a>.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>A separate four-week pilot involved three secondary schools in the United Kingdom across four subjects. Teachers reported that AI handled routine questions and left more time for individual assistance, while some students said they felt more comfortable requesting help. Those accounts are feedback, not proof of a comparable improvement in independent academic assessments. Hands-on instruction also remains important: an earlier BitcoinVersus.Tech report documented the <a href=\"https://bitcoinversus.tech/2026/10/31/university-of-michigan-shares-free-robotics-courses-on-github-and-youtube/\">University of Michigan's free robotics coursework</a>, which offers a different route to technical learning.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google's school-controls announcement introduces a difficult trade-off. K–12 account access to covered services is intended to default to off until a school administrator enables it. Because AI features are integrated into Search, schools choosing to reject Google's AI tools could also lose Google Search access for students, <a href=\"https://apnews.com/article/ai-schools-classroom-students-google-7ba4219e505db1c11d672f6eefe7155a\">the Associated Press reported</a>. Google has not specified an effective date for the new defaults. Privacy, academic independence and the choice of alternatives therefore remain practical issues, beyond the <a href=\"https://bitcoinversus.tech/2026/10/12/8-ai-assistants-ranked-for-privacy-2026/\">privacy differences among AI assistants</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=1F2WBC2a8gI\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=1F2WBC2a8gI\n</div></figure>\n<!-- /wp:embed -->\n<!-- wp:paragraph -->\n<p><em>Google for Education's March 2026 faculty video explains Guided Learning and guided feedback for student work. Video: Google for Education.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Schools must also decide what counts as useful assistance. Teachers need visibility into errors, inaccurate explanations, off-topic responses and whether students complete problems without prompting. Google says course-material grounding and educator insights address some concerns, but the available evidence cannot establish long-term effectiveness across ages, subjects and school systems. The same human-oversight question appears in <a href=\"https://bitcoinversus.tech/2026/11/02/google-antigravity-move-cars-ai-coding-agent-human-review-video-2026/\">AI-assisted software development</a>, where faster results still require independent review.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The next milestones are the planned November Google Search pilot, details of the K–12 administrator-control transition, and longer-term evaluations comparing actual learning outcomes. Google may expand Guided Learning as schools report results, although no universal adoption rate or future academic benefit has been established. More broadly, access to AI training, such as the <a href=\"https://bitcoinversus.tech/2026/10/06/stanford-free-roadmap-750000-ai-engineering-skillset-anthropic/\">public AI engineering training roadmap</a> highlighted by BitcoinVersus.Tech, illustrates why learning methods deserve scrutiny alongside faster tools.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech original 5,000-satoshi donation QR code\" class=\"wp-image-24043\" /></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Disclaimer: BitcoinVersus.Tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->",
+    "reported_body_word_count": 516,
+    "prohibited_terms_found": [],
+    "internal_link_count": 5
+  },
+  "sources": [
+    {
+      "type": "primary",
+      "url": "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/",
+      "date": "2026-11-03"
+    },
+    {
+      "type": "primary",
+      "url": "https://blog.google/products-and-platforms/products/education/guided-learning-uk-japan/",
+      "date": "2026-11-03"
+    },
+    {
+      "type": "secondary",
+      "url": "https://apnews.com/article/ai-schools-classroom-students-google-7ba4219e505db1c11d672f6eefe7155a",
+      "date": "2026-11-03"
+    }
+  ],
+  "media": [
+    {
+      "id": 29435,
+      "role": "featured",
+      "dimensions": "1200x630",
+      "alt_text_checked": true,
+      "in_body": false
+    },
+    {
+      "id": 29436,
+      "role": "in_body_source_photo",
+      "source": "Google",
+      "caption": true,
+      "alt_text_checked": true
+    },
+    {
+      "video_id": "5-LZIUmzvrs",
+      "title": "Guided Learning in Gemini | AI Playbook for Parents",
+      "channel": "Google for Education",
+      "source_date": "2025-09-25",
+      "embed_provider": "youtube",
+      "saved_markup": "verified",
+      "view_rendered_iframe": "verified",
+      "playback": "not_tested"
+    },
+    {
+      "video_id": "1F2WBC2a8gI",
+      "title": "Gemini Faculty Fundamentals: The \"Guided Feedback\" Guardrails using Gemini",
+      "channel": "Google for Education",
+      "source_date": "2026-03-02",
+      "embed_provider": "youtube",
+      "saved_markup": "verified",
+      "view_rendered_iframe": "verified",
+      "playback": "not_tested"
+    },
+    {
+      "id": 24043,
+      "role": "footer_donation_qr",
+      "source": "previous_approved_wordpress_article",
+      "in_body": false
+    }
+  ],
+  "qa": {
+    "duplicate_checks": "WordPress published/scheduled/draft query for Google Classroom and Guided Learning, no topical duplicate found",
+    "gutenberg_saved_markup": "passed",
+    "server_rendered_html_contains_iframe_srcs": [
+      "https://www.youtube.com/embed/5-LZIUmzvrs",
+      "https://www.youtube.com/embed/1F2WBC2a8gI"
+    ],
+    "google_photo_rendered": "passed",
+    "footer_order_and_original_qr": "passed",
+    "featured_cover_exact_dimensions": "passed",
+    "public_site_screenshot_capture_status": "ready",
+    "browser_playback_interaction": "not_performed",
+    "mobile_viewport_visual_check": "not_performed",
+    "qr_scannability": "not_performed",
+    "public_web_crawler_page_access": "unavailable",
+    "release_state": "published_with_open_quality_checks",
+    "next_step": "Open live article in desktop and mobile browsers, play both videos, verify QR scanning and mobile layout. If any fail, FIX → RETEST → REPLACE → REMAKE."
+  }
+}
