@@ -1,0 +1,186 @@
+{
+  "schema_version": "bitcoinversus.editorial-qa.v1",
+  "publication": {
+    "id": 29622,
+    "title": "Energix Brings 152 MW Ohio Solar Farm Online With Stem Controls",
+    "url": "https://bitcoinversus.tech/2026/11/05/energix-border-basin-ohio-152-mwdc-solar-120-mwac-stem-powertrack-2026/",
+    "status": "publish",
+    "date": "2026-11-05T04:47:44",
+    "slug": "energix-border-basin-ohio-152-mwdc-solar-120-mwac-stem-powertrack-2026",
+    "category_ids": [
+      1212,
+      109347,
+      6,
+      27318186
+    ],
+    "featured_media_id": 29620
+  },
+  "article": {
+    "raw_gutenberg": "<!-- wp:paragraph -->\n<p>Energix US has brought its <strong>Border Basin Solar</strong> facility in Hancock County, Ohio, into operation, adding <strong>152 megawatts of direct-current solar panels and 120 megawatts of alternating-current capacity</strong> to the PJM electricity market. Stem confirmed the commissioning in a <a href=\"https://investors.stem.com/news-events/press-releases/detail/219/energix-us-brings-152-mwdc-border-basin-solar-project-online-with-stems-powertrack-platform\">November 3, 2026 announcement</a>, identifying its PowerTrack platform as the plant's control and monitoring system. The project is operational, rather than another proposed capacity addition.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>How does utility-scale solar work?</strong> Photovoltaic modules turn sunlight into direct-current electricity. Inverters convert the output into alternating current suitable for transmission and grid use. A plant controller coordinates the inverters, follows grid-operator instructions and monitors power quality, while a supervisory control and data acquisition system, or SCADA, collects equipment measurements and alarms. Those controls matter because large solar sites must operate as coordinated power stations, not merely collections of panels.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29621,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/border-basin-official-site-boundaries-map.png?w=900\" alt=\"Aerial parcel map of the Border Basin Solar development area in Hancock County, Ohio\" class=\"wp-image-29621\" /><figcaption class=\"wp-element-caption\"><em>Parcel boundaries and surrounding farmland for Border Basin Solar, as published by the <a href='https://www.borderbasin.com/'>official project information website</a>. Geographic context, not a current aerial photograph of installed solar panels.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>Border Basin's <strong>152 MWdc / 120 MWac</strong> ratings imply a DC-to-AC capacity ratio of approximately <strong>1.27</strong>. Developers commonly install more panel nameplate capacity than inverter output capacity to improve utilization during lower-irradiance hours. Under strong sun, conversion limits can constrain instantaneous AC output, a behavior called clipping. Neither rating represents an observed daily energy yield: actual electricity generation is measured in megawatt-hours and varies with weather, availability and curtailment. BitcoinVersus.Tech previously documented <a href=\"https://bitcoinversus.tech/2026/11/03/solar-leads-renewable-energy-capacity-growth-2000-2025/\">long-term renewable capacity growth</a>, where the same distinction applies.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Stem's contribution included engineering, panel-shop preparation, factory acceptance testing, field commissioning, utility witness testing and operator handoff. At the operational site, PowerTrack integrates plant controls, local SCADA, communications equipment, weather stations and a connection to PJM's network. Cloud software adds performance reports, notifications, analytics and remote backup. The release does not quantify a reduction in operating costs or provide independently measured increases in solar output attributable to the software.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29619,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/stem-powertrack-official-product-demonstration-dashboard.jpg?w=900\" alt=\"Stem PowerTrack product demonstration dashboard showing PV production charts and equipment monitoring on a laptop\" class=\"wp-image-29619\" /><figcaption class=\"wp-element-caption\"><em>Stem's PowerTrack monitoring interface shown in a product demonstration. Source: <a href='https://www.linkedin.com/company/stem-inc'>Stem's official company page</a>. The displayed Aurora demonstration data are not Border Basin's operational readings.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>The plant also illustrates why software-driven controls have become part of renewable infrastructure. Weather readings can be compared with electrical output to flag equipment behavior, while control signals help operators stay within grid requirements. Yet remote monitoring introduces cybersecurity, data-quality and communications-dependency considerations. Comparable monitoring principles appear in BitcoinVersus.Tech's <a href=\"https://bitcoinversus.tech/2026/10/07/networking-what-is-snmp-bitcoin-mining-switch-pdu-monitoring/\">guide to networking, switches and power-distribution monitoring</a>; the report does not claim Border Basin specifically uses SNMP.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Energix says its operational U.S. portfolio in the PJM market now exceeds <strong>1 gigawatt</strong> after the Border Basin milestone. That company-reported portfolio figure is distinct from the output of the single Ohio facility. The development occurs as grid operators consider rising demand from large industrial and computing loads. BitcoinVersus.Tech has reported on <a href=\"https://bitcoinversus.tech/2026/10/13/ferc-approves-pjm-data-center-registry-rejects-curtailment-plan/\">PJM's data-center connection and reliability rules</a> and why <a href=\"https://bitcoinversus.tech/2026/11/03/solar-power-construction-grid-lead-times-ai-2030/\">new power lines can take longer than renewable projects</a> to complete.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Solar energy's variable output also shapes decisions about storage. A battery can shift electricity from sunny periods to later demand, but Stem's November announcement does not identify an operating battery at Border Basin. Storage additions elsewhere are documented in BitcoinVersus.Tech's review of <a href=\"https://bitcoinversus.tech/2026/11/03/us-solar-farms-add-batteries-2026/\">U.S. solar-plus-battery development</a>. The absence of disclosed battery specifications prevents claims about Border Basin's nighttime delivery capability.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The next meaningful evidence will be recorded energy production, capacity factors, grid curtailment, equipment availability and operating costs over successive seasons. Independently published operating data would also clarify whether the site's control and analytics stack delivers measurable improvements. For now, Energix has confirmed a completed generation asset, while Stem has documented the software and hardware infrastructure used to manage its performance.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech original 5,000-satoshi donation QR code\" class=\"wp-image-24043\" /></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Disclaimer: BitcoinVersus.Tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->",
+    "editorial_word_count": 542,
+    "background_after_news_lead": true,
+    "prohibited_original_editorial_words": [],
+    "internal_links": [
+      "https://bitcoinversus.tech/2026/11/03/solar-leads-renewable-energy-capacity-growth-2000-2025/",
+      "https://bitcoinversus.tech/2026/10/07/networking-what-is-snmp-bitcoin-mining-switch-pdu-monitoring/",
+      "https://bitcoinversus.tech/2026/10/13/ferc-approves-pjm-data-center-registry-rejects-curtailment-plan/",
+      "https://bitcoinversus.tech/2026/11/03/solar-power-construction-grid-lead-times-ai-2030/",
+      "https://bitcoinversus.tech/2026/11/03/us-solar-farms-add-batteries-2026/"
+    ]
+  },
+  "sources": [
+    {
+      "role": "primary: Stem and Energix operational announcement",
+      "date": "2026-11-03",
+      "url": "https://investors.stem.com/news-events/press-releases/detail/219/energix-us-brings-152-mwdc-border-basin-solar-project-online-with-stems-powertrack-platform"
+    },
+    {
+      "role": "independent contemporaneous reporting",
+      "date": "2026-11-04",
+      "url": "https://finance.yahoo.com/news/energix-commissions-152mwdc-border-basin-114051523.html"
+    },
+    {
+      "role": "site project map and representative solar imagery",
+      "url": "https://www.borderbasin.com/"
+    },
+    {
+      "role": "Stem PowerTrack technical details",
+      "url": "https://www.stem.com/products/powertrack-suite/powertrack-software/"
+    },
+    {
+      "role": "US EIA prior construction status: July 2026",
+      "url": "https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=table_6_05"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Border Basin Solar is operational in Hancock County Ohio and delivers to PJM",
+      "classification": "company confirmed commissioning November 2026"
+    },
+    {
+      "claim": "PV panel capacity",
+      "value": 152,
+      "unit": "MWdc",
+      "classification": "nameplate DC rating; not AC exported power"
+    },
+    {
+      "claim": "Grid-side inverter capacity",
+      "value": 120,
+      "unit": "MWac",
+      "classification": "nameplate AC rating; not annual energy generation"
+    },
+    {
+      "claim": "DC/AC ratio",
+      "value": 1.2666666666666666,
+      "rounded": 1.27,
+      "unit": "ratio",
+      "formula": "152 MWdc / 120 MWac",
+      "classification": "calculated from source ratings"
+    },
+    {
+      "claim": "Energy delivered",
+      "unit": "MWh",
+      "classification": "not disclosed; do not invent capacity factor"
+    },
+    {
+      "claim": "PowerTrack systems",
+      "classification": "company says operational plant control, local SCADA, weather sensors, PJMnet integration, analytics and reporting"
+    },
+    {
+      "claim": "Energix PJM portfolio",
+      "value": "more than 1 GW",
+      "classification": "company-reported operational U.S. portfolio, not this project"
+    },
+    {
+      "claim": "Battery storage at Border Basin",
+      "classification": "none documented in this release; no battery output asserted"
+    },
+    {
+      "claim": "Stem software improved efficiency or annual generation",
+      "classification": "not measured or independently disclosed"
+    }
+  ],
+  "media": [
+    {
+      "role": "featured_cover",
+      "id": 29620,
+      "width": 1200,
+      "height": 630,
+      "src": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/energix-border-basin-ohio-solar-cover-1200x630-1.jpg",
+      "alt_text": "Rows of ground-mounted photovoltaic panels in grass under warm clouds, illustrative image from the Border Basin project website",
+      "description": "Photographic solar array sourced via Border Basin official project site and clearly labeled illustrative stock imagery rather than actual completed plant",
+      "original_photo_id": 29618,
+      "wordpress_featured_assigned": true,
+      "in_body": false
+    },
+    {
+      "role": "in_body",
+      "id": 29621,
+      "description": "Project boundary map from official Border Basin website",
+      "source_url": "https://www.borderbasin.com/",
+      "type": "geographic source graphic",
+      "caption": "verified saved and public rendered HTML",
+      "alt_text_present": true
+    },
+    {
+      "role": "in_body",
+      "id": 29619,
+      "description": "Stem official PowerTrack demonstration interface for unrelated Aurora sample site",
+      "source_url": "https://www.linkedin.com/company/stem-inc",
+      "type": "product UI screenshot",
+      "caption": "verified saved and public rendered HTML, clearly not claimed as Border Basin live data",
+      "alt_text_present": true
+    },
+    {
+      "role": "original_footer_donation_QR",
+      "id": 24043,
+      "source_post_id": 29614,
+      "present_in_saved_and_rendered_content": true,
+      "scan": "not performed",
+      "in_body": false
+    }
+  ],
+  "qa": {
+    "duplicate_review": "WordPress published, draft and scheduled searches for Energix and Border Basin Solar; no duplicate article found",
+    "prepublication": {
+      "category_rotation": "Renewable Energy / Solar Energy after Nuclear Energy",
+      "correct_categories": [
+        1212,
+        109347,
+        6,
+        27318186
+      ],
+      "words": 542,
+      "prohibited_terms": 0,
+      "verified_internal_links": 5,
+      "media_items": 2,
+      "cover_dimensions": "1200x630",
+      "real_video_embeds": "none; did not invent video IDs",
+      "footer_source": "exact approved Gutenberg footer from published post 29614"
+    },
+    "postpublication": {
+      "wordpress_status": "publish",
+      "saved_gutenberg_markup": "passed",
+      "public_wordpress_view_rendered_HTML": "passed",
+      "photos": "2 source images plus original QR rendered",
+      "cover_attached_exact_dimensions": "passed 1200x630",
+      "technology_background_position": "passed after lead",
+      "footer_saved_order": "passed Editor's Note → original QR → donation instructions → disclaimer",
+      "footer_italics": "passed in saved Gutenberg",
+      "retired_x_ad": "absent",
+      "screenshot_capture": "ready but not visually inspected",
+      "desktop_layout_visual": "not performed",
+      "mobile_layout_visual": "not performed",
+      "physical_qr_scan": "not performed",
+      "video_playback": "not applicable: no video"
+    },
+    "defects_found": [],
+    "open_quality_gates": [
+      "desktop and mobile visual layout review",
+      "QR optical scan"
+    ],
+    "previous_repair_comparison": "Reused verified Gutenberg image and footer patterns; no unsupported YouTube URL substituted.",
+    "smallest_next_step": "Open the live post in desktop and mobile browsers, confirm source imagery, text spacing and cover, scan donation QR; repair only if a defect is observed.",
+    "release_state": "published, visual and QR interactive QA incomplete"
+  }
+}
