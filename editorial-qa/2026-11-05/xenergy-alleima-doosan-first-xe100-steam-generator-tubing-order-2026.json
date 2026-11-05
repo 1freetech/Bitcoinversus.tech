@@ -1,0 +1,174 @@
+{
+  "schema_version": "bitcoinversus.editorial-qa.v1",
+  "publication": {
+    "post_id": 29614,
+    "title": "X-energy Orders First Steam Generator Tubing for Xe-100",
+    "status": "publish",
+    "slug": "xenergy-alleima-doosan-first-xe100-steam-generator-tubing-order-2026",
+    "url": "https://bitcoinversus.tech/2026/11/05/xenergy-alleima-doosan-first-xe100-steam-generator-tubing-order-2026/",
+    "date": "2026-11-05T04:35:46",
+    "categories": [
+      1212,
+      142118,
+      6,
+      27318186
+    ],
+    "featured_media_id": 29609
+  },
+  "article": {
+    "raw_gutenberg": "<!-- wp:paragraph -->\n<p>X-energy, Sweden's Alleima and South Korea's Doosan Enerbility announced on <strong>November 4, 2026</strong>, the first procurement order for steam-generator tubing intended for the <strong>Xe-100 advanced nuclear reactor</strong>. Alleima will supply specialized steel tubes, and Doosan will form the material into helical coils. The order supports a proposed four-reactor project with Dow in Texas, according to <a href=\"https://x-energy.com/news/x-energy-alleima-doosan-enerbility-execute-first-order-for-nuclear-industrial-steam-generator-components/\">X-energy's announcement</a>. It confirms supply-chain procurement, not delivery of finished coils or construction of an operating nuclear plant.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>What is an Xe-100 reactor?</strong> The Xe-100 is a small modular, high-temperature gas-cooled nuclear reactor. Unlike conventional light-water designs, it circulates helium through a core containing fuel pebbles made with coated TRISO particles. Hot helium passes through a separate steam generator, transferring heat across metal tubes into water that becomes steam for power generation or industrial processes. The proposed design targets roughly <strong>80 megawatts of electric output per reactor</strong>, or 320 MW across four units; those figures are design capacity, not electricity being generated today.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=m_UaV8Gu48E\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=m_UaV8Gu48E\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p><em>X-energy's 2023 official technology overview explains the planned Xe-100 helium-cooled reactor and TRISO fuel concept. The presentation predates the 2026 tubing order and does not show a completed Dow plant.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The new tubing order focuses on a crucial heat-transfer interface. Alleima specializes in corrosion-resistant steels and high-temperature alloys; Doosan plans to bend its tubes into closely spaced helical coils for the Xe-100 steam generator. X-energy says the proposed assembly is designed to produce steam at temperatures up to <strong>565°C</strong>. That temperature is a design specification, not a measured result from the unfinished Dow installation. Engineering requirements include thermal expansion, material integrity, weld quality and inspection.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29608,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/xenergy-xe100-reactor-cutaway-official.jpg?w=1024\" alt=\"Official Xe-100 cutaway diagram showing the helium-cooled reactor and connecting steam generator\" class=\"wp-image-29608\" /><figcaption class=\"wp-element-caption\"><em>X-energy's engineering cutaway illustrates the proposed reactor and steam generator arrangement. Image: <a href='https://x-energy.com/media/news-releases/x-energy-awarded-80-million-department-of-energy-advanced-reactor-demonstration-program-ardp'>X-energy</a>; design illustration, not constructed equipment.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>The project has a substantial manufacturing history. X-energy and Doosan began technical work in 2021 and reserved capacity in December 2025 for 16 sets of reactor and steam-generator pressure vessels. The new purchase adds a specific internal component order to that earlier agreement. Alleima opened its Tube Mill 2026 in Sandviken, Sweden, in June, expanding a supply chain that serves established reactors and emerging SMR programs. Doosan previously worked with NuScale, as BitcoinVersus.Tech reported when <a href=\"https://bitcoinversus.tech/2026/11/01/nuscale-doosan-smr-upper-reactor-coolant-system-manufacturing-2026/\">the companies started another SMR component</a>; those components belong to a different reactor design.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29610,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/alleima-tube-mill-2026-opening-factory.jpg?w=1024\" alt=\"Alleima Tube Mill 2026 factory interior with overhead crane and inauguration attendees\" class=\"wp-image-29610\" /><figcaption class=\"wp-element-caption\"><em>Alleima's June 2026 inauguration of Tube Mill 2026 in Sandviken, Sweden. Photo: <a href='https://www.alleima.com/en/news-media/archive/2026/06/alleima-responds-to-growing-global-demand-for-nuclear-power--inaugurates-tube-mill-2026-in-sandviken/'>Alleima</a>; facility history, not the finished Xe-100 order.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>X-energy's first proposed U.S. installation, the Long Mott Generating Station at Dow's Seadrift-area industrial complex, remains in licensing and project development. On October 30, the company announced completion of the Nuclear Regulatory Commission staff's final safety evaluation. A completed safety review is important but <a href=\"https://x-energy.com/news/nrc-completes-landmark-safety-review-of-x-energys-xe-100-smr/\">does not itself issue a construction permit</a>. The project still requires regulatory approvals, commercial decisions, construction, commissioning and fuel supply before any operating output can be verified.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Small reactors could supply high-temperature process heat without the combustion emissions associated with conventional industrial boilers. The value of placing generation near a major industrial heat load is one reason developers are exploring SMRs beyond electric grids. BitcoinVersus.Tech's earlier <a href=\"https://bitcoinversus.tech/2026/10/06/can-small-modular-reactors-power-data-centers-or-nah/\">SMR feasibility analysis</a> examined related costs and deployment questions, while <a href=\"https://bitcoinversus.tech/2026/10/24/aep-x-energy-amazon-960-mw-indiana-nuclear-breed-2026/\">X-energy's proposed 960 MW Indiana project</a> illustrates a separate, earlier-stage agreement. Neither project represents an operating Xe-100 fleet.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Supply-chain reservations and component orders help developers address long manufacturing lead times, but they cannot eliminate construction risk. Tube qualification, nuclear quality assurance, reactor permitting, project finance and integration testing can still change schedules or costs. X-energy has not disclosed the contract's dollar value or a delivery date for finished coils. Broader nuclear expansion also includes conventional uprates, such as the <a href=\"https://bitcoinversus.tech/2026/10/28/doe-5-billion-constellation-nuclear-uprates-illinois-maryland-pennsylvania-2026/\">DOE-backed Constellation modernization plan</a>, which operates on a different technology path.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The next milestones are manufactured and inspected tubing, completed helical-coil assemblies, a formal construction authorization and an updated schedule for Dow's first four units. Until those steps are documented, the November 4 announcement should be understood as a concrete procurement achievement for a reactor design still moving toward commercial deployment.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech original 5,000-satoshi donation QR code\" class=\"wp-image-24043\" /></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Disclaimer: BitcoinVersus.Tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->",
+    "body_word_count": 582,
+    "prohibited_words_found": [],
+    "background_paragraph": "What is an Xe-100 reactor? placed after verified lead",
+    "internal_links": [
+      "https://bitcoinversus.tech/2026/11/01/nuscale-doosan-smr-upper-reactor-coolant-system-manufacturing-2026/",
+      "https://bitcoinversus.tech/2026/10/06/can-small-modular-reactors-power-data-centers-or-nah/",
+      "https://bitcoinversus.tech/2026/10/24/aep-x-energy-amazon-960-mw-indiana-nuclear-breed-2026/",
+      "https://bitcoinversus.tech/2026/10/28/doe-5-billion-constellation-nuclear-uprates-illinois-maryland-pennsylvania-2026/"
+    ]
+  },
+  "source_inventory": [
+    {
+      "role": "primary November 4 procurement",
+      "date": "2026-11-04",
+      "url": "https://x-energy.com/news/x-energy-alleima-doosan-enerbility-execute-first-order-for-nuclear-industrial-steam-generator-components/"
+    },
+    {
+      "role": "primary supplier confirmation",
+      "date": "2026-11-04",
+      "url": "https://news.cision.com/alleima/r/alleima-reaches-milestone---receives-first-order-for-next-generation-nuclear-reactor-tubing,c4419542"
+    },
+    {
+      "role": "primary December 2025 reservations",
+      "date": "2025-12-18",
+      "url": "https://x-energy.com/news/x-energy-doosan-enerbility-announce-16-unit-reservation-agreement-and-capacity-expansion-to-support-11-gw-pipeline/"
+    },
+    {
+      "role": "primary permitting context",
+      "date": "2026-10-30",
+      "url": "https://x-energy.com/news/nrc-completes-landmark-safety-review-of-x-energys-xe-100-smr/"
+    },
+    {
+      "role": "independent reporting",
+      "date": "2026-11-04",
+      "url": "https://econotimes.com/Doosan-Orders-Xe-100-Tubing-for-X-energy-s-Proposed-Texas-Reactor-Project-1770892"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Xe-100 steam generator tubing first order",
+      "classification": "procured, not yet verified manufactured or installed"
+    },
+    {
+      "claim": "Alleima supplies high-temperature steel tubing, Doosan fabricates helical coils",
+      "classification": "announced manufacturing work division"
+    },
+    {
+      "claim": "Target steam temperature up to 565°C",
+      "classification": "design target, not measured commercial output"
+    },
+    {
+      "claim": "Xe-100 planned output 80 MWe each, 4 units",
+      "value": 320,
+      "unit": "MWe",
+      "calculation": "4 x 80 = 320 MWe",
+      "classification": "planned nominal capacity, not operational generation"
+    },
+    {
+      "claim": "2025 reservation 16 sets",
+      "classification": "manufacturing capacity reserved, not 16 units produced"
+    },
+    {
+      "claim": "NRC staff final safety evaluation complete",
+      "classification": "review finished, not construction license granted"
+    },
+    {
+      "claim": "financial order value or manufacturing completion date",
+      "classification": "not disclosed"
+    }
+  ],
+  "media": [
+    {
+      "role": "featured",
+      "id": 29609,
+      "source": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/xenergy-alleima-doosan-steam-generator-tubing-cover-1200x630-1.jpg",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "alt": "Authentic Alleima steam generator steel tubing arranged in close, curved parallel rows",
+      "attribution": "Official Alleima representative steam generator tubing photograph",
+      "not_specific_2026_batch": true,
+      "assignment_verified": true
+    },
+    {
+      "role": "inbody_video",
+      "video_id": "m_UaV8Gu48E",
+      "canonical_watch_url": "https://www.youtube.com/watch?v=m_UaV8Gu48E",
+      "title": "Technology Overview: A Deep Dive into X-energy's Advanced Reactors",
+      "channel": "X-energy",
+      "video_date": "2023-09-06",
+      "saved_gutenberg": "passed",
+      "rendered_iframe": "https://www.youtube.com/embed/m_UaV8Gu48E",
+      "actual_playback": "not tested",
+      "mobile_responsive_visual": "not tested",
+      "context": "historical design explainer, not 2026 supplier footage"
+    },
+    {
+      "role": "inbody_image",
+      "id": 29608,
+      "title": "X-energy Xe-100 reactor cutaway",
+      "official": "X-energy",
+      "saved_markup": "passed",
+      "rendered_img": "passed",
+      "caption": "passed",
+      "design_only": true
+    },
+    {
+      "role": "inbody_image",
+      "id": 29610,
+      "title": "Alleima Tube Mill 2026 factory opening",
+      "official": "Alleima",
+      "saved_markup": "passed",
+      "rendered_img": "passed",
+      "caption": "passed",
+      "historical_not_specific_tubing": true
+    },
+    {
+      "role": "donation_footer",
+      "id": 24043,
+      "original_source_post_id": 29596,
+      "present_saved_and_rendered": true,
+      "scan": "not tested"
+    }
+  ],
+  "qa": {
+    "duplicate": "WordPress published/draft/future searches Alleima, Xe-100 tubing, X-energy and Doosan steam returned no matching story",
+    "category_rotation": "Energy / Nuclear Energy after Robotics; IDs 1212 and 142118",
+    "prepublication": "passed 582 words, four confirmed internal links, 3 inbody media, verified original footer source, exact 1200x630 real company cover",
+    "postpublication": {
+      "wordpress_status": "publish",
+      "saved_markup": "passed",
+      "rendered_wordpress_view": "passed",
+      "youtube_iframe": "/embed/m_UaV8Gu48E verified server-side",
+      "image_tags": "2 credited images + QR rendered",
+      "featured_assignment": "passed",
+      "cover_dimensions": "1200x630",
+      "footer_order": "passed Editor Note, original QR, donation instructions, financial disclaimer",
+      "retired_x_ad": "absent",
+      "desktop_screenshot": "capture link available, visual inspection not performed",
+      "mobile_visual": "not performed",
+      "video_playback": "not performed",
+      "qr_scan": "not performed"
+    },
+    "defects_detected": [],
+    "reuse": "Responsive native Gutenberg youtube embed pattern used in prior published stories; actual iframe created. Original footer copied from published post, no decorative boxes.",
+    "open_checks": [
+      "browser video playback and embedding permission confirmation",
+      "mobile layout inspection",
+      "QR optical scan"
+    ],
+    "smallest_next_step": "Open article on desktop and phone, play X-energy video, visually inspect both images and cover, scan donation QR, log actual results. Repair any detected problem.",
+    "final_status": "published; interactive QA incomplete"
+  }
+}
