@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29625,
+  "wordpress_status": "publish",
+  "public_url": "https://bitcoinversus.tech/2026/11/05/vertiv-infineon-three-year-sic-silicon-ai-power-chip-supply-2026/",
+  "title": "Vertiv Signs Three-Year Infineon Supply Deal for AI Power Chips",
+  "publication_date": "2026-11-05T04:52:10",
+  "source_archive_path": "archive/2026/11/29625-vertiv-infineon-three-year-sic-silicon-ai-power-chip-supply-2026.gutenberg.html",
+  "source_exact_match": true,
+  "source_blob_sha": "8a6b29efb0fdeb686ec650bd3e4429bb22b43504",
+  "category_ids": [
+    5177360,
+    233999,
+    284207,
+    27318186
+  ],
+  "editorial_type": "current semiconductor and critical-power supply news",
+  "fact_check": {
+    "primary_release": {
+      "url": "https://www.vertiv.com/en-anz/about/news-and-events/news-releases/2026/vertiv-and-infineon-deepen-strategic-partnership-for-critical-power-infrastructure/",
+      "date": "2026-11-04",
+      "company": "Vertiv"
+    },
+    "independent_confirmations": [
+      {
+        "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70034810-vertiv-infineon-sign-three-year-semiconductor-supply-agreement-020.htm",
+        "date": "2026-11-04",
+        "source": "dpa-AFX"
+      },
+      {
+        "url": "https://www.rttnews.com/3709677/vertiv-stock-falls-12-after-semiconductor-supply-agreement-with-infineon.aspx?type=corp",
+        "date": "2026-11-04",
+        "source": "RTTNews"
+      }
+    ],
+    "verified": {
+      "term_years": 3,
+      "technology": [
+        "Si",
+        "SiC",
+        "IGBT"
+      ],
+      "applications": [
+        "data center power",
+        "communication network electrical infrastructure",
+        "commercial and industrial power"
+      ],
+      "ai_power_architecture": "800 V DC",
+      "contract_financial_terms": "undisclosed",
+      "component_quantities": "undisclosed"
+    },
+    "technical_context": {
+      "illustrative_dc_load_kW": 100,
+      "illustrative_current_A_800V": 125,
+      "illustrative_current_A_54V": 1851.85,
+      "excludes_losses_and_voltage_drop": true
+    },
+    "not_confirmed": [
+      "Contract is exclusive",
+      "Vertiv product bill of materials",
+      "Actual efficiency improvements",
+      "Firm delivery volumes",
+      "Operating 800 V DC site deployment caused by agreement"
+    ]
+  },
+  "media": [
+    {
+      "role": "featured",
+      "wordpress_media_id": 29623,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "original_editorial_image": true,
+      "actual_product_photo": false
+    },
+    {
+      "role": "in_body_diagram",
+      "wordpress_media_id": 29624,
+      "dimensions": [
+        1200,
+        675
+      ],
+      "conceptual_not_as_built": true
+    },
+    {
+      "role": "in_body_video",
+      "youtube_id": "WR89JOwnf_Y",
+      "channel": "Vertiv",
+      "title": "The 800 VDC shift starts at the rack",
+      "url": "https://www.youtube.com/watch?v=WR89JOwnf_Y",
+      "published": "2026-07-22",
+      "saved_native_embed": true,
+      "wp_iframe_rendered": true,
+      "actual_playback_verified": false
+    },
+    {
+      "role": "in_body_video",
+      "youtube_id": "SMkAzpD9pR4",
+      "channel": "Infineon Technologies",
+      "title": "No AI Without Power: Inside Infineon's AI Infrastructure Revolution",
+      "url": "https://www.youtube.com/watch?v=SMkAzpD9pR4",
+      "published": "2026-07-07",
+      "saved_native_embed": true,
+      "wp_iframe_rendered": true,
+      "actual_playback_verified": false
+    }
+  ],
+  "gutenberg_checks": {
+    "saved_markup_fetched": true,
+    "live_rest_render_fetched": true,
+    "youtube_iframes_count": 2,
+    "in_body_media_count": 3,
+    "internal_links": 6,
+    "original_qr_media_id": 24043,
+    "original_qr_rendered": true,
+    "editors_note_saved": true,
+    "volunteer_disclaimer_rendered": true,
+    "financial_disclaimer_rendered": true,
+    "boxed_code_or_text": false
+  },
+  "public_site_screenshot": {
+    "provider": "WordPress mshots",
+    "status": "ready",
+    "capture_shows": "site",
+    "viewport_width": 1200,
+    "viewport_height": 5000,
+    "visual_pixels_manually_inspected": false
+  },
+  "qa_status": "published_unverified",
+  "open_checks": [
+    "Independent YouTube player playback on desktop",
+    "Independent YouTube player playback on mobile",
+    "Manual image screenshot inspection for desktop/mobile overflow",
+    "Verify QR actual scannability with external wallet"
+  ],
+  "smallest_next_step": "Open the live article in a graphical browser on phone and desktop, confirm each YouTube plays, caption and diagrams are legible, and donation QR can be scanned."
+}
