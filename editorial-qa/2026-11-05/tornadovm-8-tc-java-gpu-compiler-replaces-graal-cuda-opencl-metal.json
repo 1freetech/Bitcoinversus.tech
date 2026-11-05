@@ -1,0 +1,198 @@
+{
+  "schema_version": "bitcoinversus.editorial-qa.v1",
+  "publication": {
+    "id": 29553,
+    "title": "TornadoVM 8 Replaces Graal With a Java GPU Compiler",
+    "canonical_url": "https://bitcoinversus.tech/2026/11/05/tornadovm-8-tc-java-gpu-compiler-replaces-graal-cuda-opencl-metal/",
+    "date": "2026-11-05T03:48:07",
+    "status": "publish",
+    "slug": "tornadovm-8-tc-java-gpu-compiler-replaces-graal-cuda-opencl-metal",
+    "categories": [
+      44329,
+      5812,
+      6,
+      27318186
+    ],
+    "featured_media_id": 29540
+  },
+  "article": {
+    "format": "serialized Gutenberg",
+    "raw_content": "<!-- wp:paragraph -->\n<p>The TornadoVM team released <strong>TornadoVM 8.0.0 on October 26, 2026</strong>, replacing a decade-old Graal-based compiler with TC, a pure-Java compiler for GPU workloads. The team explained the change in its <a href=\"https://www.tornadovm.org/blogs/tornadovm-8-0-0-tc-tornadovm-compiler\">October 27 technical announcement</a>, describing output targeting NVIDIA CUDA C++, OpenCL C and Apple Metal Shading Language. TornadoVM remains a Java accelerator framework rather than an alternative Java language or standalone GPU driver.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Application interfaces such as TaskGraph, TornadoExecutionPlan, KernelContext and the @Parallel and @Reduce annotations remain supported. Developers can keep their existing Java kernels while the runtime builds code for supported GPUs. Readers can revisit the <a href=\"https://bitcoinversus.tech/2026/10/08/osjava-001-what-is-java-source-code-bytecode-jvm-jdk-first-program/\">Java source, bytecode and JVM fundamentals</a> to understand where a GPU compiler enters the execution pipeline.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=oRVtTEbtt_Y\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=oRVtTEbtt_Y\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p><em>Devoxx hosts Christos Kotselidis and Mary Xekalaki explaining how Java applications use TornadoVM for GPU acceleration. Recorded March 2026, before TC shipped.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The compiler now parses Java class files directly, constructs an intermediate representation using static single assignment, runs optimization passes and emits target-specific source code. Project maintainers say the removal of Graal and JVMCI simplifies JDK support and tooling. The main compiler replacement touched 1,218 files, with 40,166 lines added and 119,699 removed, according to their development record.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Regression tests show measurable but carefully bounded changes. On an NVIDIA RTX 4090, CUDA tests passed rose from 1,516 with Graal to 1,539 with TC, an increase of 23. OpenCL tests on the same GPU increased from 1,027 to 1,057, an increase of 30. Intel UHD 770 OpenCL passes moved from 932 to 934. The authors also disclosed 941 Metal passes against a previous 942, without a new Metal run after Graal was removed. Test counts measure compatibility coverage rather than throughput or energy efficiency.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29542,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/tornadovm-8-tc-graal-backend-tests-1200x650-1.png?w=1024\" alt=\"Chart of Graal and TC compiler regression-test counts on CUDA and OpenCL with zero baseline\" class=\"wp-image-29542\" /><figcaption class=\"wp-element-caption\"><em>TornadoVM 8.0 regression-test counts compare the old Graal compiler and new TC on matching GPU backends. Higher test passes do not establish faster application speed. Data: <a href=\"https://www.tornadovm.org/blogs/tornadovm-8-0-0-tc-tornadovm-compiler\">TornadoVM team</a>, October 27, 2026.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>TornadoVM reported selected jitLLM workloads delivering 1.06 to 1.14 times Graal's throughput on CUDA. Separately, a small CUDA program on an RTX 4090 started and completed in approximately 0.3 seconds using a Project Leyden ahead-of-time cache or GraalVM Native Image, compared with about 0.6 seconds under the conventional JVM. The findings are <a href=\"https://www.tornadovm.org/blogs/fast-start-up-for-gpu-java-tornadovm-leyden-graalvm-native-image\">project-run demonstrations</a>, not independent performance measurements across all Java programs.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=6SPnBmQrYEk\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=6SPnBmQrYEk\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p><em>Devoxx conference presentation covering Java access to NVIDIA libraries through TornadoVM's Hybrid API, October 2026. Background context rather than a TornadoVM 8 benchmark.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>With the new architecture, TornadoVM supports JDK 21 through 27 and exposes tc emit for inspecting compiled kernels without a GPU attached. Its tornado-selftest utility runs small workloads against available devices and compares results with JVM execution, optionally exporting a JSON report. Developers still need compatible GPU drivers and must test numerical correctness, memory transfers and actual workload performance before deployment. Native Image support does not yet cover certain JNI-based accelerator libraries or Windows.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The underlying challenge is choosing the right processing hardware. BitcoinVersus.Tech's <a href=\"https://bitcoinversus.tech/2026/10/14/cpu-vs-gpu-vs-npu-vs-tpu/\">CPU, GPU, NPU and TPU comparison</a> explains why parallel workloads can behave differently from ordinary sequential programs. Another compiler project, <a href=\"https://bitcoinversus.tech/2026/11/02/perry-native-typescript-compiler-per-unit-analysis-richards-proofs-october-2026/\">Perry's native TypeScript compiler</a>, illustrates an independent approach to language-toolchain modernization; its benchmarks cannot be compared directly with GPU kernel tests.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The key developer benefit is continued Java API compatibility with a smaller, more inspectable compiler stack. However, broad adoption will depend on reliable backend support, straightforward diagnostics, and reproducible performance on diverse hardware. The importance of independent code review is also familiar from BitcoinVersus.Tech's <a href=\"https://bitcoinversus.tech/2026/10/10/ai-coding-agents-more-code-human-review-bottleneck-software-output/\">analysis of AI coding-agent review demands</a>. New workloads and third-party tests will reveal how consistently TC delivers its intended improvements.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech original 5,000-satoshi donation QR code\" class=\"wp-image-24043\" /></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Disclaimer: BitcoinVersus.Tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->",
+    "word_count": 506,
+    "prohibited_prose_terms": [],
+    "internal_links": [
+      "https://bitcoinversus.tech/2026/10/08/osjava-001-what-is-java-source-code-bytecode-jvm-jdk-first-program/",
+      "https://bitcoinversus.tech/2026/10/14/cpu-vs-gpu-vs-npu-vs-tpu/",
+      "https://bitcoinversus.tech/2026/11/02/perry-native-typescript-compiler-per-unit-analysis-richards-proofs-october-2026/",
+      "https://bitcoinversus.tech/2026/10/10/ai-coding-agents-more-code-human-review-bottleneck-software-output/"
+    ]
+  },
+  "sources": [
+    {
+      "type": "project_release",
+      "date": "2026-10-26",
+      "url": "https://github.com/beehive-lab/TornadoVM/releases/tag/v8.0.0"
+    },
+    {
+      "type": "project_engineering_blog",
+      "date": "2026-10-27",
+      "url": "https://www.tornadovm.org/blogs/tornadovm-8-0-0-tc-tornadovm-compiler"
+    },
+    {
+      "type": "project_startup_benchmarks",
+      "date": "2026-10-27",
+      "url": "https://www.tornadovm.org/blogs/fast-start-up-for-gpu-java-tornadovm-leyden-graalvm-native-image"
+    },
+    {
+      "type": "independent_java_reporting",
+      "date": "2026-11-02",
+      "url": "https://www.infoq.com/news/2026/11/java-news-roundup-oct26-2026/"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "v8.0.0 replaces vendored Graal/JVMCI GPU compiler with own pure Java TC compiler",
+      "status": "released and documented"
+    },
+    {
+      "claim": "CUDA/OpenCL/Metal output with existing Java interfaces",
+      "status": "released architecture; device-dependent"
+    },
+    {
+      "claim": "CUDA RTX4090 regression test passes",
+      "graal": 1516,
+      "tc": 1539,
+      "unit": "tests passed",
+      "status": "project test suite not independent"
+    },
+    {
+      "claim": "OpenCL RTX4090 regression test passes",
+      "graal": 1027,
+      "tc": 1057,
+      "unit": "tests passed",
+      "status": "project test suite not independent"
+    },
+    {
+      "claim": "OpenCL UHD770 regression test passes",
+      "graal": 932,
+      "tc": 934,
+      "unit": "tests passed",
+      "status": "project test suite not independent"
+    },
+    {
+      "claim": "Metal M3 Pro previous Graal 942 versus TC 941",
+      "status": "project reported and not rerun after removal"
+    },
+    {
+      "claim": "jitLLM CUDA throughput ratio",
+      "range": [
+        1.06,
+        1.14
+      ],
+      "unit": "x previous Graal throughput",
+      "status": "project-run selected benchmarks not general speed gain"
+    },
+    {
+      "claim": "Leyden / native cold start RTX4090",
+      "baseline_s": 0.6,
+      "new_s": 0.3,
+      "status": "project-run one small CUDA program, not generalized"
+    }
+  ],
+  "media": [
+    {
+      "type": "featured image",
+      "id": 29540,
+      "source_url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/tornadovm-8-tc-java-gpu-compiler-cover-1200x630-1.jpg",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "alt_text": "Concept illustration of a Java development workstation with the TornadoVM TC compiler transforming bytecode into CUDA C++, OpenCL C and Metal shader code",
+      "disclosure": "Original conceptual editorial illustration; not TornadoVM screenshot",
+      "in_body": false,
+      "featured_attachment_verified": true
+    },
+    {
+      "type": "YouTube",
+      "id": "oRVtTEbtt_Y",
+      "watch_url": "https://www.youtube.com/watch?v=oRVtTEbtt_Y",
+      "title": "TornadoVM: Supercharge your Java with GPU acceleration",
+      "publisher": "Devoxx",
+      "video_date": "2026-03-30",
+      "saved_block": "verified",
+      "rendered_iframe": "https://www.youtube.com/embed/oRVtTEbtt_Y",
+      "playback": "not tested",
+      "time_context": "pre v8.0"
+    },
+    {
+      "type": "image chart",
+      "id": 29542,
+      "source_url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/tornadovm-8-tc-graal-backend-tests-1200x650-1.png",
+      "dimensions": [
+        1200,
+        650
+      ],
+      "data_source": "TornadoVM v8.0.0 blog",
+      "zero_based_vertical_bars": true,
+      "saved_and_rendered": "verified",
+      "not_throughput_or_energy": true
+    },
+    {
+      "type": "YouTube",
+      "id": "6SPnBmQrYEk",
+      "watch_url": "https://www.youtube.com/watch?v=6SPnBmQrYEk",
+      "title": "Tap into the NVIDIA Ecosystem from Java with TornadoVM's Hybrid API",
+      "publisher": "Devoxx",
+      "video_date": "2026-10",
+      "saved_block": "verified",
+      "rendered_iframe": "https://www.youtube.com/embed/6SPnBmQrYEk",
+      "playback": "not tested",
+      "time_context": "prior to TC v8.0 release"
+    },
+    {
+      "type": "original donation QR",
+      "id": 24043,
+      "source_post_id": 29524,
+      "present_saved_and_rendered": true,
+      "scannability": "not tested",
+      "in_body": false
+    }
+  ],
+  "qa": {
+    "prepublication": {
+      "duplicate_check": "WordPress publish/future/draft TornadoVM query found 0",
+      "verified_internal_links": "4 by WordPress published-post lookup",
+      "word_count": 506,
+      "cover_exact": "1200x630",
+      "in_body_media_count": 3,
+      "banned_words_found": 0,
+      "original_footer": "copied verbatim from published post 29524"
+    },
+    "postpublication": {
+      "wordpress_status": "publish",
+      "saved_gutenberg": "passed",
+      "public_view_rendered_iframe_ids": [
+        "oRVtTEbtt_Y",
+        "6SPnBmQrYEk"
+      ],
+      "chart_rendered": "passed",
+      "cover_assignment": "passed exact dimensions",
+      "footer_order": "passed Editor Note then original QR and instructions then disclaimer",
+      "retired_x_ad": "absent",
+      "screenshot_capture": "ready but not visually examined",
+      "desktop_mobile_visual": "not tested",
+      "video_playback": "not tested",
+      "qr_optical_scanning": "not tested"
+    },
+    "successful_repair_reuse": "Native responsive YouTube Gutenberg block used in previous Fedora and Nokia articles; HTML rendering confirmed again",
+    "open_defects": [],
+    "open_verification_gaps": [
+      "interactive video playback",
+      "mobile viewport and visual layout inspection",
+      "QR optical scanning"
+    ],
+    "next_step": "Load live post in mobile and desktop browsers, play both embeds, verify original QR scannability and cover layout, then log results or FIX → RETEST → REPLACE → REMAKE upon failure.",
+    "release_status": "published, interactive postpublication QA incomplete"
+  }
+}
