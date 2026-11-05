@@ -1,0 +1,65 @@
+{
+  "publication": {
+    "id": 29598,
+    "title": "Circle Revenue Rises 17% as Arc Token Presale Boosts Earnings",
+    "status": "draft",
+    "public_url": null,
+    "preview": "https://bitcoinversus.tech/?p=29598",
+    "date": "2026-11-05"
+  },
+  "sources": [
+    "https://investor.circle.com/overview/",
+    "https://investor.circle.com/events-and-presentations/event-details/2026/Circle-Reports-Third-Quarter-2026-Results/default.aspx",
+    "https://markets.ft.markitdigital.com/data/announce/detail?dockey=600-202611040625BIZWIRE_USPRX____20261104_BW960710-1",
+    "https://www.theblock.co/news/business/2026-11-04-circle-reports-865-million-in-q3-revenue-and-reserve-income-discloses-5-workforce-reduction-432671"
+  ],
+  "word_count": 580,
+  "internal_links": 4,
+  "featured": {
+    "media_id": 29595,
+    "width": 1200,
+    "height": 630,
+    "kind": "original editorial rendering"
+  },
+  "media": [
+    {
+      "kind": "youtube",
+      "id": "kpT3K5xpUzU",
+      "title": "Circle Q3 2026 earnings webcast",
+      "channel": "Circle",
+      "official_investor_page": "https://investor.circle.com/events-and-presentations/event-details/2026/Circle-Reports-Third-Quarter-2026-Results/default.aspx",
+      "saved_markup": "pass",
+      "rendered_iframe": "pass",
+      "actual_playback": "not verified"
+    },
+    {
+      "kind": "image",
+      "media_id": 29597,
+      "kind_detail": "original conceptual editorial rendering",
+      "rendered_html": "pass"
+    },
+    {
+      "kind": "donation_qr",
+      "media_id": 24043
+    }
+  ],
+  "qa": {
+    "duplicate_search": "Circle/USDC/stablecoin WordPress posts reviewed, no Q3 earnings duplicate found",
+    "saved_gutenberg": "pass",
+    "rendered_html": "pass",
+    "featured_assignment": "pass",
+    "footer_order": "volunteer note then QR then Editor's Note confirmed",
+    "social_embed": "no original X status URL verified; omitted",
+    "video_playback": "not verified; mandatory publication gate",
+    "mobile_visual": "not verified",
+    "qr_scan": "not verified",
+    "status": "draft held; NOT published",
+    "next_steps": [
+      "Test actual YouTube playback and mobile responsiveness",
+      "Inspect preview on desktop and mobile",
+      "Check original QR scannability",
+      "Publish only after release gates pass",
+      "Capture live screenshot and reverify footer"
+    ]
+  }
+}
