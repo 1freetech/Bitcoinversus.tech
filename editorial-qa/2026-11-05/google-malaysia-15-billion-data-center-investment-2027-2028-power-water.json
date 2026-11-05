@@ -1,0 +1,190 @@
+{
+  "schema_version": "bitcoinversus.editorial-qa.v1",
+  "publication": {
+    "id": 29474,
+    "title": "Google Plans $15 Billion Malaysia Data Center Expansion",
+    "canonical_url": "https://bitcoinversus.tech/2026/11/05/google-malaysia-15-billion-data-center-investment-2027-2028-power-water/",
+    "publication_date": "2026-11-05T02:48:29",
+    "status": "publish",
+    "categories": [
+      5177360,
+      6,
+      27318186
+    ],
+    "featured_media_id": 29470,
+    "slug": "google-malaysia-15-billion-data-center-investment-2027-2028-power-water"
+  },
+  "article": {
+    "format": "gutenberg-raw",
+    "content": "<!-- wp:paragraph -->\n<p>Google announced plans on November 4, 2026, to invest <strong>US$15 billion in Malaysia during 2027 and 2028</strong>, expanding data center infrastructure alongside clean energy, water-security projects and workforce training. Alphabet and Google president and chief investment officer Ruth Porat presented the commitment at an event in Kuala Lumpur attended by Prime Minister Anwar Ibrahim. The company plans campuses in Selangor and Negeri Sembilan, but has not disclosed a site-by-site spending breakdown or commissioning timetable for the new facilities, according to <a href=\"https://www.reuters.com/world/asia-pacific/google-invest-15-billion-malaysia-2027-2028-2026-11-04/\">Reuters</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The commitment builds on Google's <a href=\"https://blog.google/intl/en-my/company-news/inside-google/2024_10_google-breaks-ground-on-us2-billion/\">US$2 billion investment announced in 2024</a> for a first Malaysian data center and Google Cloud region at Elmina Business Park. The original campus is now described as operational, while additional facilities remain plans. Malaysia has also attracted other AI infrastructure developers, including <a href=\"https://bitcoinversus.tech/2026/10/12/bitdeer-adds-60mw-malaysia-ai-site/\">Bitdeer's 60 MW project</a>. Neither Google's proposed spending nor another operator's contracted power establishes immediate new online compute capacity.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=hMTnL0XuxCc\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=hMTnL0XuxCc\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p><em>Google Malaysia's October 2024 video of the groundbreaking for its original US$2 billion Elmina Business Park data-center and cloud-region investment. Historical background, not a 2026 groundbreaking. Source: Google Malaysia.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google says the expansion will be supported by plans to add <strong>more than 1 gigawatt of new clean-energy generation capacity</strong> to Malaysia's national grid. A gigawatt measures power capacity, not electricity produced; actual generation depends on technology, availability and operating conditions. Google also pledged to pay for its campuses' electricity and direct grid-connection infrastructure. The need for new power lines and construction schedules is examined in BitcoinVersus.Tech's report on <a href=\"https://bitcoinversus.tech/2026/11/03/solar-power-construction-grid-lead-times-ai-2030/\">solar projects and grid lead times</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":29471,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/google-elmina-malaysia-2024-campus-render.jpg?w=1024\" alt=\"Google's 2024 artist impression of its first Elmina Business Park Malaysia data center campus\" class=\"wp-image-29471\" /><figcaption class=\"wp-element-caption\"><em>Google's 2024 artist's impression of the Elmina Business Park campus, before the new investment plan. Historical illustration: Google, reproduced by <a href=\"https://m.malaysiakini.com/announcement/707140\">Malaysiakini</a>. Not a design for the newly announced campuses.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>Energy efficiency will be another test. Google forecasts a power usage effectiveness, or PUE, of <strong>1.12–1.14</strong> for its Malaysian campuses. PUE divides total facility electricity use by computing equipment electricity use. Under the definition, a PUE of 1.12 represents 12% facility overhead relative to IT energy. The reported range is a company projection for campuses, not independently measured operating performance of the newly planned sites. Cooling design, weather and equipment loading will affect actual results.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Water is a separate infrastructure dependency. On November 2, Google <a href=\"https://www.googlecloudpresscorner.com/2026-11-1-Google-Funds-US-160-Million-in-Shared-Water-Infrastructure-Alongside-Digital-Infrastructure-Development-in-Negeri-Sembilan\">announced US$160 million in funding</a> for an off-river reservoir and water-treatment plant in Negeri Sembilan. The planned facility is rated to supply up to <strong>65 million liters of potable water per day</strong> for public use and Google's forthcoming campus. The figure describes the water plant's total design capacity, not predicted data-center consumption. Google appointed Gamuda to build the infrastructure with state partners.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=th6jVeaMyxo\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=th6jVeaMyxo\n</div></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p><em>Google Sustainability's September 2025 overview of data-center water use, water sources and stewardship. Context for the newly announced Negeri Sembilan water project. Source: Google Sustainability.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The proposed buildout could contribute an annual average of US$1.1 billion to Malaysia's GDP during construction and support more than 37,000 jobs per year, Google estimates. Once operational, facilities are projected to sustain more than 9,000 local jobs per year. Those are modeled outcomes, not verified hires. Google also announced programs aimed at upskilling 800,000 people over five years. An earlier <a href=\"https://bitcoinversus.tech/2026/10/06/data-centers-dayone-us-ipo-revenue-238-percent-2-3gw-bookings/\">DayOne data-center report</a> illustrates why financial commitments, bookings and delivered infrastructure must remain distinct.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The commercial appeal is substantial: more local processing capacity could support AI services, data-residency needs and regional digital businesses. Yet power procurement, water availability, environmental permissions and construction costs remain unresolved risks until milestones are documented. Hardware also needs fiber connections and switching capacity, as outlined in BitcoinVersus.Tech's <a href=\"https://bitcoinversus.tech/2026/11/01/optical-transceivers-complete-guide-sfp-qsfp-fiber-links-800g/\">optical-transceiver engineering guide</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The next evidence will come from signed energy-development agreements, site permits, detailed capital allocations, water-project construction, commissioning dates and independently measured PUE. Google has described an ambitious investment program; its completed economic and environmental results remain to be demonstrated.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>BitcoinVersus.Tech Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please donate using the QR code provided</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech original 5,000-satoshi donation QR code\" class=\"wp-image-24043\" /></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For best QR-code scanning results, please scan this donation code from a desktop or larger screen. Mobile screens may prevent camera recognition. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Disclaimer: BitcoinVersus.Tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->",
+    "body_word_count": 534,
+    "internal_links": [
+      "https://bitcoinversus.tech/2026/10/12/bitdeer-adds-60mw-malaysia-ai-site/",
+      "https://bitcoinversus.tech/2026/11/03/solar-power-construction-grid-lead-times-ai-2030/",
+      "https://bitcoinversus.tech/2026/10/06/data-centers-dayone-us-ipo-revenue-238-percent-2-3gw-bookings/",
+      "https://bitcoinversus.tech/2026/11/01/optical-transceivers-complete-guide-sfp-qsfp-fiber-links-800g/"
+    ],
+    "internal_links_confirmed_published": true,
+    "prohibited_terms_found": []
+  },
+  "fact_check": {
+    "planned_investment": {
+      "value": 15000000000,
+      "unit": "USD",
+      "period": "2027-2028",
+      "status": "announced plan, not spent money"
+    },
+    "planned_clean_energy": {
+      "value": 1,
+      "unit": "GW",
+      "comparison": "more than",
+      "status": "planned generating capacity, not energy generation"
+    },
+    "shared_water_project": {
+      "value": 160000000,
+      "unit": "USD",
+      "status": "Google funding announcement, not completed infrastructure"
+    },
+    "water_plant": {
+      "value": 65000000,
+      "unit": "liters/day",
+      "status": "planned total water-treatment capacity, not data-center water consumption"
+    },
+    "pue": {
+      "min": 1.12,
+      "max": 1.14,
+      "unit": "ratio",
+      "status": "projected site efficiency, not independently measured"
+    },
+    "economic_forecasts": {
+      "construction_jobs_per_year": "more than 37000",
+      "operational_jobs_per_year": "more than 9000",
+      "status": "projections, not verified hires"
+    },
+    "reconciliation": "No assumption of additive funding versus $15B total. Existing Elmina campus distinguished from new planned facilities."
+  },
+  "sources": [
+    {
+      "url": "https://www.reuters.com/world/asia-pacific/google-invest-15-billion-malaysia-2027-2028-2026-11-04/",
+      "date": "2026-11-04",
+      "type": "independent contemporary"
+    },
+    {
+      "url": "https://www.pmo.gov.my/en/speeches-en/verbatim-text-yab-prime-minister-at-mantap-malaysia-bersama-ai-a-google-event/",
+      "date": "2026-11-04",
+      "type": "primary government"
+    },
+    {
+      "url": "https://www.googlecloudpresscorner.com/2026-11-1-Google-Funds-US-160-Million-in-Shared-Water-Infrastructure-Alongside-Digital-Infrastructure-Development-in-Negeri-Sembilan",
+      "date": "2026-11-02",
+      "type": "Google primary water-project source"
+    },
+    {
+      "url": "https://blog.google/intl/en-my/company-news/inside-google/2024_10_google-breaks-ground-on-us2-billion/",
+      "date": "2024-10-01",
+      "type": "Google primary historical"
+    },
+    {
+      "url": "https://www.businesstimes.com.sg/international/asean/google-invest-us15-billion-in-malaysia-in-2027-and-2028-amid-data-centre-expansion",
+      "date": "2026-11-04",
+      "type": "independent contemporary"
+    }
+  ],
+  "media": [
+    {
+      "type": "featured_image",
+      "id": 29470,
+      "original_dimensions": "1200x630",
+      "alt": "Editorial illustration of a large Malaysian data center campus with server buildings, rooftop cooling equipment, solar panels and power-grid infrastructure",
+      "assignment": "verified via WordPress edit read",
+      "editorial_disclosure": "Original conceptual illustration, not actual new Google campus rendering",
+      "in_body": false
+    },
+    {
+      "type": "youtube",
+      "video_id": "hMTnL0XuxCc",
+      "url": "https://www.youtube.com/watch?v=hMTnL0XuxCc",
+      "video_title": "Breaks ground on US$2 Billion Google Data Center and Cloud Region in Malaysia",
+      "channel": "Google Malaysia",
+      "published_date": "2024-10-03",
+      "historical_video": true,
+      "saved_markup": "verified",
+      "rendered_iframe": "verified",
+      "public_availability": "web indexed",
+      "embeddability": "server-rendered iframe",
+      "actual_playback": "not performed",
+      "caption": true
+    },
+    {
+      "type": "source_image",
+      "id": 29471,
+      "source": "Google historical artist's impression, reproduced by Malaysiakini",
+      "year": "2024",
+      "relevance": "historical original campus only",
+      "saved_markup": "verified",
+      "rendered_img": "verified",
+      "caption": true
+    },
+    {
+      "type": "youtube",
+      "video_id": "th6jVeaMyxo",
+      "url": "https://www.youtube.com/watch?v=th6jVeaMyxo",
+      "video_title": "Inside Google's data centers: Our approach to responsible water use",
+      "channel": "Google Sustainability",
+      "published_date": "2025-09-15",
+      "saved_markup": "verified",
+      "rendered_iframe": "verified",
+      "public_availability": "web indexed",
+      "embeddability": "server-rendered iframe",
+      "actual_playback": "not performed",
+      "caption": true
+    },
+    {
+      "type": "footer_donation_qr",
+      "id": 24043,
+      "original": true,
+      "saved_markup": "verified",
+      "rendered_img": "verified",
+      "scannability": "not performed",
+      "in_body": false
+    }
+  ],
+  "qa": {
+    "duplicate_review": {
+      "result": "passed",
+      "word_press_scope": "published, scheduled, draft results for Drax/Brookfield, Malaysia, Google/data center",
+      "rejected_duplicate": "Drax/Brookfield/Radiant 1GW project already published 2026-11-03, post 28700",
+      "selected_story": "Google Malaysia 15B investment 2026-11-04; no matching published/draft/scheduled post returned"
+    },
+    "prepublish": {
+      "word_count": "passed",
+      "banned_words": "passed",
+      "gutenberg_block_syntax": "passed",
+      "four_internal_links": "passed",
+      "image_exact_1200x630": "passed",
+      "footer_provenance": "copied exactly from existing published post 29441",
+      "media_captions": "passed"
+    },
+    "postpublish": {
+      "status": "published",
+      "saved_markup": "passed",
+      "public_rendered_html": "passed (WordPress context=view)",
+      "youtube_iframes": "passed; actual /embed/ IDs confirmed",
+      "source_image": "passed",
+      "qr_saved_and_rendered": "passed",
+      "footer_order": "passed",
+      "retired_ad_absent": "passed",
+      "desktop_screenshot_capture": "ready but not manually visually reviewed",
+      "mobile_viewport": "not performed",
+      "playback_interaction": "not performed",
+      "qr_scannability": "not performed",
+      "search_web_direct_page_fetch": "unavailable; WP public view succeeded"
+    },
+    "comparison": "Same responsive native Gutenberg provider embed schema as published post 29441, with verified server-side iframe rendering. Previous record also had unverified actual playback. No shortcode fallback needed.",
+    "defect_category": "validation_gap",
+    "severity": "QA follow-up",
+    "supported_cause": "No interactive playback or mobile browser capability available from current connected tools",
+    "corrections_completed": "No broken embed or markup defects discovered requiring changes",
+    "smallest_next_step": "Open live article on desktop and phone; play both YouTube videos; verify no mobile overflow; inspect featured cover and scan original 5,000-satoshi QR. Record passes or repair."
+  }
+}
