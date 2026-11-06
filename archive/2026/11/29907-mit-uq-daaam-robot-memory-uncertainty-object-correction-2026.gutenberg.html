@@ -1,0 +1,91 @@
+<!-- wp:paragraph -->
+<p><a href="https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105">MIT researchers reported November 5, 2026</a>, a robotic memory system that detects uncertain object descriptions and replaces unreliable entries using additional camera views. The method, called <strong>UQ-DAAAM</strong>, reduced ambiguity for approximately <strong>92% of evaluated objects</strong> using just two additional captions per object on average. MIT also reported a <strong>5% improvement in description accuracy</strong> against a state-of-the-art comparison method. Those figures describe research tests, not a guaranteed accuracy rate for commercially deployed robots.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The underlying paper, <a href="https://arxiv.org/abs/2606.08277">“Remember with Confidence: Uncertainty Quantification for Spatio-temporal Memory with Probabilistic Guarantees,”</a> was first posted as a preprint in June and is scheduled for presentation at NeurIPS 2026. The November announcement puts new attention on a longstanding challenge: an autonomous machine can preserve a mistaken description long after its camera has moved away.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=l_hArumdj1s&amp;w=640&amp;h=360]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em>MIT SPARK Lab / LIDS, “Remember with Confidence: Uncertainty Quantification for Spatio-temporal Memory with Probabilistic Guarantees,” NeurIPS 2026 supplementary research video. The original clip is embedded in MIT News' November 5 report.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why incorrect robot memories persist</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Many mobile robots construct three-dimensional maps while attaching text descriptions to observed objects. Vision-language models generate those captions from images, but distant, obscured or poorly lit objects can be mislabeled. In the MIT team's example, a gray chimney appeared in an earlier observation as a squirrel. A robot answering later questions might retrieve the original wrong description without recognizing its weakness.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>UQ-DAAAM extends the researchers' earlier Describe Anything, Anywhere, at Any Moment framework. It measures both the vision-language model's confidence in a caption and disagreement among captions of the same object from different viewpoints. Combining the two produces an uncertainty score associated with an object in the robot's spatial memory.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":29905,"sizeSlug":"medium","linkDestination":"none","width":"440px"} -->
+<figure class="wp-block-image size-medium" style="width:440px;max-width:100%;margin:1.25rem auto"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/mit-uq-daaam-chimney-memory-correction-original.jpg?w=640" class="wp-image-29905" alt="MIT UQ-DAAAM actual research figure showing three camera views of a rooftop object, a 3D mapping trajectory, and a revised description identifying a chimney" style="width:100%;height:auto;max-width:100%" /><figcaption class="wp-element-caption"><em>Actual UQ-DAAAM study visualization, courtesy of Harry Zhang, Nicolas Gorlo and Luca Carlone, MIT. Reproduced without alteration from MIT News under its stated CC BY-NC-ND conditions.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Choosing a better view without a heavy recomputation</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>When uncertainty crosses a threshold, the system searches the robot's existing image history for views expected to clarify the object. A selection heuristic identifies useful frames without rerunning the vision-language model over every candidate, helping keep the process practical while the robot moves. A large language model then merges the selected captions, favoring newer and less ambiguous evidence.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The resulting caption replaces the uncertain memory entry and can improve answers about what was seen, where it appeared and when the robot encountered it. The technique is relevant to <a href="https://bitcoinversus.tech/2026/10/31/osrec-013-robot-state-estimation-kalman-filters-sensor-fusion-uncertainty/">robot state estimation and sensor uncertainty</a>, although confidence in a language-model description is different from uncertainty about a robot's position or velocity.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What the experiment actually demonstrates</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>MIT reports that its refinement procedure resolved uncertainty for approximately 92% of objects in its test environment, typically requesting two more captions. The 5% description-accuracy improvement uses a comparative baseline rather than showing that 95% of all objects were correctly identified. The researchers also obtained stronger performance on spatiotemporal questions than the baseline systems evaluated in the paper.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The results are promising, but lower uncertainty does not automatically mean factual correctness. Several camera views can share the same obstruction or misleading angle, and a language model may still produce a confident error. More extensive testing would be needed before a robot could safely rely on refreshed memories when identifying emergency equipment or manipulating dangerous machinery.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Related BitcoinVersus.Tech reporting covers <a href="https://bitcoinversus.tech/2026/10/12/osrtc-008-robot-vision-calibration-troubleshooting/">robot vision calibration and troubleshooting</a>, <a href="https://bitcoinversus.tech/2026/11/05/nvidia-releases-four-cosmos-3-models-for-interactive-robot-simulation/">NVIDIA's interactive robot world models</a> and <a href="https://bitcoinversus.tech/2026/10/14/pittsburgh-airport-tests-skild-ai-robot-dogs/">robot dogs operating at Pittsburgh Airport</a>. Each addresses separate parts of perception, simulation or deployment rather than providing independent validation of UQ-DAAAM.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Next step is memory that guides action</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The work was led by MIT graduate students Harry Zhang and Nicolas Gorlo with senior author Luca Carlone, and supported in part by U.S. defense research agencies. The team intends to explore mobile manipulators and active revisiting of uncertain areas, where a robot could deliberately collect better evidence rather than merely waiting for another useful view.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Commercial readiness will depend on computing costs, memory consistency across long missions, latency, changing environments and controlled safety evaluations. For now, the measurable advance is a way for robots to identify dubious stored descriptions and improve them while navigating—not an autonomous assistant proven safe for emergency or industrial work.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Editor's Note:</strong> Primary sources are <a href="https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105">MIT News, November 5, 2026</a> and <a href="https://arxiv.org/abs/2606.08277">the research preprint originally posted in June 2026</a>. The reported 92% refers to uncertainty resolution in tested objects; the 5% figure is comparative description accuracy. The featured artwork is conceptual. The in-body experiment figure and video are credited to the MIT researchers; neither establishes deployment in commercial robots.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"medium","linkDestination":"none"} -->
+<figure class="wp-block-image size-medium" style="max-width:260px;margin:1rem auto"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Original BitcoinVersus.Tech donation QR for 5,000 satoshis" class="wp-image-24043" style="width:100%;height:auto" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><em>For mobile scanning, open the article on a separate display and scan the original QR with a compatible Bitcoin wallet. Verify the destination before donating 5,000 sats: <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong>.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>
+<!-- /wp:paragraph -->
