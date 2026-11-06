@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29956,
+  "title": "Mark Cuban Questions AI Spending as Big Tech Capex Rises",
+  "live_url": "https://bitcoinversus.tech/2026/11/06/mark-cuban-ai-spending-warning-alphabet-meta-capex-november-2026/",
+  "publication_date": "2026-11-06T11:21:11",
+  "status": "published_unverified",
+  "source_archive_path": "archive/2026/11/29956-mark-cuban-ai-spending-warning-alphabet-meta-capex-november-2026.gutenberg.html",
+  "source_blob_sha": "c699f6ebd2ca49466076927c8b891bf4b29e5d59",
+  "source_exact_readback": true,
+  "reporting_word_count": 671,
+  "contextual_internal_links": 5,
+  "category_ids": [
+    12374,
+    179,
+    4269
+  ],
+  "primary_sources": [
+    {
+      "publisher": "Big Technology Podcast / Alex Kantrowitz",
+      "event": "Mark Cuban interview",
+      "date": "2026-04-29",
+      "url": "https://www.youtube.com/watch?v=CEz9RRg0FfI",
+      "relevant_chapter_start": "26:16"
+    },
+    {
+      "publisher": "Alphabet investor relations",
+      "event": "2026 Q3 earnings",
+      "date": "2026-10-28",
+      "url": "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/default.aspx",
+      "reported_full_year_capex_guidance_usd_billions": [
+        195,
+        205
+      ]
+    },
+    {
+      "publisher": "Meta investor relations",
+      "event": "2026 Q3 earnings",
+      "date": "2026-10-21",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/",
+      "reported_capex_including_finance_lease_payments_usd_billions": [
+        135,
+        145
+      ]
+    },
+    {
+      "publisher": "OpenAI",
+      "date": "2026-04-29",
+      "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/",
+      "type": "counterargument about secured compute capacity and demand"
+    },
+    {
+      "publisher": "OpenAI API",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "type": "current pricing structure; not proof of historical price decreases"
+    }
+  ],
+  "secondary_sources": [
+    {
+      "publisher": "Benzinga",
+      "date": "2026-04-30",
+      "url": "https://www.benzinga.com/markets/private-markets/26/04/52199817/marc-cuban-slams-openai-for-overspending"
+    },
+    {
+      "publisher": "Axios",
+      "date": "2026-10-22",
+      "url": "https://www.axios.com/2026/10/22/ai-token-prices-demand"
+    }
+  ],
+  "attribution_and_accounting": {
+    "Cuban_comments_are_from_april_not_november": true,
+    "quoted_trillion_dollars_is_not_verified_money_lost": true,
+    "Alphabet_capex_midpoint_billions": 200,
+    "Meta_capex_midpoint_billions": 140,
+    "combined_midpoints_billions": 340,
+    "comparability_note": "Company-wide full-year 2026 capital spending ranges with differing inclusion of finance lease principal; not spending by OpenAI and not AI-only spending",
+    "outcome": "Financial returns on AI investments unverified; opposing company growth claims attributed."
+  },
+  "media": {
+    "featured": {
+      "id": 29955,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "original_conceptual_composite": true,
+      "not_real_podcast_still": true
+    },
+    "video": [
+      {
+        "youtube_id": "lSTYM66sMis",
+        "type": "editor-provided interview excerpt",
+        "origin": "Big Technology Podcast April 2026",
+        "saved_shortcode": true,
+        "wordpress_rendered_iframe": true,
+        "actual_playback_verified": false
+      },
+      {
+        "youtube_id": "CEz9RRg0FfI",
+        "type": "full source interview",
+        "channel": "Alex Kantrowitz / Big Technology Podcast",
+        "date": "2026-04-29",
+        "saved_shortcode": true,
+        "wordpress_rendered_iframe": true,
+        "actual_playback_verified": false
+      }
+    ],
+    "donation_qr_id": 24043
+  },
+  "checks": {
+    "WordPress_published_source_read_back": true,
+    "WordPress_live_rendered_html_checked": true,
+    "rendered_youtube_iframes": 2,
+    "original_donation_qr_rendered": true,
+    "volunteer_disclaimer_present": true,
+    "financial_disclaimer_present": true,
+    "no_text_boxes": true,
+    "subscriber_email_optout": true,
+    "desktop_screenshot_service_status": "ready",
+    "mobile_screenshot_service_status": "ready",
+    "screenshot_pixels_inspected": false,
+    "actual_video_playback_verified": false,
+    "qr_scan_tested": false
+  },
+  "outstanding": [
+    "Inspect desktop/mobile captured pixels for layout overflow and responsiveness",
+    "Independently test playback of both YouTube embeds",
+    "Test donation QR scan and destination"
+  ],
+  "smallest_next_step": "Review published post on desktop and phone, play both videos and scan donation QR."
+}
