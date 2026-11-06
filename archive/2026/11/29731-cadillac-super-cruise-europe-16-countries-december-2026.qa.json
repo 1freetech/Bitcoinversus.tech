@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29731,
+  "status": "published_unverified",
+  "title": "Cadillac Sets December Super Cruise Launch Across 16 European Countries",
+  "live_url": "https://bitcoinversus.tech/2026/11/05/cadillac-super-cruise-europe-16-countries-december-2026/",
+  "publish_date": "2026-11-05T19:46:48",
+  "archive_source_path": "archive/2026/11/29731-cadillac-super-cruise-europe-16-countries-december-2026.gutenberg.html",
+  "archive_blob_sha": "59eca555cf8d378040c6b68f5250dec04c5b667f",
+  "archive_exact_readback": true,
+  "category_ids": [
+    2024,
+    6,
+    27318186
+  ],
+  "primary_sources": [
+    {
+      "publisher": "Cadillac Europe",
+      "url": "https://www.cadillaceurope.com/ch-en/connected-services/super-cruise",
+      "claims": [
+        "SAE Level 2",
+        "attentive driver required",
+        "compatible OPTIQ 2025+, LYRIQ and VISTIQ 2026+",
+        "existing cars activated by service-partner software update",
+        "3-year included plan",
+        "pre-mapped roads",
+        "GPS, high-definition maps, cameras and radar"
+      ]
+    },
+    {
+      "publisher": "Cadillac USA",
+      "url": "https://www.cadillac.com/support/vehicle/driving-safety/driver-assistance/super-cruise",
+      "claims": [
+        "driver monitoring camera",
+        "mapped-road availability",
+        "attention alerts",
+        "handover limitations"
+      ]
+    }
+  ],
+  "independent_reporting": [
+    {
+      "publisher": "Automobil Revue",
+      "date": "2026-11-04",
+      "url": "https://automobilrevue.ch/neuheiten/cadillac-bringt-super-cruise-nach-europa",
+      "claims": [
+        "mid-December planned launch",
+        "180000+ km in 16 European countries",
+        "130 km/h",
+        "Auto Zürich 2026"
+      ]
+    },
+    {
+      "publisher": "Golem",
+      "date": "2026-11-04",
+      "url": "https://www.golem.de/news/cadillac-super-cruise-haende-weg-vom-lenkrad-auf-ueber-180-000-kilometern-2611-214844.html",
+      "claims": [
+        "planned European rollout timing",
+        "covered road network"
+      ]
+    }
+  ],
+  "critical_distinctions": [
+    "Level 2 is supervised driver assistance, not autonomous driving",
+    "LiDAR refers to high-definition road mapping; no claim the car carries a LiDAR scanner",
+    "Activation for eligible existing models requires service-partner update; not assumed automatic OTA rollout",
+    "Coverage applies to compatible mapped roads, not every road in 16 countries",
+    "European subscription price after initial 3-year period not disclosed",
+    "December launch is planned; not yet operating as of November 5"
+  ],
+  "media": {
+    "featured": {
+      "wordpress_id": 29724,
+      "verified_size": [
+        1200,
+        630
+      ],
+      "original_conceptual_illustration": true
+    },
+    "in_body_diagram": {
+      "wordpress_id": 29725,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "original_conceptual_not_as_built": true
+    },
+    "youtube": [
+      {
+        "id": "KF1zxqvYwfY",
+        "channel": "Cadillac",
+        "title": "How to Use Super Cruise | Cadillac",
+        "original_publication": "2024-04-11",
+        "shortcode_saved": true,
+        "iframe_rendered": true,
+        "actual_playback_verified": false
+      },
+      {
+        "id": "25b0AuKhHes",
+        "channel": "Cadillac",
+        "title": "Super Cruise | 2026 OPTIQ | Cadillac",
+        "original_publication": "2025-05-07",
+        "shortcode_saved": true,
+        "iframe_rendered": true,
+        "actual_playback_verified": false
+      }
+    ]
+  },
+  "word_count_excluding_footer": 603,
+  "internal_links": 5,
+  "footer": {
+    "original_qr_id": 24043,
+    "editors_note_saved": true,
+    "volunteer_text_saved_and_rendered": true,
+    "financial_disclaimer_saved_and_rendered": true
+  },
+  "release_checks": {
+    "wordPress_status_publish": true,
+    "source_readback": true,
+    "rendered_iframes": 2,
+    "rendered_diagram": true,
+    "rendered_original_qr": true,
+    "no_text_boxes": true,
+    "featured_media_size_verified": true,
+    "subscriber_email_optout": true
+  },
+  "open_qa": [
+    "Actual interactive playback for both official videos",
+    "Visual desktop and mobile viewport screenshot inspection",
+    "Donation QR scan with a compatible wallet"
+  ],
+  "learning": "Use native WordPress YouTube shortcode fallback after confirming video titles, IDs, and channels. Do not equate iframe rendering with successful playback. Preserve original QR and no-text-box rule."
+}
