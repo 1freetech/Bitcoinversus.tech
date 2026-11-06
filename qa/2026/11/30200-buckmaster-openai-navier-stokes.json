@@ -1,0 +1,124 @@
+{
+  "schema": "bitcoinversus.editorial-qa.v1",
+  "article": {
+    "post_id": 30200,
+    "title": "NYU’s Buckmaster Challenges OpenAI Over Navier–Stokes Credit",
+    "url": "https://bitcoinversus.tech/2026/11/06/nyu-buckmaster-openai-navier-stokes-credit-cnbc-october-2026/",
+    "publication_date": "2026-11-06",
+    "status": "published",
+    "categories": [
+      "Artificial Intelligence",
+      "Theory",
+      "Technology",
+      "Trending News"
+    ],
+    "relationship_to_archive": "Nonduplicate October 8 CNBC interview follow-up to October 3 prior coverage"
+  },
+  "research": {
+    "primary_sources": [
+      {
+        "name": "CNBC Television Squawk Box October 8, 2026 interview",
+        "url": "https://www.youtube.com/watch?v=GweKOBSJvEY"
+      },
+      {
+        "name": "Tristan Buckmaster first-person statement",
+        "url": "https://cims.nyu.edu/~tristanb/statement.pdf"
+      },
+      {
+        "name": "NYU Courant research announcement",
+        "url": "https://cims.nyu.edu/dynamic/news/1528/"
+      },
+      {
+        "name": "OpenAI September 8 announcement and September 10 correction",
+        "url": "https://openai.com/index/navier-stokes-solution/"
+      },
+      {
+        "name": "Clay Mathematics Institute September 11 statement",
+        "url": "https://www.claymath.org/news/navier-stokes-announcement/"
+      }
+    ],
+    "evidence_classification": "Buckmaster allegations and OpenAI denials both attributed; forced Euler separated from forced Navier–Stokes; Clay acceptance not represented as complete; no numerical chart warranted"
+  },
+  "content": {
+    "word_count_excluding_footer": 637,
+    "verified_contextual_internal_links": 4,
+    "forbidden_terms_found": false
+  },
+  "media": {
+    "featured": {
+      "id": 30166,
+      "width": 1200,
+      "height": 630,
+      "alt_text_present": true,
+      "live_assignment_verified": true,
+      "conceptual_art_disclosed": true
+    },
+    "in_body": [
+      {
+        "type": "youtube",
+        "id": "GweKOBSJvEY",
+        "channel": "CNBC Television",
+        "title": "NYU's Tristan Buckmaster on the controversy over OpenAI's math findings",
+        "url": "https://www.youtube.com/watch?v=GweKOBSJvEY",
+        "saved_native_gutenberg": true,
+        "wordpress_rendered_iframe": true,
+        "iframe_targets_correct_id": true,
+        "video_playback_test": "unverified",
+        "embed_permission_test": "unverified"
+      },
+      {
+        "type": "image",
+        "media_id": 30178,
+        "captioned": true,
+        "credited": "BitcoinVersus.Tech conceptual artwork",
+        "maximum_display_width_css_px": 480
+      },
+      {
+        "type": "youtube",
+        "id": "ta6Q70y6YVU",
+        "channel": "Clay Mathematics Institute",
+        "title": "Luis Caffarelli, Navier-Stokes existence and smoothness",
+        "url": "https://www.youtube.com/watch?v=ta6Q70y6YVU",
+        "saved_native_gutenberg": true,
+        "wordpress_rendered_iframe": true,
+        "iframe_targets_correct_id": true,
+        "video_playback_test": "unverified",
+        "embed_permission_test": "unverified"
+      }
+    ],
+    "footer": {
+      "order": [
+        "approved volunteer note",
+        "original 5,000 satoshi QR image",
+        "mobile and desktop scanning instruction",
+        "fully italicized Editor's Note"
+      ],
+      "qr_media_id": 24043,
+      "source_post_for_exact_volunteer_wording": 29956,
+      "saved_order_verified": true,
+      "visual_qr_scannability": "unverified"
+    }
+  },
+  "checks": {
+    "wordpress_edit_markup_retrieved": true,
+    "wordpress_view_html_retrieved": true,
+    "iframe_count": 2,
+    "screenshot_capture": {
+      "mobile": {
+        "viewport_width": 390,
+        "status": "ready",
+        "visual_review": "not performed"
+      },
+      "desktop": {
+        "viewport_width": 1280,
+        "status": "ready",
+        "visual_review": "not performed"
+      }
+    },
+    "live_page_wordpress_status": "publish",
+    "live_public_fetch_external": "not accessible through independent web fetch",
+    "direct_video_playback": "not performed",
+    "errors_during_post_save": [],
+    "biggest_remaining_qa": "Manually verify actual playback for both YouTube iframes, QR scannability, and desktop/mobile visual layout; screenshot-ready status alone does not certify layout or playback."
+  }
+}
