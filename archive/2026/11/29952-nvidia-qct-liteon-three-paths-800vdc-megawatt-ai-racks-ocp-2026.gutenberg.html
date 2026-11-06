@@ -1,0 +1,87 @@
+<!-- wp:paragraph -->
+<p><a href="https://www.sixfivemedia.com/content/megawatt-racks-need-a-new-power-architecture-inside-the-shift-to-800-vdc">NVIDIA, Quanta Cloud Technology and LITEON outlined three routes to 800-volt DC distribution</a> during a Six Five On The Road discussion at OCP Global Summit 2026. The panel explained how AI racks are moving from roughly 120 kilowatts toward 500 kilowatts and eventually 1 megawatt, requiring coordinated changes to electrical distribution, cooling and protection. <strong>The megawatt figure is a future rack design target, not a claim that every existing rack operates at that power.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>David Nicholson hosted NVIDIA’s Harry Petty, QCT and Quanta’s Jack Luoh, and LITEON USA president Simon Ong. Their discussion goes beyond earlier product announcements: operators may retrofit an existing AC facility with adjacent power racks, convert power at the end of a row, or design a new data hall with an 800 VDC backbone. <a href="https://www.opencompute.org/news/powering-the-next-era-of-ai-how-google-microsoft-and-nvidia-are-standardizing-and-accelerating-the-industry-transition-to-lvdc/">OCP’s collaborative specifications</a> provide a shared direction, not proof of universal interoperability or finished deployment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=yqPoyy1Q4QU&amp;w=640&amp;h=360]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em>Six Five On The Road at OCP Global Summit 2026: David Nicholson interviews NVIDIA’s Harry Petty, QCT’s Jack Luoh and LITEON USA’s Simon Ong. Original 24-minute industry panel supplied by the editor; source: Six Five Media / The Futurum Group.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why 54 volts becomes a copper problem</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Existing AI racks commonly distribute about 54 VDC from power shelves through heavy busbars to compute trays. Electrical power equals voltage multiplied by current. Delivering an idealized 1 megawatt at 54 volts requires approximately <strong>18,519 amperes</strong>; at 800 volts, the same power requires <strong>1,250 amperes</strong>. The comparison isolates a distribution segment and ignores conversion losses, redundancy and architecture-specific current paths.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>For the same conductor resistance, resistive heating rises with the square of current. A higher-voltage busway can therefore reduce conductor demand and distribution losses, subject to insulation, fault protection and design limits. Earlier BitcoinVersus.Tech coverage compares <a href="https://bitcoinversus.tech/2026/10/14/54v-vs-800v-for-ai-racks/">54 V and 800 V rack architectures</a>. Importantly, the chips do not operate at 800 volts: DC-DC converters step the voltage down within the rack to levels suitable for power supplies and processors.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Three migration routes, not one mandatory rebuild</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Petty described a retrofit using a sidecar power rack to convert incoming AC to 800 VDC next to dense compute racks. A second option shifts conversion upstream to the end of a row, serving multiple racks. A purpose-built hall could instead convert medium-voltage AC centrally and distribute 800 VDC throughout the space. Facility capacity and electrical configuration determine which route is practical.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The pathways align with existing experiments such as <a href="https://bitcoinversus.tech/2026/10/29/enphase-iq-solid-state-transformer-13-8kv-ac-800vdc-lab-test-2026/">Enphase’s 13.8 kV AC-to-800 VDC laboratory test</a>. Neither a laboratory conversion nor a reference architecture establishes that every operating data center can avoid switchgear changes, structural alterations or commissioning downtime. Mixed 48/54 V and 800 V systems will coexist because not every CPU workload demands megawatt-density power.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":29950,"sizeSlug":"medium","linkDestination":"none","width":"360px"} -->
+<figure class="wp-block-image size-medium" style="width:360px;max-width:100%;margin:1.25rem auto"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/liteon-ocp-2026-official-mgx-power-rack-photo.png?w=560" alt="Official LITEON 2026 OCP exhibit photo of NVIDIA MGX power rack and stacked power shelves" class="wp-image-29950" style="width:100%;height:auto;max-width:100%" /><figcaption class="wp-element-caption"><em>LITEON’s actual NVIDIA MGX power-equipment exhibit at OCP Global Summit 2026. Credit: LITEON Technology. The display is not proof of a commissioned megawatt-scale customer rack.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Liquid-cooled power systems and DSX planning</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ong said the move requires redesigned power modules, semiconductor packaging, magnetics and potentially liquid cooling for the power racks themselves. LITEON separately <a href="https://www.liteon.com/en/news/press-center/content/liteon-ocp-2026-nvidia-mgx">showed 330 kW, 880 kW and 1.2 MW deployment scenarios</a> at OCP, alongside an 800 VDC rack and an 800-to-50 V power brick. Exhibited configurations are not independently measured installations or guaranteed field efficiencies. BitcoinVersus.Tech previously covered <a href="https://bitcoinversus.tech/2026/10/12/liteon-1mw-800v-power-rack-ocp-2026/">LITEON’s earlier 1 MW rack presentation</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>NVIDIA’s DSX reference designs and digital twins give builders a way to model rows, electrical systems, cooling and future accelerators before construction. The approach complements <a href="https://bitcoinversus.tech/2026/11/01/hitachi-nvidia-omniverse-ai-data-center-grid-to-rack-power-simulation-2026/">Hitachi Energy’s AI-factory power simulation work</a>. A simulation supports planning, but only commissioned tests can verify actual efficiency, resilience and maintainability.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Safety and standards remain the deployment gates</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>At 800 VDC, DC arc interruption, personnel isolation, fault detection, insulation coordination and battery integration demand explicit engineering review. Luoh said system integrators must revise laboratories, production lines and safety procedures. OCP is coordinating requirements with manufacturers and safety organizations, while work such as <a href="https://bitcoinversus.tech/2026/10/14/vertiv-open-fault-manager-800vdc-ai-racks/">Vertiv’s open fault-management proposal</a> addresses protective coordination. No interview statement substitutes for code compliance or site acceptance testing.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The panel’s principal conclusion was collaborative rather than a single-vendor product launch: electrical hardware, cooling, compute architecture and facility design must evolve together. For operators, the next evidence will be certified interoperable equipment, documented retrofit performance and reliable megawatt-scale rack commissioning—not the voltage label alone.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Editor's Note:</strong> The primary interview is <a href="https://www.youtube.com/watch?v=yqPoyy1Q4QU">Six Five On The Road’s OCP 2026 discussion</a> and <a href="https://www.sixfivemedia.com/content/megawatt-racks-need-a-new-power-architecture-inside-the-shift-to-800-vdc">its published transcript</a>. Technical architecture was checked against <a href="https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/">NVIDIA</a> and <a href="https://www.opencompute.org/news/powering-the-next-era-of-ai-how-google-microsoft-and-nvidia-are-standardizing-and-accelerating-the-industry-transition-to-lvdc/">OCP</a>. Current calculations are theoretical illustrations, not test data. The featured cover is conceptual artwork; the LITEON exhibit photograph is manufacturer-supplied.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"medium","linkDestination":"none"} -->
+<figure class="wp-block-image size-medium" style="max-width:260px;margin:1rem auto"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Original BitcoinVersus.Tech 5,000-satoshi donation QR code" class="wp-image-24043" style="width:100%;height:auto" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><em>For mobile scanning, open the article on another display and use a compatible Bitcoin wallet to scan the original donation QR. Verify the destination before donating 5,000 sats: <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong>.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>
+<!-- /wp:paragraph -->
