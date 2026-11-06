@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "post_id": 29799,
+  "status": "published_unverified",
+  "title": "CMU Trains Football AI on NFL Film and Player Tracking",
+  "live_url": "https://bitcoinversus.tech/2026/11/05/cmu-football-ai-nfl-game-film-player-tracking-foundation-models-2026/",
+  "date": "2026-11-05T21:35:51",
+  "source_path": "archive/2026/11/29799-cmu-football-ai-nfl-game-film-player-tracking-foundation-models-2026.gutenberg.html",
+  "source_blob_sha": "78ea542f499d752e3379796b4a2c169a7d9c4ccf",
+  "source_exact_readback": true,
+  "editorial_words": 655,
+  "internal_links": 4,
+  "category_ids": [
+    6,
+    27318186
+  ],
+  "original_source": {
+    "publisher": "Carnegie Mellon University",
+    "published": "2026-11-05",
+    "url": "https://www.cmu.edu/dietrich/news/news-stories/2026/cmu-researchers-teach-football-ai-models",
+    "verified_claims": [
+      "NFL provided official game footage and Next Gen Stats player tracking data",
+      "Research by Chenyan Xiong and Ron Yurko supported by NFL Forward Initiative",
+      "Two initial pretrained models trained separately on game footage and tracking data",
+      "Several terabytes of source data",
+      "Combining the modalities and predicting future plays are future research goals, not proven deployment"
+    ]
+  },
+  "supporting_context": [
+    "https://www.youtube.com/watch?v=tG_GlFFoc-M",
+    "https://www.youtube.com/watch?v=BdHXL7Jxprc"
+  ],
+  "safeguards": [
+    "Predictive-play accuracy undisclosed",
+    "No production deployment to NFL coaches announced",
+    "Training-data terms and public availability not established",
+    "Potential data leakage and temporal split evaluation discussed as methodological requirements, not experiment results"
+  ],
+  "media": {
+    "cover": {
+      "id": 29794,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "conceptual": true
+    },
+    "inbody_videos": [
+      {
+        "id": "tG_GlFFoc-M",
+        "publisher": "Amazon Web Services",
+        "published": "2026-02-02",
+        "rendered_iframe": true,
+        "playback_verified": false
+      },
+      {
+        "id": "BdHXL7Jxprc",
+        "publisher": "AWS Events",
+        "published": "2026-01-15",
+        "rendered_iframe": true,
+        "playback_verified": false
+      }
+    ],
+    "donation_qr_id": 24043
+  },
+  "wp_qa": {
+    "published_source_readback": true,
+    "rendered_iframe_count": 2,
+    "original_qr_rendered": true,
+    "approved_volunteer_footer_rendered": true,
+    "no_text_boxes": true,
+    "subscriber_email_optout": true
+  },
+  "open_qa": [
+    "Verify actual playback for both AWS videos",
+    "Inspect mobile and desktop viewport screenshots for overflow and caption legibility",
+    "Verify QR scans correctly"
+  ],
+  "smallest_next_step": "Inspect the live article visually on mobile and desktop and test both videos and donation QR."
+}
