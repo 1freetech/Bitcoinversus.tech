@@ -1,0 +1,159 @@
+{
+  "patrol": "BitcoinVersus.Tech Embed Patrol Master v1.0",
+  "inspection_date": "2026-11-06",
+  "scope": "13 recently published posts checked in saved WordPress Gutenberg; seven existing media-bearing posts checked in rendered WP HTML; one new published post checked after publishing",
+  "articles_inspected": 14,
+  "videos_with_wordpress_rendered_iframe": 10,
+  "social_posts_examined": 1,
+  "youtube_playback_verified": 0,
+  "desktop_visual_inspections": 0,
+  "mobile_visual_inspections": 0,
+  "already_rendered_video_iframes": [
+    {
+      "id": 29917,
+      "video_ids": [
+        "1Lebd8OzWeo"
+      ],
+      "result": "WordPress rendered YouTube iframe; playback UNVERIFIED"
+    },
+    {
+      "id": 29912,
+      "video_ids": [
+        "fM-X_btGbd4",
+        "C7oFcKKNLFg"
+      ],
+      "result": "WordPress rendered both YouTube iframes; playback UNVERIFIED"
+    },
+    {
+      "id": 29907,
+      "video_ids": [
+        "l_hArumdj1s"
+      ],
+      "result": "WordPress rendered YouTube iframe; playback UNVERIFIED"
+    },
+    {
+      "id": 29884,
+      "video_ids": [
+        "USawZlV_3Sk"
+      ],
+      "result": "WordPress rendered YouTube iframe; playback UNVERIFIED"
+    },
+    {
+      "id": 29878,
+      "video_ids": [
+        "I-9r5z7HLjU",
+        "SQbLJR8MQMQ"
+      ],
+      "result": "WordPress rendered both YouTube iframes; playback UNVERIFIED"
+    },
+    {
+      "id": 29691,
+      "video_ids": [
+        "arc1W2sMbYU",
+        "JIXapiCCeSA"
+      ],
+      "result": "WordPress rendered both YouTube iframes; playback UNVERIFIED"
+    }
+  ],
+  "no_youtube_embed_in_saved_markup": [
+    29898,
+    29902,
+    29892,
+    29874,
+    29860,
+    29836
+  ],
+  "repairs": [
+    {
+      "post_id": 29921,
+      "title": "Tesla to Wind Down Cybertruck Production as Cybercab Takes Priority",
+      "url": "https://bitcoinversus.tech/2026/11/06/tesla-cybertruck-production-wind-down-cybercab-2027/",
+      "media_type": "X/Twitter original post",
+      "original_url": "https://x.com/ft/status/2118645111047290914",
+      "original_failure": "Native Gutenberg wp:embed with x.com URL produced no twitter-tweet widget in rendered WP HTML, leaving link-only output.",
+      "repair": "Changed native Gutenberg Twitter embed target to https://twitter.com/ft/status/2118645111047290914; preserved source caption and article text.",
+      "after": "Rendered WP content now includes blockquote.twitter-tweet, Financial Times original post text, source id 2118645111047290914 and script https://platform.x.com/widgets.js.",
+      "source": "Financial Times X account (@FT); embedded content from WordPress oEmbed",
+      "saved_markup": "VERIFIED",
+      "live_rendered_wp_html": "VERIFIED_WIDGET_MARKUP",
+      "browser_widget_visual": "UNVERIFIED",
+      "status": "REPAIRED",
+      "remaining": "Check widget visually at desktop/mobile widths; external JS may fail to load on some browsers."
+    }
+  ],
+  "new_story": {
+    "post_id": 29933,
+    "title": "Supermicro, IBM and NVIDIA Claim 56× Faster AI Response Starts",
+    "url": "https://bitcoinversus.tech/2026/11/06/supermicro-ibm-nvidia-kv-cache-56x-ai-inference-2026/",
+    "category_ids": [
+      5177360,
+      12374,
+      6
+    ],
+    "category_names": [
+      "Data Center News",
+      "Artificial Intelligence",
+      "technology"
+    ],
+    "word_count": 528,
+    "featured_cover": {
+      "id": 29930,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "saved_assignment": "VERIFIED",
+      "visual_load": "UNVERIFIED"
+    },
+    "media": [
+      {
+        "type": "official announcement image",
+        "id": 29931,
+        "source": "Supermicro November 5 press release",
+        "saved_markup": "VERIFIED",
+        "rendered_html": "VERIFIED",
+        "browser_load": "UNVERIFIED"
+      },
+      {
+        "type": "official YouTube recap",
+        "video_id": "_bROSHhTbWY",
+        "source": "Direct official video link in Supermicro Nov 5 announcement",
+        "canonical_url": "https://www.youtube.com/watch?v=_bROSHhTbWY",
+        "saved_markup": "VERIFIED",
+        "rendered_iframe_src": "https://www.youtube.com/embed/_bROSHhTbWY",
+        "rendered_html": "VERIFIED",
+        "actual_playback": "UNVERIFIED",
+        "video_title_and_channel": "Not independently verified beyond company press link",
+        "embedding_permission": "Not independently verified"
+      },
+      {
+        "type": "official hardware photograph",
+        "id": 29929,
+        "source": "Supermicro ASG-1115S-NE316R product page",
+        "saved_markup": "VERIFIED",
+        "rendered_html": "VERIFIED",
+        "browser_load": "UNVERIFIED"
+      }
+    ],
+    "source_links": [
+      "https://www.supermicro.com/en/pressreleases/supermicro-launches-kv-cache-solution-ibm-and-nvidia",
+      "https://www.storagereview.com/news/supermicro-ibm-storage-scale-nvidia-dynamo-kv-cache-platform-56x-ttft",
+      "https://www.supermicro.com/en/products/system/storage/1u/asg-1115s-ne316r"
+    ],
+    "benchmarks": {
+      "TTFT_130k_uncached_sec": 32.14,
+      "TTFT_130k_cached_sec": 0.57,
+      "reported_speedup": "up to 56x",
+      "limitations": "One NVIDIA RTX PRO 6000 Blackwell benchmark GPU and eight-node all-flash tier; company-led testing not independently repeated."
+    },
+    "internal_links": 4,
+    "qr_asset": 24043,
+    "footer_order": "Volunteer note > original donation QR > italic Editor's Note",
+    "saved_markup": "VERIFIED",
+    "public_wp_html": "VERIFIED",
+    "desktop_screenshot_url": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fbitcoinversus.tech%2F2026%2F11%2F06%2Fsupermicro-ibm-nvidia-kv-cache-56x-ai-inference-2026%2F?vpw=1200&vph=7000&w=1200&requeue=true",
+    "screenshot_provider_status": "ready; image not manually assessed",
+    "actual_video_playback": "UNVERIFIED"
+  },
+  "next_patrol": "Inspect X widget under browser script execution; test each YouTube player for actual playback and mobile responsiveness; extend inventory beyond inspected 14 posts."
+}
