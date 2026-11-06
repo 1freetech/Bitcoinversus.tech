@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29907,
+  "public_url": "https://bitcoinversus.tech/2026/11/06/mit-uq-daaam-robot-memory-uncertainty-object-correction-2026/",
+  "title": "MIT Builds Robot Memory System That Corrects Wrong Objects",
+  "publication_date": "2026-11-06T05:58:39",
+  "status": "published_unverified",
+  "source_archive_path": "archive/2026/11/29907-mit-uq-daaam-robot-memory-uncertainty-object-correction-2026.gutenberg.html",
+  "source_sha": "938d6fc3e3aed925e71ee3d3213bc82b02a101d5",
+  "source_exact_readback": true,
+  "reporting_words": 694,
+  "internal_links": 4,
+  "primary_sources": [
+    {
+      "publisher": "MIT News",
+      "published": "2026-11-05",
+      "url": "https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105"
+    },
+    {
+      "publisher": "Harry Zhang, Nicolas Gorlo, Luca Carlone",
+      "published": "2026-06-06",
+      "type": "arXiv preprint, NeurIPS 2026 planned presentation",
+      "url": "https://arxiv.org/abs/2606.08277"
+    }
+  ],
+  "distinct_facts": {
+    "system": "UQ-DAAAM",
+    "method": "Vision-language model confidence plus multi-view caption consistency; frame selection and LLM fusion",
+    "ambiguity_resolution_percent_approx": 92,
+    "average_extra_captions_per_object": 2,
+    "description_accuracy_comparative_improvement_percent": 5,
+    "not_equivalent_to_overall_detection_accuracy": true,
+    "independent_commercial_safety_proven": false
+  },
+  "media": {
+    "featured": {
+      "id": 29906,
+      "size": [
+        1200,
+        630
+      ],
+      "type": "Original conceptual illustration"
+    },
+    "in_body_research_figure": {
+      "id": 29905,
+      "native_size": [
+        2500,
+        1666
+      ],
+      "display_width_px": 440,
+      "credit": "MIT researchers Zhang, Gorlo and Carlone",
+      "rights": "MIT News CC BY-NC-ND; no edits beyond delivery size"
+    },
+    "video": {
+      "id": "l_hArumdj1s",
+      "title": "Remember with Confidence: Uncertainty Quantification for Spatio-temporal Memory with Probabilistic Guarantees",
+      "publisher": "MIT SPARK Lab",
+      "research_supplement": true,
+      "iframe_rendered": true,
+      "playback_verified": false
+    },
+    "footer_qr_id": 24043
+  },
+  "quality": {
+    "published_wordpress_source_readback": true,
+    "public_rest_render_readback": true,
+    "rendered_iframe_count": 1,
+    "study_figure_rendered": true,
+    "original_qr_rendered": true,
+    "volunteer_disclaimer_rendered": true,
+    "no_text_boxes": true,
+    "subscriber_email_optout": true,
+    "actual_playback_verified": false,
+    "mobile_visual_inspection": false,
+    "QR_scan_test": false
+  },
+  "open_qa": [
+    "Play the MIT supplementary video in a graphical browser",
+    "Inspect the article visually on desktop and mobile to ensure the research figure is readable and responsive",
+    "Verify original donation QR scan"
+  ],
+  "next_step": "Open public article on phone/desktop and verify video playback, responsive figure, donation QR scan."
+}
