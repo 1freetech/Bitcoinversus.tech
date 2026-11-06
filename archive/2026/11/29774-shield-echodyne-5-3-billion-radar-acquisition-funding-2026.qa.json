@@ -77,7 +77,8 @@
       ],
       "source": "Official Echodyne corporate website",
       "type": "Authentic product photo",
-      "rendered": true
+      "rendered": true,
+      "display_width_px": 280
     },
     "youtube": [
       {
@@ -122,5 +123,20 @@
     "Visually inspect desktop and mobile layout and photograph captions",
     "Scan donation QR to verify destination"
   ],
-  "smallest_next_step": "Inspect the live page on desktop and mobile, validate video playback and QR scannability."
+  "smallest_next_step": "Inspect the live page on desktop and mobile, validate video playback and QR scannability.",
+  "image_display_repair_2026_11_05": {
+    "post_id": 29774,
+    "media_id": 29773,
+    "previous_max_display_width_px": 600,
+    "revised_display_width_px": 280,
+    "centered_figure": true,
+    "mobile_max_width_percent": 100,
+    "auto_height": true,
+    "caption_preserved": true,
+    "live_rendered_markup_verified": true,
+    "video_iframes_preserved": 2,
+    "qr_preserved": true,
+    "visual_pixel_qa": false,
+    "modified_fields": "Single in-body radar product photo block only"
+  }
 }
