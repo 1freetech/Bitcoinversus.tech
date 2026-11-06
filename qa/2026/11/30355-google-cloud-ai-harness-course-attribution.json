@@ -1,0 +1,122 @@
+{
+  "schema": "bitcoinversus.editorial-qa.v1",
+  "article": {
+    "id": 30355,
+    "title": "Google Cloud’s AI Harness Crash Course Sparks Two-Hour Course Claims",
+    "canonical_url": "https://bitcoinversus.tech/2026/11/06/google-cloud-ai-harness-crash-course-two-hour-claim-annie-wang-2026/",
+    "status": "published",
+    "published_date": "2026-11-06",
+    "categories": [
+      "Computer Programming",
+      "Artificial Intelligence",
+      "Information Technology",
+      "Technology",
+      "Trending News"
+    ],
+    "originality": "Distinct fact-check on October 22 short Google Cloud course and the viral two-hour course framing; contextual link to October 7 harness/loop/graph explainer."
+  },
+  "sources": [
+    {
+      "name": "Google Cloud Tech official video",
+      "date": "2026-10-22",
+      "url": "https://www.youtube.com/watch?v=2C_CefSQEAQ",
+      "note": "Approximately 9:28; the only official Google Cloud Tech video directly checked for the viral harness topic"
+    },
+    {
+      "name": "Annie Wang's accompanying learning page",
+      "url": "https://g.dev/ai/ai-harness",
+      "note": "Four modules with original codelabs and demo workflow"
+    },
+    {
+      "name": "Google ADK 2 graph orchestration codelab",
+      "url": "https://codelabs.developers.google.com/adk2/instructions"
+    },
+    {
+      "name": "Google evaluation and self-evolving loop codelab",
+      "url": "https://codelabs.developers.google.com/codelabs/table-for-n/instructions"
+    },
+    {
+      "name": "Social post with two-hour chapter markers",
+      "date": "2026-10-24",
+      "url": "https://x.com/0xCodila/status/2114014120064217157",
+      "note": "Exact original video corresponding to chapter markers was not independently established; not treated as an official Google upload."
+    }
+  ],
+  "claims": {
+    "verified": "Google Cloud Tech official short video, presenter Annie Wang, companion labs, ADK workflow structure and evaluation model",
+    "attributed": "The two-hour chapter list and claim of a separate Google-released course are social descriptions; Wang referred to her workshop/video in responses",
+    "caution": "Long-running or self-improving loops require stop conditions, budgets, security and evaluation checks; no unlimited autonomous success assumed"
+  },
+  "editorial": {
+    "words_before_footer": 590,
+    "contextual_internal_links": 4,
+    "prohibited_terms_found": [],
+    "quantitative_chart_unnecessary": true
+  },
+  "cover": {
+    "wordpress_media_id": 30351,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "alt_present": true,
+    "assigned_to_post": true,
+    "original_conceptual_art": true
+  },
+  "in_body_media": [
+    {
+      "kind": "youtube",
+      "video_id": "2C_CefSQEAQ",
+      "title": "AI harness crash course",
+      "channel": "Google Cloud Tech",
+      "url": "https://www.youtube.com/watch?v=2C_CefSQEAQ",
+      "gutenberg_embed_saved": true,
+      "wordpress_rendered_iframe_target_verified": true,
+      "actual_playback": "not verified",
+      "embeddability_playback": "not verified"
+    },
+    {
+      "kind": "image",
+      "wordpress_media_id": 30354,
+      "credit": "Original BitcoinVersus.Tech illustration",
+      "alt_present": true,
+      "italic_caption": true
+    },
+    {
+      "kind": "youtube",
+      "video_id": "IrW0_f-w4kA",
+      "title": "Graph Engineering 101",
+      "channel": "Google Cloud Tech",
+      "url": "https://www.youtube.com/watch?v=IrW0_f-w4kA",
+      "gutenberg_embed_saved": true,
+      "wordpress_rendered_iframe_target_verified": true,
+      "actual_playback": "not verified",
+      "embeddability_playback": "not verified"
+    }
+  ],
+  "footer": {
+    "order": [
+      "approved volunteer disclaimer",
+      "original 5000-sat QR",
+      "mobile scanning instructions",
+      "fully italicized Editor's Note"
+    ],
+    "saved_markup_verified": true,
+    "qr_image_id": 24043,
+    "qr_scannability": "not independently checked"
+  },
+  "qa": {
+    "wordpress_status": "publish",
+    "saved_markup_read": true,
+    "view_rendered_html_read": true,
+    "iframe_count": 2,
+    "desktop_capture_ready": true,
+    "mobile_capture_ready": true,
+    "desktop_visual_review": "unverified",
+    "mobile_visual_review": "unverified",
+    "public_web_fetch": "failed in external retrieval; WordPress site API and screenshot system independently returned published site",
+    "direct_video_playback": "unverified",
+    "errors": [],
+    "next_step": "Test playback on both embedded videos and inspect full mobile/desktop captures plus donation-QR scan."
+  }
+}
