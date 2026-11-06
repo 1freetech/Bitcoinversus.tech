@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29774,
+  "status": "published_unverified",
+  "title": "Shield to Acquire Echodyne in $5.3 Billion Radar Deal",
+  "live_url": "https://bitcoinversus.tech/2026/11/05/shield-echodyne-5-3-billion-radar-acquisition-funding-2026/",
+  "publication_date": "2026-11-05T20:27:54",
+  "source_archive_path": "archive/2026/11/29774-shield-echodyne-5-3-billion-radar-acquisition-funding-2026.gutenberg.html",
+  "source_blob_sha": "da390cb29efbedb96bdce63536b79103af74def8",
+  "source_exact_readback": true,
+  "category_ids": [
+    179,
+    13426,
+    6
+  ],
+  "editorial_word_count": 554,
+  "internal_links": 5,
+  "primary_sources": [
+    {
+      "publisher": "Shield/Echodyne",
+      "date": "2026-11-05",
+      "url": "https://www.echodyne.com/es/newsroom/shield-to-acquire-echodyne",
+      "verified": "$5.3bn maximum consideration, $4.8bn closing and up to $500m contingent; $2.5bn financing with $1bn Series H at $28.8bn post-money valuation, $1bn Blackstone structured equity and $500m JPMorgan-arranged debt; early 2027 expected closing"
+    },
+    {
+      "publisher": "Echodyne",
+      "date": "2026-07-09",
+      "url": "https://www.echodyne.com/newsroom/echodyne-opens-new-manufacturing-facility-to-meet-surging-global-demand-for-advanced-mesa-r-radar",
+      "verified": "86,350 sq ft factory, $40m investment, annual manufacturing capacity exceeding 30k, not actual output"
+    },
+    {
+      "publisher": "Echodyne",
+      "date": "2026-09-30",
+      "url": "https://www.echodyne.com/it/newsroom/echodyne-awarded-250-million-jiatf-401-counter-uas-contract",
+      "verified": "$250m IDIQ ceiling over up to 36 months, not recognized revenue"
+    }
+  ],
+  "independent_sources": [
+    {
+      "publisher": "Defense News",
+      "date": "2026-11-05",
+      "url": "https://www.defensenews.com/industry/techwatch/2026/11/05/shield-ai-to-acquire-radar-maker-echodyne-to-bust-drones/"
+    },
+    {
+      "publisher": "GeekWire",
+      "date": "2026-11-05",
+      "url": "https://www.geekwire.com/2026/shield-ai-to-buy-bill-gates-backed-radar-maker-echodyne-in-5-3b-deal-doubling-down-on-seattle-area/"
+    },
+    {
+      "publisher": "Bloomberg syndicated",
+      "date": "2026-11-05",
+      "url": "https://finance.yahoo.com/technology/articles/shield-ai-hit-28-8-160003152.html"
+    }
+  ],
+  "distinctions": [
+    "Acquisition agreed but unclosed; closing expected early 2027 conditional on regulatory approvals",
+    "$5.3bn includes $0.5bn contingent consideration",
+    "$28.8bn is post-money Shield financing valuation, not deal consideration",
+    "30,000 annual radar production capacity is not shipment total",
+    "$250m IDIQ is maximum procurement ceiling, not realized sales",
+    "Company forecasts triple-digit growth without providing same-period revenue basis"
+  ],
+  "media": {
+    "featured": {
+      "id": 29772,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "type": "Original conceptual editorial illustration; not a real Echodyne facility or product photograph"
+    },
+    "body_photo": {
+      "id": 29773,
+      "dimensions": [
+        900,
+        994
+      ],
+      "source": "Official Echodyne corporate website",
+      "type": "Authentic product photo",
+      "rendered": true
+    },
+    "youtube": [
+      {
+        "id": "XPh4IjzMHTY",
+        "channel": "Shield AI",
+        "title": "Autonomous Teaming at the Edge | V-BAT + Destinus Hornet Powered by Hivemind",
+        "original_date": "2026-06-02",
+        "saved_shortcode": true,
+        "rendered_iframe": true,
+        "playback_verified": false
+      },
+      {
+        "id": "OnpuNlE3UxU",
+        "channel": "Shield AI",
+        "title": "X-BAT: Earth Is Our Runway",
+        "original_date": "2025-10-21",
+        "saved_shortcode": true,
+        "rendered_iframe": true,
+        "playback_verified": false
+      }
+    ],
+    "distinct_inbody_items": 3,
+    "donation_qr_id": 24043
+  },
+  "checks": {
+    "wordpress_published_source_readback": true,
+    "wordpress_public_render_readback": true,
+    "two_youtube_iframes_rendered": true,
+    "authentic_radar_image_rendered": true,
+    "original_donation_qr_rendered": true,
+    "canonical_editor_note_present": true,
+    "approved_volunteer_disclaimer_present": true,
+    "financial_information_disclaimer_present": true,
+    "no_text_boxes": true,
+    "subscriber_email_optout_persisted": true,
+    "mobile_screenshot_pixels_reviewed": false,
+    "actual_video_playback_checked": false,
+    "qr_scannability_tested": false
+  },
+  "open_qa": [
+    "Play each live video in browser to verify playback",
+    "Visually inspect desktop and mobile layout and photograph captions",
+    "Scan donation QR to verify destination"
+  ],
+  "smallest_next_step": "Inspect the live page on desktop and mobile, validate video playback and QR scannability."
+}
