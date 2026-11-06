@@ -1,0 +1,88 @@
+{
+  "title": "China Blocks Part of SoftBank’s $5.4 Billion ABB Robotics Deal",
+  "post_id": 30314,
+  "url": "https://bitcoinversus.tech/2026/11/06/china-blocks-softbank-abb-robotics-acquisition-november-2026/",
+  "status": "publish",
+  "publication_date": "2026-11-06",
+  "categories": [
+    "Artificial Intelligence",
+    "Business",
+    "Robotics",
+    "Technology",
+    "Trending News"
+  ],
+  "verified_primary_sources": [
+    "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics",
+    "https://group.softbank/en/news/press/20261106",
+    "https://www.abb.com/global/en/news/129685/abb-to-divest-robotics-division-to-softbank-group",
+    "https://new.abb.com/news/detail/97670/abb-opens-state-of-the-art-robotics-mega-factory-in-shanghai"
+  ],
+  "independent_reporting": "https://www.reuters.com/business/media-telecom/china-blocks-softbanks-54-billion-takeover-abbs-robotics-division-ft-reports-2026-11-05/",
+  "editorial": {
+    "words": 609,
+    "internal_links": 4,
+    "prohibited_words": [],
+    "scope_note": "Only acquisition of the China business prohibited. Entire global deal not confirmed terminated.",
+    "duplicate_check": "WordPress published/draft searches and GitHub code search, existing October ABB robot article differentiated"
+  },
+  "cover": {
+    "id": 30308,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "source": "Official ABB Robotics 2022 Shanghai factory photograph",
+    "alt": true,
+    "featured_media_verified": true
+  },
+  "in_body_media": [
+    {
+      "type": "youtube",
+      "id": "NAzEUZZODXg",
+      "channel": "ABB Robotics",
+      "title": "Fly through our ABB Robotics Mega Factory",
+      "url": "https://www.youtube.com/watch?v=NAzEUZZODXg",
+      "saved_gutenberg": true,
+      "wp_iframe_verified": true,
+      "playback": "unverified"
+    },
+    {
+      "type": "image",
+      "media_id": 30311,
+      "caption_credit": "ABB Robotics",
+      "responsive_markup": true
+    },
+    {
+      "type": "youtube",
+      "id": "GK-PMXcK3CE",
+      "channel": "ABB Robotics",
+      "title": "Robotic Fashion Inductor",
+      "url": "https://www.youtube.com/watch?v=GK-PMXcK3CE",
+      "saved_gutenberg": true,
+      "wp_iframe_verified": true,
+      "playback": "unverified"
+    }
+  ],
+  "footer": {
+    "order": [
+      "original volunteer note",
+      "original 5,000-sat QR image",
+      "wallet scanning instructions",
+      "fully italicized Editor’s Note"
+    ],
+    "verified": true,
+    "original_qr_media_id": 24043,
+    "scanning_test": "unverified"
+  },
+  "live_qa": {
+    "publish_status_confirmed": true,
+    "wordpress_view_html_retrieved": true,
+    "correct_video_iframes": 2,
+    "mobile_screenshot_status": "ready",
+    "desktop_screenshot_status": "ready",
+    "visual_inspection": "unverified because screenshot cannot be opened in available browser",
+    "video_playback": "unverified",
+    "wordpress_errors": []
+  },
+  "next_step": "Manually play both YouTube embeds and inspect full mobile/desktop screenshots and QR scanner."
+}
