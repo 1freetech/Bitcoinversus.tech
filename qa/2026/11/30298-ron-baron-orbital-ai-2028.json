@@ -1,0 +1,147 @@
+{
+  "schema": "bitcoinversus.editorial-qa.v1",
+  "article": {
+    "id": 30298,
+    "title": "Ron Baron Sees Significant Orbital AI Data Centers by 2028",
+    "canonical_url": "https://bitcoinversus.tech/2026/11/06/ron-baron-spacex-orbital-ai-data-centers-2028-cnbc-november-2026/",
+    "publication_date": "2026-11-06",
+    "status": "publish",
+    "categories": [
+      "Artificial Intelligence",
+      "Data Center News",
+      "Finance",
+      "Space",
+      "Trending News"
+    ],
+    "purpose": "Nov 6, 2026 CNBC Baron interview follow-up to prior SpaceX orbital computing physics coverage, distinguished by Ron Baron's latest financial forecasts and 2028 prediction"
+  },
+  "research": {
+    "primary_sources": [
+      {
+        "title": "Ron Baron interview",
+        "publisher": "CNBC Television / Squawk Box",
+        "date": "2026-11-06",
+        "url": "https://www.youtube.com/watch?v=kvlEa0RpSmA"
+      },
+      {
+        "title": "SpaceX Q3 2026 SEC Form 10-Q",
+        "publisher": "SEC",
+        "date": "2026-10",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm"
+      },
+      {
+        "title": "New US electric generating capacity expected to reach record high 2026",
+        "publisher": "EIA",
+        "date": "2026-02-20",
+        "url": "https://www.eia.gov/TodayinEnergy/detail.php?id=67205"
+      },
+      {
+        "title": "China's newly installed wind and solar power capacity 2025",
+        "publisher": "China National Energy Administration via gov.cn",
+        "date": "2026-02-12",
+        "url": "https://english.www.gov.cn/archive/statistics/202602/12/content_WS698d93cbc6d00ca5f9a091bb.html"
+      },
+      {
+        "title": "Small Spacecraft Thermal Control",
+        "publisher": "NASA",
+        "url": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/"
+      }
+    ],
+    "material_units": "Baron's 300-GW vs 20-GW comparison is attributed, not adopted; EIA confirmed 2025 US 53 GW added and 2026 86 GW planned, which contains batteries and is not equivalent to generating output; China 430 GW wind/solar added in 2025",
+    "claims": "$30B stated as Baron's description of cumulative client gains; 'hundreds of billions' is Baron's forecast, not current value or assured returns; SpaceX–Tesla merger has not been approved; 2028 orbital AI scale is projection, not deployment proof",
+    "duplicate_check": {
+      "wordpress": "Ron Baron and orbital data center search of published/drafts completed",
+      "github": "Repository searches Ron Baron and orbital data centers completed; prior related reporting linked in story"
+    }
+  },
+  "editorial": {
+    "news_words_excluding_footer": 740,
+    "internal_contextual_links": 4,
+    "prohibited_terms_found": [],
+    "chart_required": false,
+    "reason_no_chart": "Investor forecasts and official electrical capacity figures have non-comparable scopes/definitions; an apples-to-apples chart cannot be supported"
+  },
+  "cover": {
+    "id": 30296,
+    "width": 1200,
+    "height": 630,
+    "alt_text": "Conceptual orbital AI compute satellite with blue solar arrays and cooling radiator above Earth, not a commissioned SpaceX system",
+    "wordpress_assignment_verified": true,
+    "is_conceptual_art": true
+  },
+  "in_body_media": [
+    {
+      "type": "youtube",
+      "id": "kvlEa0RpSmA",
+      "title": "Ron Baron on his Musk investments: Can make 'hundreds of billions of dollars' over the next 10 years",
+      "channel": "CNBC Television",
+      "url": "https://www.youtube.com/watch?v=kvlEa0RpSmA",
+      "published": "2026-11-06",
+      "markup": "Gutenberg wp:embed",
+      "saved": true,
+      "wordpress_rendered_iframe": true,
+      "correct_embed_target": true,
+      "actual_playback": "not independently tested",
+      "embed_permission": "not independently tested"
+    },
+    {
+      "type": "image",
+      "id": 27618,
+      "title": "SpaceX AI1 technical concept slide",
+      "caption_and_credit": true,
+      "wp_view_render": true,
+      "width_css_max": 530
+    },
+    {
+      "type": "youtube",
+      "id": "ANe_HW4X8oc",
+      "title": "Starship - Test Like You Fly",
+      "channel": "SpaceX",
+      "published": "2026-04-27",
+      "url": "https://www.youtube.com/watch?v=ANe_HW4X8oc",
+      "markup": "Gutenberg wp:embed",
+      "saved": true,
+      "wordpress_rendered_iframe": true,
+      "correct_embed_target": true,
+      "actual_playback": "not independently tested",
+      "embed_permission": "not independently tested"
+    }
+  ],
+  "footer": {
+    "order": [
+      "approved volunteer statement",
+      "original 5000-sat QR image",
+      "scanning instructions",
+      "italicized Editor's Note with disclaimer"
+    ],
+    "order_verified": true,
+    "qr_media_id": 24043,
+    "original_qr_asset_used": true,
+    "donation_address_shown": "3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb",
+    "qr_scannability": "not independently tested",
+    "editor_note_italics_saved": true
+  },
+  "qa": {
+    "wordpress_edit_markup_retrieved": true,
+    "wordpress_rendered_html_retrieved": true,
+    "published_status_verified": true,
+    "iframe_count": 2,
+    "screenshots": {
+      "mobile": {
+        "viewport_width": 390,
+        "status": "ready",
+        "visual_review": "not performed"
+      },
+      "desktop": {
+        "viewport_width": 1280,
+        "status": "ready",
+        "visual_review": "not performed"
+      }
+    },
+    "direct_public_web_fetch": "external fetch unavailable; WordPress site tool confirmed published and screenshot captures returned public site",
+    "live_playback": "not performed",
+    "mobile_overflow": "not visually verified",
+    "warnings_on_publish": [],
+    "smallest_remaining_next_step": "Direct browser playback for CNBC and SpaceX embeds, desktop/mobile long-page overflow, QR scannability"
+  }
+}
