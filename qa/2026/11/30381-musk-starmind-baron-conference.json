@@ -1,0 +1,171 @@
+{
+  "schema": "bitcoinversus.editorial-qa.v1",
+  "article": {
+    "post_id": 30381,
+    "title": "Musk Forecasts StarMind Orbital AI Launches in 2027",
+    "canonical_url": "https://bitcoinversus.tech/2026/11/06/musk-starmind-orbital-ai-2027-baron-conference-revenue-2026/",
+    "status": "published",
+    "publication_date": "2026-11-06",
+    "categories": [
+      "Space",
+      "Artificial Intelligence",
+      "Data Center News",
+      "Semiconductors",
+      "Technology"
+    ],
+    "word_count": 663,
+    "contextual_internal_links": 5,
+    "category_rotation_note": "New StarMind timing and SpaceX ARR rate instead of duplicate TeraFab or Ron Baron investment forecast"
+  },
+  "primary_and_contemporaneous_sources": [
+    {
+      "type": "official",
+      "name": "Baron Capital 33rd Annual Investment Conference agenda",
+      "url": "https://www.baroncapitalgroup.com/conference-2026",
+      "evidence": "Ron Baron and Elon Musk conversation on Nov 6, 2026 at 1:10 pm ET"
+    },
+    {
+      "type": "user_video",
+      "name": "Elon Musk conversation with Ron Baron",
+      "url": "https://www.youtube.com/watch?v=IjWbvz95w08",
+      "evidence": "User-supplied recording; uploader/channel not independently identified; full verbatim transcript not independently retrieved"
+    },
+    {
+      "type": "secondary_machine_transcript",
+      "name": "FourWeekMBA independently machine-transcribed portions of November 6 Baron Capital X broadcast",
+      "url": "https://fourweekmba.com/ai-musk-sees-spacex-q4-revenue-up-70-1t-arr-odds-at-2/",
+      "evidence": "Quoted words, StarMind Q3 2027 tentative, 2028-29 ramp, 70% Q4 forecast and $500B run rate"
+    },
+    {
+      "type": "official",
+      "name": "SpaceX third-quarter 2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
+      "evidence": "Reported Q3 $14.575B revenue and Q2 $7.814B revenue"
+    },
+    {
+      "type": "official",
+      "name": "SpaceX June 2026 AI1 investor presentation",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026041761/fwp_cfointerview.htm",
+      "evidence": "Prior AI1 design—not a launched StarMind satellite"
+    }
+  ],
+  "calculations": {
+    "Q3_million_USD": 14575,
+    "Q2_million_USD": 7814,
+    "sequential_growth_percent": 86.5242,
+    "Q4_predicted_million_USD_70pct": 24777.5,
+    "target_ARR_billion_USD": 500,
+    "target_quarterly_equivalent_billion_USD": 125,
+    "Q3_to_target_quarterly_multiplier": 8.5763,
+    "target_chip_output_GW_per_year": 1000,
+    "quoted_global_2027_GW_range": [
+      35,
+      45
+    ],
+    "relative_factor_range": [
+      22.22,
+      28.57
+    ],
+    "notes": "Q4 and December 2027 target are Musk projections, not reported outcomes. Chip output refers to aggregate chip rated power, not generation."
+  },
+  "quotes": [
+    {
+      "text": "I’m just guessing here.",
+      "type": "machine-transcribed short excerpt",
+      "source": "FourWeekMBA contemporaneous article, not manually transcribed YouTube",
+      "topic": "Q3 2027"
+    },
+    {
+      "text": "something like 70%",
+      "type": "machine-transcribed short excerpt",
+      "source": "FourWeekMBA contemporaneous article",
+      "topic": "Q4 revenue growth"
+    },
+    {
+      "text": "Now, this is not a promise.",
+      "type": "machine-transcribed short excerpt",
+      "source": "FourWeekMBA contemporaneous article",
+      "topic": "2027 $500B annualized run-rate"
+    }
+  ],
+  "cover": {
+    "media_id": 30377,
+    "width": 1200,
+    "height": 630,
+    "alt_text_present": true,
+    "assigned_as_featured": true,
+    "original_conceptual_art": true,
+    "distinguished_from_launched_hardware": true
+  },
+  "in_body_media": [
+    {
+      "type": "youtube",
+      "id": "IjWbvz95w08",
+      "url": "https://www.youtube.com/watch?v=IjWbvz95w08",
+      "description": "User-supplied recording of November 6 Baron conference conversation",
+      "channel": "not independently verified",
+      "native_gutenberg_saved": true,
+      "wordpress_view_iframe_correct": true,
+      "actual_playback": "unverified",
+      "embedding_permissions": "unverified"
+    },
+    {
+      "type": "image",
+      "id": 27618,
+      "description": "SpaceX June AI1 concept slide",
+      "source": "SpaceX via June investor presentation",
+      "alt_and_caption": true,
+      "css_max_width_px": 530
+    },
+    {
+      "type": "youtube",
+      "id": "k3Un1TizSNg",
+      "url": "https://www.youtube.com/watch?v=k3Un1TizSNg",
+      "description": "June 2026 VideoFromSpace publishing of SpaceX AI1 computing concept discussion",
+      "channel": "VideoFromSpace",
+      "native_gutenberg_saved": true,
+      "wordpress_view_iframe_correct": true,
+      "actual_playback": "unverified",
+      "embedding_permissions": "unverified"
+    }
+  ],
+  "footer": {
+    "required_order": [
+      "volunteer disclaimer entirely italicized",
+      "original 5,000 satoshi QR media id 24043",
+      "mobile scanning instructions",
+      "fully italicized Editor’s Note"
+    ],
+    "saved_order_verified": true,
+    "original_qr_media_id": 24043,
+    "qr_scan_test": "not performed",
+    "source": "Prior BitcoinVersus.Tech verified published article 30298"
+  },
+  "verification": {
+    "wordpress_saved_edit_markup_read": true,
+    "wordpress_rendered_view_html_read": true,
+    "public_post_status": "publish",
+    "two_expected_iframes": true,
+    "caption_count": 3,
+    "featured_media_verified": true,
+    "desktop_capture": {
+      "viewport": 1280,
+      "status": "ready",
+      "visual_inspection": "not performed"
+    },
+    "mobile_capture": {
+      "viewport": 390,
+      "status": "ready",
+      "visual_inspection": "not performed"
+    },
+    "external_public_fetch": "could not fetch with separate web browser; WordPress API and screenshot service confirmed published",
+    "playback": "not independently tested",
+    "retired_ad": "absent",
+    "wordpress_save_errors": [],
+    "remaining_steps": [
+      "Independently test both YouTube players and playback permissions",
+      "Visually inspect full desktop and mobile page screenshots and overflow",
+      "Scan QR code and confirm wallet destination"
+    ]
+  }
+}
