@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29878,
+  "title": "Silicon Photonic Chip Carries 100 Gbit/s Through Barriers",
+  "url": "https://bitcoinversus.tech/2026/11/06/jncasr-silicon-terahertz-photonic-klein-tunnelling-100gbps-6g-2026/",
+  "date": "2026-11-06T05:51:05",
+  "status": "published_unverified",
+  "source_archive": "archive/2026/11/29878-jncasr-silicon-terahertz-photonic-klein-tunnelling-100gbps-6g-2026.gutenberg.html",
+  "source_blob_sha": "04beb157acdc808b63366b7e996f040aa0cfeadc",
+  "readback_exact": true,
+  "reporting_words": 667,
+  "internal_links": 4,
+  "featured_image": {
+    "id": 29867,
+    "width": 1200,
+    "height": 630,
+    "conceptual_not_lab_photo": true
+  },
+  "sources": [
+    {
+      "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2332613&lang=1&reg=3",
+      "publisher": "India Ministry of Science and Technology",
+      "date": "2026-11-04"
+    },
+    {
+      "url": "https://doi.org/10.1002/adma.75322",
+      "publisher": "Advanced Materials",
+      "first_published": "2026-10-11"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42860748/",
+      "publisher": "PubMed"
+    }
+  ],
+  "units_and_results": {
+    "carrier_frequency_GHz": [
+      310,
+      360
+    ],
+    "double_barrier_Gbps": 48,
+    "omega_bends_Gbps": 60,
+    "splitter_QAM32_Gbps": 100,
+    "one_barrier_percent_loss": "approximately 1-2",
+    "two_barriers_percent_loss": "approximately 2-3",
+    "no_commercial_6G_network": false,
+    "lab_demonstration": true
+  },
+  "media": [
+    {
+      "type": "youtube",
+      "id": "I-9r5z7HLjU",
+      "channel": "NPTEL IIT Guwahati",
+      "title": "Simulation Demonstration of Topological Photonic Crystals Based Waveguides Part 1",
+      "rendered_iframe": true,
+      "actual_playback_verified": false
+    },
+    {
+      "type": "youtube",
+      "id": "SQbLJR8MQMQ",
+      "channel": "NPTEL IIT Guwahati",
+      "title": "Simulation Demonstration of Topological Photonic Crystals Based Waveguides Part 2",
+      "rendered_iframe": true,
+      "actual_playback_verified": false
+    }
+  ],
+  "checks": {
+    "wordpress_source_readback": true,
+    "rendered_iframes": 2,
+    "no_text_boxes": true,
+    "original_qr_rendered": true,
+    "volunteer_disclaimer_rendered": true,
+    "editor_note_present": true,
+    "actual_playback_tested": false,
+    "mobile_visual_inspection": false,
+    "qr_scannability_tested": false
+  },
+  "open_qa": [
+    "Actual video playback test",
+    "Mobile/desktop visual layout inspection",
+    "Donation QR real scan"
+  ]
+}
