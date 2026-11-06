@@ -1,0 +1,47 @@
+{
+  "post_id": 29714,
+  "status": "publish",
+  "url": "https://bitcoinversus.tech/2026/11/05/linux-mint-27-hibernation-superlight-velocitty-nemo-2026/",
+  "title": "Linux Mint 27 Brings Back Hibernation and Adds Desktop Tools",
+  "category": "Linux/Software",
+  "word_count": 544,
+  "internal_links": 5,
+  "primary_sources": [
+    "https://blog.linuxmint.com/?p=5093",
+    "https://blog.linuxmint.com/?m=202610"
+  ],
+  "featured": {
+    "id": 29706,
+    "width": 1200,
+    "height": 630,
+    "alt": "Editorial rendering of a laptop running a generic Linux desktop with sleep-mode symbols"
+  },
+  "media": [
+    {
+      "type": "original illustration",
+      "id": 29707,
+      "subject": "Hibernation RAM to SSD",
+      "live_html": "present"
+    },
+    {
+      "type": "original illustration",
+      "id": 29712,
+      "subject": "System resource monitoring",
+      "live_html": "present"
+    }
+  ],
+  "youtube": "none; no sufficiently verified relevant video found",
+  "social": "none; no verified original post",
+  "footer": "Editor’s Note, original QR image ID 24043, approved exact volunteer disclaimer; verified in saved and rendered HTML",
+  "qa": {
+    "duplicate_search": "Linux Mint 27/hibernation/Superlight WP published and drafts; no matching story",
+    "saved_markup": "pass",
+    "published_status": "pass",
+    "rendered_images": "pass in HTML",
+    "mobile_visual": "not independently verified",
+    "qr_scan": "not independently verified",
+    "video_playback": "not applicable",
+    "live_image_loading": "not independently verified",
+    "next_step": "Inspect live desktop/mobile screenshots and scan donation QR"
+  }
+}
