@@ -1,0 +1,61 @@
+{
+  "publication": {
+    "id": 29691,
+    "status": "draft",
+    "title": "Kraken Robotics Wins $102 Million in Subsea Sonar and Battery Orders",
+    "date": "2026-11-05",
+    "url": null
+  },
+  "sources": [
+    "https://www.globenewswire.com/news-release/2026/11/05/3396181/0/en/kraken-robotics-announces-102-million-in-new-orders.html",
+    "https://www.krakenrobotics.com/products/katfish/",
+    "https://www.krakenrobotics.com/news-releases/kraken-robotics-demonstrates-new-katfish-autonomous-launch-and-recovery-system-to-navy-customers/"
+  ],
+  "word_count": 507,
+  "internal_links": 4,
+  "featured": {
+    "id": 29690,
+    "width": 1200,
+    "height": 630,
+    "type": "original editorial illustration"
+  },
+  "media": [
+    {
+      "type": "youtube",
+      "id": "arc1W2sMbYU",
+      "title": "Compact Synthetic Aperture Sonar for UUVs | Kraken MP-SAS + REMUS 300",
+      "channel": "Kraken Robotics",
+      "canonical_url": "https://www.youtube.com/watch?v=arc1W2sMbYU",
+      "saved_markup": "pass",
+      "rendered_iframe": "pass",
+      "playback": "not tested"
+    },
+    {
+      "type": "youtube",
+      "id": "JIXapiCCeSA",
+      "title": "Kraken Robotics Demonstrates KATFISH Autonomous Launch and Recovery from SEFINE USV",
+      "channel": "Kraken Robotics",
+      "canonical_url": "https://www.youtube.com/watch?v=JIXapiCCeSA",
+      "saved_markup": "pass",
+      "rendered_iframe": "pass",
+      "playback": "not tested"
+    },
+    {
+      "type": "donation_qr",
+      "id": 24043
+    }
+  ],
+  "qa": {
+    "wordpress_duplicate_check": "No Kraken Robotics/SAS/Covelya published or draft matches found before draft creation",
+    "source_check": "primary announcement confirmed",
+    "saved_markup": "pass",
+    "preview_html": "pass",
+    "footer_order": "volunteer disclaimer then QR then Editor's Note confirmed",
+    "mobile_visual": "not tested",
+    "actual_video_playback": "not tested",
+    "qr_scannability": "not tested",
+    "social_embed": "none; original status ID not verified",
+    "publish_gate": "blocked: playback/mobile/QR tests not executed",
+    "next_step": "Use graphical browser to play both YouTube embeds, inspect desktop/mobile and scan QR, then publish and audit live URL"
+  }
+}
