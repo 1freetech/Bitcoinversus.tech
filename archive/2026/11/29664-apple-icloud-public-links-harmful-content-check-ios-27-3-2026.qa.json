@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29664,
+  "wordpress_status": "publish",
+  "title": "Apple to Check Public iCloud Links Without Defining Harmful Content",
+  "live_url": "https://bitcoinversus.tech/2026/11/05/apple-icloud-public-links-harmful-content-check-ios-27-3-2026/",
+  "published_date": "2026-11-05T19:26:31",
+  "source_archive_path": "archive/2026/11/29664-apple-icloud-public-links-harmful-content-check-ios-27-3-2026.gutenberg.html",
+  "source_sha": "43ec31c076ae7f074c0ab20c8eb9c346d7cacc8c",
+  "source_archive_exact_match": true,
+  "featured_media_id": 29657,
+  "featured_dimensions_px": [
+    1200,
+    630
+  ],
+  "featured_type": "original conceptual editorial image; not actual Apple screenshot",
+  "category_ids": [
+    5812,
+    6,
+    27318186
+  ],
+  "article_word_count_excluding_footer": 665,
+  "claims": [
+    {
+      "claim": "Version 27.3 introduces checks of iCloud items shared with Anyone with the Link",
+      "classification": "Apple official statement",
+      "primary_url": "https://support.apple.com/en-us/149168",
+      "primary_date": "2026-11-03"
+    },
+    {
+      "claim": "Public links are not end-to-end encrypted even with Advanced Data Protection",
+      "classification": "Apple official statement; pre-existing exception",
+      "primary_url": "https://support.apple.com/en-us/102651"
+    },
+    {
+      "claim": "Apple reserves right to remove content, disable accounts or involve law enforcement",
+      "classification": "Apple official reserved enforcement power; not proof of action taken",
+      "primary_url": "https://support.apple.com/en-us/149168"
+    },
+    {
+      "claim": "Harmful-content definition, technical review method, retroactive coverage and appeals",
+      "classification": "not disclosed in support document",
+      "primary_url": "https://support.apple.com/en-us/149168"
+    }
+  ],
+  "independent_sources": [
+    {
+      "publisher": "9to5Mac",
+      "date": "2026-11-04",
+      "url": "https://9to5mac.com/2026/11/04/with-ios-27-3-apple-will-start-checking-icloud-public-links-for-harmful-content/"
+    },
+    {
+      "publisher": "The Verge",
+      "date": "2026-11-04",
+      "url": "https://www.theverge.com/tech/1026604/apple-icloud-links-harmful-content-27-3"
+    }
+  ],
+  "media": [
+    {
+      "kind": "featured image",
+      "media_id": 29657,
+      "actual_dimensions": [
+        1200,
+        630
+      ],
+      "not_in_body_quota": true
+    },
+    {
+      "kind": "YouTube",
+      "video_id": "ZEYreB7cIlU",
+      "publisher": "MacMost",
+      "video_date": "2024-01-26",
+      "actual_video_topic": "iCloud sharing with anyone",
+      "gutenberg_form": "wp:shortcode youtube fallback",
+      "rendered_iframe": true,
+      "actual_playback_verified": false
+    },
+    {
+      "kind": "YouTube",
+      "video_id": "Xr3D6J1-ROo",
+      "publisher": "Max Dalton",
+      "video_date": "2020-04-19",
+      "actual_video_topic": "iCloud folder sharing",
+      "gutenberg_form": "wp:shortcode youtube fallback",
+      "rendered_iframe": true,
+      "actual_playback_verified": false
+    },
+    {
+      "kind": "X source link",
+      "url": "https://x.com/intcyberdigest/status/2118189058400952768",
+      "interactive_embed": false,
+      "reason": "Native WordPress Twitter embed rendered link only; [twitter] shortcode appeared literally; replaced with accessible text link; X post not independently fetched."
+    }
+  ],
+  "production_checks": {
+    "published_wordpress_source_read_back": true,
+    "published_wordpress_rendered_html_checked": true,
+    "rendered_youtube_iframes": 2,
+    "native_youtube_blocks_repaired": 2,
+    "shortcode_fallback_playable_player_render_verified": true,
+    "all_video_playback_verified": false,
+    "interactive_x_embed": false,
+    "body_media_quota_satisfied_by_two_distinct_youtube_iframes": true,
+    "internal_verified_links": 5,
+    "no_text_boxes": true,
+    "editor_note_before_donation_qr": true,
+    "original_qr_media_id": 24043,
+    "approved_volunteer_disclaimer_present": true,
+    "financial_information_disclaimer_present": true,
+    "desktop_screenshot_service_status": "ready",
+    "mobile_screenshot_service_status": "ready",
+    "screenshot_pixels_inspected": false,
+    "qr_scannability_tested": false
+  },
+  "qa_status": "published_unverified",
+  "open_checks": [
+    "Independent actual YouTube playback at both embeds",
+    "Desktop and mobile visual screenshot pixel inspection including overflow and captions",
+    "Original donation QR actual scan test"
+  ],
+  "release_notes": "Accurate distinction between public-link moderation and private iCloud content. Original editorial cover; links to Apple support, Apple encryption overview, iCloud terms and independent reporting. Two YouTube link-only native embeds repaired with proven WordPress shortcode fallback. X embed unsupported; accessible source link retained."
+}
