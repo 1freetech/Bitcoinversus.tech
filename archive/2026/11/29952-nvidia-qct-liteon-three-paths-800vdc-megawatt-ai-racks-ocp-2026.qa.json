@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29952,
+  "title": "NVIDIA, QCT and LITEON Map Three Paths to 800 VDC AI Racks",
+  "live_url": "https://bitcoinversus.tech/2026/11/06/nvidia-qct-liteon-three-paths-800vdc-megawatt-ai-racks-ocp-2026/",
+  "published_date": "2026-11-06T10:09:45",
+  "status": "published_unverified",
+  "source_archive_path": "archive/2026/11/29952-nvidia-qct-liteon-three-paths-800vdc-megawatt-ai-racks-ocp-2026.gutenberg.html",
+  "source_blob_sha": "2ca46d67f6a13fee7b5c98f50d4fa126743ae3e9",
+  "source_archive_exact_readback": true,
+  "reporting_words": 707,
+  "internal_links": 5,
+  "category_ids": [
+    5177360,
+    233999,
+    284207,
+    6
+  ],
+  "primary_sources": [
+    {
+      "publisher": "Six Five Media",
+      "type": "original interview and transcript",
+      "url": "https://www.sixfivemedia.com/content/megawatt-racks-need-a-new-power-architecture-inside-the-shift-to-800-vdc",
+      "youtube": "https://www.youtube.com/watch?v=yqPoyy1Q4QU",
+      "speakers": [
+        "David Nicholson",
+        "Harry Petty of NVIDIA",
+        "Jack Luoh of QCT/Quanta",
+        "Simon Ong of LITEON USA"
+      ],
+      "event": "OCP Global Summit 2026"
+    },
+    {
+      "publisher": "Open Compute Project",
+      "type": "collaborative LVDC standard requirements",
+      "url": "https://www.opencompute.org/news/powering-the-next-era-of-ai-how-google-microsoft-and-nvidia-are-standardizing-and-accelerating-the-industry-transition-to-lvdc/"
+    },
+    {
+      "publisher": "NVIDIA",
+      "type": "800 VDC data center architecture",
+      "url": "https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/"
+    },
+    {
+      "publisher": "LITEON",
+      "type": "manufacturer report and exhibit photo",
+      "url": "https://www.liteon.com/en/news/press-center/content/liteon-ocp-2026-nvidia-mgx"
+    }
+  ],
+  "mathematical_check": {
+    "power_watts": 1000000,
+    "initial_rack_distribution_volts": 54,
+    "initial_current_amperes_approx": 18519,
+    "proposed_distribution_volts": 800,
+    "proposed_current_amperes": 1250,
+    "assumption": "P=VI; conceptual equal-power comparison, not end-to-end power system measurement",
+    "do_not_claim_chip_input_800V": true
+  },
+  "differentiators": [
+    "Interview details three retrofit paths: adjacent sidecar, end-of-row conversion, purpose-built 800 VDC halls",
+    "No claim all facility or rack equipment uses 800 VDC; voltage converted at compute tray to lower levels",
+    "LITEON 330 kW, 880 kW and 1.2 MW show configurations, not independently verified production deployments",
+    "Electrical shock, DC arc protection, isolation, regulatory certification and thermal engineering remain deployment gates",
+    "NVIDIA DSX is a reference design and digital twin, not field-proven deployment"
+  ],
+  "media": {
+    "featured": {
+      "media_id": 29951,
+      "width": 1200,
+      "height": 630,
+      "type": "original conceptual editorial illustration"
+    },
+    "official_manufacturer_photo": {
+      "media_id": 29950,
+      "width": 1145,
+      "height": 2051,
+      "display_width_px": 360,
+      "centered": true,
+      "alt_text_present": true,
+      "caption_credit": "LITEON Technology",
+      "actual_OCP_exhibit_photo": true
+    },
+    "original_video": {
+      "youtube_id": "yqPoyy1Q4QU",
+      "publisher": "Six Five Media",
+      "event": "OCP Global Summit 2026",
+      "saved_shortcode": true,
+      "wordpress_rest_rendered_iframe": true,
+      "actual_playback_verified": false
+    },
+    "footer_qr_media_id": 24043
+  },
+  "checks": {
+    "wordPress_published_source_read_back": true,
+    "public_html_render_read_back": true,
+    "video_iframe_count": 1,
+    "body_photo_rendered": true,
+    "body_photo_max_width_px": 360,
+    "original_qr_present": true,
+    "editor_note_present": true,
+    "volunteer_disclaimer_present": true,
+    "financial_information_disclaimer_present": true,
+    "no_text_boxes": true,
+    "subscriber_email_optout": true,
+    "desktop_visual_pixels_inspected": false,
+    "mobile_visual_pixels_inspected": false,
+    "QR_scan_verified": false
+  },
+  "open_qa": [
+    "Play original Six Five YouTube interview on live page",
+    "Inspect actual desktop and mobile rendered screenshots for overflow and captions",
+    "Confirm QR scannability using wallet"
+  ],
+  "smallest_next_action": "Open published story on desktop and phone; verify video playback, photo sizing and scannable donation QR."
+}
