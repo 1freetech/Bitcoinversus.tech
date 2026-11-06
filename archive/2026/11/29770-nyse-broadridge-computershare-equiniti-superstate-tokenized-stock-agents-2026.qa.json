@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29770,
+  "title": "NYSE Adds Four Transfer Agents for Tokenized Stock Platform",
+  "published_date": "2026-11-05T20:06:37",
+  "status": "published_unverified",
+  "live_url": "https://bitcoinversus.tech/2026/11/05/nyse-broadridge-computershare-equiniti-superstate-tokenized-stock-agents-2026/",
+  "category_ids": [
+    4269,
+    6,
+    27318186
+  ],
+  "source_archive_path": "archive/2026/11/29770-nyse-broadridge-computershare-equiniti-superstate-tokenized-stock-agents-2026.gutenberg.html",
+  "source_blob_sha": "20dc08509beefa367c35b5d57365c4ee1923d828",
+  "readback_exact": true,
+  "primary_sources": [
+    {
+      "name": "New York Stock Exchange",
+      "date": "2026-11-02",
+      "url": "https://www.nyse.com/research/insights/nyse-transfer-agent-partners",
+      "verified": "Added Broadridge, Computershare, Equiniti, Superstate to Securitize and tZERO; nearly 5000 listed companies and 99% S&P 500 covered by three legacy transfer agents; platform awaiting regulatory approval; target 24/7, instant settlement, stablecoin funding"
+    },
+    {
+      "name": "Broadridge",
+      "date": "2026-11-02",
+      "url": "https://www.broadridge.com/press-release/2026/broadridge-to-bring-onchain-governance-and-digital-transfer-agency",
+      "verified": "Future proxy voting smart contracts, transfer agency services, identity verification, shareholder rights"
+    }
+  ],
+  "independent_sources": [
+    "https://www.coindesk.com/business/2026/11/02/nyse-taps-wall-street-giant-broadridge-to-bring-shareholder-voting-onto-blockchain-rails"
+  ],
+  "limitations": [
+    "NYSE-affiliated tokenized trading venue not launched",
+    "Regulatory approval pending",
+    "No verified production volume or venue operational throughput",
+    "Support for shareholder rights is a described system design rather than measured production outcome"
+  ],
+  "media": {
+    "featured": {
+      "id": 29769,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "conceptual_original": true
+    },
+    "youtube": [
+      {
+        "video_id": "JT9zoGVLQoE",
+        "channel": "New York Stock Exchange",
+        "title": "NYSE Chief Product Officer Dives into New Tokenized Securities Platform",
+        "date": "2026-01-21",
+        "saved_shortcode": true,
+        "rendered_iframe": true,
+        "actual_playback_verified": false
+      },
+      {
+        "video_id": "0mqZFaGKFuA",
+        "channel": "FOX Business",
+        "title": "NYSE drops a blockchain BOMBSHELL on Wall Street",
+        "date": "2026-01-22",
+        "saved_shortcode": true,
+        "rendered_iframe": true,
+        "actual_playback_verified": false
+      }
+    ],
+    "distinct_inbody_media": 2,
+    "donation_qr_id": 24043
+  },
+  "reporting_words": 605,
+  "internal_links": 5,
+  "qa": {
+    "published_wp_source_readback": true,
+    "published_rest_render_checked": true,
+    "iframe_count": 2,
+    "no_unrendered_shortcodes": true,
+    "editor_note_saved": true,
+    "original_qr_rendered": true,
+    "volunteer_disclaimer": true,
+    "financial_information_disclaimer": true,
+    "no_text_boxes": true,
+    "subscriber_email_optout": true,
+    "desktop_screenshot_pixels_inspected": false,
+    "mobile_screenshot_pixels_inspected": false,
+    "qr_scan_tested": false
+  },
+  "unresolved": [
+    "Independently verify playback for both YouTube videos",
+    "Visually inspect desktop and mobile public page",
+    "Scan original QR with real wallet to confirm usability"
+  ],
+  "smallest_next_step": "Open published article on phone and desktop, play both videos, confirm article layout and QR scan."
+}
