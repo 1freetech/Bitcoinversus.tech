@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29753,
+  "status": "published_unverified",
+  "title": "NASA Unveils X-70 Fractal With Swappable Flight-Test Payloads",
+  "live_url": "https://bitcoinversus.tech/2026/11/05/nasa-x70-fractal-modular-flight-research-aircraft-2026/",
+  "publication_date": "2026-11-05T19:57:20",
+  "source_archive_path": "archive/2026/11/29753-nasa-x70-fractal-modular-flight-research-aircraft-2026.gutenberg.html",
+  "source_blob_sha": "e952c4956a3f421b71303c1b3817088fb6554767",
+  "archive_source_exact_readback": true,
+  "categories": [
+    174,
+    6,
+    27318186
+  ],
+  "fact_checks": [
+    {
+      "source": "NASA November 4 news release",
+      "type": "primary",
+      "url": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
+      "claims": [
+        "X-70 Fractal announced at UP.Summit November 4 2026",
+        "crewed experimental aircraft with modular internal/external research payloads",
+        "planned 2000 lb equipment payload",
+        "10000 lb takeoff weight",
+        "Mach 0.75 cruise target",
+        "45000 ft target altitude",
+        "greater than 1500 nmi planned operating range",
+        "first flight under NASA banner expected within two years"
+      ]
+    },
+    {
+      "source": "The Verge",
+      "type": "independent",
+      "url": "https://www.theverge.com/tech/1027426/nasa-experimental-x-70-fractal-aircraft",
+      "date": "2026-11-05"
+    },
+    {
+      "source": "AeroTime",
+      "type": "independent",
+      "url": "https://www.aerotime.aero/articles/nasa-x-70-fractal-aircraft-jared-isaacman",
+      "date": "2026-11-05"
+    }
+  ],
+  "unit_discipline": {
+    "speed": "Mach 0.75, subsonic target",
+    "altitude": "45000 feet design capability",
+    "range": "more than 1500 nautical miles, approx 1726 statute miles",
+    "aircraft_takeoff_weight": "10000 pounds",
+    "research_payload": "up to 2000 pounds, internal and external"
+  },
+  "editorial_limitations": [
+    "No successful X-70 test flights reported",
+    "Exact manufacturer, final aircraft layout, program cost and flight-test schedule unavailable",
+    "Conceptual feature illustration is not an official or photographed X-70 aircraft",
+    "NASA X-59 historical media must not be presented as X-70 footage"
+  ],
+  "media": {
+    "featured": {
+      "wordpress_media_id": 29749,
+      "width": 1200,
+      "height": 630,
+      "original_conceptual_illustration": true
+    },
+    "youtube": [
+      {
+        "video_id": "PlXrHQVrvmw",
+        "publisher": "NASA",
+        "title": "X-59 Team Reflects on Completing First Flight",
+        "published": "2025-12-31",
+        "saved_shortcode": true,
+        "wordpress_rendered_iframe": true,
+        "actual_playback_verified": false
+      },
+      {
+        "video_id": "SEchvBOW0hc",
+        "publisher": "NASA Armstrong Flight Research Center",
+        "title": "NASA's X-59 Flies Supersonic for First Time",
+        "published": "2026-06-05",
+        "saved_shortcode": true,
+        "wordpress_rendered_iframe": true,
+        "actual_playback_verified": false
+      }
+    ],
+    "distinct_in_body_media": 2,
+    "original_donation_qr_media_id": 24043
+  },
+  "word_count_reporting": 571,
+  "contextual_internal_links": 5,
+  "gutenberg_validation": {
+    "source_read_back": true,
+    "live_rendered_html_checked": true,
+    "iframe_count": 2,
+    "no_unrendered_shortcodes": true,
+    "no_text_boxes": true,
+    "original_qr_rendered": true,
+    "editor_note_saved": true,
+    "volunteer_disclaimer_saved": true,
+    "financial_disclaimer_saved": true,
+    "subscriber_email_optout": true
+  },
+  "desktop_screenshot_service": {
+    "status": "ready",
+    "viewport_width": 1200,
+    "viewport_height": 5300,
+    "actual_pixels_inspected": false
+  },
+  "mobile_screenshot_service": {
+    "status": "ready",
+    "viewport_width": 390,
+    "viewport_height": 6000,
+    "actual_pixels_inspected": false
+  },
+  "open_qa": [
+    "Independently test playback of both NASA videos in a graphical browser",
+    "Inspect desktop and mobile screenshots for overflow, captions, and image legibility",
+    "Scan original donation QR with compatible wallet"
+  ],
+  "smallest_next_step": "Open the live post in a graphical browser; verify both videos play and viewport layout works on desktop and mobile."
+}
