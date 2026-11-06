@@ -1,0 +1,66 @@
+{
+  "type": "bitcoinversus-news-publication-qa",
+  "post_id": 30458,
+  "updated": "2026-11-06",
+  "title": "IBM Switches On Nighthawk Quantum Computer in Chicago",
+  "link": "https://bitcoinversus.tech/2026/11/06/ibm-nighthawk-r2-quantum-system-two-chicago-hyde-park-labs/",
+  "status": "published",
+  "category_ids": [
+    6,
+    3549,
+    27318186
+  ],
+  "sources": [
+    "https://newsroom.ibm.com/2026-11-06-ibm-unveils-its-most-advanced-quantum-computer-in-chicago,-marking-a-milestone-for-illinoiss-quantum-future",
+    "https://news.uchicago.edu/story/ibms-most-advanced-quantum-computer-unveiled-uchicagos-hyde-park-labs",
+    "https://www.ibm.com/quantum/blog/chicago-quantum-computer",
+    "https://www.ibm.com/quantum/blog/nighthawk-r2"
+  ],
+  "duplicate_check": {
+    "wordpress": [
+      "IBM Quantum System Two",
+      "IBM Nighthawk",
+      "Hyde Park Labs",
+      "Illinois quantum"
+    ],
+    "github": "IBM Quantum System Two Hyde Park",
+    "outcome": "No already-published Chicago launch story identified; earlier IBM/AMD ORNL story distinct"
+  },
+  "word_count_before_sources_approx": 715,
+  "internal_links_count": 4,
+  "featured_media_id": 30449,
+  "featured_dimensions": [
+    1200,
+    630
+  ],
+  "body_media": [
+    {
+      "type": "image",
+      "id": 30453,
+      "credit": "IBM official photo"
+    },
+    {
+      "type": "image",
+      "id": 30451,
+      "credit": "Original BitcoinVersus bar chart; IBM claimed 25x peak relative throughput"
+    },
+    {
+      "type": "video",
+      "id": "sUCK4RaJlv0",
+      "credit": "IBM Research lab tour, 2024"
+    },
+    {
+      "type": "video",
+      "id": "V2zPfzPIoBM",
+      "credit": "Bloomberg Television IBM System Two visit, 2025"
+    }
+  ],
+  "media_repair": "native Gutenberg YouTube embeds rendered as hyperlinks; replaced by verified WordPress YouTube shortcode fallback; public view WordPress content returned 2 iframe players",
+  "iframe_count": 2,
+  "video_live_playback": "not independently verified",
+  "screenshot_capture": "desktop 1280px and mobile 390px mshots status ready; screenshot pixels not independently inspected",
+  "donation_qr": 24043,
+  "italic_editor_note": true,
+  "newsletter_emails_disabled": true,
+  "footnotes": "Original cover is conceptual AI illustration, not documentary photograph. Chart IBM maximum not independent speed benchmark. Source video footage predates event."
+}
