@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29853,
+  "title": "Starcloud CEO Sees SpaceX Above $100 Trillion by 2036",
+  "public_url": "https://bitcoinversus.tech/2026/11/05/starcloud-ceo-spacex-100-trillion-optimus-tesla-2036-prediction/",
+  "date": "2026-11-05T22:28:25",
+  "status": "published_unverified",
+  "source_path": "archive/2026/11/29853-starcloud-ceo-spacex-100-trillion-optimus-tesla-2036-prediction.gutenberg.html",
+  "source_sha": "50b5445a377904adcebad44c423aa2328a7fb106",
+  "source_exact_match": true,
+  "editorial_words": 691,
+  "internal_links": 4,
+  "featured_media_id": 29852,
+  "featured_dimensions": [
+    1200,
+    630
+  ],
+  "cover_type": "original conceptual editorial illustration",
+  "primary_source": {
+    "title": "Inside Starcloud's $2B Space Factory",
+    "host": "Molly O'Shea",
+    "speaker": "Philip Johnston, CEO Starcloud",
+    "date": "2026-10-31",
+    "youtube_id": "mdq6urSx-f8",
+    "url": "https://www.youtube.com/watch?v=mdq6urSx-f8&t=1170s",
+    "segment": "19:30–21:00",
+    "source_transcript": "https://ceointerviews.ai/interview/3174853/",
+    "original_publisher": "https://www.sourcery.vc/p/breaking-23b-starcloud-factory-tour"
+  },
+  "verified_distinctions": [
+    "$100T valuation is Johnston personal speculative estimate for 2036, not SpaceX guidance",
+    "Possible Tesla acquisition is Johnston assertion; no confirmed deal, filing, approval or timing",
+    "Optimus building its own factories is an anticipated future manufacturing capability, not a demonstrated self-replicating industrial system",
+    "Starcloud orbital data center targets are proposed, not fully commissioned operating capacity",
+    "SpaceX market cap cited as November 5 2026 close at approximately $1.68T from Stock Analysis"
+  ],
+  "historical_references": [
+    "https://bitcoinversus.tech/2026/10/15/elon-musk-spacex-100-trillion-market-cap-10-years/",
+    "https://bitcoinversus.tech/2026/11/05/inside-starclouds-factory-building-nvidia-gpu-satellites/",
+    "https://bitcoinversus.tech/2026/09/29/starcloud-plans-bitcoin-mining-asics-for-its-next-spacecraft/",
+    "https://bitcoinversus.tech/2026/10/31/elon-musk-spacex-orbital-ai-data-centers-cooling-radiators-physics-2026/"
+  ],
+  "media": {
+    "video_ids": [
+      "mdq6urSx-f8",
+      "FKHENV75b9Q",
+      "ANe_HW4X8oc"
+    ],
+    "videos_desc": [
+      "Original interview published October 31",
+      "Earlier Sequoia Capital CEO interview March 2026",
+      "Official SpaceX Starship engineering April 2026"
+    ],
+    "youtube_shortcodes_saved": 3,
+    "iframes_rendered": 3,
+    "actual_playback_verified": false,
+    "donation_qr_id": 24043,
+    "donation_qr_rendered": true
+  },
+  "quality": {
+    "published_source_readback": true,
+    "rendered_public_markup_checked": true,
+    "no_text_boxes": true,
+    "editor_note_present": true,
+    "disclaimer_present": true,
+    "email_optout": true,
+    "desktop_visual_inspected": false,
+    "mobile_visual_inspected": false,
+    "qr_scannability_tested": false
+  },
+  "open_qa": [
+    "Play the original and both background YouTube videos in browser",
+    "Inspect responsive appearance on desktop and mobile",
+    "Scan QR code with compatible wallet"
+  ],
+  "smallest_next_step": "Open live article on phone and desktop to verify actual playback, readable layout, and donation QR scan."
+}
