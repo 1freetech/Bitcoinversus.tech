@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "post_id": 29815,
+  "title": "ElevenMusic Adds Direct SoundCloud Publishing for AI Songs",
+  "url": "https://bitcoinversus.tech/2026/11/05/elevenmusic-soundcloud-direct-ai-music-publishing-2026/",
+  "publish_date": "2026-11-05T21:45:29",
+  "status": "published_unverified",
+  "archive_path": "archive/2026/11/29815-elevenmusic-soundcloud-direct-ai-music-publishing-2026.gutenberg.html",
+  "archive_sha": "dae923e2d5edb36e8bc8c5ed3ada572e4cf15257",
+  "source_readback_exact": true,
+  "reporting_word_count": 626,
+  "contextual_internal_links": 5,
+  "featured_media_id": 29807,
+  "featured_dimensions": [
+    1200,
+    630
+  ],
+  "feature_type": "original conceptual studio cover, not software screenshot",
+  "primary_context": [
+    {
+      "source": "ElevenMusic product documentation",
+      "url": "https://elevenlabs.io/blog/introducing-elevenmusic",
+      "type": "product feature documentation"
+    },
+    {
+      "source": "ElevenLabs Music v2.5 documentation",
+      "url": "https://elevenlabs.io/blog/music-v2-5-model",
+      "type": "official model release"
+    },
+    {
+      "source": "SoundCloud distribution guide",
+      "url": "https://help.soundcloud.com/hc/en-us/articles/24320060389275-How-to-Distribute-with-SoundCloud",
+      "type": "official rights and delivery requirements"
+    },
+    {
+      "source": "SoundCloud distribution best practices",
+      "url": "https://help.soundcloud.com/hc/en-us/articles/360051802133-Distribution-Best-Practices",
+      "type": "official ownership and metadata guidance"
+    }
+  ],
+  "reporting_sources": [
+    {
+      "source": "Music Week",
+      "date": "2026-11-05",
+      "url": "https://www.musicweek.com/public_html/index.php/digital/read/soundcloud-integrates-with-elevenlabs-ai-music-generation-platform/095415",
+      "note": "Reports direct company announcement and executive statements"
+    },
+    {
+      "source": "TechCrunch",
+      "date": "2026-11-05",
+      "url": "https://techcrunch.com/2026/11/05/elevenlabs-now-lets-users-publish-ai-generated-music-directly-on-soundcloud/"
+    },
+    {
+      "source": "The Verge",
+      "date": "2026-11-05",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs"
+    }
+  ],
+  "confirmed": {
+    "direct_release": "ElevenMusic creators publish directly to SoundCloud",
+    "ai_origin_labels": true,
+    "artist_pro_benefit": "three months ElevenMusic Pro",
+    "monthly_song_creation_limit": 1000,
+    "monthly_stem_splits_limit": 500,
+    "monthly_custom_style_or_voice_limit": 5,
+    "claim_25m_tracks": "ElevenLabs-reported cumulative models total, not SoundCloud uploads"
+  },
+  "limitations": [
+    "Direct SoundCloud publishing is not automatic distribution to all services",
+    "No guaranteed copyright clearance, monetization or royalty amounts",
+    "No independently audited integration usage, income or audience growth figures"
+  ],
+  "media": {
+    "videoIds": [
+      "y9zPoGa9AO0",
+      "zXlVQ8rMJM0"
+    ],
+    "videoChannels": [
+      "ElevenLabs",
+      "ElevenLabs"
+    ],
+    "videosPreDateNews": true,
+    "shortcodesSaved": 2,
+    "iframesRendered": 2,
+    "actualPlaybackVerified": false,
+    "qrMediaId": 24043,
+    "originalQrRendered": true
+  },
+  "qa_checks": {
+    "publishedSourceReadback": true,
+    "renderedWordPressMarkup": true,
+    "internalLinks": 5,
+    "noTextBoxes": true,
+    "originalFooterPresent": true,
+    "subscriberEmailOptout": true,
+    "desktopPixelVisualInspection": false,
+    "mobilePixelVisualInspection": false,
+    "qrScanTested": false
+  },
+  "open_qa": [
+    "Test actual playback of each video",
+    "Visually inspect desktop and mobile rendering",
+    "Verify original QR scan"
+  ],
+  "next_step": "Open the published post in desktop and mobile browser and validate playback, layout and QR scan."
+}
