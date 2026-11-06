@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "wordpress_post_id": 29354,
+  "public_url": "https://bitcoinversus.tech/2026/11/04/morgan-stanley-tokenizes-us-stocks-treasurys-dtcc/",
+  "title": "Morgan Stanley Tokenizes U.S. Stocks and Treasurys",
+  "first_published_date": "2026-11-04T17:28:32",
+  "revision_date": "2026-11-05",
+  "status": "published_unverified",
+  "decision": "Existing November 4 Morgan Stanley coverage revised in place to avoid duplicate; URL and featured image retained",
+  "source_archive_path": "archive/2026/11/29354-morgan-stanley-tokenizes-us-stocks-treasurys-dtcc.gutenberg.html",
+  "source_blob_sha": "e21ea96bba9b5a3a7e7f38b2798cbc44fdd59de3",
+  "exact_source_readback": true,
+  "reporting_words": 710,
+  "internal_links": 4,
+  "featured_id": 29366,
+  "featured_size": [
+    1200,
+    630
+  ],
+  "primary_sources": [
+    {
+      "publisher": "Morgan Stanley",
+      "date": "2026-11-03",
+      "type": "company announcement on social media",
+      "url": "https://www.linkedin.com/company/morgan-stanley/",
+      "scope": "Direct bank statement, captured in contemporaneous press coverage; specific X post ID not independently confirmed"
+    },
+    {
+      "publisher": "DTCC",
+      "date": "2026-10-28",
+      "url": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-goes-live",
+      "scope": "DTS live service, DTC custody $114T, 20 signed participants, eligible networks"
+    },
+    {
+      "publisher": "DTCC",
+      "date": "2026-07-15",
+      "url": "https://www.dtcc.com/press-releases/2026/dtcc-turns-tokenization-into-reality",
+      "scope": "Limited production trades and transaction types"
+    }
+  ],
+  "secondary_sources": [
+    {
+      "publisher": "The Block",
+      "date": "2026-11-04",
+      "url": "https://www.theblock.co/news/markets/2026-11-04-morgan-stanley-among-first-banks-to-tokenize-us-equities-treasurys-through-dtccs-service-432633"
+    },
+    {
+      "publisher": "CoinDesk",
+      "date": "2026-11-04",
+      "url": "https://www.coindesk.com/markets/2026/11/04/morgan-stanley-says-it-is-among-the-first-banks-to-put-u-s-stocks-and-treasuries-on-a-blockchain"
+    }
+  ],
+  "material_distinctions": [
+    "Bank states it used DTS for equities and Treasuries; exact tickers, quantities, network and client ownership undisclosed",
+    "DTCC $114T represents total custody, not tokenized volume",
+    "20 institutions signed service access; not evidence of 20 completed trades",
+    "DTS launched October 28; Morgan Stanley ATS trading target Q1 2027 is separate",
+    "Tokens are DTC-entitlements representing held securities, not independently issued corporate shares"
+  ],
+  "media": {
+    "featured": {
+      "id": 29366,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "original_conceptual": true
+    },
+    "body_image": {
+      "id": 20220,
+      "max_display_width_px": 400,
+      "archival_concept": true,
+      "captions_grounded": true
+    },
+    "official_videos": [
+      {
+        "id": "jjneIiRlL7c",
+        "channel": "The DTCC",
+        "title": "Tokenization: What it is and Why it Matters",
+        "date": "2026-03-02",
+        "shortcode_saved": true,
+        "iframe_rendered": true,
+        "playback_verified": false
+      },
+      {
+        "id": "woOoLegxbMI",
+        "channel": "The DTCC",
+        "title": "Tokenization and Programmable Markets",
+        "date": "2026-01-29",
+        "shortcode_saved": true,
+        "iframe_rendered": true,
+        "playback_verified": false
+      }
+    ],
+    "qr_id": 24043
+  },
+  "qa": {
+    "published_wordpress_source_readback": true,
+    "rendered_html_readback": true,
+    "iframe_count": 2,
+    "original_qr_rendered": true,
+    "canonical_volunteer_footer": true,
+    "financial_disclaimer": true,
+    "no_text_boxes": true,
+    "subscriber_email_optout": true,
+    "mobile_visual_inspection": false,
+    "actual_video_playback": false,
+    "qr_scan_test": false
+  },
+  "outstanding": [
+    "Actual playback of both DTCC videos",
+    "Visual mobile and desktop layout inspection",
+    "QR scan verification"
+  ],
+  "next_action": "Open the revised original post in desktop and mobile browser; play both videos and scan the original donation QR."
+}
