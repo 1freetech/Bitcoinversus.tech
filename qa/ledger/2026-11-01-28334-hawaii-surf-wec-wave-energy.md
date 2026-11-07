@@ -4,7 +4,7 @@ Publication date: 2026-11-01
 WordPress ID: 28334
 Live URL: https://bitcoinversus.tech/2026/11/01/hawaii-surf-wec-underwater-wave-flap-electricity-open-data-2026/
 Category: Renewable energy and technology, continuing post-energy rotation.
-Status: published. Independently read from WordPress edit context and rendered view.
+Status: published, originally November 1. The November 7 revision updated the existing article only, rather than duplicating an already-published report. WordPress edit and view contexts confirmed the saved article.
 
 ## Original sources and dates
 - National Laboratory of the Rockies, Sept. 2, 2026: https://www.nlr.gov/news/feature/2026/new-kind-of-surfer-is-riding-waves-and-producing-power/ (SURF-WEC deployment, design, open data and limitations). NLR reports the 2026 field trial, not new launch on November 1.
@@ -21,7 +21,7 @@ Status: published. Independently read from WordPress edit context and rendered v
 - Connected GitHub 1freetech/Bitcoinversus.tech code search SURF-WEC and Makai Research Pier showed no matching article.
 
 ## Article/Media QA
-- 380 editorial body words excluding headings, captions and footer.
+- 542 editorial body words excluding headings, captions and footer after November 7, 2026 source-grounded revision.
 - Exactly four contextual internal links to earlier technology/energy reporting (capacity factor, Endurance subsea geothermal, Stony Brook ocean power grid, undersea cable repair). Primary source citations on key facts.
 - Five distinct in-body media: two native Gutenberg YouTube video embeds, one NLR/Josh Bauer actual SURF-WEC underwater photograph, one conceptual original engineering diagram, and one SmartChart categorical two-column vertical bar chart.
 - Two actual provider iframe tags verified in published WordPress view: https://www.youtube.com/embed/AiZFigvx2k0 and https://www.youtube.com/embed/Ji1bsY2ERHI . The existence of iframes does NOT verify click-to-play or geographic availability.
@@ -40,3 +40,15 @@ Primary source accuracy 25/25; originality 15/15; technical clarity 15/15; media
 3. Use researcher-linked direct official video IDs and actual project photography instead of unrelated stock wave footage. Verify native iframe presence after WordPress saving before treating it as a video embed; do not claim actual user-device playback without evidence.
 
 Remaining: independent desktop/mobile visual QA and actual YouTube video click-to-play remains unverified because the external browsing environment does not provide a reliable authenticated site browser.
+
+
+## November 7, 2026 no-duplicate maintenance revision
+- The user selected the Hawaii SURF-WEC story again from a reverse energy-news lineup, requesting 420–777 words, primary evidence, authentic media, site links and a post-publication audit.
+- The WordPress published record (ID 28334), existing Gutenberg archive and current QA ledger proved the same September/October 2026 research deployment was already published on November 1. No source-confirmed post-November-1 change in commercial capacity or operating results was found; secondary republications on November 2/5 are not new deployment milestones. No second article was created.
+- Enhanced the existing technical reporting with source-supported context on electrical pulses versus net usable output, controller/parasitic losses, conditions needed for measured performance, and reliability/availability risks. The refreshed editorial narrative now measures 542 body words, excluding headings, captions and footer, by counting the raw Gutenberg paragraph blocks.
+- Corrected literal Markdown bold markers inside a figure caption to HTML strong markup.
+- Confirmed publication and original permalink via WordPress. Existing four verified contextual internal links, two NLR official YouTube block URLs, three non-QR in-story images (an official deployment photo, conceptual illustration and chart), original 1200×630 featured image ID 28325, Editor's Note, QR image ID 24043 and Bitcoin address remain.
+- Checked that Gutenberg paragraph open/close markers balance; stray closing tags detected after the first edit were repaired before final audit. WordPress rendered HTML retains two YouTube iframe elements, which verifies player rendering but not end-user playback.
+- WordPress site screenshot service returned ready status for desktop (1200px) and phone-size (390px) captures. Rendering readiness alone does not prove overflow-free layout without image inspection.
+- Primary sources retained: NLR, Sept. 2, 2026, and University of Hawaiʻi SOEST, Oct. 30, 2026. The March 2026 field deployment and proposed observation duration are distinguished from commercial operation or achieved performance. No rated output or continuous average production is asserted.
+- The original Gutenberg archive was synchronized to the saved WordPress content with the historical publication date preserved. No new publication was performed.
