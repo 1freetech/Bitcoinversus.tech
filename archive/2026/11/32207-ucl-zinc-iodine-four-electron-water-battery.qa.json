@@ -1,0 +1,69 @@
+{
+  "audited_at": "2026-11-13",
+  "article_type": "news",
+  "wordpress_post_id": 32207,
+  "title": "UCL Doubles Iodine's Theoretical Capacity in Water-Based Battery Study",
+  "url": "https://bitcoinversus.tech/2026/11/13/ucl-four-electron-iodine-water-based-battery-422-mah-g-nature-2026/",
+  "status": "publish",
+  "categories": [
+    "energy",
+    "technology",
+    "electrical engineering"
+  ],
+  "editorial_word_count": 498,
+  "all_visible_word_count_approx": 703,
+  "internal_links": 4,
+  "in_story_images": 3,
+  "video_embeds": 0,
+  "video_note": "No directly relevant, official and independently verified YouTube media identified for the November 2026 study; no unrelated embed added.",
+  "media": {
+    "featured_image_id": 32200,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "colored_pencil_storyboard": true,
+    "source_labeled_vertical_chart_id": 32201,
+    "chart_dimensions": [
+      1200,
+      720
+    ],
+    "nature_research_figures": [
+      32203,
+      32204
+    ],
+    "nature_figure_license": "Creative Commons Attribution 4.0; Chen et al., Nature (2026), DOI: 10.1038/s41586-026-11282-0",
+    "original_donation_qr_id": 24043
+  },
+  "editor_note_verified": true,
+  "donation_footer_verified": true,
+  "seo_description_saved": true,
+  "no_boxed_code": true,
+  "featured_not_repeated_in_body": true,
+  "primary_sources": [
+    "https://www.nature.com/articles/s41586-026-11282-0",
+    "https://www.ucl.ac.uk/news/2026/nov/breakthrough-opens-new-possibilities-safer-water-based-batteries"
+  ],
+  "key_metrics": [
+    {
+      "metric": "Iodine theoretical active-material capacity",
+      "two_electron_mAh_g": 211,
+      "four_electron_mAh_g": 422,
+      "relative_change_percent": 100,
+      "not_full_cell_energy": true
+    },
+    {
+      "metric": "Cycle capacity retention",
+      "test_1": "96% after 1,000 cycles at 1 A/g",
+      "test_2": "94% after 2,000 cycles at 2 A/g",
+      "different_test_currents": true
+    }
+  ],
+  "limitations": [
+    "No commercial-scale energy density, capital cost or calendar-life claim established",
+    "No official study-specific video available for validated embed",
+    "Independent web reader could not retrieve the public WordPress page",
+    "No real browser mobile viewport or playback test performed",
+    "No independent battery experiment performed"
+  ]
+}
