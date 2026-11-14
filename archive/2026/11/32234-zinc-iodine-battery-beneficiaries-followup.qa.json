@@ -1,0 +1,50 @@
+{
+  "audited_at": "2026-11-14",
+  "title": "Zinc–Iodine Batteries Show Strongest Evidence for UCL’s Four-Electron Chemistry",
+  "wordpress_post_id": 32234,
+  "wordpress_url": "https://bitcoinversus.tech/2026/11/14/zinc-iodine-batteries-ucl-four-electron-chemistry-flow-aluminium-followup/",
+  "wordpress_status": "publish",
+  "categories": [
+    "energy",
+    "electrical engineering",
+    "technology"
+  ],
+  "editorial_word_count": 634,
+  "full_visible_word_count": 850,
+  "internal_link_count": 5,
+  "in_story_media_count": 2,
+  "media": {
+    "featured_image_id": 32225,
+    "featured_dimensions": [
+      1200,
+      630
+    ],
+    "editorial_colored_pencil_comparison_image_id": 32226,
+    "historical_lithium_iodine_public_domain_image_id": 32230,
+    "donation_qr_5000_sats_id": 24043,
+    "restricted_figure_32228_removed": true
+  },
+  "editor_note_verified": true,
+  "qr_and_volunteer_footer_verified": true,
+  "seo_metadata_saved": true,
+  "no_boxed_code": true,
+  "no_duplicate_cover_in_body": true,
+  "wrong_license_image_removed": true,
+  "video_count": 0,
+  "verified_sources": [
+    "https://www.nature.com/articles/s41586-026-11282-0",
+    "https://www.ucl.ac.uk/news/2026/nov/breakthrough-opens-new-possibilities-safer-water-based-batteries",
+    "https://www.nature.com/articles/s41467-025-64344-8",
+    "https://www.iea.org/reports/global-energy-review-2026/technology-battery-storage"
+  ],
+  "limitations": [
+    "Iodine material-level theoretical capacity increase is not whole-battery capacity increase",
+    "UCL chemistry not tested in flow battery",
+    "No commercial UCL pack deployment",
+    "No verified official study-specific video for embedding",
+    "Public independent web reader could not fetch post; WP edit/view API verified",
+    "No client mobile screenshot or actual playback",
+    "No independent physical battery experiment"
+  ],
+  "license_correction": "Deleted unused Figure 1 of 2025 Nature Communications flow-battery paper after verifying its licence is CC BY-NC-ND 4.0; kept original illustrated body and text citation."
+}
