@@ -1,0 +1,63 @@
+{
+  "audited_at": "2026-11-14",
+  "article_type": "news",
+  "post_id": 32271,
+  "title": "ASUS Tests Gallop Robot on Motherboard Packing, Targets 99.5% Success",
+  "url": "https://bitcoinversus.tech/2026/11/14/asus-gallop-humanoid-motherboard-packing-995-percent-target-2026/",
+  "wordpress_status": "publish",
+  "categories": [
+    "robotics",
+    "technology",
+    "business"
+  ],
+  "editorial_word_count": 562,
+  "full_visible_word_count": 771,
+  "internal_link_count": 5,
+  "in_story_media_count": 3,
+  "media": {
+    "featured_media_id": 32267,
+    "cover_width": 1200,
+    "cover_height": 630,
+    "cover_style": "original colored-pencil conceptual engineering cover",
+    "cover_watermark": "neon-green Bitcoinversus.tech bottom left; point size visually approximate",
+    "authentic_asus_photo_ids": [
+      32268,
+      32269
+    ],
+    "social_post_author": "ASUS co-CEO S.Y. Hsu",
+    "social_post_id": "2121076864576041404",
+    "social_post_source": "https://x.com/SYHsuASUS/status/2121076864576041404",
+    "server_rendered_social_blockquote": true,
+    "youtube_video_count": 0,
+    "video_note": "No study-specific verified ASUS or CNBC YouTube player ID found; official X post embedded instead",
+    "donation_qr_id": 24043
+  },
+  "references": [
+    "https://press.asus.com/blog/factory-proven-physical-ai-asus-gallop-humanoid-robot/",
+    "https://x.com/SYHsuASUS/status/2121076864576041404"
+  ],
+  "claim_checks": {
+    "target_not_reported_achieved": true,
+    "target_995_and_20_seconds": true,
+    "actual_hardware_form": true,
+    "calculation_180_boards_per_theoretical_hour": true,
+    "no_external_customers_claimed": true,
+    "commercial_target_second_half_2028": true
+  },
+  "editor_note_present": true,
+  "original_qr_and_mobile_scanning_present": true,
+  "volunteer_and_financial_disclaimer_present": true,
+  "seo_description_saved": true,
+  "no_code_boxes": true,
+  "cover_not_duplicated": true,
+  "pressroom_photo_blocks_correct": true,
+  "prohibited_editorial_words": [],
+  "limitations": [
+    "Independent public web reader could not open article URL; WordPress edit and view APIs verified",
+    "Rendered official X blockquote was verified server-side, but live browser widget interaction and video playback untested",
+    "No directly relevant official YouTube video ID was independently verified",
+    "Mobile-browser responsive viewport not visually inspected",
+    "Actual 99.5% robot task success is a goal, not a published result; no factory safety, uptime or throughput verification",
+    "Image watermark present but exact physical font point size cannot be established from raster alone"
+  ]
+}
