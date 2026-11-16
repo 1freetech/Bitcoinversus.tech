@@ -1,0 +1,48 @@
+<!-- BitcoinVersus.Tech final Gutenberg editorial archive -->
+<!-- Post ID: 33047 -->
+<!-- Canonical: https://bitcoinversus.tech/2026/11/16/rockwell-logixedge-plc-edge-containers-one-industrial-pc-2026/ -->
+<!-- Featured media ID: 33045 -->
+<!-- Published: 2026-11-16 -->
+<!-- Verified: two rendered YouTube players through WordPress shortcodes; browser playback not verified -->
+
+<!-- wp:paragraph --><p><strong>Rockwell Automation announced the LogixEdge controller on November 12, 2026, combining programmable industrial control and containerized software on a single industrial PC.</strong> The platform is intended to give manufacturers local analytics, visualization and process control without installing a separate edge computer beside every controller. The <a href="https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/logixedge-controllers.html">official product page</a> lists availability in the fourth quarter of 2026; a product announcement is not proof that units have been delivered to customers.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=xQ73BEzCMCI&amp;w=640&amp;h=360]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>Rockwell Automation's official November 2025 presentation reviews the broader Logix controller family. The video predates LogixEdge and is background, not a demonstration of the newly announced device.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">What LogixEdge Combines</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Industrial automation often assigns machine sequencing to a programmable logic controller (PLC), displays and alarms to a human-machine interface (HMI), and analytics to an industrial PC or server. Engineers must maintain software, networks and spare parts across several devices. LogixEdge combines a Logix control engine with an application environment that can run on the same hardware. For readers comparing control-system roles, BitcoinVersus.Tech's <a href="https://bitcoinversus.tech/2026/10/11/plc-vs-pac/">PLC versus PAC explainer</a> describes the underlying distinctions.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Rockwell explicitly lists <strong>Docker/Kubernetes support</strong> for application workloads, including FactoryTalk Optix visualization, modular-type-package (MTP) applications, web servers and third-party tools. Two <strong>1-Gb/s Ethernet ports</strong> are intended to separate control traffic from edge workloads. Supported remote I/O families include POINT I/O, PointMax, Compact 5000 and FLEX 5000, according to Rockwell's published specifications. Those connections still require careful design of <a href="https://bitcoinversus.tech/2026/10/12/osetc-034-ethernet-ip-basics-cip-explicit-implicit-rpi-ports-troubleshooting/">EtherNet/IP messaging and update intervals</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Why the Architecture Matters</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Combining computing and control can reduce panel footprint, wiring and the number of devices a technician manages. A local analytics workload can process sensor data close to equipment rather than sending every sample to a remote service. Rockwell also describes OPC UA, MQTT and Modbus TCP connectivity through FactoryTalk Optix. The potential benefit is faster engineering integration, not automatically faster machine cycle times. Actual improvements depend on deployment, programming and measurements from working production lines.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=oqLeKaqSN1I&amp;w=640&amp;h=360]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>Rockwell Automation's official FactoryTalk Optix tutorial demonstrates a reusable visualization library. The 2023 video illustrates an application family supported by LogixEdge; it does not show LogixEdge operating.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Controls Engineers Still Have Questions</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Consolidation also enlarges a device's operational importance. If a shared industrial computer fails, the plant may lose multiple functions at once. Before approving a design, engineers should request tested control-task timing, application resource limits, reboot behavior, backup and recovery procedures, cybersecurity update policies and support terms. Rockwell describes deterministic control, but its launch materials do not provide a published end-to-end jitter benchmark. Neither the announcement nor the product page establishes a universal replacement for existing safety controllers.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Functional safety remains a separate engineering requirement. Designs involving protective stops still need validated safety circuits and fault diagnostics, as outlined in BitcoinVersus.Tech's discussion of <a href="https://bitcoinversus.tech/2026/11/12/mirror-contacts-mechanically-linked-relays-weld-detection-safety-feedback/">mechanically linked safety relay contacts</a>. Similarly, production robots require correct <a href="https://bitcoinversus.tech/2026/10/07/osrtc-005-robot-io-plc-handshakes-digital-inputs-outputs-ready-busy-fault-signals-sensors-interlocks-troubleshooting/">PLC handshakes and interlocks</a>, regardless of which computer executes the control program.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">What Comes Next</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><a href="https://www.rockwellautomation.com/en-pl/company/news/press-releases/Rockwell-Automation-Introduces-LogixEdge-Controllers-for-Software-Defined-Automation.html">Rockwell's launch release</a> says the system complements the wider Logix family. The company is offering a LogixEdge hands-on introduction at <a href="https://www.rockwellautomation.com/en-us/events/automation-fair/learn/sessions.html">Automation Fair, November 16–19, 2026</a>. Pricing, order lead times and independently measured production performance were not established in the material reviewed. For factories, the immediate question is whether one serviceable controller-plus-computer package offers a better reliability and maintenance trade-off than two separate machines.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em><strong>Editor's Note:</strong> Reported hardware capabilities and the Q4 availability window are vendor statements, not independently validated field results. The colored-pencil featured image is an original conceptual illustration, not a photograph of the LogixEdge unit. Both embedded videos are authentic Rockwell Automation productions about related Logix and FactoryTalk technologies; neither is presented as footage of the new controller. Actual browser playback and mobile rendering require separate verification.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Support BitcoinVersus.Tech</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p><em>BitcoinVersus.Tech is an independent, volunteer-run technology publication. Optional contributions of <strong>5,000 satoshis</strong> help support research and technical reporting. On a desktop, scan the original QR code using a compatible Bitcoin wallet. On a phone, save the QR image and use a wallet that supports scanning an image from the photo library. Verify recipient <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong>, network, payment amount and fees before sending; Bitcoin transactions are generally irreversible.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full" style="max-width:260px;margin:1rem auto"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" class="wp-image-24043" alt="Original optional BitcoinVersus.Tech donation QR code for 5,000 satoshis." loading="lazy" style="width:100%;height:auto" /><figcaption class="wp-element-caption"><em>Optional 5,000-satoshi Bitcoin support QR. Confirm the address and amount in your wallet.</em></figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p><em>Donations are voluntary, with no expectation of payment to read the article. BitcoinVersus.Tech receives no manufacturer endorsement for the reporting above. Statements about future deployment, savings and security are subject to verification in real facilities.</em></p><!-- /wp:paragraph -->
