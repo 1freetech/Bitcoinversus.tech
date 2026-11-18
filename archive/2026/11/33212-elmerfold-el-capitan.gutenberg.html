@@ -1,0 +1,49 @@
+---
+post_id: 33212
+status: publish
+url: https://bitcoinversus.tech/2026/11/18/el-capitan-elmerfold-10700-protein-structures-per-second-2026/
+featured_media_id: 33205
+cover_style: photorealistic
+cover_dimensions: 1200x630
+source_date: 2026-11-17
+published_date: 2026-11-18
+youtube_ids: [cFHm_KiqQBs, Q8wtuk3XPWM]
+rendered_iframe_count: 2
+browser_playback_tested: false
+---
+
+<!-- wp:paragraph --><p>Lawrence Livermore National Laboratory says its ElMerFold software generated more than <strong>10,700 predicted protein structures per second</strong> using 45,200 AMD Instinct MI300A accelerated processing units in the El Capitan supercomputer. Announced November 17, 2026, the result illustrates how massive computing systems can produce synthetic training data for biomolecular artificial intelligence. Researchers from LLNL, Columbia University and AMD collaborated on the work, which became an ACM Gordon Bell Prize finalist. The winner is scheduled to be announced November 19 during the SC26 supercomputing conference. <a href="https://www.llnl.gov/article/55276/llnl-team-accelerates-protein-structure-prediction-el-capitan-elmerfold-collaboration">LLNL detailed the measurements and workflow</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":33206,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/llnl-openfold3-predicted-experimental-protein-complex.jpg" alt="Comparison of an OpenFold3 predicted antibody antigen complex with an experimentally determined protein structure." class="wp-image-33206" /><figcaption class="wp-element-caption"><em>OpenFold3 predicted structure compared with experimental protein data. Image: Nikoli Dryden, Lawrence Livermore National Laboratory; experimental structure from RCSB Protein Data Bank. Source: <a href="https://www.llnl.gov/article/55276/llnl-team-accelerates-protein-structure-prediction-el-capitan-elmerfold-collaboration">LLNL, November 17, 2026</a>.</em></figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p>Protein structures help scientists understand biological interactions, including how antibodies recognize targets. Experimentally measuring a structure can require expensive instruments and extensive sample preparation. ElMerFold instead uses existing prediction models to create a large collection of computed structures, supplementing scarce experimental examples. Such predictions are useful research inputs, not laboratory confirmation that any given molecule adopts exactly the simulated shape.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=cFHm_KiqQBs]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Lawrence Livermore National Laboratory, archival video: “El Capitan: NNSA’s First Exascale Computer is Here.” The video introduces the supercomputer; it does not document the November 2026 ElMerFold benchmark.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">What the 10,700-per-second figure means</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>LLNL reports a 71.7-fold speedup over an extrapolated baseline, with an estimated 41 million protein predictions reduced from approximately eight days to two and a half hours. The figures describe different performance measures. Dividing 41 million by 9,000 seconds gives an average of roughly <strong>4,556 structures per second</strong> for the stated two-and-a-half-hour end-to-end estimate. The separately reported rate above 10,700 per second should not be treated as the average rate for every stage, including setup, data handling and overhead.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>ElMerFold builds on an earlier large-scale protein prediction effort, rather than representing the first 41-million-structure dataset. The research helps train the open-source OpenFold3 system, which studies interactions among complex biomolecules. LLNL says the dataset is publicly available through the <a href="https://portal.openfold.io/">OpenFold portal</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Why the hardware matters</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>El Capitan uses AMD MI300A accelerated processors combining CPU and GPU functions with access to shared high-bandwidth memory. Engineers optimized mathematical kernels, scheduling and memory management while keeping prediction servers resident to avoid repeatedly loading models. HPE's Rabbit near-node storage supported high-throughput data movement, and automatic recovery helped computations survive individual machine failures.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>A system operating across tens of thousands of accelerators must balance arithmetic, memory capacity, input delivery and task dispatch. A fast neural network does not automatically produce a fast scientific workflow when data movement or idle accelerators dominate. Related BitcoinVersus.Tech analysis examined <a href="https://bitcoinversus.tech/2026/10/27/top-7-supercomputers-2026-chips-megawatts-cooling-video-tour/">the world's leading supercomputers and their cooling systems</a> and <a href="https://bitcoinversus.tech/2026/10/27/compute-per-joule-bitcoin-mining-supercomputers-singularity-power-efficiency-theory/">compute performance per joule</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=Q8wtuk3XPWM]<!-- /wp:shortcode -->
+
+<!-- wp:paragraph --><p><em>Lawrence Livermore National Laboratory, archival video: “El Capitan: The World’s Fastest Supercomputer Is Revolutionizing National Security and Science.” Background on the machine, not footage of the reported protein prediction run.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Potential benefits and the unresolved limits</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Model-generated structural data could accelerate early research on antibody binding, drug targets and molecular interactions, particularly when measured training examples are limited. Columbia's collaborators are evaluating improvements to OpenFold3, while LLNL plans to adapt the computing framework for other scientific inference workloads. The work is relevant to the growing convergence of AI accelerators, scientific software and large-scale data centers. BitcoinVersus.Tech recently examined <a href="https://bitcoinversus.tech/2026/11/18/nvidia-data-center-revenue-107-billion-q3-fy2027/">AI infrastructure demand in NVIDIA's data-center business</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Important limitations remain. Synthetic structures inherit assumptions and errors from their generating models, so a huge dataset alone cannot demonstrate predictive validity across every protein family. The announced throughput is a specialized computational performance result, not evidence of a newly discovered drug, clinically validated treatment, or lower energy consumption. LLNL has not supplied a directly comparable power-per-prediction figure in its announcement.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Laboratory validation remains indispensable. For perspective, <a href="https://bitcoinversus.tech/2026/11/18/salk-superb-seq-36-off-target-crispr-sites-10000-cells-2026/">Salk's research on unintended CRISPR editing</a> shows why biological models require experimental checks before strong conclusions. ElMerFold may make relevant training datasets faster and more accessible, but the next test is whether independently evaluated models become more reliable in scientific practice.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Primary sources:</strong> <a href="https://www.llnl.gov/article/55276/llnl-team-accelerates-protein-structure-prediction-el-capitan-elmerfold-collaboration">LLNL, November 17, 2026</a>; <a href="https://computing.llnl.gov/projects/elmerfold">LLNL ElMerFold project</a>; <a href="https://sc26.conference-program.com/presentation/?id=gb106&amp;sess=sess218">SC26 Gordon Bell technical presentation</a>; <a href="https://portal.openfold.io/">OpenFold data portal</a>.</p><!-- /wp:paragraph -->
