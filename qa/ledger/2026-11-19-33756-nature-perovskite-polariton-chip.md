@@ -1,0 +1,24 @@
+# BitcoinVersus.Tech publication QA: Integrated perovskite polariton chip
+
+- WordPress post 33756: Scientists Build a Light Chip That Lasers, Amplifies and Switches
+- Date (site timezone): 2026-11-19T18:29:12
+- Canonical URL: https://bitcoinversus.tech/2026/11/19/perovskite-light-chip-polariton-laser-amplifier-phase-control-nature-2026/
+- Status: publish, verified by WordPress edit and rendered view APIs.
+- Category rotation: Semiconductor / Photonics / Science, following Automotive and Gaming.
+- Dedupe: WordPress archive searched "perovskite," "polaritonic," "polariton," "active polaritonic," and related exact titles. Prior 25.9% perovskite solar-cell article covers a distinct application; no previous CNR polariton device article.
+- Primary publication: Fieramosca et al., Nature, Nov 18 2026, DOI 10.1038/s41586-026-11299-5, open access CC BY 4.0.
+- Relevant original authors' preprint: arxiv 2512.02659. Supporting CNR Nanotec research website and 2024 Nature Communications work.
+- Technical verification: room-temperature CsPbBr3 perovskite polariton waveguides, single-step growth of waveguides and integrated nanogratings, experimental waveguide lasing, optical amplification, nonlinear phase manipulation up to 2π, an example 240 nm grating pitch.
+- Scope limits: still under external off-resonant laser pumping; no electrical injection, integrated electronic controller, commercial processor, benchmark throughput or computing gates demonstrated.
+- Article length: 622 words excluding sources and footer. Editorial banned words avoided. Four contextual verified internal links.
+- Chart: optional and omitted. A grating pitch, one optical phase value, and qualitative amplification figures are not a comparable three-way KPI dataset. Original official experimental figure used instead.
+- Original cover: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-perovskite-polariton-light-chip-cover-1200x630-1.jpg. Media ID 33742, 1200 × 630 JPEG. Clean artwork, then exactly one BitcoinVersus.tech 14px neon #39FF14 wordmark on tight black highlight bottom-left. Cinematic anime illustration, not a real lab photograph. Exact separate saved logo reference not checked.
+- Authentic research figure: WordPress 33746, https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/nature-perovskite-polaritonic-circuit-fig1-fieramosca-2026.png; Nature figure 1 from original paper, CC BY 4.0, source attribution and figure number in Gutenberg caption.
+- YouTube near beginning: E6H5iBqB128, academic archived lecture by Prof Michał Matuszewski on perovskite polariton circuits. Clearly labeled as background rather than current study.
+- YouTube near middle: is1TAgARkk4, archival lecture by Wei Bao on perovskite polariton systems. Also correctly identified as background.
+- Embedded media count: 3 (2 YouTube lectures, 1 official paper figure). Cover not repeated in body, donation QR excluded.
+- Saved Gutenberg HTML: 8898 characters raw, 12225 characters server rendered. Iframe count 2; figure present true; internal links 4; no empty hrefs; images missing alt 0; editor's note and QR present.
+- SEO title: Perovskite Light Chip Combines Lasing and Amplification
+- SEO description: Scientists demonstrated a perovskite photonic chip that lasers, amplifies and controls light at room temperature. Explore the Nature results and limits.
+- Public browser fetch attempted Nov 19 2026 and failed due inaccessible external site. Mobile design and actual YouTube playback not independently tested; do not mark live browser audit as passed.
+- Published WordPress status, attached cover, rendered iframe markup and archive readback PASSED; public playback and responsive testing UNVERIFIED.
