@@ -1,0 +1,25 @@
+# Editorial QA: ESA Hera thermal asteroid images
+
+- WordPress post: 33651
+- Public URL: https://bitcoinversus.tech/2026/11/19/esa-hera-heat-vision-dimorphos-jaxa-thermal-asteroid-2026/
+- Status and date: publish, 2026-11-19T12:03:11
+- Category: Space / Technology / Trending News
+- Topic: ESA Hera and JAXA TIRI imaging of Didymos and Dimorphos; November 6 acquisition and November 17 ESA release
+- Deduplication: WordPress checked Hera, Dimorphos, asteroid defense and recent Space posts; no matching existing Hera image report
+- Source verification: ESA Nov. 17, 2026 Hera surveying asteroids with superhuman vision; ESA Nov. 18 planned Nov. 25 close-up image reveal; ESA rectangular orbit and mission data; JAXA instrument context
+- Important distinctions: Dimorphos visible in TIRI infrared but mostly in shadow for reflected sunlight; the November 25 high-detail image reveal remained in the future; do not claim new crater or revised shape confirmed
+- Verified technical claims: 28.5 km observation range; 2.7 m/pixel monochrome; 25 HyperScout H spectral bands; TIRI provided and operated by JAXA; Didymos 780 m and Dimorphos 151 m; DART 580 kg at ~6.1 km/s, orbital change ~33 minutes
+- Editorial text: 601-word main article; no prohibited editorial vocabulary
+- SmartChart: deliberately omitted because distances, wavelengths, pixel resolution, and orbit change use incompatible measures and do not form a grounded comparative dataset
+- Cover: original oil painting, clean image then single programmatically added bottom-left BitcoinVersus.tech mark in neon green #39FF14 on tight black highlight. WordPress media ID 33647; image dimensions 1200 x 630; URL https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/esa-hera-dimorphos-heat-vision-original-oil-painting-cover-1200x630-1.jpg
+- Cover manual visual check: one readable bottom-left watermark and no overlapping tags, inspected via local image viewer
+- Authentic in-body image: ESA/JAXA thermal image obtained from ESA media site, WordPress media ID 33648, 757 x 353 px; accurate caption and alt
+- Embeds: ESA YouTube videos xe5k6Lne0Sg, cYaZMTS1RHM, WordPress server-rendered as 2 iframes; iframe playback unverified
+- Authentic media count: 3 (ESA/JAXA official photo and 2 original-source ESA YouTube videos), excluding donation QR
+- Contextual internal links: 4
+- SEO title and description retained: true
+- Footer QR present: true
+- Saved rendered HTML: 12497 chars; no empty href; image alt text present; featured cover not duplicated within article
+- Mobile and desktop browser visual inspection: not run; responsive display unverified
+- Public page independent fetch: attempted, blocked by web tool; WordPress connector confirms published status and rendered content, but not third-party HTTP page state
+- GitHub copy is snapshot of the published Gutenberg body, with separate source and test record
