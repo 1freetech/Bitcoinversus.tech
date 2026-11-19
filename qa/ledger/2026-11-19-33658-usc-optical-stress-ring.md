@@ -1,0 +1,21 @@
+# Editorial QA: USC optical stress ring
+
+- WordPress post: 33658
+- Published: 2026-11-19T12:55:31
+- URL: https://bitcoinversus.tech/2026/11/19/usc-optical-ai-stress-ring-92-percent-accuracy-2026/
+- Status: publish confirmed after publication through WordPress edit and view responses
+- Category: Biotechnology / Artificial Intelligence / Technology / Trending News
+- Topic: nonduplicate USC optical smart ring work, Science Advances DOI 10.1126/sciadv.aeh0459, published November 13, 2026; USC release November 18
+- Duplicate search: WordPress "sweat ring", "stress ring", "optical wearable", "USC engineers", "electrodermal"; no duplicate found
+- Original article: 643 narrative words, four contextual internal links, zero prohibited editorial words
+- Research data: 6 participants in short-term classification, ODA 92.30% vs commercial EDA 77.95%; different 12-hour protocol with 2 participants, ODA 79.55% and EDA 57.35%; clinical performance not established
+- SmartChart: #9 vertical-bar comparison selected over #13 lollipop and #14 dumbbell because study's two directly comparable classification rates benefit from a shared 0–100 percentage axis. Chart baseline 0, units %, no forecasts; original media ID 33655
+- Authentic in-story media: USC video on Yasser Khan's wearable technology research (published May 30, 2025), YouTube ID aZzecH8aDQo, WordPress server-rendered iframe; USC Khan Lab researchers' official photograph media ID 33656; 4 actual prototypes photograph media ID 33657; original sourced chart media 33655; 4 total media excluding donation QR
+- YouTube video predates the ring study and is clearly labeled historical context; direct playback not independently checked
+- Official USC research photographs retain attribution; neither is the cover
+- Cover: original photo-realistic concept art built clean without embedded tag, then one precise bottom-left BitcoinVersus.tech watermark over tight black highlight, color #39FF14; visually checked no overlap; WordPress media 33654; 1200x630; https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/usc-optical-stress-ring-featured-cover-1200x630-1.jpg
+- WordPress rendered view: 15540 HTML chars, 1 YouTube iframe, 4 contextual internal links, photos and chart present, no missing image alt, no blank anchors, donation QR present, featured image not repeated inside article
+- Footer: Editor's Note, 5,000 sats donation QR, donation address and medical disclaimer present
+- SEO title and meta description saved; noindex false
+- External public URL attempt: web tool returned inaccessible; independent live page inspection, mobile visual layout, playback remain unverified
+- Next QA: test real playback and visual responsiveness when a browser capable of interacting with public page is available
