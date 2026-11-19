@@ -34,3 +34,13 @@
 - Re-read after update: status publish; featured_media 33623; media dimensions 1200 × 630; alt text present; corrected cover not inserted into body.
 - Watermark: a single compact neon-green BitcoinVersus.tech text highlight at lower left. Pixel-identical match to approved separate logo reference not independently tested.
 - Public external-browser rendering and cache-refresh verification not performed.
+
+## Watermark fully rebuilt (second correction), November 19, 2026
+
+- Removed pre-existing labels and black text highlights from the cover art, reconstructed illustration, then added one and only one WordPress brand tag.
+- Watermark lettering: BitcoinVersus.tech, neon green #39FF14, 13 px bold type on a tight black background at the lower left.
+- New image: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/hyundai-boston-dynamics-single-rebuilt-watermark-1200x630-1.jpg
+- New WordPress media ID: 33638; 1200 x 630 pixels; original featured media replaced in post #33602 without changing body, slug or publish status.
+- WordPress view and media inspection passed. Final original JPEG visually examined locally for duplicate-tag overlap; none visible.
+- Exact typographic match to the separate approved reference-logo asset is not independently verified.
+- Independent public-browser cache/desktop/mobile presentation testing remains unverified.
