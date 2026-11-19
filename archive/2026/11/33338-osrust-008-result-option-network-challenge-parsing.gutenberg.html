@@ -1,0 +1,119 @@
+<!-- wp:paragraph --><p><strong>OSRust.008</strong> introduces <code>Result</code> and <code>Option</code> as a way to validate untrusted bytes without assuming that every request is well formed. After <a href="https://bitcoinversus.tech/2026/11/07/osrust-007-slices-utf8-borrowed-text-byte-boundaries-safe-indexing/">OSRust.007 on slices and UTF-8 boundaries</a> and <a href="https://bitcoinversus.tech/2026/11/01/osrust-006-ownership-moves-borrowing-references-memory-safety/">OSRust.006 on ownership and borrowing</a>, a binary client-challenge header offers a practical reason to return structured errors rather than panic when input is short, unsupported or malformed.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>The lesson uses a hypothetical proof-of-work request header as teaching material. It follows BitcoinVersus.Tech's <a href="https://bitcoinversus.tech/2026/11/18/ositc-015-proof-of-work-firewalls-malware-costs-limits-testing/">network malware-cost lesson</a> and the <a href="https://bitcoinversus.tech/2026/11/18/osc-008-c-pointer-parameters-nonce-buffers-proof-of-work-sha256/">C nonce-buffer lab</a>, but concentrates on <strong>defensive parsing in Rust</strong>, not implementing an operational proof-of-work firewall.</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Learning objectives</h2><!-- /wp:heading -->
+<!-- wp:list --><ul class="wp-block-list"><li>Describe <code>Some</code>, <code>None</code>, <code>Ok</code> and <code>Err</code> in ordinary language.</li><li>Read an untrusted byte slice without unsafe indexing or unhandled panics.</li><li>Use <code>?</code> to propagate a recoverable parse error.</li><li>Decode four nonce bytes in a declared byte order and reject extra bytes.</li><li>State why successful parsing does not verify a proof-of-work puzzle.</li></ul><!-- /wp:list -->
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=gAX3Zj-JGE0]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>Francesco Ciulla, May 6, 2025. Archived Rust programming course, with a section on Option and Result error handling starting around 2:38. Educational language material, not a real firewall demonstration.</em></p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Result separates valid values from errors</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Rust's standard library defines <a href="https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html"><code>Result&lt;T, E&gt;</code></a> with success and failure variants. A function can return <code>Ok(value)</code> when a request parses cleanly or <code>Err(error)</code> with a precise reason for rejection. Unlike <code>unwrap()</code>, which can panic, <code>?</code> returns early from the current function when the operation fails.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>An <a href="https://doc.rust-lang.org/std/option/enum.Option.html"><code>Option</code></a> represents an existing value with <code>Some</code> or its absence with <code>None</code>. Calling <code>split_first()</code> on an empty slice produces <code>None</code>; <code>ok_or()</code> converts that absence into an explicit parse error. Pattern matching remains available when a caller needs a different action for each error variant.</p><!-- /wp:paragraph -->
+<!-- wp:image {"id":11149,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2025/03/image-19.png" class="wp-image-11149" alt="Original conceptual Proof-of-Power Wall illustration from the BitcoinVersus.Tech March 2025 article, used to explain request admission and validation; not a deployed device." /><figcaption class="wp-element-caption"><em>BitcoinVersus.Tech, March 17, 2025. The original conceptual firewall illustration reused unchanged from the first article.</em></figcaption></figure><!-- /wp:image -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Parse a bounded request with no external crates</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The demonstration uses a six-byte request: one version byte, one effort byte and a four-byte unsigned nonce in network byte order. An effort field is only a parameter in the example; accepting it does not prove that any hashing work was performed. Rust's safe slice methods reject truncated input before attempting to convert the nonce.</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>#[derive(Debug, PartialEq, Eq)]
+struct ChallengeRequest {
+    version: u8,
+    effort_bits: u8,
+    nonce: u32,
+}
+
+#[derive(Debug, PartialEq, Eq)]
+enum ParseError {
+    ShortInput,
+    UnsupportedVersion,
+    InvalidEffort,
+    TrailingBytes,
+}
+
+fn parse_request(input: &amp;[u8]) -&gt; Result&lt;ChallengeRequest, ParseError&gt; {
+    let (&amp;version, rest) =
+        input.split_first().ok_or(ParseError::ShortInput)?;
+    let (&amp;effort_bits, payload) =
+        rest.split_first().ok_or(ParseError::ShortInput)?;
+
+    if version != 1 {
+        return Err(ParseError::UnsupportedVersion);
+    }
+    if !(4..=20).contains(&amp;effort_bits) {
+        return Err(ParseError::InvalidEffort);
+    }
+
+    let nonce_bytes: [u8; 4] = payload
+        .get(..4)
+        .ok_or(ParseError::ShortInput)?
+        .try_into()
+        .map_err(|_| ParseError::ShortInput)?;
+    if payload.len() != 4 {
+        return Err(ParseError::TrailingBytes);
+    }
+
+    Ok(ChallengeRequest {
+        version,
+        effort_bits,
+        nonce: u32::from_be_bytes(nonce_bytes),
+    })
+}
+
+fn main() {
+    for data in [
+        &amp;[1, 16, 0, 1, 7, 0][..],
+        &amp;[1, 16, 0][..],
+        &amp;[1, 32, 0, 1, 7, 0][..],
+    ] {
+        println!(&quot;{:?}&quot;, parse_request(data));
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn parses_valid_request() {
+        assert_eq!(
+            parse_request(&amp;[1, 16, 0, 1, 7, 0]),
+            Ok(ChallengeRequest {
+                version: 1, effort_bits: 16, nonce: 0x00010700
+            })
+        );
+    }
+
+    #[test]
+    fn rejects_truncated_request() {
+        assert_eq!(
+            parse_request(&amp;[1, 16, 0]),
+            Err(ParseError::ShortInput)
+        );
+    }
+
+    #[test]
+    fn rejects_extra_bytes() {
+        assert_eq!(
+            parse_request(&amp;[1, 16, 0, 1, 7, 0, 5]),
+            Err(ParseError::TrailingBytes)
+        );
+    }
+}</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>Save the program as <code>main.rs</code>, then use <code>rustc --edition=2021 main.rs</code> followed by <code>./main</code> on Linux, or compile with Cargo and run <code>cargo test</code> after placing the file in a standard project. The first sample represents nonce <code>0x00010700</code>, or 67,328 in decimal. The second sample is too short; the third requests an out-of-policy effort value.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>The standard compiler is unavailable in the current editorial environment, so the listing was checked against Rust's documentation but <strong>not compiled or executed here</strong>. Readers should run the included unit tests locally before extending the code. The tests cover accepted, truncated and oversized input, not actual hash security.</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Boundary checks do not replace authentication</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>An attacker might send a valid six-byte header and still intend harm. A production gateway needs server-generated unpredictable challenges, expiration, replay prevention, an actual cryptographic verifier, authentication, authorization and resource limits. Cloudflare's <a href="https://developers.cloudflare.com/turnstile/get-started/server-side-validation/">server-side validation documentation</a> illustrates the independent need to verify admission tokens instead of trusting a browser alone.</p><!-- /wp:paragraph -->
+<!-- wp:shortcode -->
+[tweet 2121834933920354309]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>Anthony Scaramucci, November 15, 2026. Archival original X commentary proposing proof of work as a firewall for the AI era; included to frame the security hypothesis, not a validation of malware prevention.</em></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>The original <a href="https://bitcoinversus.tech/2025/03/17/proof-of-power-wall-secures-infrastructure-with-computer-power/">Proof-of-Power Wall</a> image remains a proposal, while Rust's <a href="https://doc.rust-lang.org/book/ch06-02-match.html"><code>match</code></a> and error-return facilities offer directly testable programming behavior. The practical lesson is simple: reject malformed requests predictably before deciding whether a separate security policy permits them.</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Knowledge check</h2><!-- /wp:heading -->
+<!-- wp:list --><ul class="wp-block-list"><li><strong>Question:</strong> Why use <code>Result</code> for a parser? <strong>Answer:</strong> Invalid input is expected and must be reported without a process crash.</li><li><strong>Question:</strong> Does <code>Ok(ChallengeRequest)</code> prove a valid work solution? <strong>Answer:</strong> No. It proves only that the header met the parser's format rules.</li><li><strong>Question:</strong> What prevents reading past the input? <strong>Answer:</strong> Safe slice access, explicit length checks and early error returns.</li></ul><!-- /wp:list -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">References</h2><!-- /wp:heading -->
+<!-- wp:list --><ul class="wp-block-list"><li><a href="https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html">Rust Programming Language: Recoverable Errors with Result</a></li><li><a href="https://doc.rust-lang.org/std/option/enum.Option.html">Rust standard library: Option</a></li><li><a href="https://doc.rust-lang.org/book/ch06-02-match.html">Rust language: match control flow</a></li><li><a href="https://doc.rust-lang.org/std/primitive.slice.html">Rust standard library: slices</a></li><li><a href="https://developers.cloudflare.com/turnstile/get-started/server-side-validation/">Cloudflare: server-side Turnstile validation</a></li></ul><!-- /wp:list -->
+<!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
+<!-- wp:paragraph --><p><em><strong>Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="BitcoinVersus.Tech original Bitcoin donation QR for 5,000 satoshis" class="wp-image-24043" /></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p><em>For mobile scanning, open this article on a laptop or larger display and scan the original QR code using a Bitcoin wallet. Confirm the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->
