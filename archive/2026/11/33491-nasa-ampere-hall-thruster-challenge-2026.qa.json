@@ -1,0 +1,97 @@
+{
+  "wordpress_post_id": 33491,
+  "wordpress_status": "publish",
+  "live_url": "https://bitcoinversus.tech/2026/11/19/nasa-ampere-500000-hall-effect-thruster-challenge-3-7kw-november-2026/",
+  "publication_date": "2026-11-19",
+  "headline": "NASA Offers $500,000 to Build 3–7 kW Electric Rocket Thrusters",
+  "rotation_category": [
+    "Space",
+    "Electrical Engineering",
+    "Technology",
+    "Trending News"
+  ],
+  "topic": "NASA Advanced Mid-Power Electric Rocket AMPERE Challenge, 3–7 kW Hall thrusters",
+  "duplicate_prevention": {
+    "wordpress_published_and_drafts_searched": true,
+    "github_recent_archive_examined": true,
+    "known_duplicate_topic_found": false
+  },
+  "journalism": {
+    "article_word_count_approx_with_media_captions": 695,
+    "prohibited_words_in_original_editorial_body": [],
+    "external_primary_sources": [
+      "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/nasa-announces-mid-power-electric-rocket-challenge-for-us-companies/",
+      "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-advanced-mid-power-electric-rocket-challenge/",
+      "https://www.nasa.gov/space-technology-mission-directorate/tdm/solar-electric-propulsion/"
+    ],
+    "verified_internal_links_count": 4
+  },
+  "SmartChart": {
+    "included": false,
+    "reason": "no comparable measured performance data for new contestants; prizes and broad design-power range alone do not justify a chart",
+    "candidate_types_considered": [
+      "bar",
+      "timeline",
+      "radar"
+    ]
+  },
+  "cover": {
+    "original": true,
+    "wordpress_media_id": 33484,
+    "dimensions": "1200 x 630",
+    "art_style": "cinematic anime",
+    "watermark": "BitcoinVersus.tech neon green #39FF14 on close black text highlight lower-left",
+    "repeated_in_post_body": false
+  },
+  "media": [
+    {
+      "type": "youtube",
+      "video_id": "QpNF0ljn3qk",
+      "description": "archival NASA Marshall Hall thruster hot-fire",
+      "stored_block": "core/shortcode",
+      "server_rendered_iframe": true,
+      "playback_checked_in_browser": false
+    },
+    {
+      "type": "photo",
+      "wordpress_media_id": 33485,
+      "description": "NASA Glenn H71M sub-kW archival test",
+      "attribution": "NASA"
+    },
+    {
+      "type": "youtube",
+      "video_id": "cKygD2b3OM8",
+      "description": "NASA Glenn visualization of Hall thruster testing",
+      "stored_block": "core/shortcode",
+      "server_rendered_iframe": true,
+      "playback_checked_in_browser": false
+    },
+    {
+      "type": "photo",
+      "wordpress_media_id": 33486,
+      "description": "NASA Glenn 12-kW AEPS vacuum chamber",
+      "attribution": "NASA"
+    }
+  ],
+  "footer": {
+    "approved_editors_note": true,
+    "original_donation_qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "seo_title_present": true,
+    "seo_description_present": true,
+    "canonical_correct": true,
+    "og_featured_image_present": true,
+    "images_missing_alt": 0,
+    "empty_links": 0,
+    "server_rendered_youtube_iframes": 2,
+    "real_images_in_story": 2,
+    "donation_qr_present": true,
+    "browser_video_playback": "not tested",
+    "mobile_visual_browser": "not tested"
+  },
+  "notes": "Article compares competition power range with existing NASA H71M and AEPS systems without claiming any AMPERE winner or measured performance."
+}
