@@ -1,0 +1,107 @@
+{
+  "post_id": 33694,
+  "status": "publish",
+  "publication_date": "2026-11-19",
+  "url": "https://bitcoinversus.tech/2026/11/19/arthur-hayes-flop-rtx-5080-ai-inference-gpu-mining-testnet-2026/",
+  "headline": "Can Your Gaming GPU Mine AI? FLOP Tests an RTX 5080",
+  "category": [
+    "GPU mining",
+    "Cryptocurrency",
+    "AI computing"
+  ],
+  "dedup": {
+    "published_and_draft_searches": [
+      "Flop Labs",
+      "FLOP mining",
+      "Arthur Hayes RTX",
+      "RTX 5080 miner",
+      "proof of useful inference",
+      "FLOP testnet"
+    ],
+    "GitHub_November_archive_checked": true,
+    "matching_prior_publication_found": false
+  },
+  "research": {
+    "main_development": "Arthur Hayes promoted an RTX 5080 FLOP devnet AI inference demonstration November 8",
+    "official_timeline_update": "2026-11-18",
+    "official_testnet_target": "2026-11-24, subject to readiness; not live as of 2026-11-19",
+    "mainnet_or_tge_date": "not verified",
+    "devnet_rewards": "none",
+    "token_status": "not yet trading and token does not exist",
+    "planned_miner_block_reward_share_percent": 75,
+    "consumer_gpu_minimum_memory_gb": 16,
+    "unverified_gpu_setup_generalization": "RTX 5080 demonstration not universal support or commercial profitability",
+    "sources": [
+      "https://docs.flop.network/docs/testnet-and-timeline",
+      "https://flop.finance/whitepaper/",
+      "https://docs.flop.network/docs/run-gpu-provider",
+      "https://beincrypto.com/arthur-hayes-flop-mining-gaming-gpu/"
+    ]
+  },
+  "editorial": {
+    "approx_word_count_including_captions_excluding_fixed_footer": 693,
+    "prohibited_words": [],
+    "contextual_internal_links": 4,
+    "dates_and_forecasts_labeled": true,
+    "not_same_as_bitcoin_sha256_mining": true
+  },
+  "chart": {
+    "included": false,
+    "considered": [
+      "vertical bar",
+      "lollipop",
+      "timeline"
+    ],
+    "reason": "no observed matched GPU throughputs, power-consumption and revenue measurements. A categorical comparison of roles is clearer in prose."
+  },
+  "cover": {
+    "wordpress_media_id": 33693,
+    "dimensions": "1200x630",
+    "style": "cinematic anime",
+    "watermark": "BitcoinVersus.tech neon-green on narrow black bottom-left",
+    "not_duplicated_in_body": true
+  },
+  "multimedia": [
+    {
+      "type": "YouTube",
+      "video_id": "iO2KIY4RINo",
+      "source": "Unchained interview with Hayes, August 21 2026",
+      "server_rendered_iframe": true,
+      "actual_browser_playback": "not tested"
+    },
+    {
+      "type": "archival_product_photograph",
+      "wordpress_media_id": 33692,
+      "source": "PC Games Hardware, RTX 5080 Founders Edition January 2025",
+      "attributed": true,
+      "illustrative_not_demonstration": true
+    },
+    {
+      "type": "YouTube",
+      "video_id": "k2a3kEgcijs",
+      "source": "VirtualBacon interview with Hayes, recorded September 8 2026",
+      "server_rendered_iframe": true,
+      "actual_browser_playback": "not tested"
+    }
+  ],
+  "footer": {
+    "editors_note": true,
+    "bitcoin_donation_qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "site_visibility": "public",
+    "seo_title_present": true,
+    "meta_description_present": true,
+    "canonical_correct": true,
+    "open_graph_featured_image_present": true,
+    "images_missing_alt": 0,
+    "empty_links": 0,
+    "embedded_youtube_iframes": 2,
+    "attributed_photo_present": true,
+    "donation_qr_present": true,
+    "actual_video_playback": "not tested",
+    "mobile_browser_visual_test": "not tested"
+  }
+}
