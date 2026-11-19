@@ -1,0 +1,26 @@
+# Editorial QA — Electrified Carbon Cloth Phosphate Capture
+
+- WordPress post: 33665
+- URL: https://bitcoinversus.tech/2026/11/19/electrified-carbon-cloth-phosphate-water-recovery-2-6x-northwestern-2026/
+- Status and date: publish; 2026-11-19T16:55:59
+- Category rotation: environmental/electrical engineering and energy after wearables; Hyundai Boston Dynamics acquisition already published, not repeated
+- Dedupe: WordPress published titles/content searched for phosphate, magnetite-coated, electrified fabric, wastewater recovery, carbon cloth and fertilizer phosphorus; no same-study duplicate
+- Main result: 2.6-fold phosphate capture vs no-voltage control in laboratory, using magnetite-coated carbon cloth at 1.2 V across electrochemical cell; reverse voltage encouraged release
+- Reported numerical date: Northwestern University's November 18, 2026 release; peer-reviewed ACS ES&T Engineering paper DOI 10.1021/acsestengg.6c00609; Argonne publication record
+- Claims separated: 2.6x measured relative to control, NOT 260% absolute removal, higher collection speed, field performance, fertilizer-grade purity or commercial operation
+- Limitations: real wastewater matrix and continuous-flow/field validation not yet demonstrated; cost, fouling, energy, durability and selectivity remain to be tested
+- Conflicts disclosed: Northwestern provisional patent naming Matuszewski and Dravid; Dravid involvement with Coral Innovations
+- SmartChart: compared #9 vertical bars, #13 lollipop and #15 bullet; chose #9 vertical bars for two-condition zero-based controlled comparison. No horizontal bars.
+- Chart provenance: normalization = 1.0 no voltage and 2.6 at 1.2 V; relative indices from reported ~2.6-fold, not actual mg/L. WordPress media ID 33662, 1316x815, alt supplied
+- Featured cover: original cinematic anime visual, WordPress media 33661, 1200x630. Created from clean unwatermarked artwork, then one and only one 'BitcoinVersus.tech' tag added with Pillow, neon green #39FF14 on a tight black highlight at bottom-left; visually checked against overlap; exact separately approved logo font not pixel-comparison verified
+- Featured cover URL: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-electrified-cloth-phosphate-cover-1200x630-1.jpg
+- YouTube media 1: Northwestern University original 2022 discussion of earlier phosphate-removing sponge, id F17czjGGSGY, archive context only
+- YouTube media 2: New York State DEC original 2024 harmful algal bloom discussion, id Wr-BNRJVEfY, context only
+- WordPress server-rendered YouTube iframes: 2; embedded IDs F17czjGGSGY, Wr-BNRJVEfY; independent video playback not tested
+- In-story originals: 1 SmartChart PNG, 2 source YouTube videos = 3 media (cover and donation QR excluded)
+- Contextual internal article links: 4, confirmed matching prior published URLs
+- SEO title/description: true; editor's note and donation QR: true; empty href: 0; article imgs all have alt: true
+- Featured image not duplicated in article body: true
+- Server-rendered WordPress HTML chars: 12776
+- Public browser check via web open blocked or inaccessible, so external live-page HTTP status, frontend mobile layout, widget interaction, and actual video playback UNVERIFIED
+- Story prose: 671 words in prepublication automated count; no prohibited editorial terms; main narrative within 420–777 words
