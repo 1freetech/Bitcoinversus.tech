@@ -1,0 +1,40 @@
+<!-- wp:paragraph --><p>GIGABYTE subsidiary Giga Computing is showing a liquid-cooled server designed to hold <strong>up to 5,120 CPU cores in a 6U chassis</strong> at Supercomputing 2026 in Chicago. The company's <a href="https://www.gigabyte.com/press/news/2472">November 17 announcement, published November 18</a>, introduces the B685-D80-LS1, packing ten dual-processor computing nodes into one enclosure. GIGABYTE says its cooling system captures nearly 90% of system heat through cold plates. The numbers describe a maximum hardware configuration and a vendor cooling claim, <strong>not independently measured performance from a customer's deployed rack</strong>.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=J2XsQE7YsTc]<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>Official GIGABYTE April 2026 video showing rack-scale AI and HPC infrastructure. Archival background, not footage of the November B685-D80-LS1 demonstration.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>How 5,120 cores fit into six rack units</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A standard rack unit measures 1.75 inches. Six units occupy 10.5 inches, or 26.7 centimeters, of vertical rack space. The <a href="https://www.gigabyte.com/Enterprise/High-Density-Server/B685-D80-LS1">B685-D80-LS1 specification</a> lists ten front-access nodes with two AMD EPYC 9006 processor sockets each. At the advertised maximum of 256 CPU cores per socket, <strong>10 × 2 × 256 = 5,120 cores</strong>. Buyers may instead select lower-core processors or leave sockets unpopulated; the headline capacity is not a record of installed machines.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Every node has 32 DDR5 memory slots, two E3.S PCIe 6.0 storage bays and three low-profile PCIe 6.0 expansion slots with liquid cooling. GIGABYTE pairs high-density hardware with front-access maintenance and management interfaces. Operators still need to evaluate cable service loops, power redundancy and access for replacing failed components.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>Cooling more than the processors</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Direct-to-chip liquid cooling usually targets the hottest CPUs and GPUs, leaving memory, networking components and other devices to air. GIGABYTE extends cold plates to CPUs, memory and network interfaces and uses a manifold to distribute coolant throughout the compact chassis. Its product page states a <strong>maximum 92% heat-capture ratio</strong>; the SC26 announcement describes nearly 90%. Both are manufacturer specifications that require real-world verification.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=wcyljCcjxQk]<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>GIGABYTE's official August 2025 explainer on direct liquid cooling, cold plates and coolant distribution. The video is archival and is not a performance test of the new 6U chassis.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Heat captured by liquid does not vanish. Warm coolant must carry it to a CDU, heat exchanger and eventual rejection or reuse system. Pumps, fans and room air conditioning continue to consume power. The heat-capture percentage also is not a measurement of power usage effectiveness, facility water consumption or an energy-saving percentage. Readers handling similar installations can review <a href="https://bitcoinversus.tech/2026/10/31/osdctc-016-liquid-cooling-monitoring-cdu-telemetry-leak-detection/">CDU telemetry and leak detection</a> and <a href="https://bitcoinversus.tech/2026/11/15/osdctc-018-quick-disconnect-inspection-liquid-cooled-racks/">quick-disconnect inspection</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>Two ways to deploy liquid cooling</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The 6U rack design connects to an in-rack GIGABYTE coolant distribution unit and Schneider Electric power distribution. G-REX management software monitors cooling, power distribution, rear-door heat exchangers and leakage. A separate 2U product shown at SC26, the H295-D80-CS1, uses closed-loop liquid cooling and supports up to 2,048 AMD EPYC cores. It can operate without a facility water connection, but must still expel heat into the surrounding environment.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=qQYVfK9PTNQ]<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>Official GIGABYTE September 2025 introduction to GIGAPOD rack clusters and centralized infrastructure management. Archival background, not an SC26 performance benchmark.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2>The real test comes after installation</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>A tightly packed server saves vertical space per core while concentrating electrical demand, thermal load and maintenance risks. Procurement teams need sustained benchmark results, inlet and outlet coolant temperatures, flow, pressure drop, leak detection response, throttling behavior and maximum rack electrical capacity. A claimed core count is not a substitute for application throughput or measured energy efficiency.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Recent BitcoinVersus.tech coverage of <a href="https://bitcoinversus.tech/2026/11/15/gates-thermalcool-2100ss-4u-rack-cdu-pump-200-l-min-2026/">high-flow CDU pumps</a> and <a href="https://bitcoinversus.tech/2026/11/16/daikin-d60w-60mw-ai-cooling-92-percent-liquid-nvidia-2026/">large AI liquid-cooling systems</a> illustrates why server hardware and building cooling must be designed together. GIGABYTE's new configuration is a noteworthy density proposition, but no independently verified customer utilization, system power benchmark or total cost of ownership accompanied the launch.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><strong>Original sources:</strong> <a href="https://www.gigabyte.com/press/news/2472">GIGABYTE SC26 announcement</a>; <a href="https://www.gigabyte.com/Enterprise/High-Density-Server/B685-D80-LS1">B685-D80-LS1 hardware specifications</a>; <a href="https://www.gigabyte.com/Event/SC26/">official SC26 event program</a>. Peak core counts and cooling ratios are vendor-published specifications, not forecasts of fleet deployment.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>Editor's Note: We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Original BitcoinVersus.tech donation QR code for a voluntary 5,000-satoshi payment" class="wp-image-24043" /><figcaption>Verify the wallet address and network before sending 5,000 sats to support independent research.</figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p><em><strong>Disclaimer:</strong> BitcoinVersus.tech provides independent technical journalism, not engineering certification, equipment procurement advice or a guarantee of performance. Validate electrical, thermal and operational specifications with manufacturers before deployment.</em></p><!-- /wp:paragraph -->
