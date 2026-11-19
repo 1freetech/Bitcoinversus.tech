@@ -1,0 +1,72 @@
+{
+  "article_id": 33439,
+  "title": "Toyota and Pony.ai Launch Driverless bZ4X Taxis as Robotaxi Revenue Jumps 165%",
+  "live_url": "https://bitcoinversus.tech/2026/11/19/toyota-pony-ai-bz4x-driverless-guangzhou-revenue-2026/",
+  "publication_date": "2026-11-19",
+  "status": "publish",
+  "category_rotation": "Automotive / Robotics / AI",
+  "word_count_editorial_paragraphs": 646,
+  "chart": {
+    "atlas": "SmartChart",
+    "type": "groupedBars",
+    "chart_number": 10,
+    "media_id": 33435,
+    "source": "Pony.ai unaudited Q3 2026 results released 2026-11-18",
+    "quarters": [
+      "Q3 2025",
+      "Q3 2026"
+    ],
+    "units": "USD millions",
+    "segments": {
+      "robotaxi": [
+        6.694,
+        17.763
+      ],
+      "robotruck": [
+        10.183,
+        17.952
+      ],
+      "intelligent_solutions": [
+        8.565,
+        8.859
+      ]
+    },
+    "baseline": 0
+  },
+  "cover": {
+    "style": "fine-art oil painting",
+    "media_id": 33448,
+    "size": "1200x630",
+    "watermark": "BitcoinVersus.tech #39FF14 small black highlight lower left"
+  },
+  "multimedia": {
+    "youtube_ids": [
+      "OK6a9UUtlBs",
+      "6Orx731wW_I"
+    ],
+    "youtube_embed_method": "WordPress shortcode [youtube URL], rendered HTML contains iframe.youtube-player",
+    "x_post_id": "2122185784908501251",
+    "x_embed_method": "WordPress [embed] shortcode, rendered HTML contains authentic blockquote.twitter-tweet and platform.x.com/widgets.js",
+    "live_browser_playback": "not tested",
+    "original_source_photo_in_story": false,
+    "chart_media_id": 33435
+  },
+  "internal_links": 5,
+  "qr_media_id": 24043,
+  "checks": {
+    "site_public_status_200": true,
+    "featured_image_attached": true,
+    "seo_title_description_present": true,
+    "og_image_present": true,
+    "image_alt_missing_count": 0,
+    "editorial_prohibited_words_excluding_fixed_editor_note": 0,
+    "cover_not_repeated_in_body": true,
+    "live_server_output_contains_two_youtube_iframes": true,
+    "live_server_output_contains_x_blockquote": true,
+    "client_side_playback_unverified": true
+  },
+  "sources": [
+    "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial",
+    "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-reports-third-quarter-2026-financial-results-total"
+  ]
+}
