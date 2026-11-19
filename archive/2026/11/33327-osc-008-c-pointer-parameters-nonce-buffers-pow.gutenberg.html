@@ -1,0 +1,76 @@
+<!-- wp:paragraph --><p><strong>OSC.008</strong> extends <a href="https://bitcoinversus.tech/2026/11/18/osc-007-c-arrays-indexing-initialization-bounds-safety-sizeof/">OSC.007 on fixed C arrays</a> into pointer parameters, byte-buffer boundaries and explicit nonce encoding. A small proof-of-work exercise makes the differences visible: an array owns contiguous storage, while a function receiving its pointer must be told the valid length. The earlier <a href="https://bitcoinversus.tech/2026/11/07/osc-006-c-functions-prototypes-parameters-return-values-scope/">C functions lesson</a> covered parameter passing and return values, and the <a href="https://bitcoinversus.tech/2026/11/01/osc-005-c-loops-for-while-do-while-break-continue/">loops lesson</a> supplied repeated trials.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>The exercise extends our <a href="https://bitcoinversus.tech/2026/11/18/ositc-015-proof-of-work-firewalls-malware-costs-limits-testing/">OSITC.015 malware-cost lesson</a> and the original <a href="https://bitcoinversus.tech/2025/03/17/proof-of-power-wall-secures-infrastructure-with-computer-power/">Proof-of-Power Wall article</a>. The important boundary remains unchanged: a puzzle can discourage some mass automated requests, but solving it does not establish identity, safe intent or freedom from viruses.</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Learning objectives</h2><!-- /wp:heading -->
+<!-- wp:list --><ul class="wp-block-list"><li>Pass a bounded byte buffer through a pointer parameter and track its length explicitly.</li><li>Explain why an array often converts to a pointer when passed to a function.</li><li>Encode a 32-bit nonce as four bytes with an explicit byte order.</li><li>Use OpenSSL to calculate a SHA-256 digest and check a low-difficulty work target.</li><li>Separate a local coding demonstration from a secure, production admission gateway.</li></ul><!-- /wp:list -->
+<!-- wp:shortcode -->
+[tweet 2121834933920354309]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>Anthony Scaramucci, November 15, 2026. Original X post calling proof of work a firewall for the AI age. Commentary about a proposal, not independent malware-prevention test results.</em></p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Pointer parameters and binary buffer boundaries</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>An array such as <code>unsigned char message[64]</code> reserves 64 contiguous bytes. The expression <code>sizeof message</code> reports the array's storage size in its defining scope. When passed to a function, an array expression ordinarily converts to a pointer to its first element; the callee must receive or otherwise know the length separately. The <a href="https://en.cppreference.com/w/c/language/array">C array language reference</a> describes the conversion and its exceptions.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>The challenge occupies the first bytes; four subsequent bytes encode a nonce in big-endian order. Before copying, the program checks whether challenge length plus four exceeds the destination capacity. The guard prevents an out-of-bounds write, one common route to memory corruption in unsafe C programs.</p><!-- /wp:paragraph -->
+<!-- wp:image {"id":11149,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2025/03/image-19.png" class="wp-image-11149" alt="The exact original conceptual Proof-of-Power Wall image from BitcoinVersus.Tech, March 2025, illustrating computational admission as a proposed security barrier, not a deployed product." /><figcaption class="wp-element-caption"><em>BitcoinVersus.Tech, March 17, 2025. The original Proof-of-Power Wall illustration, reused unchanged from the first article. Concept art, not a tested security installation.</em></figcaption></figure><!-- /wp:image -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Compile and verify a small real hash puzzle</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The example uses OpenSSL's <a href="https://docs.openssl.org/3.0/man3/EVP_DigestInit/">EVP_Digest API</a> rather than implementing SHA-256 manually. A 16-bit zero-prefix target succeeds with probability 1 in 65,536 per independent random-looking digest. The expected number of attempts is approximately 65,536, although any particular run can finish earlier or later.</p><!-- /wp:paragraph -->
+<!-- wp:code --><pre class="wp-block-code"><code>#include &lt;stdint.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;openssl/evp.h&gt;
+
+static int has_zero_prefix(const unsigned char *digest, unsigned bits) {
+    unsigned full_bytes = bits / 8;
+    unsigned remaining = bits % 8;
+    for (unsigned i = 0; i &lt; full_bytes; ++i) {
+        if (digest[i] != 0) return 0;
+    }
+    return remaining == 0 || (digest[full_bytes] &gt;&gt; (8 - remaining)) == 0;
+}
+
+int main(void) {
+    const unsigned char challenge[] = &quot;demo-only&quot;;
+    const size_t challenge_len = sizeof challenge - 1;
+    unsigned char message[64] = {0};
+    unsigned char digest[EVP_MAX_MD_SIZE];
+    unsigned digest_len = 0;
+
+    if (challenge_len + 4 &gt; sizeof message) return 1;
+    memcpy(message, challenge, challenge_len);
+
+    for (uint32_t nonce = 0; ; ++nonce) {
+        message[challenge_len]     = (unsigned char)(nonce &gt;&gt; 24);
+        message[challenge_len + 1] = (unsigned char)(nonce &gt;&gt; 16);
+        message[challenge_len + 2] = (unsigned char)(nonce &gt;&gt; 8);
+        message[challenge_len + 3] = (unsigned char)nonce;
+
+        if (EVP_Digest(message, challenge_len + 4,
+                       digest, &amp;digest_len, EVP_sha256(), NULL) != 1)
+            return 1;
+        if (digest_len == 32 &amp;&amp; has_zero_prefix(digest, 16)) {
+            printf(&quot;nonce=%u first_digest_bytes=%02x%02x\n&quot;,
+                   nonce, digest[0], digest[1]);
+            return 0;
+        }
+        if (nonce == UINT32_MAX) break;
+    }
+    return 1;
+}</code></pre><!-- /wp:code -->
+<!-- wp:paragraph --><p>On Linux with a C compiler and OpenSSL development headers installed, save the program as <code>pow_demo.c</code> and run <code>cc -std=c11 -O2 -Wall -Wextra -Werror pow_demo.c -o pow_demo -lcrypto</code>, followed by <code>./pow_demo</code>. A tested execution printed <code>nonce=67571 first_digest_bytes=0000</code>. The loop starts at nonce zero and examines one candidate per iteration.</p><!-- /wp:paragraph -->
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=MIL2BK02X8A]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>freeCodeCamp.org, archival Pointers in C for Absolute Beginners course. The chapter on array decay introduces how buffers are passed to functions; footage is not a demonstration of a production firewall.</em></p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Why a hash prefix is not an antivirus</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>The fixed <code>demo-only</code> challenge, missing expiration and absent replay database make the example intentionally unsuitable for a real gateway. An attacker can reuse a known answer. Production admission requires unpredictable server challenges, per-request binding, time limits, replay prevention, authentication, rate limits and resource exhaustion safeguards.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>Tor's <a href="https://blog.torproject.org/introducing-proof-of-work-defense-for-onion-services/">onion-service proof-of-work defense</a> is a real service-level example that prioritizes clients under denial-of-service pressure. It does not inspect executable malware or replace system protections. Our coverage of <a href="https://bitcoinversus.tech/2026/10/12/cloudflare-api-schema-validation-security/">API validation</a> and <a href="https://bitcoinversus.tech/2026/11/18/jason-lowery-softwar-bitcoin-proof-of-work-cybersecurity-revisited/">Lowery's Softwar argument</a> provides further context on the difference between request cost, policy enforcement and strategic security theories.</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Knowledge check</h2><!-- /wp:heading -->
+<!-- wp:list --><ul class="wp-block-list"><li><strong>Question:</strong> Why must a function receiving a byte buffer also know its length? <strong>Answer:</strong> Pointer conversion does not preserve the original array size for the callee.</li><li><strong>Question:</strong> Why is a fixed challenge insecure? <strong>Answer:</strong> A valid nonce can be reused without performing new work.</li><li><strong>Question:</strong> Does a successful hash imply a malware-free device? <strong>Answer:</strong> No. It demonstrates computation, not endpoint integrity.</li></ul><!-- /wp:list -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Sources and related lessons</h2><!-- /wp:heading -->
+<!-- wp:list --><ul class="wp-block-list"><li><a href="https://en.cppreference.com/w/c/language/array">C array semantics, cppreference</a></li><li><a href="https://docs.openssl.org/3.0/man3/EVP_DigestInit/">OpenSSL EVP digest documentation</a></li><li><a href="https://blog.torproject.org/introducing-proof-of-work-defense-for-onion-services/">Tor Project, introducing proof-of-work defense, 2023</a></li><li><a href="https://csrc.nist.gov/pubs/sp/800/83/r1/final">NIST SP 800-83r1, malware prevention and handling</a></li><li><a href="https://bitcoinversus.tech/2026/11/18/ositc-015-proof-of-work-firewalls-malware-costs-limits-testing/">OSITC.015, previous proof-of-work gateway lesson</a></li></ul><!-- /wp:list -->
+<!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
+<!-- wp:paragraph --><p><em><strong>Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="BitcoinVersus.Tech original Bitcoin donation QR for 5,000 satoshis" class="wp-image-24043" /></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p><em>For mobile scanning, open this article on a laptop or larger display and scan the original QR code using a Bitcoin wallet. Confirm the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->
