@@ -1,0 +1,130 @@
+{
+  "post_id": 33719,
+  "published_url": "https://bitcoinversus.tech/2026/11/19/paraguay-944mw-bitcoin-miners-hydropower-ai-2027-contracts/",
+  "status": "publish",
+  "published_date": "2026-11-19",
+  "headline": "Paraguay's 944 MW Bitcoin Mining Power Faces an AI Challenge",
+  "rotation": [
+    "Bitcoin mining",
+    "Energy",
+    "AI infrastructure"
+  ],
+  "prior_story": "FLOP RTX 5080 gaming GPU inference mining",
+  "dedup": {
+    "wordpress_searches": [
+      "Paraguay bitcoin",
+      "Paraguay mining",
+      "Itaipu",
+      "HIVE Paraguay",
+      "PowerCompute 600 S21",
+      "Stratum V2 Foundry"
+    ],
+    "github_november_archive_reviewed": true,
+    "no_same_story_found": true,
+    "related_prior_stories": [
+      "HIVE 100MW Paraguay 2024 construction",
+      "HIVE renewables model 2026",
+      "Bitfarms hydro-cooled mining Paraguay 2024"
+    ]
+  },
+  "facts": {
+    "mining_contracted_MW_2026_04": 944,
+    "contract_expiration": "2027-12-31",
+    "official_rule": "ANDE special intensive-consumption agreement section 1.2",
+    "existing_mining_tariff_USD_MWh": 44,
+    "ANDE_2026_mining_revenue_forecast_USD": 350000000,
+    "engineer_proposal_combined_cap_MW": 700,
+    "proposed_auction_floor_USD_MWh": 56,
+    "proposal_is_adopted": false,
+    "Kuntur_AI_contract_max_MW": 286,
+    "AI_contract_length_years": 15,
+    "Kuntur_220kV_tariff_USD_MWh": 48.91,
+    "illustrative_1MW_30days_MWh": 720,
+    "illustrative_cost_at_44_USD": 31680,
+    "illustrative_cost_at_56_USD": 40320,
+    "illustrative_added_cost_USD": 8640,
+    "illustrative_cost_increase_pct": 27.2727,
+    "contracted_MW_not_measure_of_current_MW_draw": true
+  },
+  "sources": [
+    "https://ande.gov.py/docs/tarifas/12-%20RP47708%20ANEXO%20de%20RP47191%20modificado.pdf",
+    "https://www.coindesk.com/tech/2026/11/13/bitcoin-miners-pay-paraguay-usd350-million-a-year-but-ai-is-pushing-them-out",
+    "https://www.abc.com.py/economia/2026/10/24/ingenieros-de-la-ande-piden-concurso-para-dar-energia-a-centros-de-ia-y-calculan-us-98-millones-mas-al-ano/"
+  ],
+  "editorial": {
+    "words_including_captions_excluding_fixed_footer": 714,
+    "prohibited_original_words": [],
+    "verified_contextual_internal_links": 4,
+    "context": "Explicitly distinguished longstanding regulation, as-of-April contracted capacity, AI negotiated contract and engineers' unadopted proposal."
+  },
+  "chart": {
+    "included": false,
+    "candidates_considered": [
+      "vertical categorical bar",
+      "timeline",
+      "comparison table"
+    ],
+    "reason": "Source values mix existing contracts, an unapproved proposed allocation, and a different AI supply agreement. A clearly caveated illustrative cost table avoids a misleading historical/forecast graphic.",
+    "illustrative_cost_table_in_article": true
+  },
+  "cover": {
+    "WordPress_media_id": 33714,
+    "width_px": 1200,
+    "height_px": 630,
+    "style": "detailed modern colored-pencil illustration",
+    "original": true,
+    "neon_green_wordmark": "BitcoinVersus.tech",
+    "black_highlight": true,
+    "placement": "bottom-left",
+    "featured_image_not_duplicated_in_body": true,
+    "conceptual_not_documentary": true
+  },
+  "media": [
+    {
+      "type": "verified YouTube",
+      "id": "lIQRUJyQCqk",
+      "publisher": "Jednoducho Bitcoin / AmityAge",
+      "archival_date": "2024-05-03",
+      "role": "operator walkthrough of actual hydro-mining in Paraguay",
+      "server_iframe_present": true,
+      "playback_tested_in_browser": false
+    },
+    {
+      "type": "credited photograph",
+      "wordpress_media_id": 33713,
+      "source": "RPC/Rede Globo Itaipu 50 anos image",
+      "caption": "Itaipu Binacional on Paraguay–Brazil border",
+      "server_rendered": true
+    },
+    {
+      "type": "verified YouTube",
+      "id": "nsyaiI1M4xU",
+      "publisher": "Bitcoin verstehen",
+      "archival_date": "2024-01-07",
+      "role": "interview of Paraguay mining operators about energy economics",
+      "server_iframe_present": true,
+      "playback_tested_in_browser": false
+    }
+  ],
+  "footer": {
+    "editors_note": true,
+    "donation_qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "seo_title_present": true,
+    "seo_description_present": true,
+    "canonical_correct": true,
+    "open_graph_cover_correct": true,
+    "images_missing_alt": 0,
+    "empty_links": 0,
+    "server_youtube_iframes": 2,
+    "itaipu_photo_present": true,
+    "cost_comparison_table_present": true,
+    "donation_qr_present": true,
+    "actual_video_playback": "not independently tested",
+    "mobile_browser_layout": "not independently tested"
+  }
+}
