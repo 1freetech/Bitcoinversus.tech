@@ -1,0 +1,99 @@
+{
+  "post_id": 33525,
+  "published_url": "https://bitcoinversus.tech/2026/11/19/mit-flying-microrobot-244mg-onboard-sensors-computer-sunflower-2026/",
+  "status": "publish",
+  "publication_date": "2026-11-19",
+  "category_rotation": [
+    "Robotics",
+    "Science",
+    "Electrical Engineering"
+  ],
+  "previous_article_topic": "Black Mesa gaming engine update",
+  "research": {
+    "novelty": "MIT November 18 2026 onboard sensing and computing without lab motion capture, still powered by external tether",
+    "wp_published_drafts_searched": true,
+    "github_archive_checked": true,
+    "primary_source": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118",
+    "paper": "https://www.science.org/doi/10.1126/scirobotics.aeg6618",
+    "previous_mit_work": "https://news.mit.edu/2025/mit-engineers-design-aerial-microrobot-fly-like-bumblebee-1203"
+  },
+  "editorial": {
+    "approx_word_count_including_media_captions_excluding_fixed_footer": 718,
+    "prohibited_original_words": [],
+    "contextual_internal_links": 4,
+    "caveats": [
+      "Sensor and computation autonomy only",
+      "Power tether retained",
+      "High-level joystick position commands used",
+      "No demonstrated field deployment or autonomous pollination"
+    ]
+  },
+  "chart": {
+    "included": false,
+    "reason": "The available reliable metrics describe different dimensions; a chart combining milligrams, lift-to-weight ratio, percent power and trajectory error would mislead",
+    "chart_candidates": [
+      "lollipop",
+      "100-percent stacked bars",
+      "grouped vertical bars"
+    ],
+    "charts_in_SmartChart_catalog": 40
+  },
+  "cover": {
+    "wordpress_media_id": 33517,
+    "dimensions": "1200x630",
+    "style": "fine-art oil painting",
+    "watermark": "BitcoinVersus.tech lower-left neon green #39FF14 on narrow black highlight",
+    "not_repeated_in_article": true
+  },
+  "multimedia": [
+    {
+      "type": "youtube",
+      "video_id": "ZjshZHcJp30",
+      "source": "MIT Nov 2026 news article",
+      "rendered_iframe": true,
+      "browser_playback_tested": false
+    },
+    {
+      "type": "photo",
+      "wordpress_media_id": 33519,
+      "source": "MIT News November 2026 original research photograph",
+      "credit": "Courtesy of the researchers via MIT News",
+      "source_original_unmodified": true
+    },
+    {
+      "type": "youtube",
+      "video_id": "w09fw6zlpcQ",
+      "source": "Science X 2025 footage credited to original MIT researchers",
+      "archival": true,
+      "rendered_iframe": true,
+      "browser_playback_tested": false
+    },
+    {
+      "type": "photo",
+      "wordpress_media_id": 33518,
+      "source": "MIT News November 2026 original research photograph",
+      "credit": "Courtesy of the researchers via MIT News",
+      "source_original_unmodified": true
+    }
+  ],
+  "footer": {
+    "editors_note": true,
+    "donation_qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "seo_title_present": true,
+    "seo_description_present": true,
+    "canonical_correct": true,
+    "og_image_present": true,
+    "images_missing_alt": 0,
+    "empty_links": 0,
+    "youtube_iframes": 2,
+    "photos_visible_server_rendered": true,
+    "donation_qr_visible": true,
+    "actual_youtube_playback": "not independently tested",
+    "responsive_mobile_visual_qa": "not independently tested"
+  }
+}
