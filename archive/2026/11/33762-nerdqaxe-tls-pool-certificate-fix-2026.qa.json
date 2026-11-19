@@ -1,0 +1,119 @@
+{
+  "post_id": 33762,
+  "status": "publish",
+  "date": "2026-11-19",
+  "live_url": "https://bitcoinversus.tech/2026/11/19/nerdqaxe-112-tls-certificate-stratum-pool-fix-bitcoin-mining-2026/",
+  "headline": "NerdQAxe Update Fixes a Bug That Disconnected Bitcoin Miners",
+  "category_rotation": [
+    "Bitcoin Mining",
+    "ASIC firmware",
+    "Cybersecurity"
+  ],
+  "previous_story": "Paraguay 944 MW bitcoin mining hydropower contract challenge",
+  "duplicates": {
+    "checked_wordpress_titles_and_drafts": [
+      "NerdQAxe 1.1.2",
+      "NerdQAxe+ 1.1.2",
+      "GTS TLS",
+      "Grafana difficulty export",
+      "InfluxDB HTTPS",
+      "AxeOS 1.1.2"
+    ],
+    "github_november_archive_checked": true,
+    "equivalent_story_found": false,
+    "related_previous_article": "NerdQAxe 1.1.1 Fixes Mining TLS Trust and Adds Ethernet",
+    "editorial_distinction": "New v1.1.2 follow-up fixes TLS failures from earlier CA bundle change; no repeat of v1.1.1 release"
+  },
+  "verified_facts": {
+    "release": "shufps/ESP-Miner-NerdQAxePlus v1.1.2",
+    "release_page": "https://github.com/shufps/ESP-Miner-NerdQAxePlus/releases/tag/v1.1.2",
+    "tls_fix_pull_request": "https://github.com/shufps/ESP-Miner-NerdQAxePlus/pull/758",
+    "prior_CA_bundle": "v1.1.1 and v1.0.37.4-LTS replaced certificate store in response to eMudhra incident",
+    "regression": "TLS failures for some Google Trust Services certificate chains; Discord alerts and affected Stratum-over-TLS pool connections",
+    "fix": "Accept cross-signed roots from already pinned certificate bundle",
+    "security": "Developer says rejected eMudhra certificate chains remain untrusted and no new CAs were introduced",
+    "other_changes": [
+      "HTTPS with certificate verification for InfluxDB",
+      "Persisted all-time best difficulty export for Grafana",
+      "Validate Swarm discovery replies",
+      "OCEAN pool favicon fix"
+    ],
+    "affected_miner_count": "not disclosed",
+    "performance_gain": "not claimed"
+  },
+  "sources": [
+    "https://github.com/shufps/ESP-Miner-NerdQAxePlus/releases/tag/v1.1.2",
+    "https://github.com/shufps/ESP-Miner-NerdQAxePlus/pull/758",
+    "https://freedom.tech/posts/2026-11-17-nerdqaxe-1-1-2/",
+    "https://pki.goog/faq/"
+  ],
+  "editorial": {
+    "word_count_including_video_captions_excluding_fixed_footer": 689,
+    "prohibited_terms": [],
+    "contextual_internal_links": 4,
+    "does_not_invent_mining_yield_or_benchmarks": true
+  },
+  "smartchart": {
+    "included": false,
+    "candidates_considered": [
+      "vertical bar",
+      "before-after line",
+      "timeline"
+    ],
+    "reason": "No comparable independently measured share-loss, uptime or affected-miner data. Numeric graph would imply unsupported performance or incident counts."
+  },
+  "cover": {
+    "wordpress_media_id": 33754,
+    "width": 1200,
+    "height": 630,
+    "style": "fine-art oil painting",
+    "original_concept": true,
+    "watermark": "BitcoinVersus.tech #39FF14 bottom left on tight black highlight",
+    "featured_image_not_duplicated_in_article": true
+  },
+  "media": [
+    {
+      "type": "YouTube",
+      "video_id": "rV44W85GOxY",
+      "source": "Red Fox Crypto, January 2026 hardware and pool configuration tutorial",
+      "role": "historical setup background, not 1.1.2 test",
+      "server_rendered_iframe": true,
+      "playback_independently_tested": false
+    },
+    {
+      "type": "product_photo",
+      "wordpress_media_id": 33753,
+      "source": "Power Mining",
+      "role": "illustrative NerdQAxe++ compatible hardware, not affected miner forensic record",
+      "server_rendered": true
+    },
+    {
+      "type": "YouTube",
+      "video_id": "hS0al4M-6Eg",
+      "source": "B-ham Burdas, February 2026 Bitaxe/NerdQAxe setup tutorial",
+      "role": "historical pool and troubleshooting demonstration, not 1.1.2 test",
+      "server_rendered_iframe": true,
+      "playback_independently_tested": false
+    }
+  ],
+  "footer": {
+    "editor_note": true,
+    "donation_qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "canonical_correct": true,
+    "seo_title_present": true,
+    "meta_description_present": true,
+    "open_graph_cover_present": true,
+    "missing_image_alt": 0,
+    "empty_links": 0,
+    "youtube_iframes": 2,
+    "official_product_photo_present": true,
+    "donation_qr_present": true,
+    "actual_video_playback": "not independently tested",
+    "responsive_mobile_browser": "not independently tested"
+  }
+}
