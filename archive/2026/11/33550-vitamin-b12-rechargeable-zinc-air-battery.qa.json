@@ -1,0 +1,122 @@
+{
+  "post_id": 33550,
+  "status": "publish",
+  "live_url": "https://bitcoinversus.tech/2026/11/19/vitamin-b12-rechargeable-zinc-air-battery-250-cycles-2026/",
+  "publication_date": "2026-11-19",
+  "rotation_category": [
+    "Energy",
+    "Battery Technology",
+    "Science"
+  ],
+  "previous_article_topic": "MIT flapping microrobot",
+  "duplicate_checks": [
+    "WordPress published and draft search: vitamin B12 battery",
+    "cobalamin battery",
+    "B12 rechargeable",
+    "GitHub November archive"
+  ],
+  "duplicate_found": false,
+  "headline": "Scientists Build a Rechargeable Battery With Vitamin B12",
+  "word_count_editorial_including_captions_excluding_fixed_footer": 719,
+  "editorial_prohibited_words": [],
+  "verified_internal_links": 4,
+  "facts": {
+    "science_paper_initial_publication": "2026-07-13",
+    "university_press": "2026-11-04",
+    "science_news_coverage": "2026-11-18",
+    "zinc_air_b12_role": "bifunctional catalyst attached to single-walled carbon nanotubes, not fuel",
+    "cell_power_with_b12_mw": 30,
+    "cell_power_control_mw": 25,
+    "calculated_relative_gain_percent": 20,
+    "liquid_cell_electrolyte": "6 M KOH",
+    "gel_cycle_result": "225 relatively stable shallow cycles, up to/over 250 cycles reported under laboratory protocols",
+    "commercially_verified": false
+  },
+  "chart": {
+    "included": true,
+    "chart_type": "vertical bar",
+    "smartchart_candidates": [
+      "vertical bar",
+      "lollipop",
+      "dumbbell"
+    ],
+    "reason": "two matched small-cell peak-power measurements support zero-based comparison",
+    "wordpress_media_id": 33547,
+    "unit": "mW",
+    "baseline": 0,
+    "source": "https://pubs.rsc.org/en/content/articlehtml/2026/ta/d6ta02773c",
+    "figure": "5A",
+    "not_energy_capacity_or_lifetime": true
+  },
+  "featured_cover": {
+    "media_id": 33546,
+    "dimensions": "1200x630",
+    "style": "photorealistic illustrative laboratory",
+    "watermark": "BitcoinVersus.tech lower-left neon green on black background",
+    "illustration_not_actual_lab_measurement": true,
+    "not_repeated_in_body": true
+  },
+  "media": [
+    {
+      "type": "youtube",
+      "video_id": "GZtr-B0fciY",
+      "publisher": "Owl WiS",
+      "published": "2025-10-13",
+      "description": "archival zinc air battery educational background, not new research footage",
+      "server_rendered_iframe": true,
+      "playback_independently_tested": false
+    },
+    {
+      "type": "original_research_photo",
+      "media_id": 33548,
+      "credit": "University of Córdoba via Brightsurf",
+      "server_rendered": true
+    },
+    {
+      "type": "original_smartchart",
+      "media_id": 33547,
+      "server_rendered": true
+    },
+    {
+      "type": "youtube",
+      "video_id": "MDy1Ual1Phg",
+      "publisher": "Vturesource",
+      "published": "2016-10-31",
+      "description": "archival explanation of ordinary zinc-air reactions, not new research footage",
+      "server_rendered_iframe": true,
+      "playback_independently_tested": false
+    },
+    {
+      "type": "original_research_photo",
+      "media_id": 33549,
+      "credit": "University of Córdoba via The New Indian Express",
+      "server_rendered": true
+    }
+  ],
+  "footer": {
+    "editors_note": true,
+    "donation_qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "source_urls": [
+    "https://www.uco.es/investigacion/ucci/es/noticias-ingles/item/5725-rechargable-battery-vitamin",
+    "https://pubs.rsc.org/en/content/articlehtml/2026/ta/d6ta02773c",
+    "https://www.sciencedaily.com/releases/2026/11/261117033909.htm"
+  ],
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "seo_title_present": true,
+    "seo_description_present": true,
+    "canonical_correct": true,
+    "og_featured_image_present": true,
+    "images_missing_alt": 0,
+    "empty_links": 0,
+    "youtube_iframes_in_server_rendered_html": 2,
+    "original_photographs": 2,
+    "smartchart_rendered": true,
+    "qr_rendered": true,
+    "actual_video_playback": "not independently tested",
+    "responsive_mobile_browser_visual_check": "not independently tested"
+  }
+}
