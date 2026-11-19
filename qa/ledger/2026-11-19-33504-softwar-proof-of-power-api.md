@@ -1,0 +1,23 @@
+# Editorial QA Record: Softwar Proof-of-Power Wall API
+
+- WordPress post: 33504
+- Published URL: https://bitcoinversus.tech/2026/11/19/jason-lowery-softwar-proof-of-power-wall-figure-70-cybersecurity-api/
+- Status: publish
+- Date (WordPress site): 2026-11-19T06:09:53
+- Evergreen angle: close reading of Jason P. Lowery's 2023 Softwar thesis, Figure 70 (Proof-of-Power Wall Cyber Security API, p. 297) and Figure 71 (Electro-Cyber Dome, p. 300)
+- Prior coverage checked: March 2025 original Wall post #11145, November 2026 Softwar analysis #33189, Tor/Cloudflare analysis #33337, Google LLMJacking #33459, AI bot login-page statistics #33481, OSC/OSITC lessons
+- Category: Information Technology, bitcoin mining, AI, technology, Trending News
+- Sources: MIT February 2023 thesis, Tor Project August 23 2023 post, Tor specifications, OWASP API4:2023, Jameson Lopp critical review
+- Chart comparison: chart #9 vertical bars chosen over #22 dot plot or #15 bullet. Values 5 ms and 30 ms initial client solve times, Tor Project August 2023, faster and slower hardware. Source date retained, zero baseline, NOT a 2026 benchmark or an efficacy test
+- Original chart media: 33499; 1315x753 source image, WordPress resize width 1024; source link embedded in article
+- Featured cover: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-softwar-proof-of-power-wall-close-reading-cover.jpg; WordPress media 33497; uploaded actual dimensions 1200x630; photorealistic editorial photography; neon-green BitcoinVersus.tech at bottom left on black highlight, approximate size 14px; exact pixel-level match to separate reference logo not verified
+- Gutenberg raw content: 10356 characters; two YouTube shortcode blocks and one X shortcode block saved
+- WordPress server-rendered content: 13969 characters; YouTube iframes 2, IDs PInd7uRiGjs, ZkDD6yQGkBw; X populated quote: true; client playback NOT independently checked
+- Chart present: true; donation QR retained: true; editorial footer retained: true
+- Contextual internal links: 5; external sources: 10; empty links 0
+- SEO title and description: true; featured image bound: 33497
+- Publishing: WordPress published state and rendered content confirmed via connector
+- Public browser audit: external page fetch unavailable; live HTML, mobile layouts, playback, and iframe click/play interactions could not be independently exercised
+- Document inspection limitation: MIT original thesis PDF table of figures and extracted text verified, but PDF page screenshot failed with remote 429/403; no claim of pixel-verified figure content
+- Diagram requirement: none created; original MIT diagram referenced directly
+- Outstanding: browser-based mobile test, YouTube playback, X widget interaction, and comparison with exact approved logo reference sample
