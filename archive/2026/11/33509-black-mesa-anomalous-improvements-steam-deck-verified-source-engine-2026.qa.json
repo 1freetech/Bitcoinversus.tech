@@ -1,0 +1,99 @@
+{
+  "post_id": 33509,
+  "publication_date": "2026-11-19",
+  "status": "publish",
+  "live_url": "https://bitcoinversus.tech/2026/11/19/black-mesa-anomalous-improvements-steam-deck-verified-source-engine-2026/",
+  "headline": "Black Mesa Earns Steam Deck Verified as Major Update Overhauls Lighting and Controls",
+  "slug": "black-mesa-anomalous-improvements-steam-deck-verified-source-engine-2026",
+  "category_rotation": [
+    "Gaming",
+    "Information Technology",
+    "Technology",
+    "Trending News"
+  ],
+  "prior_post_theme": "NASA electric propulsion",
+  "duplicate_search": [
+    "WordPress Black Mesa",
+    "WordPress Crowbar Collective",
+    "WordPress Steam Deck Verified",
+    "WordPress SteamOS",
+    "recent published and draft posts"
+  ],
+  "editorial": {
+    "word_count_approx_excluding_fixed_footer_including_media_captions": 740,
+    "original_editorial_prohibited_words": [],
+    "verified_contextual_internal_links": 4,
+    "primary_release": "https://steamcommunity.com/games/362890/announcements/detail/717921532895036413",
+    "publication_report": "https://www.pcgamer.com/games/fps/valve-sanctioned-half-life-remake-black-mesa-gets-a-mondo-update-and-a-steam-deck-verified-badge/",
+    "official_game_site": "https://www.blackmesagame.com/",
+    "corrections_and_limits": "Existing saves may break; rollback branch offered. Engine performance improvement claimed by developer without comparable public benchmark results."
+  },
+  "chart": {
+    "included": false,
+    "reason": "No reproducible before-and-after GPU or Steam Deck FPS observations available; avoid charting developer's unquantified performance claims.",
+    "candidates_considered": [
+      "paired bar",
+      "slopegraph",
+      "line"
+    ],
+    "atlas_catalog": "40 types"
+  },
+  "featured_cover": {
+    "wordpress_media_id": 33506,
+    "asset_dimensions": "1200x630",
+    "visual_style": "detailed colored-pencil illustration",
+    "watermark": "BitcoinVersus.tech (#39FF14) on narrow black text highlight bottom-left",
+    "duplicate_in_body": false
+  },
+  "story_media": [
+    {
+      "type": "official_video",
+      "youtube_id": "YkBrNGeFwoU",
+      "publisher": "Crowbar Collective",
+      "description": "archival Black Mesa trailer linked from official website",
+      "wordpress_rendered_iframe": true,
+      "browser_playback_tested": false
+    },
+    {
+      "type": "official_screenshot",
+      "wordpress_media_id": 33507,
+      "source_url": "https://cdn.blackmesagame.com/images/home/sections/1/value/images/0/image.webp",
+      "credit": "Crowbar Collective"
+    },
+    {
+      "type": "documentary_video",
+      "youtube_id": "G_TcAxAKCAI",
+      "publisher": "Noclip",
+      "description": "developer documentary linked by Crowbar Collective",
+      "wordpress_rendered_iframe": true,
+      "browser_playback_tested": false
+    },
+    {
+      "type": "official_screenshot",
+      "wordpress_media_id": 33508,
+      "source_url": "https://cdn.blackmesagame.com/images/home/sections/1/value/images/6/image.webp",
+      "credit": "Crowbar Collective"
+    }
+  ],
+  "footer": {
+    "approved_editors_note": true,
+    "donation_qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "public_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "canonical_correct": true,
+    "seo_title_present": true,
+    "seo_description_present": true,
+    "open_graph_featured_image_present": true,
+    "images_missing_alt": 0,
+    "empty_links": 0,
+    "youtube_iframes_in_rendered_html": 2,
+    "official_screenshots_in_rendered_html": 2,
+    "editor_note_present": true,
+    "qr_present": true,
+    "actual_video_playback": "not independently tested",
+    "mobile_visual_browser": "not independently tested"
+  }
+}
