@@ -1,0 +1,75 @@
+{
+  "wordpress_post_id": 33481,
+  "status": "publish",
+  "canonical_url": "https://bitcoinversus.tech/2026/11/19/ai-bot-login-requests-8x-lowery-proof-of-power-wall-cybersecurity-2026/",
+  "title": "AI Bots Hit Login Pages 8.4 Times More Often: Can a Proof-of-Power Wall Help?",
+  "date": "2026-11-19",
+  "categories": [
+    "AI",
+    "Cybersecurity",
+    "Technology News"
+  ],
+  "source_dates": [
+    "2026-09-22 DataDome report",
+    "2023 Jason P. Lowery MIT Softwar thesis",
+    "2026-08-14 Cloudflare Turnstile docs"
+  ],
+  "chart": {
+    "type": "Vertical column / bar",
+    "jan_2026_requests_millions": 11.9,
+    "june_2026_requests_millions": 99.7,
+    "rounded_ratio": 8.4,
+    "baseline": 0,
+    "source": "https://datadome.co/resources/bot-and-agent-security-report/ai-traffic-trends/",
+    "image_id": 33478,
+    "renderer": "Matplotlib with SmartChart atlas chart-type selection"
+  },
+  "cover": {
+    "id": 33477,
+    "width_px": 1200,
+    "height_px": 630,
+    "style": "oil painting",
+    "text": "BitcoinVersus.tech",
+    "watermark_color": "#39FF14"
+  },
+  "media": [
+    {
+      "type": "youtube",
+      "id": "XNozI7UCcAc",
+      "verified_source": "DataDome official"
+    },
+    {
+      "type": "x",
+      "id": "2121834933920354309",
+      "verified_source": "Anthony Scaramucci, commentary"
+    },
+    {
+      "type": "youtube",
+      "id": "QKFiN_cyeMc",
+      "verified_source": "Cloudflare Developers official"
+    }
+  ],
+  "internal_links": 5,
+  "checks": {
+    "duplicate_search": true,
+    "primary_sources": true,
+    "statistics": true,
+    "meta": true,
+    "featured_image": true,
+    "rendered_iframes_via_wordpress_api": 2,
+    "rendered_x_embed_via_wordpress_api": true,
+    "rendered_chart_via_wordpress_api": true,
+    "gutenberg_layout": true,
+    "source_image_width": true,
+    "actual_video_playback_tested": false,
+    "browser_mobile_render_tested": false,
+    "public_http_fetch_tested": false
+  },
+  "limitations": [
+    "WordPress REST rendered HTML contained both YouTube iframes and the X embed, but independent playback could not be checked.",
+    "Direct public web retrieval of the post was not available; WordPress returned a published permalink and rendered content.",
+    "No mobile-browser visual layout test performed."
+  ],
+  "article_length": "Standard data feature",
+  "generated_at_utc": "2026-11-19"
+}
