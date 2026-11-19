@@ -1,0 +1,22 @@
+# Editorial QA — Xbox Project Helix PC Game Support
+- WordPress post ID: 33704
+- Published: 2026-11-19T17:53:48; URL: https://bitcoinversus.tech/2026/11/19/xbox-project-helix-console-plays-pc-games-jason-ronald-2026/
+- Status, cover ID and serialized content verified against WordPress edit + view responses: publish / undefined
+- Category rotation: Gaming, Technology, Trending News. Previous news category: Robotics.
+- Research angle: November 15, 2026 Xbox 25th Anniversary Magazine, Jason Ronald's console-first clarification; original March 11 GDC technical announcement.
+- Duplicate-prevention: WordPress searches for Project Helix, Xbox next-generation, neural rendering and Xbox PC games; prior coverage focused on $1,800 speculative pricing, PS6 comparisons and older Xbox releases. No matching November 15 confirmation article found.
+- Primary reporting: Xbox 25th Magazine, Xbox March 11 GDC update, Xbox March 25 update and April 23 organizational roadmap. Independent secondary: VGC November 16 interview reporting.
+- Facts: next Xbox designed for console and PC games, custom AMD SoC, next-gen DirectX/FSR plans, 2027 alpha hardware for developers, more than 1,500 Xbox Play Anywhere games in March.
+- Explicit limits: no retail price or launch date announced; no universal support of Steam/Epic/GOG guaranteed; order-of-magnitude ray-tracing improvement is Xbox's development claim, not third-party measured performance.
+- Chart: intentionally omitted. Four Xbox generations and >1,500 Play Anywhere titles measure different categories and cannot yield a meaningful common-axis comparative chart without invented data.
+- Original cover: oil painting, 1200 x 630, media ID 33700, URL https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-project-helix-xbox-console-pc-2026-cover-1200x630-1.jpg. Artwork depicts conceptual console + PC, NOT a Project Helix leaked photograph. No logos generated.
+- Watermark: clean original first, one programmatically placed neon green #39FF14 BitcoinVersus.tech wordmark on a compact black rectangle at bottom left, visually checked with image viewer.
+- Official in-body graphic: Xbox Wire Project Helix emblem, media ID 33701, correctly attributed, without duplicate featured image.
+- YouTube 1: Official Xbox March 2026 announcement, 3xy9EmTRxJE. Saved WordPress HTML iframe exists; actual playback unverified.
+- YouTube 2: Official Xbox August 2026 Series X25 anniversary hardware video, LVznVAE4Q4Y, explicitly distinguished from Helix. Saved WordPress HTML iframe exists; actual playback unverified.
+- Main article: 664 words; prohibited editorial vocabulary absent; 4 contextual internal links.
+- SEO title: Xbox Project Helix Will Play PC Games: What Is Confirmed
+- SEO description: Xbox confirms Project Helix is a console designed for PC and Xbox games. Learn about AMD hardware, neural rendering, backward compatibility and unknown pricing.
+- WordPress rendered HTML: 12287 bytes; empty links 0; all images have alt: true; 5,000 sat QR: true; cover not duplicated in body: true.
+- External browser independent public URL fetch attempted November 19, 2026 and returned inaccessible; therefore public-browser visual/mobile and iframe playback tests UNVERIFIED.
+- Published via WordPress plugin and verified via readback; archive is copied from published edit-context Gutenberg content, not a reconstructed draft.
