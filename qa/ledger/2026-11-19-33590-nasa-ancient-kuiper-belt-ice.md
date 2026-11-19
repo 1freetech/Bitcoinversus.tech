@@ -1,0 +1,27 @@
+# BitcoinVersus.Tech Editorial QA — NASA Kuiper Belt Ice
+- Published: 2026-11-19T10:32:06
+- WordPress post 33590
+- Public WordPress URL: https://bitcoinversus.tech/2026/11/19/nasa-ucla-12-dust-grains-ancient-kuiper-belt-ice-oxygen-isotopes-2026/
+- Status verified using WordPress edit and view responses: publish
+- Article title: 12 Dust Grains Point to Ancient Ice Beyond Neptune
+- Category: Space, Technology, Trending News
+- News date: NASA November 18, 2026; peer-reviewed Science Advances paper November 11, 2026
+- Dedupe: WordPress searched "Kuiper", "Neptune", "interplanetary dust", "isotope", and recent posts; no earlier story about the twelve-grain oxygen-isotope research found
+- Distinction: original 12 grain mineral/isotope study; no claim of directly collecting water from the Kuiper Belt
+- Sources: NASA November 18 science news, UCLA planetary sciences, Keller et al Science Advances DOI 10.1126/sciadv.aeg1602, NASA older mission backgrounds, ESA Hubble archive
+- Science QA: approx 15% high-end oxygen-18/oxygen-16 ratio is a model-based upper-bound inference, NOT 15% more water or direct reservoir measurement; parent body origin inferred via radiation tracks, not confirmed provenance
+- SmartChart: optional; deliberately omitted because a single inferred upper limit and a sample count of 12 cannot support a meaningful comparison or time series without fabricating values
+- New original feature image: WordPress media 33587; 1200x630 JPG; https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-ancient-ice-kuiper-belt-cover-1200x630-1.jpg
+- Cover style: cinematic anime. Wordmark neon green #39FF14 bottom left on tight dark text-highlight. Pixel-perfect reference-logo identity not independently verified. Artistic concept image, not a microscopic photograph
+- Archival, properly attributed official ESA/NASA G. Bacon image in body, media ID 33588; not the featured image
+- YouTube 1: NASA 360 (2017), https://www.youtube.com/watch?v=IgR9ukV1MsA; server-rendered iframe detected
+- YouTube 2: NASA Video (2020), https://www.youtube.com/watch?v=iU9GEAoLi9E; server-rendered iframe detected
+- Total in-story media items: 3 (2 videos, 1 official illustration). Donation QR not included in media count
+- Four distinct published internal WordPress links verified by previous article searches
+- Responsive: WordPress renders iframe markup; real mobile layout and playback NOT independently exercised
+- HTML checks: 13375 rendered chars, 2 YouTube iframes, 0 empty anchors, 0 images missing alt, cover not duplicated, QR present
+- SEO title: 12 Dust Grains Reveal Clues to Ice Beyond Neptune | NASA
+- SEO description: NASA and UCLA analyzed 12 dust grains and uncovered oxygen-isotope evidence of ancient ice in the Kuiper Belt beyond Neptune. Learn what the study proves.
+- Compliance: no banned editorial words; no unsupported claims of measured water, projected abundance or deployment
+- Public browser: separate external fetch attempted November 19, 2026 but inaccessible via tool; independent live browser audit, video playback and mobile test remain UNVERIFIED
+- Publisher: WordPress connector confirms published status and serialized/rendered post
