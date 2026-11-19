@@ -1,0 +1,27 @@
+# Editorial QA: UC San Diego air-powered soft robot
+
+- WordPress post ID: 33679
+- Date: 2026-11-19T17:45:21 (site local)
+- Live permalink: https://bitcoinversus.tech/2026/11/19/uc-san-diego-soft-robot-472-meters-second-air-powered-3d-print-2026/
+- Status verified via WordPress edit and view endpoints: publish
+- Headline: Air-Powered Soft Robot Runs 4.72 m/s Without Electronics
+- Category rotation: Robotics, Technology, Trending News; follows environmental engineering feature #33665.
+- Dedupe searches: WordPress "soft robot", "UC San Diego", "4.72", "pneumatic robot", "3D-printed robot"; no matching prior 4.72 m/s UCSD feature.
+- Primary sources: UC San Diego Nov. 18, 2026 official release; Zhai and Tolley, Science Robotics DOI 10.1126/scirobotics.aei1264 (journal page access limited); Dryad repository DOI 10.5061/dryad.sxksn03m0; original university photo gallery.
+- Quantitative check: 4.72 m/s new maximum; earlier design approximately 0.04 m/s (4 cm/s); 4.72/0.04 = 118. Describes experimental peak speed rather than endurance or real-world mission performance.
+- Caveat: external compressed-air tether required; the robot does not have onboard electronic control but is not self-powered/untethered. Swimming tests and terrain tests are limited experimental demonstrations.
+- Original cover: WordPress media 33671, 1200×630 JPEG, https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-ucsd-soft-robot-4-72ms-cover-1200x630-1.jpg.
+- Cover style: original detailed colored-pencil illustration. Tag created once on clean original artwork, bottom-left "BitcoinVersus.tech" in neon green #39FF14 on a tight black text highlight. Visually reviewed locally; exact pixel match to separate reference-logo file not verified.
+- In-body verified images: official David Baillot / UC San Diego Jacobs photo WordPress ID 33673, unmodified with attribution; original zero-baseline speed chart WordPress ID 33672.
+- Chart type decision: vertical bar selected over line/dot plot because only two comparative prototypes exist. Values 0.04 and 4.72 m/s, using zero baseline and explicit source caption. The comparison is not a time series.
+- YouTube video near opening: Mp2bKRevnC4, UC San Diego 2026 demonstration, linked through university-provided press materials.
+- YouTube mid-story: f8hTK7AabM8, archival UC San Diego earlier 3D-printed walking robot, explicitly labeled as archival.
+- Media count in story: 4 (two official videos, one university photograph, one original chart); QR excluded.
+- WordPress saved markup: 10196 characters; rendered markup 14786 characters; two YouTube iframes.
+- Contextual internal links: 4; broken blank hrefs: 0; images without alt: 0.
+- Featured cover repeated inside article: false.
+- SEO title: UC San Diego Soft Robot Runs 4.72 m/s Without Electronics
+- SEO description: UC San Diego's single-print soft robot runs 4.72 m/s without onboard electronics. Learn how its air circuit works, what tests show, and why it needs a hose.
+- Editor's note / sats donation QR / disclaimer: confirmed via rendered content.
+- Independent public browser verification: attempted but unavailable; public page, embedded video playback and mobile layout NOT verified. No claim of full functional end-to-end playback tests.
+- GitHub archival record is based on actual published WordPress edit response, not a re-created article.
