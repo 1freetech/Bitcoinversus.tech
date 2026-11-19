@@ -1,0 +1,126 @@
+{
+  "post_id": 33664,
+  "publication_date": "2026-11-19",
+  "status": "publish",
+  "link": "https://bitcoinversus.tech/2026/11/19/805-mining-160w-zcash-solo-asic-49-ksol-home-preorder-2026/",
+  "headline": "A 160-Watt Zcash Miner Opens for Preorder",
+  "topic": "805 Mining ZEC Solo Miner at 49 kSol/s 160 W, preorder only",
+  "deduplication": {
+    "WordPress_published_and_drafts_searched": [
+      "805 Mining",
+      "ZEC Solo Miner",
+      "SRBMiner 3.8.9",
+      "Sazmining Proto",
+      "FutureBit Apollo III",
+      "Antminer S23 XP Hyd"
+    ],
+    "GitHub_November_archive_checked": true,
+    "duplicate_found": false,
+    "related_coverage": [
+      "Zcash mining network hashrate",
+      "FutureBit Apollo III home BTC miner retail"
+    ],
+    "original_angle": "New Equihash home device preorder and electricity sensitivity, not a shipped or tested miner"
+  },
+  "sources": [
+    "https://805mining.com/product/805mining-zecash-solo-miner-preorder/",
+    "https://www.reddit.com/r/cryptomining/comments/1xw8pmm/new_120v_zcash_solo_miner_49_ksol_on_160_w_1040/",
+    "https://asic.tools/en/news/805mining-zcash-solo-miner-preorder-49-ksol-160-w/",
+    "https://www.sec.gov/Archives/edgar/data/1509745/000110465926127609/cyph-20260930x10q.htm"
+  ],
+  "editorial": {
+    "word_count_approx_including_media_captions_excluding_standard_footer": 720,
+    "prohibited_words": [],
+    "contextual_internal_links": 4,
+    "vendor_claims_qualified": true,
+    "shipping_date_confirmed": false,
+    "independent_benchmark_available": false
+  },
+  "technical": {
+    "algorithm": "Equihash Zcash, not SHA-256 Bitcoin",
+    "rated_solution_rate_ksol_s": 49,
+    "rated_wall_watts": 160,
+    "listed_price_usd": 1040,
+    "listed_voltage_v": 120,
+    "efficiency_derived_J_per_ksol": 3.2653061224489797,
+    "electricity_per_24h_kwh": 3.84,
+    "electricity_30d_kwh": 115.2,
+    "tariff_scenarios_usd_per_kwh": [
+      0.08,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "electric_cost_30d_usd": [
+      9.216,
+      11.52,
+      17.28,
+      23.04
+    ],
+    "network_hashrate_comparison": "49 kSol/s / 32 GSol/s = approximately 0.000153%, network snapshot from November 13 2026 SEC reporting"
+  },
+  "chart": {
+    "included": false,
+    "candidates_considered": [
+      "line chart for tariff scenarios",
+      "vertical bar for energy costs",
+      "dot plot for hash rate"
+    ],
+    "reason": "Only one untested vendor power rating, and electricity tariffs are illustrative, not an observed time series. One clearly labeled calculation table gives a more economical and honest visual comparison."
+  },
+  "cover": {
+    "media_id": 33663,
+    "width_px": 1200,
+    "height_px": 630,
+    "style": "fine-art oil painting",
+    "brand": "BitcoinVersus.tech green on tight black background bottom left",
+    "conceptual_not_real_product_photo": true,
+    "not_duplicated_in_body": true
+  },
+  "media": [
+    {
+      "type": "YouTube",
+      "video_id": "X_Pz1FzIUCo",
+      "source": "Red Panda Mining",
+      "role": "Archive solo mining education, not 805 product demonstration",
+      "rendered_iframe": true,
+      "actual_playback_tested": false
+    },
+    {
+      "type": "Original Reddit post",
+      "url": "https://www.reddit.com/r/cryptomining/comments/1xw8pmm/new_120v_zcash_solo_miner_49_ksol_on_160_w_1040/",
+      "author": "u/805CryptoServices",
+      "rendered_reddit_embed": true,
+      "client_interaction_tested": false
+    },
+    {
+      "type": "YouTube",
+      "video_id": "su45pbeDAVs",
+      "source": "Crypto Miner Bros",
+      "role": "Z15 Pro Equihash hardware demonstration, different device",
+      "rendered_iframe": true,
+      "actual_playback_tested": false
+    }
+  ],
+  "footer": {
+    "editors_note": true,
+    "qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "SEO_title_present": true,
+    "SEO_description_present": true,
+    "canonical_correct": true,
+    "open_graph_original_cover_present": true,
+    "images_missing_alt": 0,
+    "empty_links": 0,
+    "youtube_iframes": 2,
+    "reddit_embed": 1,
+    "cost_sensitivity_table_present": true,
+    "donation_qr_present": true,
+    "mobile_browser_visual_test": "not independently tested",
+    "video_playback_test": "not independently tested"
+  }
+}
