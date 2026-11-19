@@ -1,0 +1,23 @@
+# BitcoinVersus.Tech Editorial QA — SC26 Hybrid Quantum-Safe Network
+
+- Post ID: 33769; status publish; published 2026-11-19T18:51:49; canonical URL: https://bitcoinversus.tech/2026/11/19/quantum-safe-network-chicago-amsterdam-bilbao-8000km-sc26-qkd-pqc-2026/.
+- Title: Quantum-Safe Network Connects Chicago and Europe Across 8,000 km.
+- Category: Networking / Cybersecurity / Technology / Trending News; rotation after semiconductor photonics article #33756.
+- Deduplication: WordPress archive searched "LuxQuanta", "8000 km quantum", "quantum-safe Chicago", "quantum key distribution", "Chicago Bilbao" and "quantum network". Previous Germany QuNET and Ciena 800 G/2104 km articles cover different trials; no SC26 QuLore 8,000 km article identified.
+- Primary event date: Nov 18 2026 SC26 demonstration; Luxquanta public release Nov 18; PCSS institutional release Nov 19.
+- Primary sources: Luxquanta news, PSNC release, SC26 official Network Research Exhibition NRE-101 listing, EHU university news; ITU-T June 2026 hybrid key-management report.
+- Architecture: Five locations/nodes: two Chicago exhibition nodes (<1 km), SURF Amsterdam, and Bilbao/Zamudio separated by ~25 km. Local QKD only. Long-distance ~1200 km and ~7000 km links via PQC; round ~8000 km network span is geographic, not one physical quantum channel.
+- Hardware: Ciena WL6e 1.6 Tb/s optical encryption rate in Chicago and WL5e 800 Gb/s in Bilbao area; line rates, not end-to-end measured traffic. QKD via Luxquanta Nova LQ at short links. Layering: optical, IPsec tunnels, and an application video call.
+- Main editorial story: 694 words excluding sources and footers, no prohibited editorial words, distinguishes physical-layer QKD from PQC and electronic key management, explains limits and counterexamples.
+- SmartChart review: vertical bars selected rather than line graph or horizontal comparison because exactly two comparable optical equipment rate values. Original chart media ID 33768, zero baseline, common Tb/s units, Nov 2026 source and clear scope note. No unsupported data.
+- Featured cover: media ID 33767; 1200 × 630 JPEG, https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-quantum-safe-chicago-bilbao-8000km-cover-1200x630-1.jpg. Detailed colored-pencil scene depicting rack-based quantum optics and Chicago/Europe concept, not SC26 photograph. Original artwork cleaned then exactly one BitcoinVersus.tech neon #39FF14 mark on compact black text-highlight at bottom-left; file locally rendered and inspected. Exact comparison with separately saved reference-logo font is not verified.
+- Media: official CienaCorp YouTube (Feb 11, 2026) odYk07FCOmA as first WordPress shortcode; Luxquanta CEO interview on Rivela Universe (June 4, 2026) nBvAQcc9uvs as second WordPress shortcode. Both labeled archival/context. Actual YouTube playback unverified. Original zero-baseline chart counts as third in-story media.
+- Attempt to import authentic Luxquanta MWC 2025 product photo returned 404. Skipped rather than linking broken media. No invented video or in-story photo.
+- Saved server-rendered WordPress HTML length: 13119 characters. Two YouTube iframes rendered; chart inserted, four contextual internal links, no empty anchors, all image alt text present.
+- SEO title: 8,000 km Quantum-Safe Network: SC26's Hybrid QKD and PQC Test
+- SEO description: SC26 connects Chicago, Amsterdam and Bilbao with an 8,000 km hybrid quantum-safe network. Learn why QKD protects short links and post-quantum cryptography spans the ocean.
+- Editor's Note, Bitcoin donation QR and disclaimer footer: present in saved output.
+- The featured cover is not repeated inside article.
+- WordPress status, featured media and server-rendered content checks: PASS.
+- Public independent browser GET to https://bitcoinversus.tech/2026/11/19/quantum-safe-network-chicago-amsterdam-bilbao-8000km-sc26-qkd-pqc-2026/: unavailable via web tool on Nov 19 2026. Live playback, responsive mobile inspection and real browser interaction: UNVERIFIED.
+- No claim of fully completed end-to-end video playback or public-page browser audit.
