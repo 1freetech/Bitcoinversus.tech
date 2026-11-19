@@ -1,0 +1,125 @@
+{
+  "post_id": 33674,
+  "status": "publish",
+  "date": "2026-11-19",
+  "published_url": "https://bitcoinversus.tech/2026/11/19/nvidia-cmp-170hx-mining-gpu-80gb-unlock-a100-benchmark-2026/",
+  "headline": "Mining GPU Unlocks 80GB of Memory and Beats A100 in One Test",
+  "coverage": "NVIDIA CMP 170HX 8GB crypto-mining GPU, GA100 hardware research and 80GB framebuffer recovery",
+  "duplicate_search": {
+    "wordpress_titles_drafts_checked": [
+      "CMP 170HX",
+      "170HX",
+      "80GB",
+      "mining GPU unlock",
+      "voltage glitch",
+      "A Canary in the Crypto Mine"
+    ],
+    "github_november_archive_reviewed": true,
+    "matching_prior_article_found": false
+  },
+  "primary_source": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/",
+  "secondary_sources": [
+    "https://cmp.wiki/news/cmp-170hx-news-november-11-2026-kate-80gb-unlock/",
+    "https://cmp.wiki/news/cmp-170hx-news-november-15-to-18-2026/",
+    "https://www.techradar.com/pro/voltage-glitch-unlocks-80gb-on-nvidias-cmp-170hx-but-faster-than-an-a100-rests-on-a-single-benchmark",
+    "https://blogs.nvidia.com/blog/geforce-cmp/"
+  ],
+  "editorial": {
+    "approx_words_including_media_captions_excluding_fixed_footer": 744,
+    "prohibited_words": [],
+    "contextual_internal_links": 4,
+    "bitcoin_sha256_differentiated_from_ethash": true
+  },
+  "facts": {
+    "research_date": "2026-11-10",
+    "stock_memory_8gb": true,
+    "reported_functional_memory_80gb": true,
+    "tested_specimens": 10,
+    "reported_specimens_full_80gb": 9,
+    "small_sample_caveat": true,
+    "stock_s_m_count": 70,
+    "reported_unlocked_s_m": "120–126",
+    "retail_a100_reference_s_m": 108,
+    "fp16_fma_opencl_tflops": {
+      "software_unlocked_cmp": 50.129,
+      "retail_a100": 72.488,
+      "hardware_unlocked_cmp": 85.861
+    },
+    "percent_gain_vs_retail_a100": 18.45,
+    "independent_performance_verified": false,
+    "matched_wall_power_measured": false,
+    "real_ai_inference_advantage_proven": false,
+    "hardware_modification_risky": true
+  },
+  "smartchart": {
+    "included_in_post": false,
+    "candidates": [
+      "vertical bar",
+      "lollipop",
+      "comparison table"
+    ],
+    "reason": "single researcher's benchmark lacks matched power conditions; a precisely labeled table avoids implying representative hardware rankings",
+    "article_comparison_table_present": true
+  },
+  "cover": {
+    "wordpress_media_id": 33670,
+    "dimensions": "1200x630",
+    "style": "photorealistic editorial illustration",
+    "original": true,
+    "watermark": "BitcoinVersus.tech neon green #39FF14 tight black background lower-left",
+    "does_not_duplicate_body_image": true
+  },
+  "media": [
+    {
+      "type": "YouTube",
+      "video_id": "pvSdeU13hKc",
+      "publisher": "Linus Tech Tips",
+      "published": "2026-09-12",
+      "role": "older software unlock background",
+      "server_iframe_verified": true,
+      "actual_playback_tested": false
+    },
+    {
+      "type": "archival_hardware_photo",
+      "wordpress_media_id": 33669,
+      "source": "TechSpot 2021 photograph of NVIDIA CMP 170HX",
+      "documentary_not_current_modification": true
+    },
+    {
+      "type": "Reddit original post",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwxzgj/i_finally_succeed_the_cmp_170hx_voltage_glitch/",
+      "published": "2026-11-15",
+      "server_reddit_embed_verified": true,
+      "client_interaction_tested": false
+    },
+    {
+      "type": "YouTube",
+      "video_id": "4IotZmCQp-g",
+      "role": "earlier community testing with multiple CMP 170HX cards for local AI",
+      "server_iframe_verified": true,
+      "actual_playback_tested": false
+    }
+  ],
+  "footer": {
+    "editors_note": true,
+    "donation_qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "canonical_correct": true,
+    "seo_title_present": true,
+    "meta_description_present": true,
+    "open_graph_featured_cover_present": true,
+    "images_missing_alt": 0,
+    "empty_links": 0,
+    "youtube_iframes": 2,
+    "reddit_embeds": 1,
+    "photo_present": true,
+    "comparison_table_present": true,
+    "qr_present": true,
+    "mobile_visual_test": "not independently performed",
+    "video_playback_test": "not independently performed"
+  }
+}
