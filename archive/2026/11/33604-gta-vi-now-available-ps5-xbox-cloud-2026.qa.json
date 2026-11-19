@@ -1,0 +1,116 @@
+{
+  "post_id": 33604,
+  "publication_date": "2026-11-19",
+  "wordpress_status": "publish",
+  "live_url": "https://bitcoinversus.tech/2026/11/19/gta-vi-launch-ps5-xbox-series-cloud-xbox-one-november-19-2026/",
+  "headline": "GTA VI Is Out on PS5 and Xbox. Here's What to Know",
+  "category_rotation": [
+    "Gaming",
+    "Technology",
+    "Trending News"
+  ],
+  "previous_story": "GIGABYTE 5120-core 6U liquid-cooled HPC server",
+  "deduplication": {
+    "wordPress_published_and_draft_checked": true,
+    "GitHub_November_archive_checked": true,
+    "searches": [
+      "GTA VI launch",
+      "Grand Theft Auto VI launch",
+      "GTA 6 release day",
+      "GTA 6 now available",
+      "Rockstar GTA VI"
+    ],
+    "preexisting_coverage": [
+      "GTA VI launch trailer October 15",
+      "GTA VI preorders November 17",
+      "GTA VI awards nominations November 18",
+      "PSN outage November 18",
+      "GTA 7 wishlist November 19"
+    ],
+    "difference": "Confirmed Nov 19 live availability, console platform/access matrix, launch price and Xbox One cloud streaming"
+  },
+  "editorial": {
+    "estimated_editorial_words_including_captions_excluding_fixed_footer": 620,
+    "prohibited_words": [],
+    "internal_links": 4,
+    "product_claims_qualified": [
+      "Xbox One cloud only, not native",
+      "PC and Nintendo Switch 2 release not announced as of publication",
+      "Cloud purchased separately and subject to eligibility",
+      "No unverified final download size or sales number"
+    ],
+    "verified_sources": [
+      "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
+      "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+      "https://blog.playstation.com/?p=425869",
+      "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+    ]
+  },
+  "pricing": {
+    "standard_usd": 79.99,
+    "ultimate_usd": 99.99,
+    "price_source": "Official Xbox Wire November 10 store offers, United States"
+  },
+  "chart": {
+    "included": false,
+    "candidates": [
+      "categorical bar",
+      "timeline",
+      "Gantt"
+    ],
+    "reason": "No necessary comparable numerical data; console availability and prices are clearer in prose"
+  },
+  "cover": {
+    "wordpress_media_id": 33601,
+    "dimensions": "1200x630",
+    "medium": "original photorealistic editorial illustration",
+    "watermark": "BitcoinVersus.tech neon green on narrow black lower-left highlight",
+    "duplicate_in_body": false
+  },
+  "media": [
+    {
+      "type": "official_youtube",
+      "title": "Grand Theft Auto VI Launch Trailer",
+      "youtube_video_id": "rz1B4B2yBZY",
+      "source": "Rockstar Games",
+      "published": "2026-10-15",
+      "server_rendered_iframe": true,
+      "actual_browser_playback": "not tested"
+    },
+    {
+      "type": "official_game_art",
+      "wordpress_media_id": 33598,
+      "attribution": "© Rockstar Games / Take-Two Interactive",
+      "original_unchanged": true
+    },
+    {
+      "type": "official_youtube",
+      "title": "Grand Theft Auto VI: An Extended Look",
+      "youtube_video_id": "tJbzMqJGH4k",
+      "source": "Rockstar Games",
+      "published": "2026-08-27",
+      "server_rendered_iframe": true,
+      "actual_browser_playback": "not tested"
+    }
+  ],
+  "footer": {
+    "editors_note": true,
+    "donation_qr_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "canonical_correct": true,
+    "SEO_title_present": true,
+    "meta_description_present": true,
+    "OG_cover_present": true,
+    "missing_image_alt_count": 0,
+    "empty_links_count": 0,
+    "server_rendered_youtube_iframe_count": 2,
+    "official_art_rendered": true,
+    "donation_qr_rendered": true,
+    "actual_video_playback": "not independently tested",
+    "mobile_browser_visual_check": "not independently tested"
+  }
+}
