@@ -1,0 +1,105 @@
+{
+  "post_id": 33592,
+  "status": "publish",
+  "date": "2026-11-19",
+  "live_url": "https://bitcoinversus.tech/2026/11/19/gigabyte-5120-cpu-cores-6u-liquid-cooling-sc26-2026/",
+  "headline": "GIGABYTE Packs 5,120 CPU Cores Into a Liquid-Cooled Server",
+  "rotation": [
+    "Data Center News",
+    "HPC",
+    "Electrical Engineering"
+  ],
+  "previous_topic": "Intel external 18A-P foundry customer",
+  "duplicate_control": {
+    "WordPress_post_and_draft_list_checked": true,
+    "searches": [
+      "Giga Computing",
+      "90% system heat",
+      "6U liquid-cooled",
+      "GIGABYTE 5120-core",
+      "B685-D80-LS1"
+    ],
+    "GitHub_November_archive_checked": true,
+    "no_equivalent_story_found": true
+  },
+  "research": {
+    "official_announcement": "https://www.gigabyte.com/press/news/2472",
+    "official_hardware_page": "https://www.gigabyte.com/Enterprise/High-Density-Server/B685-D80-LS1",
+    "SC26_site": "https://www.gigabyte.com/Event/SC26/",
+    "documented_maximum_cpu_cores": 5120,
+    "core_count_calculation": "10 nodes * 2 CPU sockets/node * 256 cores/CPU = 5120 cores",
+    "manufacturer_heat_capture_claim": "nearly 90% in SC26 announcement, up to 92% in detailed product page; not independent field measure",
+    "commercial_deployment_evidence": "no confirmed installed customer or independent performance result"
+  },
+  "editorial": {
+    "words_excluding_fixed_footer_including_media_captions": 636,
+    "prohibited_words": [],
+    "verified_contextual_internal_links": 4,
+    "source_facts_not_forecasts": true
+  },
+  "chart": {
+    "included": false,
+    "reviewed": [
+      "vertical bar",
+      "lollipop",
+      "Gantt"
+    ],
+    "rationale": "Single vendor maximum and thermal specification lack matched observed comparison; graph could misrepresent operational performance"
+  },
+  "cover": {
+    "WordPress_media_id": 33586,
+    "dimensions": "1200x630",
+    "art_style": "fine-art oil painting",
+    "watermark": "BitcoinVersus.tech #39FF14 neon-green bottom-left on tight black highlight",
+    "not_duplicated_in_body": true
+  },
+  "multimedia": [
+    {
+      "type": "official YouTube",
+      "video_id": "J2XsQE7YsTc",
+      "provider": "GIGABYTE",
+      "original_published": "2026-04-14",
+      "context": "rack-scale background",
+      "server_rendered_iframe": true,
+      "actual_playback_not_tested": true
+    },
+    {
+      "type": "official YouTube",
+      "video_id": "wcyljCcjxQk",
+      "provider": "GIGABYTE",
+      "original_published": "2025-08-21",
+      "context": "DLC demonstration background",
+      "server_rendered_iframe": true,
+      "actual_playback_not_tested": true
+    },
+    {
+      "type": "official YouTube",
+      "video_id": "qQYVfK9PTNQ",
+      "provider": "GIGABYTE",
+      "original_published": "2025-09-03",
+      "context": "GIGAPOD background",
+      "server_rendered_iframe": true,
+      "actual_playback_not_tested": true
+    }
+  ],
+  "footer": {
+    "editors_note": true,
+    "donation_qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "seo_title_present": true,
+    "seo_description_present": true,
+    "canonical_correct": true,
+    "open_graph_image_present": true,
+    "missing_image_alt_text": 0,
+    "empty_link_count": 0,
+    "server_youtube_iframes": 3,
+    "qr_present": true,
+    "featured_image_present": true,
+    "mobile_visual_browser": "not independently tested",
+    "real_video_playback": "not independently tested"
+  }
+}
