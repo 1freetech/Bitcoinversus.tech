@@ -1,0 +1,28 @@
+# Editorial QA: BMW 800 V battery data over existing wires
+
+- Post ID: 33733
+- Published date (WordPress site): 2026-11-19T18:05:07
+- Published URL: https://bitcoinversus.tech/2026/11/19/bmw-lumissil-gen6-800v-battery-power-line-communication-no-extra-wires-2026/
+- Title: BMW Tests EV Battery Data Over Existing 800V Wires
+- Status confirmed by WordPress edit-context and view-context reads: publish
+- News event: BMW Group and Lumissil Microsystems joint 800 V Gen6 battery PLC demonstration, announced November 10, 2026
+- Category rotation: Automotive / Electrical Engineering / Technology / Trending News, after Gaming / Project Helix #33704
+- Deduplication: WordPress archive searched "Lumissil," "Power Line Communication," "BMW Gen6," "battery management without wires," and "no new wire". No prior BMW–Lumissil article identified, although previous BMW Gen6 battery factory coverage exists.
+- Primary source: Lumissil 2026-11-10 official press release; BMW Group primary background on Gen6 production. Secondary source: EV Engineering & Infrastructure 2026-11-12.
+- Technical context: BMW Gen6 800 V pack, central BMS communicating with CSC nodes through existing electrical power infrastructure; no new PLC communications harness. Power cables, protection, sensors and safety isolation remain necessary.
+- Verified status: functional bidirectional multi-node communication claimed under representative battery operating conditions. No public packet-error, throughput, mass/cost-saving, certification or production-adoption measurements supplied.
+- Engineering risk context: published peer-reviewed 2021 Energies paper on high-voltage battery PLC channel and coexistence, emphasizing switching noise, EMC, impedance and protection requirements.
+- Writing: 671 editorial words, no prohibited "this", "unusual", "unusually", or "strange" in editorial prose. External citations in article.
+- Chart selection: SmartChart intentionally omitted. Voltage (800 V) describes architecture, not experimental outcome; no grounded numeric baseline for cost or mass. Comparison chart would fabricate unsupported values.
+- Featured cover: original photorealistic conceptual research-lab image of a female engineer, not BMW's actual test. File https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-bmw-lumissil-800v-plc-featured-1200x630-1.jpg; WordPress media 33729; 1200x630 pixels; one clean bottom-left "BitcoinVersus.tech" tag neon #39FF14 on tight black rectangle. Inspected locally; no duplicate tags.
+- Authentic in-body photograph: BMW Group PressClub image P90609011, July 2025, WordPress media #33731, credited and explicitly identified as archival battery production photograph, not experiment footage.
+- Original-source embeds: BMW Group official YouTube videos n8BjjWgSMB8, GQpKrs6rFoI, December 2025 and February 2026, described as archival relevant context; verified saved WordPress iframes, not actual playback.
+- In-story multimedia count: 3 (2 YouTube iframes, 1 official BMW image); donation QR not counted.
+- Four contextual internal links verified by WordPress archive, no empty href values.
+- SEO title: BMW 800V Battery Sends Data Without Extra Signal Wires
+- SEO description: BMW and Lumissil tested power-line communication across a complete Gen6 800V EV battery. Learn how no-extra-signal-wire monitoring works and what remains unproven.
+- Footer: original Editor's Note, 5000-sat donation QR, mobile instructions, disclaimer.
+- Rendered Gutenberg response length 13090; alt attributes all present true; cover duplicated in article false.
+- WordPress published post and media state verified from API.
+- Independent public-site browser fetch attempted November 19, 2026 but was inaccessible; desktop/mobile visual layout and video playback are therefore UNVERIFIED.
+- GitHub contains saved published Gutenberg source and full QA record.
