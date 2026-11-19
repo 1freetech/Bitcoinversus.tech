@@ -1,0 +1,104 @@
+{
+  "post_id": 33557,
+  "live_url": "https://bitcoinversus.tech/2026/11/19/google-wallet-iphone-ios-2026-no-tap-pay-passes-receipts/",
+  "status": "publish",
+  "publication_date": "2026-11-19",
+  "headline": "Google Wallet Comes to iPhone, but Tap-to-Pay Is Missing",
+  "rotation": [
+    "Consumer Technology",
+    "Mobile Software",
+    "Technology"
+  ],
+  "previous_story": "Vitamin B12 zinc-air battery",
+  "duplicate_checks": [
+    "WordPress Google Wallet iPhone / Google Wallet / iPhone Wallet / Google Pay iOS searches in published and drafts",
+    "November 2026 GitHub archive"
+  ],
+  "duplicate_found": false,
+  "editorial": {
+    "word_count_approx_including_captions_excluding_fixed_footer": 730,
+    "prohibited_original_words": [],
+    "contextual_internal_links": 4,
+    "important_caveats": [
+      "US-only at launch",
+      "Requires iOS 17 or later",
+      "No iPhone in-store tap-to-pay",
+      "Saved online payment methods are not contactless payments",
+      "AI-assisted purchase management does not imply unattended spending"
+    ],
+    "sources": [
+      "https://blog.google/products-and-platforms/platforms/google-pay/wallet-available-ios-united-states/",
+      "https://apps.apple.com/us/app/google-wallet/id6761386270",
+      "https://9to5google.com/2026/11/17/google-wallet-ios-app/"
+    ]
+  },
+  "smartchart": {
+    "included": false,
+    "candidates": [
+      "grouped vertical bars",
+      "line",
+      "lollipop"
+    ],
+    "reason": "Launch features and availability are categorical; no comparable empirical numerical series justifies a chart"
+  },
+  "cover": {
+    "media_id": 33555,
+    "resolution": "1200x630",
+    "style": "cinematic anime",
+    "watermark": "BitcoinVersus.tech neon-green #39FF14 on tight black highlight lower-left",
+    "not_repeated_in_article": true
+  },
+  "multimedia": [
+    {
+      "type": "x_original",
+      "url": "https://x.com/NewsFromGoogle/status/2122795620704391637",
+      "author": "News from Google",
+      "rendered_tweet_blockquote": true,
+      "browser_interaction_tested": false
+    },
+    {
+      "type": "official_promotional_image",
+      "media_id": 33556,
+      "source": "Google promotional material via The Tech Outlook",
+      "rendered": true
+    },
+    {
+      "type": "youtube",
+      "video_id": "prVc7FamKsU",
+      "source": "Android Developers, Google I/O 2026",
+      "historical_background": true,
+      "server_rendered_iframe": true,
+      "real_playback_tested": false
+    },
+    {
+      "type": "youtube",
+      "video_id": "IqBMn3ey8XY",
+      "source": "Android Developers, linked passes, 2024",
+      "historical_background": true,
+      "server_rendered_iframe": true,
+      "real_playback_tested": false
+    }
+  ],
+  "footer": {
+    "editor_note": true,
+    "donation_qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "seo_title_present": true,
+    "seo_description_present": true,
+    "canonical_correct": true,
+    "og_featured_image_present": true,
+    "images_missing_alt": 0,
+    "empty_links": 0,
+    "server_youtube_iframes": 2,
+    "x_post_blockquote_present": true,
+    "x_widgets_script_present": true,
+    "promotional_image_present": true,
+    "donation_qr_present": true,
+    "actual_video_playback": "not independently tested",
+    "mobile_visual_browser": "not independently tested"
+  }
+}
