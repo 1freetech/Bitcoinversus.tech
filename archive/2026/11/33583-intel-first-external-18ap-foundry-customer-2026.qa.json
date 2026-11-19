@@ -1,0 +1,124 @@
+{
+  "post_id": 33583,
+  "live_url": "https://bitcoinversus.tech/2026/11/19/intel-first-external-18ap-chip-foundry-customer-november-2026/",
+  "status": "publish",
+  "published": "2026-11-19",
+  "category_rotation": [
+    "Semiconductors",
+    "Technology",
+    "Information Technology",
+    "Trending News"
+  ],
+  "previous_article": "Google Wallet iPhone no tap-to-pay",
+  "duplicate_prevention": {
+    "WordPress_searches": [
+      "18A-P first customer",
+      "first outside customer",
+      "Intel Foundry 18A",
+      "Pushkar Ranade",
+      "Intel customer 18A",
+      "TomorrowX Summit"
+    ],
+    "github_archive_checked": true,
+    "same_story_found": false,
+    "prior_related_story": "Intel Foundry Gets Just 6% of Revenue From External Customers"
+  },
+  "facts": {
+    "announcement_event": "TomorrowX Summit, Austin, Texas, November 18 2026",
+    "CEO": "Lip-Bu Tan",
+    "CTO": "Pushkar Ranade",
+    "customer_count_announced": 1,
+    "contract_process": "Intel 18A-P",
+    "customer_identity": "not disclosed",
+    "value": "not disclosed",
+    "wafer_volume": "not disclosed",
+    "delivery_date": "not disclosed",
+    "risk_production": "Intel announcement June 16 2026",
+    "intel_process_claims": {
+      "same_power_performance_gain": "over 9%",
+      "same_performance_power_reduction": "over 18%",
+      "basis": "vendor research results, not independent customer chip benchmarks"
+    },
+    "no_assertion_of_high_volume_deliveries": true
+  },
+  "editorial": {
+    "words_in_original_body_approx_including_media_captions": 674,
+    "prohibited_words": [],
+    "contextual_internal_links": 4,
+    "primary_and_secondary_sources": [
+      "https://www.datacenterdynamics.com/en/news/intel-secures-first-external-customer-for-18a-p-process-node/",
+      "https://thenextweb.com/news/intel-ceo-lip-bu-tan-says-intel-has-signed-its-first-outside-18a-customer",
+      "https://www.intel.com/content/www/us/en/newsroom/news/corporate/intel-foundry-details-process-milestones-future-innovation-at-vlsi-symposium.html",
+      "https://www.intel.com/content/www/us/en/foundry/process/18a.html"
+    ]
+  },
+  "chart": {
+    "included": false,
+    "reason": "Only vendor process claims with unshared benchmark conditions; a 100 versus 109 vendor-normalized graph would add little explanatory value and might imply an independent chip benchmark",
+    "considered": [
+      "vertical bars",
+      "dot plot",
+      "timeline"
+    ]
+  },
+  "cover": {
+    "wordPress_media_id": 33581,
+    "dimensions": "1200x630",
+    "style": "modern detailed colored-pencil illustration",
+    "watermark": "BitcoinVersus.tech neon green #39FF14 in tight black highlight bottom left",
+    "not_repeated_in_body": true
+  },
+  "multimedia": [
+    {
+      "type": "Intel official YouTube",
+      "id": "E855iZMfJjo",
+      "published": "2026-08-25",
+      "purpose": "18A-P introduction",
+      "server_rendered_iframe": true,
+      "playback_tested": false
+    },
+    {
+      "type": "archival semiconductor fab photograph",
+      "media_id": 33582,
+      "source": "ServeTheHome Fab 52 October 2025",
+      "attribution": "© ServeTheHome",
+      "not_customer_production_evidence": true
+    },
+    {
+      "type": "Intel official YouTube",
+      "id": "t_YmVXB6veY",
+      "published": "2026-03-16",
+      "purpose": "RibbonFET technology explanation",
+      "server_rendered_iframe": true,
+      "playback_tested": false
+    },
+    {
+      "type": "Intel official YouTube",
+      "id": "OtAWftbX2Jk",
+      "published": "2026-03",
+      "purpose": "PowerVia technology background",
+      "server_rendered_iframe": true,
+      "playback_tested": false
+    }
+  ],
+  "footer": {
+    "editors_note": true,
+    "qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "canonical_correct": true,
+    "seo_title_present": true,
+    "meta_description_present": true,
+    "open_graph_cover_present": true,
+    "missing_image_alt_count": 0,
+    "empty_link_count": 0,
+    "server_rendered_youtube_iframes": 3,
+    "photo_present": true,
+    "donation_qr_present": true,
+    "actual_video_playback": "not independently tested",
+    "mobile_visual_check": "not independently tested"
+  }
+}
