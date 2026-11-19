@@ -1,0 +1,95 @@
+{
+  "article_id": 33628,
+  "publication_date": "2026-11-19",
+  "status": "publish",
+  "live_url": "https://bitcoinversus.tech/2026/11/19/ledger-wallet-hardware-implant-berlin-dubai-investigation-november-2026/",
+  "headline": "Ledger Finds Tampered Bitcoin Wallets in Berlin, Probes Dubai Cases",
+  "coverage": "Bitcoin and cryptocurrency hardware wallet supply-chain security; November 18 Ledger investigation update",
+  "dedup": {
+    "WordPress_published_and_drafts_searched": true,
+    "GitHub_November_archive_reviewed": true,
+    "previous_related_article": "https://bitcoinversus.tech/2026/10/10/ledger-hardware-implant-cryptobilis-wallet-losses-october-2026/",
+    "editorial_distinction": "New confirmed Berlin cases, unconfirmed Dubai investigations and one affected Nano Gen5 in Southeast Asia, November 18 official update"
+  },
+  "sources": [
+    "https://support.ledger.com/article/Update-on-the-Hardware-Implant-Incident-Investigation",
+    "https://support.ledger.com/article/Ledger-s-Response-to-the-Hardware-Implant-Attack",
+    "https://decrypt.co/383586/ledger-confirms-tampered-bitcoin-wallets-berlin-spreads-beyond-asia",
+    "https://unchainedcrypto.com/ledger-confirms-implant-incident-has-spread-to-berlin-is-investigating-reports-in-dubai/"
+  ],
+  "factual_distinctions": {
+    "Germany": "few confirmed modified devices in Berlin, buyers since January 2026 advised to contact support",
+    "Dubai": "two reported devices under investigation, not confirmed to identical threshold",
+    "Southeast_Asia": "one additional confirmed Nano Gen5",
+    "Ledger_technology": "manufacturer reports no secure chip or OS flaw; no confirmed affected ledger.com-direct device",
+    "technical_mechanism": "physical implant captures recovery phrase during setup",
+    "safety": "Do not open suspect devices; contact Ledger official support; if funds at risk migrate to wallet with freshly generated secret; never reuse possibly exposed phrase"
+  },
+  "journalism": {
+    "editorial_words_including_caption_excluding_fixed_footer": 686,
+    "prohibited_words": [],
+    "contextual_internal_links": 4
+  },
+  "SmartChart": {
+    "used": false,
+    "reviewed_candidates": [
+      "map",
+      "step timeline",
+      "vertical bar"
+    ],
+    "reason": "No stable, independently established denominator or complete incident counts; a map or count chart could imply exhaustive geographic coverage or confirmed Dubai infections"
+  },
+  "cover": {
+    "wordpress_media_id": 33621,
+    "dimensions": "1200x630",
+    "style": "cinematic anime",
+    "watermark": "BitcoinVersus.tech #39FF14 small text on tight black highlight bottom-left",
+    "cover_repeated_inside_article": false
+  },
+  "multimedia": [
+    {
+      "type": "original_x_post",
+      "author": "Ledger",
+      "url": "https://x.com/Ledger/status/2123116502035390510",
+      "rendered_blockquote": true,
+      "client_browser_test": "not independently performed"
+    },
+    {
+      "type": "official_product_image",
+      "media_id": 33622,
+      "source": "Ledger official Nano Gen5 product render",
+      "explicitly_not_implanted_device": true
+    },
+    {
+      "type": "technical_video",
+      "video_id": "WNpW52x-EWY",
+      "publisher": "hardwear.io",
+      "researcher": "Joe Grand",
+      "description": "Archival June 2026 Nano X hardware implant reverse-engineering; not evidence that newer affected devices use identical board",
+      "rendered_youtube_iframe": true,
+      "client_playback": "not independently tested"
+    }
+  ],
+  "footer": {
+    "editors_note": true,
+    "donation_qr_media_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "SEO_title_present": true,
+    "meta_description_present": true,
+    "canonical_correct": true,
+    "OpenGraph_cover_present": true,
+    "missing_image_alt_text": 0,
+    "empty_links": 0,
+    "tweet_blockquote": true,
+    "tweet_id_correct": true,
+    "youtube_iframes": 1,
+    "official_photo_present": true,
+    "donation_qr_present": true,
+    "mobile_visual_test": "not independently performed",
+    "video_playback_test": "not independently performed"
+  }
+}
