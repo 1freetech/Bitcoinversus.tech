@@ -1,0 +1,141 @@
+{
+  "wordpress_post_id": 33646,
+  "publish_date": "2026-11-19",
+  "status": "publish",
+  "headline": "Quantum Computing Explained: The Complete Guide",
+  "canonical_url": "https://bitcoinversus.tech/2026/11/19/quantum-computing-complete-guide-qubits-algorithms-bitcoin/",
+  "content_class": "evergreen wiki-style technical reference and investigative research",
+  "editorial": {
+    "words_excluding_standard_footer_including_tables": 3342,
+    "original_prohibited_words": [],
+    "section_count": 17,
+    "table_of_contents_anchors": 17,
+    "comparison_tables": 6,
+    "FAQ_questions": 8,
+    "contextual_internal_links": 6,
+    "external_primary_source_topics": [
+      "NIST fundamentals",
+      "IBM Quantum Learning",
+      "Nature Google Quantum AI Willow error correction",
+      "NIST FIPS 203/204/205 post-quantum cryptography",
+      "NIST IR 8547 2026 transition",
+      "Bitcoin BIP 340 and BIP 360",
+      "peer-reviewed quantum Bitcoin mining research"
+    ]
+  },
+  "duplicate_prevention": {
+    "WordPress_published_and_draft_searches": [
+      "quantum computing",
+      "quantum computer",
+      "post quantum",
+      "What Is Quantum Computing",
+      "Quantum Computing: The Complete"
+    ],
+    "GitHub_November_archive_reviewed": true,
+    "similar_prior_articles": [
+      "Can Quantum Computers Hack Bitcoin?",
+      "What Is Post-Quantum Cryptography?",
+      "The Quantum Computing Industry Still Has No Winning Architecture",
+      "Google Cuts Quantum Magic-State Errors 40-Fold on Willow"
+    ],
+    "distinction": "Broad evergreen encyclopedia with basic mechanics, hardware, quantum annealing, gates, QEC, algorithms, practical limitations, PQC and Bitcoin mining in one comprehensive article"
+  },
+  "technical_distinctions": {
+    "qubit": "Quantum amplitudes and measurement probabilities, not readable parallel answers",
+    "hardware": "Superconducting, trapped ion, neutral atom, photonic, semiconductor spin and topological approaches",
+    "algorithms": "Shor versus Grover, phase estimation, QAOA and VQE",
+    "logical_vs_physical": "distinguishes fault-tolerant logical qubits from raw physical qubit count",
+    "current_capabilities": "Willow below threshold memory test is not cryptographic quantum attack",
+    "mining": "Grover theoretical query speedup does not equal practical SHA-256 ASIC advantage",
+    "Bitcoin": "Shor threat affects elliptic-curve signatures, with distinct P2PKH/P2WPKH/P2TR exposure",
+    "NIST": "FIPS 203 KEM differs from FIPS 204/205 signatures; 2035 timeline not Bitcoin activation",
+    "BIP360": "Identified as proposal, not activated Bitcoin consensus",
+    "future": "No unsupported guaranteed date for general-purpose cryptographically relevant fault-tolerant machine"
+  },
+  "cover": {
+    "WordPress_media_id": 33640,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "style": "detailed colored-pencil",
+    "watermark": "BitcoinVersus.tech neon green #39FF14 on black close-fitting highlight bottom-left",
+    "not_repeated_inside_article": true
+  },
+  "multimedia": [
+    {
+      "type": "official_video",
+      "provider": "IBM Technology",
+      "youtube_id": "lt4OsgmUTGI",
+      "purpose": "Introduction to quantum computing",
+      "rendered_iframe": true,
+      "actual_playback_tested": false
+    },
+    {
+      "type": "official_photo",
+      "provider": "IBM",
+      "WordPress_media_id": 33641,
+      "purpose": "IBM Quantum System Two installation",
+      "rendered": true,
+      "source_credit": "IBM"
+    },
+    {
+      "type": "official_video",
+      "provider": "Google Quantum AI",
+      "youtube_id": "_ugJLuJ1_gM",
+      "purpose": "Quantum error-correction research",
+      "rendered_iframe": true,
+      "actual_playback_tested": false
+    },
+    {
+      "type": "official_video",
+      "provider": "IBM Research",
+      "youtube_id": "zrZHPil0BTA",
+      "purpose": "Fault-tolerant quantum computing roadmap",
+      "rendered_iframe": true,
+      "actual_playback_tested": false
+    }
+  ],
+  "chart": {
+    "included": false,
+    "candidates_considered": [
+      "vertical categorical bar",
+      "logarithmic line",
+      "timeline"
+    ],
+    "reason": "Qubit counts, cryptographic resource estimates and vendor hardware timelines are not equivalent; an unsupported numerical chart would obscure distinctions. Six sourced, labeled comparison tables serve evergreen reference intent."
+  },
+  "WordPress_footer": {
+    "approved_editors_note": true,
+    "donation_QR_media_id": 24043,
+    "disclaimer": true
+  },
+  "live_audit": {
+    "http_status": 200,
+    "visibility": "public",
+    "seo_title": "Quantum Computing Explained: Qubits, Hardware, Bitcoin | BitcoinVersus.tech",
+    "seo_description_present": true,
+    "canonical_correct": true,
+    "open_graph_featured_image_present": true,
+    "images_missing_alt": 0,
+    "empty_links": 0,
+    "table_of_contents_links": 17,
+    "matched_anchor_ids": 17,
+    "rendered_tables": 6,
+    "rendered_YouTube_iframes": 3,
+    "official_IBM_photo_present": true,
+    "donation_QR_present": true,
+    "actual_video_playback": "not independently tested",
+    "mobile_visual_browser": "not independently tested"
+  },
+  "source_urls": [
+    "https://www.nist.gov/quantum-information-science/quantum-computing-explained",
+    "https://quantum.cloud.ibm.com/learning/en/courses/utility-scale-quantum-computing/bits-gates-and-circuits",
+    "https://www.nature.com/articles/s41586-024-08449-y",
+    "https://csrc.nist.gov/Projects/Post-Quantum-Cryptography",
+    "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8547.pdf",
+    "https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki",
+    "https://github.com/bitcoin/bips/blob/master/bip-0360.mediawiki",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8946996/"
+  ]
+}
