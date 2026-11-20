@@ -1,0 +1,85 @@
+{
+  "post_id": 33838,
+  "title": "Lambda Connects 10,000 GPUs With Optical Switches",
+  "url": "https://bitcoinversus.tech/2026/11/19/lambda-nvidia-cpo-optical-switches-10000-blackwell-gpus-2026/",
+  "status": "publish",
+  "slug": "lambda-nvidia-cpo-optical-switches-10000-blackwell-gpus-2026",
+  "publication_date": "2026-11-19",
+  "editorial": {
+    "category": "Data Center News and networking",
+    "topic": "Lambda production co-packaged optics connecting more than 10,000 Blackwell Ultra GPUs",
+    "word_count_main_body_approx": 538,
+    "originality": "WordPress recent publications, drafts and topic search checked; no Lambda 10,000-GPU co-packaged optics news duplicate returned",
+    "primary_source_dates": [
+      "Lambda November 16 2026",
+      "NVIDIA November 16 2026"
+    ],
+    "source_urls": [
+      "https://lambda.com/blog/worlds-first-large-scale-deployment-of-nvidia-photonics-switches-with-cpo",
+      "https://blogs.nvidia.com/blog/lambda-photonics/",
+      "https://www.servethehome.com/nvidia-and-lambda-disclose-first-production-co-packaged-optics-cluster-it-is-finally-real/",
+      "https://www.nvidia.com/en-us/events/supercomputing/",
+      "https://www.hpcwire.com/2026/11/17/lambda-touts-first-cpo-deployment-of-blackwell-gpus/"
+    ],
+    "verified_contextual_internal_links": 4,
+    "chart_type": "vertical bar",
+    "chart_candidates": [
+      "latency reduction vertical bars",
+      "temperature comparison vertical bars",
+      "latency line chart (rejected; different scale categories not a time series)"
+    ],
+    "chart_units": "Percent reduction against pluggable optics; rack 3.8, pod 10.1",
+    "chart_baseline": "zero",
+    "prohibited_editorial_words_found": []
+  },
+  "media": {
+    "cover": {
+      "style": "detailed modern colored-pencil",
+      "id": 33835,
+      "dimensions": "1200x630",
+      "watermark": "BitcoinVersus.tech",
+      "color": "#39FF14",
+      "position": "bottom-left",
+      "single_tight_black_highlight": true,
+      "original_image_body_duplication": false
+    },
+    "chart": {
+      "id": 33837,
+      "size": "1200x720",
+      "source": "Lambda November 16 2026"
+    },
+    "embeds": [
+      {
+        "type": "YouTube",
+        "video_id": "_SuSm8tu5AY",
+        "original_source": "Lambda and NVIDIA blog articles",
+        "rendered_iframe_verified": true,
+        "playback_test": "not available"
+      },
+      {
+        "type": "YouTube",
+        "video_id": "uJG53ligJt4",
+        "original_source": "NVIDIA SC26 official event page",
+        "rendered_iframe_verified": true,
+        "playback_test": "not available"
+      }
+    ]
+  },
+  "qa": {
+    "published_status_verified": true,
+    "raw_Gutenberg_shortcode_embeds_saved": 2,
+    "rendered_YouTube_iframes_verified": 2,
+    "chart_rendered_img_tag_verified": true,
+    "featured_image_media_verified": true,
+    "editor_note_qr_disclaimer_saved": true,
+    "seo_title_and_description_saved": true,
+    "independent_public_web_fetch": "not available through browsing tool",
+    "desktop_mobile_visual_review": false,
+    "video_playback_verified": false,
+    "notes": [
+      "Initial wp:embed blocks rendered as plain video links; fixed using WordPress-supported [youtube] shortcodes, then readback confirmed 2 rendered iframes.",
+      "Video sources were traced to first-party company pages; successful playback on end-user devices not tested."
+    ]
+  },
+  "archive_file": "archive/2026/11/33838-lambda-nvidia-cpo-10000-gpus.gutenberg.html"
+}
