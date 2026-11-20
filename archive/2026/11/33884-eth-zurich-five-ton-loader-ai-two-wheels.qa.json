@@ -1,0 +1,83 @@
+{
+  "article_id": 33884,
+  "title": "AI Teaches a 5-Ton Loader to Drive on Two Wheels",
+  "url": "https://bitcoinversus.tech/2026/11/20/eth-zurich-five-ton-ai-loader-two-wheels-reinforcement-learning-2026/",
+  "slug": "eth-zurich-five-ton-ai-loader-two-wheels-reinforcement-learning-2026",
+  "status": "publish",
+  "article_date": "2026-11-20",
+  "topic": "Autonomous reinforcement-learning wheelie and balancing on a five-tonne John Deere 332G skid-steer loader",
+  "category": "Robotics, Artificial Intelligence, Engineering",
+  "source_dates": {
+    "Science_Robotics": "2026-11-11",
+    "arXiv": "2026-11-13",
+    "DongA_Science": "2026-11-12",
+    "ETH_Robotic_Systems_Lab_context_video": "2026-05-27"
+  },
+  "sources": [
+    "https://doi.org/10.1126/scirobotics.aef0894",
+    "https://www.research-collection.ethz.ch/entities/publication/389bbdf4-241e-442e-b963-06e3e2b750f3",
+    "https://sites.google.com/leggedrobotics.com/heavy-metal-acrobatics",
+    "https://arxiv.org/abs/2611.18365",
+    "https://m2.dongascience.com/en/news/80834"
+  ],
+  "chart": {
+    "used": false,
+    "reason": "Small, configuration-specific trials make a simple percentage chart liable to overstate generalizability; results are explained with sample sizes in prose"
+  },
+  "cover": {
+    "style": "fine-art oil painting",
+    "media_id": 33872,
+    "width": 1200,
+    "height": 630,
+    "wordmark": "BitcoinVersus.tech",
+    "color": "#39FF14",
+    "background": "tight black text highlight",
+    "position": "bottom-left",
+    "duplicated_in_body": false
+  },
+  "video_embeds": [
+    {
+      "youtube_id": "yFKHQMqQ9c0",
+      "source": "ETH Zurich Robotic Systems Lab",
+      "date": "2026-05-27",
+      "topic": "Different autonomous excavator with related reinforcement-learning control",
+      "context_only": true
+    },
+    {
+      "youtube_id": "0TJ6pFBb2kU",
+      "source": "ETH Zurich Robotic Systems Lab",
+      "date": "2022-07-03",
+      "topic": "Earlier soil-adaptive excavator control",
+      "context_only": true
+    }
+  ],
+  "original_research_footage": "https://sites.google.com/leggedrobotics.com/heavy-metal-acrobatics",
+  "qa_tests": {
+    "published_wordpress_status": true,
+    "wordpress_edit_readback": true,
+    "public_html_http_status": 200,
+    "public_url_canonical_verified": true,
+    "public_meta_title_verified": true,
+    "public_meta_description_verified": true,
+    "public_og_featured_image_verified": true,
+    "featured_media_1200x630_verified": true,
+    "rendered_youtube_iframes": 2,
+    "actual_video_playback_verified": false,
+    "rendered_internal_links": 4,
+    "body_word_count": 652,
+    "prohibited_editorial_words_checked": true,
+    "donation_qr_rendered": true,
+    "no_featured_image_in_body": true,
+    "no_images_missing_alt_public_page": true,
+    "desktop_screenshot_status_ready": true,
+    "mobile_screenshot_status_ready": true,
+    "desktop_mobile_pixel_inspection": false
+  },
+  "remaining_limitations": [
+    "The two verified YouTube embeds are official background research from the same lab, not direct footage of the November 2026 loader demonstration; source video gallery is linked near the introduction.",
+    "WordPress rendered HTML confirms both iframe elements, but actual video playback was not tested.",
+    "Screenshot capture service returned ready on both desktop and mobile; pixel-level visual inspection was not possible.",
+    "Public social Open Graph image is served at a 1024x538 derivative although the WordPress original media has verified 1200x630 dimensions."
+  ],
+  "archive": "archive/2026/11/33884-eth-zurich-five-ton-loader-ai-two-wheels.gutenberg.html"
+}
