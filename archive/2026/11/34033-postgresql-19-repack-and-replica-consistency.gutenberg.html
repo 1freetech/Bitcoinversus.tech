@@ -1,0 +1,47 @@
+<!-- wp:paragraph --><p>PostgreSQL 19 brings an important maintenance upgrade to one of the world's most widely deployed open-source databases: administrators can reorganize bloated tables without preventing ordinary reads and writes. Released on <a href="https://www.postgresql.org/about/news/postgresql-19-released-3449/">November 19, 2026</a>, the new version also introduces better replica consistency, more predictable query plans and faster foreign-key checks in specific tests. The changes target operational headaches, not a blanket speed improvement for every workload.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=Vw4WKeoxKq4]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p>Microsoft Developer's June 17 recording of the POSETTE 2026 PostgreSQL 19 contributors' panel. A pre-release discussion of features and trade-offs, not footage from the November 19 launch.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Large tables can finally be repacked in place</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Frequent updates and deletes leave dead rows and inefficient physical layouts behind. Regular VACUUM reclaims reusable space, but it does not always shrink a table's file on disk. Historically, VACUUM FULL could reorganize a table at the cost of an access-blocking operation; administrators could also use third-party repacking software.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>PostgreSQL 19 adds built-in <a href="https://www.postgresql.org/docs/19/sql-repack.html">REPACK</a> and REPACK (CONCURRENTLY). The concurrent form keeps normal reads and writes available through most of the operation, but briefly acquires an exclusive lock when swapping files. PostgreSQL also warns that old snapshots may see an empty table after the swap, and temporary disk space must accommodate a full copy of the table and indexes. The mode excludes some table types, including partitioned and unlogged tables.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Replicas can wait for the newest data</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Read replicas often trail the primary database slightly. A user might save a profile, immediately reload it from a standby and briefly see the earlier version. PostgreSQL 19 introduces WAIT FOR LSN, enabling an application session to wait until a standby has replayed a specified write-ahead log position. The mechanism supplies read-your-writes consistency when the application correctly tracks that position; it does not eliminate all replication lag or make asynchronous replicas instantaneous.</p><!-- /wp:paragraph -->
+
+<!-- wp:table {"hasFixedLayout":true} --><figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Task</th><th>Earlier approach</th><th>PostgreSQL 19</th></tr></thead><tbody><tr><td>Reclaim table bloat</td><td>VACUUM FULL or external repacking tools</td><td>Built-in REPACK (CONCURRENTLY)</td></tr><tr><td>Read recent writes on a standby</td><td>Application-managed replay checks</td><td>WAIT FOR LSN</td></tr><tr><td>Insert or return an existing row</td><td>Typically multiple SQL steps</td><td>INSERT ... ON CONFLICT DO SELECT</td></tr><tr><td>Monitor autovacuum</td><td>Existing statistics views</td><td>New scoring and monitoring views</td></tr></tbody></table><figcaption class="wp-element-caption">Editorial comparison of selected capabilities, not performance benchmarks. Source: PostgreSQL Global Development Group, November 19, 2026.</figcaption></figure><!-- /wp:table -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=Oo3Aolzvnkw]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p>PostgreSQL Development Conference's June 29, 2026 recording of Álvaro Herrera explaining table repacking. An official technical presentation before PostgreSQL 19 shipped, with no claim of production benchmarks in the video.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Faster bulk inserts, with limits</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The PostgreSQL team says optimized foreign-key checks made bulk inserts nearly twice as fast in its testing. No universal 2× acceleration follows: application performance depends on indexes, constraints, transaction sizes, storage and query patterns. The release also adds planner improvements, adaptive asynchronous I/O workers, parallel index vacuuming and the pg_plan_advice extension for steering query choices.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Developers gain INSERT ... ON CONFLICT DO SELECT, which can return an existing conflicting row without a second network round trip. JSON export through COPY, sequence-value logical replication and more expressive SQL window functions broaden everyday database functionality.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Upgrading still requires care</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Major-version upgrades require dump and restore, pg_upgrade or logical replication, rather than a routine package patch. PostgreSQL 19 disables just-in-time compilation by default, warns on MD5 password authentication and removes RADIUS support. Administrators should test extensions, workload regressions and authentication dependencies before upgrading production servers.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.Tech's <a href="https://bitcoinversus.tech/2026/11/04/sql-databases-explained/">SQL database overview</a> covers relational foundations. The lessons on <a href="https://bitcoinversus.tech/2026/11/08/ossql-006-inner-left-joins-missing-matches/">joins</a>, <a href="https://bitcoinversus.tech/2026/10/10/ossql-003-where-filtering-rows-conditions-and-or-not/">WHERE filters</a> and <a href="https://bitcoinversus.tech/2026/11/02/ossql-005-limit-offset-sql-pagination-order-by-pages/">pagination</a> explain everyday queries whose reliability and planning become more important as databases grow.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Primary sources and reporting limitations</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><a href="https://www.postgresql.org/about/news/postgresql-19-released-3449/">PostgreSQL Global Development Group release announcement</a>, November 19, 2026.</li><li><a href="https://www.postgresql.org/docs/19/release-19.html">PostgreSQL 19 detailed release notes</a>, November 19, 2026, including compatibility requirements.</li><li><a href="https://www.postgresql.org/about/press/presskit19/en/">PostgreSQL 19 official press kit</a>, November 19, 2026.</li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p>Reporting note: The featured colored-pencil illustration depicts a fictional database engineer. Both conference recordings predate the actual release and provide technical background. No independent bulk-insert benchmark, full major-version migration or individual-device video playback test was conducted for the article. The comparison table describes documented features, not measured gains.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Editor's Note: We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please scan the QR code below</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24593,"width":"280px","sizeSlug":"medium","linkDestination":"none"} --><figure class="wp-block-image size-medium is-resized"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr.png?w=300" alt="BitcoinVersus.Tech research donation QR code requesting 5,000 sats." class="wp-image-24593" style="width:280px" /><figcaption class="wp-element-caption">Optional research support: 5,000 satoshis. Verify the payment destination and amount before sending.</figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.Tech publishes technical reporting for informational purposes only; evaluate software upgrades under your own operational, security and backup requirements.</p><!-- /wp:paragraph -->
