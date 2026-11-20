@@ -2548,6 +2548,153 @@
         "engagement": "unavailable"
       },
       "corrections": []
+    },
+    {
+      "post_id": 34054,
+      "article_title": "Decentralized Bitcoin Mining Has a Small-Miner Payout Problem",
+      "publication_date": "2026-11-20",
+      "content_type": "standard_news",
+      "category_names": [
+        "Bitcoin",
+        "bitcoin mining",
+        "technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        36507086,
+        57414501,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/20/decentralized-bitcoin-mining-small-miner-coinbase-payout-attack-dcpp-2026/",
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "evidence": "WordPress editor and rendered public view returned status=publish with canonical URL; external independent page fetch unavailable"
+      },
+      "editorial_body_word_count": 680,
+      "original_sources": [
+        "https://bitcoinops.org/en/newsletters/2026/11/20/",
+        "https://delvingbitcoin.org/t/decentralized-coinbase-payout-protocols-dcpp-a-framework-for-discussion/3060",
+        "https://delvingbitcoin.org/t/decentralized-coinbase-payout-protocols-dcpp-a-framework-for-discussion/3060/2",
+        "https://delvingbitcoin.org/t/decentralized-coinbase-payout-protocols-dcpp-a-framework-for-discussion/3060/5"
+      ],
+      "duplicate_check": {
+        "wordpress": "Searches for DCPP, decentralized coinbase payouts and rich-list attacks found no direct same-story post. An October mining-pool comparison guide was reviewed as a general explainer.",
+        "github": "Unique post #34054 and archive path confirmed before source archiving.",
+        "scope": "Keyword/title screening, not full semantic duplicate scan"
+      },
+      "internal_links": {
+        "count": 5,
+        "targets_status": "Five relevant WordPress archive titles and route URLs; independent browser link click-through not verified."
+      },
+      "in_story_media": {
+        "count": 3,
+        "types": [
+          "Stephan Livera P2Poolv2 developer YouTube iframe",
+          "jungly original Ocean histogram",
+          "Bitcoin Magazine Braidpool developer YouTube iframe"
+        ],
+        "video_ids": [
+          "0lRXzaaYrZs",
+          "c_zaVsZph3A"
+        ],
+        "wordpress_rendered_iframes": 2,
+        "actual_video_playback": "not independently tested",
+        "official_image_media_id": 34050,
+        "captions_after_media": true
+      },
+      "featured_cover": {
+        "media_id": 34049,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "cinematic anime",
+        "subjects": "small ASIC miner and industrial hashrate rigs connecting to a Bitcoin block",
+        "watermark": "Exact BitcoinVersus.tech #39FF14, small tight black highlight at bottom-left",
+        "cover_not_duplicated_in_body": true,
+        "original": true,
+        "actual_mining_facility_photo": false
+      },
+      "chart": {
+        "present": true,
+        "type": "primary-source histogram",
+        "source": "jungly on Delving Bitcoin 2026-11-12, sampled Ocean coinbase output counts",
+        "source_url": "https://delvingbitcoin.org/t/decentralized-coinbase-payout-protocols-dcpp-a-framework-for-discussion/3060/5",
+        "median_outputs": 20,
+        "mean_outputs": 31.9,
+        "media_id": 34050,
+        "dimensions_px": [
+          1275,
+          646
+        ],
+        "not_representative_of": "Original P2Pool 2012-2014 2,545-block sample or universal firmware limits",
+        "alternatives_considered": [
+          "Original SmartChart reconstruction of incomplete historical data (rejected)",
+          "Simplistic payout diagram (disallowed)",
+          "Authentic original-source histogram selected"
+        ]
+      },
+      "footer": {
+        "approved_editors_note_exact": true,
+        "synced_block_ref_id": 33935,
+        "original_donation_qr_id": 24043,
+        "qr_count": 1,
+        "disclaimer_rendered": true
+      },
+      "archive": {
+        "qa_record": "archive/2026/11/34054-decentralized-coinbase-payouts-small-miners.md",
+        "exact_gutenberg": "archive/2026/11/34054-decentralized-coinbase-payouts-small-miners.gutenberg.html"
+      },
+      "rotation": {
+        "category": "Bitcoin mining / protocol design",
+        "previous_category": "Bitcoin mining / ASIC electricity economics",
+        "cover_style": "cinematic anime",
+        "previous_cover": "photorealistic"
+      },
+      "qa_score": {
+        "total": 90,
+        "max": 100,
+        "components": {
+          "Accuracy and source verification": 25,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 15,
+          "Working embeds and media relevance": 11,
+          "Cover and visualization quality": 9,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 5
+        },
+        "unverified_gates": [
+          "Actual video playback",
+          "Independent desktop/mobile visual layout",
+          "External browser page fetch"
+        ],
+        "status": "Verified WordPress publish, rendered iframe HTML, media sizes, links and footer; actual playback untested"
+      },
+      "observations": [
+        "Research first posted Nov 11 and summarized Nov 20, not a deployed protocol change",
+        "Original P2Pool 2,545 transactions and sampled Ocean histogram are distinct datasets",
+        "A rich-list attack is a design concern and was not documented as a realized exploit"
+      ],
+      "three_improvements_to_carry_forward": [
+        "Validate actual video playback through browser when supported",
+        "Preserve primary research dates and reject recycled aggregator headlines",
+        "Keep dataset identity obvious in chart captions, with exact synced footer reference"
+      ],
+      "feedback": {
+        "user_preferences": [
+          "Bitcoin mining category",
+          "Two or more original-source verified multimedia embeds",
+          "No simplistic diagrams",
+          "Anime cover next",
+          "Exact permanent footer"
+        ],
+        "engagement": "not accessible"
+      },
+      "corrections": [
+        "Broad duplicate search returned contextual October pool explainer; confirmed not same November DCPP research topic before publishing."
+      ]
     }
   ],
   "future_article_template_required_fields": [
