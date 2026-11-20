@@ -2980,6 +2980,158 @@
         "engagement": "not available"
       },
       "corrections": []
+    },
+    {
+      "post_id": 34083,
+      "article_title": "JPMorgan Puts Bitcoin Mining Cost at $86K. What Does It Mean?",
+      "publication_date": "2026-11-20",
+      "content_type": "standard_news",
+      "category_names": [
+        "Bitcoin",
+        "Bitcoin Mining",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        36507086,
+        57414501,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/20/jpmorgan-bitcoin-mining-cost-86000-versus-electricity-2026/",
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "evidence": "WordPress context=edit and context=view readbacks returned status publish; external public-page web fetch blocked"
+      },
+      "editorial_body_word_count": 621,
+      "original_sources": [
+        "https://www.theblock.co/news/markets/2026-11-20-jpmorgan-bitcoin-price-correction-gap-86000-production-cost-444763",
+        "https://www.jbs.cam.ac.uk/wp-content/uploads/2026/10/ccaf-2026-funding-bitcoins-future.pdf",
+        "https://www.theblock.co/news/markets/2026-09-24-jpmorgan-bitcoin-production-cost-miners-relief-416283",
+        "https://www.coindesk.com/markets/2026/06/19/live-markets-bitcoin-has-traded-below-its-mining-cost-for-five-months-squeezing-miners"
+      ],
+      "duplicate_check": {
+        "wordpress": "Exact JPMorgan 86K event query had no direct duplicate, but September 85K story was found and linked as a prior version",
+        "github": "Unique new post id 34083, verified archive path before creation",
+        "scope": "Exact keyword and title queries, not exhaustive semantic similarity"
+      },
+      "internal_links": {
+        "count": 5,
+        "targets_status": "Existing published WordPress post routes, external browser click-through not independently tested"
+      },
+      "in_story_media": {
+        "count": 3,
+        "types": [
+          "Cambridge researcher source interview iframe",
+          "original zero-baseline vertical chart",
+          "Bitcoin miner operator interview iframe"
+        ],
+        "video_ids": [
+          "GD8ofO4RiRM",
+          "EyC2oGvBnSU"
+        ],
+        "wordpress_rendered_iframes": 2,
+        "actual_video_playback": "not independently tested",
+        "chart_media_id": 34078,
+        "captions_after_media": true
+      },
+      "featured_cover": {
+        "media_id": 34077,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "photorealistic editorial",
+        "subjects": "Bitcoin ASIC mining aisle, fan grilles, cabling and technician",
+        "watermark": "BitcoinVersus.tech neon #39FF14 on tight black highlight at lower-left",
+        "cover_not_duplicated_in_body": true,
+        "original": true,
+        "documentary_photo": false
+      },
+      "chart": {
+        "present": true,
+        "type": "zero-baseline vertical columns",
+        "source": "JPMorgan central cost estimates reported by CoinDesk and The Block",
+        "labels": [
+          "June 2026",
+          "September 2026",
+          "November 2026"
+        ],
+        "values_usd_per_btc": [
+          78000,
+          85000,
+          86000
+        ],
+        "baseline_zero": true,
+        "media_id": 34078,
+        "dimensions_px": [
+          1200,
+          675
+        ],
+        "model_basis": "Bank estimates not independently reconstructed; not observed fleet expenses, BTC market prices or a guaranteed price floor",
+        "alternatives_considered": [
+          "Line graph (reject irregular estimate snapshots and implied continuous trend)",
+          "Scatter (less clear with only 3 dates)",
+          "Vertical columns (selected)"
+        ]
+      },
+      "footer": {
+        "approved_editors_note_exact": true,
+        "synced_block_ref_id": 33935,
+        "original_donation_qr_id": 24043,
+        "qr_count": 1,
+        "disclaimer_rendered": true
+      },
+      "archive": {
+        "qa_record": "archive/2026/11/34083-jpmorgan-86000-mining-cost-model.md",
+        "exact_gutenberg": "archive/2026/11/34083-jpmorgan-86000-mining-cost-model.gutenberg.html"
+      },
+      "rotation": {
+        "category": "Bitcoin mining / production-cost models",
+        "previous_category": "Bitcoin mining / network relay incentives",
+        "cover_style": "photorealistic",
+        "previous_cover": "oil painting"
+      },
+      "qa_score": {
+        "total": 89,
+        "max": 100,
+        "components": {
+          "Primary sourcing and model distinctions": 25,
+          "Novelty and contextual duplicate check": 14,
+          "Technical depth and numerical clarity": 15,
+          "Authentic media and iframe render": 11,
+          "Cover and original comparative chart": 10,
+          "Internal links and SEO": 10,
+          "WordPress rendered QA": 4
+        },
+        "unverified_gates": [
+          "Actual YouTube player playback",
+          "Desktop/mobile browser visual layout",
+          "External public-page inspection"
+        ],
+        "status": "WordPress publish and rendered media verified; independent playback and external responsive visual QA unverified"
+      },
+      "observations": [
+        "Central cost of production does not imply price floor or actual cost for every miner.",
+        "Cambridge $0.05/kWh electricity-only model is not directly comparable to JPMorgan bank-wide cost estimate.",
+        "At 1PH/s and 12J/TH, ASIC direct power 288 kWh/day; 5c/kWh yields $14.40, 51.8% of $27.79 hashprice revenue."
+      ],
+      "three_improvements_to_carry_forward": [
+        "Test actual browser video playback when supported, beyond rendered iframe HTML.",
+        "Maintain separate categories for modeled cost, survey costs, and real spot BTC prices.",
+        "Date every financial and mining metric; preserve exact footer and QR uniqueness."
+      ],
+      "feedback": {
+        "user_preferences": [
+          "Nonduplicate interesting Bitcoin mining news",
+          "Three-point chart when valid",
+          "Gutenberg embeds and original logo",
+          "Editorial precision and permanent volunteer footer"
+        ],
+        "engagement": "unavailable"
+      },
+      "corrections": []
     }
   ],
   "future_article_template_required_fields": [
