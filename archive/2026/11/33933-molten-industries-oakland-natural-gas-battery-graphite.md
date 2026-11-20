@@ -52,3 +52,7 @@ Source-of-truth: [exact WordPress Gutenberg editor readback](./33933-molten-indu
 ## Recursive improvement
 
 Prioritize direct company materials plus official government data. Mark company yields/cost and efficiency as unverified claims. Avoid graphing annual plant capacity as actual production. Preserve source dates and label older founder videos clearly. Distinguish rendered iframe HTML from confirmed cross-device playback.
+
+## Editorial footer change — November 20, 2026
+
+The editor replaced the previous article footer with **verbatim standardized wording** in the WordPress reusable synced pattern **#33935**. WordPress editor source now references `<!-- wp:block {"ref":33935} /-->`; published rendered HTML returned the exact approved quote, a single original QR image **#24043** and the financial disclaimer. Existing in-story YouTube iframe count remained unchanged after the footer edit. The revised exact editor source is saved in the companion `.gutenberg.html` file. Historical source facts and publication date remain unchanged.
