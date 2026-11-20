@@ -1,0 +1,69 @@
+{
+  "article_id": 33819,
+  "title": "Eclipse Enclave Puts AI Coding Agents in Sandboxes",
+  "url": "https://bitcoinversus.tech/2026/11/19/eclipse-enclave-1-0-ai-coding-agents-isolated-sandboxes-2026/",
+  "slug": "eclipse-enclave-1-0-ai-coding-agents-isolated-sandboxes-2026",
+  "status": "publish",
+  "article_date": "2026-11-19",
+  "category": "Software, Cybersecurity, AI",
+  "topic": "Eclipse Enclave 1.0 vendor-neutral isolated AI coding agent runtime",
+  "source_dates": {
+    "project_version_1_0_0": "2026-10-31",
+    "foundation_announcement": "2026-11-19",
+    "EclipseSource_video": "2026-09-07"
+  },
+  "sources": [
+    "https://www.globenewswire.com/news-release/2026/11/19/3406378/0/en/eclipse-foundation-launches-eclipse-enclave-1-0-bringing-security-and-choice-to-autonomous-ai-coding.html",
+    "https://enclave.eclipse.dev/docs/",
+    "https://enclave.eclipse.dev/docs/getting-started/",
+    "https://projects.eclipse.org/projects/ecd.enclave",
+    "https://github.com/eclipse-enclave/enclave",
+    "https://www.eclipse.org/events/2026/theiacon/"
+  ],
+  "chart": {
+    "used": false,
+    "reason": "No comparable quantitative dataset requiring a chart; technical explanation is clearer without one"
+  },
+  "cover": {
+    "style": "detailed modern colored-pencil illustration",
+    "media_id": 33818,
+    "width": 1200,
+    "height": 630,
+    "watermark": "BitcoinVersus.tech",
+    "color": "#39FF14",
+    "background": "tight black text highlight",
+    "position": "bottom left"
+  },
+  "video_embeds": [
+    {
+      "youtube_id": "EXnBq9yRyNc",
+      "provider": "EclipseSource",
+      "context": "September 2026 product demo"
+    },
+    {
+      "youtube_id": "WTpSEhJTNsw",
+      "provider": "Eclipse TheiaCon",
+      "context": "Official 2026 talk on Eclipse Enclave"
+    }
+  ],
+  "qa_tests": {
+    "wordpress_post_published": true,
+    "wordpress_raw_readback": true,
+    "wordpress_rendered_iframe_count": 2,
+    "rendered_internal_links": 4,
+    "body_word_count": 538,
+    "featured_media_1200x630": true,
+    "featured_cover_absent_from_body": true,
+    "donation_qr_rendered": true,
+    "seo_metadata_saved": true,
+    "prohibited_editorial_words_checked": true,
+    "live_public_html_fetch": false,
+    "actual_iframe_playback_test": false,
+    "desktop_mobile_visual_render_test": false
+  },
+  "remaining_limitations": [
+    "Authenticated WordPress rendered-content readback confirmed two iframe elements but independent video playback was not exercised.",
+    "Unauthenticated public HTML fetch and desktop/mobile screenshot inspection were not available in the current environment."
+  ],
+  "archive": "archive/2026/11/33819-eclipse-enclave-ai-coding-sandboxes.gutenberg.html"
+}
