@@ -1,0 +1,44 @@
+<!-- wp:paragraph --><p>An older Bitcoin miner may soon have an easier path away from factory firmware. On <a href="https://www.256foundation.org/newsroom/mujina-term-extension">October 1, 2026</a>, the nonprofit 256 Foundation said it had extended funding for <strong>Mujina</strong>, an open-source mining firmware project, through December. Its immediate goal is practical: prepare installable operating-system images and an installer for Antminer S19j Pro and S19k Pro hardware. <strong>Neither a generally available installer nor completed fleet validation was announced.</strong></p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=ZJP1pFQvVYk]<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>Ryan Kuester explains the 256 Foundation's open mining stack at Bitcoin++ Nairobi in July 2026. Background footage predates the October grant extension.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Why firmware matters</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>An ASIC hashboard performs SHA-256 calculations, but its controller needs software to assign chip frequencies, manage operating conditions, submit work to a pool and report faults. An owner can replace a fan or repair a board without gaining comparable control over the manufacturer's software. BitcoinVersus.tech previously examined <a href="https://bitcoinversus.tech/2026/10/13/what-an-asic-miner-control-board-does/">how ASIC control boards operate</a> and the <a href="https://bitcoinversus.tech/2026/10/27/oshre-000-bitcoin-mining-anatomy-of-the-hashboard/">hashboard's electrical architecture</a>.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><a href="https://mujina.org/">Mujina</a> is written in Rust for Linux and publishes its source code. Developers aim to make chip control auditable and adaptable to additional hardware models. Public code permits inspection and independent modifications, but code availability alone cannot establish security, sustained uptime or compatibility with every controller revision.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">The installer is the missing piece</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The Foundation initially funded work from April through September 2026, then extended the term for three months. Its <a href="https://www.256foundation.org/newsroom/mujina-term-extension">October roadmap</a> lists S19j Pro and S19k Pro testing, documentation, flashable images and a user-facing installer. The same announcement describes Stratum V2, Intel BZM2 chip support and other changes as work awaiting review rather than merged, shipping features.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The project's <a href="https://mujina.org/reference/hardware-compatibility">published compatibility guide</a>, updated in July, described S19 support as a prototype fork without ready-to-install images. The newer funding announcement sets a delivery objective; it is not independent proof that every promised release has landed. Operators should check current <a href="https://github.com/256foundation/mujina">source, releases and hardware support</a> before attempting a flash.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=Vvnjpbi15vQ]<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>The Home Mining Podcast interviews Libre Board engineer Michael Schmid about Mujina and open ASIC control hardware in May 2026.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Real hardware, with important limits</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The Foundation documented a demonstration using <strong>one S19j Pro hashboard and two S19k Pro hashboards</strong> on one control board. Its reported dashboard showed 280 chips and <strong>136.70 TH/s</strong> total. That mixed-generation bench result is technically important because component-level replacement may extend a machine's useful life. Yet a published demonstration is not a certified production benchmark, a measured efficiency comparison or proof of long-term reliability.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Swiss developer RY3T also described its <a href="https://www.256foundation.org/newsroom/ry3t-nova">Nova solar-mining project</a> as able to follow changing power targets from about 1,000 to 3,000 watts within seconds. The announced design can coordinate up to three miners for a 9 kW target. Those figures come from a developer demonstration and product plan, not an independently tested commercial fleet.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=Xi0M5NLxm20]<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>Bitcoin Magazine's May 2026 conference panel discusses the open ASIC mining stack, including hashboards, control boards and firmware.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">What miners should check first</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Firmware freedom has operational costs. An incompatible image or failed flash can immobilize a controller, while untested tuning can raise temperatures, rejected-share rates and power consumption. BitcoinVersus.tech's <a href="https://bitcoinversus.tech/2026/10/14/osftc-011-firmware-update-security/">firmware security lesson</a> covers recovery planning; its <a href="https://bitcoinversus.tech/2026/10/11/stratum-v1-vs-stratum-v2/">Stratum guide</a> explains pool-protocol differences. A responsible rollout would preserve stock recovery images, verify download hashes and run staged power and stability tests.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Mujina's significance is therefore less about claiming faster hashrate than giving ASIC owners a credible, inspectable control layer. The next evidence to watch is a downloadable S19 image, documented supported revisions, repeatable install and recovery procedures, and sustained wall-power and accepted-share measurements. Until those arrive, a promising open-source milestone remains a development milestone.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Sources and verification</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Primary records: the <a href="https://www.256foundation.org/newsroom/mujina-term-extension">October 1 funding announcement</a>, <a href="https://mujina.org/reference/hardware-compatibility">Mujina hardware compatibility documentation</a>, the <a href="https://github.com/256foundation/mujina">public repository</a> and the <a href="https://www.256foundation.org/newsroom/ry3t-nova">Foundation's August 14 hardware demonstration report</a>. Manufacturer and developer performance claims are labeled accordingly. No SmartChart efficiency comparison was added because independent, like-for-like wall-power measurements and dated test series were unavailable.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em><strong>Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on our platform is Verifiably True. To support the research and verification work, scan the donation QR code below to donate 5,000 sats.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="BitcoinVersus.tech voluntary donation QR code for 5,000 satoshis" class="wp-image-24043" /><figcaption class="wp-element-caption">Scan from a second screen with a compatible Bitcoin wallet. Verify the destination and amount before sending.</figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p><em><strong>Disclaimer:</strong> BitcoinVersus.tech provides independent technical journalism and education, not financial advice or instructions to flash unsupported hardware. ASIC firmware changes can cause downtime or equipment damage. The featured colored-pencil artwork is conceptual and does not show a documented Mujina installation.</em></p><!-- /wp:paragraph -->
