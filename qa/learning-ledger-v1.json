@@ -2695,6 +2695,146 @@
       "corrections": [
         "Broad duplicate search returned contextual October pool explainer; confirmed not same November DCPP research topic before publishing."
       ]
+    },
+    {
+      "post_id": 34058,
+      "article_title": "Canaan Opens the Nano 3S Bitcoin ASIC Driver and Linux SDK",
+      "publication_date": "2026-11-20",
+      "content_type": "standard_news",
+      "category_names": [
+        "Bitcoin",
+        "bitcoin mining",
+        "technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        36507086,
+        57414501,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/20/canaan-nano-3s-open-source-a3197s-linux-sdk-2026/",
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "evidence": "WordPress post editor and published HTML view readbacks; independent external browser fetch blocked"
+      },
+      "editorial_body_word_count": 563,
+      "original_sources": [
+        "https://github.com/Canaan-Creative/canaan_sdk_for_linux",
+        "https://github.com/Canaan-Creative/canaan_sdk_for_linux/blob/main/CHANGELOG.md",
+        "https://github.com/Canaan-Creative/canaan_sdk_for_linux/blob/main/docs/miner/MINER.md",
+        "https://github.com/Canaan-Creative/canaan_sdk_for_linux/blob/main/docs/miner/KEYS.md",
+        "https://github.com/Canaan-Creative/canaan_sdk_for_linux/blob/main/NOTICE",
+        "https://www.canaan.io/nano3s/"
+      ],
+      "duplicate_check": {
+        "wordpress": "Search for canaan_sdk_for_linux, A3197S driver, Nano 3S firmware and Canaan SDK returned no matching new-release article or draft. Earlier Avalon Nano 3S hardware review and power-supply troubleshooting remain separate.",
+        "github": "Repository's November 14 first-preview release distinguished from older Avalon_Nano3s repo; unique archive path created.",
+        "scope": "Targeted searches plus source inspection, not exhaustive semantic duplicate scan"
+      },
+      "internal_links": {
+        "count": 5,
+        "targets_status": "Five linked WordPress posts checked as published by exact post IDs 33846,33777,19517,11463,13024"
+      },
+      "in_story_media": {
+        "count": 3,
+        "types": [
+          "Verified independent Nano 3S hardware YouTube interview/review",
+          "Canaan official product photograph",
+          "Official Canaan older Nano 3 firmware update video"
+        ],
+        "video_ids": [
+          "HsLK3VZ5Nek",
+          "IkU0ARpla3w"
+        ],
+        "wordpress_rendered_iframes": 2,
+        "actual_video_playback": "not independently tested",
+        "official_image_media_id": 34057,
+        "official_image_dimensions_px": [
+          2560,
+          1439
+        ],
+        "captions_after_media": true
+      },
+      "featured_cover": {
+        "media_id": 34056,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "detailed modern colored-pencil",
+        "subjects": "Avalon-style home ASIC, exposed chip-control board and Linux development laptop",
+        "watermark": "BitcoinVersus.tech exact case in neon #39FF14 on tight black highlight at bottom left",
+        "cover_not_duplicated_in_body": true,
+        "original": true
+      },
+      "chart": {
+        "present": false,
+        "type": "none",
+        "reason": "SDK announcement contains no comparable independent performance measurements; no credible historical dataset for chart",
+        "alternatives_considered": [
+          "vertical bars without comparable benchmark data (rejected)",
+          "line graph without time-series results (rejected)",
+          "scatter comparison without chip test results (rejected)"
+        ]
+      },
+      "footer": {
+        "approved_editors_note_exact": true,
+        "synced_block_ref_id": 33935,
+        "original_donation_qr_id": 24043,
+        "qr_count": 1,
+        "disclaimer_rendered": true
+      },
+      "archive": {
+        "qa_record": "archive/2026/11/34058-canaan-nano3s-open-linux-sdk-a3197s.md",
+        "exact_gutenberg": "archive/2026/11/34058-canaan-nano3s-open-linux-sdk-a3197s.gutenberg.html"
+      },
+      "rotation": {
+        "category": "Bitcoin mining / open-source ASIC firmware",
+        "previous_category": "Bitcoin mining / decentralized payout protocol design",
+        "cover_style": "colored pencil",
+        "previous_cover": "cinematic anime"
+      },
+      "qa_score": {
+        "total": 90,
+        "max": 100,
+        "components": {
+          "Primary-source accuracy and dates": 25,
+          "Originality and deduplication": 15,
+          "Technical depth and safety caveats": 15,
+          "Source-verified media and iframe markup": 11,
+          "Cover and authentic photo": 9,
+          "Links and SEO": 10,
+          "WordPress publish and rendered QA": 5
+        },
+        "unverified_gates": [
+          "Actual video playback",
+          "Desktop/mobile responsive browser visual review",
+          "Independent public page fetch"
+        ],
+        "status": "Published with WordPress rendered iframe checks, but end-to-end functional playback remains unverified"
+      },
+      "observations": [
+        "Repository first preview dated November 14, community attention November 20; older Canaan source tree already existed",
+        "Alpha image ships insecure debug defaults and public OTA development signing private key, never production ready by implication",
+        "Four miners processes and Linux 6.6.36 build are developer docs, not independent accepted-share performance results"
+      ],
+      "three_improvements_to_carry_forward": [
+        "When software is newly open sourced, inspect the exact repository commit and license exceptions rather than rely on social posts.",
+        "For mining firmware, explicitly test secure keys, credentials, monitoring ports, and flash recovery before treating builds as deployable.",
+        "Keep video captions dated and strictly distinguish iframe rendering from actual independent playback verification."
+      ],
+      "feedback": {
+        "user_preferences": [
+          "Next unique Bitcoin/mining story",
+          "Three multimedia verification requests",
+          "Cover style rotation",
+          "Verbatim volunteer editor footer and QR"
+        ],
+        "engagement": "unavailable"
+      },
+      "corrections": []
     }
   ],
   "future_article_template_required_fields": [
