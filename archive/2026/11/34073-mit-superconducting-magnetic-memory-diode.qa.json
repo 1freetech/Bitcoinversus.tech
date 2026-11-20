@@ -1,0 +1,125 @@
+{
+  "post_id": 34073,
+  "title": "MIT Builds a Memory Chip That Can Steer Current",
+  "url": "https://bitcoinversus.tech/2026/11/20/mit-superconducting-magnetic-sandwich-memory-diode-cryogenic-2026/",
+  "status": "publish",
+  "publication_date": "2026-11-20",
+  "archive_path": "archive/2026/11/34073-mit-superconducting-magnetic-memory-diode.gutenberg.html",
+  "editorial": {
+    "category": "Semiconductors / Electrical Engineering / Information Technology",
+    "topic": "MIT magnetic-exchange superconducting memory and programmable diode",
+    "word_count_main_body": 607,
+    "prohibited_editorial_words": [],
+    "originality": "WordPress recent posts, drafts, specific superconducting sandwich, cryogenic memory, Moodera, Ingla-Aynés searches; November GitHub archive checked. No duplicate located.",
+    "primary_sources": [
+      {
+        "url": "https://news.mit.edu/2026/tiny-superconducting-sandwich-could-help-computers-use-less-energy-1120",
+        "date": "2026-11-20"
+      },
+      {
+        "url": "https://journals.aps.org/prl/abstract/10.1103/y1xf-tkm4",
+        "date": "2026-10-05"
+      },
+      {
+        "url": "https://dspace.mit.edu/entities/publication/e3258fc2-4678-4b66-8908-1ec02c11af55",
+        "date": "2026-10"
+      },
+      {
+        "url": "https://qnn-rle.mit.edu/fall-2024-qnn-newsletter/",
+        "date": "2024-10"
+      },
+      {
+        "url": "https://news.mit.edu/2025/closing-superconducting-semiconductors-0617",
+        "date": "2025-06-17"
+      }
+    ],
+    "important_claims": [
+      "Two ferromagnetic insulating layers sandwich an ultrathin superconducting film.",
+      "Selective single-cell switching demonstrated without disturbing neighboring cell.",
+      "Magnetically programmed nonvolatile memory only at cryogenic temperatures.",
+      "At lower temperature device provides preferred directional or resistive blocking modes.",
+      "Paper reports superconducting diode efficiency magnitude >60% at zero applied magnetic field, NOT 60% lower energy consumption.",
+      "No demonstrated dense commercial memory array or cooling-inclusive system power savings."
+    ],
+    "contextual_internal_links": 4,
+    "chart": {
+      "type": "not applicable",
+      "reason": "A numerical comparison chart would conflate diode nonreciprocity, power consumption and unrelated memory technologies; exact measured comparable dataset not released.",
+      "options_considered": [
+        "Bar of energy savings: rejected, no tested system figures",
+        "Line chart of memory energy over time: rejected, no time series",
+        "Device state diagram: used authentic MIT research schematic rather than constructing a simplified diagram."
+      ]
+    }
+  },
+  "cover": {
+    "id": 34069,
+    "dimensions": "1200x630",
+    "style": "fine-art oil painting",
+    "subject": "fictional Asian woman researcher (reverse person rotation entry 8)",
+    "wordmark": "BitcoinVersus.tech",
+    "wordmark_color": "#39FF14",
+    "bottom_left": true,
+    "black_text_highlight": true,
+    "featured_not_repeated_in_body": true
+  },
+  "media": [
+    {
+      "kind": "video",
+      "provider": "MIT Quantum Nanostructures and Nanofabrication Group",
+      "video_id": "48O7o0BdrsM",
+      "date": "2025-05-21",
+      "role": "background separate superconducting nanowire memory",
+      "official_source_verified": true,
+      "saved_shortcode": true,
+      "rendered_iframe": true,
+      "actual_playback_verified": false
+    },
+    {
+      "kind": "official laboratory photograph",
+      "id": 34071,
+      "source": "MIT News, November 20 2026",
+      "credit": "Josep Ingla-Aynés",
+      "html_img_verified": true
+    },
+    {
+      "kind": "video",
+      "provider": "MIT Quantum Nanostructures and Nanofabrication Group",
+      "video_id": "jRClw9cYfss",
+      "date": "2024-09",
+      "role": "background 16-bit superconducting nanowire memory array presentation",
+      "official_source_verified": true,
+      "saved_shortcode": true,
+      "rendered_iframe": true,
+      "actual_playback_verified": false
+    },
+    {
+      "kind": "authentic institutional scientific schematic",
+      "id": 34072,
+      "source": "MIT News November 20 2026",
+      "credit": "Jagadeesh Moodera",
+      "html_img_verified": true
+    }
+  ],
+  "qa": {
+    "wordpress_status_published": true,
+    "public_http_status": 200,
+    "canonical_url_checked": true,
+    "seo_title_description_verified": true,
+    "open_graph_featured_cover_verified": true,
+    "rendered_youtube_iframe_count": 2,
+    "official_science_images_rendered": 2,
+    "qr_footer_preserved": true,
+    "exact_donation_phrase": true,
+    "missing_image_alt_attributes": 0,
+    "desktop_screenshot_service_ready": true,
+    "mobile_screenshot_service_ready": true,
+    "actual_pixel_review": false,
+    "end_user_youtube_playback_verified": false,
+    "notes": [
+      "The original-source video IDs were found in MIT group materials and indexed YouTube records; actual player availability has not been confirmed by playing them.",
+      "Two iframes are verified in WordPress rendered HTML, not equivalent to playback verification.",
+      "The public signed-out page endpoint returns HTTP 200, correct canonical, SEO metadata, and feature image."
+    ]
+  }
+}
