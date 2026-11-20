@@ -1,0 +1,107 @@
+{
+  "post_id": 33957,
+  "title": "GeForce NOW Adds More Fire TV Sticks for PC Gaming",
+  "url": "https://bitcoinversus.tech/2026/11/20/geforce-now-vega-os-fire-tv-sticks-cloud-pc-games-november-2026/",
+  "slug": "geforce-now-vega-os-fire-tv-sticks-cloud-pc-games-november-2026",
+  "published_status": "publish",
+  "publication_date": "2026-11-20",
+  "editorial": {
+    "category": "Gaming / Information Technology",
+    "topic": "GeForce NOW Vega OS Fire TV Stick expansion and discount offers",
+    "body_word_count": 650,
+    "prohibited_terms": [],
+    "originality": "WordPress search for GeForce NOW Fire TV, Vega OS Fire TV, Fire TV, and GeForce NOW Black Friday returned no duplicate coverage; drafts checked.",
+    "four_contextual_internal_links": 4,
+    "source_dates": [
+      "NVIDIA November 19, 2026",
+      "NVIDIA system requirements current November 20, 2026",
+      "Amazon Vega OS specification available 2026",
+      "NVIDIA February 2026 earlier Fire TV introduction"
+    ],
+    "source_urls": [
+      "https://blogs.nvidia.com/blog/geforce-now-thursday-black-friday-2026/",
+      "https://www.nvidia.com/en-us/geforce-now/faq/",
+      "https://blogs.nvidia.com/blog/geforce-now-thursday-amazon-fire-tv-app/",
+      "https://developer.amazon.com/docs/fire-tv/device-specifications-fire-tv-streaming-media-player.html?v=ftvstick4k_2026",
+      "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Blackwell-Architecture-Comes-to-GeForce-NOW/default.aspx"
+    ]
+  },
+  "chart": {
+    "media_id": 33953,
+    "type": "vertical bar",
+    "comparison": "NVIDIA recommended PC internet bandwidth Mbps by modes",
+    "labels": [
+      "1080p 60fps",
+      "1080p 360fps",
+      "5K 120fps"
+    ],
+    "values_mbps": [
+      25,
+      48,
+      65
+    ],
+    "baseline": 0,
+    "disclaimer": "PC streaming reference only, not supported Fire TV modes",
+    "alternatives_considered": [
+      "Vertical bar chart of recommended Mbps selected",
+      "Scatter plot of bandwidth by FPS rejected because resolution confounds",
+      "Line chart rejected because categories are not chronological"
+    ]
+  },
+  "cover": {
+    "media_id": 33952,
+    "dimensions": "1200x630",
+    "style": "photorealistic editorial scene",
+    "person": "white woman, person rotation slot 2",
+    "wordmark": "BitcoinVersus.tech",
+    "wordmark_color": "#39FF14",
+    "position": "bottom left",
+    "tight_black_highlight": true,
+    "duplicate_inside_article": false,
+    "original_art": true
+  },
+  "embeds": [
+    {
+      "type": "YouTube",
+      "id": "jKd6Z5lezkU",
+      "publisher": "NVIDIA GeForce",
+      "topic": "CES 2026 GeForce NOW expansion",
+      "verified_origin": true,
+      "rendered_iframe": true,
+      "actual_playback_verified": false
+    },
+    {
+      "type": "YouTube",
+      "id": "Gs3FvmS9hzg",
+      "publisher": "NVIDIA GeForce",
+      "topic": "Blackwell RTX on GeForce NOW",
+      "verified_origin": true,
+      "rendered_iframe": true,
+      "actual_playback_verified": false
+    }
+  ],
+  "qa": {
+    "saved_wordpress_iframe_count": 2,
+    "chart_present": true,
+    "donation_qr_present": true,
+    "exact_footer_text_saved": true,
+    "seo_title_saved": "GeForce NOW Comes to More Fire TV Sticks: Games and Limits",
+    "seo_description_saved": true,
+    "public_http_status": 200,
+    "public_page_shows": "page",
+    "canonical_link": "https://bitcoinversus.tech/2026/11/20/geforce-now-vega-os-fire-tv-sticks-cloud-pc-games-november-2026/",
+    "missing_alt_count": 0,
+    "featured_image_metadata_verified": true,
+    "desktop_screenshot_service": "ready",
+    "mobile_screenshot_service": "ready",
+    "pixel_review_performed": false,
+    "video_playback_performed": false,
+    "source_link_readback": true,
+    "notes": [
+      "Actual YouTube playback from browser not measured; rendering as iframe on WordPress is confirmed.",
+      "The site screenshot service reported ready for desktop and mobile, but rendered pixels were not directly inspected.",
+      "5K 120 FPS and 1080p 360 FPS are distinct PC modes; article does not attribute these capabilities to newly added Fire TV hardware."
+    ]
+  },
+  "archive_file": "archive/2026/11/33957-geforce-now-fire-tv-vega-os-2026.gutenberg.html"
+}
