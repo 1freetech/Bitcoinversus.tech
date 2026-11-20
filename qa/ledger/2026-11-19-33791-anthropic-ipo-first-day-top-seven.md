@@ -1,0 +1,26 @@
+# BitcoinVersus.Tech Editorial QA: Anthropic First-Day IPO and Top-Seven Claim
+
+- WordPress ID: 33791
+- Headline: Anthropic Closes at $97.17. Is It a Top 7 Company?
+- Published date: 2026-11-19T19:26:32 (site local time), November 19, 2026
+- Canonical permalink: https://bitcoinversus.tech/2026/11/19/anthropic-ipo-first-day-close-97-17-top-seven-market-cap-ranked-2026/
+- Status verified using WordPress edit and rendered-view responses: publish
+- Editorial category: AI, Business, Finance, Technology, Trending News
+- Dedupe archive search: WordPress searches "Anthropic", "IPO", "ANT", "top 7" and "world's most valuable". Existing Nov 19 pre-IPO risk report #33617 and earlier employee lockup/forecast stories are distinct from the Nov 19 market-close results.
+- Original news lead: Polymarket Money X status 2123570394263167218, submitted by user. WordPress rendered populated tweet text attributing "world's 7th most valuable company" to Bloomberg. X displays post date Nov 20 UTC. No independent Bloomberg ranking reproduced as a directly verified standard-market-cap fact.
+- Valuation basis explained: Anthropic's closing standard/outstanding-share market cap approximately $1.28T, globally 12th on Nov 19 per Stock Analysis/S&P Global. Reuters reported approximately $1.77T fully diluted at the same close. Mixing diluted and standard valuations creates noncomparable ranks.
+- Primary sources: Anthropic Nov 18 pricing release, final US SEC prospectus (424B4); Nasdaq IPO opening bell Nov 19 2026. Reuters and Associated Press Nov 19 first day closing reports; Stock Analysis data.
+- Prices: offer $83.00, first trade $111.50, close $97.17, date Nov 19 2026, all US dollars/share; arithmetic 111.5/83-1=34.34% initial premium; 97.17/83-1=17.07% IPO investor closing premium; 97.17/111.5-1=-12.85% from public opening trade.
+- Offering: 980M shares at $83 gives $81.34B gross face value, includes secondary sales. Initial public offering does not imply entire proceeds go to Anthropic.
+- Article length: 620 narrative words excluding source list/footer; prohibited original-editorial words absent; 4 verified contextual internal links.
+- Original featured cover: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-anthropic-ipo-first-day-cover-1200x630-1.jpg; media ID 33787, dimensions 1200 x 630. Style oil painting. After generating clean artwork, added one "BitcoinVersus.tech" watermark, 14px neon green #39FF14 on a tight black bottom-left rectangle; local full-cover visual inspection found no overlapping duplicate tag.
+- Chart SmartChart review: 3-point vertical bars selected over line chart (would imply unobserved continuous intra-day path) and scatter chart (not meaningful for three event prices). Original chart visually inspected, zero baseline, currency units and dates, values clearly labeled. An initial rendering of the chart had unintended math-text formatting in heading; corrected before article creation and replaced with WordPress media ID 33790, URL https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/anthropic-ipo-offer-open-close-nov19-2026-vertical-corrected.png. Uncorrected initial media ID 33788 is not embedded in published story.
+- In-article original media: user-supplied X post rendered as a populated Twitter blockquote, media #33790 original vertical bar chart, Bloomberg Technology's archival Aug 21 2026 YouTube video bmh4MqQyda4 rendered as an iframe with accurate pre-IPO timing. 3 in-story media units (donation QR excluded).
+- External authentic Nasdaq opening-bell ceremony video linked to source at https://www.nasdaq.com/videos/anthropic-pbc-rings-nasdaq-stock-market-opening-bell; not labeled as a tested Gutenberg media embed.
+- Gutenberg saved view length 12699 characters, 1 populated X social embed, 1 YouTube iframe, 1 correctly labeled chart.
+- Four internal links, no empty anchors, image alt text for all in-article images, SEO title+description retained, Editor's Note and donation QR with disclaimer retained, cover not duplicated inside post body.
+- SEO title: Anthropic IPO Day One: $97.17 Close and Top 7 Ranking Fact-Check
+- SEO description: Anthropic closed its IPO debut at $97.17, up 17%. Check the $1.77T fully diluted value against its $1.28T standard market cap and top-seven claims.
+- Publish status and saved server-rendered WordPress markup: VERIFIED.
+- Independent public article browser fetch attempted on Nov 19 2026 and returned inaccessible. Therefore live external HTML, mobile layout, iframe playback and X client interaction remain UNVERIFIED. The appearance of populated X and iframe markup is not proof that visitors can play media.
+- GitHub archived HTML is the actual WordPress published edit-context source, and QA log records limitations rather than treating partial checks as complete.
