@@ -31,6 +31,18 @@ The goal is for BitcoinVersus.Tech to behave like its own internal Wikipedia: re
 This rule applies site-wide and should be checked during editing, live-page inspection, and archive verification before publication is considered complete.
 
 
+## Permanent Editorial Footer Wording — November 20, 2026 (Supersedes All Prior Editor's Note Text)
+
+**For every new BitcoinVersus.Tech article, news story, chart story, ranking, or lesson, use the following Editor's Note sentence EXACTLY as written by the editor.** Do not rewrite, paraphrase, grammar-correct, pluralize `initiative`, add a donation request to the quote, or replace any word. The sentence deliberately ends with `below` and has no extra punctuation in the canonical string.
+
+> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below
+
+**WordPress reusable synced pattern:** `BitcoinVersus.Tech | Standard Editorial Footer | Approved 2026-11-20`, WordPress pattern ID **33935**. Insert with the native Gutenberg block reference `<!-- wp:block {"ref":33935} /-->` after the article's concluding content (and optional separator), instead of copying a stale footer paragraph. Synced pattern content contains the exact approved italic Editor's Note, the original donation QR `24043`, voluntary 5,000-satoshi scanning instructions with verified existing recipient address, and the financial-information disclaimer.
+
+**Publication QA:** Confirm editor-source includes block reference 33935, WordPress rendered content expands the referenced paragraph and displays the full exact sentence, the original QR image and disclaimer. Avoid duplicate inline QR blocks or duplicate disclaimers. Never insert retired advertisement or social-promotion sections. Do not confuse the editorial article footer with the theme's site-wide structural footer. If a publication path cannot use a synced block, insert the verbatim quote as a single italic paragraph followed by the original QR and established scanner instructions/disclaimer, and record the exception.
+
+**Historical articles:** The change governs all **future** publications immediately. An older article containing a hardcoded prior footer remains unchanged until deliberately corrected; do not claim historical site-wide retroactive conversion. When editing a recently published article, replace its hardcoded note/QR/disclaimer tail with the reusable synced pattern and rearchive the resulting Gutenberg source.
+
 ## Publication Footer Standard — October 29, 2026 (Supersedes Earlier Footer Rotation)
 
 For **all new BitcoinVersus.Tech stories, rankings, editorials, and technical lessons**, do **not** include an advertisement label or section, a promotional X/Twitter post or link, or a decorative site-branding block in the article footer. The prior automatically embedded branded X promotion (status `1937006164555993338`) and the prior advertisement section have been retired and must not be automatically reinserted.
