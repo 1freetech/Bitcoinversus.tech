@@ -2835,6 +2835,151 @@
         "engagement": "unavailable"
       },
       "corrections": []
+    },
+    {
+      "post_id": 34065,
+      "article_title": "Bitcoin Miners Debate Faster Relay of Losing Blocks",
+      "publication_date": "2026-11-20",
+      "content_type": "standard_news",
+      "category_names": [
+        "Bitcoin",
+        "Bitcoin Mining",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        36507086,
+        57414501,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/20/bitcoin-bip332-stale-block-relay-miner-reward-edge-november-2026/",
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "evidence": "WordPress published post #34065 context=edit and rendered context=view verified; independent public-page fetch blocked"
+      },
+      "editorial_body_word_count": 714,
+      "original_sources": [
+        "https://bitcoinops.org/en/newsletters/2026/11/20/",
+        "https://github.com/bitcoin/bips/blob/master/bip-0332.md",
+        "https://groups.google.com/g/bitcoindev/c/AwOPNxF15mU/m/NF7UNdJoAQAJ",
+        "https://github.com/bitcoin/bips/blob/master/bip-0434.md"
+      ],
+      "duplicate_check": {
+        "wordpress": "No direct BIP332, stale-tip relay, 16.36 BTC, or same-model story found via targeted WordPress searches. One-block reorg story and earlier decentralized payout research were contextual.",
+        "github": "No existing archive path #34065 before Gutenberg source archiving",
+        "scope": "Keyword/title WordPress and GitHub path checks; not all-post semantic comparison"
+      },
+      "internal_links": {
+        "count": 4,
+        "targets_status": "Four published WordPress contextual article routes observed; external browser click-through not verified"
+      },
+      "in_story_media": {
+        "count": 2,
+        "types": [
+          "a16z research YouTube iframe",
+          "Andreas Antonopoulos original YouTube iframe"
+        ],
+        "video_ids": [
+          "VnxFJaMegYE",
+          "JHz7LM4ncLw"
+        ],
+        "wordpress_rendered_iframes": 2,
+        "actual_video_playback": "not independently tested",
+        "captions_after_media": true
+      },
+      "featured_cover": {
+        "media_id": 34064,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "fine-art oil painting",
+        "subjects": "two contrasting Bitcoin ASIC aisles and competing orange-blue network routes",
+        "watermark": "BitcoinVersus.tech in #39FF14 on tight black highlight at lower left",
+        "cover_not_duplicated_in_body": true,
+        "original": true
+      },
+      "chart": {
+        "present": false,
+        "reason": "Two hypothetical rewards from same modeled strategy, no observed time series or comparable measured cohort; a zero-baseline bar chart would obscure delta",
+        "candidate_types_considered": [
+          "vertical bars",
+          "line chart",
+          "dot plot"
+        ]
+      },
+      "model": {
+        "description": "Anthony Towns's November 2026 discussion of BIP 332 stale-block relay and strategic mining",
+        "hashrate_fraction": 0.2,
+        "relay_delay_seconds": [
+          5,
+          1
+        ],
+        "annual_modeled_incremental_expected_reward_btc": [
+          16.1,
+          16.36
+        ],
+        "difference_btc_year": 0.26,
+        "measurement_type": "theoretical scenario estimates, not observed earnings or pool total revenue"
+      },
+      "footer": {
+        "approved_editors_note_exact": true,
+        "synced_block_ref_id": 33935,
+        "original_donation_qr_id": 24043,
+        "qr_count": 1,
+        "disclaimer_rendered": true
+      },
+      "archive": {
+        "qa_record": "archive/2026/11/34065-bip332-stale-block-relay-miner-incentives.md",
+        "exact_gutenberg": "archive/2026/11/34065-bip332-stale-block-relay-miner-incentives.gutenberg.html"
+      },
+      "rotation": {
+        "category": "Bitcoin mining / network relay incentives",
+        "previous_category": "Bitcoin mining / open-source ASIC software",
+        "cover_style": "oil painting",
+        "previous_cover": "colored pencil"
+      },
+      "qa_score": {
+        "total": 89,
+        "max": 100,
+        "components": {
+          "Accuracy and primary-source verification": 25,
+          "Originality and nonduplicate check": 15,
+          "Technical depth, caveats and clarity": 15,
+          "Relevant media and WordPress iframe markup": 10,
+          "Cover and meaningful visual choices": 9,
+          "Contextual links and SEO": 10,
+          "WordPress publishing and rendering": 5
+        },
+        "unverified_gates": [
+          "Actual YouTube playback",
+          "Independent responsive desktop/mobile layout",
+          "External public webpage fetch"
+        ],
+        "status": "Published and WordPress HTML verified; actual video playback and external browser rendering unverified"
+      },
+      "observations": [
+        "BIP 332 is draft P2P service, not deployed consensus change",
+        "20%-hashrate example estimated 16.1 vs 16.36 BTC per year in narrow strategic mining advantage, not total pool rewards",
+        "Header-only relay may improve observability while reducing full-block reorganization incentive concern"
+      ],
+      "three_improvements_to_carry_forward": [
+        "Independently verify video playback in browser when available",
+        "Avoid generalizing a theoretical model across all pool types and miners",
+        "Confirm exact synced editorial footer and single QR after each publish"
+      ],
+      "feedback": {
+        "user_preferences": [
+          "Next nonduplicate Bitcoin/mining topic",
+          "Verified source media",
+          "Oil-painting cover rotation",
+          "Exact approved footer"
+        ],
+        "engagement": "not available"
+      },
+      "corrections": []
     }
   ],
   "future_article_template_required_fields": [
