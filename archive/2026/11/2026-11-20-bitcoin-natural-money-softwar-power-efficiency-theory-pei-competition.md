@@ -50,6 +50,12 @@ Better ASICs let a miner generate more hashes with the same electricity input, p
 
 *Archival Jason Lowery interview with Robert Breedlove explaining *Softwar* and power projection. The video explains the earlier thesis and is not an independent test of PEI.*
 
+The longer-run efficiency outlook can be visualized as a range of scenarios rather than a predetermined arrival date. The following original Power Efficiency Theory chart explores different annual reductions in joules per terahash and identifies the proposed 1 J/TH threshold.
+
+![Bitcoin mining efficiency projections for 2025 to 2046 in joules per terahash, comparing seven assumed annual improvement rates with a reference line at 1 J/TH.](https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/pei-mining-efficiency-2025-2046-user-projections.jpeg)
+
+**Figure 3. Projected mining efficiency, 2025–2046.** Author-supplied Power Efficiency Theory scenarios plot a 9.5 J/TH starting reference in 2025, mark the 8.9 J/TH S23 XP Hyd. rating for 2026, and illustrate labeled annual efficiency improvements of 5%, 8.3%, 10%, 15%, 20%, 25% and 30%. Lower J/TH means less energy per terahash. The dashed 1 J/TH line marks a proposed research milestone, not a verified future achievement. Scenario curves are conditional projections, not measured historical outcomes or guaranteed milestone dates.
+
 The bridge becomes especially clear in the [published 24-month PEI calculation](https://bitcoinversus.tech/2026/10/12/why-pei-works-better-over-longer-time-windows/): network hashrate increased from **640.61 to 1,029 EH/s**, while the selected leading ASIC efficiency benchmark improved from **13.5 to 8.9 J/TH**. Consequently, (1,029 ÷ 640.61) × (13.5 ÷ 8.9) ≈ **2.436×**. Applying the model's selected $57,747.77 physical-price anchor produced an illustrative **$140.7K relative price**. That figure reflects the chosen assumptions and endpoints, not established intrinsic value or a market forecast.
 
 ![BitcoinVersus.Tech 24-month PEI chart from October 2026 illustrating a 2.436-times index and an approximately $140.7K modeled relative price](https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoin-pei-24-month-reading-oct-2026.png)
@@ -62,6 +68,12 @@ Burton's proposed answer is that a monetary network secured by costly, competiti
 
 Yet scarcity and costly security alone cannot establish universal monetary adoption. Money also depends on social acceptance, liquidity, legal institutions, settlement utility and stable expectations. Anthropological research documents [competing explanations for money's origins](https://link.springer.com/article/10.1007/s10816-025-09694-9). Calling Bitcoin “natural money” therefore remains a reasoned interpretive thesis, not a biological classification or an empirical theorem.
 
+A separate Power Efficiency Theory illustration sets projected ASIC energy efficiency beside illustrative Bitcoin price paths. The two axes represent different measurements and independent compounding assumptions; no measured price-to-efficiency relationship is established by placing them on the same timeline.
+
+![Dual-axis Bitcoin price and mining energy efficiency scenarios for 2025 to 2040, with J/TH on the left axis and Bitcoin USD price on the right axis.](https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/pei-bitcoin-price-and-joules-per-terahash-scenarios-2025-2040.webp)
+
+**Figure 5. Bitcoin price and mining efficiency, 2025–2040.** Author-supplied Power Efficiency Theory illustration combines two separately assumed sets of compounded paths: mining efficiency improving by 15%, 20% or 25% annually, plotted in J/TH on the left axis, and Bitcoin price increasing by 15%, 20% or 25% annually, plotted in USD on the right. The horizontal 1 J/TH reference denotes the proposed efficiency milestone. Price and energy trajectories are **hypothetical scenarios**; displaying them together does not demonstrate causation, establish fair value, or predict actual prices.
+
 [tweet 2118533414538342452]
 
 *BitcoinVersus.Tech's original November 2026 [ASIC efficiency research post](https://x.com/bitcoinversus_/status/2118533414538342452) supplies the historical progression discussed above, not evidence that a monetary price must rise proportionally.*
@@ -69,10 +81,6 @@ Yet scarcity and costly security alone cannot establish universal monetary adopt
 ## The strongest test is where the curve breaks
 
 A competition-driven improvement is not guaranteed to occur every year. The same [PEI research](https://bitcoinversus.tech/2026/10/12/why-pei-works-better-over-longer-time-windows/) found a roughly **0.997×** 12-month reading because the chosen daily hashrate endpoints fell even as rated hardware efficiency improved. A short window can reverse the longer structural trend.
-
-![BitcoinVersus.Tech 12-month PEI chart showing approximately 0.997-times progression in October 2026](https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoin-pei-12-month-reading-oct-2026.png)
-
-***Existing PEI counterexample, October 2026.** The 12-month measurement uses 1,102 to 1,029 EH/s and 9.5 to 8.9 J/TH, producing approximately 0.997×. A decline can occur despite more efficient ASIC designs; endpoint selection also matters.*
 
 Efficiency also does not automatically reduce total electricity use. [Bitdeer's November 10, 2026 earnings report](https://bitdeer.gcs-web.com/news-releases/news-release-details/bitdeer-reports-unaudited-third-quarter-2026-results-record) lists average miner efficiency improving from 20.1 to 15.4 J/TH year over year, while quarterly electricity use increased from 1.656 to 3.098 TWh as operations expanded. The figures illustrate why energy per hash, total consumption, network security and financial value must be analyzed separately.
 
