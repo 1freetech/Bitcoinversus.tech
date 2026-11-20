@@ -1,0 +1,80 @@
+{
+  "id": 34027,
+  "title": "Bacteria Grow Their Own Electrical Wires",
+  "url": "https://bitcoinversus.tech/2026/11/20/cable-bacteria-natural-nickel-organic-conducting-nanowires-2026/",
+  "publication_date": "2026-11-20T11:34:11",
+  "status": "publish",
+  "category": "Science / biotechnology / electrical engineering",
+  "main_body_word_count": 658,
+  "originality": "WordPress recent, draft and keyword search plus November GitHub archive checked; no cable-bacteria MOF duplicate",
+  "primary_sources": [
+    "https://www.nature.com/articles/s41467-026-76989-0",
+    "https://www.diamond.ac.uk/default/Science/Research/Highlights/2026/Scientists-discover-the-first-MOF-made-by-nature.html",
+    "https://www.esrf.fr/home/news/general/content-news/general/unveiling-the-structure-of-living-electronics-produced-by-bacteria.html"
+  ],
+  "source_dates": [
+    "Nature Communications September 2026",
+    "ESRF September 28 2026",
+    "Diamond November 17 2026"
+  ],
+  "science_notes": [
+    "Whole fiber measured conductivity 5–500 S/cm",
+    "Nanoribbon network 150–15,000 S/cm estimated, not a directly measured equivalent",
+    "No commercial product or power generation demonstrated"
+  ],
+  "four_contextual_internal_links": true,
+  "prohibited_original_editorial_words": [],
+  "chart_type": "none; measured and cross-section-normalized conductivity not equivalent for a meaningful comparison chart",
+  "chart_candidates": [
+    "measured-vs-inferred bars rejected",
+    "time-series rejected",
+    "nanoribbon count plot rejected"
+  ],
+  "cover": {
+    "id": 34016,
+    "dimensions": "1200x630",
+    "style": "detailed colored-pencil",
+    "person": "none",
+    "watermark": "BitcoinVersus.tech",
+    "watermark_color": "#39FF14",
+    "black_highlight": true
+  },
+  "media": [
+    {
+      "kind": "YouTube",
+      "id": "BVBDvH6RgPU",
+      "rendered_iframe": true,
+      "playback_tested": false
+    },
+    {
+      "kind": "official ESRF microscopy",
+      "id": 34017,
+      "rendered_img": true
+    },
+    {
+      "kind": "YouTube American Chemical Society",
+      "id": "rko6VKM-eoQ",
+      "rendered_iframe": true,
+      "playback_tested": false
+    },
+    {
+      "kind": "official Diamond diagram",
+      "id": 34019,
+      "rendered_img": true
+    }
+  ],
+  "qa": {
+    "wordpress_published": true,
+    "public_http_status": 200,
+    "two_youtube_iframes_rendered": true,
+    "cover_not_duplicated": true,
+    "donation_qr_verified": true,
+    "seo_and_canonical_verified": true,
+    "missing_image_alt_count": 0,
+    "desktop_mobile_screenshot_ready": true,
+    "pixel_level_review_completed": false,
+    "playback_verified": false,
+    "independent_web_fetch": false
+  },
+  "archive_path": "archive/2026/11/34027-cable-bacteria-nickel-organic-living-wires.gutenberg.html"
+}
