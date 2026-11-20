@@ -1,0 +1,47 @@
+<!-- wp:paragraph --><p>AI data centers could eventually cool powerful GPUs without a chilled-water plant. On November 16, 2026, ZutaCore and cooling manufacturer Munters unveiled <a href="https://blog.zutacore.com/press-releases/zutacore-unveils-z2o-zero-h2o-near-zero-cooling-e">Z₂O at the SC26 supercomputing conference</a> in Chicago. The proposed architecture transfers heat from processor cold plates to outdoor dry coolers through one sealed, two-phase liquid circuit, dispensing with several conventional facility components. Its headline efficiency is modeled, not an independently measured production result.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=XmCRCf8TOdE]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p>Munters' official September 2024 video demonstrates its earlier work combining SyCool heat rejection with ZutaCore direct-to-chip cooling. Archival technical background, not footage from the SC26 Z₂O launch.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">How a chip can cool itself without water</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Z₂O circulates an electrically insulating dielectric fluid through cold plates attached to hot processors. Heat boils part of the fluid. The vapor carries thermal energy to the outdoor heat-rejection system, condenses, and returns toward the servers. Gravity and buoyancy do much of the circulation, with pumps retained for assistance and redundancy. No water-based cooling tower, separate facility-water loop, liquid-to-liquid heat exchanger or coolant distribution unit is specified in the reference design.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>ZutaCore describes a repeatable 625 kW IT block, with 500 kW cooled through the two-phase loop and 125 kW through air. The 80/20 thermal split is a design assumption, not a claim that every GPU rack always maintains identical load distribution. Redundant pumps and spare rooftop heat-rejection capacity are part of the reliability plan.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">What does a pPUE of 1.03 mean?</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The manufacturers report a modeled annualized cooling-specific partial power usage effectiveness, or pPUE, of 1.030, compared with 1.115 for a high-efficiency chilled-water baseline. Under identical assumptions, every megawatt consumed by IT equipment would add approximately 30 kW of cooling electricity for Z₂O versus 115 kW for the baseline. The difference is 85 kW, equivalent to 73.9% lower modeled cooling electricity.</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":33977,"sizeSlug":"large","linkDestination":"none"} --><figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/zutacore-z2o-munters-modeled-cooling-power-per-mw-2026.png?w=1024" alt="Vertical bars show modeled cooling overhead at a constant 1 MW IT load: ZutaCore Z2O 30 kW and high-efficiency chilled water 115 kW." class="wp-image-33977" /><figcaption class="wp-element-caption">Original BitcoinVersus.Tech vertical-bar analysis. Source: ZutaCore and Munters' November 16, 2026 reference model. Calculated cooling power = (pPUE − 1) × 1,000 kW. Vendor projections for Dulles, Virginia at full IT load, not independent field measurements or whole-building PUE.</figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p>If that 85 kW advantage persisted around the clock for an entire year, the arithmetic would imply 744.6 MWh less electricity per megawatt of IT capacity. Neither an annual operating saving nor a customer bill has been independently verified. The model uses hourly Dulles, Virginia weather data, 43°C fluid saturation temperature, an 80/20 liquid-to-air split and continuous full IT loading. Actual performance depends on climate, service levels, component availability and other facility overhead.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=sdyFkqFOXpY]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p>ZutaCore's official January 2026 interview with company president and COO Brian Lillie explains two-phase boiling, retrofit constraints and the difference from conventional liquid cooling. Recorded before the new launch.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Waterless cooling still comes with trade-offs</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The claim of zero water use concerns the specified cooling process. It does not measure water consumed in electricity production, equipment manufacturing or the wider supply chain. Dielectric fluid selection, long-term leak management, maintenance procedures and mechanical reliability also require evaluation. Cooling-specific pPUE cannot substitute for a measured facility-wide PUE.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>ZutaCore says an initial integrated system uses an ASRock Rack server based on NVIDIA HGX B300 hardware. A public launch announcement does not establish long-duration site performance across varied climates. The proposed reduction in plumbing may simplify deployment, although facility engineers still must verify power, rooftop space, electrical redundancy and heat-rejection capacity.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Why data center operators should pay attention</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.Tech has compared <a href="https://bitcoinversus.tech/2026/10/15/top-7-data-center-cooling-technologies-in-2026/">seven major data center cooling approaches</a> and covered <a href="https://bitcoinversus.tech/2026/11/01/aligned-delta-cube-3-air-cooling-10-percent-data-center-2026/">Aligned's air-cooling improvements</a>. Our reporting on <a href="https://bitcoinversus.tech/2026/11/19/lambda-nvidia-cpo-optical-switches-10000-blackwell-gpus-2026/">Lambda's GPU cluster</a> and <a href="https://bitcoinversus.tech/2026/11/11/ampt-800vdc-80kw-battery-converter-gpu-submillisecond-2026/">Ampt's response to GPU power spikes</a> illustrates why cooling and electrical design must advance together. Z₂O offers a testable architectural alternative, provided independently observed deployments can substantiate its attractive projections.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Primary reporting and calculation</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><a href="https://blog.zutacore.com/press-releases/zutacore-unveils-z2o-zero-h2o-near-zero-cooling-e">ZutaCore official Z₂O announcement</a>, November 16, 2026, including model footnote and assumptions.</li><li><a href="https://www.datacenterfrontier.com/press-releases/article/55419123/zutacore-and-munters-unveil-waterless-chip-to-rooftop-cooling-architecture-for-ai-data-centers">Data Center Frontier</a>, November 16, 2026, launch context.</li><li><a href="https://blog.zutacore.com/zutacore-blog/waterless-data-center-cooling-zero-cooling-water-a-quarter-of-the-energy">ZutaCore technical background</a>, October 2026, on ambient conditions and heat rejection.</li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p>Reporting note: The featured photorealistic cover is original conceptual artwork, not a photograph of an installed Z₂O system. Both verified YouTube listings predate the product announcement. The chart reproduces arithmetic from vendor model assumptions, not measured equipment performance. Video playback on every reader device is not independently guaranteed.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please scan the QR code below</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24593,"width":"280px","sizeSlug":"medium","linkDestination":"none"} --><figure class="wp-block-image size-medium is-resized"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr.png?w=300" alt="BitcoinVersus.Tech research donation QR code for 5,000 satoshis." class="wp-image-24593" style="width:280px" /><figcaption class="wp-element-caption">Optional research support: 5,000 satoshis. Check the address and amount shown by your wallet before sending.</figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.Tech provides technical reporting for informational purposes and offers no engineering, investment or financial performance guarantee.</p><!-- /wp:paragraph -->
