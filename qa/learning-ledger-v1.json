@@ -2069,6 +2069,159 @@
         "measurements": "no user-site metrics exposed"
       },
       "corrections": []
+    },
+    {
+      "post_id": 33988,
+      "article_title": "Opera Picks Stripe’s Privy for 20 Million MiniPay Wallets",
+      "publication_date": "2026-11-20",
+      "content_type": "standard_news",
+      "category_names": [
+        "Finance",
+        "Business",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        4269,
+        179,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/20/opera-minipay-20-million-wallets-stripe-privy-security-2026/",
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "evidence": "WordPress post readback both context=edit and context=view; independent public site fetch blocked"
+      },
+      "editorial_body_word_count": 650,
+      "original_sources": [
+        "https://press.opera.com/2026/11/19/minipay-privy/",
+        "https://opera.gcs-web.com/news-releases/news-release-details/minipay-upgrades-its-20-million-stablecoin-wallets-celo-stripe",
+        "https://press.opera.com/2026/11/12/minipay-link-by-stripe/",
+        "https://press.opera.com/2025/09/16/minipay-turns-two-10-million-wallets/",
+        "https://press.opera.com/2026/03/31/minipay-walletconnect/"
+      ],
+      "duplicate_check": {
+        "wordpress": "WordPress exact MiniPay and Opera Privy searches returned no existing same-topic article or draft prior to saving",
+        "github": "GitHub exact MiniPay Privy keyword search returned no indexed article before publication",
+        "scope": "Exact and keyword checks only, not exhaustive semantic all-post deduplication"
+      },
+      "internal_links": {
+        "count": 5,
+        "targets_status": "Existing WordPress published routes checked via archive lookup"
+      },
+      "in_story_media": {
+        "count": 4,
+        "types": [
+          "YouTube iframe",
+          "official company image",
+          "YouTube iframe",
+          "original vertical bar chart"
+        ],
+        "video_ids": [
+          "rmujkblqEho",
+          "-JrKuUpYETM"
+        ],
+        "wordPress_rendered_iframes": 2,
+        "actual_video_playback": "not tested",
+        "official_image_media_id": 33981,
+        "chart_media_id": 33980,
+        "captions_after_media": true
+      },
+      "featured_cover": {
+        "media_id": 33979,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "detailed modern colored pencil",
+        "subjects": "mobile stablecoin wallet, cross-device sign-in, cryptographic key infrastructure",
+        "watermark": "BitcoinVersus.tech #39FF14 on tight black highlight bottom left",
+        "cover_not_duplicated_in_body": true
+      },
+      "chart": {
+        "present": true,
+        "type": "vertical bar",
+        "source": "Opera company press releases July 2025 through November 2026",
+        "labels": [
+          "Jul 2025",
+          "Sep 2025",
+          "Dec 2025",
+          "Feb 2026",
+          "Mar 2026",
+          "Nov 2026"
+        ],
+        "values_millions": [
+          8,
+          10,
+          11,
+          12.6,
+          14,
+          20
+        ],
+        "last_value_is_lower_bound": true,
+        "not_measure": "Cumulative activations are not active users; November value represented at minimum lower bound",
+        "baseline_zero": true,
+        "media_id": 33980,
+        "alternatives_considered": [
+          "line (implies interpolation over sparse reports)",
+          "dot plot (less legible in context)",
+          "vertical columns (selected)"
+        ]
+      },
+      "footer": {
+        "approved_editors_note_exact": true,
+        "synced_block_ref_id": 33935,
+        "original_donation_qr_id": 24043,
+        "qr_count": 1,
+        "disclaimer_rendered": true
+      },
+      "archive": {
+        "qa_record": "archive/2026/11/33988-opera-minipay-stripe-privy.md",
+        "exact_gutenberg": "archive/2026/11/33988-opera-minipay-stripe-privy.gutenberg.html"
+      },
+      "rotation": {
+        "category": "Finance / Business",
+        "previous_category": "Space",
+        "cover_style": "colored-pencil",
+        "previous_cover": "anime"
+      },
+      "qa_score": {
+        "total": 89,
+        "max": 100,
+        "components": {
+          "Accuracy and source verification": 24,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 14,
+          "Working embeds and media relevance": 11,
+          "Cover and visualization quality": 9,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 6
+        },
+        "unverified_gates": [
+          "Actual YouTube playback",
+          "Desktop/mobile device layout",
+          "Independent external public webpage inspection"
+        ],
+        "status": "partial QA: WordPress live publish and rendered media verified, independent playback unavailable"
+      },
+      "observations": [
+        "Opera says 20M+ cumulative wallet activations, not 20M verified active people",
+        "Announced wallet migration starts later in 2026; no proof all wallets already migrated",
+        "Company video sources predate Privy partnership and were labeled correctly"
+      ],
+      "three_improvements_to_carry_forward": [
+        "Use a real browser test for video playback and mobile page layout when supported",
+        "Separate activation count, unique users and migration completion evidence",
+        "Keep the synced footer exact and confirm QR duplication checks"
+      ],
+      "feedback": {
+        "user_preferences": [
+          "Category and cover rotation; strict embed verification; latest approved footer"
+        ],
+        "engagement": "not accessible"
+      },
+      "corrections": []
     }
   ],
   "future_article_template_required_fields": [
