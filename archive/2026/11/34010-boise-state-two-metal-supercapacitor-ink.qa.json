@@ -1,0 +1,202 @@
+{
+  "article_id": 34010,
+  "title": "Scientists Print Supercapacitors With Two-Metal Ink",
+  "url": "https://bitcoinversus.tech/2026/11/20/boise-state-niobium-tantalum-ink-printed-supercapacitors-2026/",
+  "slug": "boise-state-niobium-tantalum-ink-printed-supercapacitors-2026",
+  "status": "publish",
+  "article_date": "2026-11-20",
+  "topic": "Boise State niobium tantalum dichalcogenide nanosheet ink and aerosol-jet printed flexible supercapacitors",
+  "categories": "energy, electrical engineering, semiconductors, technology, trending news",
+  "source_dates": {
+    "Communications_Materials_paper": "2026-11-04",
+    "Boise_State_release": "2026-11-16",
+    "research_authors_explainer": "2026-11-19",
+    "contextual_researcher_interviews": "2025-10-10 and 2025-10-14"
+  },
+  "primary_sources": [
+    "https://doi.org/10.1038/s43246-026-01405-5",
+    "https://www.boisestate.edu/news/2026/11/16/advancing-tiny-high-powered-energy-storage-devices-with-first-of-its-kind-2d-alloy-ink/",
+    "https://techxplore.com/news/2026-11-metals-ink-reshaping-energy-storage.html"
+  ],
+  "measurements": {
+    "niobium_sulfide_mF_per_cm2": 0.038,
+    "tantalum_sulfide_mF_per_cm2": 1.02,
+    "alloy_mF_per_cm2": 11.05,
+    "alloy_over_tantalum_ratio": 10.833333333333334,
+    "alloy_over_niobium_ratio": 290.7894736842106,
+    "selected_comparison_unit": "areal capacitance mF/cm²",
+    "alloy_volumetric_F_per_cm3": 184.2,
+    "preferred_conservative_scan_rate_mV_per_s": 5,
+    "pattern_feature_width_micrometers_approx": 50,
+    "extended_voltage_window_capacitance_mF_per_cm2_approx": 30,
+    "extended_voltage_values_not_comparable": true
+  },
+  "chart": {
+    "catalog": "https://github.com/1freetech/SmartChart/blob/main/atlas/catalog.json",
+    "catalog_version": "2.0.0",
+    "catalog_types_reviewed": 40,
+    "chart_types": [
+      "line",
+      "area",
+      "stackedArea",
+      "step",
+      "candlestick",
+      "spark",
+      "slope",
+      "bump",
+      "bars",
+      "groupedBars",
+      "stackedBars",
+      "percentBars",
+      "lollipop",
+      "dumbbell",
+      "bullet",
+      "waterfall",
+      "pareto",
+      "tornado",
+      "histogram",
+      "boxplot",
+      "violin",
+      "dot",
+      "density",
+      "scatter",
+      "bubble",
+      "heatmap",
+      "hexbin",
+      "donut",
+      "treemap",
+      "waffle",
+      "sunburst",
+      "sankey",
+      "funnel",
+      "gantt",
+      "calendar",
+      "control",
+      "gauge",
+      "radar",
+      "choropleth",
+      "symbolMap"
+    ],
+    "candidates": [
+      {
+        "type": "bars",
+        "assessment": "selected, 3 material comparisons, absolute values and zero baseline"
+      },
+      {
+        "type": "lollipop",
+        "assessment": "rejected, small niobium value difficult to discern"
+      },
+      {
+        "type": "dot",
+        "assessment": "rejected, valid alternative but less immediate for 3 absolute magnitudes"
+      }
+    ],
+    "selected": "vertical bar chart",
+    "source": "Communications Materials 2026 paper, within-study parent-compound comparison",
+    "units": "mF/cm²",
+    "zero_baseline": true,
+    "source_values": [
+      {
+        "label": "NbS2",
+        "areal_capacitance_mF_cm2": 0.038
+      },
+      {
+        "label": "TaS2",
+        "areal_capacitance_mF_cm2": 1.02
+      },
+      {
+        "label": "Nb0.5Ta0.5S2",
+        "areal_capacitance_mF_cm2": 11.05
+      }
+    ],
+    "no_forecasts_as_history": true,
+    "media_id": 34006,
+    "export_dimensions_px": [
+      1888,
+      1024
+    ],
+    "printed_alt_text": true,
+    "chart_not_a_full_battery_capacity_comparison": true
+  },
+  "cover": {
+    "style": "fine-art oil painting",
+    "media_id": 34005,
+    "pixels": [
+      1200,
+      630
+    ],
+    "wordmark": "BitcoinVersus.tech",
+    "neon_color": "#39FF14",
+    "background": "tight black highlight",
+    "position": "bottom-left",
+    "original_illustration_not_actual_lab_photo": true
+  },
+  "media": [
+    {
+      "type": "video",
+      "youtube_id": "e6BaqFX1Xd4",
+      "source": "Micron School of Materials Science and Engineering",
+      "date": "2025-10-14",
+      "context": "interview with study research supervisor David Estrada",
+      "video_from_2026_experiment": false
+    },
+    {
+      "type": "chart",
+      "media_id": 34006,
+      "original_data_plot": true
+    },
+    {
+      "type": "video",
+      "youtube_id": "OARLIed5i4g",
+      "source": "Boise State Alumni and Friends",
+      "date": "2025-10-10",
+      "context": "profile of research supervisor David Estrada",
+      "video_from_2026_experiment": false
+    },
+    {
+      "type": "research_photo",
+      "media_id": 34007,
+      "source": "Boise State University",
+      "credit": "Priscilla Grover"
+    },
+    {
+      "type": "research_photo",
+      "media_id": 34008,
+      "source": "Boise State University",
+      "credit": "Priscilla Grover"
+    }
+  ],
+  "qa_tests": {
+    "wordpress_published": true,
+    "post_edit_readback": true,
+    "public_html_http_status": 200,
+    "public_canonical_matches": true,
+    "public_meta_title_verified": true,
+    "public_meta_description_verified": true,
+    "public_social_cover_verified": true,
+    "cover_original_dimensions_1200x630": true,
+    "featured_cover_not_duplicated_in_body": true,
+    "original_chart_rendered": true,
+    "research_photos_rendered": 2,
+    "rendered_youtube_iframes": 2,
+    "youtube_video_playback_independently_verified": false,
+    "internal_contextual_links": 4,
+    "body_editorial_word_count": 594,
+    "prohibited_editorial_words_checked": true,
+    "editorial_footer_exact_text_verified": true,
+    "donation_qr_present": true,
+    "public_images_without_alt": 0,
+    "public_empty_links": 0,
+    "desktop_screenshot_service_ready": true,
+    "mobile_screenshot_service_ready": true,
+    "desktop_mobile_pixel_review": false,
+    "link_by_link_response_status_checks": false
+  },
+  "unresolved": [
+    "The two original-source Boise State video embeds describe and profile the lab director in 2025, rather than directly showing the November 2026 supercapacitor experiment.",
+    "WordPress rendered both YouTube iframes, but independent playback was not tested.",
+    "Desktop and mobile screenshot capture services returned ready; pixel-level visual inspection was not performed.",
+    "Individual HTTP tests for all contextual links were not performed; original URLs were confirmed from WordPress post discovery."
+  ],
+  "archive_html_path": "archive/2026/11/34010-boise-state-two-metal-supercapacitor-ink.gutenberg.html"
+}
