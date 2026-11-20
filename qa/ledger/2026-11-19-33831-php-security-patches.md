@@ -1,0 +1,23 @@
+# Editorial QA — PHP November 19, 2026 Security Releases
+
+- WordPress Post ID: 33831
+- Published: 2026-11-19T20:31:28 (WordPress time)
+- Canonical: https://bitcoinversus.tech/2026/11/19/php-seven-critical-security-flaws-november-19-2026-patch/
+- Status verified via WordPress edit/readback and rendered view: publish
+- Category rotation: Cybersecurity / Software / Information Technology / Trending News, after Energy/Automotive Sila-Panasonic #33827
+- Deduplication: WordPress searches PHP 8.5.13, PHP security, PHP 8.6, FPM, 129289; prior October PHP2Shell article #26105 covers earlier CVEs and not November 19 security package
+- Official releases: PHP Project November 19, 2026, PHP 8.5.13 / 8.4.28 / 8.3.37 / 8.2.36
+- Severity: NHS England Digital #CC-4900 reports 7 critical, 4 high, 6 moderate, and one bundled-library issue. Total 17 PHP CVEs + one bundled issue. Counts do not equal exploitation instances.
+- Technical fact check: CVE-2026-129289 request smuggling requires persistent FastCGI backend connections and PHP input stream not fully drained; default nginx / Apache fastcgi connection reuse off. CVE-2026-129496 timezone cache use-after-free requires error-log and startup conditions. Claims sourced to PHP project's GitHub security advisories GHSA-qc49-hpvq-g2w6 and GHSA-gr4f-wgx5-jpfv.
+- Severity caveat: official PHP preannouncement said critical issues need non-default or uncommon settings; no claim every PHP website vulnerable.
+- Concise news text: 464 words excluding source list/footer, banned original-prose words absent; four contextual internal links, tested against published WordPress IDs #26105, #33645, #28440 and #33423.
+- Original cover: media 33829, 1200x630 JPEG, https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-php-critical-security-november-2026-cover-1200x630-1.jpg. Fine-art oil painting, illustrative not real incident. Clean base art then single bottom-left "BitcoinVersus.tech" in neon green #39FF14 on small black text highlight, approx 14 px. Exact typographic reference-font match not verified.
+- SmartChart: three vertical bars chosen over line/scatter graphs because only cross-sectional severity count data exist; values critical 7, high 4, moderate 6, zero baseline, unit count, date November 19 2026, NHS source; additional bundled library issue described separately. Media ID 33830, https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/php-security-release-19-nov-2026-severity-counts.png.
+- Genuine multimedia: International PHP Conference original lectures: Arne Blankerts nginx + PHP-FPM (2020) VtKTOZFfoug, Paul Dragoonis FPM resilience (July 2026) o1oGWQEOclE. Both accurately marked archival and not recorded at November 2026 release. WordPress rendered as 2 iframes, not independently clicked/played.
+- In-article multimedia count: three (2 educational YouTube videos, 1 original vertical bar chart), donation QR excluded. Featured cover not duplicated in body.
+- HTML server-rendered length: 10776; raw Gutenberg 7843; internal links 4, empty hrefs 0, images missing alt 0, Editor's Note and 5,000-sat QR present.
+- SEO title: PHP Patches Seven Critical Flaws: Update Guide
+- SEO description: PHP security releases on Nov. 19 fix seven critical flaws. Check PHP 8.2.36, 8.3.37, 8.4.28 and 8.5.13 and learn when servers are at risk.
+- Publication / content readback / media attachment: PASS.
+- Public browser fetch, mobile viewport visual QA and video playback still separate verification requirements; do not mark passed unless observed.
+- GitHub post file is copied from published WordPress Gutenberg edit-context, not reconstructed.
