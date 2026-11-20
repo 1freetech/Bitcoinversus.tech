@@ -1,0 +1,22 @@
+# Editorial QA: Taiwan Copper MOF With Metallic Conductivity and Infrared Responsivity
+
+- WordPress article ID 33816; status publish; published site time 2026-11-19T19:57:04; permalink https://bitcoinversus.tech/2026/11/19/taiwan-copper-mof-120-siemens-infrared-8100-responsivity-spintronics-2026/.
+- Headline: Copper Crystal Conducts Like a Metal and Senses Infrared Light.
+- Category: Electrical Engineering, Semiconductors, Technology, Trending News; follows Earth Science OpenET feature and avoids duplicate Anthropic IPO #33791.
+- Archive duplicate checks: WordPress searches "metal-organic framework", "copper-sulfur", "8100 A/W", "spintronics", "120 S/cm" yielded no prior article about Kamal et al.
+- Primary paper: Kamal et al., Advanced Science, November 9 2026, DOI 10.1002/advs.78726 (indexed by PubMed 43004730), open access CC BY 4.0. Institutional release: National Taiwan University November 19 2026 via Asia Research News.
+- Verified laboratory facts: copper 6-mercaptonicotinic acid MOF containing Cu-S chains; single-crystal conductivity up to 120 S/cm and temperature-dependent metallic transport; responsivity 8100 A/W at 808-nm infrared illumination, 40 W/m² incident power density.
+- Careful science distinctions: half-metallic spin polarization predicted by DFT (not spin-filter device demonstration), observed 120 S/cm does not rival bulk copper (~5.9e5 S/cm), responsivity is not detection speed or sensitivity in a complete imager. No industry-production readiness implied.
+- Narrative: 623 words excluding sources and footer. No original-prose banned words. Four contextual WordPress links to perovskite chip, graphite growth, magic-angle graphene and miniaturized Stanford optical sensing chips.
+- SmartChart review: omitted. Conductivity in S/cm and responsivity in A/W have incompatible units and no same-metric before/after benchmarks. The authentic university-supplied graphical summary conveys measurement plus DFT results without synthetic chart values.
+- Original cover: WordPress media 33814, 1200x630, https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-copper-mof-metallic-infrared-photodetector-cover-1200x630-1.jpg. Cinematic anime conceptual microscope and copper structure, expressly labeled not actual experiment. Watermark placed after artwork generation: exactly one BitcoinVersus.tech in #39FF14 at bottom left on tight black highlight, approx 14 pixel font. Generated file visually inspected for duplicate label overlap. Exact wordmark font identity with separately approved sample not independently verified.
+- Authentic research media: National Taiwan University official graphical summary adapted from Advanced Science (2026), media 33815: https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/national-taiwan-university-copper-mof-metallic-conductivity-original-graphic-2026.jpg. CC BY 4.0 credited, observed conductivity vs predicted band structure explicitly distinguished.
+- Video 1: IFIMAC Condensed Matter Physics Center research lecture on conductive MOFs (October 14 2024), YouTube BlcCCOYYCcs, saved as rendered WordPress iframe near beginning and identified archival.
+- Video 2: Institut Català de Nanociència i Nanotecnologia talk by Professor Carl Brozek on MOF conductivity (September 9 2022), YouTube T6bkQF8-rb8, saved as rendered iframe mid-story and identified archival.
+- Authentic in-story media count: 3 (two archival scientific videos and one University research graphic), excluding donation QR and cover.
+- Saved Gutenberg check: 9534 serialized characters and 12747 view HTML chars, two YouTube iframe URLs, one original-source graphic, 4 verified internal links, 0 blank hrefs, 0 images without alt text, no duplicated cover image in article body.
+- SEO title Copper MOF Conducts Like Metal and Detects Infrared | 2026.
+- SEO description Taiwan scientists report a copper MOF with 120 S/cm conductivity and 8,100 A/W infrared response. Explore the measured result and predicted spintronics potential..
+- Original Editor's Note, donation QR and professional disclaimer retained.
+- Live public URL browser fetch attempted November 19 2026 and returned inaccessible. WordPress confirms publish status and server-rendered markup. Independent public browser visual checks, mobile layouts and actual YouTube playback remain UNVERIFIED. Do not mark them passed.
+- Gutenberg archive copied from post-publication WordPress edit-context response.
