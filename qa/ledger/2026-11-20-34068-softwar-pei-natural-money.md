@@ -53,3 +53,14 @@
 - Two original X posts and one YouTube iframe remain rendered. Standing footer, donation QR and featured cover (#34067) remain intact.
 - Source videos' actual playback and mobile visual appearance remain untested.
 - GitHub raw Gutenberg and Markdown files refreshed to match the latest WordPress article. Earlier chart placement QA is superseded by this correction.
+
+## Final correction: remove chart-bearing X post near the bottom
+
+- The previously missed final chart was embedded through the WordPress X shortcode `[tweet 2118533414538342452]`. Although older native Gutenberg chart blocks had been deleted, the X post still contained an attached ASIC-efficiency chart and appeared near the article's conclusion.
+- Deleted the complete chart-bearing X shortcode and its accompanying paragraph. The original source remains available in the linked historical PEI research article, without another visible chart embed.
+- The only remaining X embed is Lowery's original post, ID 2123853080827666908. One YouTube interview iframe remains.
+- Exactly two chart images remain: #34087, efficiency scenarios 2025–2046, placed after the PEI formula; #34088, Bitcoin price USD versus mining efficiency J/TH 2025–2040, placed after the 24-month PEI calculation. Both captions explain assumptions and distinguish hypotheses from observations.
+- Remaining body images, in exact order: Proof-of-Power Wall #11149; J/TH Figure 1 #34087; J/TH + USD Figure 2 #34088; donation QR #24043. No other chart embeds, image blocks, or chart-bearing tweets remain.
+- Corrected methodology language: displayed charts are author-supplied projections, not reused historical measurement charts. Historical PEI studies remain linked.
+- WordPress post status published, updated 2026-11-20T18:48:24, and server-rendered public page HTTP 200. Zero missing image alt attributes and zero empty links. Interactive playback and mobile screenshot tests remain unverified.
+- This final correction supersedes earlier ledger entries that described two X embeds and additional historical chart images.
