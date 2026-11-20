@@ -23,3 +23,15 @@
 - Independent public web fetch of the live page failed; the signed-out WordPress rendered-page audit succeeded; actual mobile responsiveness and in-browser video playback remain UNVERIFIED
 - Publication meets WordPress server-side verification only; do not present browser playback or visual device tests as completed
 - Learning: Gutenberg [tweet ID] shortcode rendered the full correct original post even when direct X public fetch returned 403; retain canonical X link and independent critical context
+
+## November 20, 2026 follow-up: Proof-of-Power Wall visual and tweet
+
+- User-requested supplemental media: Scaramucci X post ID 2121834933920354309, November 15, 2026, and BitcoinVersus.Tech original March 2025 Proof-of-Power Wall image, WordPress media ID 11149.
+- Location: after discussion of request-specific cryptographic puzzles in the first technical section.
+- Original Lowery source figure reference: Softwar, Figure 70, thesis page 297, PDF page 297, official thesis reproduction via IEEE archive.
+- WordPress server-rendered X quote: PASS, author and tweet ID confirmed. Lowery November 20 X quote remains present.
+- WordPress article image: PASS, source image-19.png and descriptive alt attribute confirmed. Context caption explicitly distinguishes conceptual art from deployment.
+- Original two YouTube iframes: retained and server-rendered; actual end-user playback still UNVERIFIED.
+- Signed-out WordPress rendered-page audit: HTTP 200, public, correct canonical, 0 missing alt attributes.
+- Caption is clear that this is a related image from the 2025 story, not a screenshot extracted directly from Figure 70. The primary 2023 thesis PDF itself is cited and linked.
+- Edited post is live; manual browser/mobile playback and image pixel inspection are still NOT independently verified.
