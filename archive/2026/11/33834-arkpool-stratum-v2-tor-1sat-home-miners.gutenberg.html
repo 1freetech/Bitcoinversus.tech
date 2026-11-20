@@ -1,0 +1,42 @@
+<!-- wp:paragraph --><p>A Bitcoin mining pool is testing a different arrangement for home ASIC operators: encrypted mining connections routed through Tor, with small Bitcoin payments delivered over Ark. <strong><a href="https://arkpool.org/changelog">ArkPool's November 16, 2026 update</a></strong> introduced native Stratum V2 on its Tor endpoint while preserving a path for older Stratum V1 miners. The pool says a limited live test confirmed accepted shares and matching credits. It has not reported an independently audited payout record, measured networkwide savings or a proven increase in miner revenue.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[embed]https://twitter.com/notgrubles/status/2122719437191069758[/embed]<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>Bitcoin developer grubles highlighted the Stratum V2, Tor and Ark combination on November 17. Original-source social commentary, not independent certification of pool reliability.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">How a Bitaxe reaches ArkPool</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Compatible Bitaxe and other SHA-256 miners connect over a private home network to the <a href="https://gitlab.com/arkpool">open-source ArkPool Gateway</a>, which can run on a Linux Docker host. The gateway carries jobs and submitted shares through Tor to the pool. With the new migration path, the gateway authenticates the pool's Stratum V2 authority key and encrypts the remote mining protocol; it does not silently fall back to unencrypted V1 or ordinary internet routing if verification fails.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>A legacy miner may continue sending V1 jobs to a compatible gateway that translates them into V2 for the remote connection. That arrangement <strong>does not make the miner's local V1 session encrypted</strong>. Operators must confirm the particular gateway release, LAN listener and board revision before changing a working setup. Our <a href="https://bitcoinversus.tech/2026/10/11/stratum-v1-vs-stratum-v2/">Stratum V1 versus V2 explanation</a> outlines the protocol differences; our <a href="https://bitcoinversus.tech/2026/11/15/mara-first-bitcoin-block-stratum-v2-975369-november-2026/">MARA Stratum V2 report</a> covers a separate industrial deployment.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=Iz90KaPIe3c]<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>Presidio Bitcoin's June 2025 discussion explains Stratum V2 security and job declaration. Archival protocol context only; ArkPool has not claimed miner-selected block templates.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">One satoshi can be enough for a payout</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Unlike a solo-mining arrangement where a small miner generally earns nothing until it finds a full block, ArkPool says it <strong>buys eligible, difficulty-weighted shares</strong> under its posted terms. Its payment service settles eligible whole-satoshi balances at hourly UTC boundaries, with a <strong>1-satoshi minimum</strong>; fractional amounts carry forward. A one-hour settlement schedule is not a promise that every miner earns one satoshi each hour.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Payouts use <a href="https://second.tech/">Second's Bark wallet software</a> and a compatible <code>ark1</code> Bitcoin Ark receiving address, not a Lightning invoice or ordinary on-chain Bitcoin address. That distinction matters for wallet compatibility and recovery. ArkPool reported earlier payout delays while updating Bark, then documented payment reconciliation on November 8. The pool remains an <strong>alpha service</strong> whose operators perform share verification and accounting.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->[youtube https://www.youtube.com/watch?v=7sG-sTTUd2g]<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p><em>Hodl Hodl's March 2026 technical conversation with developers from Ark Labs and Second/Bark explains Ark payments and wallet tradeoffs. The recording predates ArkPool's V2 rollout.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Privacy is useful, but not automatic</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Tor makes the mining pool less directly exposed to a home's public IP address. Authenticated V2 adds server verification and encrypted mining traffic between the gateway and pool. Neither feature makes the miner anonymous: the internet provider can recognize Tor traffic, an endpoint may be compromised, and ArkPool still sees the payout address and verified work. Its public website also uses Cloudflare, separately from the Tor mining endpoint.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>There is an operational tradeoff. The ASIC hashes locally, but longer or variable Tor delay can deliver stale jobs or delay shares. Two Tor paths improve connection choices without eliminating a shared home-router, power or ISP outage. Operators should compare fresh pool jobs, accepted work, credited balances and confirmed wallet receipts. An on-screen hashrate alone is not a payout audit; our <a href="https://bitcoinversus.tech/2026/10/07/bitcoin-mining-pool-shares-accepted-rejected-stale-vardiff/">accepted-versus-stale-share guide</a> explains the difference.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Why the experiment matters</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Small ASIC owners increasingly have more choices than lottery-style solo mining. ArkPool's approach combines locally controlled <a href="https://bitcoinversus.tech/2026/10/24/bitaxe-naja-duo-1201-dual-bm1373-44-ths-home-miner/">Bitaxe-class hardware</a>, Tor transport, upgraded mining protocol security and micro-denominated Bitcoin settlement. Yet operator-controlled crediting is not the same as a trustless pool. The signed accounting receipt proves only what the service reported, not that a wallet received funds or that the pool is solvent. Neither transaction selection through Job Declaration nor higher profitability has been demonstrated by the rollout.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Sources and reporting methodology</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Primary documents: <a href="https://arkpool.org/changelog">ArkPool's November 16 change log</a>, <a href="https://arkpool.org/mining-privacy">privacy and Stratum V2 explanation</a>, <a href="https://arkpool.org/bitaxe-mining-guide">Bitaxe setup and payout guide</a>, and <a href="https://arkpool.org/">dated public pool dashboard</a>. The operator's statements are labeled as such; video examples explain underlying protocols rather than demonstrate ArkPool's latest gateway. A comparative SmartChart was not justified by the available single-time pool snapshot and lack of independently verified historical series.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p><em><strong>Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support our work and help further secure the integrity of our research initiatives, please scan the QR code below to donate 5,000 sats.</em></p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} --><figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Original BitcoinVersus.tech voluntary 5,000 satoshi donation QR code" class="wp-image-24043" /><figcaption class="wp-element-caption">Open the article on a second screen, scan with a compatible Bitcoin wallet and verify the destination and optional amount before paying.</figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p><em><strong>Disclaimer:</strong> BitcoinVersus.tech publishes independent educational journalism, not financial, security-certification or hardware-flashing advice. Mining income varies with difficulty, coin value, electricity, pool rules and equipment condition. Protect private keys, verify official gateway sources, and preserve working firmware and recovery settings. The featured oil painting is original conceptual artwork, not a photograph of ArkPool infrastructure.</em></p><!-- /wp:paragraph -->
