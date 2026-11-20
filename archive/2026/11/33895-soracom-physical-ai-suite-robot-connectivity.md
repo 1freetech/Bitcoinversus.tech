@@ -46,3 +46,7 @@ Final published article archived from WordPress post **#33895**. The exact Guten
 ## Improvement note
 
 Distinguish live WordPress iframe rendering from successful playback. Keep dated older demonstrations labeled by their actual year. Do not misrepresent global carrier reach as uninterrupted coverage for every robot or package consolidation as an independent performance gain.
+
+## Editorial footer change — November 20, 2026
+
+The editor replaced the previous article footer with **verbatim standardized wording** in the WordPress reusable synced pattern **#33935**. WordPress editor source now references `<!-- wp:block {"ref":33935} /-->`; published rendered HTML returned the exact approved quote, a single original QR image **#24043** and the financial disclaimer. Existing in-story YouTube iframe count remained unchanged after the footer edit. The revised exact editor source is saved in the companion `.gutenberg.html` file. Historical source facts and publication date remain unchanged.
