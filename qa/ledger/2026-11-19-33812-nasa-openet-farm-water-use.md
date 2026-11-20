@@ -1,0 +1,24 @@
+# Editorial QA: NASA OpenET Field-Scale Water-Use Mapping
+
+- WordPress post ID 33812; status: publish; WordPress-local date 2026-11-19T19:43:48; canonical URL https://bitcoinversus.tech/2026/11/19/nasa-openet-landsat-farm-water-use-30-meter-mississippi-2026/
+- Title: NASA Maps Farm Water Use Field by Field
+- Category in rotation: Earth observation / Space / Agriculture / Technology, following AI finance IPO fact-check #33791.
+- Dedupe verification: WordPress archive searches OpenET, evapotranspiration, Landsat fields, Mississippi water use, NASA farm water, agriculture satellite. No earlier OpenET field-scale drought report.
+- Primary current publication: NASA Landsat, Nov. 19, 2026, Satellites Reveal the Thirst of Fields and Forests; original science reference: Duan et al., International Journal of Applied Earth Observation and Geoinformation, DOI 10.1016/j.jag.2026.105172.
+- Context: OpenET estimates monthly evapotranspiration using Landsat thermal, weather, multiple models. 30-meter pixel grid 30×30m=900 m²~0.22 acre. Study year span 2016-2022; crops soybeans, corn, cotton, rice and forests; July annual maximum ET, forests generally higher with slower drought stress response.
+- 2026 NASA illustrated map: July 2026 Rayne & Crowley, Louisiana, false-color OpenET ET scale 30 to 190 mm/month. That map date differs from 2016-2022 study; scale values are not single-region averages, total rainfall or irrigation volumes.
+- Key safety/accuracy caveat: ET measures water entering the atmosphere via plant transpiration + evaporation, not direct pumping or groundwater withdrawals. Stable crop ET under drought and modeled aquifer decline are consistent with increased irrigation, not proof of extracted volumes.
+- Story length: 708 words excluding source list, editor's note and disclaimer; prohibited editorial words absent.
+- SmartChart: optional, omitted. Available values 30 and 190 mm/month are legend endpoints across different land types, not comparable region summaries; NASA original scientific map contains the better visual evidence.
+- Original featured cover: photorealistic editorial composite, 1200×630 JPEG, WordPress media ID 33809, source https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-nasa-openet-water-use-fields-2026-cover-1200x630-1.jpg. No source photo implied. Clean original art, then exactly one BitcoinVersus.tech watermark in neon green #39FF14 approximately 10 pt, tight black background, bottom left, visually inspected. No tag overlap. Exact logo font-reference match not independently tested.
+- In-story authentic NASA map: original NASA/Ross Walter false-color OpenET July 2026 published graphic, WP media ID 33810, https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/nasa-openet-rayne-crowley-louisiana-july-2026-water-loss-map.jpg, captioned with date, scale units and source. Neither featured cover nor other generated diagram inserted in story body.
+- Official videos: NASA Goddard 'Vine by Vine' Aug 6, 2026, ID azD5lXx59Lg near beginning; NASA Video archival 'Landsat: A Space Age Water Gauge' ID MvhO4Q-7Be8 near middle. Video ownership and relevant titles verified via web and YouTube search results. Saved Gutenberg rendered HTML contains two YouTube iframes. Playback not independently tested.
+- In-story media: two official video iframes plus authentic NASA map (3); QR excluded.
+- Four contextual internal links: NASA 3D forests, Planet Labs imagery, water phosphate recovery, data-center waste heat water reuse.
+- Sources: NASA 2026 primary report, Duan et al. original peer-reviewed study, official OpenET platform, NASA/USGS Landsat mission.
+- Gutenberg rendered QA: HTML 12779 characters, 2 YouTube iframes, 1 NASA map, 4 internal links, 0 empty anchor hrefs, 0 missing image alt text; QR and editor's note present; no duplicate featured cover.
+- SEO title: NASA Maps Water Use Farm by Farm With Landsat and OpenET
+- SEO description: NASA's Landsat and OpenET map crop and forest water loss at 30-meter resolution, revealing drought and irrigation patterns across the Lower Mississippi Plain.
+- WordPress status+image+embeds verified by edit-context and view-context reads.
+- Independent external public URL fetch attempted November 19 2026; blocked/unavailable in web tool, so no independent browser, video playback or mobile visual QA claim is made.
+- Original WordPress Gutenberg markup saved in GitHub after publication; QA file records checks and limitations.
