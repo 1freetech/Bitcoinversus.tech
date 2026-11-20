@@ -1,0 +1,96 @@
+{
+  "post_id": 33915,
+  "title": "Code-Breaking Math Finds a Hidden Pulsar in NASA Data",
+  "url": "https://bitcoinversus.tech/2026/11/20/cryptography-math-finds-pulsar-nasa-fermi-data-million-times-faster-2026/",
+  "status": "publish",
+  "publication_date": "2026-11-20",
+  "category_rotation": "Space / science",
+  "subject": "Pulsar PSR J1622-7204 discovered using cryptography-inspired lattice algorithm on NASA Fermi LAT data",
+  "primary_source_dates": [
+    "November 19 2026, Physical Review Letters",
+    "November 19 2026, NASA Science",
+    "November 19 2026, Max Planck Institute",
+    "November 19 2026, Weizmann Institute"
+  ],
+  "originality": "WordPress recent and query search for Fermi pulsar and pulsar checked; no existing matching article or title returned",
+  "body_word_count": 586,
+  "verified_contextual_internal_links": 4,
+  "story_claims": {
+    "pulsar_spin_frequency_hz": 261,
+    "years_fermi_data": 15,
+    "approx_photons": 16000,
+    "cpu_equivalent_hours": 10,
+    "relative_compute_efficiency": "about one millionfold per primary reporting; not a controlled universal performance claim",
+    "previous_search": "failed, despite ~600 CPU core-years; not directly equivalent workload"
+  },
+  "chart": {
+    "type": "none",
+    "reason": "No apples-to-apples baseline or categorical series suited to an honest figure",
+    "candidates": [
+      "Log core-time bars rejected due to incomparable failed/successful runs",
+      "Photon count bars rejected due to stage differences",
+      "Timeline rejected due to limited additional quantitative insight"
+    ]
+  },
+  "cover": {
+    "id": 33909,
+    "style": "fine-art oil painting",
+    "person_rotation": "Black man, starting with first specified sequence slot because prior rotation position not verifiable",
+    "width": 1200,
+    "height": 630,
+    "neon_wordmark": "#39FF14 BitcoinVersus.tech",
+    "black_highlight": true,
+    "source": "original generated artwork",
+    "no_duplication_in_body": true
+  },
+  "media": {
+    "videos": [
+      {
+        "id": "gjLk_72V9Bw",
+        "channel": "NASA Goddard",
+        "description": "What is a Pulsar? educational video from 2014",
+        "wordpress_shortcode": true,
+        "rendered_iframe": true,
+        "playback_test": false
+      },
+      {
+        "id": "_QpMeEdmZPM",
+        "channel": "NASA Goddard",
+        "description": "Fermi Traces a Celestial Spirograph, 2013 educational animation",
+        "wordpress_shortcode": true,
+        "rendered_iframe": true,
+        "playback_test": false
+      }
+    ],
+    "count_embedded_in_story": 2
+  },
+  "qa": {
+    "wordpress_post_status_published": true,
+    "word_count_in_range": true,
+    "prohibited_editorial_terms": [],
+    "official_youtube_verified_by_search": true,
+    "wordpress_rendered_iframes": 2,
+    "external_live_public_page_http_200": true,
+    "canonical_url_verified": true,
+    "seo_head_title_and_description_verified": true,
+    "featured_image_dimensions_verified": true,
+    "featured_image_duplicate_inside_article": false,
+    "qr_and_disclaimer_verified": true,
+    "desktop_screenshot_service_status": "ready",
+    "mobile_screenshot_service_status": "ready",
+    "desktop_mobile_pixel_review": false,
+    "video_playback_verified": false,
+    "notes": [
+      "WordPress public signed-out server returned HTTP 200 and populated SEO tags. Screenshot service returned capture ready but pixels not inspected.",
+      "Actual video playback on client platforms not tested; iframe presence and official video identity confirmed."
+    ]
+  },
+  "sources": [
+    "https://journals.aps.org/prl/abstract/10.1103/vlt2-xzgk",
+    "https://science.nasa.gov/open-science/fermi-data-pulsar-discovery/",
+    "https://www.aei.mpg.de/1483164/finding-gamma-ray-pulsars-a-million-times-faster",
+    "https://weizmann-usa.org/news-media/news-releases/from-a-complex-problem-to-a-dizzying-discovery-a-new-method-for-finding-cosmic-lighthouses/",
+    "https://physics.aps.org/articles/v19/s144"
+  ],
+  "archive_file": "archive/2026/11/33915-fermi-pulsar-cryptography-math.gutenberg.html"
+}
