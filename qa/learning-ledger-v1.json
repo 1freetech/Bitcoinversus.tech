@@ -2383,6 +2383,171 @@
       "corrections": [
         "Overlapping chart subtitle removed prior to WordPress upload; final chart visually reinspected."
       ]
+    },
+    {
+      "post_id": 34038,
+      "article_title": "At $27.79 Hashprice, How Cheap Must Bitcoin Mining Power Be?",
+      "publication_date": "2026-11-20",
+      "content_type": "standard_news",
+      "category_names": [
+        "Bitcoin",
+        "Bitcoin Mining",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        36507086,
+        57414501,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/20/bitcoin-mining-hashprice-2779-asic-electricity-breakeven-november-2026/",
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "evidence": "WordPress context=edit and context=view both returned publish; public-page fetch was unavailable"
+      },
+      "editorial_body_word_count": 679,
+      "original_sources": [
+        "https://ziven.io/bitcoin-mining/hashrate",
+        "https://m.bitmain.com/product/detail?pid=000202608201636197889T3Y4SxC0660",
+        "https://service.bitmain.com/product/detail?pid=000202601051812094876d8bcYB60660",
+        "https://service.bitmain.com/product/detail?pid=00020250610183138927NE5k28e0062C"
+      ],
+      "duplicate_check": {
+        "wordpress": "Exact Nov 20 $27.79 snapshot and five-model power ceiling not found; older Nov 1 $33 single-miner break-even story deliberately linked rather than repeated",
+        "github": "No archive path #34038 existed before creation",
+        "scope": "WordPress keyword and prior-title searches; not exhaustive semantic comparison"
+      },
+      "internal_links": {
+        "count": 5,
+        "targets_status": "Relevant WordPress archive routes observed in published index; external click-through not independently tested"
+      },
+      "in_story_media": {
+        "count": 3,
+        "types": [
+          "Official Luxor YouTube iframe",
+          "Original zero-baseline vertical bar chart",
+          "Independent BitMaker YouTube iframe"
+        ],
+        "video_ids": [
+          "PqwbXPoQY0k",
+          "BcZJ9LAeWQs"
+        ],
+        "wordpress_rendered_iframes": 2,
+        "actual_video_playback": "not independently tested",
+        "chart_media_id": 34036,
+        "captions_after_media": true
+      },
+      "featured_cover": {
+        "media_id": 34035,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "photorealistic editorial technical illustration",
+        "subjects": "older dusty ASIC air-cooling racks versus blue hydro-cooled miner units",
+        "watermark": "BitcoinVersus.tech in #39FF14 on tight black text highlight at lower left",
+        "cover_not_duplicated_in_body": true
+      },
+      "chart": {
+        "present": true,
+        "type": "vertical columns",
+        "baseline_zero": true,
+        "source": "November 20 Ziven snapshot plus Bitmain product specifications",
+        "hashprice_usd_per_ph_day": 27.79,
+        "efficiency_j_per_th": [
+          8.9,
+          12,
+          16.5,
+          22,
+          28
+        ],
+        "breakeven_electricity_us_cents_per_kwh": [
+          13.01,
+          9.65,
+          7.02,
+          5.26,
+          4.14
+        ],
+        "is_scenario_by_index": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "formula_usd_per_kwh": "hashprice/(24*J_per_TH)",
+        "excluded_costs": [
+          "cooling",
+          "fees",
+          "maintenance",
+          "capex",
+          "network downtime"
+        ],
+        "media_id": 34036,
+        "alternatives_considered": [
+          "scatter",
+          "line",
+          "vertical column selected"
+        ]
+      },
+      "footer": {
+        "approved_editors_note_exact": true,
+        "synced_block_ref_id": 33935,
+        "original_donation_qr_id": 24043,
+        "qr_count": 1,
+        "disclaimer_rendered": true
+      },
+      "archive": {
+        "qa_record": "archive/2026/11/34038-bitcoin-hashprice-2779-asic-power-ceiling.md",
+        "exact_gutenberg": "archive/2026/11/34038-bitcoin-hashprice-2779-asic-power-ceiling.gutenberg.html"
+      },
+      "rotation": {
+        "category": "Bitcoin Mining / ASIC efficiency",
+        "previous_category": "Bitcoin Mining / earnings",
+        "cover_style": "photorealistic",
+        "previous_cover": "oil painting"
+      },
+      "qa_score": {
+        "total": 90,
+        "max": 100,
+        "components": {
+          "Accuracy and source verification": 24,
+          "Originality and newsworthiness": 14,
+          "Technical depth and explanatory clarity": 15,
+          "Working embeds and media relevance": 11,
+          "Cover and visualization quality": 10,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 6
+        },
+        "unverified_gates": [
+          "Actual video playback",
+          "Desktop/mobile browser visual layout",
+          "External public webpage inspection"
+        ],
+        "status": "Partial acceptance: confirmed WordPress publishing and rendered iframe HTML; browser playback unavailable"
+      },
+      "observations": [
+        "Nov 20 source hashprice is a snapshot, not a guaranteed rate",
+        "1 ZH/s milestone was not novel on Nov 20, avoid first-crossing claim",
+        "ASIC wall plug electricity ceiling differs from site-wide profitability and PUE"
+      ],
+      "three_improvements_to_carry_forward": [
+        "Seek independent browser and player verification",
+        "Avoid stale or cross-period network estimates; date every snapshot",
+        "Use verified manufacturer efficiency and mark illustrative model scenarios separately"
+      ],
+      "feedback": {
+        "user_preferences": [
+          "Next Bitcoin/mining story",
+          "Verify embeds three times",
+          "Four or more contextual links",
+          "Current standardized footer and rotation"
+        ],
+        "engagement": "unavailable"
+      },
+      "corrections": []
     }
   ],
   "future_article_template_required_fields": [
