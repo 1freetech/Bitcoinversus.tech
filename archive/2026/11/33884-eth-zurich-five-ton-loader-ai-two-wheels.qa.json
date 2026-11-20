@@ -37,6 +37,17 @@
   },
   "video_embeds": [
     {
+      "x_status_id": "2122676099071009258",
+      "source": "Wevolver (@WevolverApp)",
+      "date": "2026-11-17",
+      "url": "https://x.com/wevolverapp/status/2122676099071009258",
+      "content": "Video post describing autonomous balancing and driving of 5-tonne John Deere skid-steer loader",
+      "position": "After second article paragraph",
+      "rendered_tweet_blockquote": true,
+      "embed_script": "https://platform.x.com/widgets.js",
+      "actual_video_playback_verified": false
+    },
+    {
       "youtube_id": "yFKHQMqQ9c0",
       "source": "ETH Zurich Robotic Systems Lab",
       "date": "2026-05-27",
@@ -71,13 +82,17 @@
     "no_images_missing_alt_public_page": true,
     "desktop_screenshot_status_ready": true,
     "mobile_screenshot_status_ready": true,
-    "desktop_mobile_pixel_inspection": false
+    "desktop_mobile_pixel_inspection": false,
+    "rendered_x_post_added": true,
+    "rendered_x_embed_has_platform_script": true,
+    "public_wordpress_rendered_x_content_verified": true
   },
   "remaining_limitations": [
-    "The two verified YouTube embeds are official background research from the same lab, not direct footage of the November 2026 loader demonstration; source video gallery is linked near the introduction.",
     "WordPress rendered HTML confirms both iframe elements, but actual video playback was not tested.",
     "Screenshot capture service returned ready on both desktop and mobile; pixel-level visual inspection was not possible.",
-    "Public social Open Graph image is served at a 1024x538 derivative although the WordPress original media has verified 1200x630 dimensions."
+    "Public social Open Graph image is served at a 1024x538 derivative although the WordPress original media has verified 1200x630 dimensions.",
+    "Wevolver X post renders in WordPress as rich embedded tweet with video attachment reference and platform.x.com script; actual embedded video playback has not been independently exercised."
   ],
-  "archive": "archive/2026/11/33884-eth-zurich-five-ton-loader-ai-two-wheels.gutenberg.html"
+  "archive": "archive/2026/11/33884-eth-zurich-five-ton-loader-ai-two-wheels.gutenberg.html",
+  "updated_for_x_video": "2026-11-20"
 }
