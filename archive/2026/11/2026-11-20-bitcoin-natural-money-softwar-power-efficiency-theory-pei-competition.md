@@ -62,10 +62,6 @@ Burton's proposed answer is that a monetary network secured by costly, competiti
 
 Yet scarcity and costly security alone cannot establish universal monetary adoption. Money also depends on social acceptance, liquidity, legal institutions, settlement utility and stable expectations. Anthropological research documents [competing explanations for money's origins](https://link.springer.com/article/10.1007/s10816-025-09694-9). Calling Bitcoin “natural money” therefore remains a reasoned interpretive thesis, not a biological classification or an empirical theorem.
 
-[tweet 2118533414538342452]
-
-*BitcoinVersus.Tech's original November 2026 [ASIC efficiency research post](https://x.com/bitcoinversus_/status/2118533414538342452) supplies the historical progression discussed above, not evidence that a monetary price must rise proportionally.*
-
 ## The strongest test is where the curve breaks
 
 A competition-driven improvement is not guaranteed to occur every year. The same [PEI research](https://bitcoinversus.tech/2026/10/12/why-pei-works-better-over-longer-time-windows/) found a roughly **0.997×** 12-month reading because the chosen daily hashrate endpoints fell even as rated hardware efficiency improved. A short window can reverse the longer structural trend.
@@ -76,7 +72,7 @@ A rigorous synthesis would compare time-aligned network hashrate, measured fleet
 
 ## Research sources and methodology
 
-Primary work: [Lowery, Softwar (MIT, 2023)](https://dspace.mit.edu/entities/publication/8ac6037b-efd6-4ecd-a57f-2b75c965c889); [Burton, Power Efficiency Theory](https://bitcoinversus.tech/2026/01/24/power-efficiency-theory-the-physical-cost-of-the-bitcoin-protocol/); [Bitcoin developer documentation](https://developer.bitcoin.org/devguide/block_chain.html); [evolutionary psychology review](https://pubmed.ncbi.nlm.nih.gov/33006924/); and [Bitdeer Q3 2026 report](https://bitdeer.gcs-web.com/news-releases/news-release-details/bitdeer-reports-unaudited-third-quarter-2026-results-record). Charts are reused without redrawing from their published PEI research articles. Index calculations are illustrative and have not been independently established as a valuation mechanism.
+Primary work: [Lowery, Softwar (MIT, 2023)](https://dspace.mit.edu/entities/publication/8ac6037b-efd6-4ecd-a57f-2b75c965c889); [Burton, Power Efficiency Theory](https://bitcoinversus.tech/2026/01/24/power-efficiency-theory-the-physical-cost-of-the-bitcoin-protocol/); [Bitcoin developer documentation](https://developer.bitcoin.org/devguide/block_chain.html); [evolutionary psychology review](https://pubmed.ncbi.nlm.nih.gov/33006924/); and [Bitdeer Q3 2026 report](https://bitdeer.gcs-web.com/news-releases/news-release-details/bitdeer-reports-unaudited-third-quarter-2026-results-record). The two displayed charts are author-supplied projection illustrations; historical PEI results and measurements are documented in the linked research articles. Index calculations are illustrative and have not been independently established as a valuation mechanism.
 
 ---
 
