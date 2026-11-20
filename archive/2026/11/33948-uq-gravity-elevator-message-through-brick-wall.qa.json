@@ -1,0 +1,108 @@
+{
+  "article_id": 33948,
+  "title": "Scientists Send a Word Through a Wall Using Gravity",
+  "url": "https://bitcoinversus.tech/2026/11/20/university-queensland-gravity-message-elevator-through-wall-2026/",
+  "slug": "university-queensland-gravity-message-elevator-through-wall-2026",
+  "status": "publish",
+  "article_date": "2026-11-20",
+  "category": "Science, Physics, Information Technology, Trending News",
+  "topic": "University of Queensland gravitational communication via elevator counterweight and gravimeter",
+  "source_dates": {
+    "arxiv_preprint": "2025-11-20",
+    "researchers_ASEG_talk": "2025-10-27",
+    "Science_Advances_early_publication": "2026-11-18",
+    "University_of_Queensland_announcement": "2026-11-19"
+  },
+  "sources": [
+    "https://doi.org/10.1126/sciadv.aee0802",
+    "https://news.uq.edu.au/2026-11-uq-researchers-send-unblockable-message-using-gravity",
+    "https://arxiv.org/abs/2511.16710",
+    "https://www.youtube.com/watch?v=io_6E_BAMQU",
+    "https://www.youtube.com/watch?v=3MNFO0XH7oY"
+  ],
+  "research_numbers": {
+    "demonstrated_range_approx_m": 0.7,
+    "one_bit_per_minute": 1,
+    "counterweight_tonnes_approx": 1.8,
+    "transmitted_word": "Gravity",
+    "word_ascii_7bit_bits": 49,
+    "control_bits": 14,
+    "forward_model_range_m_approx": 500,
+    "forward_model_rate_bits_per_minute_approx": 15,
+    "forecast_not_demonstrated": true
+  },
+  "chart": {
+    "used": false,
+    "candidates_considered": [
+      "vertical columns for signal rates",
+      "line chart for bit sequence",
+      "scatter for mass and range"
+    ],
+    "reason": "The source reports a one-off successful demonstration, a model-only range scenario and a hypothetical faster design. A quantitative chart could misleadingly conflate measured and modeled performance without a comparable dataset."
+  },
+  "cover": {
+    "style": "photorealistic editorial photography illustration",
+    "media_id": 33943,
+    "width": 1200,
+    "height": 630,
+    "wordmark": "BitcoinVersus.tech",
+    "color": "#39FF14",
+    "background": "tight black text highlight",
+    "position": "bottom-left"
+  },
+  "media_items": [
+    {
+      "type": "original technical video",
+      "youtube_id": "io_6E_BAMQU",
+      "presenters": "Dr Andrew Groszek and Dr Charles Woffinden",
+      "date": "2025-10-27",
+      "actual_playback_verified": false
+    },
+    {
+      "type": "contextual expert gravity-sensing explainer",
+      "youtube_id": "3MNFO0XH7oY",
+      "source": "Beeston Media / UK Quantum Technology Hub",
+      "date": "2025-01-27",
+      "actual_playback_verified": false
+    },
+    {
+      "type": "official university photograph",
+      "media_id": 33944,
+      "credit": "University of Queensland"
+    },
+    {
+      "type": "official university photograph",
+      "media_id": 33945,
+      "credit": "University of Queensland"
+    }
+  ],
+  "qa_tests": {
+    "site_published_status_verified": true,
+    "post_wordpress_edit_readback": true,
+    "public_page_http_status_200": true,
+    "canonical_public_url_verified": true,
+    "public_seo_title_verified": true,
+    "public_seo_meta_description_verified": true,
+    "public_og_featured_image_verified": true,
+    "featured_media_original_1200x630_verified": true,
+    "word_count_editorial": 593,
+    "source_dates_verified": true,
+    "internal_links_verified": 4,
+    "authentic_photo_blocks_verified": 2,
+    "rendered_youtube_iframes": 2,
+    "actual_video_playback_verified": false,
+    "rendered_donation_qr_verified": true,
+    "featured_cover_absent_from_post_body": true,
+    "no_images_missing_alt_on_public_page": true,
+    "desktop_screenshot_status_ready": true,
+    "mobile_screenshot_status_ready": true,
+    "screenshot_pixel_visual_review": false,
+    "banned_editorial_words_checked": true
+  },
+  "remaining_limitations": [
+    "YouTube iframe markup and video IDs were verified in WordPress render output; independent actual playback was not performed.",
+    "WordPress screenshot service reported ready at desktop and mobile viewports, but pixel-level visual inspection was unavailable.",
+    "One image on WordPress may be served to social sharing at an automatically resized width even though the original WordPress media ID is exactly 1200 by 630 pixels."
+  ],
+  "archive": "archive/2026/11/33948-uq-gravity-elevator-message-through-brick-wall.gutenberg.html"
+}
