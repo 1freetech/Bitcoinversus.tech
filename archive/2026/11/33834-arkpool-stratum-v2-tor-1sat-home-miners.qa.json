@@ -1,0 +1,83 @@
+{
+  "post_id": 33834,
+  "title": "ArkPool Brings Tor and 1-Sat Payouts to Bitcoin Miners",
+  "url": "https://bitcoinversus.tech/2026/11/19/arkpool-bitaxe-stratum-v2-tor-one-sat-ark-payouts-november-2026/",
+  "status": "publish",
+  "slug": "arkpool-bitaxe-stratum-v2-tor-one-sat-ark-payouts-november-2026",
+  "publication_date": "2026-11-19",
+  "editorial": {
+    "category": "Bitcoin mining and ASICs",
+    "topic": "ArkPool Stratum V2 over Tor and 1-sat Ark payouts",
+    "word_count_main_body": 652,
+    "originality": "WordPress recent, keyword and draft search returned no ArkPool story",
+    "primary_source_dates": [
+      "ArkPool Nov 16 2026 V2 migration and privacy guide",
+      "ArkPool Nov 8 2026 Bark wallet changes"
+    ],
+    "source_urls": [
+      "https://arkpool.org/changelog",
+      "https://arkpool.org/mining-privacy",
+      "https://arkpool.org/bitaxe-mining-guide",
+      "https://arkpool.org/"
+    ],
+    "relevant_internal_links": 4,
+    "chart_type": "none",
+    "chart_reason": "No comparable independent or dated historical series adequate for an explanatory visual; a single live pool snapshot would be misleading"
+  },
+  "media": {
+    "cover": {
+      "style": "fine-art oil painting",
+      "media_id": 33833,
+      "dimensions": "1200x630",
+      "wordmark": "BitcoinVersus.tech",
+      "wordmark_color": "#39FF14",
+      "font": "Roboto",
+      "position": "bottom-left",
+      "background": "tight black highlight"
+    },
+    "embeds": [
+      {
+        "type": "x",
+        "url": "https://x.com/notgrubles/status/2122719437191069758",
+        "verified_render": "twitter blockquote plus widgets.js",
+        "playback_test": "not applicable"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Iz90KaPIe3c",
+        "verified_render": "YouTube iframe",
+        "playback_test": "not performed"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7sG-sTTUd2g",
+        "verified_render": "YouTube iframe",
+        "playback_test": "not performed"
+      }
+    ],
+    "featured_image_not_duplicated_in_body": true
+  },
+  "qa": {
+    "status_publish": true,
+    "word_count_and_prohibited_terms": true,
+    "original_relevant_media_count": 3,
+    "wordpress_saved_rendered_iframes": 2,
+    "wordpress_saved_rendered_x_embed": true,
+    "seo_title_and_description_saved": true,
+    "donation_qr_media_24043_saved": true,
+    "disclaimer_saved": true,
+    "source_links_saved": true,
+    "desktop_1200_screenshot_service": "ready",
+    "mobile_390_screenshot_service": "ready",
+    "desktop_mobile_pixel_review": false,
+    "video_playback_verified": false,
+    "independent_live_web_fetch": false,
+    "notes": [
+      "Authenticated WordPress readback confirms published status, markup and media IDs.",
+      "Public web retrieval of new URL returned an access error; WordPress screenshot service reports a public site, but pixels not inspected.",
+      "X blockquote and script were rendered; runtime widget behavior not independently tested.",
+      "YouTube iframe presence was verified, not player readiness or successful playback."
+    ]
+  },
+  "archive_file": "archive/2026/11/33834-arkpool-stratum-v2-tor-1sat-home-miners.gutenberg.html"
+}
