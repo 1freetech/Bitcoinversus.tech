@@ -1,0 +1,23 @@
+# Editorial QA: Google books Blue Origin for Project Suncatcher
+
+- WordPress ID: 33911. Status: publish. Date (site local): 2026-11-20T04:50:24.
+- Canonical URL: https://bitcoinversus.tech/2026/11/20/google-blue-origin-new-glenn-project-suncatcher-ai-satellites-2029/.
+- Title: Google Picks Blue Origin to Launch AI Satellites in 2029.
+- Category: Space / AI / Data Centers / Technology. Follows current GPU-mining and robotics news in category rotation.
+- Person rotation: Latino man (#4 after Black woman #3), fictional illustrated engineer. Cover rotation: cinematic anime, avoiding most recent photorealistic GPU mining cover.
+- Deduplication: WordPress title searches Google Suncatcher, Blue Origin, New Glenn and orbital AI; older Google Suncatcher first TPU mission articles dated Sep–Oct 2026 are related, but none covers November 19 Blue Origin launch-provider agreement.
+- Primary source dates: Blue Origin and Google official release November 19 2026; Google Suncatcher prototype launch October 1 2026, first AI generated response October 30 2026; 2027 twin satellite laser-link test planned.
+- Verification: Q1 2029 is launch target, not completed or guaranteed; each planned satellite approximately one data center rack of computing capacity; sun-synchronous orbit and New Glenn heavy-lift launcher; exact number of satellites, cost, payload mass, retail service and launch date unannounced.
+- Primary sources: https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher ; https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/ ; October 30 Google Research Suncatcher update; September 24 Google hardware-testing explainer. Independent secondary: Reuters November 19 report.
+- Main narrative: 655 words (excluding source list and publication footer), four contextual internal links, banned editorial terms absent.
+- SmartChart: deliberately omitted because announcement supplies one schedule target and a rough capacity analogy, not comparable measured values; a time-series or comparative chart would invent data.
+- Featured cover: original cinematic anime conceptual art, 1200 x 630, media #33905, https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-google-blue-origin-project-suncatcher-new-glenn-2029-cover-1200x630-1.jpg. A fictional Latino male engineer with orbital computing concept and generic heavy-lift rocket, not documentation of 2029 hardware. Clean artwork first, single neon-green (#39FF14) BitcoinVersus.tech 14px wordmark on tight black highlight bottom-left, locally rendered and visually inspected for overlaps. Exact typographic matching to separate user-provided reference logo not confirmed.
+- Authentic in-body official artwork: November 19 Blue Origin/Google original partnership graphic, media ID 33907, WordPress attachment alt text and caption preserve attribution and distinguish promotional artwork from flight documentation.
+- Media 1: Google official Oct 30 2026 YouTube video epqzfAi16us showing Project Suncatcher team getting the first AI-generated message; source https://www.youtube.com/watch?v=epqzfAi16us. The video depicts earlier SpaceX-launched prototype, not new Blue Origin mission.
+- Media 2: Blue Origin official Apr 19 2026 NG-3 New Glenn webcast replay enQ_IXtfm9I, source https://www.youtube.com/watch?v=enQ_IXtfm9I. The replay predates agreement and does not show future launch.
+- WordPress rendered two YouTube iframes (not links), official graphic, and no duplicate in-body featured cover. 3 editorial media items; donation QR excluded from media count.
+- Gutenberg: 12550 characters of server-rendered post HTML; no empty links; 4 verified contextual internal links; 0 images missing alt.
+- SEO title: Google Selects Blue Origin for 2029 AI Satellite Launch; description: Google selects Blue Origin's New Glenn for Project Suncatcher satellites in Q1 2029. How the orbital AI plan works and what remains untested.
+- Footer: standard Editor's Note, 5000-satoshi QR donation, mobile instructions and disclaimer retained.
+- Public site browser fetch attempted Nov 20 2026; webpage inaccessible in web tool, hence independent external live-page rendering, full desktop/mobile layout, iframe playback and interaction remain UNVERIFIED.
+- WordPress plugin after-publish status and server-rendered Gutenberg readback: VERIFIED. Live browser QA NOT PASSED or claimed.
