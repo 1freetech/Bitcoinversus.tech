@@ -26,3 +26,16 @@
 - Original graphics in media library verified as existing: #11149, #29796, #23894, #23893, #24043, #34067
 - Main caveats: Independent visual/mobile browser audit, active YouTube playback and interactive X widget operation NOT verified
 - Continuous improvement: Distinguish hash-based power projection from request admission and protocol authorization; economic throughput competition cannot prove intrinsic price; include empirical counterexample and distinction between J/TH and total TWh
+
+## Editor follow-up: requested author-supplied projection figures
+
+- Old bottom-of-article 12-month PEI **image** #23893 removed; the roughly 0.997× 12-month counterexample remains accurately described in prose, with original source linked.
+- New Figure 3 added under “Why efficiency competition might reinforce Bitcoin,” after the Lowery interview: user-uploaded 1200×630 JPEG, WordPress media #34087, https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/pei-mining-efficiency-2025-2046-user-projections.jpeg
+- Figure 3 caption identifies 9.5 J/TH (2025) and 8.9 J/TH (2026), seven labeled annual efficiency-improvement assumptions, and proposed 1 J/TH threshold. Explicitly flags scenarios as conditional rather than actual future measurements.
+- New Figure 5 added in “Does competition make Bitcoin natural money?”: user-uploaded 1024×576 WebP, WordPress media #34088, https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/pei-bitcoin-price-and-joules-per-terahash-scenarios-2025-2040.webp
+- Figure 5 caption separates J/TH (left axis) from Bitcoin price USD (right axis) and independently assumed 15%, 20%, 25% annual improvement/growth; explicitly denies an inferred price-to-efficiency causal relationship.
+- Placement order verified by WordPress rendered content: Proof-of-Power Wall #11149 → historical ASIC chart #29796 → Figure 3 #34087 → 24-month PEI #23894 → Figure 5 #34088 → footer QR #24043.
+- Verified the two WordPress media items report original dimensions 1200×630 and 1024×576, respectively. Original cover stays WordPress media #34067.
+- WordPress public rendered-page audit returned HTTP 200, page public, correct canonical; media content retains original X posts (2), YouTube iframe (1), WordPress image attributes (all nonempty alt text), and unchanged permanent footer.
+- Live mobile layout, visual image rendering in a browser, X embed interactivity, and YouTube playback have not been independently exercised.
+- GitHub Gutenberg and Markdown archives updated to match the edited live article. Earlier 12-month-chart QA entry above is superseded by the explicit removal here.
