@@ -1,0 +1,112 @@
+{
+  "post_id": 33970,
+  "title": "F1 Will Show Drivers’ Heart Rates on TV in 2027",
+  "status": "publish",
+  "slug": "formula-1-whoop-drivers-heart-rates-tv-biometrics-2027",
+  "url": "https://bitcoinversus.tech/2026/11/20/formula-1-whoop-drivers-heart-rates-tv-biometrics-2027/",
+  "publication_date": "2026-11-20",
+  "editorial": {
+    "category": "Sports / Technology",
+    "body_word_count": 704,
+    "originality": "WordPress current published posts, draft list and keyword searches for WHOOP and Formula 1 WHOOP returned no matching prior story; GitHub 2026/11 archive listing also had no WHOOP file",
+    "source_dates": [
+      "Formula 1 November 18 2026",
+      "WHOOP November 18 2026",
+      "Reuters November 19 2026",
+      "Autosport November 18 2026"
+    ],
+    "source_urls": [
+      "https://www.formula1.com/en/latest/article/formula-1-and-whoop-announce-landmark-partnership-to-bring-fans-closer-to-the-human-side-of-racing.1YTsprVRx7MPlaDJnniexm",
+      "https://www.whoop.com/us/en/press-center/whoop-and-formula-1-partner-to-reveal-the-human-performance-behind-the-wheel/",
+      "https://www.reuters.com/sports/formula1/lawson-keen-see-rivals-stress-f1-partners-with-whoop-2026-11-19/",
+      "https://www.autosport.com/f1/news/f1-announces-new-partnership-with-whoop/10875346/",
+      "https://www.whoop.com/us/en/thelocker/a-look-behind-the-data-how-whoop-measures-heart-rate/"
+    ],
+    "important_fact_distinctions": [
+      "FIA in-race approval applies in November 2026; broadcast biometric rollout planned for 2027",
+      "Participating drivers are not all confirmed; expected double-digit figure is Reuters reporting, not finalized",
+      "Wearable PPG pulse and inferred stress are not equivalent",
+      "No trial result or actual in-race stress series is available"
+    ],
+    "internal_links": 4,
+    "prohibited_editorial_terms": [],
+    "headline": "F1 Will Show Drivers’ Heart Rates on TV in 2027",
+    "chart": {
+      "type": "none",
+      "reason": "No verified comparable heart-rate series from official 2027 broadcasts available; creating a trend chart would fabricate data",
+      "candidates_considered": [
+        "Line chart of real-time heart rates rejected for unavailable readings",
+        "Grouped bars for participants rejected for unconfirmed counts",
+        "Milestone timeline rejected because narrative adequately explains 2026 approval and 2027 planned launch"
+      ]
+    }
+  },
+  "cover": {
+    "media_id": 33968,
+    "source": "original generated image",
+    "style": "cinematic anime",
+    "person_rotation": "Black woman (optional, fictional figure)",
+    "dimensions": "1200x630",
+    "watermark": "BitcoinVersus.tech",
+    "watermark_color": "#39FF14",
+    "position": "bottom-left",
+    "black_highlight": true,
+    "duplicate_in_article": false
+  },
+  "media": [
+    {
+      "type": "YouTube",
+      "id": "kMrlHOJ0EUM",
+      "provider": "WHOOP",
+      "video_title": "At Home With Ferrari In Maranello",
+      "video_date": "2026-09-05",
+      "original_source_verified": true,
+      "wordpress_rendered_iframe": true,
+      "playback_verified": false
+    },
+    {
+      "type": "official_photo",
+      "media_id": 33969,
+      "source": "WHOOP press center, November 18 2026",
+      "attribution": "WHOOP press photograph",
+      "rendered_img_tag": true
+    },
+    {
+      "type": "YouTube",
+      "id": "CncgHejrwP4",
+      "provider": "BBC Sport",
+      "video_title": "How To Train Like An F1 Driver With McLaren's Oscar Piastri",
+      "video_date": "2026-09-03",
+      "original_source_verified": true,
+      "wordpress_rendered_iframe": true,
+      "playback_verified": false
+    }
+  ],
+  "qa": {
+    "wordpress_status_publish": true,
+    "canonical_verified": true,
+    "external_public_page_http_status": 200,
+    "public_page_shows": "page",
+    "seo_title_saved": true,
+    "meta_description_saved": true,
+    "featured_media_id": 33968,
+    "og_image_verified": true,
+    "missing_alt_attribute_count": 0,
+    "embedded_youtube_iframes": 2,
+    "official_press_photo_saved": true,
+    "donation_qr_image_24043": true,
+    "editor_note_exact_user_wording_saved": true,
+    "featured_cover_not_duplicated": true,
+    "desktop_screenshot_service": "ready",
+    "mobile_screenshot_service": "ready",
+    "pixel_review_performed": false,
+    "live_youtube_playback_verified": false,
+    "notes": [
+      "Public signed-out page SEO inspection returned HTTP 200 and title, canonical, description and cover image.",
+      "WordPress-rendered article readback confirmed two YouTube iframes with correct video IDs; user-device playback could not be tested.",
+      "WordPress screenshot service supplied ready links; direct pixel inspection was not possible.",
+      "An attempt to retrieve the screenshot image from the screenshot link returned an access error."
+    ]
+  },
+  "archive_file": "archive/2026/11/33970-f1-whoop-heart-rate-broadcasts-2027.gutenberg.html"
+}
