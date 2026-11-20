@@ -1,0 +1,75 @@
+{
+  "post_id": 33802,
+  "post_url": "https://bitcoinversus.tech/2026/11/19/barry-bonds-seven-charts-232-walks-120-intentional-73-home-runs-stats/",
+  "status": "publish",
+  "category": "Sports / MLB",
+  "topic": "Barry Bonds in 7 charts, 2004 walk records and 2001 power season",
+  "story_type": "historical statistical follow-up",
+  "prior_article": "https://bitcoinversus.tech/2026/10/29/barry-bonds-still-greatest-batter-all-time-opinion/",
+  "date": "2026-11-19",
+  "chart_count": 7,
+  "chart_media_ids": [
+    33796,
+    33797,
+    33795,
+    33798,
+    33799,
+    33800,
+    33801
+  ],
+  "chart_types": [
+    "line: total walks",
+    "vertical column: intentional walks",
+    "vertical column: home runs",
+    "line: on-base percentage",
+    "line: slugging percentage",
+    "line: stolen bases",
+    "grouped vertical columns: strikeouts and home runs"
+  ],
+  "data_source_urls": [
+    "https://www.mlb.com/player/barry-bonds-111188",
+    "https://www.mlb.com/giants/team/front-office/barry-bonds",
+    "https://www.statmuse.com/mlb/ask?q=Barry+bonds+2000-2004"
+  ],
+  "source_period": "MLB regular season statistics 1990-2004",
+  "cover_style": "Cinematic anime",
+  "cover_media_id": 33794,
+  "cover_dimensions": [
+    1200,
+    630
+  ],
+  "cover_watermark": "BitcoinVersus.tech, neon green #39FF14, tight black rectangle, bottom-left",
+  "embeds": [
+    {
+      "youtube": "https://www.youtube.com/watch?v=xi7IPZAcP78",
+      "subject": "1998 intentional walk with bases loaded, official MLB footage"
+    },
+    {
+      "youtube": "https://www.youtube.com/watch?v=zosM9cKCqos",
+      "subject": "2001 73rd home run, official MLB footage"
+    }
+  ],
+  "tests": {
+    "wordpress_published": true,
+    "wordpress_readback": true,
+    "image_blocks_in_saved_gutenberg": 7,
+    "youtube_shortcodes_in_saved_gutenberg": 2,
+    "rendered_youtube_iframes": 2,
+    "rendered_chart_images": 7,
+    "original_donation_qr_media_id": 24043,
+    "internal_links_in_rendered_article": 5,
+    "seo_metadata_saved": true,
+    "cover_dimensions_verified": true,
+    "wordpress_screenshot_service_desktop_ready": true,
+    "wordpress_screenshot_service_mobile_ready": true,
+    "actual_video_playback_confirmed": false,
+    "pixel_by_pixel_desktop_mobile_viewport_inspection": false
+  },
+  "unresolved": [
+    "YouTube iframe markup was verified but actual playback was not tested.",
+    "WordPress.com screenshot service produced ready desktop/mobile captures but images could not be visually inspected in the current environment.",
+    "The public article could not be independently fetched through general web retrieval; WordPress published post read-back and screenshot-service response confirmed site availability."
+  ],
+  "archive_html": "archive/2026/11/33802-barry-bonds-seven-charts-232-walk-season.gutenberg.html",
+  "archive_data_csv": "archive/2026/11/33802-barry-bonds-seven-charts-232-walk-season.data.csv"
+}
