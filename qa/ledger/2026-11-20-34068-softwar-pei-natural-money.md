@@ -39,3 +39,17 @@
 - WordPress public rendered-page audit returned HTTP 200, page public, correct canonical; media content retains original X posts (2), YouTube iframe (1), WordPress image attributes (all nonempty alt text), and unchanged permanent footer.
 - Live mobile layout, visual image rendering in a browser, X embed interactivity, and YouTube playback have not been independently exercised.
 - GitHub Gutenberg and Markdown archives updated to match the edited live article. Earlier 12-month-chart QA entry above is superseded by the explicit removal here.
+
+## Correction: exactly two projection charts, both earlier in the article
+
+- User repeated the instruction to remove the last chart at the bottom of the article and distribute two user-uploaded projections with professional captions.
+- The previous edition still contained four charts, with the price/J/TH projection too low on the page.
+- **Three obsolete chart attachments absent from corrected article:** #29796 (selected ASIC efficiency), #23894 (24-month PEI) and #23893 (12-month PEI). The original articles and research metrics remain linked in prose.
+- **Figure 1:** uploaded J/TH scenarios 2025–2046, attachment #34087, after the PEI formula. Chart caption explains 5%–30% efficiency improvement assumptions and the proposed 1 J/TH threshold.
+- **Figure 2:** uploaded dual-axis price and J/TH scenarios 2025–2040, attachment #34088, after the 24-month PEI explanation and before the section on natural money. Chart caption distinguishes solid left-axis J/TH lines from dotted right-axis USD price assumptions.
+- Original upload resolutions unchanged: 1200×630 for Figure 1, 1024×576 for Figure 2. No fabricated chart replacements or secondary previews.
+- Rendered page image order: Proof-of-Power Wall #11149, Figure 1 #34087, Figure 2 #34088, donation QR #24043. Exactly two chart images remain and both precede the concluding natural-money discussion and methodological sections.
+- Signed-out WordPress server response HTTP 200, publicly visible, canonical correct, zero missing image alt attributes, zero empty links.
+- Two original X posts and one YouTube iframe remain rendered. Standing footer, donation QR and featured cover (#34067) remain intact.
+- Source videos' actual playback and mobile visual appearance remain untested.
+- GitHub raw Gutenberg and Markdown files refreshed to match the latest WordPress article. Earlier chart placement QA is superseded by this correction.
