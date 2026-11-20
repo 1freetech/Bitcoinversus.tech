@@ -1,0 +1,88 @@
+{
+  "post_id": 33887,
+  "title": "GPU Mining Trains AI on NASA Planet Data. NEB Adds a Faster Kernel",
+  "url": "https://bitcoinversus.tech/2026/11/20/neb-102-gpu-mining-ai-nasa-kepler-tess-exoplanet-table-kernel-2026/",
+  "status": "publish",
+  "slug": "neb-102-gpu-mining-ai-nasa-kepler-tess-exoplanet-table-kernel-2026",
+  "published_local_date": "2026-11-20",
+  "category": "GPU mining / experimental proof of work / AI",
+  "topic": "NEB 1.0.2 optional GPU table kernel and NASA Kepler/TESS neural network mining",
+  "source_dates": {
+    "NEB release v1.0.2": "2026-11-19",
+    "NEB mainnet start": "2026-11-18T14:00:00Z",
+    "NEB release v1.0.1": "2026-11-17"
+  },
+  "primary_sources": [
+    "https://github.com/SilasEigen/neb/releases/tag/v1.0.2",
+    "https://github.com/SilasEigen/neb/releases/tag/v1.0.1",
+    "https://github.com/SilasEigen/neb/blob/main/docs/mining.md",
+    "https://github.com/SilasEigen/neb",
+    "https://science.nasa.gov/mission/tess/"
+  ],
+  "body_words": 680,
+  "internal_links": 4,
+  "banned_editorial_words": [],
+  "chart": {
+    "type": "vertical bar",
+    "comparison": "TESS simulated classification accuracy versus majority-class baseline",
+    "media_id": 33880,
+    "units": "percent",
+    "zero_baseline": true,
+    "values": [
+      86.6,
+      95
+    ],
+    "difference_pp": 8.4,
+    "source": "Developer's simulated accuracy and distribution on 1,860 held-out TESS signals, not live network metrics",
+    "data_archive": "archive/2026/11/33887-neb-102-gpu-nasa-kepler-tess-table-kernel.chart.csv"
+  },
+  "cover": {
+    "type": "photorealistic conceptual editorial art",
+    "media_id": 33879,
+    "dimensions": "1200x630",
+    "watermark": "BitcoinVersus.tech; Roboto #39FF14 on tight black highlight, bottom-left",
+    "reused_in_article": false
+  },
+  "media": [
+    {
+      "type": "YouTube",
+      "url": "https://www.youtube.com/watch?v=Q4KjvPIbgMI",
+      "publisher": "NASA Goddard",
+      "role": "Mission science context; not NEB evidence"
+    },
+    {
+      "type": "YouTube",
+      "url": "https://www.youtube.com/watch?v=cwDkPKPi1mY",
+      "publisher": "NASA Ames",
+      "role": "Historical Kepler context; not NEB evidence"
+    },
+    {
+      "type": "chart",
+      "media_id": 33880,
+      "role": "Original sourced simulation comparison"
+    }
+  ],
+  "qa": {
+    "wordpress_status_published": true,
+    "wp_com_live_readback": true,
+    "two_youtube_iframes_in_rendered_html": true,
+    "actual_video_playback_tested": false,
+    "chart_rendered_markup": true,
+    "source_links_saved": true,
+    "internal_links_saved": 4,
+    "donation_qr_media_24043_saved": true,
+    "seo_fields_saved": true,
+    "featured_cover_assigned": true,
+    "cover_dimensions_verified": true,
+    "desktop_screenshot_capture_status": "ready",
+    "mobile_screenshot_capture_status": "ready",
+    "visual_screenshot_pixel_inspection": false,
+    "public_visitor_browser_test": false
+  },
+  "limitations": [
+    "The WordPress screenshot provider reported 'ready', but the screenshot pixels were not inspected; the image URL was not retrievable through the available browsing tools.",
+    "Two official NASA YouTube videos were verified as relevant to the underlying space missions, and their iframe markup rendered. Actual playback was not tested.",
+    "No independent testing of NEB's network model accuracy or GPU table-kernel performance was performed."
+  ],
+  "archive": "archive/2026/11/33887-neb-102-gpu-nasa-kepler-tess-table-kernel.gutenberg.html"
+}
