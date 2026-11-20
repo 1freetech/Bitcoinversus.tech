@@ -1,0 +1,92 @@
+{
+  "article_id": 33806,
+  "title": "ForgeMiner Claims 15% Faster RTX 50 GPU Mining",
+  "url": "https://bitcoinversus.tech/2026/11/19/forgeminer-211-rtx50-proxima-15-percent-xelis-gpu-mining-2026/",
+  "slug": "forgeminer-211-rtx50-proxima-15-percent-xelis-gpu-mining-2026",
+  "status": "publish",
+  "article_date": "2026-11-19",
+  "topic": "ForgeMiner v2.1.1 Proxima and Xelis GPU mining software changes",
+  "source_dates": {
+    "v2.1.1": "2026-11-19",
+    "v2.1.0": "2026-11-18",
+    "v2.0.0": "2026-11-13"
+  },
+  "sources": [
+    "https://github.com/0xHashRaptor/ForgeMiner/releases/tag/v2.1.1",
+    "https://github.com/0xHashRaptor/ForgeMiner/releases/tag/v2.1.0",
+    "https://github.com/0xHashRaptor/ForgeMiner/releases/tag/v2.0.0"
+  ],
+  "chart": {
+    "type": "vertical bar",
+    "media_id": 33805,
+    "zero_baseline": true,
+    "data": [
+      {
+        "algorithm": "Proxima",
+        "gpu": "RTX 50",
+        "reported_improvement_pct": 15
+      },
+      {
+        "algorithm": "Proxima",
+        "gpu": "RTX 20/30/40",
+        "reported_improvement_pct": 2
+      },
+      {
+        "algorithm": "Xelis",
+        "gpu": "RTX 3060",
+        "reported_improvement_pct": 11.6
+      },
+      {
+        "algorithm": "Xelis",
+        "gpu": "RTX 5060 Ti",
+        "reported_improvement_pct": 4.6
+      }
+    ],
+    "benchmark_status": "Developer reported, no independent retest"
+  },
+  "cover": {
+    "style": "detailed colored pencil",
+    "media_id": 33804,
+    "width": 1200,
+    "height": 630,
+    "wordmark": "BitcoinVersus.tech",
+    "color": "#39FF14",
+    "background": "tight black rectangle",
+    "position": "bottom left"
+  },
+  "video_embeds": [
+    {
+      "youtube_id": "vcV507Mxj64",
+      "topic": "Xelis hardware during earlier 2025 network fork",
+      "context_only": true
+    },
+    {
+      "youtube_id": "S3aeaHa1hrs",
+      "topic": "Pearl 2026 GPU mining tutorial using different software",
+      "context_only": true
+    }
+  ],
+  "qa_tests": {
+    "post_status_published": true,
+    "wordpress_edit_readback": true,
+    "wordpress_rendered_iframes": 2,
+    "rendered_chart": true,
+    "rendered_donation_qr": true,
+    "rendered_internal_links": 4,
+    "featured_image_verified_by_media_api": true,
+    "body_word_count": 663,
+    "prohibited_words_checked": true,
+    "seo_metadata_saved": true,
+    "desktop_screenshot_service_ready": true,
+    "mobile_screenshot_service_ready": true,
+    "visual_screenshot_pixel_review": false,
+    "iframe_playback_test": false,
+    "public_html_fetch_available": false
+  },
+  "remaining_limitations": [
+    "YouTube videos are real contextual footage, not ForgeMiner 2.1.1 demonstrations; actual playback was not verified.",
+    "WordPress screenshot endpoint reported ready on both viewports but screenshots were not visually inspected.",
+    "Third-party web fetch for newly published URL returned an error; authenticated WordPress live-status and rendered-content readback succeeded."
+  ],
+  "archive": "archive/2026/11/33806-forgeminer-211-rtx50-proxima-xelis-gpu-mining.gutenberg.html"
+}
