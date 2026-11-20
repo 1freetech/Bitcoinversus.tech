@@ -1,0 +1,193 @@
+{
+  "article_id": 33999,
+  "title": "Scientists Build a Bionic Eye With 367,500 Pixels",
+  "url": "https://bitcoinversus.tech/2026/11/20/hkust-bionic-eye-367500-pixels-full-color-event-motion-2026/",
+  "slug": "hkust-bionic-eye-367500-pixels-full-color-event-motion-2026",
+  "status": "publish",
+  "article_date": "2026-11-20",
+  "category": "Robotics, Semiconductors, Technology, Trending News",
+  "topic": "HKUST artificial retina: 367,500 pixels, wide-angle RGB color vision, experimental event-driven motion",
+  "source_dates": {
+    "Nature_Materials_initial_publication": "2026-08-17",
+    "HKUST_2026_announcement": "2026-11-13",
+    "historical_2020_prototype": "2020",
+    "historical_video_2022": "2022-09-14",
+    "historical_video_2024": "2024-12-16"
+  },
+  "primary_sources": [
+    "https://hkust.edu.hk/news/hkust-develops-high-resolution-bionic-eye",
+    "https://doi.org/10.1038/s41563-026-02685-5",
+    "https://researchportal.hkust.edu.hk/en/publications/an-aberration-corrected-bionic-eye-for-full-colour-vision-and-eve/",
+    "https://hkust.edu.hk/news/hkust-scientists-develop-worlds-first-spherical-artificial-eye-3d-retina"
+  ],
+  "independent_method_critique": "https://xenospectrum.com/en/hkust-bionic-eye-colour-motion-readout/",
+  "measurements": {
+    "old_pixel_count": 100,
+    "old_year": 2020,
+    "new_pixel_count": 367500,
+    "new_year": 2026,
+    "pixel_ratio": 3675,
+    "pixel_density_ppi": 1905,
+    "field_of_view_deg_lower_bound": 160,
+    "motion_recognition_accuracy_percent": 98.6,
+    "reported_bandwidth_reduction_percent_greater_than": 99.95,
+    "figures_are_test_specific": true,
+    "real_time_full_array_video_not_proven": true
+  },
+  "smartchart": {
+    "atlas_reference": "https://github.com/1freetech/SmartChart/blob/main/atlas/catalog.json",
+    "catalog_types_reviewed": 40,
+    "all_types_reviewed": [
+      "line",
+      "area",
+      "stackedArea",
+      "step",
+      "candlestick",
+      "spark",
+      "slope",
+      "bump",
+      "bars",
+      "groupedBars",
+      "stackedBars",
+      "percentBars",
+      "lollipop",
+      "dumbbell",
+      "bullet",
+      "waterfall",
+      "pareto",
+      "tornado",
+      "histogram",
+      "boxplot",
+      "violin",
+      "dot",
+      "density",
+      "scatter",
+      "bubble",
+      "heatmap",
+      "hexbin",
+      "donut",
+      "treemap",
+      "waffle",
+      "sunburst",
+      "sankey",
+      "funnel",
+      "gantt",
+      "calendar",
+      "control",
+      "gauge",
+      "radar",
+      "choropleth",
+      "symbolMap"
+    ],
+    "candidates": [
+      {
+        "name": "bars",
+        "assessment": "Selected: two comparable absolute sensor counts, vertical zero-baseline bars, explicit small-value annotation"
+      },
+      {
+        "name": "slope",
+        "assessment": "Rejected: visually implies continuous intermediate progression without measurements"
+      },
+      {
+        "name": "lollipop",
+        "assessment": "Rejected: same quantitative comparison but visually less clear to readers than vertical bars"
+      }
+    ],
+    "selected": "vertical bar",
+    "reason": "2020 and 2026 prototype counts share identical units; bar uses zero baseline, exact values and a 3,675x computed ratio",
+    "rendering": "Python Matplotlib, reviewed against SmartChart 40-type selection catalog",
+    "source_values": [
+      {
+        "year": 2020,
+        "pixels": 100
+      },
+      {
+        "year": 2026,
+        "pixels": 367500
+      }
+    ],
+    "chart_wordmark_avoid_overlay": true,
+    "image_media_id": 33997,
+    "image_px": [
+      1960,
+      1102
+    ],
+    "units": "total sensing pixels",
+    "timepoints": "2020 and 2026",
+    "zero_baseline": true,
+    "calculation": "367500/100=3675",
+    "no_forecasts_as_history": true,
+    "source_cited": true
+  },
+  "cover": {
+    "style": "detailed modern colored-pencil",
+    "media_id": 33996,
+    "dimensions_px": [
+      1200,
+      630
+    ],
+    "wordmark": "BitcoinVersus.tech",
+    "color": "#39FF14",
+    "background": "tight black text highlight",
+    "position": "bottom-left",
+    "original_art_not_photograph": true
+  },
+  "in_story_media": [
+    {
+      "type": "YouTube official historical research footage",
+      "video_id": "p6iT6lOBlkw",
+      "source": "HKUST",
+      "publication": "2022-09-14",
+      "contextual_only": true
+    },
+    {
+      "type": "original research chart",
+      "media_id": 33997
+    },
+    {
+      "type": "YouTube official historical compound-eye research footage",
+      "video_id": "g8FgEC2KuGs",
+      "source": "HKUST",
+      "publication": "2024-12-16",
+      "contextual_only": true
+    },
+    {
+      "type": "official HKUST laboratory photograph",
+      "media_id": 33998,
+      "credit": "HKUST"
+    }
+  ],
+  "qa_tests": {
+    "wordpress_post_published": true,
+    "wordpress_edit_readback": true,
+    "wordpress_rendered_iframes": 2,
+    "video_playback_verified": false,
+    "public_page_http_status": 200,
+    "public_canonical_verified": true,
+    "public_seo_title_verified": true,
+    "public_seo_meta_verified": true,
+    "public_og_featured_image_verified": true,
+    "featured_cover_1200x630_verified": true,
+    "featured_cover_not_in_body": true,
+    "chart_rendered_in_post": true,
+    "lab_photo_rendered_in_post": true,
+    "image_alt_missing_count_on_public_page": 0,
+    "empty_link_count_on_public_page": 0,
+    "internal_links_in_post": 4,
+    "body_word_count": 572,
+    "prohibited_editorial_words_absent": true,
+    "exact_donation_footer_saved": true,
+    "qr_block_rendered": true,
+    "desktop_screenshot_service_ready": true,
+    "mobile_screenshot_service_ready": true,
+    "desktop_mobile_pixel_review": false,
+    "independent_source_link_http_checks": false
+  },
+  "remaining_limitations": [
+    "Both YouTube embeds are authentic HKUST footage but show earlier 2022 and 2024 devices, not the 2026 prototype. Playback was not independently exercised.",
+    "Screenshot service returned ready at 1200px desktop and 390px mobile viewport, but pixels were not visually inspected.",
+    "Published figures 99.95% bandwidth reduction and 98.6% motion recognition accuracy are task-specific laboratory research results, not deployed-camera measurements.",
+    "Some editorial source links were checked by search/open; automated individual HTTP status checks for every internal/external link were not performed."
+  ],
+  "archive": "archive/2026/11/33999-hkust-bionic-eye-367500-pixels.gutenberg.html"
+}
