@@ -24,6 +24,14 @@ Bitcoin miners repeatedly compute candidate block hashes, seeking a result below
 
 A more limited experiment could require request-specific computational puzzles before high-risk systems accept certain operations. The [Proof-of-Power Wall concept](https://bitcoinversus.tech/2026/11/19/jason-lowery-softwar-proof-of-power-wall-figure-70-cybersecurity-api/) proposes a related cost barrier. However, a puzzle at an API gateway is a distinct protocol, not merely Bitcoin mining redirected at a firewall. Engineering details, including challenge freshness, authorization and replay protection, determine whether any design works.
 
+[tweet 2121834933920354309]
+
+*Anthony Scaramucci's [November 15, 2026 X post](https://x.com/Scaramucci/status/2121834933920354309) argues that proof of work could become a defense against AI-driven hacking. The statement is commentary, not a verified deployment or measured security result.*
+
+![Proof-of-Power Wall conceptual illustration previously published by BitcoinVersus.Tech in March 2025](https://bitcoinversus.wordpress.com/wp-content/uploads/2025/03/image-19.png)
+
+*Proof-of-Power Wall visual from [BitcoinVersus.Tech's March 2025 coverage](https://bitcoinversus.tech/2025/03/17/proof-of-power-wall-secures-infrastructure-with-computer-power/). For Lowery's original proposed design, consult [Softwar, Figure 70, page 297](https://r5.ieee.org/pikespeak/wp-content/uploads/sites/72/sites/72/2024/10/lowery-jplowery-sm-sdm-2023-thesis.pdf#page=297). A conceptual illustration, not a photographed or validated operational firewall.*
+
 [youtube https://www.youtube.com/watch?v=37w4vxeYL8U]
 
 *Archival discussion: Adam Back and Jason Lowery discuss the history of proof of work and cyber power projection on Robert Breedlove's What Is Money? Show. The recording is background, not evidence of a 2026 government deployment.*
