@@ -1,0 +1,26 @@
+# BitcoinVersus.Tech Editorial QA: Sila Panasonic Battery-Materials Offtake Deal
+
+- WordPress post ID: 33827; title: Sila Lands Potential $1 Billion Panasonic Battery Deal
+- Site publication date: 2026-11-19T20:10:50; status: publish
+- Canonical URL: https://bitcoinversus.tech/2026/11/19/sila-panasonic-billion-dollar-silicon-carbon-anode-moses-lake-2026/
+- Rotation: Energy / Automotive / Business following materials research, cybersecurity and sports.
+- Dedupe searches: WordPress searched Sila, Panasonic silicon, Moses Lake battery, Titan Silicon and offtake. No matching current Sila-Panasonic November 2026 offtake article.
+- Primary event: Sila official November 18, 2026 press release, an agreement for future supply, potential commercial value greater than $1 billion over time. Previous Sila-Panasonic procurement agreement already announced in December 2023; the 2026 announcement expands the relationship.
+- Primary source: https://www.silanano.com/press/press-releases/sila-inks-long-term-offtake-deal-with-panasonic-energy-to-power-domestic-battery-production
+- Prior primary: Panasonic official 2023 procurement announcement; Sila August 7, 2026 conditional loan commitment.
+- Independent contemporary sources: Manufacturing Dive Nov. 19, 2026, InsideEVs Nov. 19, 2026.
+- Verified financial separation: potential $1B+ future purchased material is not $1B in booked revenue or guaranteed cash; a conditional $1.4B government loan commitment and $300M equity funding are separate financing concepts, not purchase revenue.
+- Reported initial production capability of about 2 GWh battery equivalent/year derived from InsideEVs; 250 GWh is a possible future expansion goal only, not currently delivered volume.
+- Main article: 663 editorial words excluding source list and footer; four contextual verified internal links. Prohibited editorial words avoided in original prose.
+- SmartChart: optional and intentionally omitted. Comparing $1B+ potential purchases, $1.4B conditional loan and 2 vs 250 GWh output ambition in one chart would merge noncomparable financial and engineering measures or treat projections as historical. Chart candidates considered: zero-baseline vertical bars, timeline, waterfall. None clearly improves integrity without verified year-by-year volumes or sales.
+- Featured cover: original colored-pencil concept of silicon-carbon powder, factory and EV. Clean image then one 14 px BitcoinVersus.tech wordmark neon green #39FF14 on tight black highlight bottom left, checked for no overlapping tags. Media 33825, dimensions 1200x630, source https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-sila-panasonic-silicon-anode-cover-1200x630-1.jpg. The artistically rendered cutaway is not an official device photograph.
+- Authentic photograph: Sila company facility photo from primary press release, WordPress media 33826 at https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/sila-moses-lake-washington-battery-anode-plant-official-2026.jpg; original source attribution and archival qualification retained.
+- In-story video 1: Sila first-party YouTube video wJHiE3Go19o, published Oct. 4 2025, "Inventing and Scaling Titan Silicon"; clearly labeled archival not November 2026 shipment recording.
+- In-story video 2: Bloomberg Technology YouTube video 71rLuJU5LQk, published July 14 2025, interview with Panasonic North America CEO at Kansas plant; clearly labeled archival.
+- In-story media count: 3 (2 YouTube videos + one actual Sila company facility photo). Donation QR excluded. WordPress server-rendered iframes confirmed; actual playback and mobile rendering unverified.
+- Saved Gutenberg: 10098 characters source; 13506 characters WordPress rendered HTML; 2 video iframes; 4 contextual internal links; 0 empty links; 0 missing image alt; donation QR and Editor's Note intact; featured cover not repeated in body.
+- SEO title: Sila and Panasonic Sign Potential $1B Battery-Materials Deal
+- SEO description: Sila's Panasonic supply agreement could exceed $1 billion over time. Explore Titan Silicon, Washington manufacturing, EV battery chemistry and important contract limits.
+- WordPress API status, featured media, source content, rendering and saved embeds: PASS.
+- Independent public-browser fetch November 19, 2026 failed because page was inaccessible through browser tool; desktop/mobile visual inspection and real iframe playback: UNVERIFIED. No claim of complete end-to-end playback tests.
+- Archival GitHub files were generated from the actual published WordPress edit-context response and a separate QA record.
