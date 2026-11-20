@@ -63,7 +63,18 @@
         "rendered_iframe_verified": true,
         "playback_test": "not available"
       }
-    ]
+    ],
+    "additional_official_presentation_screenshot": {
+      "id": 33866,
+      "source": "Editor-supplied screenshot titled NVIDIA Photonics Switch Systems",
+      "filename": "nvidia-quantum-x-spectrum-x-photonics-switch-systems-slide.png",
+      "dimensions": "1269x717",
+      "inserted_after": "Quantum-X Photonics switch specifications",
+      "caption": "NVIDIA presentation comparison with advertised specifications; not an independent benchmarking source",
+      "alt_text_saved": true,
+      "original_featured_cover_retained": true,
+      "displayed_once": true
+    }
   },
   "qa": {
     "published_status_verified": true,
@@ -78,8 +89,13 @@
     "video_playback_verified": false,
     "notes": [
       "Initial wp:embed blocks rendered as plain video links; fixed using WordPress-supported [youtube] shortcodes, then readback confirmed 2 rendered iframes.",
-      "Video sources were traced to first-party company pages; successful playback on end-user devices not tested."
-    ]
+      "Video sources were traced to first-party company pages; successful playback on end-user devices not tested.",
+      "2026-11-20: inserted editor-provided NVIDIA Photonics Switch Systems slide as full-size Gutenberg image below Quantum-X specifications; WordPress published readback shows image once with responsive srcset and caption, with existing chart and two YouTube iframes intact. External visual viewport review and playback not performed."
+    ],
+    "additional_screenshot_wordpress_image_rendered": true,
+    "additional_screenshot_html_figure_verified": true,
+    "youtube_embeds_retained_after_screenshot_update": 2,
+    "original_smartchart_retained_after_screenshot_update": true
   },
   "archive_file": "archive/2026/11/33838-lambda-nvidia-cpo-10000-gpus.gutenberg.html"
 }
