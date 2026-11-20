@@ -1,0 +1,50 @@
+{
+  "post_id": 33777,
+  "url": "https://bitcoinversus.tech/2026/11/19/warpaxe-rust-bitcoin-mining-firmware-ipv6-fan-pwm-fix-november-2026/",
+  "slug": "warpaxe-rust-bitcoin-mining-firmware-ipv6-fan-pwm-fix-november-2026",
+  "status": "publish",
+  "date": "2026-11-19",
+  "title": "WarpAxe Brings IPv6 and Fan Fixes to Bitcoin Miners",
+  "category": "Bitcoin mining and ASICs",
+  "topic": "WarpAxe v0.1.46 Rust firmware, IPv6, Nerd PWM and Naja Duo",
+  "primary_sources": [
+    "https://git.warppool.org/dvb-projekt/dvb-WarpAxe/releases/tag/v0.1.46",
+    "https://git.warppool.org/dvb-projekt/dvb-WarpAxe/releases",
+    "https://git.warppool.org/dvb-projekt/dvb-WarpAxe",
+    "https://github.com/bitaxeorg/naja-duo"
+  ],
+  "body_word_count": 653,
+  "chart_type": "grouped vertical bar (zero baseline)",
+  "chart_id": 33776,
+  "chart_source": "WarpAxe v0.1.46 release notes 100% 2820/2818 RPM, 25% 790/791 RPM",
+  "cover_style": "photorealistic editorial concept",
+  "cover_media_id": 33773,
+  "cover_dimensions": "1200x630",
+  "watermark": "BitcoinVersus.tech #39FF14 Roboto, tight black highlight, bottom left",
+  "in_story_media": [
+    "https://www.youtube.com/watch?v=rr1W5QHMhBc",
+    "https://www.youtube.com/watch?v=prteKOi786U",
+    "WordPress chart image ID 33776"
+  ],
+  "tests": {
+    "wordpress_published": true,
+    "wordpress_readback": true,
+    "shortcodes_saved": 2,
+    "rendered_iframes": 2,
+    "source_video_pages_confirmed": true,
+    "playback_tested": false,
+    "chart_in_rendered_html": true,
+    "donation_qr_in_rendered_html": true,
+    "internal_links_saved": 4,
+    "seo_meta_saved": true,
+    "cover_media_dimensions_verified": true,
+    "desktop_mobile_screenshot_service_ready": true,
+    "desktop_mobile_pixel_inspection": false
+  },
+  "unresolved": [
+    "No end-to-end YouTube playback test was available.",
+    "Screenshot service returned ready desktop/mobile captures, but pixels were not independently inspected.",
+    "Live public URL was confirmed through WordPress readback; separate web retrieval could not fetch the new URL."
+  ],
+  "gutenberg_archive": "archive/2026/11/33777-warpaxe-rust-firmware-ipv6-fan-pwm.gutenberg.html"
+}
