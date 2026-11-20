@@ -2222,6 +2222,167 @@
         "engagement": "not accessible"
       },
       "corrections": []
+    },
+    {
+      "post_id": 34029,
+      "article_title": "BitFuFu Revenue Falls 79% Even as Its Own Bitcoin Mining Grows",
+      "publication_date": "2026-11-20",
+      "content_type": "standard_news",
+      "category_names": [
+        "Bitcoin",
+        "Bitcoin Mining",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        36507086,
+        57414501,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/20/bitfufu-q3-2026-revenue-down-79-self-mined-bitcoin-up-48/",
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "evidence": "WordPress post #34029 context=edit and context=view returned status publish and canonical URL; external public URL fetch blocked"
+      },
+      "editorial_body_word_count": 622,
+      "original_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1921158/000121390026122400/ea031259601ex99-1.htm",
+        "https://www.globenewswire.com/news-release/2026/11/20/3407337/0/en/bitfufu-reports-unaudited-third-quarter-2026-financial-results.html",
+        "https://www.sec.gov/Archives/edgar/data/1921158/000121390026116602/ea031104401ex99-1.htm"
+      ],
+      "duplicate_check": {
+        "wordpress": "Searches of 'BitFuFu Q3', 'BitFuFu revenue', 'BitFuFu 79.1', and exact new event before drafting found no direct Q3 report duplicate.",
+        "github": "Unique new WordPress post #34029 and archive filename prechecked before create.",
+        "scope": "Keyword and post-title query; not exhaustive archive-level content similarity."
+      },
+      "internal_links": {
+        "count": 5,
+        "targets_status": "Related articles returned by WordPress post search; independent browser click test unavailable."
+      },
+      "in_story_media": {
+        "count": 3,
+        "types": [
+          "YouTube iframe",
+          "original grouped vertical revenue chart",
+          "YouTube iframe"
+        ],
+        "video_ids": [
+          "SrzQA7EWd38",
+          "lcAG8Tss9L0"
+        ],
+        "wordPress_rendered_iframes": 2,
+        "actual_video_playback": "not independently tested",
+        "captions_after_media": true,
+        "chart_id": 34026
+      },
+      "featured_cover": {
+        "media_id": 34025,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "fine-art oil painting",
+        "subjects": "Active Bitcoin ASIC mining racks contrasted with empty steel shelving",
+        "watermark": "BitcoinVersus.tech #39FF14, ~10pt tight black text highlight at bottom-left",
+        "cover_not_duplicated_in_body": true,
+        "visual_inspection": true,
+        "documentary_image": false
+      },
+      "chart": {
+        "present": true,
+        "type": "grouped vertical bars",
+        "source": "BitFuFu unaudited Q3 2026 results filed on November 20, 2026 SEC Exhibit 99.1",
+        "labels": [
+          "Cloud mining",
+          "Self-mining",
+          "Equipment sales",
+          "Hosting and other"
+        ],
+        "series_q3_2025_usd_m": [
+          122.9,
+          20.1,
+          35.8,
+          1.9
+        ],
+        "series_q3_2026_usd_m": [
+          13.8,
+          18.4,
+          2,
+          3.5
+        ],
+        "baseline_zero": true,
+        "media_id": 34026,
+        "alternatives_considered": [
+          "line chart not appropriate to only two dates",
+          "dot plot compact but less direct for four categories",
+          "grouped vertical bars selected"
+        ],
+        "original_verified_file_dimensions": [
+          1200,
+          675
+        ]
+      },
+      "footer": {
+        "approved_editors_note_exact": true,
+        "synced_block_ref_id": 33935,
+        "original_donation_qr_id": 24043,
+        "qr_count": 1,
+        "disclaimer_rendered": true
+      },
+      "archive": {
+        "qa_record": "archive/2026/11/34029-bitfufu-q3-revenue-self-mining.md",
+        "exact_gutenberg": "archive/2026/11/34029-bitfufu-q3-revenue-self-mining.gutenberg.html"
+      },
+      "rotation": {
+        "category": "Bitcoin Mining",
+        "previous_category": "Finance / Business",
+        "cover_style": "fine-art oil painting",
+        "previous_cover": "detailed modern colored pencil"
+      },
+      "qa_score": {
+        "total": 90,
+        "max": 100,
+        "components": {
+          "Accuracy and source verification": 24,
+          "Originality and newsworthiness": 15,
+          "Technical depth and explanatory clarity": 15,
+          "Working embeds and media relevance": 11,
+          "Cover and visualization quality": 10,
+          "Internal links and SEO": 10,
+          "Live-page QA and formatting": 5
+        },
+        "unverified_gates": [
+          "Actual YouTube playback",
+          "Independent desktop/mobile layout",
+          "External public webpage fetch"
+        ],
+        "status": "WordPress publish + rendered media verified; independent end-to-end playback not verified and cannot count as mandatory media gate pass"
+      },
+      "observations": [
+        "Revenue fell 79.1% from $180.7M to $37.7M while own BTC production rose 48.3% from 174 to 258 BTC.",
+        "Customer cloud mining output fell 1,033 to 195 BTC; own production and customer output are separate populations.",
+        "Managed hashrate 19.4 EH/s includes manufacturer-rated machines that might be offline; not independent active-pool hashrate.",
+        "Reported $24.9M net income incorporated $36.5M in digital-asset fair-value gain."
+      ],
+      "three_improvements_to_carry_forward": [
+        "Find independent browser playback test or replace videos with confirmed original media if playback fails.",
+        "Preserve separation between financial, physical and customer mining metrics and use matching-period comparisons.",
+        "Keep original cover watermark and approved synced footer #33935, and verify no duplicated QR."
+      ],
+      "feedback": {
+        "user_preferences": [
+          "Bitcoin mining category request",
+          "Verified YouTube/Gutenberg embeds",
+          "Four internal links and chart comparisons",
+          "Approved exact footnote"
+        ],
+        "engagement": "unavailable"
+      },
+      "corrections": [
+        "Overlapping chart subtitle removed prior to WordPress upload; final chart visually reinspected."
+      ]
     }
   ],
   "future_article_template_required_fields": [
