@@ -1,0 +1,97 @@
+{
+  "article_id": 33965,
+  "title": "Unity Lets AI Agents Build and Test Games",
+  "url": "https://bitcoinversus.tech/2026/11/20/unity-cli-1-0-ai-coding-agents-game-development-unite-tokyo-2026/",
+  "slug": "unity-cli-1-0-ai-coding-agents-game-development-unite-tokyo-2026",
+  "status": "publish",
+  "article_date": "2026-11-20",
+  "topic": "Unity CLI 1.0 release and Unite Tokyo 2026 AI agent coding, ECS, and graphics demonstrations",
+  "category": "Gaming; Artificial Intelligence; Information Technology; Technology",
+  "source_dates": {
+    "Unity_CLI_1_0_0": "2026-11-12",
+    "Unity_CLI_1_0_1": "2026-11-16",
+    "Unite_Tokyo_announcement": "2026-11-17"
+  },
+  "sources": [
+    "https://unity.com/blog/unite-tokyo-2026-keynote-recap",
+    "https://unity.com/the-unity-cli-1.0-is-here",
+    "https://docs.unity.com/en-us/unity-cli/release-notes/2026",
+    "https://docs.unity.com/en-us/unity-cli/unity-cli-plugins",
+    "https://www.youtube.com/watch?v=culEkDxK6dY",
+    "https://www.youtube.com/watch?v=cAYg3rYUtkQ",
+    "https://www.youtube.com/watch?v=gFWJb3YVVE4"
+  ],
+  "reported_data": {
+    "cli_users": "more than 350,000 since July 20, company reported",
+    "commands": "over 600 million, company reported",
+    "automation_share": "approximately 98%, company reported",
+    "demo_entities": 5000,
+    "gpu_sample_performance_gain": "over 62%, Atrio selected workload",
+    "texture_memory_reduction": "nearly 30%, Atrio sample",
+    "fellowship_teams_per_year": 10,
+    "fellowship_usd_per_team": 50000
+  },
+  "chart": {
+    "used": false,
+    "candidates_considered": [
+      "vertical columns for memory use",
+      "line chart for demonstration frame rate",
+      "pie chart for automated command share"
+    ],
+    "reason": "Raw before/after or per-frame benchmark datasets were not supplied; 98% automation share is a single company-reported statistic better expressed in text. No fabricated chart."
+  },
+  "cover": {
+    "style": "cinematic anime",
+    "media_id": 33963,
+    "width": 1200,
+    "height": 630,
+    "wordmark": "BitcoinVersus.tech",
+    "color": "#39FF14",
+    "background": "tight black text-highlight",
+    "position": "bottom-left"
+  },
+  "video_embeds": [
+    {
+      "youtube_id": "culEkDxK6dY",
+      "source": "Unity",
+      "topic": "Unity CLI 1.0 and Pipeline API demo"
+    },
+    {
+      "youtube_id": "cAYg3rYUtkQ",
+      "source": "Unity",
+      "topic": "ECS for All official demo"
+    },
+    {
+      "youtube_id": "gFWJb3YVVE4",
+      "source": "Unity",
+      "topic": "Neural texture compression and Unity Graphics Kernel demo"
+    }
+  ],
+  "qa_tests": {
+    "wordpress_published_status": true,
+    "wordpress_edit_readback": true,
+    "public_html_http_status": 200,
+    "public_canonical_url_matches": true,
+    "public_meta_title_matches": true,
+    "public_meta_description_matches": true,
+    "public_og_featured_image_matches": true,
+    "original_cover_dimensions_1200x630": true,
+    "public_images_missing_alt": 0,
+    "rendered_youtube_iframes": 3,
+    "actual_video_playback_verified": false,
+    "verified_internal_links": 4,
+    "body_word_count": 699,
+    "prohibited_editorial_words_checked": true,
+    "donation_qr_rendered": true,
+    "featured_cover_not_duplicated": true,
+    "desktop_screenshot_service_status_ready": true,
+    "mobile_screenshot_service_status_ready": true,
+    "screenshot_pixel_review": false
+  },
+  "remaining_limitations": [
+    "Three official Unity YouTube iframe elements and video IDs were verified in the rendered WordPress post, but independent video playback was not exercised.",
+    "WordPress screenshot service returned ready for desktop and mobile, but screenshots were not examined pixel-by-pixel.",
+    "Performance demo figures and adoption counts originate from Unity's own presentation rather than independent comparative benchmarks."
+  ],
+  "archive": "archive/2026/11/33965-unity-cli-ai-agents-game-development.gutenberg.html"
+}
