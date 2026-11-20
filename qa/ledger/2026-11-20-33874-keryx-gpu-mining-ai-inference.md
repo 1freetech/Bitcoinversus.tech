@@ -1,0 +1,25 @@
+# Editorial QA: Keryx GPU Mining and AI Inference
+
+- WordPress post ID: 33874, Keryx Lets One GPU Run AI While Others Keep Mining
+- WordPress site date: 2026-11-20T04:43:23
+- Published canonical URL: https://bitcoinversus.tech/2026/11/20/keryx-gpu-miner-ai-inference-other-cards-keep-mining-2026/
+- Status: publish, confirmed by edit and view WordPress plugin readback
+- Rotation category: GPU mining / AI / mining hardware, after energy, software and materials coverage
+- Deduplication: WordPress searches Keryx, Proof of Model, 0.6.1-PoM, inference mining, multi-GPU mining returned no existing Keryx feature. Rejected potential duplicates on Tether MDK, SRBMiner 3.8.9, November difficulty, Sterling West Texas, PowerCompute 600 S21++, FutureBit Apollo III and other stories.
+- Primary release dates: Keryx-Labs miner 0.6.1 Nov. 8, 2026; v0.6.2 Nov. 11, 2026. Official Keryx social statement Nov. 18, 2026.
+- Official sources: https://github.com/Keryx-Labs/keryx-miner/releases/tag/v0.6.1-PoM and https://github.com/Keryx-Labs/keryx-miner/releases/tag/v0.6.2-PoM , miner README and Keryx whitepaper. Additional independent explanation at ASIC.tools.
+- Technology: Proof-of-Model requires model weights in VRAM and supports on-chain inference. One GPU suspends its model walk for a request; other eligible GPUs continue. CUDA faults on a card are isolated when other cards can still serve the necessary model. Requires verification of paid demand and energy economics. This is Keryx, not Bitcoin SHA-256 mining.
+- RTX 3090 benchmark: developer reported 2.13 MH/s to 2.72 MH/s for the lock-step CUDA model-walk kernel, calculated (2.72/2.13-1)*100=27.70%. Developer also reports approximately +40% overall relative to v0.6.0, a different test scope; no independent lab test performed.
+- Keryx 0.6.2: Stratum TLS with CA certificate verification, unencrypted TCP warnings, optional private CA, fallback to lower already-downloaded model tier on insufficient VRAM. No guarantee of end-to-end protection against malware or a profitable outcome.
+- Main news brief: 617 narrative words (excluding source list/footer). Prohibited editorial vocabulary absent; original commentary with clear technical limitations.
+- SmartChart: vertical bar over line/scatter because two developer benchmark observations on a single RTX 3090 permit an honest common-baseline comparison. Chart WordPress media 33869, https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/keryx-rtx3090-lockstep-developer-benchmark.png, 2.13 vs 2.72 MH/s, zero baseline, labelled units and source. Benchmark is developer-reported and not Bitcoin SHA-256 or profitability. Export checked in Python with 1358x833 source image; WordPress 1358x833 original dimensions.
+- Cover: original photorealistic conceptual tech-lab image, single subject with GPU rack, 1200x630 JPEG, WP media 33868, https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-keryx-gpu-mining-inference-cover-1200x630-1.jpg. On clean artwork placed one neon-green #39FF14 BitcoinVersus.tech text label on a compact black highlight at lower left. Local image viewer check: no overlapping tags. No duplicate cover in article. Exact saved-logo typography match not tested.
+- In-story media (4): independent June 2026 Keryx explainer on YouTube ThTym2dTaTc, official Keryx November 18 X statement 2122999113172021502, original benchmark chart, independent July 2026 HiveOS Keryx setup YouTube pmJylwh3iFg. Captions use ordinary professional news commentary.
+- WordPress saved output confirms 2 iframes, 1 populated X blockquote, 1 chart and the final QR image. Independently playable browser sessions NOT tested.
+- Contextual BitcoinVersus.Tech internal links: 4. No empty anchors and no missing img alt attributes.
+- SEO title: Keryx GPU Miner Runs AI Without Stopping the Rig | 2026
+- SEO description: Keryx GPU miner 0.6.1 lets one card serve AI inference while other cards keep mining. RTX 3090 benchmarks and 0.6.2 encrypted pool connections explained.
+- Established Editor's Note, donation QR, mobile instructions, disclaimer: present.
+- Published article HTML: 12188 characters; Gutenberg edit source: 8400 characters. WordPress status/featured asset/rendered markup verified.
+- Public-site independent fetch attempt November 20, 2026 was inaccessible through external web tool; public page, browser iframe playback and responsive desktop/mobile layout UNVERIFIED. Never treat rendered shortcode/iframe as proof of playback.
+- GitHub contains an exact published-edit-context Gutenberg snapshot and this QA log.
