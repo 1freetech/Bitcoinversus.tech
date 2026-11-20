@@ -1,0 +1,84 @@
+{
+  "post_id": 33846,
+  "title": "Open Firmware Could Give Older Bitcoin Miners New Life",
+  "url": "https://bitcoinversus.tech/2026/11/19/mujina-open-source-bitcoin-miner-firmware-s19-installer-2026/",
+  "status": "publish",
+  "slug": "mujina-open-source-bitcoin-miner-firmware-s19-installer-2026",
+  "publication_date": "2026-11-19",
+  "editorial": {
+    "category": "Bitcoin mining, ASICs and hardware",
+    "topic": "256 Foundation October 1 funding extension for Mujina open-source S19j Pro and S19k Pro firmware images and installer",
+    "word_count_main_body": 588,
+    "originality": "Checked WordPress published posts, drafts and scheduled posts for Mujina, RY3T, BZM2 and open mining stack; separate from September 29 general coverage",
+    "primary_source_dates": [
+      "256 Foundation October 1, 2026 funding announcement",
+      "256 Foundation August 14, 2026 RY3T Nova demonstration report",
+      "Mujina hardware compatibility documentation current as of July 2026",
+      "POD256 November 10, 2026 episode background"
+    ],
+    "source_urls": [
+      "https://www.256foundation.org/newsroom/mujina-term-extension",
+      "https://www.256foundation.org/newsroom/ry3t-nova",
+      "https://mujina.org/reference/hardware-compatibility",
+      "https://github.com/256foundation/mujina"
+    ],
+    "relevant_internal_links": 4,
+    "chart_type": "none",
+    "chart_selection": "Considered line, vertical bar and scatter charts; no independent synchronized hardware power/throughput measurements to support a fair comparison",
+    "prohibited_terms": []
+  },
+  "media": {
+    "cover": {
+      "style": "detailed modern colored-pencil illustration",
+      "media_id": 33841,
+      "dimensions": "1200x630",
+      "wordmark": "BitcoinVersus.tech",
+      "wordmark_color": "#39FF14",
+      "position": "bottom-left",
+      "background": "tight black highlight",
+      "url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoinversus-mujina-open-asic-firmware-colored-pencil-1200x630-1.jpg"
+    },
+    "embeds": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ZJP1pFQvVYk",
+        "verified_render": "iframe src youtube.com/embed/ZJP1pFQvVYk",
+        "playback_test": "not performed"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Vvnjpbi15vQ",
+        "verified_render": "iframe src youtube.com/embed/Vvnjpbi15vQ",
+        "playback_test": "not performed"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Xi0M5NLxm20",
+        "verified_render": "iframe src youtube.com/embed/Xi0M5NLxm20",
+        "playback_test": "not performed"
+      }
+    ],
+    "featured_image_not_duplicated_in_body": true
+  },
+  "qa": {
+    "wordpress_saved_rendered_iframes": 3,
+    "youtube_embed_fix": "Converted Gutenberg embed figures that rendered only plain links into WordPress.com youtube shortcodes; post context=view rendered three iframes",
+    "public_page_http_status": 200,
+    "word_count_and_prohibited_terms": true,
+    "relevant_internal_links_verified": 4,
+    "qr_donation_media_id": 24043,
+    "disclaimer_saved": true,
+    "seo_saved_and_public_render_verified": true,
+    "featured_image_metadata_verified": "1200x630, media ID 33841",
+    "desktop_mobile_pixel_review": false,
+    "video_playback_verified": false,
+    "independently_fetched_live_webpage": false,
+    "issues": [
+      "Cannot independently play YouTube videos in this environment.",
+      "Could not complete visual desktop/mobile screenshot review.",
+      "WordPress public Open Graph image reports a 1024x538 served variant of the 1200x630 original.",
+      "Public page reports 8 theme/UI links with no destination; article links are not the cited source of these."
+    ]
+  },
+  "archive_file": "archive/2026/11/33846-mujina-open-source-s19-firmware.gutenberg.html"
+}
