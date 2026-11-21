@@ -11,7 +11,7 @@ cover_style: detailed modern colored-pencil illustration
 official_image_id: 34057
 official_image_dimensions: 2560x1439
 in_story_youtube_ids: [HsLK3VZ5Nek, IkU0ARpla3w]
-editorial_word_count: 563
+editorial_word_count_including_captions_sources: 684
 synced_footer_pattern: 33935
 source_html: "archive/2026/11/34058-canaan-nano3s-open-linux-sdk-a3197s.gutenberg.html"
 ---
@@ -57,3 +57,14 @@ The [companion Gutenberg source](./34058-canaan-nano3s-open-linux-sdk-a3197s.gut
 1. New first-party technical SDKs can be newsworthy even when prior narrower code existed; distinguish first preview from first disclosure of any firmware.
 2. Inspect upstream build instructions, key management, OTA behavior and debug defaults before calling downloadable firmware safe or ready.
 3. Keep dated historical YouTube demonstrations clearly labeled, document iframe render versus playback, and preserve exact synced footer and logo.
+
+## November 21, 2026 source-embed and editorial update
+
+- User-provided 256 Foundation X post: https://x.com/256foundation/status/2123807117899624958, dated November 20, 2026; authentic source text was recovered through WordPress.com X's published oEmbed renderer rather than inferred from a headline.
+- The revised lead adds 256 Foundation's advocacy for opening other manufacturers' firmware while maintaining a strict scope: only the Avalon Nano 3S Canaan SDK alpha is confirmed, not every industrial Avalon model. No independent build, efficiency improvement or safe flashing claim.
+- Exact native WordPress X Embed block first rendered **only a link**. First attempted `[twitter ...]` shortcode returned malformed plain text. Both were replaced, retested, and the supported `[tweet https://twitter.com/256FOUNDATION/status/2123807117899624958]` Gutenberg shortcode successfully rendered a full `<blockquote class="twitter-tweet">` with post content, byline, original timestamp and status permalink. Actual X JavaScript enhancement/interactivity in visitors' browsers was NOT tested. This is server-side markup evidence, not proof that embedded media loaded on every device.
+- Both previously verified YouTube iframes still render with IDs `HsLK3VZ5Nek` and `IkU0ARpla3w` after update. Player playback remains untested.
+- Published post remains ID 34058 and original November 20 canonical URL. Original featured cover 34056 (1200x630, exact neon-green/black tag) and Canaan product photo 34057 preserved; no duplicate cover, five contextual WordPress internal links. Gutenberg synced donation/disclaimer footer 33935 preserved and resolved in public view.
+- Updated editor-content word count including source list and video/X source captions: 684, within 420–777 word standard. No prohibited editorial words introduced.
+- Public-page HTTP 200, correct canonical/SEO/OG cover, no missing image alts or empty links; 390px mobile and 1200px desktop screenshot captures ready but actual screenshot pixels and end-user YouTube/X playback could not be inspected. Do not mark those tests passed.
+- Main upstream sources: https://github.com/Canaan-Creative/canaan_sdk_for_linux/blob/main/README.md and https://github.com/Canaan-Creative/canaan_sdk_for_linux/blob/main/CHANGELOG.md; official 1.1.2 alpha dated 2026-11-14; MIT for Canaan-authored sources unless otherwise marked, with third-party license exceptions.
