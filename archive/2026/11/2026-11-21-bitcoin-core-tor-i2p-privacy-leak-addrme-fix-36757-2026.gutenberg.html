@@ -1,0 +1,95 @@
+<!-- wp:paragraph -->
+<p>Bitcoin Core developers have merged a privacy fix that prevents a malicious Tor or I2P peer from exploiting part of Bitcoin’s address-discovery process. <a href="https://github.com/bitcoin/bitcoin/pull/36757">Pull request #36757</a>, merged November 12, 2026, changes how nodes process a peer’s claimed view of their network address. <a href="https://bitcoinops.org/en/newsletters/2026/11/20/">Bitcoin Optech highlighted the change November 20</a>, explaining how the previous behavior could help correlate anonymous and public connections.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The issue affects network identity, not Bitcoin signatures, balances or blockchain consensus. A targeted operator could potentially discover that a Tor-connected Bitcoin node and a publicly reachable node belong to the same machine. The attack requires particular conditions, and the available documentation does not establish a widespread compromise.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=mMUdgIK7qmw]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em>Satashi21, “Bitcoin Peers | StartOS,” May 28, 2026. An independent walkthrough of outbound, inbound, clearnet, Tor and I2P connections; background footage, not a demonstration of the November patch.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">A small detail in the handshake</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>When two Bitcoin nodes connect, their protocol <code>version</code> messages can include an address describing where each peer believes the other is reachable. Developers refer to the field as <code>addrMe</code>. The field is useful in ordinary public networking because nodes can learn whether peers see them at a routable address.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A malicious Tor or I2P peer, however, could insert an arbitrary public IP address into the message. Before the fix, the receiving Bitcoin Core node might later announce the supplied address back to the peer while retaining the node’s own public listening port. A sufficiently distinctive port could then act as a fingerprint when compared with a publicly observable node. The attacker would also need the victim to select the malicious privacy-network peer for an outbound connection.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=qYcErJc9N3o]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em>The Tor Project, “How to Use Tor Browser,” September 20, 2023. Official background on the anonymity network. Tor Browser is separate from Bitcoin Core’s peer-to-peer networking.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Developer stratospher described the risk as a correlation opportunity involving multiple prerequisites, rather than automatic deanonymization. The correction ignores the address a privacy-network peer claims to observe. A valid address from an ordinary public-network context follows separate handling. No change to Bitcoin’s proof-of-work algorithm, transaction format or supply rules is involved.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Why a port number matters</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>An internet address identifies a host or interface; a port identifies a network service on that host. Bitcoin’s conventional peer-to-peer port is <strong>8333</strong>, but operators can configure alternatives. The correlation technique becomes more useful when the same nonstandard port is visible in two contexts. A common port shared by many nodes is a weak fingerprint; a rare one can be more identifying.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Bitcoin Core supports connections over IPv4, IPv6, Tor onion services and I2P, with detailed instructions in its official <a href="https://github.com/bitcoin/bitcoin/blob/master/doc/tor.md">Tor</a> and <a href="https://github.com/bitcoin/bitcoin/blob/master/doc/i2p.md">I2P</a> documentation. Tor can hide the origin of a network connection, but software-level metadata may still enable correlation. Protecting a transport route and avoiding application-layer fingerprints are different engineering problems.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=3K3zsYu4eEo]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em>Stick Bitcoin, “How to set up a Bitcoin node from scratch,” January 23, 2026. Independent educational material on full-node operation and privacy; not evidence of exploitation.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">A code fix is not a universal patch notice</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The change has been <strong>merged into Bitcoin Core’s master development branch</strong>. A merged pull request does not alone prove that every packaged release or third-party node product includes the fix. Operators should compare their installed build against the project’s official release notes and security advisories before making deployment decisions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The risk differs from a <a href="https://bitcoinversus.tech/2026/11/21/bitcoin-core-cve-2026-117348-orphan-announcement-node-stall-patch/">separate node-stalling bug</a> recently reported by BitcoinVersus.Tech and from <a href="https://bitcoinversus.tech/2026/11/21/bitcoin-wallet-bots-exposed-ecdsa-nonce-keys-2026-university-liege/">weak wallet-key handling</a>. The new correction concentrates on peer metadata. It also matters to operators experimenting with <a href="https://bitcoinversus.tech/2026/11/19/arkpool-bitaxe-stratum-v2-tor-one-sat-ark-payouts-november-2026/">Tor-accessible mining infrastructure</a> or evaluating <a href="https://bitcoinversus.tech/2026/11/18/lnd-65536-counter-overflow-settled-lightning-payments-restart-2026/">Lightning node reliability fixes</a>, where different layers of the Bitcoin software stack have different failure modes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The wider lesson is that privacy depends on code paths far below the wallet interface. Anonymity networks can obscure routes, but a single echoed field in a routine handshake may still reveal an identifying pattern. Bitcoin Core’s latest networking fix removes one such pattern without changing how Bitcoin money works.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Sources:</strong> <a href="https://github.com/bitcoin/bitcoin/pull/36757">Bitcoin Core PR #36757, merged November 12, 2026</a>; <a href="https://bitcoinops.org/en/newsletters/2026/11/20/">Bitcoin Optech Newsletter #432, November 20, 2026</a>; <a href="https://github.com/bitcoin/bitcoin/blob/master/doc/tor.md">Bitcoin Core Tor documentation</a>; <a href="https://github.com/bitcoin/bitcoin/blob/master/doc/i2p.md">Bitcoin Core I2P documentation</a>. The fix is documented in the development code and is not represented here as proof of exploitation at scale.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Editor’s Note:</strong> Reporting distinguishes a merged development change from confirmed inclusion in a particular stable release. The featured image is original, conceptual cinematic anime art rather than a photograph of a deployed Bitcoin node or a recorded attack. Videos are independently published educational background; no video claims to show the November 2026 fix.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>We volunteer daily to ensure the credibility of the information on that platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please scan the QR code below</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"medium","linkDestination":"none"} -->
+<figure class="wp-block-image size-medium" style="max-width:260px;margin:1.2rem auto"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Original BitcoinVersus.Tech QR code for an optional 5,000-satoshi donation" class="wp-image-24043" style="width:100%;height:auto" /><figcaption class="wp-element-caption">Original 5,000-satoshi donation QR. Check recipient and amount in your wallet before transferring funds.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Disclaimer:</strong> Security and configuration information is educational, not a substitute for release-specific review, threat modeling or professional network administration. Tor and I2P reduce certain forms of network exposure but do not guarantee anonymity. Bitcoin donations are optional and generally irreversible.</em></p>
+<!-- /wp:paragraph -->
