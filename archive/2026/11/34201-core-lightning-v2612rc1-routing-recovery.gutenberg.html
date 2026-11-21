@@ -1,0 +1,49 @@
+<!-- wp:paragraph --><p>Bitcoin's Lightning Network is getting a substantial software upgrade while developers work through a difficult security year. On November 18, 2026, the Core Lightning team published <a href="https://github.com/ElementsProject/lightning/releases/tag/v26.12rc1">v26.12 release candidate 1</a>, combining <strong>832 commits over 169 days</strong> from 41 contributors. The pre-release improves payment routing, channel recovery and splicing stability. It is <strong>not a finalized production release</strong>, and operators should test changes before trusting live channel funds.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=8usnAaM9e2s]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p>Blockstream's official March 2025 explanation of XPAY by Core Lightning lead Rusty Russell. Historical technical context, not a demonstration of the November 2026 release candidate.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Why Core Lightning skipped an entire release cycle</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The developers say a large volume of vulnerability reports diverted attention from the planned September v26.09 release. Security fixes instead went into the v26.06.x point-release series, while longer-term development continued. Consequently, v26.12rc1 contains roughly two cycles of work. A larger commit count does not automatically mean twice the performance or twice the security.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The project credits 19 first-time contributors, equivalent to about 46.3% of the 41 people named in the release. The remaining 22 previously contributed. The numbers describe participation, not a breakdown of how many commits any developer authored.</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":34198,"sizeSlug":"large","linkDestination":"none"} --><figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/core-lightning-2612-rc1-first-time-returning-contributors-chart.png?w=1024" class="wp-image-34198" alt="Vertical bar chart showing 22 returning developers and 19 first-time contributors to the Core Lightning v26.12 release candidate, 41 unique people overall." /><figcaption class="wp-element-caption">Original BitcoinVersus.Tech vertical bar chart. Source: <a href="https://github.com/ElementsProject/lightning/releases/tag/v26.12rc1">Core Lightning v26.12rc1 release notes</a>, November 18, 2026. Of 41 contributors, 19 were first-time contributors; the remaining 22 are calculated by subtraction. These counts represent people, not commits, which total 832 across 169 days.</figcaption></figure><!-- /wp:image -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Smarter payments and clearer failures</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Lightning payments travel through off-chain channels, where available liquidity and routing fees influence whether a payment succeeds. Core Lightning's <code>askrene</code> routing engine now remembers channels that successfully carried payments, called impressions, and factors fees into routing probabilities. Its <code>xpay</code> component also stops retrying every channel through nodes that repeatedly report an unknown next peer.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>When a forwarding attempt fails, new <code>failure_reason</code> fields can distinguish insufficient outgoing liquidity, too many concurrent HTLCs, or exceeded in-flight limits. Better diagnostics may help operators tune liquidity and identify recurring bottlenecks. Neither the release notes nor independent tests establish a specific percentage improvement in payment success.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=N59D89jy4BU]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p>Blockstream's official technical presentation on dual funding and channel splicing explains how Lightning operators can adjust channel capacity. Recorded before v26.12rc1; it is background on the mechanism, not a new benchmark.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Recovery and splicing stability</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Hashed timelock contracts, or HTLCs, coordinate conditional transfers between channel peers. The <code>lightning-hsmtool</code> utility can now recover HTLC outputs after channel-state loss, improving an important recovery path. That feature is not a guarantee that lost backups, every force-close scenario or stolen keys can always be recovered.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Developers also fixed a crash when splicing a channel before it is publicly announced, and corrected a stray <code>channel_ready</code> message after reconnection. Splicing changes a channel's funding transaction without necessarily requiring an entirely new channel, but implementations must coordinate precisely to avoid settlement mistakes.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">The upgrade comes with compatibility work</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The team says <code>pay</code> is scheduled to give way to <code>xpay</code> in v27.03. Several JSON-RPC and notification fields have changed, while released gRPC wire field numbers and types are now frozen for compatibility checks. An experimental <code>bwatch</code> wallet tracker and an optional simplified channel close remain explicitly experimental; they are not defaults that ordinary operators should enable without testing.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.Tech previously covered <a href="https://bitcoinversus.tech/2026/11/07/core-lightning-260610-bitcoin-channel-draining-5000sat-runes-security-update-2026/">Core Lightning v26.06.10 security fixes</a>, <a href="https://bitcoinversus.tech/2026/11/18/lnd-65536-counter-overflow-settled-lightning-payments-restart-2026/">an LND payment-accounting fix</a>, <a href="https://bitcoinversus.tech/2026/11/20/lightning-labs-pi402-bitcoin-ai-agent-inference-payments-november-2026/">Lightning-paid AI inference</a> and <a href="https://bitcoinversus.tech/2026/10/12/f2pool-bitcoin-miners-lightning-withdrawals/">Lightning withdrawals for miners</a>. The new release candidate targets the node software underneath comparable services.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Sources and test limitations</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><a href="https://github.com/ElementsProject/lightning/releases/tag/v26.12rc1">Core Lightning official GitHub release candidate</a>, published November 18, 2026, signed tag and detailed notes.</li><li><a href="https://github.com/ElementsProject/lightning/blob/v26.12rc1/CHANGELOG.md">Official v26.12rc1 changelog</a>, implementation changes and compatibility notices.</li><li><a href="https://github.com/ElementsProject/lightning/milestone/53">Official v26.12 milestone</a>, planned December release timetable, not guaranteed.</li><li><a href="https://docs.corelightning.org/docs/deprecated-features">Core Lightning deprecated-features reference</a>, upgrade context.</li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p>Reporting note: The featured colored-pencil image is original conceptual artwork, not a photograph of a Core Lightning maintainer. Both Blockstream videos are older technical material. No live Lightning payment, channel restoration or release-candidate regression suite was independently executed for the article.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Editor's Note: We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please scan the QR code below</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24593,"width":"280px","sizeSlug":"medium","linkDestination":"none"} --><figure class="wp-block-image size-medium is-resized"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr.png?w=300" alt="BitcoinVersus.Tech optional donation QR code for 5,000 satoshis." class="wp-image-24593" style="width:280px" /><figcaption class="wp-element-caption">Optional research support: 5,000 sats. Check the destination address and amount in your wallet before confirming a payment.</figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.Tech publishes independent technical journalism for informational purposes only; back up critical node data and review official release notes before changing production systems.</p><!-- /wp:paragraph -->
