@@ -1,0 +1,99 @@
+<!-- wp:paragraph -->
+<p>A crowded station presents a problem for many delivery and guide robots: avoiding every nearby pedestrian can leave no acceptable route. Researchers at Sweden’s Örebro University have developed <strong>HiCrowd</strong>, a navigation system that follows compatible pedestrian flows instead of repeatedly stopping. A <strong>November 17, 2026</strong> university report describes field demonstrations at Tokyo’s Miraikan science museum and Expo 2025 in Osaka.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=R6--sO4Ntqw]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Research demonstration:</strong> “HiCrowd: Hierarchical Crowd Flow Alignment for Dense Human Environments,” uploaded April 7, 2026 by Robotics-share. The video presents simulation comparisons and research deployments at Miraikan and Osaka. Its publisher is not identified as the university’s official channel. <a href="https://www.youtube.com/watch?v=R6--sO4Ntqw">View original video page</a>.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">A robot that reads pedestrian movement</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The approach targets the “freezing robot problem,” in which a machine has no obvious safe opening through dense foot traffic. Humans often solve crowded walkways by moving with nearby groups. HiCrowd tries to learn comparable behavior, without assuming every person is a fixed obstacle.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The core software combines two planning layers. A <strong>reinforcement-learning policy</strong> chooses a follow point associated with a suitable pedestrian group, while <strong>model-predictive control</strong> calculates short-horizon movements around nearby people. The high-level layer anticipates where traffic may lead; the lower-level controller keeps the motion dynamically feasible.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>University researcher Yufei Zhu also developed “Maps of Dynamics,” models of how people typically move through a particular location and at different times. The goal is not mind reading: observations of positions and velocities support predictions about local movement patterns. Any deployment in public areas still needs sensible privacy, accessibility and safety controls.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">What the performance results actually show</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>HiCrowd’s peer-reviewed ICRA 2026 paper tested its method against conventional and learning-based navigation planners. In the <strong>offline ETH-UCY replay benchmark</strong>, HiCrowd completed <strong>88% of navigation episodes</strong>, compared with <strong>76% for pure MPC, 61% for ORCA, 55% for CrowdAttn and 24% for SARL</strong>. Pedestrians in the recorded trajectories could not react to the robot, so the benchmark is not equivalent to a live crowd.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":34151,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/hicrowd-eth-ucy-offline-navigation-success-2026.png?w=1024" class="wp-image-34151" alt="Vertical bar chart of offline ETH-UCY navigation success rates: HiCrowd 88 percent, MPC 76 percent, ORCA 61 percent, CrowdAttn 55 percent, SARL 24 percent, starting from a zero baseline" /><figcaption class="wp-element-caption"><em>Original BitcoinVersus.Tech chart from Zhu and colleagues, ICRA 2026, Table III. Success rates represent offline navigation episodes replaying ETH-UCY pedestrian trajectories, not unsupervised real-world deployment.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>The same offline benchmark reported average navigation times of <strong>21.82 seconds for HiCrowd</strong> and <strong>40.65 seconds for MPC</strong>, even though HiCrowd sometimes takes a longer physical route. Following traffic can beat a seemingly shorter path if an oncoming group would otherwise force repeated stops. The original authors also tested scenarios in which simulated pedestrians could respond to the machine.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Real-world testing, with human safeguards</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Real-world trials add evidence, but impose important qualifications. The paper documents <strong>20 museum trial runs</strong> with no significant observed collisions or freezing. Its suitcase-sized research platform used a front stereo camera, a lidar sensor and a computer carrying an Intel Core i7 processor and NVIDIA RTX 2070 GPU; speed was capped at 1 meter per second.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=V5PYFf9A-PU]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Historical comparison:</strong> SPENCER Group Guidance Scenario Prototype, a 2015 airport-guide-robot project associated with Örebro’s earlier navigation research. Archival prototype footage, not a HiCrowd test or a 2026 demonstration. <a href="https://www.youtube.com/watch?v=V5PYFf9A-PU">View original SPENCER video</a>.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Researchers also required a human supervisor to hold a touch-sensitive handle for autonomous movement, according to the experimental methods. The team selected a broad space with relatively few fixed obstacles. Consequently, a public demonstration does <strong>not</strong> establish that an unsupervised robot can guide someone safely through every crowded subway, escalator or emergency evacuation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The possible payoff is broader than convenience. A future assistive navigation robot might help someone with a visual impairment move naturally through stations or airports. The university positions that application as <strong>future potential</strong>, not an approved guide-dog replacement or shipping consumer product. Existing <a href="https://bitcoinversus.tech/2026/10/14/pittsburgh-airport-tests-skild-ai-robot-dogs/">airport robotics trials</a> illustrate why busy public facilities are a demanding proving ground.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The research also fits alongside <a href="https://bitcoinversus.tech/2026/11/15/robust-ai-carter-human-steered-warehouse-robot-100kg-18-hours-2026/">human-guided warehouse robots</a>, <a href="https://bitcoinversus.tech/2026/11/20/eth-zurich-five-ton-ai-loader-two-wheels-reinforcement-learning-2026/">reinforcement learning on heavy machinery</a>, and <a href="https://bitcoinversus.tech/2026/11/20/soracom-physical-ai-suite-robot-connectivity-security-2026/">secure connectivity for mobile robots</a>. Successful deployments will depend on reliable perception, safeguards around nearby people, transparent testing and practical human oversight.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Why following people could matter</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>HiCrowd’s most interesting idea is counterintuitive: navigating well may require accepting a detour and moving alongside other people, rather than always chasing the shortest empty path. The study provides a measurable benchmark improvement and a promising supervised field demonstration, while leaving certification and large-scale assisted travel as future challenges.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Sources:</strong> <a href="https://www.oru.se/english/news/robots-learn-to-follow-the-crowd--could-become-digital-guide-dogs/">Örebro University, November 17, 2026, updated November 19</a>; <a href="https://arxiv.org/abs/2602.05608">Zhu, Yang, Magnusson and Wang, “HiCrowd: Hierarchical Crowd Flow Alignment for Dense Human Environments,” ICRA 2026</a>; <a href="https://github.com/test-bai-cpu/HiCrowd">researcher’s code repository</a>; <a href="https://www.oru.se/english/news/news-archive/news-archive-2016/spencer-the-robot-a-major-success-with-passengers/">Örebro University, 2016 SPENCER research history</a>. Benchmark percentages and time values come from the paper’s Table III; field tests are treated separately.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Editor’s Note:</strong> Field demonstrations do not establish approval for unsupervised passenger assistance. The featured colored-pencil cover is conceptual artwork, not documentary photography of HiCrowd or a named individual. Video captions distinguish the 2026 research presentation from archival SPENCER footage. Embedded iframe rendering and actual playback are separate checks.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please scan the QR code below</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"medium","linkDestination":"none"} -->
+<figure class="wp-block-image size-medium" style="max-width:260px;margin:1.2rem auto"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Original BitcoinVersus.Tech optional 5,000-satoshi Bitcoin donation QR code" class="wp-image-24043" style="width:100%;height:auto" /><figcaption class="wp-element-caption">Optional Bitcoin donation. Verify the recipient and amount with your wallet before transferring funds.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Disclaimer:</strong> Technical research coverage is informational and is not a guarantee of robot safety, accessibility certification or deployment readiness. Bitcoin transfers are generally irreversible.</em></p>
+<!-- /wp:paragraph -->
