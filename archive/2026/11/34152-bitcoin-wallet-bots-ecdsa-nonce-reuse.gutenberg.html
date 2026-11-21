@@ -1,0 +1,47 @@
+<!-- wp:paragraph --><p>Automated attackers can target Bitcoin wallets within seconds when signing software repeats a secret number. University of Liège computer scientists Vincent Jacquot and Benoît Donnet identified <strong>3,278 recoverable Bitcoin private keys</strong> through historical signature analysis. The finding received renewed attention in a November 20, 2026 CoinDesk report. The <a href="https://orbi.uliege.be/handle/2268/339407">peer-reviewed study</a> was published in March, not November, and does not identify a failure in Bitcoin's consensus rules.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=RIckQ6RBt5E]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p>Andreas M. Antonopoulos explains Bitcoin digital signatures and elliptic-curve cryptography in a verified May 2018 educational video. Archival background, not footage of the Liège experiment.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">One repeated number can expose a wallet</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Legacy Bitcoin transactions often use the Elliptic Curve Digital Signature Algorithm, or ECDSA. Every signature requires a temporary secret number called a nonce. Reusing a nonce to sign different messages with one private key can make that key mathematically recoverable from publicly visible signatures. Some patterns involving several keys can also leak secrets. The failure is in the signing implementation, not proof that correctly generated Bitcoin keys can be guessed.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>The researchers scanned ECDSA signatures across Bitcoin, Ethereum, Dogecoin, Litecoin, Bitcoin Cash and Dash through June 30, 2024. Their separate-chain method recovered 3,605 distinct keys. Cross-chain analysis identified 15 additional keys, bringing the total to <strong>3,620</strong>. The historical window matters: the total is not a live count of vulnerable wallets holding funds in November 2026.</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":34146,"sizeSlug":"large","linkDestination":"none"} --><figure class="wp-block-image size-large"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bitcoin-nonce-reuse-private-keys-by-blockchain-2026-study.png?w=1024" class="wp-image-34146" alt="Zero-baseline chart of recoverable ECDSA private keys through June 2024: Bitcoin 3278; Dogecoin 195; Ethereum 119; Litecoin, Bitcoin Cash and Dash combined 16." /><figcaption class="wp-element-caption">BitcoinVersus.Tech original chart from <a href="https://orbi.uliege.be/handle/2268/339407">University of Liège research, Table 1</a>. Per-chain recoveries through June 30, 2024. Counts total 3,608 with three overlaps, or 3,605 distinct keys; combined-chain analysis identified 15 further recoveries, totaling 3,620. No bar measures verified theft.</figcaption></figure><!-- /wp:image -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">What happened when researchers set a trap?</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>On April 28, 2025, the team funded intentionally vulnerable addresses with a few dollars each and monitored Bitcoin's mempool. Competing transactions appeared in the same second a repeated-nonce weakness became exploitable. Later transfers drained remaining bait. The researchers also observed attacks against Ethereum honeypots, with different timing and behavior. The experiment demonstrates active automated exploitation of a particular signing error, not that ordinary secure wallets are drained in seconds.</p><!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=CYMbacBBVDA]
+<!-- /wp:shortcode -->
+<!-- wp:paragraph --><p>Blockstream's official August 2022 wallet-safety tutorial covers recovery phrases and self-custody habits. Historical guidance, not a recreation of the experiment.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">$106 million exposed is not $106 million stolen</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>The paper estimated that vulnerable addresses reached an aggregate <strong>€101 million, roughly $106 million</strong>, in historical peak balances using November 25, 2024 cryptocurrency prices. Those peaks occurred at different times. The authors could not establish how much money was actually stolen, and some withdrawals may have been legitimate. The estimate spans six blockchains, not Bitcoin alone.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>Much of the historical exposure came from early Bitcoin activity. The researchers also found nonce reuse between chains, showing that signing mistakes can spread across ecosystems when implementations reuse weak signing material.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">What can Bitcoin holders and developers do?</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph --><p>Developers should use reviewed signing libraries, safe nonce generation and established deterministic techniques such as RFC 6979. Tests should cover restored backups, hardware signers and edge-case application states. Users benefit from supported wallet software and trustworthy installers, rather than assuming every Bitcoin signature is unsafe.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.Tech has documented distinct attack surfaces: <a href="https://bitcoinversus.tech/2026/10/27/electrum-bitcoin-wallet-fee-bump-exploit-4-8-3-2026/">Electrum's fee-bump vulnerability</a>, <a href="https://bitcoinversus.tech/2026/11/19/ledger-wallet-hardware-implant-berlin-dubai-investigation-november-2026/">tampered hardware wallets</a>, <a href="https://bitcoinversus.tech/2026/11/13/three-bitcoin-attack-surfaces-core-mining-network-security-2026/">Bitcoin Core network flaws</a> and <a href="https://bitcoinversus.tech/2026/11/20/bitcoin-shrincs-131-page-quantum-security-analysis-november-2026/">experimental post-quantum signatures</a>. Different weaknesses need different remedies.</p><!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Primary sources and verification</h2><!-- /wp:heading -->
+
+<!-- wp:list --><ul class="wp-block-list"><li><a href="https://orbi.uliege.be/handle/2268/339407">University of Liège publication record</a>, Jacquot and Donnet, Financial Cryptography and Data Security, March 2026.</li><li><a href="https://orbi.uliege.be/bitstream/2268/339407/1/paper.pdf">Peer-reviewed paper</a>, Table 1 and honeypot experiments, historical data through June 2024.</li><li><a href="https://www.coindesk.com/tech/2026/11/20/bitcoin-bots-pounced-within-seconds-when-researchers-exposed-their-keys">CoinDesk reporting</a>, November 20, 2026, including an interview and examination of a bait transaction.</li><li><a href="https://blockstream.zendesk.com/hc/en-us/articles/9641573399961-What-is-Anti-Exfil-and-how-does-it-work">Blockstream Anti-Exfil background</a>, protections against signing-key leakage.</li></ul><!-- /wp:list -->
+
+<!-- wp:paragraph --><p>Editor's Note: The anime cover portrays an imagined researcher. Both verified videos are older educational material, not recordings of the study. BitcoinVersus.Tech has not independently reproduced the private-key analysis or audited each historical transaction.</p><!-- /wp:paragraph -->
+
+<!-- wp:paragraph --><p>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please scan the QR code below</p><!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24593,"width":"280px","sizeSlug":"medium","linkDestination":"none"} --><figure class="wp-block-image size-medium is-resized"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr.png?w=300" class="wp-image-24593" alt="Optional BitcoinVersus.Tech research donation QR code for 5,000 satoshis." style="width:280px" /><figcaption class="wp-element-caption">Optional research donation: 5,000 sats. Verify the recipient and amount in your wallet.</figcaption></figure><!-- /wp:image -->
+
+<!-- wp:paragraph --><p>BitcoinVersus.Tech publishes technology and security reporting for information purposes only. Never enter wallet recovery phrases or private keys into untrusted software.</p><!-- /wp:paragraph -->
