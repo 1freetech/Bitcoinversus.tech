@@ -1,0 +1,99 @@
+<!-- wp:paragraph -->
+<p>A quiet cybersecurity operation helped British supermarkets reduce the risk of refrigeration sabotage before a wider disruption could develop. On <strong>November 20, 2026</strong>, researchers at Pen Test Partners described how retailers, manufacturers and government agencies worked to secure internet-exposed refrigeration controllers. The discovery involved devices made by <strong>Resource Data Management (RDM)</strong>, rather than the Danfoss controllers implicated in earlier attacks elsewhere in Europe.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=XmRR5-oBH0o]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em>Refrigeration Mentor, “CO2 Controls with RDM Resource Data Management,” archival equipment discussion published several years before the 2026 disclosure. The demonstration explains refrigeration control equipment; it does not depict the vulnerability or an attack. <a href="https://www.youtube.com/watch?v=XmRR5-oBH0o">Original YouTube video</a>.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">How a supermarket controller becomes a cyber risk</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Supermarket refrigeration runs on networked industrial controllers, not simply household-style thermostats. Supervisory units coordinate compressors, temperature settings, defrost schedules and alarms for many display cases and cold rooms. Remote access helps engineers maintain equipment across hundreds of sites, but exposing those controls to the public internet can turn a maintenance feature into a food-safety and business-continuity risk.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The risk became urgent after <a href="https://bitcoinversus.tech/2026/10/12/hackers-defrost-french-supermarkets/">attacks disrupted French supermarkets in October</a> and another wave struck European operators in early November. Britain relies more heavily on RDM products than Danfoss, according to Pen Test Partners. The newly reported RDM weaknesses are related in consequence, but <strong>not identical technical flaws</strong>. Previous <a href="https://bitcoinversus.tech/2026/11/14/danfoss-six-refrigeration-controller-flaws-bsi-firmware-correction-2026/">Danfoss vulnerability warnings</a> concern different equipment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Neil McCourt of refrigeration-telemetry specialist Omega Solutions first identified a significant RDM issue. Andrew Tierney and colleagues at Pen Test Partners then validated the finding and identified additional weaknesses. The researchers deliberately withheld exploit details while organizations isolated vulnerable systems and RDM prepared firmware updates.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Investigators used publicly accessible device information to identify many exposed operators, including supermarkets, food manufacturers and refrigerated warehouses. They described <strong>thousands of exposed controllers</strong>, but provided no audited total showing how many had been patched or disconnected. An exposed device is not proof that an attacker compromised it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=Mx-ONSPstl8]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em>Claroty, “How Retailers Can Scale Operational Resilience &amp; Secure OT Remote Access,” October 16, 2026. An official industry discussion of retail building systems, cold-chain controls and third-party remote access, presented before the November UK response. <a href="https://www.claroty.com/videos/how-retailers-can-scale-operational-resilience-and-secure-ot-remote-access">Official source and video</a>.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">A private response, followed by public disclosure</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The coordinated response included the UK National Cyber Security Centre, the British Retail Consortium, the Department for Environment, Food and Rural Affairs, and the Food Standards Agency. Researchers said security teams worked evenings and weekends to take devices off the open internet or confirm that they were already protected by private networks and VPNs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>RDM issued an advisory on November 2 and revised it on November 3. Pen Test Partners criticized the initial disclosure for omitting some risk and validation details, while also crediting the manufacturer for working intensively on corrective firmware and contacting operators. RDM’s chief executive told the BBC that initial patches had been deployed and customers notified. The exact effectiveness of every fix across deployed versions has not been independently established in public reporting.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The distinction between a contained exposure and an actual attack matters. Reuters reported that British authorities warned a small number of potentially affected organizations, while Pen Test Partners said no widespread UK incident resembling the European sabotage had occurred. Smaller businesses could remain vulnerable if notices failed to reach downstream owners or third-party maintenance companies.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Patching is necessary, isolation matters more</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A November 5 <a href="https://www.ic3.gov/CSA/2026/261105.pdf">joint US government advisory</a> recommends removing controllers from public internet access, segregating operational technology networks, replacing default credentials, updating firmware and reviewing temperature setpoint limits. Necessary remote work can use a well-managed VPN or private cellular APN with restricted access, rather than exposing equipment management panels directly.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Independent temperature sensors and alerts offer an additional safeguard when a compromised supervisor might misreport conditions. Operators should also maintain configuration backups, audit contractor access and review unexpected defrost settings. The recommendations extend existing <a href="https://bitcoinversus.tech/2026/11/07/cisa-fbi-refrigeration-cold-chain-cyberattack-warning-november-2026/">CISA and FBI cold-chain warnings</a> and reflect wider <a href="https://bitcoinversus.tech/2026/11/08/kawasaki-f-series-s-type-industrial-robot-controller-cybersecurity-2026/">industrial-controller cybersecurity challenges</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=H4mQC-2KgGs]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p><em>Claroty, “Claroty Research: Forecasting CPS Security Threats &amp; Hacking Tactics,” March 13, 2026. The official cybersecurity presentation provides historical context on physical sabotage and insecure internet-facing devices; it is not footage of the November incident. <a href="https://www.claroty.com/videos/claroty-research-forecasting-cps-security-threats-hacking-tactics">Official source and video</a>.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The larger lesson is operational: safeguarding refrigerated food depends on secure networking, trustworthy instrumentation and physical engineering working together. RDM patches and coordinated notifications reduced an immediate risk, but the remaining population of exposed controllers and successful installation of every update have not been fully verified.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Sources:</strong> <a href="https://www.pentestpartners.com/security-blog/the-fridge-hack-uk-supermarkets-narrowly-avoided/">Pen Test Partners, Ken Munro and Andrew Tierney, November 20, 2026</a>; <a href="https://www.reuters.com/world/uk/uk-finds-fix-fridge-freezer-vulnerability-after-european-hacks-2026-11-20/">Reuters, November 20, 2026</a>; <a href="https://www.theguardian.com/technology/2026/nov/20/cybersecurity-operation-thwarts-attack-on-uk-supermarket-fridges-and-freezers">The Guardian, November 20, 2026</a>; <a href="https://www.ic3.gov/CSA/2026/261105.pdf">CISA/FBI and partner agencies, November 5, 2026</a>; <a href="https://www.resourcedm.com/about/news/new-rackcircuit-controller-for-small-supermarkets/">RDM product background</a>. The RDM vulnerabilities have not been publicly described in full, and disclosure dates differ from the dates of previous European attacks.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Editor’s Note:</strong> Reporting separates confirmed researcher findings, manufacturer responses and unresolved exposure. The original featured cover is conceptual cinematic anime artwork, not an image of the affected equipment or a real incident. All three videos are authentic earlier context, rather than November 20 incident footage; embedding does not itself verify playback.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiatives, please scan the QR code below</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"medium","linkDestination":"none"} -->
+<figure class="wp-block-image size-medium" style="max-width:260px;margin:1.2rem auto"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Original BitcoinVersus.Tech QR code for an optional 5,000-satoshi donation" class="wp-image-24043" style="width:100%;height:auto" /><figcaption class="wp-element-caption">Original 5,000-satoshi donation QR. Check recipient and amount in your wallet before transferring funds.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><em><strong>Disclaimer:</strong> Technical reporting is informational and does not replace a qualified industrial cybersecurity assessment. Operators should consult manufacturer advisories and their own maintenance teams before applying equipment changes. Bitcoin payments are voluntary and generally irreversible.</em></p>
+<!-- /wp:paragraph -->
