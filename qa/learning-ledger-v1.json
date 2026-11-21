@@ -3132,6 +3132,169 @@
         "engagement": "unavailable"
       },
       "corrections": []
+    },
+    {
+      "post_id": 34125,
+      "article_title": "Enel Agrees to Buy 317 MW of South Carolina Solar",
+      "publication_date": "2026-11-20",
+      "content_type": "standard_news",
+      "category_names": [
+        "Energy",
+        "Solar Energy",
+        "Technology",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        1212,
+        109347,
+        6,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/20/enel-energyre-317mw-south-carolina-solar-540gwh-2026/",
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "evidence": "WordPress editor and rendered published content both returned publish. Independent external public-page fetch blocked."
+      },
+      "editorial_body_word_count": 691,
+      "original_sources": [
+        "https://www.enel.com/content/dam/enel-common/press/en/2026-november/PR-photovoltaic-plants-in-South-Carolina-USA.pdf",
+        "https://www.prnewswire.com/news-releases/energyre-sells-a-portfolio-of-south-carolina-solar-projects-totaling-317-mwdc-to-enel-green-power-north-america-302947038.html",
+        "https://www.enel.com/media/explore/search-press-releases/press/2026/09/enel-closed-the-acquisition-of-810-mw-portfolio-of-solar-plants-in-the-united-states",
+        "https://www.enel.com/media/explore/search-press-releases/press/2026/10/enel-finalizes-the-acquisition-of-a-portfolio-of-approximately-270-mw-of-solar-plants-in-the-united-states"
+      ],
+      "duplicate_check": {
+        "wordpress": "Specific Enel 317MW South Carolina, energyRe, and 540GWh searches found no direct article; earlier October 270MW acquisition was a distinct completed event and was linked",
+        "github": "New post 34125 and unique archive filename verified before creation",
+        "scope": "WordPress search and existing article comparison, not exhaustive whole archive semantic scan"
+      },
+      "internal_links": {
+        "count": 4,
+        "targets_status": "Linked prior WordPress published pages with matching article titles and routes; independent external click-through not tested"
+      },
+      "in_story_media": {
+        "count": 4,
+        "types": [
+          "official Enel YouTube video",
+          "Enel official Texas solar photo",
+          "original vertical bar chart",
+          "official Enel dual-use solar YouTube video"
+        ],
+        "video_ids": [
+          "vy1ozWz6M8A",
+          "xsI_3uJ1KAQ"
+        ],
+        "wordpress_rendered_iframes": 2,
+        "actual_video_playback": "not independently tested",
+        "official_image_media_id": 34122,
+        "chart_media_id": 34121,
+        "captions_after_media": true
+      },
+      "featured_cover": {
+        "media_id": 34120,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "photorealistic original illustration",
+        "subjects": "wide utility solar farm, construction equipment, two workers at sunset",
+        "watermark": "BitcoinVersus.tech neon #39FF14 on tight black bottom-left highlight",
+        "cover_not_duplicated_in_body": true,
+        "documentary_image": false
+      },
+      "chart": {
+        "present": true,
+        "type": "vertical bar",
+        "source": "Official Enel September 10, October 2 and November 20 2026 portfolio releases",
+        "labels": [
+          "Sep 10 completed 810MW",
+          "Oct 2 completed ~270MW",
+          "Nov 20 agreed 317MWdc"
+        ],
+        "values_expected_gwh_per_year": [
+          1600,
+          400,
+          540
+        ],
+        "last_value_is_lower_bound": true,
+        "baseline_zero": true,
+        "units": "GWh/year",
+        "media_id": 34121,
+        "alternatives_considered": [
+          "line chart rejected because portfolios not time-series",
+          "scatter rejected because only three categorical deals",
+          "vertical bar selected"
+        ],
+        "forecast_only": true
+      },
+      "deal": {
+        "buyer": "Enel Green Power North America",
+        "seller": "energyRe",
+        "solar_nameplate_mwdc": 317,
+        "annual_generation_gwh_lower_bound": 540,
+        "estimated_group_net_debt_impact_usd_m": 255,
+        "estimated_annual_ebitda_usd_m": 30,
+        "target_closing": "2027 Q1",
+        "pending_approvals": true,
+        "not_operational_or_closed_as_of_announcement": true
+      },
+      "footer": {
+        "approved_editors_note_exact": true,
+        "synced_block_ref_id": 33935,
+        "original_donation_qr_id": 24043,
+        "qr_count": 1,
+        "disclaimer_rendered": true
+      },
+      "archive": {
+        "qa_record": "archive/2026/11/34125-enel-317mw-south-carolina-solar.md",
+        "exact_gutenberg": "archive/2026/11/34125-enel-317mw-south-carolina-solar.gutenberg.html"
+      },
+      "rotation": {
+        "category": "Solar Energy",
+        "previous_category": "Bitcoin Mining / cost economics",
+        "cover_style": "photorealistic",
+        "previous_cover": "photorealistic mining",
+        "note": "Different topical category and story-specific photography; user-selected energy lineup item 1"
+      },
+      "qa_score": {
+        "total": 90,
+        "max": 100,
+        "components": {
+          "Primary source accuracy and legal status": 25,
+          "Novelty and deduplication": 15,
+          "Solar and financial engineering explanation": 15,
+          "Source-verified embeds and media captions": 11,
+          "Cover and comparative chart": 10,
+          "Internal links and SEO": 10,
+          "WordPress live rendered QA": 4
+        },
+        "unverified_gates": [
+          "Actual YouTube playback",
+          "Independent responsive desktop/mobile layout",
+          "External browser public-page fetch"
+        ],
+        "status": "Published with WordPress HTML embedding verified; real user-agent playback and device rendering not independently verified"
+      },
+      "observations": [
+        "New South Carolina acquisition is not yet closed; Q1 2027 target requires U.S. antitrust and foreign-investment approvals",
+        "317MWdc peak installed solar panels differs from average expected electricity output",
+        "Approximately $255m net debt impact not disclosed purchase price; annual $30m EBITDA is forecast not booked earnings",
+        "Official photo from separate Texas facility captioned accurately"
+      ],
+      "three_improvements_to_carry_forward": [
+        "Test independent playback and responsive devices when browser access available",
+        "Keep committed/developing capacity distinct from operational capacity and avoid price-versus-debt confusion",
+        "Use original company photos only when caption states project actually pictured, maintain approved footer"
+      ],
+      "feedback": {
+        "user_preferences": [
+          "Post energy source lineup number 1",
+          "Avoid repeats",
+          "Four contextual links",
+          "Accurate video embeds and permanent footer"
+        ],
+        "engagement": "not available"
+      }
     }
   ],
   "future_article_template_required_fields": [
