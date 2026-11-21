@@ -3295,6 +3295,165 @@
         ],
         "engagement": "not available"
       }
+    },
+    {
+      "post_id": 34129,
+      "article_title": "Bitcoin Falls Below $57,000 as Mining Pressure Grows",
+      "publication_date": "2026-11-20",
+      "content_type": "standard_news",
+      "category_names": [
+        "Bitcoin",
+        "Bitcoin Mining",
+        "Finance",
+        "Trending News"
+      ],
+      "wordpress_category_ids": [
+        36507086,
+        57414501,
+        4269,
+        27318186
+      ],
+      "live_url": "https://bitcoinversus.tech/2026/11/20/bitcoin-falls-below-57000-november-20-2026-miners-stocks-electricity/",
+      "wordpress_publication_status": {
+        "classification": "verified_fact",
+        "status": "publish",
+        "evidence": "WordPress context=edit and context=view post-publication returned publish and canonical URL. External public-page fetch unavailable."
+      },
+      "editorial_body_word_count": 664,
+      "original_sources": [
+        "https://www.reuters.com/business/bitcoin-falls-357-56814-2026-11-21/",
+        "https://www.reuters.com/technology/bitcoin-falls-below-60000-level-2026-11-20/",
+        "https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone",
+        "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play",
+        "https://www.barrons.com/articles/bitcoin-prices-strategy-coinbase-f7d3191e"
+      ],
+      "duplicate_check": {
+        "wordpress": "Exact 56814 and under $57000 Nov20 event searches found no direct duplicate. Prior 73708 low, 65000 threshold, JPMorgan cost and hashprice reports were kept as contextual links.",
+        "github": "Unique new WordPress post ID 34129 and original archive path checked prior to creation.",
+        "scope": "Keyword and title duplicate screening, not exhaustive semantic site-wide similarity."
+      },
+      "internal_links": {
+        "count": 6,
+        "targets_status": "Six contextual links matched live WordPress post IDs and routes; independent browser link click tests not performed."
+      },
+      "in_story_media": {
+        "count": 3,
+        "types": [
+          "Bitcoin Magazine TV original interview YouTube iframe",
+          "Original sourced zero-baseline vertical price chart",
+          "Luxor Technology original mining explainer YouTube iframe"
+        ],
+        "video_ids": [
+          "fN-U69aCJOY",
+          "PqwbXPoQY0k"
+        ],
+        "wordpress_rendered_iframes": 2,
+        "actual_video_playback": "unverified due public YouTube and independent browser access restrictions",
+        "chart_media_id": 34128,
+        "captions_after_media": true
+      },
+      "featured_cover": {
+        "media_id": 34127,
+        "dimensions_px": [
+          1200,
+          630
+        ],
+        "style": "cinematic anime",
+        "subjects": "stormy mining operations warehouse, falling red BTC chart, ASIC racks and technical equipment",
+        "watermark": "Exact BitcoinVersus.tech in neon green #39FF14 with one tight black highlight at bottom left",
+        "cover_not_duplicated_in_body": true,
+        "original": true,
+        "documentary_photo": false,
+        "visual_inspection": true
+      },
+      "chart": {
+        "present": true,
+        "type": "vertical columns",
+        "baseline_zero": true,
+        "source": "Barron's July 2026 price reference, BitcoinVersus.Tech Nov 8 report, Reuters Nov 20 2026 early and late quotes",
+        "labels": [
+          "Jul 1 2026 intraday low",
+          "Nov 8 2026 prior reported low",
+          "Nov 20 11:25am ET Reuters quote",
+          "Nov 20 10:50pm ET Reuters quote"
+        ],
+        "values_usd_per_btc": [
+          57754.25,
+          73708,
+          59381,
+          56813.68
+        ],
+        "units": "USD per BTC",
+        "last_value_timestamp": "2026-11-20T22:50:00-05:00",
+        "last_value_timestamp_pacific": "2026-11-20T19:50:00-08:00",
+        "not_a_daily_close_series": true,
+        "media_id": 34128,
+        "dimensions_px": [
+          1200,
+          675
+        ],
+        "alternatives_considered": [
+          "line: rejects interpolation of sparse quotes",
+          "scatter: precise but less direct to readers",
+          "vertical columns selected with zero baseline"
+        ]
+      },
+      "footer": {
+        "approved_editors_note_exact": true,
+        "synced_block_ref_id": 33935,
+        "original_donation_qr_id": 24043,
+        "qr_count": 1,
+        "disclaimer_rendered": true
+      },
+      "archive": {
+        "qa_record": "archive/2026/11/34129-bitcoin-below-57000-miner-crash.md",
+        "exact_gutenberg": "archive/2026/11/34129-bitcoin-below-57000-miner-crash.gutenberg.html"
+      },
+      "rotation": {
+        "category": "Bitcoin / Mining market stress",
+        "previous_category": "Solar Energy",
+        "cover_style": "cinematic anime",
+        "previous_cover": "photorealistic"
+      },
+      "qa_score": {
+        "total": 90,
+        "max": 100,
+        "components": {
+          "Dated price and primary-source accuracy": 25,
+          "Originality and deduplication": 15,
+          "Mining engineering explanation and caveats": 15,
+          "Authentic media and WordPress rendered iframes": 11,
+          "Original cover and verified price chart": 10,
+          "Internal links and SEO": 10,
+          "Published WordPress readback": 4
+        },
+        "unverified_gates": [
+          "Actual YouTube playback",
+          "Desktop/mobile browser visual inspection",
+          "Independent external public-URL loading"
+        ],
+        "status": "WordPress publish, saved Gutenberg, relevant iframe HTML, chart, footer and internal URLs verified. Full independent playback/browser QA unverified."
+      },
+      "observations": [
+        "Reuters November 21 UTC article reports Friday Nov20 10:50pm ET price $56,813.68; article dates the market quote to Friday US time.",
+        "Late quote below July reference $57,754.25 by 1.63%; falls 22.92% from previous November 8 $73,708 reference.",
+        "Mining BTC price drop lowers expected USD revenue at fixed coin output without immediately changing ASIC electrical draw or Bitcoin difficulty.",
+        "Derivative liquidations and mining shares losses reflect moving Friday reporting windows; exact final market totals cannot be inferred."
+      ],
+      "three_improvements_to_carry_forward": [
+        "Use exact source trade time and timezone for volatile price journalism; Reuters publication in UTC may be following calendar day.",
+        "Record live iframe markup and separately seek independent browser/device and playback evidence when available.",
+        "Separate model assumptions, official quotes and rolling data source time windows, while keeping mandatory watermark and synced footer exact."
+      ],
+      "feedback": {
+        "user_preferences": [
+          "Post new Bitcoin price crash story immediately",
+          "Strong technical mining context and verified embeds",
+          "Original cover style rotation",
+          "Nonduplicate reporting and archived QA"
+        ],
+        "engagement": "unavailable"
+      }
     }
   ],
   "future_article_template_required_fields": [
