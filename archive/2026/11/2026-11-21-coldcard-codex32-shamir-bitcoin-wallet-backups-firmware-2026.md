@@ -18,9 +18,9 @@ chart: none
 
 Under Shamir secret sharing, a single wallet secret becomes several different recovery shares. A **2-of-3** arrangement produces three shares, any two of which can reconstruct the original secret. One share alone cannot recover the wallet. COLDCARD allows **two to nine shares** and a configurable threshold of at least two. The wallet’s existing addresses and balances remain unchanged.
 
-**Video (source):** https://www.youtube.com/watch?v=W54g3T4WyIg
+**Video (source):** https://www.youtube.com/watch?v=Vl1KHT_-h_Q
 
-*Trezor, August 30, 2022: official explanation of threshold-based Shamir backups. Trezor’s implementation and recovery format differ from COLDCARD Codex32; the demonstration is mathematical background, not COLDCARD firmware footage.*
+*“Seed XOR (seedXOR.com) & COLDCARD,” from the [manufacturer’s curated COLDCARD tutorial collection](https://coldcard.com/docs/how-to-videos/). The video demonstrates a different seed-splitting technique: Seed XOR requires all parts to recover the secret, while the new Codex32/Shamir feature supports a configurable recovery threshold. Earlier educational footage, not a demonstration of firmware 5.6.3.*
 
 ## Why dividing a seed can be useful
 
