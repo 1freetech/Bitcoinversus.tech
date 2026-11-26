@@ -1,0 +1,75 @@
+{
+  "policy": "v8.0",
+  "artifact": {
+    "id": 35862,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/26/airtel-assam-40mw-three-data-centers-guwahati-jorhat-silchar-2026/",
+    "categories": [
+      1212,
+      2509703,
+      6
+    ],
+    "featured_media": 35859,
+    "title": "Airtel Plans $130 Million Investment in 40 MW of Data Centers Across Assam",
+    "content": "<!-- wp:paragraph -->\n<p>Bharti Airtel is expanding regional computing infrastructure in northeastern India through three planned data centers in Assam. The telecommunications company signed a memorandum of understanding with the state government on November 25, 2026, covering new developments in Jorhat and Silchar alongside an existing construction project in Guwahati. <a href=\"https://www.reuters.com/world/india/indias-bharti-airtel-signs-130-million-data-centre-pact-with-northeastern-state-2026-11-25/\">Reuters reported</a> that Airtel's overall investment commitment is approximately ₹1,200 crore ($129.7 million), with 40 MW of combined planned capacity.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":33289,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/official-aws-virginia-cloud-data-center-server-racks.jpg\" alt=\"Server and network cabinets in an operating AWS facility\" class=\"wp-image-33289\" /><figcaption class=\"wp-element-caption\"><em>Illustrative data center equipment at a separate AWS facility in Northern Virginia. Credit: <a href=\"https://www.aboutamazon.com/news/innovation-at-amazon/amazon-project-kuiper-aws\">About Amazon</a>. Not an Airtel installation.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Three facilities, two investment figures</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The largest commercial investment allocation is approximately ₹700 crore for the 15 MW Guwahati project, while Jorhat and Silchar share an estimated ₹500 crore, according to <a href=\"https://www.business-standard.com/companies/news/bharti-airtel-to-invest-1-200-crore-in-three-data-centres-in-assam-126112501173_1.html\">Business Standard</a>. Assam's chief minister separately outlined a first-phase investment of ₹705 crore. The two figures describe different spending scopes and should not be added together.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:table --><figure class=\"wp-block-table\"><table><thead><tr><th>Location</th><th>Planned capacity</th><th>First-phase investment</th><th>Reported stage</th></tr></thead><tbody><tr><td>Guwahati</td><td>15 MW</td><td>₹250 crore</td><td>Under construction</td></tr><tr><td>Jorhat</td><td>10 MW</td><td>₹200 crore</td><td>MoU signed</td></tr><tr><td>Silchar</td><td>15 MW</td><td>₹255 crore</td><td>MoU signed</td></tr><tr><td>Total</td><td>40 MW</td><td>₹705 crore</td><td>Planned portfolio</td></tr></tbody></table><figcaption class=\"wp-element-caption\"><em>Source: Assam chief minister's November 25 announcement, reported by <a href=\"https://economictimes.indiatimes.com/industry/telecom/telecom-news/airtels-total-data-centre-capacity-in-assam-to-reach-40-mw-across-guwahati-jorhat-and-silchar-cm/articleshow/136164680.cms\">The Economic Times</a>. A crore equals ten million rupees.</em></figcaption></figure><!-- /wp:table -->\n\n<!-- wp:paragraph -->\n<p>The Guwahati facility is being constructed at Bongora's IT Park, with a March 2028 completion target. The other two projects are planned for four acres in Jorhat and five acres in Silchar, respectively. The government anticipates 164 direct jobs associated with the two newly agreed facilities. The company's broader completion expectation is 2028, rather than a guarantee of commercial service by a specific date.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Why regional data centers matter</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Telecommunications operators can combine local computing with existing fiber networks to bring selected services closer to their users. Reducing the physical distance traversed by data can reduce propagation latency. Optical signals travel at roughly 200,000 kilometers per second through typical silica fiber, equivalent to about five microseconds per kilometer in one direction. Actual application response times also depend on routing, congestion, processing and the return path.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":30625,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/exfo-maxtester-720c-official-fiber-optic-otdr.jpg\" alt=\"EXFO MaxTester optical time-domain reflectometer\" class=\"wp-image-30625\" /><figcaption class=\"wp-element-caption\"><em>EXFO's MaxTester 720C optical test instrument, an example of equipment used to characterize fiber links. Credit: <a href=\"https://www.exfo.com/en/products/discontinued-products/maxtester-720c/\">EXFO</a>. No specific equipment deployment in Assam is implied.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>Multiple locations can also support replication and disaster recovery if engineers establish independent network routes, adequate backup power and suitable application architectures. Three buildings do not automatically provide three independent failure domains. Regional flooding, shared utility connections and common fiber corridors must be considered in the final design.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Power capacity and national expansion</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The announced 40 MW is a capacity figure, not an operating measurement. If the three facilities collectively drew 40 MW continuously, their annual electricity consumption would be 350,400 MWh over a 365-day year. That calculation is illustrative only; the announcement does not establish whether capacity refers to gross facility input or usable IT load, nor does it disclose measured power usage effectiveness.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Airtel's <a href=\"https://www.airtel.in/press-release/03-2026/airtel-announces-us1-billion-investment-in-nxtra-led-by-alpha-wave-global-and-existing-investor-carlyle-bharti-airtel-will-also-participate/\">March 2026 Nxtra announcement</a> identifies a national expansion objective of 1 GW from approximately 300 MW, backed by a proposed $1 billion investment round. Assam's projects illustrate a regional approach alongside large campus developments such as <a href=\"https://bitcoinversus.tech/2026/11/26/kt-cloud-keppel-ansan-110mw-ai-data-center-campus-south-korea-2026/\">South Korea's Ansan expansion</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Other infrastructure developments, including <a href=\"https://bitcoinversus.tech/2026/11/26/bitdeer-weathersfield-niles-300mw-ai-data-center-former-ohio-power-plant-2026/\">Bitdeer's Ohio proposal</a> and <a href=\"https://bitcoinversus.tech/2026/11/26/soluna-project-annie-74mw-bitcoin-114mw-solar-texas-2026/\">Soluna's Texas development</a>, demonstrate the importance of separating power commitments from operating capacity. Equipment selection, <a href=\"https://bitcoinversus.tech/2026/11/22/osdctc-022-cdu-pump-redundancy-failover-cooling-verification/\">cooling reliability</a>, network commissioning and customer service activation remain the practical milestones to watch in Assam.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Featured cover: conceptual editorial illustration, not a photograph of an Airtel facility.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "rotation": "infrastructure project, following Ansan 35823; persistent rotation cursor not recovered",
+  "status": "PUBLISHED, VERIFICATION PENDING",
+  "sources": [
+    "https://www.reuters.com/world/india/indias-bharti-airtel-signs-130-million-data-centre-pact-with-northeastern-state-2026-11-25/",
+    "https://www.business-standard.com/companies/news/bharti-airtel-to-invest-1-200-crore-in-three-data-centres-in-assam-126112501173_1.html",
+    "https://economictimes.indiatimes.com/industry/telecom/telecom-news/airtels-total-data-centre-capacity-in-assam-to-reach-40-mw-across-guwahati-jorhat-and-silchar-cm/articleshow/136164680.cms",
+    "https://www.airtel.in/press-release/03-2026/airtel-announces-us1-billion-investment-in-nxtra-led-by-alpha-wave-global-and-existing-investor-carlyle-bharti-airtel-will-also-participate/"
+  ],
+  "claims": {
+    "event": "MoU November 25 2026 for Jorhat and Silchar, reported by ET and Business Standard",
+    "planned_capacity_mw": {
+      "Guwahati": 15,
+      "Jorhat": 10,
+      "Silchar": 15
+    },
+    "investment_crore_inr": {
+      "overall": 1200,
+      "first_phase": 705
+    },
+    "status": "Guwahati under construction; other two MoU signed; 2028 target, not operational",
+    "measurement_boundary": "gross versus IT not disclosed"
+  },
+  "calculations": {
+    "capacity": "15+10+15=40 MW",
+    "first_phase": "250+200+255=705 crore",
+    "annual_full_load_example": "40*24*365=350400 MWh",
+    "fiber_propagation": "1/200000 seconds per km = 5 microseconds/km"
+  },
+  "duplicate": {
+    "wordpress": "Jorhat search before drafting zero; immediately before publication only draft 35862",
+    "github": "prior turn targeted Jorhat Silchar and EnergyMap Jorhat searches no results; not exhaustive"
+  },
+  "cover": {
+    "media": 35859,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "style": "photorealistic conceptual",
+    "source_media": 35857,
+    "watermark": "single recreated green-on-black wordmark visually observed in generated original; exact approved asset and pixel color not independently verified; resized CDN image not visually inspected"
+  },
+  "media": {
+    "24043": "original donation QR from approved footer pattern 33935; address text verified, QR not decoded",
+    "30625": "credited contextual EXFO optical test instrument photo",
+    "33289": "credited contextual AWS data center photo"
+  },
+  "qa": {
+    "wordpress": "publish response and view readback confirmed post status, featured media, body image references and footer; four internal destinations verified publish",
+    "word_count_including_footer": 659,
+    "live_browser": "not tested; no playback claim; no video embedded",
+    "sources": "ET and Business Standard and Airtel opened, Reuters direct open failed but news search result corroborates amount",
+    "score": null
+  },
+  "learning": [
+    "Keep overall investment and first-phase figures separate.",
+    "Explicitly distinguish MoU from construction and operation.",
+    "Retrieve approved watermark asset and inspect resized cover before asserting exact compliance."
+  ]
+}
