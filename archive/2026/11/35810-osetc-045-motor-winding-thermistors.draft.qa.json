@@ -1,0 +1,86 @@
+{
+  "artifact_id": 35810,
+  "type": "lesson_draft",
+  "policy_version": "8.0",
+  "date": "2026-11-26",
+  "track_id": "OSETC.045",
+  "title": "Motor Winding Thermistors: PTC Protection and Safe Troubleshooting",
+  "status": "BLOCKED",
+  "wordpress": {
+    "id": 35810,
+    "status": "draft",
+    "url": "https://bitcoinversus.tech/?p=35810",
+    "readback_confirmed": true,
+    "featured_media": 0,
+    "body_characters": 12692,
+    "body_image_blocks": 3,
+    "internal_links_saved": 5
+  },
+  "rotation": {
+    "last_live": "OSEEC.033",
+    "last_live_post": 35791,
+    "predecessor_in_track": "OSETC.044",
+    "predecessor_id": 34061,
+    "registries_date": "2026-11-19",
+    "subjects": 43,
+    "cursor_stale": true,
+    "next_candidate": "OSETC.045",
+    "advanced": false
+  },
+  "duplicate_checks": {
+    "wordpress_exact_id_statuses": [
+      "publish",
+      "draft",
+      "future",
+      "pending",
+      "private"
+    ],
+    "matches": 0,
+    "github_repositories": [
+      "1freetech/opencert.tech",
+      "1freetech/techcert",
+      "1freetech/Bitcoinversus.tech"
+    ],
+    "github_search_matches": "prior candidate QA reference only; no lesson match returned",
+    "limitations": "Search is not an exhaustive archive audit."
+  },
+  "sources": [
+    "https://new.abb.com/low-voltage/products/electronicrelays/monitors/thermistor-motor-protection-relays",
+    "https://www.se.com/ng/en/product-range/677-tesys-lt3/",
+    "https://www.focusensing.com/ptc-thermistor-for-motor-winding-protection-wiring-and-selection_n187",
+    "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147"
+  ],
+  "calculations": {
+    "series_cold_ohms": 360,
+    "series_hot_ohms": 3750,
+    "exercise_ohms": 300,
+    "classification": "illustrative"
+  },
+  "media": {
+    "authentic_body_images": 2,
+    "images_inspected_at_source": true,
+    "saved_image_blocks": true,
+    "live_rendering": false,
+    "video_playback": "unverified; linked official demonstration only",
+    "featured_cover": "missing",
+    "watermark": "unverified"
+  },
+  "footer": {
+    "qr_attachment": 24043,
+    "metadata_read": true,
+    "qr_destination_decoded": false
+  },
+  "open_defects": [
+    "Required 1200x630 featured cover with exactly one approved watermark not verified",
+    "Live playback and responsive render not tested",
+    "Full duplicate audit not complete",
+    "Predecessor WordPress #35791 featured_media=0",
+    "Original QR destination not independently decoded"
+  ],
+  "next_improvements": [
+    "Establish approved cover asset retrieval and verified exact-dimension upload path",
+    "Reconcile stale rotation registries against live post inventory before advancing",
+    "Verify individual media rendering and playback separately; retain explicit unknown states"
+  ],
+  "archival": "Draft QA only; final lesson archive not created; rotation not advanced."
+}
