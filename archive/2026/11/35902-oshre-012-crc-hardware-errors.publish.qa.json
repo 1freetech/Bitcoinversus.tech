@@ -1,0 +1,52 @@
+{
+  "artifact_id": 35902,
+  "track_id": "OSHRE.012",
+  "policy_version": "8.0",
+  "status": "PUBLISHED WITH OPEN DEFECTS",
+  "authorization": "Post now after disclosure of missing mandatory cover",
+  "wordpress": {
+    "status": "publish",
+    "url": "https://bitcoinversus.tech/2026/11/26/oshre-012-asic-hashboard-crc-hardware-error-counters/",
+    "readback": true,
+    "featured_media": 0
+  },
+  "media": {
+    "server_rendered_iframes": 2,
+    "video_ids": [
+      "k0NQcTWy9ME",
+      "1qnC-4sAeVU"
+    ],
+    "actual_playback": "not verified",
+    "screenshot_references_retained": 2,
+    "live_image_loading": "not tested",
+    "mobile": "not tested"
+  },
+  "cover": {
+    "missing": true,
+    "watermark": "absent",
+    "prior_generation": "WordPress AI quota rejection"
+  },
+  "archives": [
+    {
+      "repo": "1freetech/opencert.tech",
+      "commit": "c9ce14f530e7ff5d8984d28211d095ce308d18a0",
+      "identical": true
+    },
+    {
+      "repo": "1freetech/techcert",
+      "commit": "1006b3053ae92ed1c18d601871543c89597cf7ed",
+      "identical": true
+    },
+    {
+      "repo": "1freetech/Bitcoinversus.tech",
+      "commit": "92b8f5b9e3954bacd5b83874513e70f63b6cb7bd",
+      "identical": true
+    }
+  ],
+  "next_subject": "robotics_technician",
+  "improvements": [
+    "Recover approved watermark and distinct cover",
+    "Test actual playback separately from iframe presence",
+    "Keep rotation cursor aligned with confirmed publication"
+  ]
+}
