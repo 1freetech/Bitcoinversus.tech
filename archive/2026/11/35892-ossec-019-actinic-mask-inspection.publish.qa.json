@@ -1,0 +1,105 @@
+{
+  "artifact_id": 35892,
+  "track_id": "OSSEC.019",
+  "policy_version": "8.0",
+  "status": "PUBLISHED WITH OPEN DEFECTS",
+  "wordpress": {
+    "status": "publish",
+    "url": "https://bitcoinversus.tech/2026/11/26/ossec-019-actinic-euv-mask-inspection-buried-phase-defects/",
+    "readback": true,
+    "featured_media": 35893
+  },
+  "rotation": {
+    "previous": "OSSTC.022",
+    "predecessor": "OSSEC.018",
+    "predecessor_id": 34894,
+    "next_subject": "hashboard_repair",
+    "next_candidate": "OSHRE.012",
+    "predecessor_next_id": 34934
+  },
+  "duplicate_checks": {
+    "scope": "five WordPress statuses for identifier, topic searches actinic inspection and buried phase defects, three GitHub repository searches",
+    "matches": "none returned for dedicated subject; field stitching rejected due to prior related coverage"
+  },
+  "sources": [
+    "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2017/EECS-2017-188.html",
+    "https://cxro.lbl.gov/capabilities/sharp",
+    "https://sharp.lbl.gov/sharp/why-sharp/",
+    "https://www.lasertec.co.jp/en/news/2024/20241202_3887.html",
+    "https://www.lasertec.co.jp/en/products/semiconductor/actis_a300.html"
+  ],
+  "calculations": {
+    "ideal_reflection_phase_degrees": [
+      13.333333333333334,
+      26.666666666666668,
+      53.333333333333336
+    ],
+    "wavelength_nm": 13.5,
+    "normal_incidence": true
+  },
+  "cover": {
+    "id": 35893,
+    "width": 1200,
+    "height": 630,
+    "visual_checked": true,
+    "watermark_count": 1,
+    "exact_green_pixels": 856,
+    "original_asset_reused": false,
+    "style": "procedural conceptual illustration, outside requested style rotation",
+    "cdn_visual": false,
+    "body_duplicate": false
+  },
+  "media": {
+    "native_blocks": 2,
+    "server_rendered_iframes": 2,
+    "ids": [
+      "G1A-5pt6h-4",
+      "Mbx6lsXSYVE"
+    ],
+    "source_listings_found": true,
+    "direct_youtube_fetch": "failed/429",
+    "playback": "not verified",
+    "mobile": "untested",
+    "credited_alternative_images": [
+      {
+        "source": "Berkeley Lab SHARP",
+        "visually_inspected": true,
+        "markup_retained": true
+      },
+      {
+        "source": "Lasertec ACTIS A300",
+        "visually_inspected": true,
+        "markup_retained": true
+      }
+    ],
+    "live_image_loading": "not independently tested"
+  },
+  "internal_links_saved": 4,
+  "footer": {
+    "qr_id": 24043,
+    "attachment_metadata_checked": true,
+    "destination_decoded": false
+  },
+  "archives": [
+    {
+      "repo": "1freetech/opencert.tech",
+      "commit": "6fd51689f628a297f83ea8c09fa81f32f7525153",
+      "identical": true
+    },
+    {
+      "repo": "1freetech/techcert",
+      "commit": "06af807a0c1e0d821a39be10e9e90600ba8f9be5",
+      "identical": true
+    },
+    {
+      "repo": "1freetech/Bitcoinversus.tech",
+      "commit": "8656af4690d23a59822e3fac2571c0d656317957",
+      "identical": true
+    }
+  ],
+  "improvements": [
+    "Reject related duplicate topics before drafting",
+    "Use source-inspected authentic figures as fallback when playback inaccessible",
+    "Restore approved watermark asset and style rotation"
+  ]
+}
