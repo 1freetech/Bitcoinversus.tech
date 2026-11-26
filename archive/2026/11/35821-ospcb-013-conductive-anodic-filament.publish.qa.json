@@ -1,0 +1,40 @@
+{
+  "policy_version": "8.0",
+  "artifact_id": 35821,
+  "track_id": "OSPCB.013",
+  "status": "PUBLISHED WITH OPEN DEFECTS",
+  "wordpress_status": "publish",
+  "url": "https://bitcoinversus.tech/2026/11/26/ospcb-013-conductive-anodic-filament-caf-pcb-insulation-failure/",
+  "publication_readback": true,
+  "authorization": "Post it verify embeds, after cover blocker disclosed",
+  "video_source": "https://www.npl.co.uk/products-services/electronics-reliability/conductive-anodic-filament",
+  "videos": [
+    {
+      "id": "FFR8IPu_vbY",
+      "title": "CAF conductive anodic filaments",
+      "publisher_link_verified": true,
+      "canonical_gutenberg_saved": true,
+      "server_rendered_iframe": true,
+      "playback": "not tested"
+    },
+    {
+      "id": "bbdOjaFYkpk",
+      "title": "A Beginners Guide to SIR CAF and Condensation Testing",
+      "publisher_link_verified": true,
+      "canonical_gutenberg_saved": true,
+      "server_rendered_iframe": true,
+      "playback": "not tested"
+    }
+  ],
+  "public_browser_fetch": "not accessible via web tool",
+  "desktop_mobile_visual": "not tested",
+  "featured_media": 0,
+  "watermark": "missing",
+  "archive_readback_identical": [
+    "1freetech/opencert.tech",
+    "1freetech/techcert",
+    "1freetech/Bitcoinversus.tech"
+  ],
+  "next_rotation": "cpp; verify identifier before publication",
+  "registry_updated": false
+}
