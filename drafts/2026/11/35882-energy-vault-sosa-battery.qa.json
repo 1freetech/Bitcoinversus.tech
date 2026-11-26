@@ -1,0 +1,55 @@
+{
+  "policy": "v8.0",
+  "artifact": {
+    "id": 35882,
+    "status": "draft",
+    "link": "https://bitcoinversus.tech/?p=35882",
+    "categories": [
+      1212,
+      6
+    ],
+    "featured_media": 0,
+    "title": "Energy Vault Secures $78 Million for a 300 MWh Texas Battery",
+    "content": "<!-- wp:paragraph -->\n<p>Energy Vault has secured construction financing for the SOSA Energy Center, a utility-scale battery storage project in Madison County, Texas. The company's <a href=\"https://investors.energyvault.com/news/news-details/2026/Energy-Vault-Closes-Non-Recourse-Project-Financing-for-150-MW--300-MWh-SOSA-Energy-Center-in-Texas/default.aspx\">November 23 announcement</a> identifies a 150 MW power rating and 300 MWh of energy capacity, supported by a $78 million bridge financing facility. Commercial operations are targeted for the third quarter of 2027.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":35874,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/energy-vault-battery-enclosures-ess-news.png\" alt=\"Energy Vault modular outdoor battery enclosures\" class=\"wp-image-35874\" /><figcaption class=\"wp-element-caption\"><em>Energy Vault battery equipment imagery via <a href=\"https://www.ess-news.com/2026/11/24/energy-vault-closes-78-million-financing-for-300-mwh-texas-bess/\">ESS News</a>. Archival image; not verified as a photograph of SOSA.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">A financing milestone, not a commissioning announcement</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Construction started in late 2025. Energy Vault reports that earthworks and other civil construction are complete and the electrical substation is installed. Delivery of major equipment remains ahead. The company estimates an overall local investment of approximately $100 million. Those statements describe a construction project rather than an operating storage asset.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>A <a href=\"https://www.sec.gov/Archives/edgar/data/1828536/000182853626000123/nrgv-20261116.htm\">Form 8-K filing with the Securities and Exchange Commission</a> provides additional detail. Financing agreements were signed November 16. The $78 million facility is a preferred-equity bridge loan, accompanied by an $8.7 million letter-of-credit facility. Energy Vault reports drawing $27.2 million of the bridge loan on November 19. A third-party investor agreed to contribute $79.6 million in installments contingent on project milestones and other conditions.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The temporary loan is intended to be repaid using the equity commitment. Adding the face values of the bridge facility and the future equity contribution would therefore overstate permanent capital available to the project. The credit agreement also contains a repayment deadline and provisions governing changes in the investor's expected contributions.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Why a 150 MW battery stores 300 MWh</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Power and energy describe different physical quantities. A 150 MW rating expresses the nominal rate at which electrical energy can be delivered, while 300 MWh represents a nominal quantity of stored energy. Dividing 300 MWh by 150 MW yields two hours of discharge at rated power under idealized conditions. A lower discharge rate could extend the duration; actual performance depends on equipment limits, state of charge, temperature, aging and operating reserves.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":33093,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/national-lab-battery-storage-dennis-schroeder-nrel-56322.jpg\" alt=\"Utility-scale battery storage enclosures photographed by Dennis Schroeder\" class=\"wp-image-33093\" /><figcaption class=\"wp-element-caption\"><em>Archival utility-scale storage installation, Dennis Schroeder / National Renewable Energy Laboratory, image 56322. Separate installation shown for equipment context, not SOSA.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>If the plant supplied its rated energy once daily for a hypothetical year, nominal discharged energy would equal 109,500 MWh. The calculation assumes 365 full discharges and excludes losses, downtime and capacity degradation. It is not an operating forecast. At the company's estimated $100 million total investment, the nameplate energy-normalized cost is approximately $333 per kWh; that includes project infrastructure and cannot be equated with a standalone battery-cell price.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">The economic role of short-duration storage</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Energy Vault plans to participate in the ERCOT North electricity market without an initial contracted offtake agreement. A battery can charge when electricity is less expensive and discharge when prices rise. It can also offer eligible grid-balancing services. Its profitability depends on price spreads, cycling costs, qualification rules, competition and availability. The operator retains the option to pursue contracted revenue later.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>SOSA's two-hour design contrasts with the planned <a href=\"https://bitcoinversus.tech/2026/11/26/flatiron-energizar-chelsea-250mw-1200mwh-battery-storage-2026/\">1.2 GWh Chelsea battery</a> and the <a href=\"https://bitcoinversus.tech/2026/11/25/china-golmud-60mw-600mwh-liquid-air-storage-grid-10-hours-2026/\">ten-hour Golmud liquid-air system</a>. Other projects, including <a href=\"https://bitcoinversus.tech/2026/11/26/cvec-lightshift-colleen-20-mwh-battery-automatic-substation-load-management-2026/\">Virginia's substation demand-management battery</a> and <a href=\"https://bitcoinversus.tech/2026/11/25/kyon-energy-dahlem-germany-100mw-203mwh-battery-commissioning-2026/\">Germany's Dahlem battery</a>, illustrate different deployment stages and operating roles.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The next material milestones for SOSA are equipment delivery, electrical commissioning, grid qualification and actual commercial operation. Until then, the 150 MW rating represents planned capability, while the financing close represents a documented commercial development.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "status": "BLOCKED — saved draft",
+  "rotation": "energy storage infrastructure after two Asian data center projects; independent cursor not located",
+  "sources": [
+    "https://investors.energyvault.com/news/news-details/2026/Energy-Vault-Closes-Non-Recourse-Project-Financing-for-150-MW--300-MWh-SOSA-Energy-Center-in-Texas/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/1828536/000182853626000123/nrgv-20261116.htm",
+    "https://www.ess-news.com/2026/11/24/energy-vault-closes-78-million-financing-for-300-mwh-texas-bess/",
+    "https://www.energy-storage.news/energy-vault-backlog-hits-us2-3-billion-as-it-closes-financing-for-150mw-texas-bess/"
+  ],
+  "claims": {
+    "construction": "Company reports construction since Q4 2025, civil work complete and substation installed; not operating",
+    "capacity": "150 MW / 300 MWh nameplate",
+    "financing": "SEC filing: $78m facility, $8.7m letter of credit, $27.2m drawn, $79.6m conditional investment",
+    "target": "Q3 2027, company forecast"
+  },
+  "calculations": [
+    "300/150=2 hours",
+    "300*365=109500 MWh hypothetical annual discharged energy",
+    "100000000/300000=333.33 USD/kWh nominal capex"
+  ],
+  "duplicate": "SOSA WordPress published/draft/scheduled exact search zero; Madison County search no matching project; Bitcoinversus.tech and EnergyMap targeted GitHub searches zero. Skanska rejected because published post 35858. Not exhaustive.",
+  "qa": {
+    "draft_readback": "draft",
+    "featured_media": 0,
+    "words": 644,
+    "body_media": [
+      35874,
+      33093
+    ],
+    "footer": "original QR media 24043 and approved address text in markup; not decoded",
+    "cover": "Two image generations rejected: first depicts Meta Louisiana data center, second generic data center. Approved prior cover download failed DNS and web access; no compliant cover attached.",
+    "live": "not tested; not published",
+    "internal_links": "four links selected from WordPress published listing; saved links present",
+    "video": "credited photos used; playback not tested",
+    "score": null
+  },
+  "learning": [
+    "Verify subject and reject incorrect generated cover rather than uploading it.",
+    "Check facility financing and equity repayment to avoid double counting.",
+    "Recover approved watermark and validate QR bytes before publication."
+  ]
+}
