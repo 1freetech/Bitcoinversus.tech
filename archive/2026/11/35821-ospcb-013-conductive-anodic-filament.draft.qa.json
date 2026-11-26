@@ -1,0 +1,87 @@
+{
+  "artifact_id": 35821,
+  "track_id": "OSPCB.013",
+  "policy_version": "8.0",
+  "status": "BLOCKED",
+  "wordpress": {
+    "status": "draft",
+    "readback": true,
+    "url": "https://bitcoinversus.tech/?p=35821",
+    "featured_media": 0,
+    "body_characters": 15033,
+    "internal_links_saved": 5,
+    "image_blocks": 4
+  },
+  "rotation": {
+    "previous": "OSETC.045",
+    "previous_id": 35810,
+    "pcb_predecessor": "OSPCB.012",
+    "pcb_predecessor_id": 34942,
+    "registry_stale": true,
+    "advanced": false
+  },
+  "duplicate_checks": {
+    "wordpress_track_all_five_statuses": "No OSPCB.013 in returned results",
+    "wordpress_subject_public": "No conductive anodic filament match",
+    "github_subject_search": [
+      "1freetech/opencert.tech",
+      "1freetech/techcert",
+      "1freetech/Bitcoinversus.tech"
+    ],
+    "github_matches": 0,
+    "scope": "Targeted searches, not full historical audit"
+  },
+  "sources": [
+    "https://www.npl.co.uk/products-services/electronics-reliability/conductive-anodic-filament",
+    "https://industrial.panasonic.com/ww/faq/faq0160",
+    "https://doi.org/10.3390/app12020640"
+  ],
+  "calculations": {
+    "classification": "fictional idealized examples",
+    "leakage_microamps": [
+      0.12,
+      120,
+      12000
+    ],
+    "nominal_field_v_per_mm": [
+      40,
+      80
+    ],
+    "practice": [
+      0.5,
+      40
+    ]
+  },
+  "media": {
+    "source_figures": [
+      1,
+      12,
+      4
+    ],
+    "source_images_visually_inspected": true,
+    "live_rendering": "not tested",
+    "videos": [
+      "FFR8IPu_vbY",
+      "bbdOjaFYkpk"
+    ],
+    "video_status": "official NPL links; not embedded or playback verified",
+    "cover_generation": "WordPress AI image quota rejection",
+    "alternative_source_download": "container DNS resolution unavailable",
+    "watermark": "missing"
+  },
+  "footer": {
+    "qr_attachment": 24043,
+    "destination_not_independently_decoded": true
+  },
+  "open_defects": [
+    "No featured cover, no verified watermark",
+    "No independently verified video playback",
+    "Public page and mobile rendering not tested",
+    "Rotation registry still stale"
+  ],
+  "improvements": [
+    "Provide an independent exact-dimension cover upload path with approved watermark asset",
+    "Reconcile registry with confirmed live lesson IDs",
+    "Retain authentic source media with attribution and verify live render separately"
+  ]
+}
