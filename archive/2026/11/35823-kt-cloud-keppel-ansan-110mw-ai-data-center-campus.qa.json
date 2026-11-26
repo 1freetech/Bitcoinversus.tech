@@ -1,0 +1,70 @@
+{
+  "policy": "v8.0",
+  "artifact": {
+    "id": 35823,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/26/kt-cloud-keppel-ansan-110mw-ai-data-center-campus-south-korea-2026/",
+    "categories": [
+      12374,
+      1212,
+      2509703,
+      6
+    ],
+    "featured_media": 35820,
+    "title": "KT Cloud Expands South Korea’s AI Infrastructure With a Planned 110 MW Data Center Campus",
+    "content": "<!-- wp:paragraph -->\n<p>South Korea’s AI infrastructure expansion has reached a new commercial milestone. Singapore-based Keppel confirmed that KT Cloud has committed to the full capacity of a planned 60 MW data center in Ansan, Gyeonggi Province. Announced November 26, 2026, the agreement connects the development with KT Cloud’s separate 50 MW Ansan facility, creating a planned two-site cluster with 110 MW of combined electrical capacity.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":35815,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/kt-cloud-ansan-architectural-render.png\" alt=\"KT Cloud architectural rendering of a multi-storey data center in Ansan\" class=\"wp-image-35815\" /><figcaption class=\"wp-element-caption\"><em>KT Cloud architectural rendering, via <a href=\"https://www.datacenterdynamics.com/en/news/kt-breaks-ground-on-50mw-data-center-in-ansan-south-korea/\">Data Center Dynamics, October 23, 2026</a>. The image was published with coverage of Ansan 1; it does not establish the appearance of Ansan 2.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">A new lease anchors the second development</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>According to <a href=\"https://www.keppel.com/media/keppel-data-centre-fund-iii-secures-kt-cloud-as-master-tenant-for-60-mw-south-korea-data-centre-/\">Keppel’s announcement</a>, the fund acquired the development site in June and has secured construction permits and power approvals. Construction is scheduled to begin in November 2026, with service targeted for 2030. The commitment covers the facility’s entire capacity, but leasing capacity does not mean that servers are installed or electricity is being consumed.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The second facility will occupy approximately 52,622 square meters of gross floor area across eight above-ground levels and two basement levels. <a href=\"https://biz.chosun.com/en/en-it/2026/11/26/EZRLA5VAL5FLVNHTB7K3U4YOME/\">ChosunBiz reports</a> that the buildings will be approximately 2.5 kilometers apart. The original 50 MW development broke ground in October, according to <a href=\"https://www.datacenterdynamics.com/en/news/kt-breaks-ground-on-50mw-data-center-in-ansan-south-korea/\">Data Center Dynamics</a>, and is expected to enter service in 2029.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Gross power is not GPU power</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Keppel describes the new development’s 60 MW figure as gross electrical capacity. Transformers, uninterruptible power supplies, cooling pumps, fans and other infrastructure all draw electricity or introduce conversion losses. Consequently, the amount of power available to computing equipment will be lower than the facility’s gross capacity.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For illustration, a facility drawing 60 MW at a power usage effectiveness (PUE) of 1.20 would have an IT power budget of 50 MW, calculated as 60 ÷ 1.20. Continuous operation at the full 60 MW would consume 525,600 MWh over a 365-day year. Neither assumption represents measured operating performance or a disclosed electricity-consumption forecast for Ansan.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":31204,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/nvidia-official-gb200-nvl72-rack-hardware.jpg\" alt=\"NVIDIA GB200 NVL72 integrated accelerator cabinets\" class=\"wp-image-31204\" /><figcaption class=\"wp-element-caption\"><em>NVIDIA GB200 NVL72 rack-scale computing equipment, credited to NVIDIA Newsroom. An example of dense AI hardware, not a confirmed Ansan equipment order.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Cooling and networking determine usable capacity</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>KT Cloud plans liquid-cooling infrastructure on each floor. In a direct-to-chip system, cold plates carry heat away from processors into circulating coolant. Coolant distribution units exchange heat between server and facility loops, while external heat-rejection equipment ultimately transfers thermal energy to the environment. Pump redundancy, pressure management, leak detection and maintenance isolation become essential operating considerations, as explained in our <a href=\"https://bitcoinversus.tech/2026/11/22/osdctc-022-cdu-pump-redundancy-failover-cooling-verification/\">CDU redundancy lesson</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>A two-site campus also creates opportunities for phased expansion and geographic separation of infrastructure. Optical links can connect facilities for data transfer and service replication, but the project’s interconnection topology, bandwidth, accelerator inventory and workload allocation have not been disclosed. Distributed AI training performance depends on network latency and communication throughput, not simply aggregate electrical capacity.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Keppel says the new facility will be designed to Tier III-equivalent specifications. That describes the intended resilience standard rather than evidence of completed independent certification. Similar distinctions between commitments and commissioned capacity appear in our coverage of <a href=\"https://bitcoinversus.tech/2026/11/26/bitdeer-weathersfield-niles-300mw-ai-data-center-former-ohio-power-plant-2026/\">Bitdeer’s 300 MW Ohio proposal</a>, its <a href=\"https://bitcoinversus.tech/2026/11/23/bitdeer-tydal-norway-bitcoin-mine-121mw-ai-2026-volta-conversion/\">121 MW Norwegian conversion</a> and <a href=\"https://bitcoinversus.tech/2026/11/26/soluna-project-annie-74mw-bitcoin-114mw-solar-texas-2026/\">Soluna’s Texas solar-adjacent campus</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>KT Group’s stated objective is to offer 1 GW of AI data center capacity by 2031. Ansan’s combined planned capacity represents 11% of that target on a nominal MW basis, without establishing whether the group uses identical measurement boundaries throughout its portfolio. The milestones worth watching are construction progress, electrical commissioning, thermal-system testing and the actual start of customer service.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Featured cover: conceptual oil-painted editorial illustration, not a photograph or an official architectural rendering of the proposed campus.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "rotation": "infrastructure project, independent persistent cursor not located",
+  "status": "PUBLISHED, VERIFICATION PENDING",
+  "sources": [
+    "https://www.keppel.com/media/keppel-data-centre-fund-iii-secures-kt-cloud-as-master-tenant-for-60-mw-south-korea-data-centre-/",
+    "https://www.datacenterdynamics.com/en/news/kt-cloud-signs-60mw-lease-at-data-center-in-ansan-south-korea/",
+    "https://www.datacenterdynamics.com/en/news/kt-breaks-ground-on-50mw-data-center-in-ansan-south-korea/",
+    "https://biz.chosun.com/en/en-it/2026/11/26/EZRLA5VAL5FLVNHTB7K3U4YOME/"
+  ],
+  "claims": {
+    "gross_new_mw": 60,
+    "combined_planned_mw": 110,
+    "existing_under_construction_mw": 50,
+    "new_target_year": 2030,
+    "existing_target_year": 2029,
+    "gross_floor_area_m2": 52622,
+    "source": "Keppel company announcement and DCD/ChosunBiz reporting; none are operating capacity claims"
+  },
+  "calculations": {
+    "combined": "50+60=110 MW",
+    "illustrative_IT": "60/1.20=50 MW",
+    "illustrative_annual_energy": "60*24*365=525600 MWh",
+    "nominal_share": "110/1000=11%; boundaries may differ"
+  },
+  "duplicate": {
+    "wordpress": "Ansan search immediately before publish returned only draft 35823",
+    "github": "prior turn targeted Bitcoinversus.tech and EnergyMap search returned no results; not exhaustive"
+  },
+  "cover": {
+    "media": 35820,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "style": "oil painting",
+    "source_generated_media": 35819,
+    "watermark": "visually observed single recreated green-on-black wordmark in generated original; exact saved logo not recovered, pixel color and resized CDN image not independently visually checked"
+  },
+  "media": {
+    "24043": "original approved QR from canonical synced pattern 33935; address matches approved text but QR destination not decoded",
+    "31204": "NVIDIA official hardware contextual illustration, not installed at Ansan; WP rendered markup confirmed",
+    "35815": "KT Cloud rendering verified through DCD image, also used in Ansan 1 article; caption specifies context"
+  },
+  "qa": {
+    "wordpress": "publish response + view readback verified status and featured ID; four published internal destinations; two body media separate from cover; footer present",
+    "public_fetch": "web open returned inaccessible; no desktop/mobile test; no video embeds because playback unverified",
+    "word_count_including_footer": 689,
+    "score": null
+  },
+  "learning": [
+    "Recover canonical footer via synced pattern before drafting.",
+    "When site image credits exhausted use generated chat attachment then WordPress CDN resize and check dimensions; retrieve exact watermark asset separately before asserting matching artwork.",
+    "Keep gross MW and IT MW separate and use explicit project phases."
+  ]
+}
