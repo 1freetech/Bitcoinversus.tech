@@ -1,0 +1,76 @@
+{
+  "artifact_id": 35902,
+  "track_id": "OSHRE.012",
+  "policy_version": "8.0",
+  "status": "BLOCKED",
+  "wordpress": {
+    "status": "draft",
+    "url": "https://bitcoinversus.tech/?p=35902",
+    "readback": true,
+    "featured_media": 0
+  },
+  "rotation": {
+    "previous": "OSSEC.019",
+    "previous_id": 35892,
+    "predecessor": "OSHRE.011",
+    "predecessor_id": 34934,
+    "advanced": false,
+    "next_after_publication": "robotics_technician"
+  },
+  "duplicate_checks": {
+    "wordpress_identifier_all_five_statuses": "No matching lesson before creation",
+    "topic": "Prior OSHRE.011 covers acceptance; CRC counter topic not returned as dedicated hashboard lesson",
+    "github": "Three repositories searched for CRC error counter; returned networking/embedded subjects in third repository, no matching hashboard lesson",
+    "scope": "targeted, not exhaustive"
+  },
+  "sources": [
+    "https://support.bitmain.com/hc/en-us/articles/360025531034--For-S9series-Common-Problems-Indicated-by-Miner-s-Kernel-Log-and-Ways-to-Resolve-them",
+    "https://support.bitmain.com/hc/en-us/articles/360013577314-Miner-Status-Page-Explained",
+    "https://support.bitmain.com/hc/en-us/articles/10845468564633-S19-XP-log-diagnosis-and-processing-methods",
+    "https://braiins.com/blog/bitcoin-mining-pools-luck-shares-estimated-hashrate"
+  ],
+  "calculations": {
+    "fictional": true,
+    "crc_delta": 30,
+    "events_per_minute": 2,
+    "comparison_events_per_minute": 1,
+    "conditional_event_to_message_percent": 0.15,
+    "exercise": 3
+  },
+  "media": {
+    "native_video_blocks_saved": 2,
+    "video_listings_verified": [
+      "k0NQcTWy9ME",
+      "1qnC-4sAeVU"
+    ],
+    "actual_playback": "not tested",
+    "source_screenshots_visually_inspected": [
+      "https://support.bitmain.com/hc/article_attachments/360040444733/9.png",
+      "https://support.bitmain.com/hc/article_attachments/360020756073"
+    ],
+    "image_blocks_saved": 3,
+    "includes_qr": true
+  },
+  "internal_links_saved": 4,
+  "footer": {
+    "qr_id": 24043,
+    "attachment_metadata_checked": true,
+    "destination_decoded": false
+  },
+  "cover": {
+    "generation": "WordPress AI quota rejection",
+    "source_download": "container DNS failure",
+    "approved_watermark_asset": "not recovered",
+    "featured_media": 0
+  },
+  "open_defects": [
+    "Mandatory distinct featured cover and approved watermark absent",
+    "Actual player playback and browser/mobile checks not performed",
+    "Final three-repository archive and rotation advance pending publication"
+  ],
+  "improvements": [
+    "Use a verified unique photograph or editorial cover with approved watermark rather than substituting a generic graphic",
+    "Preserve counter semantics and denominators",
+    "Retain authentic source screenshots as video fallback"
+  ]
+}
