@@ -1,0 +1,19 @@
+{
+  "policy_version": "8.0",
+  "artifact_id": 35810,
+  "track_id": "OSETC.045",
+  "status": "PUBLISHED WITH OPEN DEFECTS",
+  "publication": "https://bitcoinversus.tech/2026/11/26/osetc-045-motor-winding-ptc-thermistor-protection-safe-troubleshooting/",
+  "readback_status": "publish",
+  "user_override": "Post it, following disclosure of missing cover and publication blocker",
+  "cover_attempt": "WordPress AI media generation rejected: site has reached its AI image limit for the current period",
+  "featured_media": 0,
+  "watermark": "not verified",
+  "archive_readback_identical": [
+    "1freetech/opencert.tech",
+    "1freetech/techcert",
+    "1freetech/Bitcoinversus.tech"
+  ],
+  "live_browser_playback_mobile": "not tested",
+  "rotation_registry": "not updated; next subject PCB engineering according to existing order, identifier needs reconciliation"
+}
