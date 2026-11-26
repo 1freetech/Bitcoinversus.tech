@@ -1,0 +1,78 @@
+{
+  "artifact_id": 35863,
+  "track_id": "OSC++.041",
+  "policy_version": "8.0",
+  "status": "PUBLISHED, VERIFICATION PENDING",
+  "wordpress": {
+    "status": "publish",
+    "url": "https://bitcoinversus.tech/2026/11/26/oscpp-041-cpp20-latch-barrier-thread-coordination/",
+    "readback": true,
+    "featured_media": 35856
+  },
+  "rotation": {
+    "previous": "OSPCB.013",
+    "previous_id": 35821,
+    "next_subject": "semiconductor_technician",
+    "registry_stale": true
+  },
+  "duplicate_checks": {
+    "scope": "targeted WordPress track and topic queries plus three GitHub repository subject searches",
+    "matches": "no matching lesson returned"
+  },
+  "sources": [
+    "https://eel.is/c++draft/thread.latch",
+    "https://eel.is/c++draft/thread.barrier",
+    "https://en.cppreference.com/cpp/thread/latch",
+    "https://cppreference.com/cpp/thread/barrier"
+  ],
+  "tests": {
+    "compiler": "GCC 14.2.0",
+    "flags": "-std=c++20 -O2 -Wall -Wextra -Werror -pthread",
+    "runs_per_program": 100,
+    "passed": 200,
+    "total": 200,
+    "expected": [
+      "Latch total: 60",
+      "6 12 18 24"
+    ],
+    "limitation": "repeatability on local environment; not universal correctness or performance"
+  },
+  "cover": {
+    "id": 35856,
+    "width": 1200,
+    "height": 630,
+    "type": "rendered actual lab transcript",
+    "local_visual_inspection": true,
+    "watermark_count": 1,
+    "exact_green_pixels": 82,
+    "approved_asset_reused": false,
+    "reason": "original asset unavailable, recreated wording and treatment; alternate upload successfully bypassed quota without AI generation",
+    "cdn_visual_check": false,
+    "body_duplicate": false
+  },
+  "media": {
+    "native_embeds_saved": 2,
+    "server_rendered_iframes": 2,
+    "ids": [
+      "A7sVFJLJM-A",
+      "F6Ipn7gCOsY"
+    ],
+    "playback": "not verified",
+    "desktop_mobile": "not tested"
+  },
+  "internal_links_saved": 4,
+  "footer": {
+    "qr": 24043,
+    "destination_decoded": false
+  },
+  "archive_readback_identical": [
+    "1freetech/opencert.tech",
+    "1freetech/techcert",
+    "1freetech/Bitcoinversus.tech"
+  ],
+  "improvements": [
+    "Use file-ID media upload for quota-independent legitimate covers",
+    "Compile exact lesson examples and repeat with timeouts",
+    "Distinguish server-rendered iframe from actual playback"
+  ]
+}
