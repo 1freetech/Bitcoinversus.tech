@@ -1,0 +1,28 @@
+{
+  "policy": "v8.0",
+  "post_id": 35882,
+  "status": "publish",
+  "url": "https://bitcoinversus.tech/2026/11/27/energy-vault-sosa-150mw-300mwh-texas-battery-78-million-financing-2026/",
+  "previous_record": "drafts/2026/11/35882-energy-vault-sosa-battery.qa.json",
+  "cover": {
+    "id": 36037,
+    "source": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/sosa-texas-battery-cover-1200x630-1.png",
+    "width": 1200,
+    "height": 630,
+    "watermark": "Single recreated wordmark visually observed on generated original. Exact approved asset unavailable; resized CDN file not independently visually inspected."
+  },
+  "duplicate_check": "Immediately before publication only draft 35882 matched SOSA Energy Center",
+  "body_media": [
+    35874,
+    33093
+  ],
+  "footer_media": 24043,
+  "footer_address_text_present": true,
+  "verification": "WordPress publish response and subsequent view read-back confirm publication, featured media and content references. No public browser, playback, mobile or QR decoding tests performed.",
+  "operational_status": "PUBLISHED, VERIFICATION PENDING",
+  "learning": [
+    "Reject unrelated covers before attaching.",
+    "Preserve existing post ID when recovering blocked drafts.",
+    "Verify final media dimensions and distinguish visual source inspection from CDN inspection."
+  ]
+}
