@@ -1,0 +1,51 @@
+{
+  "policy": "v8.0",
+  "artifact": {
+    "id": 36057,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/27/vts-vietnam-thailand-singapore-600tbps-subsea-fiber-cable-2030-2026/",
+    "featured_media": 36056,
+    "title": "Vietnam, Thailand and Singapore Launch 600 Tbps Subsea Fiber Cable Project",
+    "content": "<!-- wp:paragraph -->\n<p>A consortium led by Viettel and Singtel has moved a new Southeast Asian submarine telecommunications cable into implementation. The partners signed commercial and construction contracts on November 26, 2026, with NEC Corporation and ASEAN Cableship, according to <a href=\"https://www.singtel.com/about-us/media-centre/news-releases/vts-subsea-cable-project-moves-into-implementation-following-contract-signings\">Singtel's announcement</a> and <a href=\"https://english.vov.vn/en/society/construction-starts-on-first-submarine-cable-project-led-by-vietnam-post1353527.vov\">Voice of Vietnam</a>. The Vietnam–Thailand–Singapore (VTS) system is expected to span approximately 2,500 kilometers and enter commercial service in the fourth quarter of 2030.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":36055,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/vts-cable-november-26-signing-viettel.jpg\" alt=\"VTS consortium participants at the signing ceremony\" class=\"wp-image-36055\" /><figcaption class=\"wp-element-caption\"><em>Viettel photograph via Voice of Vietnam, November 26, 2026, showing the VTS signing and implementation ceremony.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">A 600 Tbps regional network</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The <a href=\"https://en.vietnamplus.vn/vietnamthailandsingapore-submarine-cable-project-launched-post356102.vnp\">Vietnam News Agency</a> reports a total design capacity of 600 Tbps. A direct segment connecting Ho Chi Minh City with Singapore is planned to extend approximately 1,200 kilometers and provide 240 Tbps. Thai branches will connect Rayong and Songkhla. The consortium also includes AIS, VNPT, FPT Telecom and Viettel IDC.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The two capacity figures describe different portions of the system. They should not be added together or interpreted as an individual customer's connection speed. Design capacity is an engineering target; the capacity actually lit and available commercially will depend on installed terminal equipment, service agreements and network configuration.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">How optical fibers carry multiple channels</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Wavelength-division multiplexing allows optical transmitters to carry separate data streams simultaneously using different wavelengths of light. A fiber pair generally supports transmission in opposing directions. Optical amplifiers compensate for signal attenuation along long routes, while coherent receivers recover transmitted information despite optical noise and dispersion. An open-cable architecture can permit compatible terminal equipment to be selected independently of the underwater cable system.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Viettel reports eight fiber pairs for the direct trunk. Achieving the advertised aggregate throughput requires appropriate optical spectrum allocation, modulation, error correction and operating margins. Readers can explore related developments in <a href=\"https://bitcoinversus.tech/2026/10/12/pluggable-optics-moving-into-subsea-networks/\">subsea pluggable optics</a> and <a href=\"https://bitcoinversus.tech/2026/11/09/china-telecom-yofc-zte-hollow-core-fiber-1007km-64tbps-each-way/\">long-distance hollow-core fiber experiments</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":30625,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/exfo-maxtester-720c-official-fiber-optic-otdr.jpg\" alt=\"EXFO MaxTester optical fiber test instrument\" class=\"wp-image-30625\" /><figcaption class=\"wp-element-caption\"><em>EXFO MaxTester 720C, credited to EXFO. Contextual example of optical fiber test equipment, not equipment identified for VTS.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Why the direct route matters</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The developers project a round-trip latency of approximately 12 milliseconds between Vietnam and Singapore. Light propagates through conventional silica fiber at roughly 200,000 kilometers per second. For a 1,200-kilometer route, a simple propagation calculation gives six milliseconds in one direction and twelve milliseconds for the round trip. Additional terrestrial routing and processing introduce further delay, so the advertised latency remains a design projection rather than measured application performance.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The route could support cloud computing, financial networks and digital services across Southeast Asia. A new cable also provides an opportunity to diversify connectivity, although actual resilience depends on routing independence, landing infrastructure and traffic-management arrangements. Our coverage of <a href=\"https://bitcoinversus.tech/2026/10/12/why-undersea-internet-cables-take-time-to-repair/\">undersea cable repairs</a> and <a href=\"https://bitcoinversus.tech/2026/10/12/telstra-perth-sydney-aura-fiber-route/\">Australia's Perth–Sydney fiber route</a> explains related infrastructure challenges.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The November agreement establishes a construction and procurement milestone, not a functioning international network. Manufacturing, marine installation, terminal integration, optical testing and service activation must precede commercial delivery. The important future measurements will be commissioned capacity, verified end-to-end latency and actual service availability.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Featured cover: conceptual colored-pencil editorial illustration, not a photograph of the VTS project.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em><strong>Editor's Note:</strong> We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "status": "PUBLISHED, VERIFICATION PENDING",
+  "sources": [
+    "https://www.singtel.com/about-us/media-centre/news-releases/vts-subsea-cable-project-moves-into-implementation-following-contract-signings",
+    "https://en.vietnamplus.vn/vietnamthailandsingapore-submarine-cable-project-launched-post356102.vnp",
+    "https://english.vov.vn/en/society/construction-starts-on-first-submarine-cable-project-led-by-vietnam-post1353527.vov"
+  ],
+  "claims": {
+    "capacity": "600 Tbps design total, 240 Tbps direct segment; not operating capacity",
+    "route": "2500 km total, 1200 km direct",
+    "status": "contracts signed November 26, 2026; target Q4 2030",
+    "latency": "12 ms projected, not measured"
+  },
+  "calculation": "2*1200/200000=0.012 seconds ideal round-trip fiber propagation",
+  "duplicate": "WordPress VTS submarine and Vietnam Thailand Singapore queries matched only own draft immediately before publication; targeted GitHub search no match; not exhaustive",
+  "cover": {
+    "id": 36056,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/vts-subsea-cable-cover-1200x630-1.png",
+    "watermark": "single recreated mark visible on original generated cover; exact approved asset and resized CDN visual inspection not confirmed"
+  },
+  "qa": {
+    "status": "publish",
+    "featured": 36056,
+    "body_media": [
+      36055,
+      30625
+    ],
+    "footer": 24043,
+    "internal_links": "four published destinations from WordPress search; saved links verified",
+    "live": "WordPress view readback confirmed; independent browser and mobile testing not performed; QR not decoded",
+    "word_count_including_footer": 580
+  },
+  "learning": [
+    "Separate system and segment design capacity.",
+    "Compare advertised latency with propagation floor.",
+    "Recheck exact project terms before publishing; Greenvolt candidate already published."
+  ]
+}
