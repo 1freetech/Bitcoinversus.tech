@@ -1,0 +1,71 @@
+<!-- wp:paragraph -->
+<p>Bitcoin payment infrastructure may eventually extend beyond smartphones and conventional point-of-sale systems. Nucula, an experimental open-hardware terminal developed by Dario (zeugmaster), combines a small microcontroller with near-field communication (NFC) and Cashu electronic cash. The developer demonstrated the project at bitcoin++ Berlin on October 3, 2026, and <a href="https://www.tokenpost.com/news/technology/62839">November 26 reporting</a> estimated prototype component costs at approximately $23 per unit. The figure excludes the expenses associated with a finished commercial product.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":35993,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/nucula.jpg" alt="Nucula circuit board rendering and specifications from the Berlin presentation" class="wp-image-35993" /><figcaption class="wp-element-caption"><em>Source: zeugmaster / Cashu, bitcoin++ Berlin, October 2026. The presentation slide depicts the design, not a certified retail terminal.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A payment system on a microcontroller</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The <a href="https://github.com/zeugmaster/nucula-board">public hardware repository</a> specifies an ESP32-C3-MINI-1 module, an NXP PN7160 NFC controller, an OLED interface and a detachable keypad. The four-layer printed circuit board incorporates a 40 × 40 mm antenna coil, battery charging circuitry and a USB-C connection. The separate <a href="https://github.com/zeugmaster/nucula">firmware repository</a> documents the Cashu wallet, Wi-Fi configuration and serial console.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>NFC transfers small amounts of data over a short-range radio link. For a payment, compatible devices exchange token information rather than broadcasting a new transaction directly to Bitcoin miners. A detachable keypad supports variable purchase amounts, while fixed-price equipment such as vending machines could use a different input arrangement. Related open-hardware innovation is examined in our <a href="https://bitcoinversus.tech/2026/11/22/opensats-21-grants-bitaxebonanza-intel-bzm2-miner-2026/">OpenSats project coverage</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The October 9 manufacturing package includes editable KiCad files and fabrication instructions. The repository identifies unfinished bench validation for revised USB and display behavior and NFC component substitutions. Passing electrical and design-rule checks does not establish reliability under repeated customer use. <a href="https://btcpp.dev/watch/fc0a6bec-5a5c-429b-9e79-5099293e31df">Watch the original developer presentation on the bitcoin++ conference website.</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Cashu and the Lightning Network</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Cashu uses cryptographically signed electronic tokens issued by a mint. The <a href="https://cashu.space/">protocol</a> connects issuance and redemption to Bitcoin Lightning payments. Blind signatures can prevent a mint from directly correlating a particular token issuance with its later redemption, although network metadata and implementation details can introduce other privacy risks.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A wallet can hold and transmit tokens without writing each transfer to the Bitcoin blockchain. The recipient still depends on the issuing mint to honor the tokens. The <a href="https://github.com/cashubtc/nuts/blob/main/00.md">Cashu specification</a> describes how a mint verifies proofs and tracks spent secrets. Offline token reception must not be equated with verified settlement because a recipient may need subsequent communication with the mint to confirm spendability. Our <a href="https://bitcoinversus.tech/2026/10/12/bitcoin-miners-lightning-payouts-p2poolv2/">Lightning mining payouts coverage</a> and <a href="https://bitcoinversus.tech/2026/11/22/breez-sdk-028-silent-payments-spark-bitcoin-wallet-developers-2026/">Breez wallet SDK report</a> examine separate approaches to Bitcoin payment infrastructure.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":35994,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/tags.webp" alt="Numo graphic showing labels for merchant transactions" class="wp-image-35994" /><figcaption class="wp-element-caption"><em>Source: Cashu’s October 2026 conference recap. Numo transaction labels illustrate merchant accounting needs; Numo is a separate application.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">From prototype to commercial infrastructure</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A low-cost circuit board could make dedicated payment equipment more accessible, but merchants require more than a working radio interface. They need transaction reconciliation, predictable error handling, secure storage, firmware updates and procedures for connectivity failures. Nucula’s firmware documentation warns that erasing flash can destroy stored wallet information and proofs. Physical access to the serial console is another security boundary requiring evaluation before widespread deployment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Open designs allow independent engineers to examine and modify hardware. They do not automatically establish resistance to tampering or a mint's solvency. As our <a href="https://bitcoinversus.tech/2026/11/07/bull-bitcoin-payjoin-default-onchain-buy-sell-trading-utxo-consolidation-2026/">Payjoin coverage</a> illustrates, different privacy techniques have distinct trust assumptions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The next meaningful milestones are repeatable hardware validation, independently documented payment success rates and field trials. Nucula demonstrates a potential path toward purpose-built Bitcoin payment interfaces, but neither the component estimate nor the conference demonstration establishes commercial readiness.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><em>Featured photograph: Cashu’s October 2026 bitcoin++ Berlin conference recap. Conference context, not the Nucula device.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":24043,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png" alt="Bitcoin donation QR code for 5,000 sats" class="wp-image-24043" /><figcaption class="wp-element-caption"><em>Optional support: 5,000 satoshis.</em></figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</p>
+<!-- /wp:paragraph -->
