@@ -1,0 +1,11 @@
+# Bleckmann humanoid warehouse infrastructure — prepublication QA
+- WordPress draft ID 35986; status verified draft, featured_media 0. Not published.
+- Policy v8.0. Robotics infrastructure selected after recent data center infrastructure posts; exact independent rotation cursor not recovered. Do not advance until published.
+- Duplicate check: searched WordPress published, draft, scheduled and pending for Bleckmann; no matches before creation. GitHub org search for Bleckmann returned no matches. Excluded Boston Dynamics/GlobalFoundries due to existing post 33234. No exhaustive historical/private archive audit.
+- Sources: https://www.bleckmann.com/press/bleckmann-humanoid-robots-warehouses (Nov 24); https://www.bleckmann.com/press/bleckmann-carrousel-ai-robotic-picking (Nov 17); https://www.theindustry.fashion/bleckmann-adds-humanoid-warehouse-robots/ (Nov 24).
+- Claim ledger: two humanoids, delivery expected within weeks, training first, >$600M wider automation program: attributed company plans/claim, not operational metrics; separate three-year CarouselAI pilot and peak 350 units/hour attributed company report. Calculated 3600/350 = 10.2857 seconds/unit equivalent, not measured mean. Humanoid model, cost, throughput unknown.
+- Four related WordPress post IDs 34746, 34700, 34535, 33313 confirmed published; links in saved draft.
+- Source images viewed through web and uploaded as 35984 and 35985; saved Gutenberg body includes both and captions. No video playback or public rendering checked; authentic stills instead. Footer QR media 24043 reused from existing post, payment destination not independently decoded.
+- Cover asset blocked: original approved watermark reference identified in historical John Deere cover archive, but no accessible pixel composition/upload workflow validated; direct container retrieval of source image failed DNS. Do not publish without exact 1200x630 single approved watermark cover and remaining gates.
+- Next improvements: maintain current infrastructure rotation cursor; establish reproducible exact watermark compositing and transfer; separately validate QR destination and live rendering. No quality score asserted. 
+- Saved draft content: see companion Gutenberg file.
