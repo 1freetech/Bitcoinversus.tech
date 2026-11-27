@@ -1,0 +1,6 @@
+# Altera OQC processor draft QA
+- WordPress draft 36029 read back: 633 words including captions/footer, four published internal links, media 36024 and 36025, donation QR 24593. No prohibited word in editorial body; canonical footer preserved verbatim.
+- Duplicate checks: WordPress published, draft, scheduled and pending searches for quantum system controller, OQC and Agilex 9 Direct RF; GitHub archive search for quantum system controller. No matching dedicated story found in accessible indexes.
+- Sources: Altera November 16 release, Quantum Computing Report November 17, Altera technical overview and NVIDIA NVQLink specifications. Platform data rate and latency explicitly distinguished from demo measurements.
+- Release blocked: featured_media=0; press image source returned HTTP 403, WordPress AI image generation reported site quota exhausted, exact approved watermark unavailable. Public browser rendering/mobile checks not completed. No video used; no playback claim. No chart necessary. No publication or successful cover claimed.
+- Preventive action: keep as draft until compliant featured cover can be attached and visually checked; use existing ID for correction. No lie asserted; operational failure only.
