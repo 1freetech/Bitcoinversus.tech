@@ -1,0 +1,5 @@
+# Difficulty adjustment publication QA
+- Recent rotation reviewed; exact independent cursor not confirmed. Duplicate WordPress searches for 977760 and 145.09 and GitHub 977760 search returned no results.
+- CryptoSlate and Flash Finance corroborated Mempool.space block 977760 and 145.09T. Direct Mempool explorer rendered no readable lines and API fetch failed; independent primary node verification incomplete. CNBC blocked by robots.txt. Luxor November 23 data distinguished from November 27 retarget; calculated ratio 134.82/145.09=0.929216348, modeled $27.28179/PH/day. No assertion of actual post-retarget hashprice.
+- Published post 36151, status publish, featured media 36146, 567 words including captions/footer. Body media and QR 36147, 36148, 24593; footer present true; internal links 4.
+- Featured source graphic dated November 23, 1012x506; exact approved watermark not applied. Two existing third-party charts used as credited evidence rather than newly rendered SmartChart; no playback claim. Public desktop/mobile rendering, QR decoding and exact cover format not verified. Retain existing ID for repair.
