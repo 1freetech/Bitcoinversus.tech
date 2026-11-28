@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-28",
+  "category": "Bitcoin Mining",
+  "post": {
+    "id": 36547,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/28/cipher-odessa-207mw-bitcoin-mine-296-btc-q3-2026/",
+    "featured_media": 36552,
+    "title": "Cipher’s 207 MW Odessa Bitcoin Mine Produces 296 BTC in Q3 at 2.8¢/kWh Power Cost",
+    "content": "<!-- wp:paragraph --><p>Cipher Digital’s remaining Bitcoin mining operation in Odessa, Texas, produced approximately 296 BTC during the third quarter of 2026. The company's <a href=\"https://www.sec.gov/Archives/edgar/data/1819989/000181998926000047/cipherdigital_businessup.htm\">November 2 investor presentation, filed with the U.S. Securities and Exchange Commission</a>, identifies 207 MW of total electrical capacity, approximately 11.6 EH/s of hashrate, a fleet efficiency of 17.2 J/TH and an electricity cost of about 2.8 cents per kilowatt-hour. Odessa remains an operating mine while Cipher develops infrastructure for high-performance computing customers.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=SYP5ysYZCGI\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=SYP5ysYZCGI\n</div><figcaption class=\"wp-element-caption\"><em>Historical Cipher management Q&amp;A on second-quarter 2025 results, including Odessa uptime. The video predates the current filing.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:image {\"id\":36548,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/cipherdigital_businessup013.jpg\" alt=\"Cipher Digital investor slide with aerial Odessa site photo and reported operating metrics\" class=\"wp-image-36548\" /><figcaption class=\"wp-element-caption\"><em>Source: Cipher Digital Q3 2026 presentation, slide 13, filed November 2. Company-reported capacity, hashrate, efficiency and electricity cost.</em></figcaption></figure><!-- /wp:image -->\n<!-- wp:paragraph --><p>The site's 296 BTC compares with approximately 346 BTC in the <a href=\"https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm\">second quarter of 2026</a>, a decrease of about 14.5%. The two presentations report the same headline hashrate and fleet efficiency. That does not establish identical average pool-side hashrate, uptime or network conditions across both quarters. Bitcoin production depends on the facility's effective computational contribution relative to the network and the rewards distributed over the measurement period. Recent <a href=\"https://bitcoinversus.tech/2026/11/28/bitcoin-mining-difficulty-145-09-trillion-7-61-percent-november-27-2026/\">network difficulty changes</a> illustrate the changing competitive environment.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Power economics at the machine boundary</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>Multiplying 11.6 EH/s by 17.2 J/TH implies approximately 199.52 MW of equipment power if both figures describe the same simultaneous operating condition. The calculation leaves a mathematical difference of 7.48 MW from the stated 207 MW site capacity. That difference is not verified spare electrical capacity: cooling, distribution losses, operating margins and the measurement boundary must be considered. Our analysis of <a href=\"https://bitcoinversus.tech/2026/10/06/bitcoin-mining-hardware-nameplate-wall-facility-joules-per-terahash/\">nameplate and facility-level efficiency</a> explains why equipment ratings cannot automatically be treated as metered power.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>At the reported 2.8¢/kWh rate, one continuously operating petahash per second at 17.2 J/TH would consume 412.8 kWh per day, equivalent to approximately $11.56 in energy charges. That is a simplified electricity-only model, excluding overhead, maintenance, depreciation, financing and potential curtailment.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Revenue, costs and flexible electricity consumption</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>Cipher's <a href=\"https://www.sec.gov/Archives/edgar/data/1819989/000181998926000050/cifr-20260930.htm\">quarterly report</a> attributes approximately $20.8 million in mining revenue to Odessa and identifies $14.6 million in mining cost of revenue, primarily electricity. Dividing the latter by the rounded output gives approximately $49,324 per BTC. The ratio is a reported cost-of-revenue measure, not a fully allocated production cost. Cipher separately reported $4.3 million in proceeds from selling excess contracted electricity through Luminant during the quarter. Electricity resale offers an alternative use for contracted power when market conditions warrant, rather than an additional block reward.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=kv8NHmBra4U\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=kv8NHmBra4U\n</div><figcaption class=\"wp-element-caption\"><em>Cipher executives Tyler Page and Chris Totin discuss mining infrastructure and HPC strategy in an earlier industry interview; not the November 2026 earnings call.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:paragraph --><p>The company continues to explore HPC monetization at Odessa. Its earlier <a href=\"https://bitcoinversus.tech/2026/09/25/cipher-extends-barber-lake-ai-lease-past-9-billion/\">Barber Lake expansion</a> and the industry’s <a href=\"https://bitcoinversus.tech/2026/11/28/keel-baie-comeau-quebec-30mw-bitcoin-mining-ai-hpc-power-2026/\">Québec mining-to-HPC conversion plans</a> illustrate competing uses for energized infrastructure. No new Odessa HPC lease was established by the November site snapshot. The existing mine's reported production, power agreement and actual quarterly expenses provide a more useful operating benchmark than speculative conversion capacity.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph -->\n<p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "lie_tracker": {
+    "master_sha": "d53c45415e64737f49fc165b1d8d2a1a461dc898",
+    "backup_matches": true,
+    "reviewed": [
+      "LT-0001",
+      "LT-0003",
+      "LT-0005",
+      "LT-0008",
+      "LT-0046",
+      "LT-0053",
+      "LT-0074",
+      "LT-0075",
+      "LT-0081"
+    ],
+    "applied": [
+      "rejected covered CBI, Soluna and BitFuFu candidates",
+      "Odessa Q3 standalone angle distinct from Barber Lake lease article",
+      "primary SEC slide visually inspected; inserted original slide in article, separate from featured image",
+      "verified four internal link destinations and two rendered iframes",
+      "kept tracker out of article",
+      "distinguished electricity-only estimate from total production cost and calculated site margin from actual spare capacity"
+    ]
+  },
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000047/cipherdigital_businessup.htm",
+    "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm",
+    "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000050/cifr-20260930.htm"
+  ],
+  "calculations": {
+    "production_change_pct": -14.45086705202312,
+    "implied_equipment_mw": 199.51999999999998,
+    "arithmetic_difference_mw": 7.480000000000018,
+    "kwh_per_ph_day": 412.79999999999995,
+    "electricity_usd_per_ph_day": 11.558399999999999,
+    "rounded_cost_of_revenue_per_btc": 49324.32432432433
+  },
+  "chartDecisionQuestion": "Report mixed-unit site snapshot and two quarterly production observations without conflating capacity, power price or efficiency.",
+  "all40Reviewed": "Catalog of 40 chart types fetched and enumerated; no renderer executed.",
+  "top3ChartCandidates": [
+    "vertical bars: two same-unit production observations, limited added value",
+    "slopegraph: two quarter endpoints, limited added value",
+    "line: rejected because only two observations, no meaningful trend"
+  ],
+  "chosenChartAndWhy": "No new chart; primary-source site snapshot plus explicitly labeled prose comparison and calculation. Source slide already inserted. SmartChart rendering not performed.",
+  "sourceSlide": 36548,
+  "videos": [
+    "SYP5ysYZCGI",
+    "kv8NHmBra4U"
+  ],
+  "cover": {
+    "id": 36552,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "kind": "provisional resized historical interview thumbnail"
+  },
+  "open_defects": [
+    "Original approved artwork and exact watermark not verified",
+    "Actual playback and mobile rendering untested",
+    "No independent public browser visual check",
+    "No new SmartChart rendering"
+  ],
+  "status": "PUBLISHED WITH OPEN DEFECTS"
+}
