@@ -1,9 +1,9 @@
 # Digital Creator Royalties Reach €6.57 Billion as Global Collections Hit €15.5 Billion
 
-WordPress post 36441; status draft; https://bitcoinversus.tech/?p=36441
+WordPress post 36441; status publish; https://bitcoinversus.tech/2026/11/28/cisac-global-creator-royalties-15-5-billion-digital-2026/
 
 <!-- wp:paragraph -->
-<p>Digital distribution has become the largest channel for collecting royalties on creative works. In its <a href="https://www.cisac.org/global-collections-report-2026">2026 Global Collections Report</a>, released November 4, the International Confederation of Societies of Authors and Composers (CISAC) reported €15.5 billion in worldwide collections for 2025. Digital uses contributed €6.57 billion, more than either live and background performance or television and radio. The figures cover CISAC’s network of 228 societies in 111 countries and territories, rather than every transaction in the creative economy.</p>
+<p>Digital distribution has become the largest channel for collecting royalties on creative works. In its <a href="https://www.cisac.org/global-collections-report-2026">2026 Global Collections Report</a>, released November 4, the International Confederation of Societies of Authors and Composers (CISAC) reported €15.5 billion in worldwide collections for 2025. Digital uses contributed €6.57 billion, up 27.9% from the preceding year and representing 42.4% of all collections. Live and background uses grew 7.7%, while television and radio collections declined 2.6%, according to the <a href="https://www.cisac.org/Newsroom/news-releases/global-creator-royalties-reach-record-eur-155bn">November 4 release</a>. The figures cover CISAC’s network of 228 societies in 111 countries and territories, rather than every transaction in the creative economy.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=2TaRd34GZD4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
@@ -21,7 +21,7 @@ https://www.youtube.com/watch?v=2TaRd34GZD4
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":36439,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/cisac-2025-royalties-smartchart-vertical-bars.png" alt="2025 global creator royalty collections in billions of euros: digital 6.57, live and background 3.87, television and radio 3.82" class="wp-image-36439" /><figcaption class="wp-element-caption"><em>Selected global royalty collection categories, calendar year 2025, in billions of euros. Source: CISAC Global Collections Report 2026, released November 4, 2026. Vertical-bar format selected using the <a href="https://github.com/1freetech/SmartChart">SmartChart</a> atlas; static PNG rendered with QuickChart. Other collection categories are excluded.</em></figcaption></figure>
+<figure class="wp-block-image size-full"><img src="https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/cisac-2025-royalties-smartchart-vertical-bars.png" alt="2025 global creator royalty collections in billions of euros: digital 6.57, live and background 3.87, television and radio 3.82" class="wp-image-36439" /><figcaption class="wp-element-caption"><em>Selected global royalty collection categories, calendar year 2025, in billions of euros. Source: CISAC Global Collections Report 2026, released November 4, 2026. Other collection categories are excluded. Values are reported collections, not net payments to individual creators.</em></figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -33,13 +33,13 @@ https://www.youtube.com/watch?v=2TaRd34GZD4
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>A streaming platform may record the recording identifier, territory, playback event and account or subscription category. To compensate the composition’s owners, a royalty system must associate the recorded performance with the underlying musical work and its rights shares. An International Standard Recording Code identifies a recording; an International Standard Musical Work Code identifies a composition. Several recordings can correspond to one composition, and each composition can have multiple entitled parties.</p>
+<p>A streaming platform may record the recording identifier, territory, playback event and account or subscription category. To compensate the composition’s owners, a royalty system must associate the recorded performance with the underlying musical work and its rights shares. An <a href="https://pages.themlc.com/iswc-isrc-codes">International Standard Recording Code (ISRC)</a> identifies a recording, while an International Standard Musical Work Code (ISWC) identifies a composition. The former uses 12 alphanumeric characters and the latter uses 11 characters. Several recordings can correspond to one composition, and each composition can have multiple entitled parties.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=EOAiwqWEesY","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
 https://www.youtube.com/watch?v=EOAiwqWEesY
-</div><figcaption class="wp-element-caption"><em>The MLC explains the distinction between statutory rates for downloads and interactive streams. Source: The MLC; the video notes its original 2024 production date, so current rates should be checked separately.</em></figcaption></figure>
+</div><figcaption class="wp-element-caption"><em>The MLC explains the distinction between statutory rates for downloads and interactive streams. Source: The MLC, June 26, 2026; republished from August 15, 2024. Consult current statutory rates separately.</em></figcaption></figure>
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
@@ -73,18 +73,19 @@ https://www.youtube.com/watch?v=EOAiwqWEesY
 <p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>
 <!-- /wp:paragraph -->
 
-## Evidence manifest
+## Publication follow-up, November 28, 2026
 
 {
-  "status": "draft",
+  "status": "publish",
+  "id": 36441,
+  "url": "https://bitcoinversus.tech/2026/11/28/cisac-global-creator-royalties-15-5-billion-digital-2026/",
   "featured": 36440,
-  "chart": true,
-  "chartCount": 1,
-  "embeds": [
-    "https://www.youtube.com/watch?v=2TaRd34GZD4",
-    "https://www.youtube.com/watch?v=EOAiwqWEesY"
+  "chart": 1,
+  "iframes": [
+    "https://www.youtube.com/embed/2TaRd34GZD4?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent",
+    "https://www.youtube.com/embed/EOAiwqWEesY?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent"
   ],
-  "links": [
+  "internalLinks": [
     "https://bitcoinversus.tech/2026/11/18/spotify-artist-profile-protection-all-artists-review-block-november-2026/",
     "https://bitcoinversus.tech/2026/11/05/elevenmusic-soundcloud-direct-ai-music-publishing-2026/",
     "https://bitcoinversus.tech/2026/10/13/deezer-ai-music-filter/",
@@ -93,14 +94,10 @@ https://www.youtube.com/watch?v=EOAiwqWEesY
   "footer": true,
   "qr": true,
   "coverNotRepeated": true,
-  "words": 671,
-  "renderedIframes": [
-    "https://www.youtube.com/embed/2TaRd34GZD4?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent",
-    "https://www.youtube.com/embed/EOAiwqWEesY?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent"
-  ]
+  "words": 703
 }
 
-SmartChart: all 40 definitions at https://github.com/1freetech/SmartChart/blob/main/atlas/catalog.json inspected, plus desktop/atlas_renderers.py. Bar (#9) chosen over lollipop (#13) and dot (#22) for three independent comparable magnitudes with zero baseline; donut rejected because three categories do not comprise the entire total. PNG rendered via QuickChart, not native SmartChart engine or interactive. Media 36439, 1000x600. Dataset CSV below; values directly from https://www.cisac.org/global-collections-report-2026 and November 4 release. Calculations: 6.57-3.87=2.70; 6.57-3.82=2.75; 3.87-3.82=0.05 EUR bn. Source scope global collections for 2025; MLC inclusion approximately 52% of growth; ex-MLC overall growth 5.3%. 
+Reviewed canonical LieTracker MASTER_LEDGER.md (81 entries at retrieval), including LT-0001, LT-0002, LT-0005, LT-0008, LT-0010, LT-0011 and LT-0012. Regression checks applied: preserve post ID, verify stored chart, separate iframe presence from playback, do not assert compliant cover. Reopened CISAC report and November 4 release; confirmed 15.5bn, 6.57bn, 3.87bn, 3.82bn, 42.4%, +27.9%, +7.7%, -2.6%, MLC 52%, comparable +5.3%. Reopened MBW and MLC ISWC/ISRC page. Two official MLC YouTube search results corroborate IDs and titles; direct video retrieval throttled. User explicitly instructed publication following cover defect disclosure. Provisional official cover 36440 is 1200x800 and lacks verified approved watermark; no claim of repair. Actual playback, visual desktop/mobile layout, QR decoding remain unverified. Public server inspection result: {"url":"https://bitcoinversus.tech/2026/11/28/cisac-global-creator-royalties-15-5-billion-digital-2026/","final_url":"https://bitcoinversus.tech/2026/11/28/cisac-global-creator-royalties-15-5-billion-digital-2026/","status":200,"site_visibility":"public","page_shows":"page","truncated":false,"seo_plugins":["jetpack"],"head":{"title":"Digital Creator Royalties Reach €6.57 Billion as Global Collections Hit €15.5 Billion – Bitcoin Versus","description":"CISAC reports €15.5 billion in 2025 creator royalty collections, including €6.57 billion from digital uses. Explore the reporting change and technical challenges of royalty attribution.","robots":"max-image-preview:large","canonical":"https://bitcoinversus.tech/2026/11/28/cisac-global-creator-royalties-15-5-billion-digital-2026/","social_tags":{"total":16,"items":[{"name":"og:type","content":"article"},{"name":"og:title","content":"Digital Creator Royalties Reach €6.57 Billion as Global Collections Hit €15.5 Billion"},{"name":"og:url","content":"https://bitcoinversus.tech/2026/11/28/cisac-global-creator-royalties-15-5-billion-digital-2026/"},{"name":"og:description","content":"CISAC reports €15.5 billion in 2025 creator royalty collections, including €6.57 billion from digital uses. Explore the reporting change and technical challenges of royalty attribution."},{"name":"og:site_name","content":"Bitcoin Versus"},{"name":"og:image","content":"https://bitcoinversus.tech/wp-content/uploads/2026/11/cisac-2026-global-collections-report-official-cover.png"},{"name":"og:image:width","content":"1024"},{"name":"og:image:height","content":"683"},{"name":"og:image:alt","content":"CISAC 2026 Global Collections Report publication on screens and in print"},{"name":"og:locale","content":"en_US"},{"name":"twitter:creator","content":"@1Bitcoinversus"},{"name":"twitter:site","content":"@1Bitcoinversus"},{"name":"twitter:text:title","content":"Digital Creator Royalties Reach €6.57 Billion as Global Collections Hit €15.5 Billion"},{"name":"twitter:image","content":"https://bitcoinversus.tech/wp-content/uploads/2026/11/cisac-2026-global-collections-report-official-cover.png?w=640"},{"name":"twitter:image:alt","content":"CISAC 2026 Global Collections Report publication on screens and in print"},{"name":"twitter:card","content":"summary_large_image"}]},"json_ld_types":["Person","Article","BreadcrumbList"],"json_ld_unparsable":0},"structure":{"headings":{"total":6,"items":[{"level":2,"text":"Digital Creator Royalties Reach €6.57 Billion as Global Collections Hit €15.5 Billion"},{"level":2,"text":"Separating real growth from expanded reporting"},{"level":2,"text":"The engineering of royalty attribution"},{"level":2,"text":"Artificial intelligence and the next measurement problem"},{"level":3,"text":"Share this:"},{"level":3,"text":"Leave a Reply Cancel reply"}]},"images_missing_alt":{"total":0,"items":[]},"empty_links":{"total":0,"items":[]},"links_to_nowhere":{"total":8,"items":["Share","Toggle photo metadata visibility","Toggle photo comments visibility","Download image","Reblog","Subscribe","Subscribed","Collapse this bar"]},"word_count":1016}}. SmartChart selection: all 40 examined in prior draft run, #9 chosen over #13 and #22; static QuickChart PNG, not native interactive SmartChart. Dataset below. No quality score assigned. Status: published with open defects. Next general rotation Evergreen Technical Explainers, inferred from prior ledger; no exhaustive archive coverage claimed.
 
 ```csv
 category,eur_billions,year
@@ -109,4 +106,4 @@ Live and background,3.87,2025
 TV and radio,3.82,2025
 ```
 
-Targeted WordPress and website GitHub CISAC searches showed no dedicated duplicate; exact slug check clear. Recent 30 posts and prior rotation ledger inspected; Culture and Technology inferred after Sports and Technology; cursor not advanced. Official MLC videos located; saved block verification only, direct YouTube fetch throttled for other candidate, player permissions and playback/mobile not verified. Cover provisional official report promotional image 36440 (1200x800), exact approved watermark missing; site AI image limit returned. QR retained but not independently decoded. Mandatory cover gate failed; retain draft. No QA score. Improvements: expose approved watermark asset as accessible binary; bridge native SmartChart SVG export to WordPress PNG workflow; enable interactive player tests. No verified improvement claim.
+Prior draft audit preserved in commit 01b52a7e3c5efe80e9f10a7ffc30fc3791f9dae8. Proposed improvements: accessible exact watermark binary; native SmartChart rendering bridge; actual playback and responsive testing.
