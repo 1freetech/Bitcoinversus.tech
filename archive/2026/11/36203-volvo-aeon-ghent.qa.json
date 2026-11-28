@@ -1,0 +1,51 @@
+{
+  "policy": "v8.1",
+  "artifact": {
+    "id": 36203,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/28/volvo-hexagon-aeon-humanoid-ghent-factory-2027-production/",
+    "featured_media": 36202,
+    "title": "Volvo Trains Wheeled Humanoid Robots for Factory Production in 2027",
+    "content": "<!-- wp:paragraph -->\n<p>Volvo Cars has begun training humanoid robots at its automotive manufacturing plant in Ghent, Belgium. The carmaker and Hexagon Robotics <a href=\"https://robotics.hexagon.com/volvo-cars-aeon-humanoid-robots-for-manufacturing/\">announced the programme on November 26, 2026</a>, establishing a new stage of industrial validation for Hexagon's AEON platform. Volvo expects additional robots to arrive for a pilot during the first half of 2027, with production use targeted for the middle of the year.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:shortcode -->\n[youtube https://www.youtube.com/watch?v=TtwBI-Cd_Ww]\n<!-- /wp:shortcode -->\n<!-- wp:paragraph -->\n<p><em>Volvo Car Gent's November 26 video shows AEON training at the Ghent factory. Source: Volvo Cars.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Teaching robots to load automotive fixtures</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The initial workflow involves accurately positioning components in two fixtures. Volvo's employees demonstrate the movements through imitation learning, allowing the robot to learn from examples of the desired task. The company intends to increase complexity gradually, including handling multiple parts, moving between work areas and coordinating with existing automation. <a href=\"https://roboticaguide.com/volvo-humanoid-robots-hexagon-aeon-ghent/\">Robotica Guide reports</a> that two units are currently being trained, citing Belgian broadcaster VRT.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Fixture loading requires more than object recognition. The controller must estimate the component's position and orientation, choose a grasp, maintain alignment throughout the movement and detect whether the component has seated correctly. Small positional errors can cause a manufacturing defect or interrupt the production sequence. Training data must therefore represent the variation encountered on a real factory floor.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The process complements conventional industrial automation rather than demonstrating an immediate replacement for it. Fixed robotic arms remain effective for tightly defined, repetitive tasks. A mobile humanoid can potentially service several stations when their layout and operating conditions permit. Similar integration challenges appear in <a href=\"https://bitcoinversus.tech/2026/11/28/bigwave-humanoid-automotive-factory-plc-engine-parts-2026/\">Bigwave's automotive production-line trial</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Why AEON uses wheels</h2>\n<!-- /wp:heading -->\n\n<!-- wp:shortcode -->\n[youtube https://www.youtube.com/watch?v=UmVvNg2OuEo]\n<!-- /wp:shortcode -->\n<!-- wp:paragraph -->\n<p><em>Hexagon Robotics president Arnaud Robert discusses industrial deployment, training data, cycle time and intervention rates with John Koetsier. Source: NEXT, October 5, 2026.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>According to <a href=\"https://robotics.hexagon.com/product/\">Hexagon's specification sheet</a>, AEON stands 1.65 meters tall, weighs 60 kilograms and has 34 degrees of freedom. Its wheeled locomotion system reaches a stated maximum speed of 2.4 meters per second. The manufacturer lists an 8 kg continuous carrying capacity and a 15 kg short-term payload. Wheeled mobility can reduce the balance-control burden on level factory floors, although obstacles, floor transitions and maneuvering space still constrain operations.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Hexagon advertises five hours of autonomous operation per charge and a one-minute battery exchange. Those figures describe manufacturer-rated capability, not measured runtime at Ghent. The robot's energy demand depends on workload, movement and manipulation forces. Battery availability, charging infrastructure and maintenance also influence fleet uptime.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">From training to production</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The Ghent programme follows broader experiments in automotive automation, including <a href=\"https://bitcoinversus.tech/2026/10/15/schaeffler-humanoid-robot-gym/\">Schaeffler's humanoid training facility</a>, <a href=\"https://bitcoinversus.tech/2026/11/21/toyota-400000-factory-robots-overhaul-2028-2040/\">Toyota's long-term factory automation plans</a> and <a href=\"https://bitcoinversus.tech/2026/11/18/globalfoundries-boston-dynamics-spot-90000-inspections-atlas-2027/\">GlobalFoundries' proposed humanoid trials</a>. Volvo has not published cycle times, intervention rates, production yields or deployment costs for the Ghent robots.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>A successful pilot must establish repeatability, safe coordination with workers and economic performance over sustained shifts. Volvo's current training stage provides an opportunity to collect the evidence needed for that decision. Commercial production remains a target rather than an established result.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "status": "PUBLISHED, VERIFICATION PENDING",
+  "sources": [
+    "https://robotics.hexagon.com/volvo-cars-aeon-humanoid-robots-for-manufacturing/",
+    "https://robotics.hexagon.com/product/",
+    "https://roboticaguide.com/volvo-humanoid-robots-hexagon-aeon-ghent/"
+  ],
+  "duplicate_check": "WordPress AEON, Volvo Ghent, Hexagon Robotics and GitHub targeted queries; immediate prepublication Volvo Ghent query returned only own draft; not exhaustive",
+  "cover": {
+    "id": 36202,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "watermark": "exact crop of original user-provided Sunset Skid-Steer Stunt Demo.png resized 160x25 and pasted once; pixel equality checked locally; CDN visual not inspected"
+  },
+  "media": {
+    "video_ids": [
+      "TtwBI-Cd_Ww",
+      "UmVvNg2OuEo"
+    ],
+    "source_identity": "Volvo Car Gent video linked by Robotica Guide, interview YouTube search metadata; direct watch and oEmbed fetch failed",
+    "rendered_iframes": [
+      "<iframe class=\"youtube-player\" title=\"YouTube video player\" width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/TtwBI-Cd_Ww?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent\" allowfullscreen=\"true\" style=\"border:0;\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox\">",
+      "<iframe class=\"youtube-player\" title=\"YouTube video player\" width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/UmVvNg2OuEo?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent\" allowfullscreen=\"true\" style=\"border:0;\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox\">"
+    ],
+    "playback": "not tested; no graphical browser",
+    "mobile": "not tested"
+  },
+  "qa": {
+    "status": "publish",
+    "internal_links": 4,
+    "article_words": 490,
+    "prohibited_words": 0,
+    "qr": "canonical retained not decoded"
+  },
+  "learning": [
+    "Choose story only after relevant videos identified.",
+    "Verify rendered iframe IDs before and after publishing.",
+    "Do not equate iframe rendering with playback."
+  ]
+}
