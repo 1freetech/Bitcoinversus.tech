@@ -1,0 +1,50 @@
+{
+  "policy": "v8.1",
+  "artifact": {
+    "id": 36171,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/28/bigwave-humanoid-automotive-factory-plc-engine-parts-2026/",
+    "featured_media": 36170,
+    "title": "Bigwave’s Walking Humanoid Integrates With an Automotive Production Line",
+    "content": "<!-- wp:paragraph -->\n<p>South Korean automation company Bigwave Robotics has demonstrated a walking humanoid robot handling engine components in coordination with existing automotive production equipment. In a <a href=\"https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq\">November 24, 2026 announcement</a>, the company described an on-site validation at an unnamed Korean automotive parts manufacturer. The robot operated across two work areas approximately 10 meters apart, linking physical movement and component handling with the factory's established machine sequence.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":36157,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bigwave-humanoid-automotive-pilot.jpeg\" alt=\"Humanoid robot beside automotive parts processing equipment\" class=\"wp-image-36157\" /><figcaption class=\"wp-element-caption\"><em>Bigwave's humanoid during the automotive production-line validation. Source: Bigwave Robotics.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Connecting a humanoid to existing industrial machinery</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The pilot involved feeding components into a straightening machine and subsequently stacking processed components onto a transport cart. <a href=\"https://www.digitaltoday.co.kr/en/view/129925/bigwave-robotics-succeeds-in-pilot-deployment-of-bipedal-humanoid\">DigitalToday reported</a> that the robot exchanged signals with the machine's programmable logic controller (PLC). Bigwave describes the result as a domestic first, although an independent comprehensive comparison of Korean industrial deployments has not been published.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>A PLC executes industrial control logic using signals from sensors and other equipment. A robot integrated with a production line must recognize when material is available, when equipment permits loading and when a processing cycle has ended. It cannot rely solely on recognizing objects through cameras. Coordinating the robot with the machine's state helps maintain the sequence of operations and avoid interruptions or damaged components.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The integration challenge becomes more demanding when a robot walks between workstations. Its control system must maintain balance, estimate its position, account for the geometry of its surroundings and arrive within the handling tolerance required by the next task. Our coverage of <a href=\"https://bitcoinversus.tech/2026/11/21/michigan-prism-robot-motor-control-walking-success-2026/\">PRISM's robot motor-control research</a> explores related locomotion challenges.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Training in simulation before physical deployment</h2>\n<!-- /wp:heading -->\n\n<!-- wp:image {\"id\":36159,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/bigwave-hyper-foundry-platform.jpeg\" alt=\"Hyper Foundry data collection, training and deployment architecture\" class=\"wp-image-36159\" /><figcaption class=\"wp-element-caption\"><em>Hyper Foundry integrates robot data collection, training, deployment and model management. Source: <a href=\"https://us.bigwaverobotics.com/investors/news/F4uEqGrTQAdoaPDOQLGM\">Bigwave Robotics</a>.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>Bigwave used its Hyper Foundry development platform with Nvidia's simulation and training tools. The company describes using reinforcement learning for walking and imitation learning for grasping. Reinforcement learning optimizes behavior through feedback from simulated interactions. Imitation learning uses examples of desired behavior to train a model. Transferring a trained policy from simulation to physical hardware introduces additional challenges, including differences in friction, actuator response, object geometry and sensor noise.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>A mobile humanoid could reduce the need for separate transport equipment in selected workflows. However, fixed industrial manipulators can remain preferable when speed, repeatability and payload capacity dominate. Wheeled platforms, including <a href=\"https://bitcoinversus.tech/2026/11/25/openamrobot-2-open-source-dual-arm-mobile-robot-ros2-2026/\">dual-arm mobile robots</a>, provide another alternative. Related developments include <a href=\"https://bitcoinversus.tech/2026/11/18/rockwell-automation-acquire-agilox-2500-autonomous-mobile-robots-2026/\">Rockwell's autonomous mobile robot expansion</a> and <a href=\"https://bitcoinversus.tech/2026/11/18/globalfoundries-boston-dynamics-spot-90000-inspections-atlas-2027/\">GlobalFoundries' planned humanoid trials</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What remains to be demonstrated</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Bigwave has not disclosed sustained cycle time, intervention frequency, production yield, unit economics or performance across full operating shifts. A successful validation does not establish that the robot can replace conventional automation economically. Industrial adoption requires validated safeguarding, reliable fault recovery, maintenance procedures and consistent performance under real production conditions. The significance of the pilot is the reported connection between learned robot behavior and established factory equipment, rather than evidence of commercial deployment at scale.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "operational_status": "PUBLISHED, VERIFICATION PENDING",
+  "rotation": "Robotics/physical AI infrastructure after Bitcoin infrastructure, global rotation cursor not verified",
+  "sources": [
+    "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq",
+    "https://www.digitaltoday.co.kr/en/view/129925/bigwave-robotics-succeeds-in-pilot-deployment-of-bipedal-humanoid",
+    "https://us.bigwaverobotics.com/investors/news/F4uEqGrTQAdoaPDOQLGM"
+  ],
+  "claim_boundary": "November 24 company-reported pilot; approximately 10 m travel, PLC integration, training methods; no sustained throughput, safety or commercial economics independently established",
+  "duplicate_check": "Targeted Bigwave WordPress and GitHub searches; immediately before publication only own draft matched; not exhaustive",
+  "cover": {
+    "id": 36170,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "source": "User-supplied Robots and Workers on the Factory Floor.png adapted after two unrelated generated images rejected; exact approved original watermark pixels cropped and resized from Sunset Skid-Steer Stunt Demo.png; local tag equality checked; reuse across all historical posts not exhaustively verified; photorealistic fallback instead of planned anime",
+    "verification": "WordPress dimensions and attachment confirmed; CDN visual not independently inspected"
+  },
+  "qa": {
+    "status": "publish",
+    "body_images": [
+      36157,
+      36159
+    ],
+    "internal_links": 4,
+    "words": 472,
+    "prohibited_words": 0,
+    "footer": 24043,
+    "browser": "not tested",
+    "mobile": "not tested",
+    "video": "no video embedded; company states forthcoming footage; two authentic source visuals instead",
+    "qr": "not decoded",
+    "image_rights": "company imagery credited; redistribution permission not independently established"
+  },
+  "learning": [
+    "Reject incorrect generated covers rather than upload them.",
+    "Use actual source images and describe pilot rather than full deployment.",
+    "Separate PLC coordination from AI perception and require measured operational KPIs before claiming productivity."
+  ]
+}
