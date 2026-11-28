@@ -1,0 +1,5 @@
+# DTCC Solana publication follow-up
+- User explicitly requested publication after disclosure of cover and playback blockers. Existing draft 36307 promoted to publish, not duplicated.
+- Independent WordPress view read-back confirms status publish, same post ID, both video IDs and two rendered iframes, canonical footer. Public signed-out server page returned HTTP 200, canonical URL and SEO title/description confirmed: https://bitcoinversus.tech/2026/11/28/dtcc-solana-tokenized-us-securities-second-half-2027/ .
+- Primary DTCC November 12 and October 28 announcements reopened; planned H2 2027 integration, 20 agreements, custody figure and existing network support confirmed.
+- Open defects: featured_media=0; social preview falls back to donation QR. Actual video playback and desktop/mobile visual checks unverified. QR destination not independently decoded. Published with open defects, not fully verified. Finance and Markets inferred slot published; exact independent rotation cursor not established. Preserve ID for repairs.
