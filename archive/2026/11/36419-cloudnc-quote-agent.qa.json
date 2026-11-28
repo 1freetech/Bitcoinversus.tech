@@ -1,0 +1,51 @@
+{
+  "policy": "v8.1",
+  "artifact": {
+    "id": 36419,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/28/cloudnc-quote-agent-ai-cnc-manufacturing-estimates-2026/",
+    "featured_media": 36412,
+    "title": "CloudNC’s AI Quote Agent Brings Manufacturing Estimates Into the CNC Workflow",
+    "content": "<!-- wp:paragraph -->\n<p>CloudNC has introduced Quote Agent, a software system intended to shorten the process of estimating and pricing precision-machined components. The company’s <a href=\"https://www.cloudnc.com/news-room/cloudnc-launches-quote-agent-to-help-machine-shops-win-more-work\">product announcement</a> describes an AI-assisted workflow that prepares manufacturing assessments and estimated costs for human review. Independent trade publication <a href=\"https://develop3d.com/manufacture/cloudnc-launches-quote-agent/\">DEVELOP3D reported the launch</a> on October 23, 2026.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=LpOcDVWed3U\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=LpOcDVWed3U\n</div><figcaption class=\"wp-element-caption\"><em>CloudNC's own demonstration of Quote Agent and its estimating workflow.</em></figcaption></figure>\n<!-- /wp:embed -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">From engineering drawings to a proposed price</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A request for quotation frequently arrives before a shop has established a detailed manufacturing plan. An estimator must interpret dimensions and tolerances, select stock material, identify suitable machinery and determine how many setups are required. Tooling, programming, inspection and external finishing can materially affect profitability. A quoted price that ignores any of those steps can leave a manufacturer accepting work at a loss.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Quote Agent allows shops to submit drawings or models and configure information about their own facilities. The software prepares an initial estimate and identifies manufacturing considerations that deserve review. The company's description includes material, machining and secondary processing costs, as well as manufacturing and inspection documentation. The estimator remains responsible for approving the offer, especially when drawings contain ambiguous requirements or when a part requires specialized equipment.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=AY0oS3DDRoY\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=AY0oS3DDRoY\n</div><figcaption class=\"wp-element-caption\"><em>Independent public demonstration comparing a Quote Agent estimate with a previously manufactured part.</em></figcaption></figure>\n<!-- /wp:embed -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Why faster estimation is not faster machining</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>CloudNC offers a free manual quoting workflow and says paid AI usage costs $2.50 per part, with volume discounts. The company describes quotation preparation dropping from hours to minutes. Those claims concern estimating rather than the physical cutting cycle. They are not an independently established average across all materials, machine types and shops.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For an illustrative calculation, suppose a shop reviews 40 parts and spends 45 minutes preparing each estimate manually. The total estimating workload is 30 labor hours. If an assisted workflow reduces preparation and review to 15 minutes per part, the same workload takes ten hours. The resulting 20-hour difference must be weighed against $100 in agent fees, integration effort and the cost of correcting inaccurate estimates. The assumptions are hypothetical, not observed results from CloudNC customers.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The separation between manufacturing software and hardware is important. CloudNC also develops CAM Assist, which helps prepare machining strategies and toolpaths, but Quote Agent is a standalone product. Related examples include <a href=\"https://bitcoinversus.tech/2026/11/25/piccola-cnc-desktop-pcb-milling-open-hardware-2026/\">desktop CNC milling</a>, <a href=\"https://bitcoinversus.tech/2026/11/28/rockwell-6300b-sb1-edgeai-blackwell-industrial-computers-2026/\">industrial edge computers</a>, <a href=\"https://bitcoinversus.tech/2026/11/28/bigwave-humanoid-automotive-factory-plc-engine-parts-2026/\">robotic machine integration</a> and <a href=\"https://bitcoinversus.tech/2026/11/25/openamrobot-2-open-source-dual-arm-mobile-robot-ros2-2026/\">open-source mobile robots</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The strongest adoption evidence would compare estimates with actual completed-job costs, separating material, setup, cycle time and rework. A shop should also track how many proposals convert into profitable orders and how often estimators override automated recommendations. Faster quote preparation may improve capacity utilization, but only if the estimates remain accurate enough to support sound commercial decisions.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "rotation": "Mechanical and Industrial Engineering",
+  "rotation_note": "Selected following latest renewable-energy batch; persistent global cursor not located",
+  "operational_status": "PUBLISHED, VERIFICATION PENDING",
+  "duplicate_check": "Targeted WordPress and GitHub searches no exact match; immediate prepublication WordPress returned only own draft",
+  "qa": {
+    "status": "publish",
+    "words": 450,
+    "iframe_sources": [
+      "https://www.youtube.com/embed/LpOcDVWed3U?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent",
+      "https://www.youtube.com/embed/AY0oS3DDRoY?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent"
+    ],
+    "body_images": [],
+    "footer": true,
+    "internal_links": [
+      "https://bitcoinversus.tech/2026/11/25/piccola-cnc-desktop-pcb-milling-open-hardware-2026/",
+      "https://bitcoinversus.tech/2026/11/28/rockwell-6300b-sb1-edgeai-blackwell-industrial-computers-2026/",
+      "https://bitcoinversus.tech/2026/11/28/bigwave-humanoid-automotive-factory-plc-engine-parts-2026/",
+      "https://bitcoinversus.tech/2026/11/25/openamrobot-2-open-source-dual-arm-mobile-robot-ros2-2026/"
+    ],
+    "cover": {
+      "id": 36412,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "source": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/cloudnc-machining-cover.png",
+      "watermark": "Original cropped pixels resized 160x25, pasted at 10,595, equality tested before upload",
+      "artwork": "Original programmatic technical illustration; approved art-style rotation not achieved",
+      "CDN": "not visually inspected"
+    },
+    "browser": "not independently tested",
+    "video_playback": "not tested",
+    "mobile": "not tested",
+    "qr": "not decoded"
+  },
+  "learning": [
+    "Discard off-topic generated artwork rather than attach it.",
+    "Check rendered iframe sources before and after publish.",
+    "Separate manufacturer claims from measured results and label hypothetical calculations."
+  ]
+}
