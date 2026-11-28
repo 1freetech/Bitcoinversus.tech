@@ -1,0 +1,51 @@
+{
+  "policy": "v8.1",
+  "artifact": {
+    "id": 36142,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/28/abundant-mines-chicoloapan-mexico-landfill-methane-bitcoin-mining-8mw-2026/",
+    "featured_media": 36140,
+    "title": "Mexico Landfill Could Power Up to 8 MW of Bitcoin Mining With Waste Methane",
+    "content": "<!-- wp:paragraph -->\n<p>A proposed Bitcoin mining facility in Chicoloapan, east of Mexico City, would turn gas released by decomposing municipal waste into electricity for specialized computing equipment. American mining company Abundant Mines is working with CH4 Capital and Mexico’s Kardashev BTC to develop the installation, as <a href=\"https://www.datacenterdynamics.com/en/news/abundant-mines-plans-landfill-powered-bitcoin-mine-near-mexico-city/\">Data Center Dynamics reported November 27, 2026</a>. The project targets a landfill where methane reportedly escapes into the atmosphere, rather than an established gas-to-energy operation.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In a <a href=\"https://www.linkedin.com/pulse/cleaner-air-powered-bitcoin-turning-landfill-waste-beau-turner-2ns7c/\">November 25 announcement</a>, Abundant Mines CEO Beau Turner described a proposed 2 MW initial deployment with potential to reach 8 MW. Financing partner <a href=\"https://www.ch4capital.com/projects\">CH4 Capital lists a 4 MW first phase</a> and estimates that the landfill could support 8–10 MW. The partners have not publicly reconciled their phase definitions. Neither figure represents verified operational capacity.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":36134,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/epa-landfill-gas-vertical-wellheads.jpg\" alt=\"Vertical gas extraction wellheads at a landfill\" class=\"wp-image-36134\" /><figcaption class=\"wp-element-caption\"><em>Vertical landfill gas collection wellheads. Source: <a href=\"https://www.epa.gov/lmop/basic-information-about-landfill-gas\">US EPA</a>; representative equipment, not Chicoloapan.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">From decomposing waste to computational work</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Microorganisms breaking down organic matter under oxygen-poor conditions generate landfill gas. According to the US Environmental Protection Agency, typical landfill gas contains roughly equal proportions of methane and carbon dioxide, along with smaller quantities of other compounds. Extraction wells and a network of pipes collect gas for treatment. Moisture and potentially damaging contaminants must be removed before the gas can reliably fuel an engine-generator.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Electricity generated on site would feed application-specific integrated circuits that perform Bitcoin’s SHA-256 hashing operations. The approach creates an electrical customer at the point of generation, potentially avoiding the expense of exporting electricity to a distant grid or upgrading gas to pipeline specifications. It follows the principle described in our coverage of <a href=\"https://bitcoinversus.tech/2026/10/06/bitcoin-mining-what-is-stranded-energy-why-miners-follow-power-to-source/\">stranded energy and Bitcoin mining</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":36135,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/epa-landfill-gas-processing-skid.jpg\" alt=\"Landfill gas processing skid with pipes and flare equipment\" class=\"wp-image-36135\" /><figcaption class=\"wp-element-caption\"><em>Landfill gas processing equipment, including condensate removal and blowers. Source: US EPA; separate installation.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What could 2 MW actually produce?</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>If 2 MW were continuously available exclusively to mining machines operating at an assumed efficiency of 15 J/TH, the theoretical hashrate would be approximately 133.3 PH/s. At 8 MW, the same assumptions yield about 533.3 PH/s. Both calculations exclude auxiliary loads, downtime and variations in gas production. They describe hypothetical computational capacity, not the project’s equipment inventory or measured output.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>A flexible mining load can reduce consumption when generator output declines. Gas management, however, cannot simply stop whenever mining becomes unprofitable. CH4 Capital describes a backup flare intended to combust captured methane during generator outages, alongside continuous gas measurement. Prior developments in <a href=\"https://bitcoinversus.tech/2026/11/18/sterling-west-texas-gas-bitcoin-mining-19400-energy-cost-2026/\">gas-powered Bitcoin mining</a> and <a href=\"https://bitcoinversus.tech/2026/11/26/entrex-build-96-asic-mobile-bitcoin-mining-trailer-franchise-2026/\">modular ASIC facilities</a> illustrate related infrastructure choices.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">The climate benefit depends on the baseline</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Combustion converts methane primarily into carbon dioxide and water, but the environmental outcome depends on actual gas collection, combustion efficiency, leakage, engine emissions and what would have happened without the project. Capturing methane that otherwise escapes differs materially from replacing an existing effective flare. Turner projects destruction of 7.9 million pounds of methane annually for the initial 2 MW installation; the estimate remains subject to site assessments and gas volumes. Earlier <a href=\"https://bitcoinversus.tech/2024/11/26/energy-research-confirms-bitcoin-minings-role-in-reducing-methane-emissions/\">methane mitigation research</a> examines the same distinction.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The project’s meaningful milestones will be installed generation capacity, commissioned mining equipment, independently verified gas flows and measured emissions reductions. Its commercial viability will also depend on maintenance expenses, Bitcoin mining economics and the availability of alternative uses for the recovered gas.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "status": "PUBLISHED, VERIFICATION PENDING",
+  "category": "Bitcoin mining and energy infrastructure; category-specific user request",
+  "sources": [
+    "https://www.datacenterdynamics.com/en/news/abundant-mines-plans-landfill-powered-bitcoin-mine-near-mexico-city/",
+    "https://www.linkedin.com/pulse/cleaner-air-powered-bitcoin-turning-landfill-waste-beau-turner-2ns7c/",
+    "https://www.ch4capital.com/projects",
+    "https://www.epa.gov/lmop/basic-information-about-landfill-gas"
+  ],
+  "claims": "Abundant Mines 2 MW initial, 8 MW expansion; CH4 Capital 4 MW first phase, 8–10 MW site potential; mismatch not reconciled; 7.9m lb projected annual methane destruction, not measured.",
+  "calculations": "2e6/15/1000=133.33 PH/s; 8e6/15/1000=533.33 PH/s; illustrative exclusive ASIC power at assumed 15 J/TH.",
+  "duplicate": "WordPress Chicoloapan and Abundant Mines searches, GitHub targeted project search; prepublication Chicoloapan results contained only own draft; related landfill mining coverage not same project.",
+  "cover": {
+    "id": 36140,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "style": "photorealistic editorial illustration",
+    "watermark": "Original skid-steer reference pixels cropped (15,839,357,892), resized 160x25 and pasted once at (10,595); local image visually inspected; uploaded via local file path; CDN visual not independently checked."
+  },
+  "qa": {
+    "publication": "publish",
+    "body_images": [
+      36134,
+      36135
+    ],
+    "footer": 24043,
+    "internal_links": 4,
+    "article_words": 529,
+    "prohibited_words": 0,
+    "browser": "not tested",
+    "mobile": "not tested",
+    "playback": "no video; EPA photographs used",
+    "qr": "canonical QR preserved, not decoded"
+  },
+  "learning": [
+    "Report conflicting phase capacities separately.",
+    "Calculate hashrate using assumed exclusive ASIC load, not claimed actual output.",
+    "Reuse exact watermark pixels and use local-file media import when direct endpoint DNS fails."
+  ]
+}
