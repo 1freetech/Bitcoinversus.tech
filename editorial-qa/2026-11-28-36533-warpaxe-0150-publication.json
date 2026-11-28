@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-28",
+  "category": "ASICs and Mining Hardware",
+  "next_category": "Semiconductors and Processors",
+  "post": {
+    "id": 36533,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/28/warpaxe-0150-bitcoin-miner-voltage-regulator-fan-protection-november-2026/",
+    "featured_media": 36536,
+    "title": "WarpAxe 0.1.50 Adds Voltage-Regulator Cooling and Fan Failure Protection to Bitcoin Miners",
+    "content": "<!-- wp:paragraph --><p>Open-source Bitcoin mining firmware WarpAxe introduced an additional thermal-control loop in its <a href=\"https://git.warppool.org/dvb-projekt/dvb-WarpAxe/releases/tag/v0.1.50\">November 27, 2026 release</a>. Version 0.1.50 adds regulator temperature to automatic fan control on supported single-fan boards, expands startup protection against unavailable fan controllers and provides fixed IPv4 addressing with automatic recovery. The changes concern operating reliability rather than new ASIC silicon or a demonstrated improvement in joules per terahash. They follow the <a href=\"https://bitcoinversus.tech/2026/11/19/warpaxe-rust-bitcoin-mining-firmware-ipv6-fan-pwm-fix-november-2026/\">earlier WarpAxe networking and fan-control update</a>.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=gknNIwWRnR8\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=gknNIwWRnR8\n</div><figcaption class=\"wp-element-caption\"><em>Solo Satoshi demonstrates the dual-chip Bitaxe Naja Duo hardware. Retailer testing, not an independent benchmark of WarpAxe 0.1.50.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Why a cool ASIC can coexist with a hot regulator</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>A mining board converts input electrical power into the low-voltage, high-current supply required by its hashing chips. Switching regulators lose some energy in transistors, inductors and other components. A heatsink mounted on an ASIC may keep its junction temperature within the expected range while the separate power-conversion stage experiences higher thermal stress. Texas Instruments' <a href=\"https://www.ti.com/document-viewer/lit/html/SSZT323/GUID-19B4E411-1893-4371-BF17-AFAE18451707\">technical discussion of thermally optimized power supplies</a> illustrates why regulator losses and heat dissipation matter when powering processors.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>Consider an illustrative regulator supplying 40 W to a chip rail. At 95% conversion efficiency, the input is 42.11 W and regulator losses are 2.11 W. At 90%, input increases to 44.44 W and losses rise to 4.44 W. A five-percentage-point efficiency reduction more than doubles the heat released by the regulator in the example. These figures are not measurements of the <a href=\"https://bitcoinversus.tech/2026/10/24/bitaxe-naja-duo-1201-dual-bm1373-44-ths-home-miner/\">Bitaxe Naja Duo</a> or another specific board. Actual losses depend on voltage, current, switching conditions and component characteristics.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=mgN0KdPyMeA\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=mgN0KdPyMeA\n</div><figcaption class=\"wp-element-caption\"><em>Biricha Digital explains how switching buck regulators convert voltage and why their efficiency differs from linear regulators.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Two thermal inputs instead of one</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>The new automatic cooling logic selects the higher fan demand from the hashing-chip and regulator control loops. The regulator's default target is 80°C; the previous release notes describe a 105°C protective stop. Supported NerdQAxe, NerdOCTAXE and NerdQX boards also inhibit hashing if their fan controller fails initialization three times. Earlier <a href=\"https://git.warppool.org/dvb-projekt/dvb-WarpAxe/releases/tag/v0.1.49\">November 23 firmware</a> introduced comparable protection for certain other boards and checks for unexpected regulator configuration resets.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>These are firmware control thresholds, not universal safe operating temperatures or a recommendation to increase voltage. The developer reports that six test boards did not reach the new regulator target during normal operation; consequently, their fan speeds did not change. No independent thermal-stress comparison or fleet-wide efficiency gain has been demonstrated. Our explanation of <a href=\"https://bitcoinversus.tech/2026/10/06/bitcoin-mining-hardware-nameplate-wall-facility-joules-per-terahash/\">nameplate and wall-level mining efficiency</a> describes why cooling overhead and measurement boundaries must be included in performance comparisons.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Reliability extends beyond hashing</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>The release also introduces optional static IPv4 addressing with a recovery mechanism that returns to automatic address allocation after three minutes without evidence of connectivity. For small mining fleets, dependable telemetry and access can matter as much as peak hashrate. The recent <a href=\"https://bitcoinversus.tech/2026/11/28/hashedmax-four-sha256-mining-pools-closure-november-2026/\">HashedMax pool closure notice</a> illustrates another dimension of infrastructure dependence. Operators should use supported hardware, verified firmware releases and appropriate cooling, monitoring both accepted pool work and electrical consumption. The engineering goal is stable useful computation, not simply a higher reported clock speed.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p><!-- /wp:paragraph --><!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image --><!-- wp:paragraph --><p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p><!-- /wp:paragraph --><!-- wp:paragraph --><p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->"
+  },
+  "words": 504,
+  "lie_tracker": {
+    "master_sha": "ce3b79f2391745ca499130aecd26447a9c2e60c7",
+    "backup_matches": true,
+    "reviewed": [
+      "LT-0001",
+      "LT-0003",
+      "LT-0005",
+      "LT-0008",
+      "LT-0016",
+      "LT-0037",
+      "LT-0046",
+      "LT-0053",
+      "LT-0075",
+      "LT-0081"
+    ],
+    "applied": [
+      "rejected previously published Braiins 26.11 candidate",
+      "distinct WarpAxe 0.1.50 release relative to prior 0.1.46 coverage",
+      "distinguished thermal control thresholds from actual measured efficiency",
+      "verified four published link targets",
+      "two rendered iframes and publication readback",
+      "no internal tracker references in article",
+      "improved cover dimensions using WordPress resize and verified assigned media"
+    ]
+  },
+  "sources": [
+    "https://git.warppool.org/dvb-projekt/dvb-WarpAxe/releases/tag/v0.1.50",
+    "https://git.warppool.org/dvb-projekt/dvb-WarpAxe/releases/tag/v0.1.49",
+    "https://www.ti.com/document-viewer/lit/html/SSZT323/GUID-19B4E411-1893-4371-BF17-AFAE18451707"
+  ],
+  "videos": [
+    "gknNIwWRnR8",
+    "mgN0KdPyMeA"
+  ],
+  "calculations": {
+    "regulator_95_percent_input": 42.10526315789474,
+    "loss_95": 2.10526315789474,
+    "regulator_90_percent_input": 44.44444444444444,
+    "loss_90": 4.444444444444443
+  },
+  "cover": {
+    "id": 36536,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "source": "https://i.ytimg.com/vi/iQakkpnV9bQ/maxresdefault.jpg",
+    "kind": "provisional contextual review thumbnail, resized through WordPress"
+  },
+  "open_defects": [
+    "Original approved artwork and exact watermark not verified",
+    "Actual playback and mobile browser rendering untested",
+    "No independent public-page visual inspection"
+  ],
+  "release_decision": "Immediate publication requested; published with disclosed remaining defects."
+}
