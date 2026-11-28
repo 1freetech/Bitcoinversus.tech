@@ -1,0 +1,52 @@
+{
+  "policy": "v8.1",
+  "artifact": {
+    "id": 36418,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/28/mitsubishi-electric-gan-on-gan-transistor-frequency-dispersion-2026/",
+    "featured_media": 36411,
+    "title": "Mitsubishi Electric Reduces Frequency Dispersion in GaN-on-GaN Transistors",
+    "content": "<!-- wp:paragraph -->\n<p>Mitsubishi Electric announced on November 9, 2026, that it had demonstrated a reduction in frequency dispersion in high-frequency gallium nitride (GaN) transistors fabricated on GaN substrates. The <a href=\"https://www.mitsubishielectric.com/en/pr/2026/1109_rd/\">company announcement</a> describes a new analysis technique linking electrical behavior to crystal defects. The work is part of a Japanese Ministry of the Environment programme aimed at technologies that reduce carbon dioxide emissions.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":36408,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/mitsubishi-gan-frequency-dispersion-comparison.jpg\" alt=\"Comparison of defects in GaN layers on silicon carbide and GaN substrates\" class=\"wp-image-36408\" /><figcaption class=\"wp-element-caption\"><em>Mitsubishi Electric compares defect-related current changes in two transistor substrate architectures. Source: Mitsubishi Electric.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Why the substrate changes electrical behavior</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>High-electron-mobility transistors use a heterostructure to create a conducting electron channel. GaN supports strong electric fields and high-frequency operation, making it valuable in radio-frequency amplifiers and other power devices. Silicon carbide substrates are commonly selected for their heat conduction. Growing GaN on a different crystalline material, however, can introduce structural defects where the layers meet or within the growing film.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Defects can trap charge, altering the effective carrier concentration and electric field within a transistor. Because capture and release occur over different timescales, the electrical response may depend on the frequency and history of the applied signal. Current and gain can depart from their expected values, complicating amplifier calibration. <a href=\"https://www.semiconductor-today.com/news_items/2026/nov/mitsubishi-electric-101126.shtml\">Semiconductor Today</a> independently reported the announcement and the planned presentation at the International Workshop on Nitride Semiconductors.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=s3WByoHlC1I\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=s3WByoHlC1I\n</div><figcaption class=\"wp-element-caption\"><em>Technical lecture on the origins, characterization and modeling of dispersion in GaN HEMTs; background material, not footage of Mitsubishi's November experiment.</em></figcaption></figure>\n<!-- /wp:embed -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What the experimental result does and does not establish</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A freestanding GaN substrate can support growth of an epitaxial layer of the same semiconductor, reducing some mismatch-related defects. Mitsubishi reports that its measurements and circuit analysis indicate a flatter frequency response. The public announcement does not provide enough numerical data to calculate an independently reproducible improvement in efficiency, output power or operating bandwidth. Reduced dispersion also does not remove the need to manage junction temperature, packaging parasitics or device reliability.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The thermal trade-off deserves particular attention. Silicon carbide remains attractive because the power dissipated by a transistor must pass through its substrate and packaging before reaching a cooling system. Lower defect density may improve electrical consistency while a different thermal resistance changes the allowable operating envelope. Equivalent devices should therefore be compared at matched bias, frequency, temperature and output power.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Readers can explore related power-device developments in <a href=\"https://bitcoinversus.tech/2026/11/26/epc91124-epc91125-gan-motor-drive-100khz-controlled-switching-2026/\">GaN motor drives</a>, <a href=\"https://bitcoinversus.tech/2026/11/22/cornell-7ev-bandgap-alphafet-oxide-transistor-2026/\">wide-bandgap oxide transistors</a>, <a href=\"https://bitcoinversus.tech/2026/11/21/how-energy-bands-form-semiconductor-devices-crystal-orbitals-mosfet/\">semiconductor energy bands</a> and <a href=\"https://bitcoinversus.tech/2026/11/09/infineon-first-functional-300mm-silicon-carbide-power-wafer-november-2026/\">300 mm silicon carbide wafer research</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Commercial adoption will depend on substrate availability, fabrication yield, device cost and long-duration testing. Industrial microwave heating and wireless base stations are among the applications identified by Mitsubishi. The next meaningful evidence would be published frequency sweeps, device-to-device variation, thermal measurements and amplifier-level demonstrations that quantify whether the simpler correction circuitry produces worthwhile system savings.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "rotation": "Electrical Engineering",
+  "rotation_note": "Selected following latest renewable-energy batch; persistent global cursor not located",
+  "operational_status": "PUBLISHED, VERIFICATION PENDING",
+  "duplicate_check": "Targeted WordPress and GitHub searches no exact match; immediate prepublication WordPress returned only own draft",
+  "qa": {
+    "status": "publish",
+    "words": 449,
+    "iframe_sources": [
+      "https://www.youtube.com/embed/s3WByoHlC1I?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent"
+    ],
+    "body_images": [
+      "36408"
+    ],
+    "footer": true,
+    "internal_links": [
+      "https://bitcoinversus.tech/2026/11/26/epc91124-epc91125-gan-motor-drive-100khz-controlled-switching-2026/",
+      "https://bitcoinversus.tech/2026/11/22/cornell-7ev-bandgap-alphafet-oxide-transistor-2026/",
+      "https://bitcoinversus.tech/2026/11/21/how-energy-bands-form-semiconductor-devices-crystal-orbitals-mosfet/",
+      "https://bitcoinversus.tech/2026/11/09/infineon-first-functional-300mm-silicon-carbide-power-wafer-november-2026/"
+    ],
+    "cover": {
+      "id": 36411,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "source": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/mitsubishi-gan-cover.png",
+      "watermark": "Original cropped pixels resized 160x25, pasted at 10,595, equality tested before upload",
+      "artwork": "Recovered prior wafer-probing artwork; historical reuse not exhaustively excluded",
+      "CDN": "not visually inspected"
+    },
+    "browser": "not independently tested",
+    "video_playback": "not tested",
+    "mobile": "not tested",
+    "qr": "not decoded"
+  },
+  "learning": [
+    "Discard off-topic generated artwork rather than attach it.",
+    "Check rendered iframe sources before and after publish.",
+    "Separate manufacturer claims from measured results and label hypothetical calculations."
+  ]
+}
