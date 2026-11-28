@@ -1,0 +1,64 @@
+{
+  "policy": "v8.1",
+  "artifact": {
+    "id": 36239,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/28/robotera-china-post-hangzhou-45-humanoid-robots-parcel-induction-2026/",
+    "featured_media": 36233,
+    "title": "China Post Tests 45 Humanoid Robots in a High-Speed Parcel Sorting Hub",
+    "content": "<!-- wp:paragraph -->\n<p>China Post is testing a fleet of 45 ROBOTERA humanoid robots at its Hangzhou Postal District Center, moving embodied artificial intelligence beyond individual demonstrations and into coordinated logistics infrastructure. In its <a href=\"https://www.newswire.ca/news-releases/robotera-puts-45-humanoid-robots-into-large-scale-fleet-operations-at-china-post-880551690.html\">November 26 announcement</a>, ROBOTERA reported that selected parcel-induction tests reached approximately 1,200 parcels per hour, compared with 500 to 600 during initial trials that began in April.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=DVXPjs64Ucw\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=DVXPjs64Ucw\n</div><figcaption class=\"wp-element-caption\"><em>ROBOTERA's November 17 video documents its separate Guangdong postal-network rollout, illustrating related parcel-induction operations.</em></figcaption></figure>\n<!-- /wp:embed -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">A production line that learns to handle irregular objects</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Parcel induction is the transfer of packages onto the input stations of an automated sorting system. The downstream machinery reads shipping information and directs each package toward the correct destination. Induction robots must therefore position packages consistently while accommodating different dimensions, orientations, surfaces and materials.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>A rigid cardboard box can be grasped differently from a deformable plastic mailing bag. Cameras and other sensors help estimate object position and shape, while motion-control software coordinates the arm and gripper. When an object falls outside the acceptable handling envelope, the robot must route it for exception processing instead of forcing it onto the conveyor. ROBOTERA reports that its equipment performs these tasks alongside package reorientation and placement.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">From individual machines to an industrial fleet</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The earlier <a href=\"https://www.prnewswire.com/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941865.html\">Guangdong announcement</a> identified 11 postal hubs across eight cities. Unlike the Hangzhou disclosure, it did not specify the number of robots deployed across the province. The company reported average induction rates above 1,500 parcels per hour following a pilot in Guangzhou, but differing test conditions prevent a direct performance comparison with Hangzhou.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=PtytJaMmBa0\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=PtytJaMmBa0\n</div><figcaption class=\"wp-element-caption\"><em>ROBOTERA in Logistics: Small Parcel Induction, November 11. Company demonstration of the parcel-handling technology, not footage identified as the Hangzhou fleet.</em></figcaption></figure>\n<!-- /wp:embed -->\n\n<!-- wp:paragraph -->\n<p>Operating dozens of robots introduces system-level constraints that a single-machine demonstration cannot reveal. Conveyor capacity, barcode readability, package arrival patterns and exception handling can limit output even when individual manipulators operate quickly. Fleet monitoring must identify stalled workstations and coordinate maintenance without transferring congestion to another portion of the network.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If 1,200 parcels per hour represents a single station, it corresponds to an average three-second induction interval. However, the announcement does not adequately define the measurement boundary or establish sustained output across all 45 units. Multiplying that rate by the fleet size would therefore produce an unsupported facility-throughput estimate. <a href=\"https://interestingengineering.com/ai-robotics/chinese-humanoid-robots-postal-trial\">Interesting Engineering</a> also notes that the figure refers to specific testing periods.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">The next measure of progress</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>ROBOTERA reports operational accuracy above 90%, but has not disclosed a complete definition of accuracy, intervention frequency, uptime or cost per successfully processed parcel. Those measurements are essential when comparing embodied AI with established conveyor automation and human-operated stations.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Related deployments include <a href=\"https://bitcoinversus.tech/2026/11/28/bigwave-humanoid-automotive-factory-plc-engine-parts-2026/\">Bigwave's industrial machine-tending pilot</a>, <a href=\"https://bitcoinversus.tech/2026/11/28/volvo-hexagon-aeon-humanoid-ghent-factory-2027-production/\">Volvo's humanoid training programme</a>, <a href=\"https://bitcoinversus.tech/2026/11/27/bleckmann-two-humanoid-robots-european-warehouse-infrastructure-2026/\">Bleckmann's warehouse plans</a> and <a href=\"https://bitcoinversus.tech/2026/11/18/rockwell-automation-acquire-agilox-2500-autonomous-mobile-robots-2026/\">Rockwell's mobile robotics expansion</a>. Hangzhou provides a particularly valuable opportunity to evaluate repeated robotic handling at operational scale. The decisive evidence will be sustained, independently comparable logistics performance rather than the fleet count alone.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "operational_status": "PUBLISHED, VERIFICATION PENDING",
+  "rotation": "User-selected robotics infrastructure; global cursor not verified",
+  "sources": [
+    "https://www.newswire.ca/news-releases/robotera-puts-45-humanoid-robots-into-large-scale-fleet-operations-at-china-post-880551690.html",
+    "https://www.prnewswire.com/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941865.html",
+    "https://interestingengineering.com/ai-robotics/chinese-humanoid-robots-postal-trial",
+    "https://roboticaguide.com/robotera-china-post-humanoid-robots-guangdong/"
+  ],
+  "claims": "45 deployed for testing; 500–600 initial and 1200 selected test parcels/hour, >90% accuracy company-reported; no confirmed fleet-wide measurement boundary. 11 Guangdong hubs separate.",
+  "calculation": "3600/1200=3 seconds, conditional on single station",
+  "duplicate": "Robotera and Hangzhou Postal searches in WP publish/draft/future no hits before draft; Robotera Hangzhou targeted GitHub search no hits; immediately before publish only own draft matched. Not exhaustive.",
+  "cover": {
+    "id": 36233,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "style": "original colored pencil conceptual",
+    "watermark": "Cropped exact existing reference Sunset Skid-Steer Stunt Demo.png (15,839,357,892), resized 160x25 pasted once at (10,595); local pixel equality and visual inspection confirmed; WP upload dimension confirmed; public CDN pixels not inspected"
+  },
+  "media": [
+    {
+      "id": "DVXPjs64Ucw",
+      "title": "ROBOTERA Expands Humanoid Robot Deployment Across China Post's Guangdong Network",
+      "source": "Robotica Guide linked official channel video; YouTube page title returned",
+      "saved": "native Gutenberg embed",
+      "rendered": "draft and post-publication iframe exact ID confirmed",
+      "playback": "not tested"
+    },
+    {
+      "id": "PtytJaMmBa0",
+      "title": "ROBOTERA in Logistics | Small Parcel Induction",
+      "source": "Robotica Guide linked video, direct YouTube open cache miss",
+      "saved": "native Gutenberg embed",
+      "rendered": "draft and post-publication iframe exact ID confirmed",
+      "playback": "not tested"
+    }
+  ],
+  "qa": {
+    "words": 487,
+    "prohibited": 0,
+    "internal_links": 4,
+    "footer": 24043,
+    "qr": "not decoded",
+    "browser": "not tested",
+    "mobile": "not tested",
+    "permissions": "not verified"
+  },
+  "learning": [
+    "Select stories with direct source video links before writing.",
+    "Distinguish related footage from exact site footage.",
+    "Recheck both rendered iframe IDs after publication; do not equate iframe with playback."
+  ]
+}
