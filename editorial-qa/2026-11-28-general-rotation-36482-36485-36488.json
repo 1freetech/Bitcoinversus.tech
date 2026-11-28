@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-28",
+  "policy": "v8.0",
+  "rotation_basis": "Inferred Culture and Technology post 36441 as latest general rotation position; category-specific stats and infrastructure posts excluded. Exact independent cursor not established. Next: Cryptocurrency.",
+  "lie_tracker": {
+    "master_sha": "ba1467dc08859fcc42634d86983e983d0433ddd0",
+    "backup_matches": true,
+    "incidents": [
+      "LT-0001",
+      "LT-0003",
+      "LT-0005",
+      "LT-0008",
+      "LT-0053",
+      "LT-0075",
+      "LT-0080",
+      "LT-0081"
+    ],
+    "applied": [
+      "review before selection",
+      "no repeated Liana 16 or PowerCompute S21++ story",
+      "reviewed existing heat pump overview and focused on quantitative Carnot limit",
+      "reviewed older CLN maintenance coverage and focused on November disclosure",
+      "distinguished planned HashedMax shutdown and actual verified payments",
+      "all 12 internal link target posts confirmed published",
+      "separate server-rendered iframe checks and playback status",
+      "exact slug checks before publication",
+      "no internal tracker references in articles"
+    ]
+  },
+  "records": [
+    {
+      "id": 36482,
+      "category": "Evergreen Technical Explainers",
+      "words": 446,
+      "media": 36483,
+      "videos": [
+        "QykwWs3L1W8",
+        "MFEHFsO-XSI"
+      ],
+      "calculations": {
+        "ideal_cop_35c": 10.271666666666667,
+        "ideal_cop_65c": 5.635833333333333,
+        "electricity_kwh_at_cop4": 3,
+        "electricity_kwh_at_cop2": 6
+      },
+      "post": {
+        "id": 36482,
+        "status": "publish",
+        "link": "https://bitcoinversus.tech/2026/11/28/heat-pump-temperature-lift-carnot-cop-engineering-explained/",
+        "featured_media": 36483,
+        "title": "Why Heat Pump Efficiency Falls as Temperature Lift Increases",
+        "content": "<!-- wp:paragraph --><p>A heat pump moves thermal energy from a cooler reservoir to a warmer one by consuming work. The amount of work required depends strongly on the temperature difference the machine must overcome. Understanding that relationship helps explain why a low-temperature heating system may use less electricity than a high-temperature radiator circuit, even when both deliver the same amount of useful heat. The distinction extends the fundamentals in our <a href=\"https://bitcoinversus.tech/2026/10/08/what-is-a-heat-pump-how-heating-cooling-refrigeration-cycle-works/\">heat pump overview</a>.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=QykwWs3L1W8\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=QykwWs3L1W8\n</div><figcaption class=\"wp-element-caption\"><em>The Engineering Mindset explains the vapor-compression heat pump cycle and its major components.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">The thermodynamic ceiling</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>For a reversible heating cycle operating between two ideal reservoirs, the maximum heating coefficient of performance is COP = T<sub>hot</sub> / (T<sub>hot</sub> − T<sub>cold</sub>), where both temperatures are measured in kelvins. The result follows from energy conservation and the second law of thermodynamics, as explained in <a href=\"https://openstax.org/books/college-physics-2e/pages/15-5-applications-of-thermodynamics-heat-pumps-and-refrigerators\">OpenStax College Physics</a>. A COP of three means three units of useful heat are delivered per unit of work; two units originate in the colder reservoir. No energy is created.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>Suppose the cold reservoir is 5°C (278.15 K). If the warm reservoir is 35°C (308.15 K), the ideal heating COP is approximately 10.27. Raising the warm reservoir to 65°C (338.15 K) doubles the temperature lift from 30 K to 60 K, reducing the theoretical ceiling to approximately 5.64. These are mathematical bounds, not equipment ratings. A real compressor, fan, pump and expansion device introduce irreversible losses.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>A simple illustration makes the operational implication clear. Delivering 12 kWh of useful heat at an actual COP of four requires 3 kWh of electricity. At COP two, the same heat delivery requires 6 kWh. The actual COP must come from measurements or rated performance under comparable conditions. The <a href=\"https://www.energy.gov/cmei/femp/incorporate-minimum-efficiency-requirements-heating-and-cooling-products-federal\">Department of Energy's efficiency definitions</a> also distinguish instantaneous performance from seasonal ratings.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=MFEHFsO-XSI\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=MFEHFsO-XSI\n</div><figcaption class=\"wp-element-caption\"><em>Technology Connections discusses heat pumps and real-world heating performance.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Why temperature lift matters beyond buildings</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>The temperature of the refrigerant at its evaporation surface must be below the source fluid, while its condensing temperature must exceed the receiving fluid. Heat exchangers consequently add approach-temperature differences to the lift. Poor heat transfer, restricted airflow and scale can increase compressor work. The principles behind <a href=\"https://bitcoinversus.tech/2026/11/28/osdcec-019-heat-exchanger-approach-lmtd-thermal-capacity/\">heat exchanger temperature approach</a> and <a href=\"https://bitcoinversus.tech/2026/11/21/osdctc-021-coolant-flow-balancing-rack-branch-pressure-drop/\">coolant flow balancing</a> also apply to industrial heat recovery.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>Consider a data center supplying moderately warm water to a nearby district heating network. Raising the source temperature or reducing the required delivery temperature can reduce the lift. The proposed <a href=\"https://bitcoinversus.tech/2026/11/28/fossefall-jokkmokk-65mw-ai-hydropower-district-heating-2026/\">Jokkmokk AI heat-recovery project</a> illustrates why thermal demand and its temperature specification matter alongside computing capacity. Operators should compare annual useful heat, total system electricity, seasonal conditions, refrigerant operating limits and backup demand rather than judging a system by a single favorable COP measurement.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p><!-- /wp:paragraph --><!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image --><!-- wp:paragraph --><p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p><!-- /wp:paragraph --><!-- wp:paragraph --><p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->"
+      },
+      "internal_links_verified": 4,
+      "cover_dimensions": [
+        1280,
+        720
+      ],
+      "cover_status": "provisional video thumbnail; original art and exact watermark not verified",
+      "status": "PUBLISHED WITH OPEN DEFECTS"
+    },
+    {
+      "id": 36485,
+      "category": "Bitcoin",
+      "words": 460,
+      "media": 36486,
+      "videos": [
+        "M2asMhOUCiM",
+        "rf-GvVYuWa8"
+      ],
+      "post": {
+        "id": 36485,
+        "status": "publish",
+        "link": "https://bitcoinversus.tech/2026/11/28/core-lightning-duplicate-channel-id-disclosure-november-2026/",
+        "featured_media": 36486,
+        "title": "Core Lightning Disclosure Explains a Bug That Could Repeatedly Crash Bitcoin Nodes",
+        "content": "<!-- wp:paragraph --><p>A security disclosure published November 14, 2026 provides new detail about a previously patched weakness in Core Lightning, an implementation of Bitcoin's Lightning Network. Researcher Nishant Bansal reported the issue on <a href=\"https://delvingbitcoin.org/t/disclosure-dos-vulnerability-fixed-in-core-lightning-v26-06-8/3072\">Delving Bitcoin</a>, and <a href=\"https://bitcoinops.org/en/newsletters/2026/11/27/\">Bitcoin Optech summarized the findings November 27</a>. The weakness could cause affected nodes to crash repeatedly. It did not give a remote peer direct ownership of channel funds, and the disclosure does not establish widespread exploitation.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=M2asMhOUCiM\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=M2asMhOUCiM\n</div><figcaption class=\"wp-element-caption\"><em>Blockstream's Deciphered episode introduces Core Lightning and explains why operators run Lightning nodes. Historical background, not the vulnerability demonstration.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:paragraph --><p>The disclosure identifies Core Lightning versions 0.12.0 through 26.06.7 as affected and says the original fix appeared in 26.06.8. Operators should use a current supported release and follow the project's official upgrade guidance rather than targeting the historical minimum patch alone. Earlier coverage of <a href=\"https://bitcoinversus.tech/2026/10/10/core-lightning-26-06-9-security-update-payment-delays/\">the 26.06.9 maintenance release</a> documented later security and reliability improvements. The November disclosure adds a specific explanation of an earlier defect.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Why a channel identifier matters</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>A Lightning channel represents a relationship between participants who maintain a shared funding arrangement and exchange updated commitments. The software must distinguish one channel from another so that incoming protocol messages are associated with the correct internal state. Core Lightning separates networking and channel management into cooperating processes. When internal assumptions about unique identifiers fail, an assertion intended to detect an impossible condition can terminate a process instead of gracefully rejecting inconsistent input.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>The reported defect involved a collision between channel identifiers and affected both connection handling and stored channel history. Persistent state is important because restarting a process may not remove the condition that caused the failure. A node can therefore remain unavailable even after an automated service manager restarts it. A process that restarts successfully is not necessarily a node that has restored its payment and monitoring capabilities.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=rf-GvVYuWa8\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=rf-GvVYuWa8\n</div><figcaption class=\"wp-element-caption\"><em>Lightning Labs demonstrates operating and backing up a Lightning node with LND, a separate implementation; general operational context.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Availability is part of financial security</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>Lightning participants rely on timely monitoring of the Bitcoin blockchain and the ability to enforce channel commitments when required. A prolonged outage can interrupt routing, prevent ordinary payment operations and interfere with timely responses to channel events. The risk is distinct from a private-key compromise. Related disclosures concerning <a href=\"https://bitcoinversus.tech/2026/11/21/lightning-dev-kit-028-patches-fund-loss-fee-limit-november-2026/\">Lightning Dev Kit security fixes</a> and <a href=\"https://bitcoinversus.tech/2026/11/21/eclair-lightning-batch-size-zero-memory-dos-fixed-0-14-1-2026/\">Eclair memory exhaustion</a> demonstrate why each implementation requires independent review.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>Operators should verify their installed version, preserve appropriate implementation-specific recovery material, follow documented upgrade procedures and monitor channel connectivity and blockchain synchronization after maintenance. Payment status also deserves attention, as discussed in <a href=\"https://bitcoinversus.tech/2026/11/22/lnd-lightning-invoice-pending-settle-payment-finality-2026/\">our coverage of LND payment finality</a>. The disclosed Core Lightning flaw illustrates the value of fuzz testing, durable-state validation and defensive error handling. The security milestone is not merely a published patch but its adoption by affected operators.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p><!-- /wp:paragraph --><!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image --><!-- wp:paragraph --><p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p><!-- /wp:paragraph --><!-- wp:paragraph --><p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->"
+      },
+      "internal_links_verified": 4,
+      "cover_dimensions": [
+        1280,
+        720
+      ],
+      "cover_status": "provisional video thumbnail; original art and exact watermark not verified",
+      "status": "PUBLISHED WITH OPEN DEFECTS"
+    },
+    {
+      "id": 36488,
+      "category": "Bitcoin Mining",
+      "words": 456,
+      "media": 36489,
+      "videos": [
+        "IXDEUkGCxHY",
+        "EoU0FMf7QeI"
+      ],
+      "calculations": {
+        "hash_attempts_200TH_per_hour": 720000000000000000
+      },
+      "post": {
+        "id": 36488,
+        "status": "publish",
+        "link": "https://bitcoinversus.tech/2026/11/28/hashedmax-four-sha256-mining-pools-closure-november-2026/",
+        "featured_media": 36489,
+        "title": "HashedMax Announces Closure of Four Mining Pools as Operating Costs Mount",
+        "content": "<!-- wp:paragraph --><p>HashedMax announced that it would discontinue its mining pool operations on November 20, 2026, citing the cost of maintaining its privately financed infrastructure. The <a href=\"https://digi.hmpool.io/announcement.html\">operator's shutdown notice</a> says balances were scheduled to be paid to existing wallet addresses by the cutoff. Its <a href=\"https://pools.hmpool.io/\">pool directory</a> identifies Bitcoin, DigiByte, Bitcoin Cash and eCash services. The announcement establishes the planned closure, not independent proof that every endpoint stopped accepting work or every balance was settled.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=IXDEUkGCxHY\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=IXDEUkGCxHY\n</div><figcaption class=\"wp-element-caption\"><em>An independent solo-mining experiment compares accepted shares from two pools; context for monitoring pool-side work, not a HashedMax test.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:paragraph --><p>The shutdown illustrates a distinction between the mining hardware and its coordination infrastructure. A mining pool supplies work, receives proof-of-work submissions and maintains accounting information. Operators of small devices may join pools because discovering a Bitcoin block independently is statistically infrequent. Larger fleets can also use pools to reduce revenue variance or simplify settlement. Our earlier reporting on <a href=\"https://bitcoinversus.tech/2026/10/05/bitcoin-mining-top-three-pools-60-8-percent-blocks-october-2026/\">pool concentration</a> examines the broader distribution of block production.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">A powered ASIC is not necessarily earning revenue</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>Pool shares provide a statistical measure of contributed work. As <a href=\"https://braiins.com/blog/bitcoin-mining-pools-luck-shares-estimated-hashrate\">Braiins explains</a>, the pool checks submitted hashes against a share target, while the network applies a much harder target for valid blocks. A miner may display local hashrate even when its configured endpoint is unreachable or rejecting submissions. Accepted shares and credited payouts are separate indicators of successful operation.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>A 200 TH/s miner running for one hour makes approximately 720 quadrillion hash attempts. If pool connectivity fails during that hour, an ordinary pool cannot credit work it never receives. Actual electrical consumption may continue until the firmware detects the failure and changes its operating state. Connectivity monitoring and independent fallback providers can therefore protect revenue as well as uptime.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=EoU0FMf7QeI\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=EoU0FMf7QeI\n</div><figcaption class=\"wp-element-caption\"><em>Bitcoin University discusses a separate home-mining experiment using a pool and a self-managed block-template workflow.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Accounting and provider risk</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>HashedMax advised miners to save their historical statistics and named HeliosPool as a possible alternative provider. Its notice did not promise to transfer balances directly between pool accounts. A dashboard balance is a claim recorded by the operator; a confirmed transaction to an address under the miner's control is evidence of settlement. Affected miners should retain records they already downloaded and compare any final payments with their wallet history. The notice remains publicly retrievable, but the availability of historical downloads after the planned cutoff is uncertain.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>The transition also reinforces the importance of configurable pool connections. Related developments include <a href=\"https://bitcoinversus.tech/2026/11/22/datum-gateway-051-foreman-own-block-templates-bitcoin-mining-2026/\">DATUM block-template selection</a>, <a href=\"https://bitcoinversus.tech/2026/11/22/foundry-usa-pool-stratum-v2-customer-testing-miner-job-declaration-november-2026/\">Foundry's Stratum V2 testing</a> and <a href=\"https://bitcoinversus.tech/2026/11/26/bitcoin-mining-hashrate-hijacking-braiins-stratum-v1-november-2026/\">pool traffic security</a>. Those technologies address different aspects of mining coordination; none guarantees the financial sustainability of a particular pool. The shutdown notice is a reminder that Bitcoin's decentralized consensus can continue operating even when an individual service provider exits the market.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p><!-- /wp:paragraph --><!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image --><!-- wp:paragraph --><p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p><!-- /wp:paragraph --><!-- wp:paragraph --><p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->"
+      },
+      "internal_links_verified": 4,
+      "cover_dimensions": [
+        1280,
+        720
+      ],
+      "cover_status": "provisional video thumbnail; original art and exact watermark not verified",
+      "status": "PUBLISHED WITH OPEN DEFECTS"
+    }
+  ],
+  "release_decision": "Interpreted prior instruction to publish every time and continuation of immediate-publication workflow as authorization for provisional source thumbnails; original cover requirement remains unsatisfied.",
+  "open_defects": [
+    "All provisional thumbnails 1280x720 rather than 1200x630; exact watermark absent/unverified",
+    "Actual playback, permission and mobile rendering not independently tested",
+    "Public browser rendering not independently checked",
+    "Original donation QR reused but destination not independently decoded"
+  ],
+  "learning": [
+    "Reject semantic duplicates even when new source exists",
+    "Quantify theoretical ceilings distinctly from measured data",
+    "Verify all internal link target posts individually"
+  ]
+}
