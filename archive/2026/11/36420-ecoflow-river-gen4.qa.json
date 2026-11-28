@@ -1,0 +1,52 @@
+{
+  "policy": "v8.1",
+  "artifact": {
+    "id": 36420,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/28/ecoflow-river-260-520-gen4-portable-power-stations-2026/",
+    "featured_media": 36413,
+    "title": "EcoFlow Opens Preorders for 256 Wh and 512 Wh RIVER Gen4 Power Stations",
+    "content": "<!-- wp:paragraph -->\n<p>EcoFlow opened U.S. preorders for its RIVER 260 Gen4 and RIVER 520 Gen4 portable battery power stations on November 24, 2026. The models were formally introduced earlier in November and are designed for smaller electronic loads, portable refrigeration and selected short-duration backup applications. The <a href=\"https://www.prnewswire.com/news-releases/ecoflow-launches-river-gen4-and-unveils-its-next-wave-of-black-friday-and-cyber-monday-deals-302947170.html\">manufacturer's preorder announcement</a> lists initial promotional prices of $219 and $309, respectively, subject to stated offer periods.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=KmaHo6uuiRw\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=KmaHo6uuiRw\n</div><figcaption class=\"wp-element-caption\"><em>EcoFlow's manufacturer-produced introduction to the RIVER Gen4 series, linked by Paravolta's specification-based comparison.</em></figcaption></figure>\n<!-- /wp:embed -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Energy capacity and output are different limits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The <a href=\"https://www.ecoflow.com/us/river-gen4-series/specs\">published specifications</a> identify lithium iron phosphate battery chemistry for the series. The smaller model stores 256 Wh and supplies 300 W of rated AC output, while the larger stores 512 Wh and supplies 500 W. Both can power compatible USB devices alongside AC loads within their combined output limits. The distinction matters because watts describe the rate at which energy is delivered, whereas watt-hours describe the quantity stored.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":36409,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/ecoflow-river-260-gen4-official.png\" alt=\"EcoFlow RIVER 260 Gen4 portable battery power station\" class=\"wp-image-36409\" /><figcaption class=\"wp-element-caption\"><em>RIVER 260 Gen4 product photograph. Source: EcoFlow.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>At a hypothetical 85% usable energy fraction, the 256 Wh model could supply a steady 20 W load for approximately 10.9 hours. The 512 Wh unit would provide roughly 21.8 hours under the same assumptions. For a 60 W load, the corresponding estimates are 3.6 and 7.3 hours. Actual duration depends on inverter losses, standby consumption, battery temperature, load variation and discharge limits; these figures are arithmetic estimates rather than tested runtimes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Charging and low-power operation</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>EcoFlow specifies up to 110 W of solar charging through a compatible USB-C input arrangement. A 512 Wh battery receiving a constant 110 W would require approximately 4.65 hours to store its nominal energy even before conversion losses and charge tapering. Outdoor solar generation varies with panel orientation, shading, temperature and weather. A panel's voltage and connector must also match the equipment's permitted input range.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The manufacturer advertises a mode intended to reduce unnecessary consumption as compatible portable refrigerators cycle between active cooling and idle states. Its reported runtime gains come from company testing and should not be assumed to apply to every refrigerator. The <a href=\"https://manuals.ecoflow.com/us/product/river-gen4-portable-power-station?lang=en_US\">user manual</a> provides applicable operating conditions and safety limitations. Neither station should be treated as a dedicated life-support power supply.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Related energy engineering topics include <a href=\"https://bitcoinversus.tech/2026/10/05/energy-mw-vs-mwh-explained-power-vs-energy-easy-guide/\">power versus energy</a>, <a href=\"https://bitcoinversus.tech/2026/11/22/what-is-ev-onboard-charger-ac-dc-charging-explained/\">AC and DC charging</a>, <a href=\"https://bitcoinversus.tech/2026/11/27/energy-vault-sosa-150mw-300mwh-texas-battery-78-million-financing-2026/\">utility-scale battery storage</a> and <a href=\"https://bitcoinversus.tech/2026/11/28/helios-solar-galaxy-venus-malaysia-1gw-solar-1600mwh-data-center-2026/\">solar generation paired with battery storage</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>At the preorder milestone, the specifications establish the intended hardware capabilities, not independent field performance. Useful future reviews would measure usable AC and USB energy, low-load idle consumption, charge time at several temperatures and the transfer behavior of the backup mode. Consumers comparing portable power stations should identify their actual load and required duration before choosing a battery capacity.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "rotation": "Consumer Technology",
+  "rotation_note": "Selected following latest renewable-energy batch; persistent global cursor not located",
+  "operational_status": "PUBLISHED, VERIFICATION PENDING",
+  "duplicate_check": "Targeted WordPress and GitHub searches no exact match; immediate prepublication WordPress returned only own draft",
+  "qa": {
+    "status": "publish",
+    "words": 443,
+    "iframe_sources": [
+      "https://www.youtube.com/embed/KmaHo6uuiRw?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent"
+    ],
+    "body_images": [
+      "36409"
+    ],
+    "footer": true,
+    "internal_links": [
+      "https://bitcoinversus.tech/2026/10/05/energy-mw-vs-mwh-explained-power-vs-energy-easy-guide/",
+      "https://bitcoinversus.tech/2026/11/22/what-is-ev-onboard-charger-ac-dc-charging-explained/",
+      "https://bitcoinversus.tech/2026/11/27/energy-vault-sosa-150mw-300mwh-texas-battery-78-million-financing-2026/",
+      "https://bitcoinversus.tech/2026/11/28/helios-solar-galaxy-venus-malaysia-1gw-solar-1600mwh-data-center-2026/"
+    ],
+    "cover": {
+      "id": 36413,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "source": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/ecoflow-river-cover.png",
+      "watermark": "Original cropped pixels resized 160x25, pasted at 10,595, equality tested before upload",
+      "artwork": "Original programmatic technical illustration; approved art-style rotation not achieved",
+      "CDN": "not visually inspected"
+    },
+    "browser": "not independently tested",
+    "video_playback": "not tested",
+    "mobile": "not tested",
+    "qr": "not decoded"
+  },
+  "learning": [
+    "Discard off-topic generated artwork rather than attach it.",
+    "Check rendered iframe sources before and after publish.",
+    "Separate manufacturer claims from measured results and label hypothetical calculations."
+  ]
+}
