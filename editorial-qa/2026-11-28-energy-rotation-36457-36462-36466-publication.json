@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-28",
+  "policy": "v8.0",
+  "lie_tracker": {
+    "master_sha": "ba1467dc08859fcc42634d86983e983d0433ddd0",
+    "backup_matches": true,
+    "incidents": [
+      "LT-0001",
+      "LT-0003",
+      "LT-0005",
+      "LT-0008",
+      "LT-0053",
+      "LT-0075",
+      "LT-0080",
+      "LT-0081"
+    ],
+    "applied": [
+      "reviewed before candidate selection",
+      "targeted WordPress and GitHub duplicate checks including rejected Kodiak candidate",
+      "verified source chronology and project phase",
+      "separate saved markup and server-rendered iframe checks",
+      "checked publication status, image attachment and absence of internal tracker references",
+      "identified conflicting EURO-TIDES deployment dates and used more recent announcement"
+    ]
+  },
+  "rotation": [
+    "hydropower: Bhutan",
+    "biomass: California",
+    "tidal: Scotland"
+  ],
+  "records": [
+    {
+      "id": 36457,
+      "words": 457,
+      "dimensions": [
+        2048,
+        1489
+      ],
+      "media": 36460,
+      "iframes": [
+        "7f5yd7g8MWg",
+        "pa1ryuQV7Mk"
+      ],
+      "calcs": {
+        "assumed_unit_flow_m3s": 10.193679918450561,
+        "full_load_gwh": 788.4,
+        "half_capacity_factor_gwh": 394.2
+      },
+      "post": {
+        "id": 36457,
+        "status": "publish",
+        "link": "https://bitcoinversus.tech/2026/11/28/bhutan-jomori-90mw-voith-pelton-hydropower-2026/",
+        "featured_media": 36460,
+        "title": "Bhutan’s 90 MW Jomori Hydropower Plant Will Use Two 45 MW Pelton Turbines",
+        "content": "<!-- wp:paragraph --><p>Bhutan is expanding its hydropower fleet with the 90 MW Jomori project in Samdrup Jongkhar, a southeastern district. In an <a href=\"https://www.voith.com/corp-en/news-room/press-releases/2026-10-16_voith-hydro-continues-bhutan-growth.html\">October 16, 2026 announcement</a>, Voith Hydro identified two vertical Pelton turbine generating units rated at 45 MW apiece. Druk Hydro Energy Limited awarded the electromechanical equipment package to Voith. The manufacturer will supply turbine and generator systems and participate in their installation, testing and commissioning.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=7f5yd7g8MWg\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=7f5yd7g8MWg\n</div><figcaption class=\"wp-element-caption\"><em>Voith Group explains the operating mechanism of Pelton turbines in an engineering animation published in 2019; not Jomori site footage.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:paragraph --><p>The underlying contract was signed September 5, according to an <a href=\"https://www.drukgreen.bt/dhye-signs-contract-for-electro-mechanical-works-package-for-the-90-mw-jomori-hydropower-project/\">October 5 statement from Druk Green Power Corporation</a>. The equipment contract is valued at 2.289 billion Bhutanese ngultrum or Indian rupees and is supported by concessional financing from Japan International Cooperation Agency. The project owner reports that construction of major civil structures, including the dam, water conveyance tunnel and powerhouse, has begun. The generator rating is therefore planned installed capacity, not measured electricity output.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Turning hydraulic head into electrical power</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>Pelton machines are impulse turbines. Pressurized water passes through nozzles and strikes curved buckets arranged around a rotating wheel. The buckets change the direction of the jets, converting the water's momentum into shaft torque. Pelton designs are particularly suited to substantial hydraulic head and comparatively moderate flow rates. The generator converts mechanical rotation into electricity through electromagnetic induction.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>For an illustrative engineering calculation, a 45 MW unit at an assumed 90% combined conversion efficiency and 500 meters of net head would require approximately 10.2 cubic meters of water per second. The relationship is power equals water density multiplied by gravitational acceleration, volumetric flow, net head and efficiency. Neither the assumed head nor efficiency is a published Jomori specification. Site-specific hydraulic data are required to calculate its actual water demand.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=pa1ryuQV7Mk\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=pa1ryuQV7Mk\n</div><figcaption class=\"wp-element-caption\"><em>Voith Group illustrates the conversion of turbine shaft rotation into electricity inside a hydropower generator, 2019.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Capacity versus dependable generation</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>Continuous operation at 90 MW would yield 788.4 GWh in a non-leap year. An illustrative 50% capacity factor would instead yield 394.2 GWh. Seasonal river discharge, maintenance and dispatch determine actual production. Reliable electricity depends not only on turbine capacity but also on water management and the transmission system. The distinction matters for energy-intensive applications such as <a href=\"https://bitcoinversus.tech/2026/11/28/penguin-paraguay-160mw-hydropower-substation-bitcoin-ai-2026/\">Paraguay's hydropower-backed computing infrastructure</a> and <a href=\"https://bitcoinversus.tech/2026/11/28/fossefall-jokkmokk-65mw-hydropower-ai-factory-sweden-2026/\">Sweden's hydropower-oriented AI factory</a>.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>A hydropower project can support the electricity needs of many industries, but Jomori's equipment announcement does not identify a Bitcoin mining or AI tenant. Contrasting energy procurement arrangements include <a href=\"https://bitcoinversus.tech/2026/11/28/solaria-uruguay-500mw-data-center-350mw-solar-2026/\">Uruguay's solar-backed data center proposal</a> and <a href=\"https://bitcoinversus.tech/2026/11/28/microsoft-westgate-auckland-data-center-te-huka-geothermal-2026/\">New Zealand geothermal procurement</a>. The next milestones are completion of civil structures, delivery and installation of electromechanical equipment, grid synchronization and measured generation. Equipment awards provide evidence of progress without demonstrating that the plant is already producing power.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p><!-- /wp:paragraph --><!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image --><!-- wp:paragraph --><p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p><!-- /wp:paragraph --><!-- wp:paragraph --><p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->"
+      },
+      "internal_links": 4,
+      "cover_status": "Provisional source image, not approved original or correct dimensions",
+      "status": "PUBLISHED WITH OPEN DEFECTS"
+    },
+    {
+      "id": 36462,
+      "words": 474,
+      "dimensions": [
+        220,
+        141
+      ],
+      "media": 36464,
+      "iframes": [
+        "Utz5zj8kZ30",
+        "40ztd8uoU9Q"
+      ],
+      "calcs": {
+        "full_load_gwh": 262.8,
+        "assumed_80_percent_cf_gwh": 210.24
+      },
+      "post": {
+        "id": 36462,
+        "status": "publish",
+        "link": "https://bitcoinversus.tech/2026/11/28/sierra-pacific-burney-30mw-biomass-plant-restart-2027-2026/",
+        "featured_media": 36464,
+        "title": "Sierra Pacific Plans to Restart California’s 30 MW Burney Biomass Plant in 2027",
+        "content": "<!-- wp:paragraph --><p>Sierra Pacific Industries (SPI) announced on <a href=\"https://spi-ind.com/Home/PressRelease?Name=Press_Release_11172026\">November 17, 2026</a> that it acquired the generating assets of Burney Forest Products in Northern California. The company plans to refurbish the wood-fueled cogeneration facility and resume operations in 2027. SPI describes a generating capacity of up to 30 MW and expects approximately 20 permanent jobs to be added to its existing Burney workforce. Acquisition does not establish that the plant has resumed generating electricity.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=Utz5zj8kZ30\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=Utz5zj8kZ30\n</div><figcaption class=\"wp-element-caption\"><em>Wood-products industry demonstration of converting manufacturing residues into electricity, steam and biochar, produced in partnership with Oregon State University; separate facility.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:paragraph --><p>The acquisition brings the company's stated biomass cogeneration portfolio to nine facilities with a combined rating of up to 211 MW. The <a href=\"https://www.olympuspower.com/node/26\">historical Olympus Power facility profile</a> describes Burney as a 31 MW gross-capacity plant that entered commercial service in 1989. The difference between the two published ratings should not be interpreted as evidence of an equipment upgrade or downgrade without a consistent gross-versus-net measurement boundary.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Extracting useful heat and electricity from wood</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>Sawmill residues contain chemical energy that can be recovered by controlled combustion. Fuel handling equipment feeds appropriately sized material into boilers, where the released heat converts treated water into high-pressure steam. A turbine expands the steam, driving an electrical generator. A cogeneration configuration can also direct useful heat toward lumber drying instead of rejecting all remaining heat to the environment. SPI describes its approach on its <a href=\"https://spi-ind.com/Operations/CoGeneration\">cogeneration operations page</a>.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=40ztd8uoU9Q\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=40ztd8uoU9Q\n</div><figcaption class=\"wp-element-caption\"><em>EDF explains the steam cycle of a biomass power plant; general technical animation, not Burney footage.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:paragraph --><p>Fuel moisture matters because evaporation consumes energy before useful heat reaches the steam circuit. Different wood mixtures also affect ash production and boiler behavior. Refurbishment may require inspection of pressure vessels, combustion systems, generator insulation, turbine condition, emissions equipment and electrical protection. SPI has not published a detailed refurbishment scope in its acquisition announcement.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">The energy output depends on operating hours</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>At the announced maximum of 30 MW, continuous full-load operation would produce 262.8 GWh over a non-leap year. An assumed 80% capacity factor would yield 210.24 GWh. The calculation is illustrative, not a production forecast. Wood supply, boiler outages, electricity agreements and heat demand will affect annual output.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>Biomass generation differs from <a href=\"https://bitcoinversus.tech/2026/11/28/oracle-scout-ranchero-300mw-wind-vppa-texas-2026/\">Texas wind procurement</a> because a suitable fuel inventory can support dispatchable electricity. Its environmental value nevertheless depends on the origin and alternative fate of the wood, transportation, combustion emissions and forest management. Renewable classification does not establish zero emissions. The <a href=\"https://www.energy.gov/cmei/fuels/biopower\">U.S. Department of Energy's biopower overview</a> explains the available conversion pathways.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>Other energy infrastructure approaches include <a href=\"https://bitcoinversus.tech/2026/11/28/newyork-greencloud-buena-vista-14-4mw-biomass-ai-factory-ione-2026/\">California's proposed biomass-powered AI factory</a>, <a href=\"https://bitcoinversus.tech/2026/11/28/heartland-orion-beaver-river-7mw-natural-gas-bitcoin-mining-saskatchewan-2026/\">Saskatchewan's proposed off-grid gas mine</a> and <a href=\"https://bitcoinversus.tech/2026/11/28/microsoft-westgate-auckland-data-center-te-huka-geothermal-2026/\">New Zealand geothermal procurement</a>. Burney's announcement does not name a computing customer. Its immediate purpose is integration into SPI's industrial operations. Verified return-to-service dates, net electricity exports, useful process heat and emissions measurements will establish the practical value of the restart.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p><!-- /wp:paragraph --><!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image --><!-- wp:paragraph --><p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p><!-- /wp:paragraph --><!-- wp:paragraph --><p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->"
+      },
+      "internal_links": 4,
+      "cover_status": "Provisional source image, not approved original or correct dimensions",
+      "status": "PUBLISHED WITH OPEN DEFECTS"
+    },
+    {
+      "id": 36466,
+      "words": 474,
+      "dimensions": [
+        2500,
+        1804
+      ],
+      "media": 36467,
+      "iframes": [
+        "faIzT5KveL8",
+        "AvaqxuNhjKI"
+      ],
+      "calcs": {
+        "assumed_35_percent_cf_single_2mw_o2_gwh": 6.132
+      },
+      "post": {
+        "id": 36466,
+        "status": "publish",
+        "link": "https://bitcoinversus.tech/2026/11/28/scotland-orbital-euro-tides-four-turbine-tidal-array-2026/",
+        "featured_media": 36467,
+        "title": "Scotland’s EURO-TIDES Project Moves Toward a Four-Turbine Floating Tidal Farm",
+        "content": "<!-- wp:paragraph --><p>Orbital Marine Power is preparing to move from isolated tidal turbines toward an interconnected floating power farm in Orkney, Scotland. The company reported on <a href=\"https://www.orbitalmarine.com/european-commission-approval-for-landmark-tidal-energy-array/\">October 12, 2026</a> that the European Commission approved EURO-TIDES to proceed into construction after reviewing the project's engineering, permits and financing. The company now targets deployment in 2028, conditional on completion of its investment round. The four-turbine array is not yet operational.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=faIzT5KveL8\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=faIzT5KveL8\n</div><figcaption class=\"wp-element-caption\"><em>Video embedded by the European Marine Energy Centre in its October 2026 EURO-TIDES announcement.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:paragraph --><p>The <a href=\"https://www.emec.org.uk/european-commission-gives-go-ahead-to-orbital-for-euro-tides-array/\">European Marine Energy Centre (EMEC)</a> confirms that the plan combines three next-generation O2-X platforms and one O2 platform. The older <a href=\"https://www.euro-tides.eu/overview\">project overview</a> still describes deployment by 2027. The later October announcement supersedes that date as the current target; the schedule remains contingent rather than guaranteed.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">Floating turbines use moving seawater</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>The existing O2 platform provides an engineering reference. According to <a href=\"https://www.emec.org.uk/about-us/our-tidal-clients/orbital-marine-power/\">EMEC's technology profile</a>, its floating structure is 72 meters long and supports two submerged turbine-generator assemblies rated at 1 MW each. The platform has operated at the Fall of Warness test site since July 2021. Hinged support legs allow equipment to be raised for maintenance without removing the whole platform from service.</p><!-- /wp:paragraph -->\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=AvaqxuNhjKI\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} --><figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=AvaqxuNhjKI\n</div><figcaption class=\"wp-element-caption\"><em>Interesting Engineering Explains profiles the existing Orbital O2 tidal turbine, July 2026.</em></figcaption></figure><!-- /wp:embed -->\n<!-- wp:paragraph --><p>The kinetic power available in moving water is proportional to fluid density, rotor swept area and the cube of current velocity. Under otherwise equal conditions, doubling current velocity increases the theoretical available power eightfold. Actual electrical output is limited by rotor efficiency, generator rating and operating controls. Predictable tidal cycles simplify forecasting, but slack water still produces periods of low output. Tidal energy is not inherently constant baseload power.</p><!-- /wp:paragraph -->\n<!-- wp:heading --><h2 class=\"wp-block-heading\">The farm introduces system-level engineering challenges</h2><!-- /wp:heading -->\n<!-- wp:paragraph --><p>The consortium's next task is integrating individual devices through shared electrical infrastructure, anchoring arrangements and monitoring. Multiple machines introduce wake interactions, subsea connector maintenance, coordinated protection and scheduling challenges. An array must demonstrate reliable energy exports and economically manageable service interventions, not merely the ability of one machine to generate electricity.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>For scale, a single 2 MW O2 platform at an assumed 35% capacity factor would generate 6.132 GWh annually in a non-leap year. The assumed utilization is illustrative rather than a measured O2 result. It cannot establish total farm generation without confirmed O2-X ratings and site-specific performance data. Orbital estimates the completed array could supply annual electricity equivalent to roughly 9,200 homes, a developer projection rather than measured production.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p>EURO-TIDES complements <a href=\"https://bitcoinversus.tech/2026/11/21/canada-bay-of-fundy-six-turbines-15mw-federal-approvals-2026/\">Canada's planned Bay of Fundy tidal project</a>, while <a href=\"https://bitcoinversus.tech/2026/11/03/tidal-ocean-power-explained-wave-energy-turbines-otec/\">tidal and ocean power</a> explains the distinction between tidal currents and wave conversion. Shared offshore infrastructure also matters for <a href=\"https://bitcoinversus.tech/2026/11/28/green-volt-scotland-560mw-floating-wind-28-turbines-aberdeen-2026/\">Scotland's floating wind development</a>; storage and flexible offtake can help variable sources serve demand profiles such as <a href=\"https://bitcoinversus.tech/2026/11/28/solaria-uruguay-500mw-data-center-350mw-solar-2026/\">Uruguay's solar-backed data center proposal</a>. The next evidence to watch is secured investment, fabrication progress, confirmed turbine specifications, deployment and independently reported array output.</p><!-- /wp:paragraph -->\n<!-- wp:paragraph --><p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p><!-- /wp:paragraph --><!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image --><!-- wp:paragraph --><p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p><!-- /wp:paragraph --><!-- wp:paragraph --><p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p><!-- /wp:paragraph -->"
+      },
+      "internal_links": 4,
+      "cover_status": "Provisional source image, not approved original or correct dimensions",
+      "status": "PUBLISHED WITH OPEN DEFECTS"
+    }
+  ],
+  "release_decision": "Interpreted user's standing publish-every-time instruction and continuation of previous immediate-publication workflow as authorizing provisional source covers; actual original cover compliance not established.",
+  "open_defects": [
+    "Original 1200x630 covers absent; exact watermark unavailable; Burney photo particularly low resolution",
+    "Actual playback, embedding permission and mobile appearance not independently tested; direct video fetch attempts throttled or failed",
+    "No independent public browser rendering check; WordPress server readback only",
+    "Donation QR reused; destination not independently decoded"
+  ],
+  "learning": [
+    "Use latest dated project source over older static project page for chronology",
+    "Avoid relying on different gross/net capacity definitions to claim a change",
+    "Source-image dimensions must be verified separately from attachment"
+  ]
+}
