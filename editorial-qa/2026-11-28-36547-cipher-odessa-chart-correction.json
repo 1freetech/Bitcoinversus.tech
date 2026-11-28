@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-28",
+  "postId": 36547,
+  "article": "https://bitcoinversus.tech/2026/11/28/cipher-odessa-207mw-bitcoin-mine-296-btc-q3-2026/",
+  "trigger": "User requested chart and search of all SmartChart styles",
+  "lieTracker": {
+    "sha": "98604f039fb9a8080ea661777808c8523831ebdb",
+    "applied": "LT-0074 article-conversation parity: insert chart into existing article, verify readback before presenting summary"
+  },
+  "chartDecisionQuestion": "Compare Q2 and Q3 reported BTC production, with separately annotated site metrics",
+  "sourceDatasetAndDate": {
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm (Aug 4, slide 11)",
+      "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000047/cipherdigital_businessup.htm (Nov 2, slide 13)"
+    ],
+    "values": {
+      "Q2": 346,
+      "Q3": 296,
+      "capacityMW": 207,
+      "hashrateEHs": 11.6,
+      "efficiencyJTH": 17.2,
+      "powerCentsKWh": 2.8
+    },
+    "changePct": -14.45086705202312
+  },
+  "datasetStatus": "Company reported, approximate BTC figures; site metrics not on BTC axis",
+  "all40Reviewed": true,
+  "reviewMethod": "Read atlas definitions, data requirements and risks and chart-selection law. Read current Python desktop architecture. Manual analytical selection; recommendation engine not executed.",
+  "top3ChartCandidates": [
+    "vertical column: direct zero-based comparison, selected",
+    "slopegraph: paired endpoints, no implied intermediate observations",
+    "dumbbell: paired endpoints, shared scale, less direct for a single category"
+  ],
+  "reasonsForRejection": "No observed intraperiod trend, distribution, ranks, geographic dataset, normalized components, measured flow or comparable multi-dimensional scores. Remaining chart types either inapplicable or less useful.",
+  "historicalMathReferenceURLs": [
+    "https://github.com/1freetech/SmartChart/blob/main/atlas/catalog.json",
+    "https://github.com/1freetech/SmartChart/blob/main/docs/chart-selection-protocol-v2.md",
+    "https://clauswilke.com/dataviz/visualizing-amounts.html"
+  ],
+  "renderer": "QuickChart Chart.js PNG fallback; SmartChart desktop Python engine not executed",
+  "orientation": "vertical, 0 to 400 BTC, 100 BTC ticks, separate KPI annotation",
+  "chartDataValidation": "Reopened SEC source pages; exact reported rounded data and percentage independently checked.",
+  "media": {
+    "id": 36567,
+    "url": "https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/cipher-odessa-quarterly-bitcoin-production-2026.png",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "mime": "image/png"
+  },
+  "liveImageEmbedTest": "WordPress edit/readback and view: one chart image, after production comparison and before power economics heading, published status retained. Original SEC image, 2 videos, 4 internal links, featured image and footer preserved.",
+  "knownLimits": "Independent public image open failed; pixel-level visual and mobile browser checks not performed. Actual desktop SmartChart renderer not executed. Existing cover watermark and video playback defects not addressed by chart-only correction."
+}
