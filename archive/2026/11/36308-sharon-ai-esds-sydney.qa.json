@@ -1,0 +1,59 @@
+{
+  "policy": "v8.1",
+  "artifact": {
+    "id": 36308,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/28/sharon-ai-esds-sydney-8208-nvidia-b300-gpus-commissioning-2026/",
+    "featured_media": 36306,
+    "title": "Sharon AI Installs 8,208 NVIDIA B300 GPUs for a $1.26 Billion Sydney AI Contract",
+    "content": "<!-- wp:paragraph -->\n<p>Australian cloud infrastructure provider Sharon AI has installed 8,208 NVIDIA B300 accelerators in Sydney for Indian cloud services company ESDS Software Solution. <a href=\"https://www.datacenterdynamics.com/en/news/8208-gpus-deployed-by-sharon-ai-for-esds-software-solution-in-australia/\">Data Center Dynamics reported</a> on November 26, 2026, that the cluster is undergoing final testing. Customer handover is expected in December, with billing targeted for January 2027. The installation marks an engineering milestone rather than confirmation of commercial operation.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=L-kIaWvS9Bc\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=L-kIaWvS9Bc\n</div><figcaption class=\"wp-element-caption\"><em>Sharon AI co-founder and CEO James Manning discusses the company's Australian GPU infrastructure strategy at RedChip's March 2026 AI Investor Conference. The presentation predates the Sydney installation.</em></figcaption></figure>\n<!-- /wp:embed -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">A computing cluster is more than its accelerators</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The B300 belongs to NVIDIA's Blackwell Ultra generation. NVIDIA's <a href=\"https://www.nvidia.com/en-us/data-center/hgx/\">HGX platform</a> supports eight B300 accelerators on a baseboard. If every accelerator in the Sydney deployment were organized in eight-GPU systems, the equivalent would be 1,026 systems. The actual server configuration and rack inventory have not been disclosed in the cited project reports.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Large clusters require power distribution, thermal management, storage and high-speed networking capable of moving data between processors. A completed installation must undergo link validation, firmware checks, thermal testing and workload verification. The purpose is to establish that thousands of accelerators operate reliably together, not merely that individual devices can power on.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The distinction matters as operators expand from <a href=\"https://bitcoinversus.tech/2026/11/25/applied-digital-polaris-forge-2-harwood-25mw-ready-for-service-november-2026/\">ready-for-service data halls</a> to customer-ready compute. Related engineering challenges include <a href=\"https://bitcoinversus.tech/2026/11/27/liquid-cooling-is-becoming-a-complete-data-center-system/\">liquid-cooling infrastructure</a> and <a href=\"https://bitcoinversus.tech/2026/11/22/osdctc-022-cdu-pump-redundancy-failover-cooling-verification/\">coolant pump redundancy</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:embed {\"url\":\"https://www.youtube.com/watch?v=coUkzxdGB90\",\"type\":\"video\",\"providerNameSlug\":\"youtube\",\"responsive\":true,\"className\":\"wp-embed-aspect-16-9 wp-has-aspect-ratio\"} -->\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\nhttps://www.youtube.com/watch?v=coUkzxdGB90\n</div><figcaption class=\"wp-element-caption\"><em>CoreWeave engineers discuss an NVIDIA HGX B300 deployment at a separate data center. Source: CoreWeave; not footage of Sharon AI's Sydney facility.</em></figcaption></figure>\n<!-- /wp:embed -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">The economics of reserving computing capacity</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>ESDS estimates its five-year capacity commitment at approximately US$1.26 billion, according to <a href=\"https://w.media/esds-details-us1-26bn-sharon-ai-deal-as-8208-gpu-cluster-nears-handover/\">w.media's November 26 reporting</a>. Sharon AI lists a roughly $1.25 billion contract value. ESDS expects to pay approximately $21 million monthly and receive about $30 million from its own customers. The $9 million difference excludes operating expenses and taxes and should not be described as net profit.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>At the stated monthly capacity payment, the implied average cost per accelerator is approximately $2,558 per month, or $3.50 per GPU-hour assuming a 730-hour month. The calculation describes the contract payment normalized by the reported accelerator count. It is not a retail cloud price or a measure of actual GPU utilization.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The take-or-pay arrangement allocates capacity to customers that undertake payment obligations even when their workloads do not fully utilize the available hardware. Such commitments can support financing, but counterparty performance, acceptance conditions and operating costs remain important risks.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">From installation to commercial acceptance</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Sharon AI's <a href=\"https://sharonai.com/press-releases/sharon-ai-reports-third-quarter-2026-results/\">November 16 quarterly results</a> reported that larger B300 and GB300 deployments had reached energization and were undergoing final checks. The company reported quarterly revenue of $9.9 million and a net loss of $43.8 million, illustrating the capital-intensive transition from equipment purchases to customer billing. The investment cycle complements the broader expansion described in our coverage of <a href=\"https://bitcoinversus.tech/2026/11/25/dell-ai-server-backlog-132-billion-sales-291-percent-q3-fy27-2026/\">Dell's AI server backlog</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The next milestone for Sydney is customer acceptance after testing and verification, followed by the start of paid service. Until then, the accelerator count establishes installed hardware rather than sustained production throughput or realized contract revenue.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "operational_status": "PUBLISHED, VERIFICATION PENDING",
+  "rotation": "AI infrastructure following robotics; exact independent cursor not recovered",
+  "sources": [
+    "https://www.datacenterdynamics.com/en/news/8208-gpus-deployed-by-sharon-ai-for-esds-software-solution-in-australia/",
+    "https://w.media/esds-details-us1-26bn-sharon-ai-deal-as-8208-gpu-cluster-nears-handover/",
+    "https://sharonai.com/press-releases/sharon-ai-reports-third-quarter-2026-results/",
+    "https://www.nvidia.com/en-us/data-center/hgx/"
+  ],
+  "claims": "8208 installed, testing ongoing; $1.26B ESDS commitment vs $1.25B Sharon estimate; expected billing Jan 2027",
+  "calculations": [
+    "8208/8=1026 hypothetical eight-GPU systems",
+    "21000000/8208/730=3.504766 USD/GPU-hour"
+  ],
+  "duplicate": "Targeted WordPress Sharon AI and ESDS, GitHub Sharon AI ESDS 8208; final search only own draft; not exhaustive",
+  "cover": {
+    "id": 36306,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "source": "User-supplied Liquid-Cooled Server in a Sunset Data Center.png; previous tag cropped out, original skid-steer tag copied once and local pixel equality checked; reused artwork after unrelated generated image rejected, historic reuse not excluded"
+  },
+  "qa": {
+    "status": "publish",
+    "rendered_iframes": 2,
+    "video_ids": [
+      {
+        "id": "L-kIaWvS9Bc",
+        "present": true
+      },
+      {
+        "id": "coUkzxdGB90",
+        "present": true
+      }
+    ],
+    "playback": "not tested",
+    "desktop_mobile": "not tested",
+    "cover_cdn": "not visually inspected",
+    "internal_links": 4,
+    "words": 506,
+    "footer": 24043,
+    "qr": "not decoded"
+  },
+  "learning": [
+    "Prioritize two actual Gutenberg embeds; distinguish render from playback.",
+    "Distinguish installed GPU counts from customer acceptance.",
+    "Reject unrelated cover and disclose fallback reuse."
+  ]
+}
