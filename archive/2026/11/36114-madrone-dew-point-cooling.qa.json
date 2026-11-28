@@ -1,0 +1,52 @@
+{
+  "policy": "v8.1",
+  "artifact": {
+    "id": 36114,
+    "status": "publish",
+    "link": "https://bitcoinversus.tech/2026/11/27/madrone-nvidia-chiller-free-dew-point-data-center-cooling-100kw-2026/",
+    "featured_media": 36108,
+    "title": "Nvidia Backs Madrone’s Chiller-Free Data Center Cooling Technology",
+    "content": "<!-- wp:paragraph -->\n<p>Madrone, a California startup developing alternative cooling equipment for data centers, has attracted investment from Nvidia and other early-stage backers. <a href=\"https://www.tekedia.com/tekedia-capital-invests-in-madrone-hyper-efficient-coolers-for-data-centers/\">Tekedia Capital announced its participation</a> on November 24, 2026. <a href=\"https://www.datacenterdynamics.com/en/news/nvidia-backs-startup-developing-chiller-free-data-center-cooling-system/\">Data Center Dynamics reported</a> two days later that the startup raised $500,000 in seed funding and has built a 100 kW demonstrator. The investment supports a technology under development, not a commercially proven hyperscale cooling installation.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":36110,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/madrone-1kw-prototype.png\" alt=\"Madrone's small cooling prototype\" class=\"wp-image-36110\" /><figcaption class=\"wp-element-caption\"><em>Madrone's 1 kW prototype. Source: company launch post via <a href=\"https://www.ycombinator.com/companies/madrone\">Y Combinator</a>.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Cooling toward the dew point</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Madrone proposes modular equipment that supplies cooled facility water without a conventional mechanical chiller. Its <a href=\"https://www.madrone.cool/\">product website</a> advertises 20°C supply water and claims 30% lower cooling power and water consumption relative to a chiller and cooling tower arrangement in Texas. Public documentation does not establish the complete test conditions or an independently measured annual performance profile.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Traditional vapor-compression chillers circulate refrigerant through compressors, condensers, expansion devices and evaporators. Compressors consume electricity to move heat against a temperature gradient. Evaporative cooling instead exploits the energy absorbed when liquid water changes phase. The achievable outlet temperature depends on atmospheric humidity, heat exchanger effectiveness and the design of the equipment.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Dew-point cooling approaches can use indirect evaporative stages to approach the temperature at which air becomes saturated. Dry climates offer a larger separation between ambient temperature and dew point than humid climates. Madrone describes its technology in those terms, although its precise thermodynamic architecture has not been publicly established in sufficient detail for independent engineering evaluation.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":36111,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/11/madrone-100kw-prototype.jpg\" alt=\"Madrone 100 kW cooling prototype during construction\" class=\"wp-image-36111\" /><figcaption class=\"wp-element-caption\"><em>Construction of Madrone's 100 kW prototype. Source: company launch post via Y Combinator.</em></figcaption></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Why cooling efficiency matters under a fixed power limit</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The distinction between cooling energy and total facility energy is critical. Consider an illustrative data center drawing 100 MW, of which 20 MW supports cooling. A 30% reduction in cooling power would release 6 MW, reducing total facility demand to 94 MW if every other load remains constant. Continuous operation at the lower demand would save 52,560 MWh over a 365-day year. Neither the 20 MW baseline nor the resulting savings is a measured Madrone installation.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>A power-constrained operator could instead allocate some released capacity to additional computing hardware. The commercial benefit would depend on available rack space, distribution equipment, customer demand and utilization. Additional revenue is not equivalent to lower energy costs, and neither establishes profitability without operating and capital expenses.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Facility water is only one element of the thermal chain. Cold plates, coolant distribution units, pumps and controls must work together, as explored in our coverage of <a href=\"https://bitcoinversus.tech/2026/11/27/liquid-cooling-is-becoming-a-complete-data-center-system/\">liquid-cooling system architecture</a> and <a href=\"https://bitcoinversus.tech/2026/11/22/osdctc-022-cdu-pump-redundancy-failover-cooling-verification/\">pump redundancy</a>. Higher-density developments such as <a href=\"https://bitcoinversus.tech/2026/11/26/kt-cloud-keppel-ansan-110mw-ai-data-center-campus-south-korea-2026/\">KT Cloud's Ansan campus</a> further illustrate why thermal capacity matters. Britain's <a href=\"https://bitcoinversus.tech/2026/11/27/ukri-32-million-ai-hardware-energy-efficiency-challenge-2026/\">AI hardware efficiency programme</a> addresses related system-level challenges.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Madrone's next meaningful milestones are sustained tests at representative heat loads, verified water and electricity measurements across seasonal conditions, and integration into an operating data center. The funding and demonstrator establish progress toward a commercial product, while full-scale reliability and economic performance remain open engineering questions.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>We volunteer daily to ensure the credibility of the information on this platform is Verifiably True. If you would like to support to help further secure the integrity of our research initiative, please scan the QR code below.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":24043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} --><figure class=\"wp-block-image size-full\"><img src=\"https://bitcoinversus.wordpress.com/wp-content/uploads/2026/10/bitcoinversus-donation-qr-5000-sats-original.png\" alt=\"BitcoinVersus.Tech donation QR code for 5,000 satoshis\" class=\"wp-image-24043\" /></figure><!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p><em>For mobile scanning, open the article on another display and scan the QR code with a Bitcoin wallet. The voluntary donation amount is 5,000 sats. Verify the receiving address <strong>3C9o19EH5HSiwEPyCTmEKzxhNCbo2X6TTb</strong> before sending.</em></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>BitcoinVersus.tech is not a financial advisor. This media platform reports on financial subjects purely for informational purposes.</em></p>\n<!-- /wp:paragraph -->"
+  },
+  "status": "PUBLISHED, VERIFICATION PENDING",
+  "rotation": "Data Centers after AI hardware; full general rotation cursor unavailable",
+  "sources": [
+    "https://www.tekedia.com/tekedia-capital-invests-in-madrone-hyper-efficient-coolers-for-data-centers/",
+    "https://www.datacenterdynamics.com/en/news/nvidia-backs-startup-developing-chiller-free-data-center-cooling-system/",
+    "https://www.ycombinator.com/companies/madrone",
+    "https://www.madrone.cool/"
+  ],
+  "claim_boundary": "$500k and 100 kW demonstrator reported by DCD; 30% and 20C company claims; no independent full-scale operating measurements",
+  "calculations": "20 MW*0.30=6 MW; 100-6=94 MW; 6*8760=52560 MWh illustrative annual savings",
+  "duplicate": "Targeted WordPress and GitHub Madrone searches; immediate prepublish search returned own draft only",
+  "cover": {
+    "id": 36108,
+    "dimensions": [
+      1200,
+      630
+    ],
+    "style": "new oil painting",
+    "watermark": "Original source Sunset Skid-Steer Stunt Demo.png cropped at (15,839,357,892), resized to 160x25 and pasted once (10,595); local 1200x630 final inspected; WordPress dimensions confirmed; CDN visual not independently inspected"
+  },
+  "qa": {
+    "publication": "publish",
+    "body_images": [
+      36110,
+      36111
+    ],
+    "footer": 24043,
+    "internal_links": 4,
+    "article_words": 492,
+    "prohibited_words": 0,
+    "browser": "not tested",
+    "mobile": "not tested",
+    "playback": "no video; primary prototype photos",
+    "qr": "canonical QR preserved, not decoded",
+    "rights": "prototype photos credited, redistribution permission not independently established"
+  },
+  "learning": [
+    "Use recovered exact watermark and fresh unmarked artwork.",
+    "Distinguish cooling energy reduction from total facility energy reduction.",
+    "Prefer primary prototype photography over contextual stock imagery."
+  ]
+}
