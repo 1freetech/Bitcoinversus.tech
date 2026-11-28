@@ -1,0 +1,92 @@
+{
+  "policy": "v8.0",
+  "date": "2026-11-28",
+  "scope": "existing seven post IDs; no new posts or publishing writes in this run; statuses changed during concurrent read-only checks",
+  "status": "published_with_open_defects",
+  "posts": [
+    {
+      "id": 36310,
+      "cover": 36335,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "iframes": 1
+    },
+    {
+      "id": 36311,
+      "cover": 36336,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "iframes": 1
+    },
+    {
+      "id": 36312,
+      "cover": 36337,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "iframes": 1
+    },
+    {
+      "id": 36313,
+      "cover": 36343,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "iframes": 2
+    },
+    {
+      "id": 36314,
+      "cover": 36338,
+      "dimensions": [
+        1200,
+        602
+      ],
+      "iframes": 2
+    },
+    {
+      "id": 36315,
+      "cover": 36342,
+      "dimensions": [
+        980,
+        700
+      ],
+      "iframes": 1
+    },
+    {
+      "id": 36316,
+      "cover": 36340,
+      "dimensions": [
+        940,
+        529
+      ],
+      "iframes": 1
+    }
+  ],
+  "checks": {
+    "wordpress_status_readback": "all seven publish",
+    "iframe_markup": "9 total in WordPress view content",
+    "playback": "unverified",
+    "mobile": "unverified",
+    "watermark": "unverified; direct image URL fetch inaccessible, container DNS failure",
+    "qr": "existing media 24043 metadata checked, not decoded",
+    "internal_links": "not all individually checked",
+    "rotation": "inferred existing batch; cursor not established",
+    "duplicate_search": "30 recent published and 30 draft/scheduled/pending; targeted WP searches for six subjects; GitHub rotation and ID search partial only"
+  },
+  "open_defects": [
+    "three covers have incorrect dimensions per media metadata",
+    "post 36316 has one non-footer media item in readback",
+    "watermark visual verification incomplete"
+  ],
+  "improvement_proposals": [
+    "shared post-ID reservation and final re-read before any write",
+    "retrieve exact watermark asset and validate pixel dimensions before publish",
+    "browser playback and viewport evidence per media item"
+  ]
+}
